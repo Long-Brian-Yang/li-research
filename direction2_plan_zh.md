@@ -6,10 +6,12 @@
 
 > 在高对称性、空位工程和 mixed-anion 结构中，找出具有连续 Li⁺ 三维迁移网络、低迁移能垒并达到 σ<sub>Li</sub> >10 mS cm⁻¹ 的固态电解质。
 
-本阶段暂定比较两种结构：
+本阶段不立即设计新材料，而是先复现两种已有文献结构：
 
 1. **Li₃YCl₆**：P\bar3m1（No. 164），高电压卤化物 benchmark。
 2. **LiNbOCl₄**：Cmc2₁（No. 36），mixed-anion oxyhalide，高传导重点候选。
+
+**阶段性原则：先复现，后创新。** 在已有结构的 DFT/MD 流程、扩散趋势和数据处理得到验证之前，不生成新的组成、不扩展新的元素体系，也不把照片重建 CIF 当作最终研究结论。
 
 仓库中的两个 CIF 目前都是由截图重建的 provisional 版本，不能直接作为最终生产计算输入。
 
@@ -32,7 +34,9 @@ MSD → DLi → σLi
   ↓
 迁移通道、空位和结构描述符分析
   ↓
-候选排序与下一轮结构设计
+与文献实验值/趋势对照
+  ↓
+复现通过后才进入新候选设计
 ```
 
 ## 2. Phase 0：结构文件和数据完整性
@@ -58,7 +62,32 @@ structures/structure_manifest.csv
 
 没有原始 CIF 或无法解释部分占位时，不进入正式 MD；只能进行模型开发和敏感性分析。
 
-## 3. Phase 1：结构标准化与 DFT 弛豫
+## 3. Reproduction-first 基准任务
+
+### Li₃YCl₆
+
+- 参考目标：室温实验 Li⁺ 传导度 >1 mS cm⁻¹（Asano et al., 2018）。
+- 首要问题：部分 Li/Y 占位如何有序化，以及不同有序模型是否改变 Li⁺ MSD。
+- 输出：至少 3 个合理有序模型、弛豫结构、温度依赖扩散趋势和模型间不确定性。
+
+### LiNbOCl₄
+
+- 参考目标：室温实验 Li⁺ 传导度约 10.4 mS cm⁻¹（Tanaka et al., 2023）。
+- 首要问题：Cmc2₁ mixed-anion O/Cl 排列和部分 Li/Cl 占位如何影响迁移网络。
+- 输出：有序模型、弛豫结构、Li⁺ MSD、σ<sub>Li</sub> 温度趋势及与 10.4 mS cm⁻¹ 实验值的可比性说明。
+
+### 复现成功标准
+
+复现不要求计算值精确等于实验值，但必须：
+
+1. 得到物理合理且稳定的结构；
+2. 得到与实验一致的材料间传导趋势（LiNbOCl₄ 应明显高于 Li₃YCl₆，或能解释偏差）；
+3. 明确温度、时间尺度、占位模型和电导定义造成的差异；
+4. 能重复得到相近的 MSD/扩散趋势。
+
+只有满足以上条件，才进入新候选材料设计。
+
+## 4. Phase 1：结构标准化与 DFT 弛豫
 
 对每个有序模型：
 
@@ -83,7 +112,7 @@ structures/structure_manifest.csv
 
 保留：结构弛豫收敛、无异常短键、化学式正确、相对能量合理的模型。删除：明显重构、严重短键或无法收敛的模型。
 
-## 4. Phase 2：热力学和结构稳定性
+## 5. Phase 2：热力学和结构稳定性
 
 对通过 Gate 1 的模型计算：
 
@@ -100,7 +129,7 @@ E_{\mathrm{hull}} < 50\ \mathrm{meV\ atom^{-1}}
 
 该阈值是初筛标准，不代表绝对合成判据。必须同时记录相图来源和计算设置。
 
-## 5. Phase 3：Li⁺ 扩散初筛
+## 6. Phase 3：Li⁺ 扩散初筛
 
 ### AIMD 设计
 
@@ -143,7 +172,7 @@ D_{\mathrm{Li}}=\frac{1}{6}\frac{d}{dt}\left\langle|r(t)-r(0)|^2\right\rangle
 - 至少两个独立初始速度/无序构型得到相近趋势；
 - 结构没有在 MD 中非物理坍塌。
 
-## 6. Phase 4：高温扩散与 ML-MD
+## 7. Phase 4：高温扩散与 ML-MD
 
 如果 300 K AIMD 中 Li 位移不足，不能直接判定材料“不导 Li”。可在结构稳定的前提下：
 
@@ -154,7 +183,7 @@ D_{\mathrm{Li}}=\frac{1}{6}\frac{d}{dt}\left\langle|r(t)-r(0)|^2\right\rangle
 
 ML-MD 必须用独立 DFT 构型检查能量、力和结构分布，不能只看训练误差。
 
-## 7. Phase 5：迁移机制和结构描述符
+## 8. Phase 5：迁移机制和结构描述符
 
 对于高 σ 候选，重点回答：
 
@@ -167,7 +196,7 @@ ML-MD 必须用独立 DFT 构型检查能量、力和结构分布，不能只看
 
 输出应包括：Li probability density、迁移路径、bottleneck size、配位数、局部结构与 MSD 的对应关系。
 
-## 8. 两种材料的比较框架
+## 9. 两种材料的比较框架
 
 | 维度 | Li₃YCl₆ | LiNbOCl₄ |
 |---|---|---|
@@ -177,7 +206,7 @@ ML-MD 必须用独立 DFT 构型检查能量、力和结构分布，不能只看
 | 首要风险 | 部分占位模型对扩散结果影响较大 | 部分占位和有序化可能改变迁移网络 |
 | 首要输出 | vacancy–MSD–σ 关系 | mixed-anion–bottleneck–σ 关系 |
 
-## 9. Go / No-Go 标准
+## 10. Go / No-Go 标准
 
 ### Go
 
@@ -195,7 +224,7 @@ ML-MD 必须用独立 DFT 构型检查能量、力和结构分布，不能只看
 - 温度外推没有多个温度点支持；
 - 原始 CIF 与照片重建模型差异过大。
 
-## 10. 最终交付物
+## 11. 最终交付物
 
 ```text
 01_structure_validation/
@@ -211,4 +240,3 @@ ML-MD 必须用独立 DFT 构型检查能量、力和结构分布，不能只看
 最终比较表至少包含：
 
 `structure_id | material | space_group | occupancy_model | E_hull | T | MD_time | D_Li | sigma_NE | sigma_collective | E_a | mechanism | confidence | source`
-
