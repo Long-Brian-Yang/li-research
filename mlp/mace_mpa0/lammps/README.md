@@ -32,6 +32,12 @@ checkpoint; use that generated filename in the LAMMPS input.
 Keep the conversion environment and the LAMMPS runtime compatible.  For GPU
 execution, build/run on the same NVIDIA architecture when possible.
 
+The repository also includes a wrapper:
+
+```bash
+bash mlp/mace_mpa0/lammps/convert_model.sh /path/to/mace-mpa-0-medium.model
+```
+
 ## 2. Build LAMMPS
 
 Use a recent LAMMPS build with ML-IAP, Python, MPI, and Kokkos enabled.  The
@@ -65,6 +71,11 @@ The converter rejects partial occupancies and validates that all requested
 elements are present.  It is a preparation utility, not a substitute for
 checking the ordered structure chemically.
 
+Repeat with the Direction 2 oxyhalide model using `--elements Li Nb O Cl`.
+The screenshot-reconstructed CIFs in this repository are intentionally
+rejected because they contain partial occupancies; replace them with explicit
+ordered CIFs first.
+
 ## 4. Run
 
 Edit the `read_data`, model path, and output paths in `in.minimize` and
@@ -78,6 +89,35 @@ Use `timestep 0.001` in `units metal` (1 fs).  Start with a short 300–500 K
 test, inspect energy/volume/structure, and only then extend the trajectory.
 The first conductivity estimate is exploratory and should be checked against
 DFT spot calculations and an independent potential.
+
+Use the material-specific inputs:
+
+```bash
+lmp -k on g 1 -sf kk -pk kokkos newton on neigh half \
+  -in mlp/mace_mpa0/lammps/in.minimize.LiNbOCl4
+lmp -k on g 1 -sf kk -pk kokkos newton on neigh half \
+  -in mlp/mace_mpa0/lammps/in.md.LiNbOCl4
+```
+
+For Li₃YCl₆, use `in.minimize` and `in.md`.  Change `read_data` and the model
+path if files are stored outside the working directory.
+
+## 5. Estimate Li self-diffusion
+
+After MD, the dump files contain unwrapped Li coordinates (`xu yu zu`).  The
+included analyzer fits the long-time slope of the Li self-MSD:
+
+```bash
+python mlp/mace_mpa0/lammps/msd_diffusion.py \
+  Li3YCl6_ordered_01_mace_md.lammpstrj \
+  --li-type 1 \
+  --output Li3YCl6_msd.txt
+```
+
+LAMMPS atom type 1 is Li when `prepare_data.py` is called with `Li` first.
+The resulting self-diffusion coefficient is an initial screening value; a
+collective conductivity calculation needs an additional charge-current or
+Einstein-Helfand analysis and finite-size/convergence checks.
 
 ## Limitations
 
