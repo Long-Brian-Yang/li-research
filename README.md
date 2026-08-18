@@ -4,5 +4,7 @@
 
 - [中文版本](papers_zh.md)
 - [日本語版](papers_ja.md)
+- [中文开发矩阵](development_matrix_zh.md)
+- [日本語開発マトリクス](development_matrix_ja.md)
 
 统一模板：**Title → Material → Keywords → 3 key sentences → DOI**
