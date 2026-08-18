@@ -14,6 +14,10 @@
 - [LiNbOCl₄ 照片重建版 CIF](structures/LiNbOCl4_photo_reconstructed.cif)
 - [Li₃YCl₆ 照片重建版 CIF](structures/Li3YCl6_photo_reconstructed.cif)
 - [结构文件说明](structures/README.md)
+
+## MACE-MPA-0
+
+- [MACE-MPA-0 配置与使用说明](mlp/mace_mpa0/README.md)
 - [日本語具体的開発計画](development_plan_ja.md)
 
 统一模板：**Title → Material → Keywords → 3 key sentences → DOI**
