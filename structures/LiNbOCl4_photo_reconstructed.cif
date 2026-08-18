@@ -1,0 +1,49 @@
+# -----------------------------------------------------------------------------
+# Provisional CIF reconstructed from user-provided screenshots.
+# This is NOT a substitute for the original deposited CIF.
+# Verify all occupancies, atom coordinates, ADPs, and chemical formula against
+# the original file before DFT or MD production runs.
+# -----------------------------------------------------------------------------
+data_LiNbOCl4_photo_reconstructed
+
+_audit_creation_method 'Reconstructed from screenshots; original CIF required for validation'
+_chemical_name_common 'LiNbOCl4'
+_chemical_formula_sum 'Li Nb O Cl4'
+
+_cell_length_a    3.996000
+_cell_length_b   12.565000
+_cell_length_c   12.765000
+_cell_angle_alpha 90.000000
+_cell_angle_beta  90.000000
+_cell_angle_gamma 90.000000
+_cell_volume    640.927335
+
+_space_group_name_H-M_alt 'C m c 21'
+_space_group_IT_number 36
+
+loop_
+  _space_group_symop_operation_xyz
+  'x, y, z'
+  '-x, -y, z+1/2'
+  'x, -y, z+1/2'
+  '-x, y, z'
+  'x+1/2, y+1/2, z'
+  '-x+1/2, -y+1/2, z+1/2'
+  'x+1/2, -y+1/2, z+1/2'
+  '-x+1/2, y+1/2, z'
+
+loop_
+  _atom_site_label
+  _atom_site_type_symbol
+  _atom_site_occupancy
+  _atom_site_fract_x
+  _atom_site_fract_y
+  _atom_site_fract_z
+  Li1  Li  0.9500  0.000000  0.103000  0.640000
+  Nb1  Nb  1.0000  0.000000  0.250000  0.303000
+  Cl1  Cl  1.0000  0.000000  0.114000  0.416000
+  Cl2  Cl  0.9500  0.000000  0.030000  0.212000
+  Cl3  Cl  0.9300  0.000000  0.376000  0.394000
+  Cl4  Cl  0.9300  0.000000  0.325000  0.122000
+  O1   O   1.0000  0.000000  0.254000  0.745000
+

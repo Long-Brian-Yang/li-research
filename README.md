@@ -7,6 +7,11 @@
 - [中文开发矩阵](development_matrix_zh.md)
 - [日本語開発マトリクス](development_matrix_ja.md)
 - [日本語具体的開発計画](development_plan_ja.md)
+
+## 结构文件
+
+- [LiNbOCl₄ 照片重建版 CIF](structures/LiNbOCl4_photo_reconstructed.cif)
+- [结构文件说明](structures/README.md)
 - [日本語具体的開発計画](development_plan_ja.md)
 
 统一模板：**Title → Material → Keywords → 3 key sentences → DOI**
