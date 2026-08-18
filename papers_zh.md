@@ -1,5 +1,57 @@
 # 卤化物固态电解质论文整理（中文）
 
+## 面向车辆用全固态电池的开发框架
+
+这组论文对应的研究问题已经从“了解卤化物 SSE”推进到“按照车辆用全固态电池要求反推候选材料”：在低成本、低毒、可获得的元素空间内，寻找可合成、足够柔顺且具有快速 Li⁺ 输运的新结构。
+
+### 量化开发目标
+
+| 目标特性 | 目标值 | 优先级 | 当前主要评价方法 |
+|---|---:|---|---|
+| Li⁺ 传导度 | >10 mS cm⁻¹ | 高 | 分子动力学（MD）：MSD → D<sub>Li</sub> → σ<sub>Li</sub> |
+| 成形性 / Young’s modulus | <30 GPa | 高 | 第一性原理弹性张量 C<sub>ij</sub> → E |
+| 合成可能性 | 尽可能低的 energy above hull | 高 | Energy above hull / 热力学筛选 |
+| 低成本 | rare-element-free 优先 | 中 | 元素组成、价格与供应链筛选 |
+| 耐氧化性 | >5 V vs. Li | 中 | 分解反应能 / 氧化电位 |
+| 化学稳定性 | 与正极无明显副反应 | 中 | 与正极的反应能 ΔE<sub>reaction</sub> |
+| 耐热性 | 150 °C 无劣化 | 低 | 热分解与动力学相关计算 |
+
+高优先级不是单一的“最高 conductivity”，而是：
+
+> **Fast Li transport + Mechanical compliance + Synthesizability**
+
+其中电化学窗口与实际正极兼容性必须分开评价：`electrochemical window ≠ actual cathode compatibility`。
+
+### 三个候选组成的定位
+
+| 候选 | 代表组成 / 结构 | 当前优势 | 当前瓶颈 | 开发定位 |
+|---|---|---|---|---|
+| Composition 1 | Li–Zr–Ta–Gd–Cl–O；约 Li₁.₅Zr₀.₃Ta₀.₆Gd₀.₁Cl₄.₈O₀.₆ | σ≈3 mS cm⁻¹；E≈12 GPa，机械目标已达成 | Ta/Gd 不利于成本；耐氧化性约 4.2 V；σ 未达标 | mechanical-compliance benchmark |
+| Composition 2 | Li–La–Zr–Ta–Cl–O–Br；P6₃/m-related framework | σ≈5 mS cm⁻¹，当前输运最好 | La/Ta 不符合 rare-element-free；仍低于 10 mS cm⁻¹ | high-conductivity framework benchmark |
+| Composition 3 | Li–Zr–Al–Cl–O；1.4Li₂O–0.75ZrCl₄–0.25AlCl₃ | 低成本、低毒、易获得；E≈1.41 GPa | σ≈2–2.5 mS cm⁻¹，需进一步提升 | industrially attractive baseline |
+
+### 目标材料的搜索逻辑
+
+1. **存在性筛选：** 先用 energy above hull 判断材料是否具有现实合成可能。
+2. **输运筛选：** 对通过热力学筛选的候选进行 MD，计算 MSD、D<sub>Li</sub> 与 σ<sub>Li</sub>，目标为 >10 mS cm⁻¹。
+3. **力学筛选：** 从 C<sub>ij</sub> 得到 Young’s modulus，目标为 E<30 GPa。
+4. **电化学筛选：** 同时检查 V<sub>ox</sub>>5 V 与候选材料/正极的 ΔE<sub>reaction</sub>。
+5. **多目标取舍：** 若无法同时满足全部指标，优先满足高优先级的传导度、机械柔顺性和可合成性。
+
+### 元素与阴离子筛选规则
+
+| 类别 | 当前规则 | 对候选空间的含义 |
+|---|---|---|
+| 优先元素 | Li、Zr、Al、O、Cl | 低成本、低毒、供应性较好，是 Composition 3 的基础化学空间 |
+| 少量可接受 | Zr、Nb；Ga/Ge 等 | 可作为少量结构/输运调控元素，而非主体元素 |
+| 成本不利 | Ta、Gd、La，以及 Mo–Hg 区间的许多过渡金属 | 性能有优势时可作 benchmark，但不宜作为产业化主体系 |
+| 使用需谨慎 | Zn | 可能降低耐酸性，并带来电子导电风险 |
+| 原则上避免 | In 及图示毒性元素 | 安全、环境与法规风险 |
+| 硫的限定使用 | SO₄²⁻ 可接受；S²⁻ 禁止 | 不是完全禁硫，而是排除 sulfide 型化学空间 |
+| 供应性排除 | 图示灰色区域 | 即使计算性能好，也因入手性不足而不进入候选集 |
+
+**当前核心研究问题：** 如何在 rare-element-free 的 Li–Zr–Al–O–Cl 等低成本化学空间中，找到可合成、足够柔软，同时 σ<sub>Li</sub>>10 mS cm⁻¹ 的新结构。
+
 ## 1. Asano et al., 2018 — Advanced Materials
 
 ### Type
@@ -18,6 +70,9 @@ Li₃YCl₆ · Li₃YBr₆ · Halide SSE · Chloride SSE · High-voltage cathode
 1. 报道了 Li₃YCl₆ 和 Li₃YBr₆ 两种高 Li⁺ 电导率卤化物固态电解质，室温电导率达到 >1 mS cm⁻¹。
 2. 材料具有较好的可变形性和氧化稳定性，冷压 pellet 中没有明显额外的 grain-boundary resistance。
 3. 证明卤化物 SSE 可以直接用于 4 V class cathode，奠定了现代 chloride solid electrolyte 研究的重要基础。
+
+### 与开发目标的关联
+证明高电压卤化物 SSE 的可行性，为 `>5 V` 氧化稳定性和 4 V 正极兼容性提供基准；同时提示仅有 mS cm⁻¹ 级传导度还不足以满足车辆目标。
 
 ### DOI
 [10.1002/adma.201803075](https://doi.org/10.1002/adma.201803075)
@@ -41,6 +96,9 @@ Li₃YbCl₆ · Zr substitution · Aliovalent doping · Li vacancy · Phase tran
 2. 通过 Zr⁴⁺ 对 Yb³⁺ 的异价取代，同时调控 Li vacancy 和晶体结构，并观察到 trigonal/orthorhombic structural evolution。
 3. 该工作说明 halide SSE 的离子输运不能只看空位浓度，还必须考虑 composition–structure–migration network 的关系，同时保持良好的高电压氧化稳定性。
 
+### 与开发目标的关联
+支持通过异价掺杂与相变调控迁移网络的路线，为 Composition 2 的结构工程提供方法依据；但仍需结合 cost、energy above hull 和 E<30 GPa 进行筛选。
+
 ### DOI
 [10.1021/acsmaterialslett.1c00142](https://doi.org/10.1021/acsmaterialslett.1c00142)
 
@@ -62,6 +120,9 @@ Li₂ZrCl₆ · Cost-effective · Humidity tolerance · Zr-based chloride · 4 V
 1. 提出了低成本 Li₂ZrCl₆ chloride SSE，室温 Li⁺ conductivity 约为 0.81 mS cm⁻¹。
 2. 与许多昂贵的 Y/In/Sc/rare-earth chloride 相比，Zr 基体系显著降低原料成本，同时保留良好的 deformability 和 4 V 正极兼容性。
 3. 在 5% relative humidity 环境暴露后没有观察到明显吸湿或 conductivity degradation，说明其低湿环境耐受性优于很多传统 chloride SSE。
+
+### 与开发目标的关联
+直接支持低成本 Zr chemistry、耐湿性与 4 V 正极兼容性目标，是 Li–Zr–Al–O–Cl 产业化路线的重要化学先例。
 
 ### DOI
 [10.1038/s41467-021-24697-2](https://doi.org/10.1038/s41467-021-24697-2)
@@ -85,6 +146,9 @@ LiNbOCl₄ · LiTaOCl₄ · Oxyhalide · Mixed-anion · Anion engineering · Sup
 2. 通过在 halide framework 中同时引入 O²⁻ 和 Cl⁻，利用 mixed-anion / anion engineering 重构 Li⁺ migration environment。
 3. 这项工作将 halide/oxyhalide SSE 的 conductivity 推进到 10⁻² S cm⁻¹ 级别，并在 bulk-type ASSB 中展示了优秀的高倍率性能。
 
+### 与开发目标的关联
+直接证明 mixed-anion / 新结构路线有机会跨越 `10 mS cm⁻¹` 门槛；后续需要补充成本、可合成性、力学模量和正极反应能评价。
+
 ### DOI
 [10.1002/anie.202217581](https://doi.org/10.1002/anie.202217581)
 
@@ -106,6 +170,9 @@ LaCl₃ · Ta doping · La vacancy · UCl₃-type framework · 1D-to-3D migratio
 1. 基于 UCl₃-type LaCl₃ framework，利用其宽大的 1D Li⁺ channels 开发了新的 rare-earth chloride SSE。
 2. Ta⁵⁺ doping 引入 La vacancies，将原本的一维 Li⁺ 通道连接成三维 migration network，优化材料达到 3.02 mS cm⁻¹ @ 30 °C、Eₐ = 0.197 eV。
 3. 材料与 Li metal 接触后形成自限性的 gradient passivation interphase，使其兼具快速 Li⁺ transport 与优秀的 Li-metal compatibility。
+
+### 与开发目标的关联
+为 P6₃/m-related high-conductivity framework 与 Li-metal 界面设计提供依据；同时 Ta/La 的资源与成本问题说明它更适合作为 transport benchmark，而不是最终产业化组成。
 
 ### DOI
 [10.1038/s41586-023-05899-8](https://doi.org/10.1038/s41586-023-05899-8)
@@ -129,6 +196,9 @@ Li₁.₇₅ZrCl₄.₇₅O₀.₅ · Oxychloride · Mixed-anion · Compressibil
 2. 材料在 300 MPa 下达到 94.2% relative density，同时估算原料成本仅约 $11.60 kg⁻¹，体现了 conductivity、compressibility 与 cost 的综合优化。
 3. 搭配 NMC811-based positive electrode 的实验室全固态电池实现超过 2000 cycles，说明实用 SSE 的评价不能只考虑最高 bulk conductivity。
 
+### 与开发目标的关联
+这是 rare-element-free Li–Zr–Al–O–Cl 方向的强 baseline：同时展示 mS cm⁻¹ 级传导、压实性、低成本和长循环，但需要把 σ 从约 2.42 mS cm⁻¹ 推向 >10 mS cm⁻¹。
+
 ### DOI
 [10.1038/s41467-023-39522-1](https://doi.org/10.1038/s41467-023-39522-1)
 
@@ -150,6 +220,9 @@ Cationic polarization factor · τ · hcp-T · hcp-O · ccp-M · Stacking struct
 1. 作者提出 cationic polarization factor τ，尝试从 chemical composition 出发预测 lithium halide SSE 的 stacking structure。
 2. 将典型结构归纳为 hcp-T、hcp-O 和 ccp-M 等类别，并建立 composition → structure → Li-ion transport 的关联。
 3. 该 descriptor 被进一步用于候选材料筛选和实验设计，使卤化物开发由传统 trial-and-error 向 descriptor-guided materials discovery 转变。
+
+### 与开发目标的关联
+为从 composition → structure → Li transport 的计算筛选提供工具，可用于在允许元素空间内优先搜索 P6₃/m、C2/m、Pnma 等高传导结构家族。
 
 ### DOI
 [10.1038/s41467-023-43886-9](https://doi.org/10.1038/s41467-023-43886-9)
@@ -173,6 +246,9 @@ Mechanical compliance · Li-Zr-Al-O-Cl · Young's modulus · Hardness · High-lo
 2. 最大特点是极高 mechanical compliance：Hardness 约 0.22 GPa、Young’s modulus 约 1.41 GPa，使电解质更容易跟随电极循环过程中的形变。
 3. 这项工作把固态电解质设计重点从单纯 conductivity 推进到 Li-ion transport + mechanics + interface + cost 的多目标优化。
 
+### 与开发目标的关联
+对应 Composition 3 的直接 baseline：极低 Young’s modulus（约 1.41 GPa）与低成本非常有吸引力，但必须通过结构/缺陷设计把传导度从 2–2.5 mS cm⁻¹ 提升到 >10 mS cm⁻¹。
+
 ### DOI
 [10.1038/s41467-025-68210-5](https://doi.org/10.1038/s41467-025-68210-5)
 
@@ -194,6 +270,9 @@ Halide SSE · Review · F/Cl/Br/I chemistry · Ionic conductivity · Activation 
 1. 这篇 Review 系统总结了 F/Cl/Br/I-based halide SSE 的组成、结构、合成及全固态电池应用。
 2. 作者不仅比较 ionic conductivity 和 activation energy，还重点讨论 electronic conductivity、electrochemical stability window、interfacial contact stability 等实际性能指标。
 3. 它提供了一个完整的 halide SSE 设计框架，即从 composition/structure → Li transport → stability/interface → practical ASSB performance 综合评价材料。
+
+### 与开发目标的关联
+提供完整的多目标评价框架，提醒开发流程必须同时纳入 σ、E、energy above hull、氧化电位、正极反应能、热稳定性、成本和界面，而不能只优化单一指标。
 
 ### DOI
 [10.1021/acsnano.4c15005](https://doi.org/10.1021/acsnano.4c15005)
