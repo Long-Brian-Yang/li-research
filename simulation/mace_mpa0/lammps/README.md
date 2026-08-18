@@ -90,6 +90,18 @@ LiNbOCl₄ candidate with the legacy `pair_style mace` executable.  Outputs are
 written under `relax_runs/<timestamp>/<case>/`.  Cell relaxation should only
 be enabled after checking these fixed-cell results.
 
+The validated second pass uses isotropic variable-volume relaxation, starting
+from the fixed-cell `.data` files:
+
+```bash
+qsub -g tgj-26ICP hpc/tsubame_26icp/relax_cell_ordered_gpu.sh
+```
+
+The cell shape is held fixed and only the volume is optimized with a
+steepest-descent preconditioner followed by conjugate gradients.  This avoids
+the LAMMPS restriction that prevents FIRE from being combined with
+`fix box/relax`.
+
 Edit the `read_data`, model path, and output paths in `in.minimize` and
 `in.md`.  For NVIDIA/Kokkos builds, a typical launch is:
 
