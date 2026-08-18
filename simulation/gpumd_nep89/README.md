@@ -21,6 +21,17 @@ The Li trajectories were unwrapped with the minimum-image convention in fraction
 
 The three Li₃YCl₆ replicas average approximately `1.43 × 10⁻⁶ cm² s⁻¹` over this fit window. The Nernst–Einstein conductivity is an upper-bound-like estimate because it neglects distinct-ion correlation terms; it is not the same as a directly measured or Green–Kubo conductivity.
 
+## GPUMDkit figures
+
+Official GPUMDkit was used to calculate and plot the directional MSD. Before calling GPUMDkit, the wrapped trajectories were unwrapped in fractional coordinates with the full triclinic cell; this correction is necessary because the Li₃YCl₆ cells are skewed.
+
+- [Li₃YCl₆_01 MSD](figures/Li3YCl6_01_msd_gpumdkit_unwrapped.png)
+- [Li₃YCl₆_02 MSD](figures/Li3YCl6_02_msd_gpumdkit_unwrapped.png)
+- [Li₃YCl₆_03 MSD](figures/Li3YCl6_03_msd_gpumdkit_unwrapped.png)
+- [LiNbOCl₄ MSD](figures/LiNbOCl4_msd_gpumdkit_unwrapped.png)
+- [Li₃YCl₆_01 temperature](figures/Li3YCl6_01_thermo.png)
+- [LiNbOCl₄ temperature](figures/LiNbOCl4_thermo.png)
+
 ## Interpretation and limitation
 
 The thermostat temperatures remain near 400 K and all four runs completed without a GPUMD error. However, the predicted Li mobility—especially for Li₃YCl₆—is high compared with the original room-temperature experimental benchmark. These values must therefore be treated as a NEP89 screening result, not as validated material properties. Before using them in a conclusion, compare NEP89 energies/forces and short trajectories against DFT or the MACE runs, and perform a block-size/fit-window uncertainty analysis.
