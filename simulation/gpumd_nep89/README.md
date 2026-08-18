@@ -32,6 +32,24 @@ Official GPUMDkit was used to calculate and plot the directional MSD. Before cal
 - [Li₃YCl₆_01 temperature](figures/Li3YCl6_01_thermo.png)
 - [LiNbOCl₄ temperature](figures/LiNbOCl4_thermo.png)
 
+## 300 K, 2×2×4 size-check run
+
+The Li₃YCl₆ models were expanded from the relaxed 2×2×2 cells to 2×2×4
+(480 atoms each) by repeating along `c`. A 1000-step smoke test completed
+for all three Li₃YCl₆ models and the LiNbOCl₄ 2×2×2 benchmark without a GPUMD
+runtime error. The production job is TSUBAME job `8439212`:
+
+- 300 K Langevin NVT
+- 1 fs timestep
+- 100 ps equilibration
+- 1 ns production
+- 1000-step trajectory/thermo output interval
+
+The 2×2×4 cells are repeated relaxed candidates, not independently relaxed
+2×2×4 structures. The production trajectory must therefore be checked for
+energy, temperature, minimum distances, MSD linearity, and block uncertainty
+before comparison with experiment.
+
 ## Interpretation and limitation
 
-The thermostat temperatures remain near 400 K and all four runs completed without a GPUMD error. However, the predicted Li mobility—especially for Li₃YCl₆—is high compared with the original room-temperature experimental benchmark. These values must therefore be treated as a NEP89 screening result, not as validated material properties. Before using them in a conclusion, compare NEP89 energies/forces and short trajectories against DFT or the MACE runs, and perform a block-size/fit-window uncertainty analysis.
+The earlier 400 K thermostat temperatures remained stable and all four runs completed without a GPUMD error. However, the predicted Li mobility—especially for Li₃YCl₆—is high compared with the original room-temperature experimental benchmark. These values must therefore be treated as a NEP89 screening result, not as validated material properties. Before using them in a conclusion, compare NEP89 energies/forces and short trajectories against DFT or the MACE runs, and perform a block-size/fit-window uncertainty analysis.

@@ -1,0 +1,32 @@
+{
+  "source_relaxed_2x2x2": "/tmp/li_research_relaxed/Li3YCl6_02.xyz",
+  "repeat_from_relaxed_2x2x2": [
+    1,
+    1,
+    2
+  ],
+  "supercell": [
+    2,
+    2,
+    4
+  ],
+  "atom_count": 480,
+  "formula_counts": {
+    "Li": 144,
+    "Y": 48,
+    "Cl": 288
+  },
+  "cell_lengths_angstrom": [
+    22.645081839545973,
+    22.645081839545938,
+    24.438332908982318
+  ],
+  "cell_angles_degrees": [
+    90.0,
+    90.0,
+    119.99999999999999
+  ],
+  "minimum_distance_angstrom": 2.4595280431477944,
+  "finite_coordinates": true,
+  "status": "validated_repeated_relaxed_candidate; 2x2x4 relaxation still recommended"
+}
