@@ -21,7 +21,7 @@
 - [结构数据说明](structures/README.md)
 - [MACE-MPA-0 总说明](simulation/mace_mpa0/README.md)
 - [MACE + LAMMPS 说明](simulation/mace_mpa0/lammps/README.md)
-- [TSUBAME 26ICP job](hpc/tsubame_26icp/job_lammps.sh)
+- [TSUBAME 26ICP job](hpc/tsubame_26icp/job_lammps.sh) · [GPU smoke test](hpc/tsubame_26icp/smoke_test.sh)
 
 ## Current scope
 

@@ -130,13 +130,14 @@ Einstein-Helfand analysis and finite-size/convergence checks.
 
 ## TSUBAME execution (26ICP)
 
-The intended test environment is the TSUBAME project/group **26ICP**.  It is
+The intended test environment is the TSUBAME project/group **tgj-26ICP**
+(project label: 26ICP).  It is
 separate from the original Ishikawa account and filesystem; do not copy the
 old `/gs/fs/tga-ishikawalab/...` paths into these inputs.
 
 Copy this directory and the ordered structures into a 26ICP working directory,
 load the MACE-compatible Python environment and the Kokkos-enabled LAMMPS
-module provided by your group, then submit the job body with `qsub -g 26ICP`
+module provided by your group, then submit the job body with `qsub -g tgj-26ICP`
 plus the queue/resource options required for your installation.  The job body
 itself is:
 
