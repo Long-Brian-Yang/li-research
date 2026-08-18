@@ -7,6 +7,7 @@
 - [中文开发矩阵](development_matrix_zh.md)
 - [日本語開発マトリクス](development_matrix_ja.md)
 - [日本語具体的開発計画](development_plan_ja.md)
+- [方向 2 研究方案](direction2_plan_zh.md)
 
 ## 结构文件
 
