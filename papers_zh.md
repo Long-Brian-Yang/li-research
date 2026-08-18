@@ -52,6 +52,17 @@
 
 **当前核心研究问题：** 如何在 rare-element-free 的 Li–Zr–Al–O–Cl 等低成本化学空间中，找到可合成、足够柔软，同时 σ<sub>Li</sub>>10 mS cm⁻¹ 的新结构。
 
+### 三条开发方向与论文归类
+
+| 方向 | 具体含义 | 主要论文 | 在项目中的作用 |
+|---|---|---|---|
+| **方向 1：机械柔顺性** | Young’s modulus <30 GPa、可压实、循环形变适配 | Hu 2023、Hu 2026；Asano 2018 | 建立力学 benchmark，并约束高传导候选不能过硬 |
+| **方向 2：高传导结构** | P6₃/m、空位/相变、mixed-anion、3D migration network | Asano 2018、Kim 2021、Tanaka 2023、Yin 2023、Li 2024 | 当前主线：把 σ 从 2–5 mS cm⁻¹ 推向 >10 mS cm⁻¹ |
+| **方向 3：低成本化学空间** | rare-element-free 的 Li–Zr–Al–O–Cl、低毒、易获得 | Wang 2021、Hu 2023、Hu 2026 | 约束产业化元素空间和成本 |
+| **综合框架** | 兼顾传导、力学、稳定性、成本和实用 ASSB | Li & Du 2025（Review） | 提供三条方向的统一评价方法 |
+
+**当前主线判断：** 这 9 篇论文以**方向 2**为 transport/framework 主线，同时用方向 1 的机械约束和方向 3 的产业化约束筛选最终候选。
+
 ## 1. Asano et al., 2018 — Advanced Materials
 
 ### Type
