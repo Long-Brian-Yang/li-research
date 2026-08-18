@@ -5,14 +5,13 @@ atom_style atomic
 boundary p p p
 newton on
 atom_modify map yes
-read_data ${root}/LiNbOCl4_provisional.data
+read_data ${root}/LiNbOCl4_ordered.data
 mass 1 6.94
 mass 2 92.906
 mass 3 15.999
 mass 4 35.45
 pair_style mace no_domain_decomposition
 pair_coeff * * ${model} Li Nb O Cl
-delete_atoms overlap 0.8 all all
 timestep 0.0001
 thermo 100
 thermo_style custom step temp pe ke etotal press vol
@@ -20,6 +19,6 @@ min_style cg
 minimize 1.0e-4 1.0e-6 200 2000
 velocity all create 300.0 84217 mom yes rot no dist gaussian
 fix nvt all nvt temp 300.0 300.0 0.1
-dump traj all custom 100 LiNbOCl4_provisional.lammpstrj id type xu yu zu vx vy vz
+dump traj all custom 100 LiNbOCl4_ordered.lammpstrj id type xu yu zu vx vy vz
 run 200
-write_data LiNbOCl4_provisional_final.data
+write_data LiNbOCl4_ordered_final.data

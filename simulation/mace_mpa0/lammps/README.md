@@ -165,6 +165,7 @@ ERROR: Unrecognized pair style 'mace'
 
 Thus this site module can run ordinary LAMMPS, but cannot yet run the MACE
 pair style or MACE ML-IAP backend. A real MACE trajectory requires a custom
-LAMMPS build with the MACE pair style, or ML-IAP + Python + Kokkos. The
-provisional data files and converted legacy model were prepared on the group
-disk, but no MACE trajectory is claimed until that custom executable exists.
+LAMMPS build with the MACE pair style, or ML-IAP + Python + Kokkos. The custom
+legacy executable was subsequently built, but the first provisional run was
+invalid because overlap deletion changed the Li₃YCl₆ composition. That run
+must not be used; the current workflow requires explicit ordered data files.

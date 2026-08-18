@@ -57,7 +57,7 @@ Before trusting a trajectory:
 
 The reproducible batch script is
 `hpc/tsubame_26icp/build_and_test_mace.sh`. It builds the MACE-enabled LAMMPS
-executable, loads the converted checkpoint, minimizes the two provisional
+executable, loads the converted checkpoint, minimizes two explicit ordered
 structures, and runs a short 200-step NVT trajectory for each system. Submit it
 from the group-disk workspace with:
 
@@ -65,8 +65,9 @@ from the group-disk workspace with:
 qsub -g tgj-26ICP hpc/tsubame_26icp/build_and_test_mace.sh
 ```
 
-The successful test used job `8437131` and produced both LAMMPS trajectories and
-final data files. These are software-pipeline checks only: the input CIFs were
-reconstructed from screenshots and contain partial occupancies, so the output
-must not be used as a conductivity result until explicit ordered CIFs are
-provided and validated.
+The earlier job `8437131` used screenshot-reconstructed provisional data and must
+be discarded: the overlap-removal workaround changed the Li₃YCl₆ composition.
+The current script refuses to run unless `Li3YCl6_ordered.data` and
+`LiNbOCl4_ordered.data` are present. These ordered inputs must be generated from
+the original CIFs (or explicitly documented order/disorder models), not by
+deleting atoms from the provisional files.

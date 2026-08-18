@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Build the ACEsuit legacy ML-MACE LAMMPS fork and run the provisional test.
+# Build the ACEsuit legacy ML-MACE LAMMPS fork and run an ordered-structure test.
 # Submit from the group-disk workspace with:
 #   qsub -g tgj-26ICP build_and_test_mace.sh
 #$ -cwd
@@ -40,6 +40,13 @@ if [[ ! -x "$LAMMPS_BIN" ]]; then
 fi
 
 export LD_LIBRARY_PATH="$VENV/lib64/python3.9/site-packages/torch/lib:${LD_LIBRARY_PATH:-}"
+for data in Li3YCl6_ordered.data LiNbOCl4_ordered.data; do
+  if [[ ! -s "$ROOT/$data" ]]; then
+    echo "ERROR: missing ordered input $ROOT/$data" >&2
+    echo "Refusing to run on provisional/partial-occupancy structures." >&2
+    exit 2
+  fi
+done
 for system in Li3YCl6 LiNbOCl4; do
   "$LAMMPS_BIN" -var root "$ROOT" -var model "$ROOT/mace-mpa-0-medium.model-lammps.pt" \
     -in "$ROOT/in.test.$system"
