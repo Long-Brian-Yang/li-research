@@ -10,8 +10,8 @@ The current computational scope is deliberately narrow:
 - **LiNbOCl₄** — the mixed-anion oxyhalide benchmark reported by Tanaka *et al.*
 
 The immediate objective is to establish a reproducible structure → relaxation →
-MD workflow before expanding the chemistry or beginning Direction 3 materials
-development.
+MD workflow for these two reference systems. New chemistry is out of scope until
+the Direction 2 reproduction and uncertainty gates are passed.
 
 ## Current status
 
@@ -82,13 +82,12 @@ paper notes, keywords, DOI links, and comparison tables are preserved here:
 These notes provide the experimental benchmarks and motivation for Direction 2;
 they are not the computational workflow itself.
 
-## Direction 3
+## Direction 2 research plan
 
-Direction 3 (low-cost Li–Zr–Al–O–Cl candidate discovery) is documented for
-future use, but it is not the primary scope of the current simulation pipeline.
-Its development documents remain in [`docs/development/`](docs/development/)
-and should be treated as a separate follow-up track after Direction 2 has been
-validated.
+The complete English research plan, including structure policy, supercell
+choices, MACE/NEP89 workflow, 300 K production protocol, MSD and conductivity
+definitions, uncertainty analysis, and reproduction gates is in
+[`docs/development/direction2_plan_en.md`](docs/development/direction2_plan_en.md).
 
 ## Reproducibility notes
 
