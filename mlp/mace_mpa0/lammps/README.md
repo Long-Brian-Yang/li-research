@@ -127,3 +127,26 @@ Einstein-Helfand analysis and finite-size/convergence checks.
   halide/oxyhalide configuration.  Check forces, cell stability, and chemical
   plausibility before interpreting Li diffusion.
 - Partial-occupancy CIFs must never be sent directly to LAMMPS.
+
+## TSUBAME execution (26ICP)
+
+The intended test environment is the TSUBAME project/group **26ICP**.  It is
+separate from the original Ishikawa account and filesystem; do not copy the
+old `/gs/fs/tga-ishikawalab/...` paths into these inputs.
+
+Copy this directory and the ordered structures into a 26ICP working directory,
+load the MACE-compatible Python environment and the Kokkos-enabled LAMMPS
+module provided by your group, then submit the job body with the TSUBAME queue
+and resource options required for your installation.  The job body itself is:
+
+```bash
+bash mlp/mace_mpa0/lammps/job_tsubame_26icp.sh in.md
+# or
+bash mlp/mace_mpa0/lammps/job_tsubame_26icp.sh in.md.LiNbOCl4
+```
+
+The script prints the host, project label, LAMMPS executable, and input file
+before starting.  Confirm that the scheduler allocation is charged to 26ICP
+and that `lmp -h` reports ML-IAP and Kokkos before submitting a long run.  The
+exact `pjsub` resource-group/queue flags are intentionally left to the local
+TSUBAME configuration rather than hard-coding Ishikawa-specific settings.
