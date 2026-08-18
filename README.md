@@ -1,28 +1,98 @@
-# Li Research — Halide Solid Electrolytes
+# Li Research: Direction 2 Halide Electrolytes
 
-卤化物/卤氧化物固态电解质的文献整理、方向 2 复现和方向 3 候选材料开发。
+This repository contains the working materials for **Direction 2**: reproducing
+and comparing fast-ion-conducting halide and oxyhalide solid electrolytes with
+MACE-MPA-0 and LAMMPS.
 
-## Project map
+The current computational scope is deliberately narrow:
 
-| Area | Contents |
-|---|---|
-| [`docs/literature/`](docs/literature/) | 中文/日语论文笔记、关键词、DOI 与横向表格 |
-| [`docs/development/`](docs/development/) | 开发目标、方向 2 方案、方向 3 方案与筛选矩阵 |
-| [`structures/`](structures/) | 参考结构、照片重建 CIF、后续有序模型入口 |
-| [`simulation/`](simulation/) | MACE-MPA-0、LAMMPS 输入、数据转换和扩散分析 |
-| [`hpc/tsubame_26icp/`](hpc/tsubame_26icp/) | TSUBAME 26ICP 作业入口 |
+- **Li₃YCl₆** — the high-voltage halide benchmark reported by Asano *et al.*
+- **LiNbOCl₄** — the mixed-anion oxyhalide benchmark reported by Tanaka *et al.*
 
-## Start here
+The immediate objective is to establish a reproducible structure → relaxation →
+MD workflow before expanding the chemistry or beginning Direction 3 materials
+development.
 
-- [中文论文笔记](docs/literature/papers_zh.md) · [日本語論文ノート](docs/literature/papers_ja.md)
-- [中文开发矩阵](docs/development/development_matrix_zh.md) · [日本語開発マトリクス](docs/development/development_matrix_ja.md)
-- [方向 2 研究方案](docs/development/direction2_plan_zh.md)
-- [方向 3 日本語開発計画](docs/development/development_plan_ja.md)
-- [结构数据说明](structures/README.md)
-- [MACE-MPA-0 总说明](simulation/mace_mpa0/README.md)
-- [MACE + LAMMPS 说明](simulation/mace_mpa0/lammps/README.md)
-- [TSUBAME 26ICP job](hpc/tsubame_26icp/job_lammps.sh) · [GPU smoke test](hpc/tsubame_26icp/smoke_test.sh)
+## Current status
 
-## Current scope
+1. Screenshot-derived CIF information has been converted into explicit ordered
+   candidates. The original CIFs contain partial occupancies and are not sent
+   directly to MD.
+2. Three ordered Li₃YCl₆ occupancy models and one ordered LiNbOCl₄ model have
+   been converted to LAMMPS data files.
+3. MACE-MPA-0 GPU ionic relaxation has been tested on TSUBAME 26ICP.
+4. Isotropic variable-volume relaxation is being run from the fixed-cell
+   relaxed structures. Cell shape is kept fixed in this first variable-cell
+   pass.
 
-方向 2 目前优先复现 Li₃YCl₆ 和 LiNbOCl₄；方向 3 以 Li–Zr–Al–O–Cl 低成本体系为开发基线。照片重建 CIF 仅用于结构核对，不能直接用于生产 DFT/MD；必须先建立明确的有序模型。
+Relaxed structures from TSUBAME are stored under `relax_runs/<timestamp>/`.
+These results are screening data, not yet validated transport values: the next
+step is short MD, followed by force and structure checks against DFT or
+experiment.
+
+## Reproducible workflow
+
+```text
+ordered CIF candidates
+        ↓
+LAMMPS data validation
+        ↓
+MACE-MPA-0 ionic relaxation (fixed cell)
+        ↓
+MACE-MPA-0 isotropic volume relaxation
+        ↓
+short NVT MD on TSUBAME GPU
+        ↓
+Li MSD / diffusion screening and structural sanity checks
+```
+
+The main entry points are:
+
+- [`structures/`](structures/) — explicit ordered CIF and LAMMPS data files;
+- [`simulation/mace_mpa0/`](simulation/mace_mpa0/) — model, conversion,
+  relaxation, MD, and diffusion-analysis utilities;
+- [`simulation/mace_mpa0/lammps/README.md`](simulation/mace_mpa0/lammps/README.md)
+  — MACE + LAMMPS input conventions;
+- [`hpc/tsubame_26icp/relax_ordered_gpu.sh`](hpc/tsubame_26icp/relax_ordered_gpu.sh)
+  — fixed-cell ionic relaxation;
+- [`hpc/tsubame_26icp/relax_cell_ordered_gpu.sh`](hpc/tsubame_26icp/relax_cell_ordered_gpu.sh)
+  — isotropic variable-volume relaxation.
+
+## Structure policy
+
+The crystallographic CIFs reconstructed from screenshots represent average
+structures with disorder and partial occupancies. Expanding every listed site
+creates an incorrect composition, especially for Li₃YCl₆. Therefore:
+
+- raw/screenshot CIFs are retained for reference only;
+- every MD input must use an explicitly ordered model;
+- element counts and minimum interatomic distances must be validated before
+  relaxation;
+- different Li/Y orderings are treated as separate candidates, not as one
+  definitive crystal structure.
+
+## Literature notes
+
+The literature section is intentionally bilingual. The Chinese and Japanese
+paper notes, keywords, DOI links, and comparison tables are preserved here:
+
+- [Chinese paper notes](docs/literature/papers_zh.md)
+- [日本語論文ノート](docs/literature/papers_ja.md)
+
+These notes provide the experimental benchmarks and motivation for Direction 2;
+they are not the computational workflow itself.
+
+## Direction 3
+
+Direction 3 (low-cost Li–Zr–Al–O–Cl candidate discovery) is documented for
+future use, but it is not the primary scope of the current simulation pipeline.
+Its development documents remain in [`docs/development/`](docs/development/)
+and should be treated as a separate follow-up track after Direction 2 has been
+validated.
+
+## Reproducibility notes
+
+Record the MACE checkpoint, LAMMPS executable, GPU model, input data filename,
+supercell, temperature, timestep, and trajectory length for every MD run.
+MACE foundation-model results are exploratory until checked against DFT forces,
+experimental structure/transport data, and an independent potential.
