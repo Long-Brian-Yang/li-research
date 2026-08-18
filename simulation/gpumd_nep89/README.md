@@ -1,55 +1,129 @@
-# NEP89 + GPUMD: 400 K direction-2 run
+# GPUMD + NEP89 Direction 2 results
 
-Job `8439066` completed on TSUBAME with GPUMD 5.0 and the NEP89 potential. Each structure used a 1 fs timestep, 10 ps NVT equilibration, and 100 ps production at 400 K. Production coordinates were written every 1000 steps (100 frames per structure).
+This directory contains the GPUMD/NEP89 screening runs for Direction 2:
+Li₃YCl₆ and LiNbOCl₄. The 400 K screening and the new 300 K long run are kept
+separate so that temperature and supercell effects are not mixed.
 
-Remote output:
+## Folder layout
 
 ```text
-/gs/fs/tgj-26ICP/uf03782/li-research-smoke/gpumd_nep89_smoke/runs_400K_10ps_eq_100ps_prod_20260818_225849/
+simulation/gpumd_nep89/
+├── figures/
+│   ├── 400K_baseline/       # original 400 K figures
+│   └── 300K_2x2x4/          # new 300 K, 1 ns analysis figures
+├── results/
+│   └── 300K_2x2x4/
+│       ├── summary_300K_2x2x4.csv
+│       ├── *_msd_300K.csv
+│       └── job_8439212/      # local raw trajectory archive; not committed
+└── analyze_300K_2x2x4.py
 ```
 
-## Preliminary Li MSD analysis
+The raw 300 K trajectories are approximately 192 MB and remain in the local
+results archive/TSUBAME output rather than being committed to GitHub. The
+derived CSV files, figures, script, and interpretation are version-controlled.
 
-The Li trajectories were unwrapped with the minimum-image convention in fractional coordinates and fitted over the 40--100 ps interval. The diffusion estimate is the 3D Einstein estimate, `D = slope(MSD)/(6)`.
+## 1. Completed production run
 
-| Structure | Li atoms | MSD at 100 ps (Å²) | D (cm² s⁻¹) | Nernst–Einstein σ at 400 K (mS cm⁻¹) |
-|---|---:|---:|---:|---:|
-| Li₃YCl₆_01 | 72 | 13.55 | 2.07 × 10⁻⁶ | 125.8 |
-| Li₃YCl₆_02 | 72 | 7.10 | 1.08 × 10⁻⁶ | 66.4 |
-| Li₃YCl₆_03 | 72 | 11.13 | 1.15 × 10⁻⁶ | 71.0 |
-| LiNbOCl₄ | 32 | 6.92 | 7.42 × 10⁻⁷ | 19.2 |
+TSUBAME job `8439212` completed with `exit_status=0` and `failed=0`. The job
+used GPUMD 5.0 and NEP89, one GPU, 1 fs timestep, 300 K Langevin NVT, 100 ps
+equilibration, and 1 ns production. Coordinates and thermo data were written
+every 1 ps.
 
-The three Li₃YCl₆ replicas average approximately `1.43 × 10⁻⁶ cm² s⁻¹` over this fit window. The Nernst–Einstein conductivity is an upper-bound-like estimate because it neglects distinct-ion correlation terms; it is not the same as a directly measured or Green–Kubo conductivity.
+| System | Cell | Atoms | Replicas |
+|---|---:|---:|---:|
+| Li₃YCl₆ | 2×2×4 | 480 | 3 |
+| LiNbOCl₄ | 2×2×2 | 128 | 1 |
 
-## GPUMDkit figures
+Li₃YCl₆ 2×2×4 cells were made by repeating the previously relaxed 2×2×2
+candidates along (c). They passed the 1,000-step smoke test, but were not
+independently full-relaxed after the repeat operation.
 
-Official GPUMDkit was used to calculate and plot the directional MSD. Before calling GPUMDkit, the wrapped trajectories were unwrapped in fractional coordinates with the full triclinic cell; this correction is necessary because the Li₃YCl₆ cells are skewed.
+## 2. New 300 K transport analysis
 
-- [Li₃YCl₆_01 MSD](figures/Li3YCl6_01_msd_gpumdkit_unwrapped.png)
-- [Li₃YCl₆_02 MSD](figures/Li3YCl6_02_msd_gpumdkit_unwrapped.png)
-- [Li₃YCl₆_03 MSD](figures/Li3YCl6_03_msd_gpumdkit_unwrapped.png)
-- [LiNbOCl₄ MSD](figures/LiNbOCl4_msd_gpumdkit_unwrapped.png)
-- [Li₃YCl₆_01 temperature](figures/Li3YCl6_01_thermo.png)
-- [LiNbOCl₄ temperature](figures/LiNbOCl4_thermo.png)
+The analysis script unwraps positions in fractional coordinates using the full
+triclinic cell, calculates Li-only multi-origin MSD, fits the 100–450 ps lag
+window, and reports a Nernst–Einstein estimate. The fit window, (R^2), block
+standard deviation, and mean temperature are stored in
+[`summary_300K_2x2x4.csv`](results/300K_2x2x4/summary_300K_2x2x4.csv).
 
-## 300 K, 2×2×4 size-check run
+| Material / replica | Mean T (K) | (D_{Li}) (cm² s⁻¹) | (R^2) | (sigma_{NE}) (mS cm⁻¹) | block σ(D) (cm² s⁻¹) |
+|---|---:|---:|---:|---:|---:|
+| Li₃YCl₆_01 | 298.71 | 3.04×10⁻⁸ | 0.998 | 0.0246 | 1.62×10⁻⁹ |
+| Li₃YCl₆_02 | 298.67 | 2.52×10⁻⁷ | 0.998 | 0.2070 | 2.79×10⁻⁸ |
+| Li₃YCl₆_03 | 300.77 | 2.39×10⁻⁸ | 0.974 | 0.0196 | 1.09×10⁻⁸ |
+| LiNbOCl₄ | 298.84 | 5.35×10⁻⁸ | 0.986 | 0.0185 | 1.23×10⁻⁸ |
 
-The Li₃YCl₆ models were expanded from the relaxed 2×2×2 cells to 2×2×4
-(480 atoms each) by repeating along `c`. A 1000-step smoke test completed
-for all three Li₃YCl₆ models and the LiNbOCl₄ 2×2×2 benchmark without a GPUMD
-runtime error. The production job is TSUBAME job `8439212`:
+The Li₃YCl₆ replica mean is
+(D=(1.02\pm1.30)\times10^{-7}) cm² s⁻¹ and
+(sigma_{NE}=0.084\pm0.107) mS cm⁻¹ (sample standard deviation across
+three replicas). The large relative replica spread means that the mean is a
+screening result, not a converged material constant. LiNbOCl₄ has only one
+replica and therefore has no replica-based error bar.
 
-- 300 K Langevin NVT
-- 1 fs timestep
-- 100 ps equilibration
-- 1 ns production
-- 1000-step trajectory/thermo output interval
+### Scientific interpretation
 
-The 2×2×4 cells are repeated relaxed candidates, not independently relaxed
-2×2×4 structures. The production trajectory must therefore be checked for
-energy, temperature, minimum distances, MSD linearity, and block uncertainty
-before comparison with experiment.
+At 300 K, NEP89 predicts much lower mobility than the earlier 400 K screening:
 
-## Interpretation and limitation
+- Li₃YCl₆: approximately (0.02–0.21) mS cm⁻¹ by (sigma_{NE}), versus
+  the reported room-temperature experimental benchmark above 1 mS cm⁻¹.
+- LiNbOCl₄: approximately (0.019) mS cm⁻¹ by (sigma_{NE}), versus the
+  reported experimental value near 10.4 mS cm⁻¹.
 
-The earlier 400 K thermostat temperatures remained stable and all four runs completed without a GPUMD error. However, the predicted Li mobility—especially for Li₃YCl₆—is high compared with the original room-temperature experimental benchmark. These values must therefore be treated as a NEP89 screening result, not as validated material properties. Before using them in a conclusion, compare NEP89 energies/forces and short trajectories against DFT or the MACE runs, and perform a block-size/fit-window uncertainty analysis.
+This is not evidence that the materials are experimentally non-conducting. The
+calculation uses one explicit ordered crystal, a generic NEP89 potential, and
+tracer/Nernst–Einstein transport; the experiments use disordered pressed
+powders and EIS total conductivity. The discrepancy is a diagnostic signal
+that the model, ordering, potential, and finite 1 ns sampling must be checked
+before any quantitative claim.
+
+## 3. Figures
+
+### New 300 K figures
+
+- [Total Li MSD](figures/300K_2x2x4/msd_total_300K_2x2x4.png)
+- [Directional Li MSD](figures/300K_2x2x4/msd_directional_300K_2x2x4.png)
+- [Thermostat temperature](figures/300K_2x2x4/temperature_300K_2x2x4.png)
+- [Transport summary](figures/300K_2x2x4/transport_summary_300K_2x2x4.png)
+
+SVG versions of the four figures are stored beside the PNG files for editable
+text and vector export.
+
+### Original 400 K baseline figures
+
+The original plots are preserved without overwriting them in
+[`figures/400K_baseline/`](figures/400K_baseline/). They correspond to the
+short 400 K job `8439066` (10 ps equilibration + 100 ps production), not the
+new 300 K 2×2×4 run.
+
+## 4. Method and limitations
+
+For each trajectory, Li positions are unwrapped in fractional coordinates with
+the complete triclinic cell. The three-dimensional Einstein estimate is
+
+\[
+D_{Li}=\frac{1}{6}\frac{d\,\mathrm{MSD}}{dt}.
+\]
+
+The reported conductivity is
+
+\[
+\sigma_{NE}=\frac{n_{Li}q^2D_{Li}}{k_BT},
+\]
+
+which ignores distinct Li–Li correlations. It is not identical to a collective
+Green–Kubo conductivity or to pressed-powder EIS. The current analysis also
+does not yet provide a Haven ratio, DFT force validation, or an independently
+relaxed 2×2×4 cell.
+
+## 5. Next checks
+
+1. Repeat Li₃YCl₆ with at least one additional potential or DFT short
+   trajectory to test NEP89 forces and barriers.
+2. Extend Li₃YCl₆ to 3–5 ns if block uncertainty remains large.
+3. Add two LiNbOCl₄ replicas before assigning an uncertainty interval.
+4. Compare 2×2×4 and 2×2×2 using identical analysis and temperature.
+5. Add collective charge-current/Green–Kubo conductivity if supported by the
+   available trajectory workflow.
+
+The analysis script is [`analyze_300K_2x2x4.py`](analyze_300K_2x2x4.py).
