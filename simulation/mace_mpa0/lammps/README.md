@@ -35,7 +35,7 @@ execution, build/run on the same NVIDIA architecture when possible.
 The repository also includes a wrapper:
 
 ```bash
-bash mlp/mace_mpa0/lammps/convert_model.sh /path/to/mace-mpa-0-medium.model
+bash simulation/mace_mpa0/lammps/convert_model.sh /path/to/mace-mpa-0-medium.model
 ```
 
 ## 2. Build LAMMPS
@@ -61,7 +61,7 @@ LAMMPS data file:
 ## 3. Prepare a LAMMPS data file
 
 ```bash
-python mlp/mace_mpa0/lammps/prepare_data.py \
+python simulation/mace_mpa0/lammps/prepare_data.py \
   runs/mace_mpa0/Li3YCl6_ordered_01_relaxed.cif \
   --output runs/mace_mpa0/Li3YCl6_ordered_01.data \
   --elements Li Y Cl
@@ -94,9 +94,9 @@ Use the material-specific inputs:
 
 ```bash
 lmp -k on g 1 -sf kk -pk kokkos newton on neigh half \
-  -in mlp/mace_mpa0/lammps/in.minimize.LiNbOCl4
+  -in simulation/mace_mpa0/lammps/in.minimize.LiNbOCl4
 lmp -k on g 1 -sf kk -pk kokkos newton on neigh half \
-  -in mlp/mace_mpa0/lammps/in.md.LiNbOCl4
+  -in simulation/mace_mpa0/lammps/in.md.LiNbOCl4
 ```
 
 For Li₃YCl₆, use `in.minimize` and `in.md`.  Change `read_data` and the model
@@ -108,7 +108,7 @@ After MD, the dump files contain unwrapped Li coordinates (`xu yu zu`).  The
 included analyzer fits the long-time slope of the Li self-MSD:
 
 ```bash
-python mlp/mace_mpa0/lammps/msd_diffusion.py \
+python simulation/mace_mpa0/lammps/msd_diffusion.py \
   Li3YCl6_ordered_01_mace_md.lammpstrj \
   --li-type 1 \
   --output Li3YCl6_msd.txt
@@ -141,9 +141,9 @@ plus the queue/resource options required for your installation.  The job body
 itself is:
 
 ```bash
-bash mlp/mace_mpa0/lammps/job_tsubame_26icp.sh in.md
+bash hpc/tsubame_26icp/job_lammps.sh in.md
 # or
-bash mlp/mace_mpa0/lammps/job_tsubame_26icp.sh in.md.LiNbOCl4
+bash hpc/tsubame_26icp/job_lammps.sh in.md.LiNbOCl4
 ```
 
 The script prints the host, project label, LAMMPS executable, and input file

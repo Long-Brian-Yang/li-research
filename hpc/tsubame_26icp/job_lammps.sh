@@ -5,7 +5,7 @@
 set -euo pipefail
 
 LAMMPS_BIN="${LAMMPS_BIN:-lmp}"
-INPUT="${1:?usage: job_tsubame_26icp.sh in.md or in.md.LiNbOCl4}"
+INPUT="${1:?usage: job_lammps.sh in.md or in.md.LiNbOCl4}"
 
 echo "project_group=26ICP"
 echo "host=$(hostname)"

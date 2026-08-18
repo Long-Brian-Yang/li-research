@@ -1,0 +1,20 @@
+# Local planning/session state
+.planning/
+
+# Large model and simulation artifacts
+*.model
+*.pt
+*.lammpstrj
+*.restart.*
+*.dump
+*.data
+runs/
+
+# Python cache and local environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# OS/editor files
+.DS_Store

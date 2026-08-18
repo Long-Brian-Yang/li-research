@@ -21,7 +21,7 @@ The current workspace does not yet have `mace-torch` installed. The scripts ther
 ## Relaxation
 
 ```bash
-python mlp/mace_mpa0/relax.py \
+python simulation/mace_mpa0/relax.py \
   structures/ordered/Li3YCl6_ordered_01.cif \
   --output runs/mace_mpa0/Li3YCl6_ordered_01_relaxed.cif
 ```
@@ -31,7 +31,7 @@ The script uses `medium-mpa-0` explicitly and relaxes both atomic positions and 
 ## Exploratory MD
 
 ```bash
-python mlp/mace_mpa0/md.py \
+python simulation/mace_mpa0/md.py \
   runs/mace_mpa0/Li3YCl6_ordered_01_relaxed.cif \
   --output-dir runs/mace_mpa0/Li3YCl6_ordered_01_md \
   --supercell 2 2 2 \
@@ -50,4 +50,3 @@ Before trusting a trajectory:
 3. Compare MACE and DFT forces on sampled snapshots.
 4. Repeat with at least two ordered occupancy models.
 5. Cross-check the most important result with a second potential or DFT-AIMD.
-
