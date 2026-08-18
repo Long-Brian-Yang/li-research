@@ -160,6 +160,18 @@ def main():
         species, positions, cells, times = read_gpumd_xyz(folder / "dump.xyz")
         li_mask = species == "Li"
         cart = unwrap_fractional(positions[:, li_mask], cells)
+        # Keep a compact, analysis-ready trajectory: Li only, unwrapped
+        # Cartesian coordinates. The all-atom GPUMD dump remains outside Git.
+        li_time_ps = (times - times[0]) / 1000.0
+        save_csv(
+            TABLE / f"{name}_Li_unwrapped_300K.csv",
+            ["frame", "time_ps", "li_index", "x_A", "y_A", "z_A"],
+            [
+                [frame, li_time_ps[frame], li_index, *cart[frame, li_index]]
+                for frame in range(len(cart))
+                for li_index in range(cart.shape[1])
+            ],
+        )
         lags, msd_xyz = multi_origin_msd(cart, max_lag=len(cart) // 2, origin_stride=10)
         dt_ps = np.median(np.diff(times)) / 1000.0
         time_ps = lags * dt_ps

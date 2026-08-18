@@ -61,6 +61,42 @@ three replicas). The large relative replica spread means that the mean is a
 screening result, not a converged material constant. LiNbOCl₄ has only one
 replica and therefore has no replica-based error bar.
 
+### Compact analysis trajectories
+
+The full all-atom `dump.xyz` files are kept in the local/TSUBAME archive and
+are not committed to GitHub. For reproducible MSD re-analysis, Li-only
+unwrapped trajectories are exported as CSV:
+
+- [`Li₃YCl₆_01 Li positions`](results/300K_2x2x4/Li3YCl6_01_Li_unwrapped_300K.csv)
+- [`Li₃YCl₆_02 Li positions`](results/300K_2x2x4/Li3YCl6_02_Li_unwrapped_300K.csv)
+- [`Li₃YCl₆_03 Li positions`](results/300K_2x2x4/Li3YCl6_03_Li_unwrapped_300K.csv)
+- [`LiNbOCl₄ Li positions`](results/300K_2x2x4/LiNbOCl4_Li_unwrapped_300K.csv)
+
+Each CSV contains `frame`, `time_ps`, `li_index`, and unwrapped Cartesian
+coordinates in Å. These files are analysis products, not replacements for the
+original all-atom trajectories.
+
+### Statistical uncertainty versus experimental discrepancy
+
+These are two different quantities:
+
+1. **Simulation statistical uncertainty:** the Li₃YCl₆ replica standard
+   deviation is 0.107 mS cm⁻¹, larger than its 0.084 mS cm⁻¹ mean (relative
+   spread ≈127.5%). LiNbOCl₄ has one replica, so no independent replica error
+   can be calculated; its block-based D spread corresponds to only a rough
+   σ<sub>NE</sub> uncertainty of about 0.0043 mS cm⁻¹.
+2. **Discrepancy from experiment:** the Li₃YCl₆ paper reports a value above
+   1 mS cm⁻¹, so the simulation mean is at least 91.6% below the lower bound
+   and at least 11.9× smaller. LiNbOCl₄ gives 0.0185 mS cm⁻¹ versus 10.4
+   mS cm⁻¹, a 99.82% shortfall (about 563× smaller).
+
+The papers do not provide a directly usable experimental standard deviation in
+the current project record. Therefore a combined z-score or formal confidence
+interval against experiment cannot be claimed. The percentages above are
+benchmark discrepancies, not experimental measurement errors. The dominant
+causes to test are the NEP89 potential, explicit ordering, 300 K sampling time,
+and the difference between ideal-crystal σ<sub>NE</sub> and pressed-powder EIS.
+
 ### Scientific interpretation
 
 At 300 K, NEP89 predicts much lower mobility than the earlier 400 K screening:
