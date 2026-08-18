@@ -56,7 +56,8 @@ def main() -> None:
     if source_reduced != expected_reduced:
         raise ValueError(
             f"Fully occupied source expands to {source_counts} ({source_reduced}), "
-            f"not nominal {expected} ({expected_reduced}); refusing to fabricate an ordered model."
+            f"not nominal {expected} ({expected_reduced}); resolve partial/disordered sites "
+            "before fabricating an ordered model."
         )
 
     if not all(source.pbc):

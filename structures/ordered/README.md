@@ -16,6 +16,6 @@ origin and formula in a manifest before production MD.
   generated from the screenshot-reconstructed CIF under an explicit full-site
   occupancy assumption. It contains 224 atoms and has a minimum distance of
   1.907 Å.
-- `Li3YCl6/2x2x2/`: blocked. The fully occupied expansion of the available
-  screenshot reconstruction does not have Li₃YCl₆ stoichiometry, so no model
-  was fabricated.
+- `Li3YCl6/2x2x2/`: ordering required. The occupancy-weighted average CIF is
+  close to Li₃YCl₆, but its mutually exclusive Y alternatives cannot all be
+  fully occupied; no model was fabricated.
