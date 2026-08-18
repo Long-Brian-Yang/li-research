@@ -16,6 +16,6 @@ origin and formula in a manifest before production MD.
   generated from the screenshot-reconstructed CIF under an explicit full-site
   occupancy assumption. It contains 224 atoms and has a minimum distance of
   1.907 Å.
-- `Li3YCl6/2x2x2/`: ordering required. The occupancy-weighted average CIF is
-  close to Li₃YCl₆, but its mutually exclusive Y alternatives cannot all be
-  fully occupied; no model was fabricated.
+- `Li3YCl6/2x2x2/`: three 240-atom ordered candidates generated from the
+  occupancy-resolved Li₉Y₃Cl₁₈ cell. These require MACE/DFT relaxation and
+  cross-model comparison before production MD.
