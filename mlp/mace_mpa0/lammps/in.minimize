@@ -1,0 +1,27 @@
+# MACE-MPA-0 / LAMMPS ML-IAP: energy and cell relaxation
+clear
+units metal
+atom_style atomic
+boundary p p p
+newton on
+
+variable model string medium-mpa-0-mliap_lammps.pt
+variable data string Li3YCl6_ordered_01.data
+read_data ${data}
+
+pair_style mliap unified ${model} 0
+pair_coeff * * Li Y Cl
+
+neighbor 2.0 bin
+neigh_modify delay 0 every 1 check yes
+thermo 100
+thermo_style custom step pe ke etotal press vol lx ly lz
+
+# Keep the first test conservative.  Change the target data/model names above.
+min_style fire
+fix cell all box/relax iso 0.0 vmax 0.001
+minimize 1.0e-8 1.0e-8 2000 10000
+unfix cell
+
+write_data Li3YCl6_ordered_01_mace_relaxed.data
+write_dump all custom Li3YCl6_ordered_01_mace_relaxed.dump id type x y z vx vy vz
