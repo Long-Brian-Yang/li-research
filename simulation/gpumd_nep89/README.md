@@ -42,22 +42,23 @@ independently full-relaxed after the repeat operation.
 
 ## 2. New 300 K transport analysis
 
-The analysis script unwraps positions in fractional coordinates using the full
-triclinic cell, calculates Li-only multi-origin MSD, fits the 100–450 ps lag
-window, and reports a Nernst–Einstein estimate. The fit window, (R^2), block
-standard deviation, and mean temperature are stored in
+The primary analysis uses the official GPUMDkit `msd.out` files, calculates the
+three-dimensional Li-only MSD, and fits the 100–300 ps lag window. The
+100–200 ps, 200–500 ps, and 100–500 ps alternatives are retained for sensitivity
+analysis in [`window_sensitivity_300K_2x2x4.csv`](results/300K_2x2x4/window_sensitivity_300K_2x2x4.csv).
+The primary fit window, (R^2), and Nernst–Einstein estimate are stored in
 [`summary_300K_2x2x4.csv`](results/300K_2x2x4/summary_300K_2x2x4.csv).
 
-| Material / replica | Mean T (K) | (D_{Li}) (cm² s⁻¹) | (R^2) | (sigma_{NE}) (mS cm⁻¹) | block σ(D) (cm² s⁻¹) |
-|---|---:|---:|---:|---:|---:|
-| Li₃YCl₆_01 | 298.71 | 3.04×10⁻⁸ | 0.998 | 0.0246 | 1.62×10⁻⁹ |
-| Li₃YCl₆_02 | 298.67 | 2.52×10⁻⁷ | 0.998 | 0.2070 | 2.79×10⁻⁸ |
-| Li₃YCl₆_03 | 300.77 | 2.39×10⁻⁸ | 0.974 | 0.0196 | 1.09×10⁻⁸ |
-| LiNbOCl₄ | 298.84 | 5.35×10⁻⁸ | 0.986 | 0.0185 | 1.23×10⁻⁸ |
+| Material / replica | Mean T (K) | (D_{Li}) (cm² s⁻¹) | (R^2) | (sigma_{NE}) (mS cm⁻¹) |
+|---|---:|---:|---:|---:|
+| Li₃YCl₆_01 | 298.71 | 3.04×10⁻⁸ | 1.000 | 0.0246 |
+| Li₃YCl₆_02 | 298.67 | 2.61×10⁻⁷ | 1.000 | 0.2148 |
+| Li₃YCl₆_03 | 300.77 | 2.98×10⁻⁸ | 0.969 | 0.0244 |
+| LiNbOCl₄ | 298.84 | 6.02×10⁻⁸ | 0.995 | 0.0208 |
 
 The Li₃YCl₆ replica mean is
-(D=(1.02\pm1.30)\times10^{-7}) cm² s⁻¹ and
-(sigma_{NE}=0.084\pm0.107) mS cm⁻¹ (sample standard deviation across
+(D=(1.10\pm1.35)\times10^{-7}) cm² s⁻¹ and
+(sigma_{NE}=0.088\pm0.110) mS cm⁻¹ (sample standard deviation across
 three replicas). The large relative replica spread means that the mean is a
 screening result, not a converged material constant. LiNbOCl₄ has only one
 replica and therefore has no replica-based error bar.
@@ -82,14 +83,14 @@ original all-atom trajectories.
 These are two different quantities:
 
 1. **Simulation statistical uncertainty:** the Li₃YCl₆ replica standard
-   deviation is 0.107 mS cm⁻¹, larger than its 0.084 mS cm⁻¹ mean (relative
-   spread ≈127.5%). LiNbOCl₄ has one replica, so no independent replica error
-   can be calculated; its block-based D spread corresponds to only a rough
-   σ<sub>NE</sub> uncertainty of about 0.0043 mS cm⁻¹.
+   deviation is 0.110 mS cm⁻¹, larger than its 0.088 mS cm⁻¹ mean (relative
+   spread ≈124.9%). LiNbOCl₄ has one replica, so no independent replica error
+   can be calculated. Window sensitivity is reported separately rather than
+   treated as an independent replica error bar.
 2. **Discrepancy from experiment:** the Li₃YCl₆ paper reports a value above
    1 mS cm⁻¹, so the simulation mean is at least 91.6% below the lower bound
    and at least 11.9× smaller. LiNbOCl₄ gives 0.0185 mS cm⁻¹ versus 10.4
-   mS cm⁻¹, a 99.82% shortfall (about 563× smaller).
+   mS cm⁻¹, a 99.80% shortfall (about 500× smaller).
 
 The papers do not provide a directly usable experimental standard deviation in
 the current project record. Therefore a combined z-score or formal confidence
@@ -104,7 +105,7 @@ At 300 K, NEP89 predicts much lower mobility than the earlier 400 K screening:
 
 - Li₃YCl₆: approximately (0.02–0.21) mS cm⁻¹ by (sigma_{NE}), versus
   the reported room-temperature experimental benchmark above 1 mS cm⁻¹.
-- LiNbOCl₄: approximately (0.019) mS cm⁻¹ by (sigma_{NE}), versus the
+- LiNbOCl₄: approximately (0.021) mS cm⁻¹ by (sigma_{NE}), versus the
   reported experimental value near 10.4 mS cm⁻¹.
 
 This is not evidence that the materials are experimentally non-conducting. The
@@ -181,4 +182,5 @@ relaxed 2×2×4 cell.
 5. Add collective charge-current/Green–Kubo conductivity if supported by the
    available trajectory workflow.
 
-The analysis script is [`analyze_300K_2x2x4.py`](analyze_300K_2x2x4.py).
+The official-output window analysis is [`analyze_gpumdkit_windows.py`](analyze_gpumdkit_windows.py).
+The coordinate conversion helper is [`prepare_gpumdkit_unwrapped.py`](prepare_gpumdkit_unwrapped.py).
