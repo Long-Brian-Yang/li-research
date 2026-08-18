@@ -136,8 +136,9 @@ old `/gs/fs/tga-ishikawalab/...` paths into these inputs.
 
 Copy this directory and the ordered structures into a 26ICP working directory,
 load the MACE-compatible Python environment and the Kokkos-enabled LAMMPS
-module provided by your group, then submit the job body with the TSUBAME queue
-and resource options required for your installation.  The job body itself is:
+module provided by your group, then submit the job body with `qsub -g 26ICP`
+plus the queue/resource options required for your installation.  The job body
+itself is:
 
 ```bash
 bash mlp/mace_mpa0/lammps/job_tsubame_26icp.sh in.md
@@ -148,5 +149,5 @@ bash mlp/mace_mpa0/lammps/job_tsubame_26icp.sh in.md.LiNbOCl4
 The script prints the host, project label, LAMMPS executable, and input file
 before starting.  Confirm that the scheduler allocation is charged to 26ICP
 and that `lmp -h` reports ML-IAP and Kokkos before submitting a long run.  The
-exact `pjsub` resource-group/queue flags are intentionally left to the local
-TSUBAME configuration rather than hard-coding Ishikawa-specific settings.
+exact queue/resource flags are intentionally left to the local TSUBAME
+configuration rather than hard-coding Ishikawa-specific settings.
