@@ -1,0 +1,31 @@
+{
+  "source": "structures/reference/photo_reconstructed/LiNbOCl4_photo_reconstructed.cif",
+  "model": "structures/ordered/LiNbOCl4/2x2x2/LiNbOCl4_ordered_2x2x2.cif",
+  "ordering_assumption": "all visible screenshot-CIF sites are treated as fully occupied",
+  "supercell": [
+    2,
+    2,
+    2
+  ],
+  "atom_count": 224,
+  "formula_counts": {
+    "Cl": 128,
+    "Li": 32,
+    "Nb": 32,
+    "O": 32
+  },
+  "minimum_distance_angstrom": 1.907205719744197,
+  "nominal_formula_counts": {
+    "Cl": 4,
+    "Li": 1,
+    "Nb": 1,
+    "O": 1
+  },
+  "atom_type_order": [
+    "Li",
+    "Nb",
+    "O",
+    "Cl"
+  ],
+  "status": "pipeline_candidate_only; validate against original deposited CIF before production MD"
+}
