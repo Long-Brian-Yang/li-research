@@ -10,3 +10,6 @@
 
 This file is a provisional model for inspection and model-building only. It must be compared against the original CIF before production DFT/MD because the screenshots do not expose every metadata field and partial occupancies require an explicit disorder/order treatment.
 
+## Li₃YCl₆
+
+`Li3YCl6_photo_reconstructed.cif` is reconstructed from two screenshots. See [the file-specific notes](Li3YCl6_photo_reconstructed_README.md) before using it for calculations.

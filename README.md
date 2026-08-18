@@ -11,6 +11,7 @@
 ## 结构文件
 
 - [LiNbOCl₄ 照片重建版 CIF](structures/LiNbOCl4_photo_reconstructed.cif)
+- [Li₃YCl₆ 照片重建版 CIF](structures/Li3YCl6_photo_reconstructed.cif)
 - [结构文件说明](structures/README.md)
 - [日本語具体的開発計画](development_plan_ja.md)
 
