@@ -1,0 +1,17 @@
++------------------------------------------+
+| Average values after 50% simulation time |
+| You can change it by the following line: |
+|    start_index = int(len(time) * 0.5)    |
++------------------------------------------+
+Temperature: 298.674 K
+Pressure X: -1.222 GPa
+Pressure Y: -1.223 GPa
+Pressure Z: -1.561 GPa
+Lattice Length X: 22.645 Angstrom
+Lattice Length Y: 22.645 Angstrom
+Lattice Length Z: 24.438 Angstrom
+Volume: 10853.005 Angstrom^3
+Angle Alpha: 90.00°
+Angle Beta: 90.00°
+Angle Gamma: 120.00°
+Average lattice matrix: 22.645, 0.000, 0.000, -11.323, 19.611, 0.000, 0.000, 0.000, 24.438

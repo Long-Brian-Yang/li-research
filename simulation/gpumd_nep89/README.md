@@ -10,7 +10,8 @@ separate so that temperature and supercell effects are not mixed.
 simulation/gpumd_nep89/
 ├── figures/
 │   ├── 400K_baseline/       # original 400 K figures
-│   └── 300K_2x2x4/          # new 300 K, 1 ns analysis figures
+│   ├── 300K_2x2x4_gpumdkit/ # official GPUMDkit plots (primary)
+│   └── 300K_2x2x4_custom_diagnostic/ # supplementary analysis plots
 ├── results/
 │   └── 300K_2x2x4/
 │       ├── summary_300K_2x2x4.csv
@@ -113,17 +114,35 @@ powders and EIS total conductivity. The discrepancy is a diagnostic signal
 that the model, ordering, potential, and finite 1 ns sampling must be checked
 before any quantitative claim.
 
-## 3. Figures
+## 3. Official GPUMDkit figures
 
-### New 300 K figures
+The primary 300 K plots were regenerated with the official GPUMDkit v1.5.6
+workflow on TSUBAME. For each trajectory, GPUMDkit was run as:
 
-- [Total Li MSD](figures/300K_2x2x4/msd_total_300K_2x2x4.png)
-- [Directional Li MSD](figures/300K_2x2x4/msd_directional_300K_2x2x4.png)
-- [Thermostat temperature](figures/300K_2x2x4/temperature_300K_2x2x4.png)
-- [Transport summary](figures/300K_2x2x4/transport_summary_300K_2x2x4.png)
+```bash
+gpumdkit.sh -calc msd dump_unwrapped.xyz Li 1000 500
+gpumdkit.sh -plt msd save
+gpumdkit.sh -plt thermo save
+```
 
-SVG versions of the four figures are stored beside the PNG files for editable
-text and vector export.
+The input trajectory is the GPUMD dump converted to an unwrapped extXYZ by
+[`prepare_gpumdkit_unwrapped.py`](prepare_gpumdkit_unwrapped.py). The 1 ps
+sampling interval and 500 ps maximum lag are explicit in the command.
+
+- [Li₃YCl₆ replica 1 MSD](figures/300K_2x2x4_gpumdkit/Li3YCl6_01/msd.png) · [thermo](figures/300K_2x2x4_gpumdkit/Li3YCl6_01/thermo.png)
+- [Li₃YCl₆ replica 2 MSD](figures/300K_2x2x4_gpumdkit/Li3YCl6_02/msd.png) · [thermo](figures/300K_2x2x4_gpumdkit/Li3YCl6_02/thermo.png)
+- [Li₃YCl₆ replica 3 MSD](figures/300K_2x2x4_gpumdkit/Li3YCl6_03/msd.png) · [thermo](figures/300K_2x2x4_gpumdkit/Li3YCl6_03/thermo.png)
+- [LiNbOCl₄ MSD](figures/300K_2x2x4_gpumdkit/LiNbOCl4/msd.png) · [thermo](figures/300K_2x2x4_gpumdkit/LiNbOCl4/thermo.png)
+
+The corresponding GPUMDkit `msd.out` and `average_results.txt` files are kept
+under [`results/300K_2x2x4_gpumdkit/`](results/300K_2x2x4_gpumdkit/). The
+previous custom diagnostic figures are retained separately under
+[`figures/300K_2x2x4_custom_diagnostic/`](figures/300K_2x2x4_custom_diagnostic/)
+and are not used as the primary GPUMDkit result.
+
+GPUMDkit's `sdc` and `msd_sdc` commands were intentionally not run: they require
+a valid GPUMD `sdc.out` from a heat-current/Green–Kubo calculation. A tracer
+MSD cannot be relabeled as an SDC, so no SDC figure is reported here.
 
 ### Original 400 K baseline figures
 
