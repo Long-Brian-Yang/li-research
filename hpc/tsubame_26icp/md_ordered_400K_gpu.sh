@@ -5,7 +5,9 @@
 #$ -cwd
 #$ -V
 #$ -l gpu_1=1
-#$ -l h_rt=2:00:00
+# Full 110 ps runs need about 13.5 h at the measured MACE speed (~2.3 steps/s).
+# Keep a small margin for initialization and file I/O.
+#$ -l h_rt=14:00:00
 #$ -N md_400K_mace_gpu
 set -euo pipefail
 
