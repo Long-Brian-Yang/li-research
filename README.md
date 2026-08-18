@@ -88,6 +88,8 @@ The complete English research plan, including structure policy, supercell
 choices, MACE/NEP89 workflow, 300 K production protocol, MSD and conductivity
 definitions, uncertainty analysis, and reproduction gates is in
 [`docs/development/direction2_plan_en.md`](docs/development/direction2_plan_en.md).
+The corresponding Japanese version is
+[`docs/development/direction2_plan_ja.md`](docs/development/direction2_plan_ja.md).
 
 ## Reproducibility notes
 
