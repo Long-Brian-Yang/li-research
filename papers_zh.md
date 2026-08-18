@@ -2,6 +2,9 @@
 
 ## 1. Asano et al., 2018 — Advanced Materials
 
+### Type
+Research Article（研究论文）
+
 ### Title
 Solid Halide Electrolytes with High Lithium-Ion Conductivity for Application in 4 V Class Bulk-Type All-Solid-State Batteries
 
@@ -9,7 +12,7 @@ Solid Halide Electrolytes with High Lithium-Ion Conductivity for Application in 
 Li₃YCl₆、Li₃YBr₆
 
 ### Keywords
-Li₃YCl₆ · Li₃YBr₆ · Halide SSE · High-voltage cathode · Ionic conductivity · Deformability
+Li₃YCl₆ · Li₃YBr₆ · Halide SSE · Chloride SSE · High-voltage cathode · Ionic conductivity · Grain-boundary resistance · Deformability · Oxidation stability · Bulk-type ASSB
 
 ### 三句话总结
 1. 报道了 Li₃YCl₆ 和 Li₃YBr₆ 两种高 Li⁺ 电导率卤化物固态电解质，室温电导率达到 >1 mS cm⁻¹。
@@ -17,9 +20,12 @@ Li₃YCl₆ · Li₃YBr₆ · Halide SSE · High-voltage cathode · Ionic conduc
 3. 证明卤化物 SSE 可以直接用于 4 V class cathode，奠定了现代 chloride solid electrolyte 研究的重要基础。
 
 ### DOI
-10.1002/adma.201803075
+[10.1002/adma.201803075](https://doi.org/10.1002/adma.201803075)
 
 ## 2. Kim et al., 2021 — ACS Materials Letters
+
+### Type
+Research Article（研究论文）
 
 ### Title
 Lithium Ytterbium-Based Halide Solid Electrolytes for High Voltage All-Solid-State Batteries
@@ -28,7 +34,7 @@ Lithium Ytterbium-Based Halide Solid Electrolytes for High Voltage All-Solid-Sta
 Li₃YbCl₆、Li₃₋ₓYb₁₋ₓZrₓCl₆
 
 ### Keywords
-Li₃YbCl₆ · Zr substitution · Li vacancy · Phase transition · High-voltage stability · Mixed-metal halide
+Li₃YbCl₆ · Zr substitution · Aliovalent doping · Li vacancy · Phase transition · Trigonal phase · Orthorhombic phase · High-voltage stability · Mixed-metal halide · Migration network
 
 ### 三句话总结
 1. 开发了 Li₃YbCl₆ 及 Li₃₋ₓYb₁₋ₓZrₓCl₆ 系列 Yb 基 chloride SSE。
@@ -36,9 +42,12 @@ Li₃YbCl₆ · Zr substitution · Li vacancy · Phase transition · High-voltag
 3. 该工作说明 halide SSE 的离子输运不能只看空位浓度，还必须考虑 composition–structure–migration network 的关系，同时保持良好的高电压氧化稳定性。
 
 ### DOI
-10.1021/acsmaterialslett.1c00142
+[10.1021/acsmaterialslett.1c00142](https://doi.org/10.1021/acsmaterialslett.1c00142)
 
 ## 3. Wang et al., 2021 — Nature Communications
+
+### Type
+Research Article（研究论文）
 
 ### Title
 A Cost-Effective and Humidity-Tolerant Chloride Solid Electrolyte for Lithium Batteries
@@ -47,7 +56,7 @@ A Cost-Effective and Humidity-Tolerant Chloride Solid Electrolyte for Lithium Ba
 Li₂ZrCl₆
 
 ### Keywords
-Li₂ZrCl₆ · Cost-effective · Humidity tolerance · Zr-based chloride · 4 V cathode · Mechanochemical synthesis
+Li₂ZrCl₆ · Cost-effective · Humidity tolerance · Zr-based chloride · 4 V cathode · Mechanochemical synthesis · Ionic conductivity · Deformability · Low-cost precursor · Moisture stability
 
 ### 三句话总结
 1. 提出了低成本 Li₂ZrCl₆ chloride SSE，室温 Li⁺ conductivity 约为 0.81 mS cm⁻¹。
@@ -55,9 +64,12 @@ Li₂ZrCl₆ · Cost-effective · Humidity tolerance · Zr-based chloride · 4 V
 3. 在 5% relative humidity 环境暴露后没有观察到明显吸湿或 conductivity degradation，说明其低湿环境耐受性优于很多传统 chloride SSE。
 
 ### DOI
-10.1038/s41467-021-24697-2
+[10.1038/s41467-021-24697-2](https://doi.org/10.1038/s41467-021-24697-2)
 
 ## 4. Tanaka et al., 2023 — Angewandte Chemie International Edition
+
+### Type
+Research Article（研究论文）
 
 ### Title
 New Oxyhalide Solid Electrolytes with High Lithium Ionic Conductivity >10 mS cm⁻¹ for All-Solid-State Batteries
@@ -66,7 +78,7 @@ New Oxyhalide Solid Electrolytes with High Lithium Ionic Conductivity >10 mS cm�
 LiNbOCl₄、LiTaOCl₄
 
 ### Keywords
-LiNbOCl₄ · LiTaOCl₄ · Oxyhalide · Mixed-anion · Anion engineering · Superionic conduction
+LiNbOCl₄ · LiTaOCl₄ · Oxyhalide · Mixed-anion · Anion engineering · Superionic conduction · >10 mS cm⁻¹ · Li⁺ migration environment · High-rate performance · Bulk-type ASSB
 
 ### 三句话总结
 1. 报道了新的 oxyhalide LiNbOCl₄ 和 LiTaOCl₄，室温 conductivity 分别达到约 10.4 和 12.4 mS cm⁻¹。
@@ -74,9 +86,12 @@ LiNbOCl₄ · LiTaOCl₄ · Oxyhalide · Mixed-anion · Anion engineering · Sup
 3. 这项工作将 halide/oxyhalide SSE 的 conductivity 推进到 10⁻² S cm⁻¹ 级别，并在 bulk-type ASSB 中展示了优秀的高倍率性能。
 
 ### DOI
-10.1002/anie.202217581
+[10.1002/anie.202217581](https://doi.org/10.1002/anie.202217581)
 
 ## 5. Yin et al., 2023 — Nature
+
+### Type
+Research Article（研究论文）
 
 ### Title
 A LaCl₃-Based Lithium Superionic Conductor Compatible with Lithium Metal
@@ -85,7 +100,7 @@ A LaCl₃-Based Lithium Superionic Conductor Compatible with Lithium Metal
 Ta-doped LaCl₃
 
 ### Keywords
-LaCl₃ · Ta doping · La vacancy · 1D-to-3D migration · Li-metal compatibility · Passivation interphase
+LaCl₃ · Ta doping · La vacancy · UCl₃-type framework · 1D-to-3D migration · Li-metal compatibility · Passivation interphase · Gradient interphase · Activation energy · Rare-earth chloride
 
 ### 三句话总结
 1. 基于 UCl₃-type LaCl₃ framework，利用其宽大的 1D Li⁺ channels 开发了新的 rare-earth chloride SSE。
@@ -93,9 +108,12 @@ LaCl₃ · Ta doping · La vacancy · 1D-to-3D migration · Li-metal compatibili
 3. 材料与 Li metal 接触后形成自限性的 gradient passivation interphase，使其兼具快速 Li⁺ transport 与优秀的 Li-metal compatibility。
 
 ### DOI
-10.1038/s41586-023-05899-8
+[10.1038/s41586-023-05899-8](https://doi.org/10.1038/s41586-023-05899-8)
 
 ## 6. Hu et al., 2023 — Nature Communications
+
+### Type
+Research Article（研究论文）
 
 ### Title
 A Cost-Effective, Ionically Conductive and Compressible Oxychloride Solid-State Electrolyte for Stable All-Solid-State Lithium-Based Batteries
@@ -104,7 +122,7 @@ A Cost-Effective, Ionically Conductive and Compressible Oxychloride Solid-State 
 Li₁.₇₅ZrCl₄.₇₅O₀.₅
 
 ### Keywords
-Li₁.₇₅ZrCl₄.₇₅O₀.₅ · Oxychloride · Compressibility · Cost-effective · Mixed-anion · Long cycling
+Li₁.₇₅ZrCl₄.₇₅O₀.₅ · Oxychloride · Mixed-anion · Compressibility · Relative density · Cost-effective · Ionic conductivity · NMC811 · Long cycling · Practical ASSB
 
 ### 三句话总结
 1. 开发了 Li₁.₇₅ZrCl₄.₇₅O₀.₅ oxychloride SSE，实现 2.42 mS cm⁻¹ 的室温 ionic conductivity。
@@ -112,9 +130,12 @@ Li₁.₇₅ZrCl₄.₇₅O₀.₅ · Oxychloride · Compressibility · Cost-eff
 3. 搭配 NMC811-based positive electrode 的实验室全固态电池实现超过 2000 cycles，说明实用 SSE 的评价不能只考虑最高 bulk conductivity。
 
 ### DOI
-10.1038/s41467-023-39522-1
+[10.1038/s41467-023-39522-1](https://doi.org/10.1038/s41467-023-39522-1)
 
 ## 7. Li et al., 2024 — Nature Communications
+
+### Type
+Research Article（研究论文）
 
 ### Title
 Structural Regulation of Halide Superionic Conductors for All-Solid-State Lithium Batteries
@@ -123,7 +144,7 @@ Structural Regulation of Halide Superionic Conductors for All-Solid-State Lithiu
 结构类型：hcp-T、hcp-O、ccp-M
 
 ### Keywords
-Cationic polarization factor · τ · hcp-T · hcp-O · ccp-M · Structure prediction · Materials screening
+Cationic polarization factor · τ · hcp-T · hcp-O · ccp-M · Stacking structure · Structure prediction · Composition–structure relation · Li-ion transport · Materials screening · Descriptor-guided discovery
 
 ### 三句话总结
 1. 作者提出 cationic polarization factor τ，尝试从 chemical composition 出发预测 lithium halide SSE 的 stacking structure。
@@ -131,9 +152,12 @@ Cationic polarization factor · τ · hcp-T · hcp-O · ccp-M · Structure predi
 3. 该 descriptor 被进一步用于候选材料筛选和实验设计，使卤化物开发由传统 trial-and-error 向 descriptor-guided materials discovery 转变。
 
 ### DOI
-10.1038/s41467-023-43886-9
+[10.1038/s41467-023-43886-9](https://doi.org/10.1038/s41467-023-43886-9)
 
 ## 8. Hu et al., 2026 — Nature Communications
+
+### Type
+Research Article（研究论文）
 
 ### Title
 Mechanically Compliant and Cost-Effective 1.4Li₂O–0.75ZrCl₄–0.25AlCl₃ Solid Electrolyte for All-Solid-State Batteries with Improved Cycling Stability
@@ -142,7 +166,7 @@ Mechanically Compliant and Cost-Effective 1.4Li₂O–0.75ZrCl₄–0.25AlCl₃ 
 1.4Li₂O–0.75ZrCl₄–0.25AlCl₃
 
 ### Keywords
-Mechanical compliance · Li-Zr-Al-O-Cl · Young's modulus · Hardness · High-loading cathode · Chemo-mechanical stability
+Mechanical compliance · Li-Zr-Al-O-Cl · Young's modulus · Hardness · High-loading cathode · Chemo-mechanical stability · Ionic conductivity · Deformability · Interface stability · Cost-effective · Mechanical mismatch
 
 ### 三句话总结
 1. 开发了 1.4Li₂O–0.75ZrCl₄–0.25AlCl₃ 固态电解质，在 25 °C 下具有约 2.55 mS cm⁻¹ 的 ionic conductivity。
@@ -150,9 +174,12 @@ Mechanical compliance · Li-Zr-Al-O-Cl · Young's modulus · Hardness · High-lo
 3. 这项工作把固态电解质设计重点从单纯 conductivity 推进到 Li-ion transport + mechanics + interface + cost 的多目标优化。
 
 ### DOI
-10.1038/s41467-025-68210-5
+[10.1038/s41467-025-68210-5](https://doi.org/10.1038/s41467-025-68210-5)
 
 ## 9. Li & Du, 2025 — ACS Nano（Review）
+
+### Type
+Review（综述）
 
 ### Title
 Building a Better All-Solid-State Lithium-Ion Battery with Halide Solid-State Electrolyte
@@ -161,7 +188,7 @@ Building a Better All-Solid-State Lithium-Ion Battery with Halide Solid-State El
 F/Cl/Br/I-based halide SSE（综述）
 
 ### Keywords
-Halide SSE · Review · Ionic conductivity · Activation energy · Electrochemical stability · Interface · Synthesis
+Halide SSE · Review · F/Cl/Br/I chemistry · Ionic conductivity · Activation energy · Electronic conductivity · Electrochemical stability window · Interfacial contact stability · Synthesis · Structure–property relation · Practical ASSB metrics
 
 ### 三句话总结
 1. 这篇 Review 系统总结了 F/Cl/Br/I-based halide SSE 的组成、结构、合成及全固态电池应用。
@@ -169,19 +196,45 @@ Halide SSE · Review · Ionic conductivity · Activation energy · Electrochemic
 3. 它提供了一个完整的 halide SSE 设计框架，即从 composition/structure → Li transport → stability/interface → practical ASSB performance 综合评价材料。
 
 ### DOI
-10.1021/acsnano.4c15005
+[10.1021/acsnano.4c15005](https://doi.org/10.1021/acsnano.4c15005)
 
 ## 关键词地图
 
 | 年份 | 核心材料/主题 | 最核心 Keyword | DOI |
 |---|---|---|---|
-| 2018 | Li₃YCl₆ / Li₃YBr₆ | High-voltage halide SSE | 10.1002/adma.201803075 |
-| 2021 | Li₃YbCl₆ + Zr | Vacancy / phase engineering | 10.1021/acsmaterialslett.1c00142 |
-| 2021 | Li₂ZrCl₆ | Cost + humidity tolerance | 10.1038/s41467-021-24697-2 |
-| 2023 | LiNbOCl₄ / LiTaOCl₄ | Oxyhalide / >10 mS cm⁻¹ | 10.1002/anie.202217581 |
-| 2023 | LaCl₃ + Ta | Li-metal compatibility / 1D→3D | 10.1038/s41586-023-05899-8 |
-| 2023 | Li₁.₇₅ZrCl₄.₇₅O₀.₅ | Compressibility + cost | 10.1038/s41467-023-39522-1 |
-| 2024 | Structural regulation | Cationic polarization factor τ | 10.1038/s41467-023-43886-9 |
-| 2025 | Review | Halide SSE overview | 10.1021/acsnano.4c15005 |
-| 2026 | Li–Zr–Al–O–Cl | Mechanical compliance | 10.1038/s41467-025-68210-5 |
+| 2018 | Li₃YCl₆ / Li₃YBr₆ | High-voltage halide SSE | [DOI](https://doi.org/10.1002/adma.201803075) |
+| 2021 | Li₃YbCl₆ + Zr | Vacancy / phase engineering | [DOI](https://doi.org/10.1021/acsmaterialslett.1c00142) |
+| 2021 | Li₂ZrCl₆ | Cost + humidity tolerance | [DOI](https://doi.org/10.1038/s41467-021-24697-2) |
+| 2023 | LiNbOCl₄ / LiTaOCl₄ | Oxyhalide / >10 mS cm⁻¹ | [DOI](https://doi.org/10.1002/anie.202217581) |
+| 2023 | LaCl₃ + Ta | Li-metal compatibility / 1D→3D | [DOI](https://doi.org/10.1038/s41586-023-05899-8) |
+| 2023 | Li₁.₇₅ZrCl₄.₇₅O₀.₅ | Compressibility + cost | [DOI](https://doi.org/10.1038/s41467-023-39522-1) |
+| 2024 | Structural regulation | Cationic polarization factor τ | [DOI](https://doi.org/10.1038/s41467-023-43886-9) |
+| 2025 | Review | Halide SSE overview | [DOI](https://doi.org/10.1021/acsnano.4c15005) |
+| 2026 | Li–Zr–Al–O–Cl | Mechanical compliance | [DOI](https://doi.org/10.1038/s41467-025-68210-5) |
 
+## 扩充比较表
+
+> “—”表示你提供的摘要中没有统一给出该指标，后续可继续补充原文数据。
+
+| # | 年份 | 类型 | 电解质/主题 | 室温 Li⁺ 电导率 | 结构或输运机制 | 高电压/界面稳定性 | 力学、湿度与成本 | 电池或应用验证 | 核心贡献 | DOI |
+|---:|---:|---|---|---:|---|---|---|---|---|---|
+| 1 | 2018 | Research Article | Li₃YCl₆ / Li₃YBr₆ | >1 mS cm⁻¹ | 高 Li⁺ 传导；可变形；低 grain-boundary resistance | 氧化稳定；4 V 正极兼容 | 冷压成型；— | 4 V class bulk-type ASSB | 奠定 chloride SSE 的现代研究基础 | [链接](https://doi.org/10.1002/adma.201803075) |
+| 2 | 2021 | Research Article | Li₃YbCl₆；Li₃₋ₓYb₁₋ₓZrₓCl₆ | — | Zr⁴⁺/Yb³⁺ 异价取代；Li vacancy；trigonal→orthorhombic | 高电压氧化稳定 | 混合金属组成；— | 高电压 ASSB 候选 | 建立 composition–structure–migration network 视角 | [链接](https://doi.org/10.1021/acsmaterialslett.1c00142) |
+| 3 | 2021 | Research Article | Li₂ZrCl₆ | ≈0.81 mS cm⁻¹ | Zr-based chloride；mechanochemical synthesis | 4 V 正极兼容；5% RH 后无明显 degradation | 低成本；deformability；耐湿 | Li battery / 4 V cathode | 以 Zr 降低成本并提升湿度耐受性 | [链接](https://doi.org/10.1038/s41467-021-24697-2) |
+| 4 | 2023 | Research Article | LiNbOCl₄ / LiTaOCl₄ | ≈10.4 / 12.4 mS cm⁻¹ | O²⁻/Cl⁻ mixed-anion；anion engineering | mixed-anion 重构 Li⁺ migration environment | — | bulk-type ASSB；高倍率性能 | 将 oxyhalide 传导度推进至 10⁻² S cm⁻¹ 级 | [链接](https://doi.org/10.1002/anie.202217581) |
+| 5 | 2023 | Research Article | Ta-doped LaCl₃ | 3.02 mS cm⁻¹ @ 30 °C；Eₐ=0.197 eV | La vacancy；1D→3D migration network | Li metal 接触形成 gradient passivation interphase | — | Li-metal-compatible SSE | 同时解决快速传导与 Li-metal compatibility | [链接](https://doi.org/10.1038/s41586-023-05899-8) |
+| 6 | 2023 | Research Article | Li₁.₇₅ZrCl₄.₇₅O₀.₅ | 2.42 mS cm⁻¹ | Oxychloride；mixed-anion | NMC811 界面与长期循环稳定 | 300 MPa 下 94.2% relative density；≈$11.60 kg⁻¹ | NMC811；>2000 cycles | 综合优化 conductivity、compressibility 与 cost | [链接](https://doi.org/10.1038/s41467-023-39522-1) |
+| 7 | 2024 | Research Article | Structural regulation；hcp-T/O、ccp-M | — | Cationic polarization factor τ；stacking structure descriptor | 通过结构筛选间接指导稳定材料发现 | — | 候选材料筛选与实验设计 | 将 trial-and-error 转为 descriptor-guided discovery | [链接](https://doi.org/10.1038/s41467-023-43886-9) |
+| 8 | 2026 | Research Article | 1.4Li₂O–0.75ZrCl₄–0.25AlCl₃ | ≈2.55 mS cm⁻¹ @ 25 °C | Li-Zr-Al-O-Cl；chemo-mechanical design | interface 与循环形变稳定性 | Hardness≈0.22 GPa；E≈1.41 GPa；cost-effective | high-loading cathode；improved cycling | 将 mechanics 纳入 SSE 多目标优化 | [链接](https://doi.org/10.1038/s41467-025-68210-5) |
+| 9 | 2025 | **Review** | F/Cl/Br/I-based halide SSE | 综述比较 | composition/structure→transport | electrochemical window；electronic conductivity；interfacial contact stability | synthesis、activation energy、实际指标 | practical ASSB 评价框架 | 建立从材料到器件的综合设计框架 | [链接](https://doi.org/10.1021/acsnano.4c15005) |
+
+## 主题索引
+
+| 主题 | 对应论文 | 可追踪问题 |
+|---|---|---|
+| 高电压兼容性 | 1、2、3、4 | 如何在 4 V 正极下保持低界面阻抗与抗氧化性？ |
+| 结构与空位工程 | 2、5、7 | 空位浓度、层堆垛与迁移网络如何协同？ |
+| Oxyhalide / mixed-anion | 4、6、8 | O²⁻/Cl⁻ 混合阴离子如何同时影响输运与力学？ |
+| Li-metal 界面 | 5、9 | 如何形成稳定、薄且自限性的 passivation interphase？ |
+| 成本与可制造性 | 3、6、8、9 | 原料成本、压实密度、工艺窗口和规模化如何平衡？ |
+| 力学与循环 | 1、3、6、8、9 | 机械顺应性是否能转化为高负载、长循环性能？ |
