@@ -6,4 +6,3 @@
 - [日本語版](papers_ja.md)
 
 统一模板：**Title → Material → Keywords → 3 key sentences → DOI**
-
