@@ -78,6 +78,18 @@ ordered CIFs first.
 
 ## 4. Run
 
+For the first GPU pass, use the fixed-cell ionic-relaxation templates.  This
+separates force/model problems from stress-driven cell changes:
+
+```bash
+qsub -g tgj-26ICP hpc/tsubame_26icp/relax_ordered_gpu.sh
+```
+
+The job relaxes all three explicit Li₃YCl₆ occupancy candidates and the
+LiNbOCl₄ candidate with the legacy `pair_style mace` executable.  Outputs are
+written under `relax_runs/<timestamp>/<case>/`.  Cell relaxation should only
+be enabled after checking these fixed-cell results.
+
 Edit the `read_data`, model path, and output paths in `in.minimize` and
 `in.md`.  For NVIDIA/Kokkos builds, a typical launch is:
 

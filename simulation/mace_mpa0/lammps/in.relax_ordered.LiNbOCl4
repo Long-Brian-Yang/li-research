@@ -1,0 +1,24 @@
+# MACE-MPA-0 ionic relaxation for ordered LiNbOCl4 (fixed cell first pass).
+clear
+units metal
+atom_style atomic
+boundary p p p
+newton on
+atom_modify map yes
+read_data ${data}
+mass 1 6.94
+mass 2 92.90638
+mass 3 16.00
+mass 4 35.45
+pair_style mace no_domain_decomposition
+pair_coeff * * ${model} ${elements}
+neighbor 2.0 bin
+neigh_modify delay 0 every 1 check yes
+thermo 100
+thermo_style custom step pe ke etotal press vol lx ly lz fnorm
+thermo_modify flush yes
+min_style fire
+min_modify line quadratic
+minimize 1.0e-6 1.0e-8 5000 20000
+write_data ${out_data}
+write_dump all custom ${out_dump} id type x y z
