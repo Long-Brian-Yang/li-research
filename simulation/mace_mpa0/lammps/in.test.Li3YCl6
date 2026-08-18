@@ -1,0 +1,18 @@
+# Provisional end-to-end test only; data came from a partial-occupancy CIF.
+clear
+units metal
+atom_style atomic
+boundary p p p
+newton on
+atom_modify map yes
+read_data ${root}/Li3YCl6_provisional.data
+pair_style mace no_domain_decomposition
+pair_coeff * * Li Y Cl
+timestep 0.001
+thermo 100
+thermo_style custom step temp pe ke etotal press vol
+velocity all create 300.0 73191 mom yes rot no dist gaussian
+fix nvt all nvt temp 300.0 300.0 0.1
+dump traj all custom 100 Li3YCl6_provisional.lammpstrj id type xu yu zu vx vy vz
+run 1000
+write_data Li3YCl6_provisional_final.data

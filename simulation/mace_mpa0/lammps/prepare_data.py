@@ -48,10 +48,17 @@ def main() -> None:
         "--occupancy-tolerance", type=float, default=1e-6,
         help="Reject CIFs with any site occupancy below 1-tolerance.",
     )
+    parser.add_argument(
+        "--allow-partial", action="store_true",
+        help="Allow a provisional conversion for format smoke tests only.",
+    )
     args = parser.parse_args()
 
-    if source_has_partial_occupancy(args.cif, args.occupancy_tolerance):
+    has_partial = source_has_partial_occupancy(args.cif, args.occupancy_tolerance)
+    if has_partial and not args.allow_partial:
         raise ValueError("Partial occupancy detected in source CIF; create an ordered model first.")
+    if has_partial:
+        print("WARNING: writing provisional data from a partial-occupancy CIF; do not use for production MD.")
 
     atoms = read(args.cif)
     if atoms.pbc is None or not all(atoms.pbc):

@@ -152,3 +152,19 @@ before starting.  Confirm that the scheduler allocation is charged to 26ICP
 and that `lmp -h` reports ML-IAP and Kokkos before submitting a long run.  The
 exact queue/resource flags are intentionally left to the local TSUBAME
 configuration rather than hard-coding Ishikawa-specific settings.
+
+### TSUBAME module test result (2026-08-18)
+
+The default `lammps/22Jul2025_u3` executable was tested on an H100 node. It
+starts correctly, but reports:
+
+```text
+ERROR: Cannot use -kokkos on without KOKKOS installed
+ERROR: Unrecognized pair style 'mace'
+```
+
+Thus this site module can run ordinary LAMMPS, but cannot yet run the MACE
+pair style or MACE ML-IAP backend. A real MACE trajectory requires a custom
+LAMMPS build with the MACE pair style, or ML-IAP + Python + Kokkos. The
+provisional data files and converted legacy model were prepared on the group
+disk, but no MACE trajectory is claimed until that custom executable exists.
