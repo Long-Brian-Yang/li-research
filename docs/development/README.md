@@ -1,11 +1,10 @@
-# Development documents
+# Direction 2 plans
 
-Start with the [Direction 2 master plan](direction2_master_plan_en.md). It is
-the single project-facing summary of scope, proposal logic, current jobs,
-analysis definitions, decision gates, and internship deliverables.
+The project plan is maintained in exactly two synchronized Markdown files:
 
-Supporting documents:
+- [English plan](direction2_plan_en.md)
+- [日本語計画](direction2_plan_ja.md)
 
-- [Detailed English protocol](direction2_plan_en.md)
-- [日本語詳細計画](direction2_plan_ja.md)
-- [Current status archive](project_status_en.md)
+Update both files together when the scope, job status, protocol, or conclusion
+changes. Technical implementation details remain in the MACE and GPUMD/NEP89
+workflow READMEs.

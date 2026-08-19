@@ -87,11 +87,9 @@ they are not the computational workflow itself.
 
 ## Direction 2 research plan
 
-The consolidated project entry point is
-[`docs/development/direction2_master_plan_en.md`](docs/development/direction2_master_plan_en.md).
-The detailed English protocol is in
-[`docs/development/direction2_plan_en.md`](docs/development/direction2_plan_en.md),
-and the corresponding Japanese version is
+The project plan is maintained in two synchronized Markdown files:
+[`docs/development/direction2_plan_en.md`](docs/development/direction2_plan_en.md)
+and
 [`docs/development/direction2_plan_ja.md`](docs/development/direction2_plan_ja.md).
 
 ## Reproducibility notes

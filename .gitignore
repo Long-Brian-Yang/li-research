@@ -1,5 +1,8 @@
 # Local planning/session state
 .planning/
+task_plan.md
+findings.md
+progress.md
 
 # Large model and simulation artifacts
 *.model

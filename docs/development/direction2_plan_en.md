@@ -27,6 +27,27 @@ MD transport screening
         ↓ Step 3: rank candidates and state a clear go/no-go conclusion
 ```
 
+### Internship completion target
+
+This is an internship deliverable, not a publication package. Completion means
+that the structural logic, explicit models, ML-MD analysis, and a clear
+prioritisation/no-go conclusion are documented. Three-to-five-nanosecond runs,
+full DFT force validation, Green–Kubo conductivity, exhaustive chemical search,
+and publication-level uncertainty are optional follow-up work.
+
+### Current execution status
+
+| Work package | Status |
+|---|---|
+| Literature and structural references | Complete |
+| Explicit ordered models | Complete with limitations |
+| NEP89/GPUMDkit 300 K screening | Complete; primary fit 100–300 ps |
+| MACE-MPA-0 400 K runs | Running: jobs 8441077–8441080 |
+| Matched potential comparison | After MACE runs finish |
+
+The four MACE jobs use 10 ps equilibration, 100 ps production, 1 fs timestep,
+and independent 14 h walltime requests.
+
 ## 2. Reference systems and experimental anchors
 
 | System | Role in Direction 2 | Structural reference | Experimental anchor |
