@@ -5,6 +5,9 @@
 - Direction 2 only: Li₃YCl₆ and LiNbOCl₄.
 - Direction 3 chemistry-development material is out of the current execution
   scope.
+- Direction 2 now includes a later structure-guided discovery extension:
+  structural motif mapping → constrained substitution/structure prediction →
+  MD screening and an explicit go/no-go conclusion.
 - Literature notes remain bilingual; computational documentation is English.
 
 ## Structures

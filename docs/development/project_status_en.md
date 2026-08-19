@@ -19,6 +19,24 @@ scope is limited to two literature reference materials:
 | Comparison | Quantify potential/temperature/ordering effects | Matched MSD and σ_NE analysis | Pending MACE completion | To be added |
 | Validation | Check force accuracy and structural stability | DFT spot checks and longer replicas | Pending | To be added |
 
+## Proposed Direction 2 discovery logic
+
+The project is not limited to reproducing two isolated compositions. After the
+reference gates, the work expands in three controlled steps:
+
+1. **Structural map:** identify space groups, stacking, polyhedral connectivity,
+   Li-site topology, vacancy patterns, and anion arrangements associated with
+   high conductivity in the literature and NGK data.
+2. **Constrained substitution:** replace elements only within the approved
+   element space, while allowing for composition-induced structure changes and
+   explicitly constructing new ordered models.
+3. **MD decision:** screen stable models, rank transport and stability, and
+   provide a clear go/no-go conclusion. If the candidate set is too large, use a
+   documented descriptor/surrogate model to select MD candidates.
+
+The two current materials are therefore **reference anchors and structural
+training examples**, not the final search space.
+
 ## MACE run currently in progress
 
 Each system is submitted as an independent job to avoid serial walltime

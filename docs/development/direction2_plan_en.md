@@ -10,10 +10,22 @@ atomistic workflow:
 > three-dimensional Li-ion migration network, and can the calculated transport
 > trends be reconciled with the reported experimental conductivity?**
 
-This is a reproduction-first project. It does not introduce a new composition,
-large-scale chemical search, or a low-cost candidate-design programme at this
-stage. New chemistry is out of scope until the two reference systems pass the
-structure, stability, transport, and uncertainty gates below.
+The project starts with reproduction, but the intended endpoint is a
+structure-guided search rather than two isolated material case studies. The
+two reference systems provide benchmark structures, polyhedral motifs,
+ordering hypotheses, and transport data for the subsequent search. Large-scale
+chemistry is deferred until the reference-system gates are passed.
+
+The complete research logic is:
+
+```text
+high-conductivity papers and NGK data
+        ↓ Step 1: identify space groups, polyhedral arrangements, and Li networks
+composition-constrained substitutions
+        ↓ Step 2: predict structure changes and construct explicit models
+MD transport screening
+        ↓ Step 3: rank candidates and state a clear go/no-go conclusion
+```
 
 ## 2. Reference systems and experimental anchors
 
@@ -134,7 +146,40 @@ Before the long run, perform a 1,000–10,000-step GPU smoke test and verify:
 - no atoms leave the periodic cell in the stored trajectory;
 - no sudden energy or distance catastrophe occurs.
 
-## 6. Production MD protocol
+## 6. Structure-guided discovery extension
+
+The comments on the proposed Direction 2 clarify that a useful outcome is not
+only a conductivity number. The project must also determine which structural
+regions can be excluded or prioritised.
+
+### Step 1 — identify the high-conductivity structural motifs
+
+Organise the literature and NGK trial data by space group, stacking type,
+polyhedral connectivity, Li-site topology, vacancy pattern, and anion
+arrangement. Space group labels alone are insufficient: the same space group
+can contain different Li bottlenecks and migration networks. Li₃YCl₆ and
+LiNbOCl₄ are reference points for this map, not the complete candidate set.
+
+### Step 2 — composition-constrained substitution and structure prediction
+
+Apply the project’s element constraints while substituting cations or anions in
+the identified motifs. A composition change can change the stable space group,
+polyhedral arrangement, and Li-vacancy network, so the workflow must be able to
+predict or enumerate plausible structures rather than reusing one CIF blindly.
+Candidate models should be based on NGK data and the literature, followed by
+explicit ordering, relaxation, and stability checks.
+
+### Step 3 — MD screening and decision
+
+Run MD only after the structural and stability gates. Rank candidates using
+transport, mechanical/structural stability, synthesizability, and element
+constraints. If the candidate set becomes large, use a documented surrogate or
+descriptor model to prioritise MD. A negative result is still useful if it
+clearly identifies a screened-out structural/compositional region. The final
+report must state a conclusion or a go/no-go boundary; “a prediction model
+could not be built” is not an adequate endpoint.
+
+## 7. Production MD protocol
 
 The first near-room-temperature production protocol is fixed as follows:
 
@@ -163,7 +208,7 @@ at least five blocks. If the block-to-block diffusion coefficient varies by
 more than roughly 30%, extend that system to 3–5 ns rather than reporting a
 single precise number.
 
-## 7. Transport analysis
+## 8. Transport analysis
 
 ### 7.1 Li-only MSD and self-diffusion
 
@@ -220,7 +265,7 @@ For any candidate showing measurable transport, calculate or visualise:
 The goal is to explain *why* the two materials differ, not merely to rank two
 numbers.
 
-## 8. Temperature and experiment comparison
+## 9. Temperature and experiment comparison
 
 The simulation and experiment must be aligned before interpretation:
 
@@ -237,7 +282,7 @@ directly with these 298 K numbers. Arrhenius extrapolation may be shown only
 with a measured or independently justified activation energy and with its
 uncertainty.
 
-## 9. Reproduction criteria
+## 10. Reproduction criteria
 
 ### Reproduction pass
 
@@ -267,7 +312,7 @@ Stop and rebuild the model if any of the following occurs:
 - σ<sub>NE</sub> is reported as if it were collective or experimental conductivity;
 - a generic potential gives extreme mobility without force/energy validation.
 
-## 10. Data and reporting checklist
+## 11. Data and reporting checklist
 
 Each run directory must contain:
 
@@ -295,7 +340,7 @@ sigma_collective_mS_cm | block_std | structure_status | confidence | source
 Every reported value must be tagged as `experimental`, `calculated`, or
 `target`, and must include temperature, method, units, and source.
 
-## 11. Immediate action list
+## 12. Immediate action list
 
 1. Finish the current 300 K, 1 ns GPUMD/NEP89 run and verify all four exit
    statuses.
@@ -308,7 +353,7 @@ Every reported value must be tagged as `experimental`, `calculated`, or
 6. Report σ<sub>NE</sub>, not “ionic conductivity”, until collective charge
    correlations and experimental comparability have been addressed.
 
-## 12. Repository entry points
+## 13. Repository entry points
 
 - [`structures/`](../../structures/) — ordered CIF/XYZ/LAMMPS inputs and
   validation metadata;

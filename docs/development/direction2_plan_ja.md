@@ -10,9 +10,21 @@
 > 移動ネットワークを形成するか。また、計算された輸送傾向を報告された
 > 実験伝導度と整合的に説明できるか。**
 
-本段階は reproduction-first とする。新しい組成の設計、大規模な元素探索、
-低コスト材料開発は、以下の構造・安定性・輸送・不確実性ゲートを通過するまで
-実施しない。
+本研究はまず再現計算から開始するが、最終的な目的は二つの材料を個別に比較
+することではなく、構造指針に基づく材料探索を構築することである。二つの参照
+材料は、構造、配位多面体、ordering 仮説、Li 輸送を整理するための基準点である。
+大規模な組成探索は、参照材料が各ゲートを通過した後に行う。
+
+研究全体の流れは次の通りである。
+
+```text
+高伝導度論文と NGK データ
+        ↓ Step 1：空間群、多面体配置、Li 移動ネットワークを整理
+元素制約を考慮した組成置換
+        ↓ Step 2：構造変化を予測し、明示的モデルを構築
+MD による輸送スクリーニング
+        ↓ Step 3：候補を順位付けし、明確な go/no-go 結論を出す
+```
 
 ## 2. 参照材料と実験ベンチマーク
 
@@ -124,7 +136,35 @@ transition が supercell size に敏感であるため、2×2×4 を優先する
 - trajectory 上で原子が周期境界を越えても異常な飛びを示さないこと。
 - エネルギーまたは距離に急激な破綻がないこと。
 
-## 6. production MD プロトコル
+## 6. 構造指針に基づく探索への拡張
+
+今回のコメントを踏まえると、方向 2 の成果は伝導度の数値だけでは不十分で
+あり、どの構造領域を優先または除外できるかを示す必要がある。
+
+### Step 1 — 高伝導構造モチーフの整理
+
+論文と NGK 試行データを、空間群、stacking、配位多面体の接続、Li site の
+topology、vacancy pattern、anion arrangement で整理する。空間群だけでは不十分
+であり、同じ空間群でも Li bottleneck と移動ネットワークが異なる可能性がある。
+Li₃YCl₆ と LiNbOCl₄ はこの構造地図の基準点であり、候補全体ではない。
+
+### Step 2 — 元素制約下の組成置換と構造予測
+
+元素制約を守りながら、Step 1 で抽出した構造モチーフ内で cation/anion を置換
+する。組成を変えると安定空間群、多面体配置、Li vacancy network が変わり得る
+ため、一つの CIF を盲目的に再利用せず、妥当な構造を予測または列挙できる
+workflow が必要である。候補は NGK データと論文を基礎にし、明示的 ordering、
+relaxation、安定性チェックを行う。
+
+### Step 3 — MD スクリーニングと判断
+
+構造と安定性のゲートを通過した候補だけを MD で評価する。輸送、構造・機械的
+安定性、合成可能性、元素制約を合わせて順位付けする。候補数が多い場合は、
+記録可能な surrogate model または descriptor model で MD 候補を絞る。負の結果も
+有用であり、除外できる構造・組成領域を明確に示す。最終報告には必ず結論または
+go/no-go 境界を記載し、「予測モデルを作れなかった」だけで終わらせない。
+
+## 7. production MD プロトコル
 
 室温付近の最初の production protocol は次のように固定する。
 
@@ -151,7 +191,7 @@ linear regime の有無を調べるには有効だが、統計誤差が小さい
 production を少なくとも 5 block に分割する。block 間の D の変動が約 30% を
 超える場合は、精密な数値を報告せず、その系を 3–5 ns に延長する。
 
-## 7. 輸送解析
+## 8. 輸送解析
 
 ### 7.1 Li-only MSD と自己拡散
 
@@ -207,7 +247,7 @@ H=\frac{\sigma_{collective}}{\sigma_{NE}}
 目的は、単なる数値ランキングではなく、二つの材料の差を構造的に説明する
 ことである。
 
-## 8. 温度と実験値の比較
+## 9. 温度と実験値の比較
 
 解釈の前に計算と実験の条件をそろえる。
 
@@ -222,7 +262,7 @@ H=\frac{\sigma_{collective}}{\sigma_{NE}}
 400 K の計算値を 298 K の実験値と直接比較してはいけない。Arrhenius 外挿を示す
 場合は、測定または独立に妥当化した activation energy とその不確実性を併記する。
 
-## 9. 再現判定
+## 10. 再現判定
 
 ### Reproduction pass
 
@@ -250,7 +290,7 @@ H=\frac{\sigma_{collective}}{\sigma_{NE}}
 - σ<sub>NE</sub> を collective または experimental conductivity として報告する。
 - generic potential が force/energy 検証なしに極端な高移動度を示す。
 
-## 10. データと報告の checklist
+## 11. データと報告の checklist
 
 各 run directory には以下を保存する。
 
@@ -278,7 +318,7 @@ sigma_collective_mS_cm | block_std | structure_status | confidence | source
 すべての値に `experimental`、`calculated`、`target` のいずれかを付け、温度、
 手法、単位、出典を記録する。
 
-## 11. 直ちに実施する項目
+## 12. 直ちに実施する項目
 
 1. 現在の 300 K、1 ns GPUMD/NEP89 run を完了し、四つの exit status を確認する。
 2. corrected triclinic trajectory に対して MSD と block analysis を行う。
@@ -289,7 +329,7 @@ sigma_collective_mS_cm | block_std | structure_status | confidence | source
 6. collective charge correlation を確認するまで、σ<sub>NE</sub> を単に「ionic
    conductivity」と表記しない。
 
-## 12. リポジトリの入口
+## 13. リポジトリの入口
 
 - [`structures/`](../../structures/) — ordered CIF/XYZ/LAMMPS input と validation metadata
 - [`simulation/gpumd_nep89/`](../../simulation/gpumd_nep89/) — NEP89 protocol、解析、図
