@@ -1,67 +1,67 @@
-# Historical-Negative-Data-Aware Materials Exploration
+# 历史失败数据感知的材料探索方案
 
-## Research positioning
+## 研究定位
 
-The project aims to reproduce the functional workflow of an industrial materials-informatics platform: historical experimental data → predictive models → exploration of the experimental space → recommendation of the next experiment. The focus is not to reproduce a proprietary implementation, but to establish a transparent and reproducible workflow.
+本项目拟复现企业材料信息学平台的功能级流程：历史实验数据 → 预测模型 → 实验空间探索 → 下一实验点推荐。研究目标不是复制专有软件的内部实现，而是建立透明、可复现的材料探索流程。
 
-The central methodological question is:
+核心问题是：
 
-> Can historical failed experiments be used as negative information to improve the identification of feasible experimental regions and the success probability of the next experimental batch?
+> 将历史失败实验作为负向信息使用后，能否更准确地识别可行实验区域，并提高下一轮实验的成功概率？
 
-The workflow is therefore formulated as **historical-negative-data-aware materials exploration**.
+因此，本研究将整体方法定义为**历史失败数据感知的材料探索**。
 
-## Overall workflow
+## 整体流程
 
 ```text
-Historical experiments
-├── Successful experiments
-│   ├── Composition
-│   ├── Process conditions
-│   └── Measured properties
-└── Failed experiments
-    ├── Composition
-    ├── Process conditions
-    └── Failure type / failure severity
+历史实验数据
+├── 成功实验
+│   ├── 材料组成
+│   ├── 工艺条件
+│   └── 实测性能
+└── 失败实验
+    ├── 材料组成
+    ├── 工艺条件
+    └── 失败类型 / 失败程度
             ↓
-      Data preprocessing
+      数据预处理
             ↓
-      Feasibility model + property-specific models
+      可行性模型 + 性能专用模型
             ↓
-      Experimental-space search
+      实验空间搜索
             ↓
-      Remove low-feasibility regions
+      排除低可行性区域
             ↓
-      Predict individual target properties
+      分别预测不同目标性能
             ↓
-      Integrate candidate regions
+      整合候选区域
             ↓
-      Recommend new composition/process conditions
+      推荐新的材料组成与工艺条件
             ↓
-      New experiment → data update → model update
+      新实验 → 数据回填 → 模型更新
 ```
 
-## Stage 1 — Feasibility screening
+## 第一阶段：可行性筛选
 
-Failed experiments should not be mixed directly with valid numerical property measurements. First, they are used to train a feasibility classifier:
+失败实验不应直接与有效的数值性能数据混合使用。首先利用成功和失败记录训练可行性分类器：
 
 \[
 P(\mathrm{success}\mid x),
 \qquad
-x=(\mathrm{composition},\mathrm{temperature},\mathrm{time},\mathrm{pressure},\ldots).
+x=(\mathrm{组成},\mathrm{温度},\mathrm{时间},\mathrm{压力},\ldots).
 \]
 
-The labels are:
+标签定义如下：
 
-| Experimental record | Feasibility label |
+| 实验记录 | 可行性标签 |
 |---|---:|
-| Successful experiment | 1 |
-| Failed experiment | 0 |
+| 成功实验 | 1 |
+| 失败实验 | 0 |
 
-The classifier identifies feasible regions, high-risk regions, and regions that remain insufficiently explored. A candidate with a low predicted success probability is deprioritized before detailed property optimization.
+该模型用于识别可行区域、高风险区域以及数据仍然不足的区域。预测成功概率较低的候选点，应在详细性能优化前降低优先级。
 
-## Stage 2 — Property-specific modelling
+## 第二阶段：按性能分别建模
 
-Only successful or otherwise valid measurements are used for the corresponding property models. Separate surrogate models are built for each target, for example:
+对每一个性能指标，只使用成功实验或具有有效测量值的记录建立对应模型。例如：
 
 \[
 \hat y_{\mathrm{strength}}(x),\quad
@@ -70,9 +70,9 @@ Only successful or otherwise valid measurements are used for the corresponding p
 \hat y_{\mathrm{oxidation\ resistance}}(x).
 \]
 
-This keeps the meaning of each model explicit and avoids forcing properties with different physical meanings and missing-data patterns into one opaque score.
+这样可以保持每个模型的物理含义清晰，也避免将物理意义不同、缺失模式不同的性能指标强行压缩为一个难以解释的综合分数。
 
-Each model defines a promising region, such as a high-strength or high-conductivity region. The final candidate space is obtained by integrating the regions while retaining the feasibility constraint:
+每个模型分别给出一个候选区域，例如高强度区域或高传导度区域。最终候选空间在满足可行性约束的前提下进行整合：
 
 \[
 R_{\mathrm{candidate}}
@@ -83,71 +83,71 @@ R_{\mathrm{candidate}}
 \cap\cdots.
 \]
 
-The output is a promising experimental range rather than an apparently precise single optimum. This is more appropriate when composition error, process variation, and measurement noise are non-negligible.
+最终输出应是具有一定范围的 promising experimental region，而不是一个看似精确的单一最优点。考虑到组成误差、工艺波动和测量噪声，实验范围通常比单点最优更具有实际意义。
 
-## Bayesian optimization and candidate recommendation
+## 贝叶斯优化与候选点推荐
 
-Candidate selection should use both the predicted property and model uncertainty:
+候选点选择应同时考虑预测性能和模型不确定性：
 
 \[
 x_{\mathrm{next}}
 =\arg\max_x\; a\!\left(\mu(x),\sigma(x),P(\mathrm{success}\mid x)\right),
 \]
 
-where \(\mu(x)\) is the predicted performance, \(\sigma(x)\) is predictive uncertainty, and \(a\) is an acquisition function. The feasibility probability acts as a filter or penalty so that optimization does not repeatedly select experimentally impossible regions.
+其中，\(\mu(x)\) 为预测性能，\(\sigma(x)\) 为预测不确定性，\(a\) 为 acquisition function。可行性概率可以作为筛选条件或惩罚项，避免优化过程反复选择实验上不可行的区域。
 
-When several samples can be prepared in parallel, batch Bayesian optimization should be considered so that all recommendations do not collapse into one local neighborhood. The specific batch strategy is to be selected after the available dataset size and experimental throughput are confirmed.
+如果每轮可以并行制备多个样品，还可以使用 batch Bayesian optimization，避免多个推荐点全部集中在同一个局部区域。具体 batch 策略应在确认数据规模和实验吞吐量后确定。
 
-## Evaluation plan
+## 评价方案
 
-The key comparison is:
+核心对照为：
 
 ```text
-Successful-data-only workflow
-            versus
-Successful + failed-data workflow
+仅使用成功数据的流程
+              对比
+同时使用成功数据与失败数据的流程
 ```
 
-The comparison should use a time-ordered or leave-one-batch-out evaluation to avoid information leakage. Candidate metrics include:
+建议采用按时间划分或按实验批次留出的评价方式，避免信息泄漏。可使用以下指标：
 
-| Question | Example metric |
+| 评价问题 | 示例指标 |
 |---|---|
-| Does negative data reduce infeasible recommendations? | Fraction of recommended points in failed/high-risk regions |
-| Does it improve the next experimental batch? | Feasible-success rate |
-| Does it improve search efficiency? | Experiments required to reach a target property |
-| Does it preserve useful exploration? | Coverage of the unexplored space and uncertainty reduction |
-| Does it identify robust regions? | Performance over a neighborhood, not only at one point |
+| 负向数据是否减少不可行推荐？ | 推荐点落入失败/高风险区域的比例 |
+| 是否改善下一轮实验？ | 可行实验成功率 |
+| 是否提高搜索效率？ | 达到目标性能所需的实验次数 |
+| 是否保留有效探索？ | 未探索空间覆盖率与不确定性下降 |
+| 是否识别出稳健区域？ | 邻域范围内的平均性能，而非单点性能 |
 
-The central hypothesis is:
+核心假设为：
 
 \[
-\text{successful data only}
+\text{仅成功数据}
 <
-\text{successful data + historical failed data}
+\text{成功数据 + 历史失败数据}
 \]
 
-with respect to candidate feasibility, search efficiency, or the number of experiments required to reach the target property.
+这里的“更好”可以具体表现为候选点可行性更高、搜索效率更高，或达到目标性能所需的实验次数更少。
 
-## Publication-level contribution
+## 可作为论文贡献的内容
 
-The contribution should not be described as merely “reproducing an industrial platform.” The intended contribution is the combination of:
+本研究不应仅表述为“复现了某个工业平台”。更合适的贡献表述包括：
 
-1. Systematic use of historical failed experiments as negative feasibility information.
-2. Separate surrogate models for different material properties.
-3. Integration of feasible regions and property-specific promising regions.
-4. Recommendation of robust experimental ranges rather than only a single numerical optimum.
-5. Quantitative comparison against a successful-data-only baseline.
+1. 系统地将历史失败实验作为可行性负向信息使用。
+2. 针对不同材料性能分别建立 surrogate model。
+3. 整合可行区域和不同性能对应的 promising region。
+4. 推荐具有实际容差的实验范围，而不是只输出单一数值最优点。
+5. 与仅使用成功数据的基线流程进行定量比较。
 
-## Required information before implementation
+## 实施前需要补充的信息
 
-The following items should be filled in from the company dataset before the workflow is finalized:
+以下内容需要根据企业数据进一步确定：
 
-- [ ] Definition of “successful experiment” and “failed experiment”.
-- [ ] Failure categories and, if available, a failure-severity scale.
-- [ ] Available composition and process variables.
-- [ ] Target properties and units.
-- [ ] Minimum valid measurement criteria for each property.
-- [ ] Number of historical experiments and batch structure.
-- [ ] Candidate experimental constraints and forbidden regions.
-- [ ] Evaluation target and the experimental budget per iteration.
+- [ ] “成功实验”和“失败实验”的定义。
+- [ ] 失败类型以及是否存在失败程度分级。
+- [ ] 可用的组成变量和工艺变量。
+- [ ] 目标性能及其单位。
+- [ ] 各性能指标的有效测量判定标准。
+- [ ] 历史实验数量和实验批次结构。
+- [ ] 候选实验的约束条件和禁止区域。
+- [ ] 每轮实验预算和最终评价目标。
 
