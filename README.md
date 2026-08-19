@@ -15,6 +15,9 @@ the Direction 2 reproduction and uncertainty gates are passed.
 
 ## Current status
 
+The execution status and work-package boundaries are tracked in the
+[Direction 2 project status](docs/development/project_status_en.md).
+
 1. Screenshot-derived CIF information has been converted into explicit ordered
    candidates. The original CIFs contain partial occupancies and are not sent
    directly to MD.
