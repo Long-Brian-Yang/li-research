@@ -8,12 +8,15 @@
 
 | 材料 | 文献上の位置づけ | 今回の計算モデル | 原子数 | 選択理由 |
 |---|---|---:|---:|---|
-| Li₃YCl₆ | Asano et al., *Advanced Materials* (2018) の高電圧ハライド SSE benchmark | $2\times2\times4$ | 480 | ハライド骨格、Li disorder、4 V 正極適合性を調べる基準構造 |
+| Li₃YCl₆ model 03 | Asano et al., *Advanced Materials* (2018) の高電圧ハライド SSE benchmark | $2\times2\times4$ | 480 | 予備 400 K screening で最も高い Li transport を示した代表 ordering |
 | LiNbOCl₄ | Tanaka et al., *Angewandte Chemie* (2023) の mixed-anion oxyhalide | $2\times2\times3$ を新規 follow-up として作成 | 336 | O/Cl mixed-anion 環境、柔らかい polyanion framework、高伝導候補を調べる構造 |
 
 ### Li₃YCl₆
 
-三つの Li/Y ordering model を $2\times2\times4$ に拡大した。各モデルは
+三つの Li/Y ordering model を予備計算用に作成したが、実習の production MD は
+予備 400 K screening で最も高い Li transport を示した model 03 に絞る。三つの
+ordering を完全な replica study として比較することは、今回の実習範囲では必須としない。
+model 03 を $2\times2\times4$ に拡大した。組成は
 
 $$
 \mathrm{Li_{144}Y_{48}Cl_{288}}
@@ -23,6 +26,17 @@ $$
 幾何学的には MD 入力として使用可能である。ただし、$2\times2\times2$ の
 relaxed cell を c 軸方向に繰り返したモデルなので、最終的な production MD の前に
 超胞全体の relaxation を行うのが望ましい。
+
+### 構造表示
+
+以下に基準胞（左）と MD 用の拡大胞（右）を示す。Li₃YCl₆ は model 03 の
+$2\times2\times2$ 基準 ordered cell と $2\times2\times4$ production supercell を
+比較している。LiNbOCl₄ はスクリーンショットから再構成した provisional reference
+cell と、そこから作成した $2\times2\times3$ ordered follow-up supercell を比較している。
+
+![Direction 2 reference cells and MD supercells](figures/structure_reference_vs_supercell_ja.png)
+
+*図：左が基準／参照胞、右が MD 用拡大胞。色は Li（紫）、Y/Nb（青）、O（赤）、Cl（緑）。*
 
 ### LiNbOCl₄
 
@@ -123,7 +137,7 @@ overhead だけを避ける。
 |---|---|
 | Engine | LAMMPS + MACE ML-IAP/Kokkos |
 | Ensemble | NVT |
-| 温度 | 400 K（初期 workflow test） |
+| 温度 | 400 K（主計算） |
 | timestep | 1 fs |
 | equilibration | 10 ps（10,000 steps） |
 | production | 100 ps（100,000 steps） |
@@ -133,8 +147,9 @@ overhead だけを避ける。
 | GPU | 原則 1 job : 1 GPU |
 | 解析 | 温度、エネルギー、最短距離、MSD、(D_{Li})、Nernst–Einstein 推定値 |
 
-400 K は室温の直接再現ではなく、Li motion を観測するための初期検証温度である。
-最終的な実験比較では 300 K を基準にし、温度依存性と block uncertainty を別途評価する。
+今回の主計算温度は両材料とも 400 K とする。400 K は室温の直接再現ではなく、
+Li motion を観測しやすくするための workflow／実習用温度である。300 K は今回の
+主計算から外し、必要になった場合の室温比較用の追加計算とする。
 
 ## 5. TSUBAME での次の作業
 
@@ -142,14 +157,14 @@ overhead だけを避ける。
 2. `PKG_ML-IAP`、`PKG_KOKKOS`、Python support を有効にした LAMMPS を構築する。
 3. まず 1,000 step の benchmark を実行し、`timesteps/s` と GPU memory を記録する。
 4. 旧 `pair_style mace` と ML-IAP/Kokkos のエネルギー、温度、短時間 trajectory を比較する。
-5. 問題がなければ 10 ps equilibration + 100 ps production を実行する。
+5. 問題がなければ 400 K で 10 ps equilibration + 100 ps production を実行する。
 6. LiNbOCl₄ については、$2\times2\times3$ ordered model を relaxation してから
    production MD に進める。
 
 ## 6. 今回の結論
 
 今回の目的は、最初から専用 MLIP を新規学習することではない。まずは MACE-MPA-0 と
-LAMMPS を用いて、二つの代表構造について、
+LAMMPS を用いて、Li₃YCl₆ model 03 と LiNbOCl₄ の二つの代表構造について、
 
 $$
 \text{structure} \rightarrow \text{relaxation} \rightarrow \text{stability test}
