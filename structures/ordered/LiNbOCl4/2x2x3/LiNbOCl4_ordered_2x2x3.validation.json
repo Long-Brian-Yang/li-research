@@ -1,0 +1,18 @@
+{
+  "source": "/Users/brian/Documents/Codex/2026-08-18/github-repo-9-paper-keywords-doi/structures/reference/photo_reconstructed/LiNbOCl4_photo_reconstructed.cif",
+  "supercell": [
+    2,
+    2,
+    3
+  ],
+  "atom_count": 336,
+  "formula_counts": {
+    "Cl": 192,
+    "Li": 48,
+    "Nb": 48,
+    "O": 48
+  },
+  "minimum_distance_angstrom": 1.907205719744197,
+  "status": "ordered_candidate; validate and relax before production MD",
+  "note": "The screenshot-reconstructed conventional cell contains 28 atoms; direct 2x2x3 repeat contains 336 atoms. The 168-atom literature cell uses a different crystallographic setting."
+}
