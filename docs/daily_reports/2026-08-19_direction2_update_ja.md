@@ -8,30 +8,30 @@
 
 | 材料 | 文献上の位置づけ | 今回の計算モデル | 原子数 | 選択理由 |
 |---|---|---:|---:|---|
-| Li₃YCl₆ | Asano et al., *Advanced Materials* (2018) の高電圧ハライド SSE benchmark | (2\times2\times4) | 480 | ハライド骨格、Li disorder、4 V 正極適合性を調べる基準構造 |
-| LiNbOCl₄ | Tanaka et al., *Angewandte Chemie* (2023) の mixed-anion oxyhalide | (2\times2\times3) を新規 follow-up として作成 | 336 | O/Cl mixed-anion 環境、柔らかい polyanion framework、高伝導候補を調べる構造 |
+| Li₃YCl₆ | Asano et al., *Advanced Materials* (2018) の高電圧ハライド SSE benchmark | $2\times2\times4$ | 480 | ハライド骨格、Li disorder、4 V 正極適合性を調べる基準構造 |
+| LiNbOCl₄ | Tanaka et al., *Angewandte Chemie* (2023) の mixed-anion oxyhalide | $2\times2\times3$ を新規 follow-up として作成 | 336 | O/Cl mixed-anion 環境、柔らかい polyanion framework、高伝導候補を調べる構造 |
 
 ### Li₃YCl₆
 
-三つの Li/Y ordering model を (2\times2\times4) に拡大した。各モデルは
+三つの Li/Y ordering model を $2\times2\times4$ に拡大した。各モデルは
 
-\[
+$$
 \mathrm{Li_{144}Y_{48}Cl_{288}}
-\]
+$$
 
 であり、縮約すると Li₃YCl₆ となる。最短原子間距離は約 2.39–2.46 Å で、
-幾何学的には MD 入力として使用可能である。ただし、(2\times2\times2) の
+幾何学的には MD 入力として使用可能である。ただし、$2\times2\times2$ の
 relaxed cell を c 軸方向に繰り返したモデルなので、最終的な production MD の前に
 超胞全体の relaxation を行うのが望ましい。
 
 ### LiNbOCl₄
 
 スクリーンショットから再構成した conventional cell を明示的な full-occupancy
-ordered model として (2\times2\times3) に拡大した。組成は
+ordered model として $2\times2\times3$ に拡大した。組成は
 
-\[
+$$
 \mathrm{Li_{48}Nb_{48}O_{48}Cl_{192}}
-\]
+$$
 
 であり、縮約すると LiNbOCl₄ となる。現在の直接反復モデルは 336 atoms である。
 文献で報告される 168-atom cell は異なる crystallographic setting に基づくため、
@@ -100,7 +100,7 @@ ASE-MD は、構造の読み込み、短時間 relaxation、少数ステップ�
    trajectory に適している。
 2. Kokkos GPU backend を使用でき、TSUBAME の NVIDIA GPU を直接利用できる。
 3. NVT、thermo output、restart、LAMMPS trajectory dump を標準形式で保存できる。
-4. (2\times2\times4) Li₃YCl₆ と (2\times2\times3) LiNbOCl₄ のような大きめの
+4. $2\times2\times4$ Li₃YCl₆ と $2\times2\times3$ LiNbOCl₄ のような大きめの
    supercell で、MSD、Li diffusion、構造安定性を同じ engine で比較できる。
 5. 後で GPUMD/NEP89、DFT/AIMD、他の MLIP と比較しやすい。
 
@@ -143,7 +143,7 @@ overhead だけを避ける。
 3. まず 1,000 step の benchmark を実行し、`timesteps/s` と GPU memory を記録する。
 4. 旧 `pair_style mace` と ML-IAP/Kokkos のエネルギー、温度、短時間 trajectory を比較する。
 5. 問題がなければ 10 ps equilibration + 100 ps production を実行する。
-6. LiNbOCl₄ については、(2\times2\times3) ordered model を relaxation してから
+6. LiNbOCl₄ については、$2\times2\times3$ ordered model を relaxation してから
    production MD に進める。
 
 ## 6. 今回の結論
@@ -151,10 +151,10 @@ overhead だけを避ける。
 今回の目的は、最初から専用 MLIP を新規学習することではない。まずは MACE-MPA-0 と
 LAMMPS を用いて、二つの代表構造について、
 
-\[
+$$
 \text{structure} \rightarrow \text{relaxation} \rightarrow \text{stability test}
 \rightarrow \text{MD} \rightarrow \text{MSD / diffusion analysis}
-\]
+$$
 
 という再現可能な workflow を完成させる。その後、汎用モデルの適用限界が明らかに
 なった場合に限り、対象構造の DFT/AIMD データを追加して fine-tuning を検討する。
