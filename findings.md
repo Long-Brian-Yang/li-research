@@ -42,3 +42,11 @@
   pressed-powder EIS conductivity.
 - Experimental discrepancy cannot be assigned solely to the fit window; model,
   ordering, temperature, finite size, and conductivity definition all matter.
+
+## Internship scope decision
+
+The goal is a coherent internship deliverable, not publication-level
+validation. The minimum useful endpoint is a documented structure-guided
+screening workflow with reproducible MD, a small candidate set, and a clear
+prioritisation/no-go conclusion. Long trajectories, DFT force validation, and
+Green–Kubo analysis are follow-up improvements rather than blockers.

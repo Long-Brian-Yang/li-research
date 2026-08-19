@@ -5,7 +5,8 @@
 Build a reproducible Direction 2 workflow for Li₃YCl₆ and LiNbOCl₄, from
 literature benchmark and explicit ordered structures to validated ML-MD
 transport results. Keep MACE and NEP89 results separate and comparable only
-after matching temperature, cell, trajectory length, and analysis.
+after matching temperature, cell, trajectory length, and analysis. This is an
+internship-level workflow and screening conclusion, not a publication package.
 
 ## Phases
 
@@ -26,10 +27,11 @@ after matching temperature, cell, trajectory length, and analysis.
 5. **Matched comparison** — pending
    - Compare MACE and NEP89 only with matched temperature and supercell.
    - Report tracer/NE conductivity separately from experimental EIS values.
-6. **Validation and publication-ready organization** — pending
-   - Check model forces/energies against DFT snapshots.
-   - Add uncertainty, finite-size, ordering, and potential-dependence analysis.
-   - Commit only compact trajectories/results; retain full trajectories on TSUBAME.
+6. **Internship report and handoff** — pending
+   - Summarise structural motifs, candidate selection, MD results, and limits.
+   - Give a clear prioritisation or no-go conclusion.
+   - Treat DFT spot checks, long replicas, and Green–Kubo as optional follow-up,
+     not completion blockers.
 
 ## Current decision
 

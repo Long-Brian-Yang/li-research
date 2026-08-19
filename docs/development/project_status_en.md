@@ -37,6 +37,21 @@ reference gates, the work expands in three controlled steps:
 The two current materials are therefore **reference anchors and structural
 training examples**, not the final search space.
 
+## Internship-level completion target
+
+This is an internship deliverable, not a publication package. Completion does
+not require publication-grade uncertainty, 3–5 ns trajectories, Green–Kubo
+conductivity, or exhaustive DFT validation. The practical target is to:
+
+1. explain the relevant structural motifs;
+2. organise a small, interpretable candidate set;
+3. construct and validate explicit models;
+4. run ML-MD and calculate MSD/σ_NE consistently; and
+5. provide a clear prioritisation or no-go conclusion with limitations.
+
+Longer trajectories, DFT spot checks, and collective conductivity are useful
+follow-ups, but they are not completion blockers for the internship report.
+
 ## MACE run currently in progress
 
 Each system is submitted as an independent job to avoid serial walltime
