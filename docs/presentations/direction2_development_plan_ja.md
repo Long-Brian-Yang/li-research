@@ -11,7 +11,7 @@ flowchart TD
     A["① 構造選定<br/>Li₃YCl₆・LiNbOCl₄"]
     --> B["② 構造最適化<br/>MACE"]
     --> C["③ 分子動力学<br/>LAMMPS"]
-    --> D["④ Li⁺拡散評価<br/>MSD"]
+    --> D["④ Li+拡散・伝導度<br/>MSD"]
 
     classDef step fill:#FFFFFF,stroke:#000000,stroke-width:1.5px,color:#000000;
     class A,B,C,D step;
