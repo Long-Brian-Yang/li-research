@@ -11,7 +11,7 @@ flowchart TD
     --> C["③ 分子動力学<br/>LAMMPS"]
     --> D["④ Li⁺拡散評価<br/>MSD"]
 
-    classDef step fill:#EAF2F8,stroke:#3973AC,stroke-width:2px,color:#17324D;
+    classDef step fill:#FFFFFF,stroke:#000000,stroke-width:1.5px,color:#000000;
     class A,B,C,D step;
 ```
 
