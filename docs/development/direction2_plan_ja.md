@@ -138,7 +138,7 @@ potential を呼び出す前に、以下を記録する。
 - 体積・密度の異常な変化がないこと。
 - Li–Cl、Y–Cl、Nb–O、Nb–Cl の短すぎる接触がないこと。
 - framework の崩壊や原子重なりがないこと。
-- ordering model 間の相対エネルギー。
+- 緩和後も framework が化学的・幾何学的に妥当であること。
 
 MACE-MPA-0 と NEP89 は screening tool であり、単独で実験構造や実験伝導度を
 検証するものではない。
@@ -346,7 +346,8 @@ sigma_collective_mS_cm | block_std | structure_status | confidence | source
 3. Li₃YCl₆ の 2×2×4 結果と、以前の 2×2×2・400 K screening をサイズ・温度
    感度の比較として整理する。
 4. LiNbOCl₄ の single-run uncertainty が大きければ replica を二つ以上追加する。
-5. 代表構造を MACE-MPA-0 と比較し、可能なら DFT energy/force でも確認する。
+5. 代表構造を MACE-MPA-0 と比較する。DFT force の spot check は時間があれば
+   追加する。
 6. collective charge correlation を確認するまで、σ<sub>NE</sub> を単に「ionic
    conductivity」と表記しない。
 

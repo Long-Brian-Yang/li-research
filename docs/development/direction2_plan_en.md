@@ -137,9 +137,9 @@ Before any potential is called, record:
 
 Use MACE-MPA-0 or DFT to relax atomic positions first. A cell/volume pass may
 follow, but the input, checkpoint, GPU, convergence criteria, and whether the
-cell shape was fixed must be recorded. Retain all three Li₃YCl₆ orderings;
-do not silently select the lowest-energy model before transport sensitivity is
-known.
+cell shape was fixed must be recorded. Retain all three Li₃YCl₆ orderings and
+do not select one model before transport sensitivity is known. Formation-energy
+and cross-potential relative-energy ranking are outside the internship scope.
 
 At minimum, inspect the relaxed structure for:
 
@@ -147,7 +147,7 @@ At minimum, inspect the relaxed structure for:
 - unreasonable volume or density change;
 - short Li–Cl, Y–Cl, Nb–O, or Nb–Cl contacts;
 - loss of the intended framework or atom overlap;
-- differences in relative energy between ordering models.
+- whether the relaxed framework remains chemically and geometrically plausible.
 
 MACE-MPA-0 and NEP89 are screening tools here. Neither result alone validates
 the experimental structure or proves the experimental conductivity.
