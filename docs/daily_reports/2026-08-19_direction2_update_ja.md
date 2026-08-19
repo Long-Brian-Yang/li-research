@@ -27,17 +27,6 @@ $$
 relaxed cell を c 軸方向に繰り返したモデルなので、最終的な production MD の前に
 超胞全体の relaxation を行うのが望ましい。
 
-### 構造表示
-
-以下に基準胞（左）と MD 用の拡大胞（右）を示す。Li₃YCl₆ は model 03 の
-$2\times2\times2$ 基準 ordered cell と $2\times2\times4$ production supercell を
-比較している。LiNbOCl₄ はスクリーンショットから再構成した provisional reference
-cell と、そこから作成した $2\times2\times3$ ordered follow-up supercell を比較している。
-
-![Direction 2 reference cells and MD supercells](figures/structure_reference_vs_supercell_ja.png)
-
-*図：左が基準／参照胞、右が MD 用拡大胞。色は Li（紫）、Y/Nb（青）、O（赤）、Cl（緑）。*
-
 ### LiNbOCl₄
 
 スクリーンショットから再構成した conventional cell を明示的な full-occupancy
