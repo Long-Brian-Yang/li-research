@@ -4,6 +4,8 @@
 
 ### 開発フロー
 
+![開発フロー図](direction2_development_flow_ja.png)
+
 ```mermaid
 flowchart TD
     A["① 構造選定<br/>Li₃YCl₆・LiNbOCl₄"]
