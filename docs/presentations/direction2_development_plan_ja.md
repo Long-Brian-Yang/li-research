@@ -2,6 +2,19 @@
 
 ## 企業向け発表原稿（約5分）
 
+### 開発フロー
+
+```mermaid
+flowchart TD
+    A["① 構造選定<br/>Li₃YCl₆・LiNbOCl₄"]
+    --> B["② 構造最適化<br/>MACE"]
+    --> C["③ 分子動力学<br/>LAMMPS"]
+    --> D["④ Li⁺拡散評価<br/>MSD"]
+
+    classDef step fill:#EAF2F8,stroke:#3973AC,stroke-width:2px,color:#17324D;
+    class A,B,C,D step;
+```
+
 ### 1. はじめに
 
 本日は、固体電解質を対象とした計算開発計画について説明します。
