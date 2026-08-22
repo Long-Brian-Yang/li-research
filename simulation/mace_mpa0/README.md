@@ -5,10 +5,12 @@
 The completed 50 ps equilibration + 500 ps production runs for the selected
 ordered Li₃YCl₆ model are summarized in
 [`results/mace_li3ycl6_arrhenius_500ps.md`](results/mace_li3ycl6_arrhenius_500ps.md).
-The 400/600/800/1000 K Arrhenius fit gives `E_a = 0.148 eV`,
-`D_0 = 1.71 × 10⁻⁴ cm² s⁻¹`, and an extrapolated `D(300 K) = 5.56 × 10⁻⁷
-cm² s⁻¹`. These are preliminary generic-MACE screening results and are not
-treated as a quantitative reproduction of the experimental conductivity.
+The six-temperature trajectory fit gives `E_a = 0.159 eV`,
+`D_0 = 1.78 × 10⁻⁴ cm² s⁻¹`, and an extrapolated `D(300 K) = 3.80 × 10⁻⁷
+cm² s⁻¹`. LAMMPS MSD and independent trajectory analysis agree for the
+temperatures where both outputs exist. These remain preliminary generic-MACE
+screening results and are not treated as a quantitative reproduction of the
+experimental conductivity.
 
 This directory configures the explicit MACE foundation checkpoint `medium-mpa-0` (MACE-MPA-0) for the Direction 2 reproduction study.
 
