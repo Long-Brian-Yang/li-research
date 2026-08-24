@@ -1,0 +1,30 @@
+# MACE-MPA-0 ML-IAP/Kokkos MD: 10 ps equilibration + 100 ps production.
+# Dump output is intentionally retained for MSD, trajectory, and pathway analysis.
+clear
+units metal
+atom_style atomic
+boundary p p p
+newton on
+atom_modify map yes
+read_data ${data}
+mass 1 6.94
+mass 2 88.90584
+mass 3 35.45
+pair_style mliap unified ${model} 0
+pair_coeff * * Li Y Cl
+neighbor 2.0 bin
+neigh_modify delay 0 every 1 check yes
+timestep 0.001
+variable T equal 400.0
+thermo 1000
+thermo_style custom step temp pe ke etotal press vol lx ly lz
+thermo_modify flush yes
+velocity all create ${T} ${seed} mom yes rot no dist gaussian
+fix thermostat all nvt temp ${T} ${T} 0.1
+run 10000
+reset_timestep 0
+dump traj all custom 1000 ${out_dump} id type xu yu zu vx vy vz
+run 100000
+unfix thermostat
+undump traj
+write_data ${out_data}

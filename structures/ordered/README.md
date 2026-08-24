@@ -12,7 +12,8 @@ origin and formula in a manifest before production MD.
 
 ## Current (2\times2\times2) status
 
-- `LiNbOCl4/2x2x2/`: pipeline candidate CIF, LAMMPS data, and validation report
+- `LiNbOCl4/2x2x2/`: earlier pipeline candidate retained for provenance
+- `LiNbOCl4/2x2x3/`: literature-aligned follow-up candidate, CIF, LAMMPS data, and validation report
   generated from the screenshot-reconstructed CIF under an explicit full-site
   occupancy assumption. It contains 224 atoms and has a minimum distance of
   1.907 Å.

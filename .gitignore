@@ -15,7 +15,7 @@ runs/
 
 # Raw GPUMD trajectories are archived locally/at TSUBAME; commit derived tables
 # and figures instead of multi-hundred-megabyte dump files.
-simulation/gpumd_nep89/results/300K_2x2x4/job_*/
+results/gpumd_nep89/300K_2x2x4/job_*/
 
 # Python cache and local environments
 __pycache__/

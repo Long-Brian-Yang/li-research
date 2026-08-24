@@ -16,19 +16,19 @@ the Direction 2 reproduction and uncertainty gates are passed.
 ## Current status
 
 The execution status and work-package boundaries are tracked in the
-[Direction 2 project status](docs/development/project_status_en.md).
+[benchmark comparison](docs/development/benchmarks/benchmark_comparison.md).
 
 1. Screenshot-derived CIF information has been converted into explicit ordered
    candidates. The original CIFs contain partial occupancies and are not sent
    directly to MD.
 2. Three ordered Li₃YCl₆ occupancy models and one ordered LiNbOCl₄ model have
    been converted to LAMMPS data files.
-3. MACE-MPA-0 GPU ionic relaxation has been tested on TSUBAME 26ICP.
-4. Isotropic variable-volume relaxation is being run from the fixed-cell
-   relaxed structures. Cell shape is kept fixed in this first variable-cell
-   pass.
+3. The calculation workflow supports MACE, SevenNet, M3GNet/MatGL and GPUMD.
+4. The current benchmark set uses a shared relaxed Li₃YCl₆ structure; physical
+   diffusion studies remain a separate, model-specific relaxation and MD phase.
 
-Relaxed structures from TSUBAME are stored under `relax_runs/<timestamp>/`.
+Relaxed structures and MD workspaces from TSUBAME are stored under
+`runs/relax/<timestamp>/` and `runs/md/<timestamp>/`.
 These results are screening data, not yet validated transport values: the next
 step is short MD, followed by force and structure checks against DFT or
 experiment.
@@ -52,14 +52,14 @@ Li MSD / diffusion screening and structural sanity checks
 The main entry points are:
 
 - [`structures/`](structures/) — explicit ordered CIF and LAMMPS data files;
-- [`simulation/mace_mpa0/`](simulation/mace_mpa0/) — model, conversion,
-  relaxation, MD, and diffusion-analysis utilities;
-- [`simulation/mace_mpa0/lammps/README.md`](simulation/mace_mpa0/lammps/README.md)
-  — MACE + LAMMPS input conventions;
-- [`hpc/tsubame_26icp/relax_ordered_gpu.sh`](hpc/tsubame_26icp/relax_ordered_gpu.sh)
-  — fixed-cell ionic relaxation;
-- [`hpc/tsubame_26icp/relax_cell_ordered_gpu.sh`](hpc/tsubame_26icp/relax_cell_ordered_gpu.sh)
-  — isotropic variable-volume relaxation.
+- [`src/li_research/`](src/li_research/) — maintained structure, conversion and
+  analysis utilities;
+- [`hpc/tsubame_26icp/`](hpc/tsubame_26icp/) — active build and benchmark
+  launchers;
+- [`hpc/tsubame_26icp/validation/validate_project.sh`](hpc/tsubame_26icp/validation/validate_project.sh)
+  — pre-submission environment/path validation;
+- [`docs/development/protocols/project_layout.md`](docs/development/protocols/project_layout.md)
+  — authoritative TSUBAME layout and naming convention.
 
 ## Structure policy
 
@@ -88,9 +88,9 @@ they are not the computational workflow itself.
 ## Direction 2 research plan
 
 The project plan is maintained in two synchronized Markdown files:
-[`docs/development/direction2_plan_en.md`](docs/development/direction2_plan_en.md)
+[`docs/development/plans/direction2_plan_en.md`](docs/development/plans/direction2_plan_en.md)
 and
-[`docs/development/direction2_plan_ja.md`](docs/development/direction2_plan_ja.md).
+[`docs/development/plans/direction2_plan_ja.md`](docs/development/plans/direction2_plan_ja.md).
 
 ## Reproducibility notes
 
@@ -98,3 +98,9 @@ Record the MACE checkpoint, LAMMPS executable, GPU model, input data filename,
 supercell, temperature, timestep, and trajectory length for every MD run.
 MACE foundation-model results are exploratory until checked against DFT forces,
 experimental structure/transport data, and an independent potential.
+
+The canonical TSUBAME directory and script naming rules are in
+[project_layout.md](docs/development/protocols/project_layout.md). Superseded
+short-lived artifacts are removed after their unique information has been
+merged into the current documentation; reproducible raw calculation outputs
+remain in timestamped `runs/` and `results/` directories.

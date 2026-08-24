@@ -13,3 +13,6 @@ Files:
 - `LiNbOCl4_ordered_2x2x2.cif`
 - `LiNbOCl4_ordered_2x2x2.data`
 - `LiNbOCl4_ordered_2x2x2.validation.json`
+
+The literature-aligned follow-up candidate is in [`../2x2x3/`](../2x2x3/).
+This 2×2×2 cell is retained for provenance and previous smoke tests.

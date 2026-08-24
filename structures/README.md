@@ -9,6 +9,15 @@ ordered models.
 | [`raw/`](raw/) | Original deposited CIFs supplied by the research team | Source data; verify provenance |
 | [`ordered/`](ordered/) | Explicit full-occupancy models for DFT/ML-MD | Production input after validation |
 
+## LiNbOCl₄ supercell choice
+
+The earlier `ordered/LiNbOCl4/2x2x2/` cell is retained for provenance and
+previous smoke tests. The literature-aligned follow-up candidate is
+`ordered/LiNbOCl4/2x2x3/`. Because the screenshot-reconstructed conventional
+cell contains 28 atoms, this direct 2×2×3 repeat contains 336 atoms. The
+168-atom literature cell uses a different crystallographic setting, so atom
+counts should not be compared without first matching the cell setting.
+
 The screenshot-reconstructed CIFs contain partial occupancies.  They must be
 ordered and checked against the original CIF before conversion to a LAMMPS data
 file.
