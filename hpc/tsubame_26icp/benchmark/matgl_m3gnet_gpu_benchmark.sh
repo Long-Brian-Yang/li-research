@@ -21,7 +21,7 @@ DATA_ROOT="$STRUCTURES_ROOT"
 export MATGL_PYTHON_ENV="$MATGL_ENV"
 LMP="$MATGL_LMP"
 MODEL="${MATGL_MODEL:-$MODEL_ROOT/m3gnet_matgl_gpu_fixed.pt}"
-DATA="${MATGL_DATA:-$DATA_ROOT/Li3YCl6_ordered_03_2x2x2.data}"
+DATA="${MATGL_DATA:-$DATA_ROOT/ordered/Li3YCl6/2x2x2/model_03/Li3YCl6_ordered_03_2x2x2.data}"
 # The installed LAMMPS executable links to its shared library in the same
 # prefix; make that library visible on TSUBAME compute nodes.
 export LD_LIBRARY_PATH="$MATGL_RUNTIME_LIBS:$MATGL_LAMMPS_BUILD_ROOT:$ROOT/install/lib64:$MATGL_ENV/lib/python3.12/site-packages/torch/lib:${LD_LIBRARY_PATH:-}"
