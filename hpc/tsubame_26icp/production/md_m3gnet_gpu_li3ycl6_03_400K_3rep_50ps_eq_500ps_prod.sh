@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
-# MatGL/M3GNet GPU: Li3YCl6 2x2x2, 400 K, three replicas.
+# MatGL/M3GNet GPU: Li3YCl6 2x2x2, four temperatures, three replicas each.
 # Each task performs cell relaxation, 50 ps equilibration and 500 ps production.
 #$ -cwd
 #$ -V
 #$ -l gpu_1=1
 #$ -l h_rt=24:00:00
-#$ -t 1-3
+#$ -t 1-12
 #$ -tc 3
 #$ -N m3gnet_400K_3R
 set -euo pipefail
@@ -14,13 +14,20 @@ YANG_PATHS_FILE="${YANG_PATHS_FILE:-${TSUBAME_TEST_ROOT:-/gs/fs/tgj-26ICP/uf0378
 source "$YANG_PATHS_FILE"
 MODEL_NAME="m3gnet_matgl_gpu"
 STRUCTURE_NAME="Li3YCl6_03_2x2x2"
-TEMPERATURE_K=400
+TEMPERATURES=(400 600 800 1000)
+if [[ -n "${TEMPERATURES_OVERRIDE:-}" ]]; then
+  IFS=',' read -r -a TEMPERATURES <<< "$TEMPERATURES_OVERRIDE"
+fi
 TIMESTEP_PS=0.001
 EQ_STEPS=50000
 PROD_STEPS=500000
 TASK_ID="${SGE_TASK_ID:?SGE_TASK_ID is required}"
-REPLICA="$TASK_ID"
-SEED=$((866200 + REPLICA))
+TASK_INDEX=$((TASK_ID - 1))
+TEMPERATURE_INDEX=$((TASK_INDEX / 3))
+REPLICA=$((TASK_INDEX % 3 + 1))
+(( TEMPERATURE_INDEX < ${#TEMPERATURES[@]} )) || { echo "ERROR: invalid task id $TASK_ID" >&2; exit 2; }
+TEMPERATURE_K="${TEMPERATURES[$TEMPERATURE_INDEX]}"
+SEED=$((866200 + TEMPERATURE_INDEX * 100 + REPLICA))
 LMP="$MATGL_LMP"
 MODEL="${MATGL_MODEL:-$MODELS_ROOT/m3gnet/m3gnet_matgl_gpu_fixed.pt}"
 INPUT="$STRUCTURES_ROOT/ordered/Li3YCl6/2x2x2/model_03/Li3YCl6_ordered_03_2x2x2.data"
