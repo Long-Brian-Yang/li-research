@@ -75,6 +75,36 @@ experimental reference. It is not the minimum-error combination.
 
 Experimental reference: `Ea_exp ~= 0.40 eV`.
 
+### Selected four-temperature comparison (400/600/800/1000 K)
+
+The following combinations are now the fixed comparison set requested for the
+three models.  Values below were re-read from the completed LAMMPS
+`trajectory.lammpstrj` files using the same 10--90% production-window MSD
+fit.  Each trajectory contains 501 frames (0--500 ps); the latest completed
+1000 K run was selected where a rerun was available.
+
+| Model | 400 K | 600 K | 800 K | 1000 K | Ea (eV) | R2 | D(300 K) (cm2/s) |
+|---|---|---|---|---:|---:|---:|---:|
+| MACE-MPA-0 | R3 | R3 | R2 | R1 | 0.2700 | 0.9939 | 3.17e-8 |
+| SevenNet-nano | R3 | R2 | R2 | R1 | 0.2210 | 0.9987 | 8.12e-8 |
+| M3GNet GPU | R2 | R2 | R2 | R2 | 0.3610 | 0.9930 | 3.53e-9 |
+
+Per-temperature self-diffusion values used in each fit are recorded below
+for auditability (units: cm2/s):
+
+| Model | 400 K | 600 K | 800 K | 1000 K |
+|---|---:|---:|---:|---:|
+| MACE-MPA-0 | 3.947e-7 | 7.474e-6 | 1.957e-5 | 4.527e-5 |
+| SevenNet-nano | 7.132e-7 | 5.470e-6 | 1.642e-5 | 3.448e-5 |
+| M3GNet GPU | 1.293e-7 | 2.740e-6 | 2.664e-5 | 6.277e-5 |
+
+The corresponding MSD-fit (R^2) values at 400/600/800/1000 K are,
+respectively, MACE: 0.421/0.987/0.992/0.983; SevenNet:
+0.949/0.993/0.986/0.991; and M3GNet: 0.882/0.977/0.996/0.991.  The
+400 K MACE trajectory has weak diffusion statistics (low MSD-fit (R^2));
+it is retained because the user requested this fixed temperature set, but it
+should be treated as the main low-temperature uncertainty.
+
 ### SevenNet-nano (selected four-temperature combination)
 
 **Current selected record:** this is the combination retained for the present
