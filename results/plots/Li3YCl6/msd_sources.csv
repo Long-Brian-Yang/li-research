@@ -1,0 +1,13 @@
+model,temperature_K,replica,D_from_msd_cm2_s,source_msddat
+MACE-MPA-0,400,3,4.262142021117717e-07,/gs/fs/tgj-26ICP/uf03782/yang/li-research/runs/md/mace_mpa0_medium/Li3YCl6_03_2x2x2/400K/replica_3/8477947.3_20260824_151947/msd_li.dat
+MACE-MPA-0,600,3,7.0546546160940275e-06,/gs/fs/tgj-26ICP/uf03782/yang/li-research/runs/md/mace_mpa0_medium/Li3YCl6_03_2x2x2/600K/replica_3/8477947.9_20260825_003119/msd_li.dat
+MACE-MPA-0,800,2,1.9696536934856883e-05,/gs/fs/tgj-26ICP/uf03782/yang/li-research/runs/md/mace_mpa0_medium/Li3YCl6_03_2x2x2/800K/replica_2/8477947.14_20260825_083700/msd_li.dat
+MACE-MPA-0,1000,1,4.6293329114586406e-05,/gs/fs/tgj-26ICP/uf03782/yang/li-research/runs/md/mace_mpa0_medium/Li3YCl6_03_2x2x2/1000K/replica_1/8502119.1_20260826_154501/msd_li.dat
+SevenNet-nano,400,3,7.467271969206418e-07,/gs/fs/tgj-26ICP/uf03782/yang/li-research/runs/md/sevennet_nano_55/Li3YCl6_03_2x2x2/400K/replica_3/8477949.3_20260824_151954/msd_li.dat
+SevenNet-nano,600,2,5.453558319870408e-06,/gs/fs/tgj-26ICP/uf03782/yang/li-research/runs/md/sevennet_nano_55/Li3YCl6_03_2x2x2/600K/replica_2/8477949.8_20260824_185237/msd_li.dat
+SevenNet-nano,800,2,1.666855448331796e-05,/gs/fs/tgj-26ICP/uf03782/yang/li-research/runs/md/sevennet_nano_55/Li3YCl6_03_2x2x2/800K/replica_2/8477949.14_20260824_225222/msd_li.dat
+SevenNet-nano,1000,1,3.3638056670743706e-05,/gs/fs/tgj-26ICP/uf03782/yang/li-research/runs/md/sevennet_nano_55/Li3YCl6_03_2x2x2/1000K/replica_1/8500910.1_20260826_133555/msd_li.dat
+M3GNet-GPU,400,2,1.2273638583111496e-07,/gs/fs/tgj-26ICP/uf03782/yang/li-research/runs/md/m3gnet_matgl_gpu/Li3YCl6_03_2x2x2/400K/replica_2/8482237.2_20260824_225632/msd_li.dat
+M3GNet-GPU,600,2,2.895477765132438e-06,/gs/fs/tgj-26ICP/uf03782/yang/li-research/runs/md/m3gnet_matgl_gpu/Li3YCl6_03_2x2x2/600K/replica_2/8486065.2_20260825_050347/msd_li.dat
+M3GNet-GPU,800,2,2.67270939673009e-05,/gs/fs/tgj-26ICP/uf03782/yang/li-research/runs/md/m3gnet_matgl_gpu/Li3YCl6_03_2x2x2/800K/replica_2/8487700.2_20260825_090412/msd_li.dat
+M3GNet-GPU,1000,2,6.27182341241031e-05,/gs/fs/tgj-26ICP/uf03782/yang/li-research/runs/md/m3gnet_matgl_gpu/Li3YCl6_03_2x2x2/1000K/replica_2/8487701.2_20260825_090406/msd_li.dat

@@ -1,0 +1,4 @@
+material,source,sigma_300K_S_cm,Ea_eV,usage
+Li3YCl6,experiment,5.1e-4,0.40,reported reference trend
+Li3YCl6,NGK reference,9.69e-3,0.18,company legacy reference trend
+LiNbOCl4,Tanaka et al. experiment,1.04e-2,0.24,reconstructed reference trend from reported room-temperature value
