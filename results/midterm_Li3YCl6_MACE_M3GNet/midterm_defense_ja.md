@@ -215,12 +215,12 @@ flowchart TD
 
 ## 9. 中間結果
 
-| Model | $E_a$ | $R^2$ | $D(300\,K)$ | 備考 |
-|---|---:|---:|---:|---|
-| MACE-MPA-0 | 0.302 eV | 0.991 | $1.55\times10^{-8}\,\mathrm{cm^2\,s^{-1}}$ | Arrhenius 外挿（MSD 25–90%） |
-| M3GNet (GPU) | 0.212 eV | 0.998 | $1.02\times10^{-7}\,\mathrm{cm^2\,s^{-1}}$ | Arrhenius 外挿 |
-| 実験参考値 | 約 0.40 eV | — | $\sigma(300\,\mathrm{K})=5.1\times10^{-4}\,\mathrm{S\,cm^{-1}}$ | 文献値 |
-| NGK M3GNet (CPU reference) | 約 0.18 eV | — | $\sigma(300\,\mathrm{K})=9.69\times10^{-3}\,\mathrm{S\,cm^{-1}}$ | 企業側参考値 |
+| Model | $E_a$ | $R^2$ | $D(300\,K)$ | $\sigma_{\mathrm{NE}}(300\,K)$ | 備考 |
+|---|---:|---:|---:|---:|---|
+| MACE-MPA-0 | 0.302 eV | 0.991 | $1.55\times10^{-8}\,\mathrm{cm^2\,s^{-1}}$ | **1.27 mS/cm** | Arrhenius 外挿（MSD 25–90%） |
+| M3GNet (GPU) | 0.212 eV | 0.998 | $1.02\times10^{-7}\,\mathrm{cm^2\,s^{-1}}$ | **8.37 mS/cm** | Arrhenius 外挿 |
+| 実験参考値 | 0.40 eV | — | — | $0.51$ mS/cm | 文献値 |
+| NGK M3GNet (CPU reference) | 0.18 eV | — | — | $9.69$ mS/cm | 企業側参考値 |
 
 これらの結果はモデル間の傾向とワークフローの検証を目的とする。汎用ポテンシャルを使用しているため、実験値との完全な一致を主張するものではない。
 
@@ -230,12 +230,12 @@ flowchart TD
 
 4 温度の Li⁺ 拡散係数を Arrhenius 形式で比較した図である。実線は MD データの fit、破線は 300 K への外挿を示す。凡例の $E_a$ は同じ fit から求めた値である。
 
-| Model / reference | $E_a$ (eV) | $R^2$ | $D(300\,K)$ (cm² s⁻¹) |
-|---|---:|---:|---:|
-| MACE-MPA-0 | 0.302 | 0.991 | $1.55\times10^{-8}$ |
-| M3GNet (GPU) | 0.212 | 0.998 | $1.02\times10^{-7}$ |
-| Experiment | 0.400 | — | — |
-| NGK M3GNet (CPU reference) | 0.180 | — | — |
+| Model / reference | $E_a$ (eV) | $R^2$ | $D(300\,K)$ (cm² s⁻¹) | Conductivity at 300 K |
+|---|---:|---:|---:|---:|
+| MACE-MPA-0 | 0.302 | 0.991 | $1.55\times10^{-8}$ | $\sigma_{\mathrm{NE}}=1.27$ mS/cm |
+| M3GNet (GPU) | 0.212 | 0.998 | $1.02\times10^{-7}$ | $\sigma_{\mathrm{NE}}=8.37$ mS/cm |
+| Experiment | 0.400 | — | — | $0.51$ mS/cm |
+| NGK M3GNet (CPU reference) | 0.180 | — | — | $9.69$ mS/cm |
 
 ![Li₃YCl₆ MACE-MPA-0 四温度 MSD](plots/Li3YCl6_MSD_4T_MACE_MPA_0.png)
 
