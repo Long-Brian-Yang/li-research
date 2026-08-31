@@ -85,7 +85,7 @@ MD 計算には LAMMPS を使用した。Python/ASE による直接計算と比�
 | 平衡化 | 50 ps |
 | Production | 500 ps |
 | 主な拡散解析 | Li MSD → D → Arrhenius fitting |
-| MSD fitting 区間 | 平衡化後の trajectory の 10–90% |
+| MSD fitting 区間 | MACE は production の 25–90%、M3GNet は既確認の正式区間 |
 
 ## 7. 計算ワークフロー
 
