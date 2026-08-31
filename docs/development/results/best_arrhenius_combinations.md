@@ -80,9 +80,10 @@ Experimental reference: `Ea_exp ~= 0.40 eV`.
 ### Selected four-temperature comparison (400/600/800/1000 K)
 
 The following combinations are now the fixed comparison set requested for the
-three models.  Values below were re-read from the completed LAMMPS
-`trajectory.lammpstrj` files using the same 10--90% production-window MSD
-fit.  Each trajectory contains 501 frames (0--500 ps); the latest completed
+three models. Values were re-read from the completed LAMMPS
+`trajectory.lammpstrj` files. MACE uses the 25--90% production-window MSD
+fit; SevenNet and M3GNet retain their previously confirmed formal windows.
+Each trajectory contains 501 frames (0--500 ps); the latest completed
 1000 K run was selected where a rerun was available.
 
 | Model | 400 K | 600 K | 800 K | 1000 K | Ea (eV) | R2 | D(300 K) (cm2/s) |
