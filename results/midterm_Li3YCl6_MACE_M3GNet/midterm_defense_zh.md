@@ -230,7 +230,25 @@ flowchart TD
 
 ![Li₃YCl₆ MACE-MPA-0 四温度 MSD](plots/Li3YCl6_MSD_4T_MACE_MPA_0.png)
 
+对应 MSD 线性拟合得到的扩散系数和 Nernst–Einstein 电导率如下。$D_{\mathrm{Li}}$ 的单位为 cm²/s，$\sigma_{\mathrm{NE}}$ 的单位为 mS/cm。
+
+| 温度 | Replica | $D_{\mathrm{Li}}$ (cm²/s) | $\sigma_{\mathrm{NE}}$ (mS/cm) |
+|---:|---:|---:|---:|
+| 400 K | R3 | $2.52\times10^{-7}$ | 15.5 |
+| 600 K | R3 | $7.27\times10^{-6}$ | 298 |
+| 800 K | R2 | $2.04\times10^{-5}$ | 627 |
+| 1000 K | R1 | $4.98\times10^{-5}$ | 1225 |
+
 ![Li₃YCl₆ M3GNet 四温度 MSD](plots/Li3YCl6_MSD_4T_M3GNet.png)
+
+对应 MSD 线性拟合得到的扩散系数和 Nernst–Einstein 电导率如下。$D_{\mathrm{Li}}$ 的单位为 cm²/s，$\sigma_{\mathrm{NE}}$ 的单位为 mS/cm。
+
+| 温度 | Replica | $D_{\mathrm{Li}}$ (cm²/s) | $\sigma_{\mathrm{NE}}$ (mS/cm) |
+|---:|---:|---:|---:|
+| 400 K | R2 | $8.13\times10^{-7}$ | 50.0 |
+| 600 K | R2 | $5.91\times10^{-6}$ | 242 |
+| 800 K | R2 | $1.56\times10^{-5}$ | 481 |
+| 1000 K | R2 | $3.43\times10^{-5}$ | 843 |
 
 ![Li–Cl RDF](plots/Li3YCl6_LiCl_RDF_600K_MACE_M3GNet.png)
 

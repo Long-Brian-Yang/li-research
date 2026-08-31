@@ -239,9 +239,27 @@ flowchart TD
 
 ![Li₃YCl₆ MACE-MPA-0 四温度 MSD](plots/Li3YCl6_MSD_4T_MACE_MPA_0.png)
 
+MSD の線形 fit から得た拡散係数と Nernst–Einstein 電導度を示す。$D_{\mathrm{Li}}$ の単位は cm²/s、$\sigma_{\mathrm{NE}}$ の単位は mS/cm である。
+
+| 温度 | Replica | $D_{\mathrm{Li}}$ (cm²/s) | $\sigma_{\mathrm{NE}}$ (mS/cm) |
+|---:|---:|---:|---:|
+| 400 K | R3 | $2.52\times10^{-7}$ | 15.5 |
+| 600 K | R3 | $7.27\times10^{-6}$ | 298 |
+| 800 K | R2 | $2.04\times10^{-5}$ | 627 |
+| 1000 K | R1 | $4.98\times10^{-5}$ | 1225 |
+
 MACE-MPA-0 による 400、600、800、1000 K の Li MSD である。温度上昇に伴って傾きが大きくなり、Li⁺ 拡散が促進されることを示す。
 
 ![Li₃YCl₆ M3GNet 四温度 MSD](plots/Li3YCl6_MSD_4T_M3GNet.png)
+
+MSD の線形 fit から得た拡散係数と Nernst–Einstein 電導度を示す。$D_{\mathrm{Li}}$ の単位は cm²/s、$\sigma_{\mathrm{NE}}$ の単位は mS/cm である。
+
+| 温度 | Replica | $D_{\mathrm{Li}}$ (cm²/s) | $\sigma_{\mathrm{NE}}$ (mS/cm) |
+|---:|---:|---:|---:|
+| 400 K | R2 | $8.13\times10^{-7}$ | 50.0 |
+| 600 K | R2 | $5.91\times10^{-6}$ | 242 |
+| 800 K | R2 | $1.56\times10^{-5}$ | 481 |
+| 1000 K | R2 | $3.43\times10^{-5}$ | 843 |
 
 M3GNet の同じ 4 温度条件の MSD である。MACE-MPA-0 と同じ軸・条件を用いているため、モデル間の拡散挙動を直接比較できる。
 
