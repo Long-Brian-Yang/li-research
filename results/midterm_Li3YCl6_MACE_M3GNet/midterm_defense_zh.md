@@ -8,7 +8,7 @@
 
 Li₃YCl₆ 是氯化物型锂离子固态电解质，具有用于全固态锂电池高电压正极的研究价值。Asano 等人的研究报道了室温 mS/cm 级别的 Li⁺ 电导率（超过 1 mS/cm），因此 Li₃YCl₆ 可作为氯化物固态电解质研究中的代表性 benchmark。
 
-基于文献结构，建立了适用于 MD 计算的有序结构模型。本阶段结果用于在同一结构模型上比较 MACE 与 M3GNet 的 Li⁺ 输运趋势。
+基于文献结构，建立了适用于 MD 计算的有序结构模型。本阶段结果用于在同一结构模型上比较 MACE、M3GNet 与 SevenNet 的 Li⁺ 输运趋势。
 
 ### 结构要点
 
@@ -68,12 +68,13 @@ Li₃YCl₆ 是氯化物型锂离子固态电解质，具有用于全固态锂�
 
 ### 正式 MD 运行时间
 
-下表为单个温度、单个 replica 完成结构优化、50 ps 平衡和 500 ps production 的实际 wall time。四温度各运行一个 replica 时，MACE 总计约 18.0 h，M3GNet GPU 总计约 10.0 h。
+下表为单个温度、单个 replica 完成结构优化、50 ps 平衡和 500 ps production 的实际 wall time。四温度各运行一个 replica 时，三种模型的总时间分别约为 MACE 18.0 h、M3GNet GPU 10.0 h 和 SevenNet 7.9 h。
 
 | 模型 | 400 K | 600 K | 800 K | 1000 K | 四温度合计 |
 |---|---:|---:|---:|---:|---:|
 | MACE-MPA-0 | 3 h 59 min | 3 h 55 min | 5 h 26 min | 4 h 40 min | 约 18.0 h |
 | M3GNet GPU | 2 h 21 min | 2 h 24 min | 2 h 34 min | 2 h 38 min | 约 10.0 h |
+| SevenNet-nano | 1 h 55 min | 2 h 05 min | 1 h 45 min | 2 h 07 min | 约 7.9 h |
 
 ### 计算引擎
 
@@ -227,6 +228,7 @@ flowchart TD
 | 模型 | $E_a$ | $R^2$ | $D(300\,\mathrm{K})$ | $\sigma_{\mathrm{NE}}(300\,\mathrm{K})$ | 说明 |
 |---|---:|---:|---:|---:|---|
 | MACE-MPA-0 | 0.302 eV | 0.991 | $1.55\times10^{-8}\,\mathrm{cm^2\,s^{-1}}$ | **1.27 mS/cm** | Arrhenius 外推（MSD 25–90%） |
+| SevenNet-nano | 0.246 eV | 0.9999 | $5.62\times10^{-8}\,\mathrm{cm^2\,s^{-1}}$ | **4.62 mS/cm** | Arrhenius 外推 |
 | M3GNet (GPU) | 0.212 eV | 0.998 | $1.02\times10^{-7}\,\mathrm{cm^2\,s^{-1}}$ | **8.37 mS/cm** | Arrhenius 外推 |
 | 实验参考 | 0.40 eV | — | — | $0.51$ mS/cm | 文献值 |
 | NGK M3GNet (CPU reference) | 0.18 eV | — | — | $9.69$ mS/cm | 企业参考值 |
@@ -235,7 +237,7 @@ flowchart TD
 
 ## 10. 中期主图
 
-![Li₃YCl₆ Arrhenius / Ea 比较](plots/Li3YCl6_Arrhenius_MACE_M3GNet_exp_company.png)
+![Li₃YCl₆ 三模型 Arrhenius / Ea 比较](plots/Li3YCl6_Arrhenius_all_models.png)
 
 ![Li₃YCl₆ MACE-MPA-0 四温度 MSD](plots/Li3YCl6_MSD_4T_MACE_MPA_0.png)
 
@@ -250,6 +252,10 @@ flowchart TD
 
 ![Li₃YCl₆ M3GNet 四温度 MSD](plots/Li3YCl6_MSD_4T_M3GNet.png)
 
+![Li₃YCl₆ SevenNet-nano 四温度 MSD](plots/Li3YCl6_MSD_4T_SevenNet_nano.png)
+
+![Li₃YCl₆ 三模型四温度 MSD](plots/Li3YCl6_MSD_4T_all_models.png)
+
 对应 MSD 线性拟合得到的扩散系数和 Nernst–Einstein 电导率如下。$D_{\mathrm{Li}}$ 的单位为 cm²/s，$\sigma_{\mathrm{NE}}$ 的单位为 mS/cm。
 
 | 温度 | Replica | $D_{\mathrm{Li}}$ (cm²/s) | $\sigma_{\mathrm{NE}}$ (mS/cm) |
@@ -259,17 +265,17 @@ flowchart TD
 | 800 K | R2 | $1.56\times10^{-5}$ | 481 |
 | 1000 K | R2 | $3.43\times10^{-5}$ | 843 |
 
-![Li–Cl RDF](plots/Li3YCl6_LiCl_RDF_600K_MACE_M3GNet.png)
+![Li–Cl RDF（三模型）](plots/Li3YCl6_LiCl_RDF_600K_all_models.png)
 
-![Y–Cl RDF](plots/Li3YCl6_YCl_RDF_600K_MACE_M3GNet.png)
+![Y–Cl RDF（三模型）](plots/Li3YCl6_YCl_RDF_600K_all_models.png)
 
-![Cl–Cl RDF](plots/Li3YCl6_ClCl_RDF_600K_MACE_M3GNet.png)
+![Cl–Cl RDF（三模型）](plots/Li3YCl6_ClCl_RDF_600K_all_models.png)
 
-![Li–Cl 配位数](plots/Li3YCl6_LiCl_coordination_600K_MACE_M3GNet.png)
+![Li–Cl 配位数（三模型）](plots/Li3YCl6_LiCl_coordination_600K_all_models.png)
 
 ![Li–Cl 配位数波动](plots/Li3YCl6_LiCl_coordination_fluctuations_600K_MACE_M3GNet.png)
 
-![热力学波动](plots/Li3YCl6_thermodynamic_fluctuations_600K_MACE_M3GNet.png)
+![热力学稳定性（三模型）](plots/Li3YCl6_thermodynamic_stability_600K_all_models.png)
 
 ## 11. Supplementary 分析
 
@@ -291,7 +297,7 @@ flowchart TD
 
 ### Arrhenius 图
 
-横轴为 (1000/T)，纵轴为 (ln D)。直线斜率对应活化能 (E_a)。虚线部分是根据高温 MD 结果向 300 K 的外推，不是 300 K 的直接 MD 计算。MACE-MPA-0 与 M3GNet 的 (E_a) 和外推值不同，说明通用势函数对 Li⁺ 迁移势垒的描述存在模型依赖性。
+横轴为 (1000/T)，纵轴为 (ln D)。直线斜率对应活化能 (E_a)。虚线部分是根据高温 MD 结果向 300 K 的外推，不是 300 K 的直接 MD 计算。三个通用模型的 (E_a) 和外推值不同，说明通用势函数对 Li⁺ 迁移势垒的描述存在模型依赖性。
 
 ### MSD 图
 
@@ -315,6 +321,6 @@ Li–Cl 配位数由 Li–Cl RDF 的第一配位壳层积分得到，用于补�
 
 ## 13. 中期结论
 
-本阶段完成了 Li₃YCl₆ 的有序结构、supercell、通用机器学习势、LAMMPS MD 和扩散分析流程。MACE-MPA-0 与 M3GNet 在相同计算条件下均可完成稳定 MD，并能得到可拟合的温度依赖扩散结果。
+本阶段完成了 Li₃YCl₆ 的有序结构、supercell、通用机器学习势、LAMMPS MD 和扩散分析流程。MACE-MPA-0、M3GNet 和 SevenNet 在相同计算条件下均可完成稳定 MD，并能得到可拟合的温度依赖扩散结果。
 
 下一阶段将重点放在统一轨迹来源、误差与收敛性评估，以及将同一套分析流程扩展到 LiNbOCl₄ 和其他候选固态电解质。

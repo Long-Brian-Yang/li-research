@@ -8,7 +8,7 @@
 
 Li₃YCl₆ は塩化物系の Li⁺ 固体電解質であり、全固体リチウム電池における高電圧正極との適合性が期待されている材料である。Asano らの報告では、室温で mS cm⁻¹ オーダーの Li⁺ 伝導度（1 mS cm⁻¹ 超）が示され、塩化物固体電解質研究の代表的な benchmark の一つとなっている。
 
-文献構造を基に、MD 計算に適した有序構造モデルを構築した。今回の計算値は、同一構造モデル上で MACE と M3GNet の Li⁺ 輸送傾向を比較する結果として解釈する。
+文献構造を基に、MD 計算に適した有序構造モデルを構築した。今回の計算値は、同一構造モデル上で MACE、M3GNet、SevenNet の Li⁺ 輸送傾向を比較する結果として解釈する。
 
 ### 構造上のポイント
 
@@ -68,12 +68,13 @@ Li₃YCl₆ は塩化物系の Li⁺ 固体電解質であり、全固体リチ�
 
 ### 本計算の実行時間
 
-下表は、1 温度・1 replica について、構造最適化、50 ps の平衡化、500 ps の production を完了するまでの実測 wall time である。4 温度を各 1 replica で実行した場合、MACE は合計約 18.0 h、M3GNet GPU は約 10.0 h である。
+下表は、1 温度・1 replica について、構造最適化、50 ps の平衡化、500 ps の production を完了するまでの実測 wall time である。4 温度を各 1 replica で実行した場合、MACE は約 18.0 h、M3GNet GPU は約 10.0 h、SevenNet は約 7.9 h である。
 
 | Model | 400 K | 600 K | 800 K | 1000 K | 4 温度合計 |
 |---|---:|---:|---:|---:|---:|
 | MACE-MPA-0 | 3 h 59 min | 3 h 55 min | 5 h 26 min | 4 h 40 min | 約 18.0 h |
 | M3GNet GPU | 2 h 21 min | 2 h 24 min | 2 h 34 min | 2 h 38 min | 約 10.0 h |
+| SevenNet-nano | 1 h 55 min | 2 h 05 min | 1 h 45 min | 2 h 07 min | 約 7.9 h |
 
 ### 計算エンジン
 
@@ -227,6 +228,7 @@ flowchart TD
 | Model | $E_a$ | $R^2$ | $D(300\,K)$ | $\sigma_{\mathrm{NE}}(300\,K)$ | 備考 |
 |---|---:|---:|---:|---:|---|
 | MACE-MPA-0 | 0.302 eV | 0.991 | $1.55\times10^{-8}\,\mathrm{cm^2\,s^{-1}}$ | **1.27 mS/cm** | Arrhenius 外挿（MSD 25–90%） |
+| SevenNet-nano | 0.246 eV | 0.9999 | $5.62\times10^{-8}\,\mathrm{cm^2\,s^{-1}}$ | **4.62 mS/cm** | Arrhenius 外挿 |
 | M3GNet (GPU) | 0.212 eV | 0.998 | $1.02\times10^{-7}\,\mathrm{cm^2\,s^{-1}}$ | **8.37 mS/cm** | Arrhenius 外挿 |
 | 実験参考値 | 0.40 eV | — | — | $0.51$ mS/cm | 文献値 |
 | NGK M3GNet (CPU reference) | 0.18 eV | — | — | $9.69$ mS/cm | 企業側参考値 |
@@ -235,7 +237,7 @@ flowchart TD
 
 ## 10. 中間発表の主図
 
-![Li₃YCl₆ Arrhenius / Ea 比較](plots/Li3YCl6_Arrhenius_MACE_M3GNet_exp_company.png)
+![Li₃YCl₆ 三模型 Arrhenius / Ea 比較](plots/Li3YCl6_Arrhenius_all_models.png)
 
 4 温度の Li⁺ 拡散係数を Arrhenius 形式で比較した図である。実線は MD データの fit、破線は 300 K への外挿を示す。凡例の $E_a$ は同じ fit から求めた値である。
 
@@ -272,19 +274,23 @@ MSD の線形 fit から得た拡散係数と Nernst–Einstein 電導度を示�
 
 M3GNet の同じ 4 温度条件の MSD である。MACE-MPA-0 と同じ軸・条件を用いているため、モデル間の拡散挙動を直接比較できる。
 
-![Li–Cl RDF](plots/Li3YCl6_LiCl_RDF_600K_MACE_M3GNet.png)
+![Li₃YCl₆ SevenNet-nano 四温度 MSD](plots/Li3YCl6_MSD_4T_SevenNet_nano.png)
+
+![Li₃YCl₆ 三モデル四温度 MSD](plots/Li3YCl6_MSD_4T_all_models.png)
+
+![Li–Cl RDF（三模型）](plots/Li3YCl6_LiCl_RDF_600K_all_models.png)
 
 Li 周囲の局所配位環境を示す。第一ピークの位置は平均 Li–Cl 距離、ピーク幅は熱振動と局所構造分布を反映する。
 
-![Y–Cl RDF](plots/Li3YCl6_YCl_RDF_600K_MACE_M3GNet.png)
+![Y–Cl RDF（三模型）](plots/Li3YCl6_YCl_RDF_600K_all_models.png)
 
 ハライド骨格側の局所環境を比較する図であり、Y–Cl 骨格が MD 中に維持されているかを確認する。
 
-![Cl–Cl RDF](plots/Li3YCl6_ClCl_RDF_600K_MACE_M3GNet.png)
+![Cl–Cl RDF（三模型）](plots/Li3YCl6_ClCl_RDF_600K_all_models.png)
 
 陰イオン部分の秩序と熱的な広がりを示す。高温でのピーク幅の変化は熱振動の増加に対応する。
 
-![Li–Cl 配位数](plots/Li3YCl6_LiCl_coordination_600K_MACE_M3GNet.png)
+![Li–Cl 配位数（三模型）](plots/Li3YCl6_LiCl_coordination_600K_all_models.png)
 
 Li–Cl RDF の第一配位殻を積分した平均配位数であり、RDF の形状を定量的に補足する指標である。
 
@@ -292,7 +298,7 @@ Li–Cl RDF の第一配位殻を積分した平均配位数であり、RDF の�
 
 配位数の時間変化が一定範囲内で揺らぐことは、Li 周囲の局所環境が熱運動に対して安定していることを示す。
 
-![熱力学的揺らぎ](plots/Li3YCl6_thermodynamic_fluctuations_600K_MACE_M3GNet.png)
+![熱力学的安定性（三模型）](plots/Li3YCl6_thermodynamic_stability_600K_all_models.png)
 
 温度、エネルギー、圧力が平均値の周囲で揺らぎ、持続的なドリフトや発散を示さないことを確認する図である。
 
@@ -348,6 +354,6 @@ Li–Cl 配位数は Li–Cl RDF の第一配位殻を積分して求めた平�
 
 ## 13. 中間発表の結論
 
-Li₃YCl₆ について、有序構造、supercell、汎用機械学習ポテンシャル、LAMMPS MD、拡散解析を一つの再現可能な流れとして構築した。MACE-MPA-0 と M3GNet は同一条件で安定 MD を実行でき、温度依存の拡散挙動を評価できた。
+Li₃YCl₆ について、有序構造、supercell、汎用機械学習ポテンシャル、LAMMPS MD、拡散解析を一つの再現可能な流れとして構築した。MACE-MPA-0、M3GNet、SevenNet は同一条件で安定 MD を実行でき、温度依存の拡散挙動を評価できた。
 
 本結果はモデルの傾向と計算フローの検証結果として整理する。次段階では、同一解析手順を LiNbOCl₄ へ展開し、誤差・収束性および構造依存性をさらに確認する。
