@@ -87,7 +87,118 @@ Li₃YCl₆ 是氯化物型锂离子固态电解质，具有用于全固态锂�
 | 主要扩散分析 | Li 原子 MSD → D → Arrhenius 拟合 |
 | MSD 拟合区间 | MACE 采用 production 的 25–90%；M3GNet 沿用已确认的正式区间 |
 
-## 7. 计算流程
+## 7. 计算公式与符号说明
+
+以下公式用于把轨迹中的原子坐标转换为扩散、传导和稳定性指标。除特别说明外，所有平均都在 Li 原子、时间起点或 block 上进行。
+
+### 7.1 Li⁺ 的均方位移（MSD）
+
+$$
+\mathrm{MSD}(t)=\frac{1}{N_{\mathrm{Li}}}\sum_{i=1}^{N_{\mathrm{Li}}}
+\left\langle\left|\mathbf r_i(t_0+t)-\mathbf r_i(t_0)\right|^2\right\rangle_{t_0}
+$$
+
+其中，$N_{\mathrm{Li}}$ 是 Li 原子数，$\mathbf r_i$ 是第 $i$ 个 Li 的 unwrapped 位置，$t_0$ 是时间起点，$\langle\cdots\rangle_{t_0}$ 表示对多个时间起点平均。MSD 的单位为 Å²；使用 unwrapped 坐标是为了避免 Li 穿过周期边界时产生人为跳回。
+
+方向性 MSD 分别为
+
+$$
+\mathrm{MSD}_\alpha(t)=\left\langle [r_{i,\alpha}(t_0+t)-r_{i,\alpha}(t_0)]^2\right\rangle_{i,t_0},\qquad \alpha=x,y,z.
+$$
+
+它们用于判断 Li⁺ 迁移是否具有明显方向性，而不是只观察三维总 MSD。
+
+### 7.2 Einstein 关系与扩散系数
+
+在三维扩散阶段，MSD 的线性斜率给出 Li 自扩散系数：
+
+$$
+D_{\mathrm{Li}}=\frac{1}{6}\frac{d\,\mathrm{MSD}(t)}{dt}.
+$$
+
+若对 MSD 的选定线性区间进行线性拟合 $\mathrm{MSD}(t)=a t+b$，则 $D_{\mathrm{Li}}=a/6$。这里的 6 来自三维的 $2d$（$d=3$）。$D_x,D_y,D_z$ 则分别由对应方向斜率除以 2 得到。所有 $D$ 由 Å²/ps 换算为 cm²/s 后再进行比较。
+
+### 7.3 Arrhenius 拟合与活化能
+
+扩散系数的温度依赖性采用
+
+$$
+D(T)=D_0\exp\left(-\frac{E_a}{k_{\mathrm B}T}\right),
+$$
+
+线性化后为
+
+$$
+\ln D=\ln D_0-\frac{E_a}{k_{\mathrm B}}\frac{1}{T}.
+$$
+
+因此在 $\ln D$–$1000/T$ 图中进行直线拟合，若斜率为 $m$，则
+
+$$
+E_a=-m\,1000\,k_{\mathrm B}.
+$$
+
+其中 $D_0$ 是指前因子，$E_a$ 是活化能，$k_{\mathrm B}=8.617333262\times10^{-5}$ eV K⁻¹，$T$ 为绝对温度。拟合优度用
+
+$$
+R^2=1-\frac{\sum_j(y_j-\hat y_j)^2}{\sum_j(y_j-\bar y)^2}
+$$
+
+表示；$R^2$ 越接近 1，说明所选温度点越接近 Arrhenius 直线，但不代表模型一定更接近实验。
+
+### 7.4 300 K 外推与 Nernst–Einstein 估算
+
+300 K 的扩散系数由 Arrhenius 直线外推：
+
+$$
+D(300\,\mathrm K)=D_0\exp\left(-\frac{E_a}{k_{\mathrm B}\,300\,\mathrm K}\right).
+$$
+
+初步传导度采用 Nernst–Einstein 关系：
+
+$$
+\sigma_{\mathrm{NE}}(T)=\frac{n_{\mathrm{Li}}q_{\mathrm{Li}}^2D_{\mathrm{Li}}(T)}{k_{\mathrm B}T}.
+$$
+
+其中 $n_{\mathrm{Li}}$ 是单位体积内可迁移 Li 数密度，$q_{\mathrm{Li}}=+e$ 是 Li⁺ 电荷。该式假设不同 Li⁺ 的运动相关性可以忽略，因此得到的是 tracer/Nernst–Einstein estimate，不等同于包含集体相关效应的严格电导率。
+
+### 7.5 RDF 与配位数
+
+两种元素 (a,b) 的径向分布函数 (g_{ab}(r)) 表示距离为 (r) 处找到 (b) 原子的相对概率，RDF 峰位置对应平均近邻距离，峰宽反映热振动和局部无序。第一配位壳层内的平均配位数由
+
+$$
+N_{ab}(r_c)=4\pi\rho_b\int_0^{r_c}g_{ab}(r)r^2\,dr
+$$
+
+得到，其中 $\rho_b$ 是 $b$ 的数密度，$r_c$ 为第一峰后的第一极小值。本文重点使用 Li–Cl、Y–Cl 和 Cl–Cl RDF；配位数用于对 RDF 的定性判断进行定量补充。
+
+### 7.6 热力学稳定性、密度与误差
+
+生产阶段的平均值和波动用
+
+$$
+\bar A=\frac{1}{N}\sum_{k=1}^{N}A_k,\qquad
+s_A=\sqrt{\frac{1}{N-1}\sum_{k=1}^{N}(A_k-\bar A)^2}
+$$
+
+表示，其中 $A$ 可以是温度、势能、总能量、压力或体积。持续漂移、突然发散或温度失控表示轨迹可能不稳定。
+
+密度按
+
+$$
+\rho(t)=\frac{m_{\mathrm{cell}}}{V(t)}
+$$
+
+计算，用于检查 NVT 生产阶段晶胞体积和材料密度是否保持合理。为估计扩散系数误差，将 production 分成 $B$ 个 block，分别得到 $D_b$，并报告
+
+$$
+\bar D=\frac{1}{B}\sum_{b=1}^{B}D_b,\qquad
+s_D=\sqrt{\frac{1}{B-1}\sum_{b=1}^{B}(D_b-\bar D)^2}.
+$$
+
+MSD 拟合区间敏感性和 block 标准差共同用于判断 $D$ 与 $E_a$ 是否具有收敛性。
+
+## 8. 计算流程
 
 ```mermaid
 flowchart TD
@@ -102,18 +213,18 @@ flowchart TD
     I --> J[与实验值、NGK 参考值比较]
 ```
 
-## 8. 中期主要结果
+## 9. 中期主要结果
 
-| 模型 | (E_a) | (R^2) | (D(300\,K)) | 说明 |
+| 模型 | $E_a$ | $R^2$ | $D(300\,\mathrm{K})$ | 说明 |
 |---|---:|---:|---:|---|
-| MACE-MPA-0 | 0.302 eV | 0.991 | (1.55\times10^{-8}\,\mathrm{cm^2\,s^{-1}}) | Arrhenius 外推（MSD 25–90%） |
-| M3GNet (GPU) | 0.212 eV | 0.998 | (1.02\times10^{-7}\,\mathrm{cm^2\,s^{-1}}) | Arrhenius 外推 |
-| 实验参考 | 约 0.40 eV | — | (\sigma(300\,K)=5.1\times10^{-4}\,\mathrm{S\,cm^{-1}}) | 文献值 |
-| NGK M3GNet (CPU reference) | 约 0.18 eV | — | (\sigma(300\,K)=9.69\times10^{-3}\,\mathrm{S\,cm^{-1}}) | 企业参考值 |
+| MACE-MPA-0 | 0.302 eV | 0.991 | $1.55\times10^{-8}\,\mathrm{cm^2\,s^{-1}}$ | Arrhenius 外推（MSD 25–90%） |
+| M3GNet (GPU) | 0.212 eV | 0.998 | $1.02\times10^{-7}\,\mathrm{cm^2\,s^{-1}}$ | Arrhenius 外推 |
+| 实验参考 | 0.40 eV | — | $\sigma(300\,\mathrm{K})=5.1\times10^{-4}\,\mathrm{S\,cm^{-1}}$ | 文献值 |
+| NGK M3GNet (CPU reference) | 0.18 eV | — | $\sigma(300\,\mathrm{K})=9.69\times10^{-3}\,\mathrm{S\,cm^{-1}}$ | 企业参考值 |
 
 这些结果用于比较模型趋势和工作流一致性；由于使用的是通用模型，不能直接宣称已经达到实验精度。
 
-## 9. 中期主图
+## 10. 中期主图
 
 ![Li₃YCl₆ Arrhenius / Ea 比较](plots/Li3YCl6_Arrhenius_MACE_M3GNet_exp_company.png)
 
@@ -133,7 +244,7 @@ flowchart TD
 
 ![热力学波动](plots/Li3YCl6_thermodynamic_fluctuations_600K_MACE_M3GNet.png)
 
-## 10. Supplementary 分析
+## 11. Supplementary 分析
 
 以下内容不作为中期主讲图，但用于确认结果可靠性：
 
@@ -149,7 +260,7 @@ flowchart TD
 
 ![热力学稳定性](plots/supplementary_priority/Li3YCl6_thermodynamic_stability_600K_MACE_M3GNet.png)
 
-## 11. 图表解释要点
+## 12. 图表解释要点
 
 ### Arrhenius 图
 
@@ -175,7 +286,7 @@ Li–Cl 配位数由 Li–Cl RDF 的第一配位壳层积分得到，用于补�
 
 本阶段的重点是验证工作流和比较通用模型趋势。MACE-MPA-0 与 M3GNet 均未针对 Li₃YCl₆ 专门 fine-tune，因此 (D)、(E_a) 和 300 K 外推值不能直接替代实验测量值。后续若需要提高定量精度，应使用 DFT/AIMD 数据进行验证或微调。
 
-## 12. 中期结论
+## 13. 中期结论
 
 本阶段完成了 Li₃YCl₆ 的有序结构、supercell、通用机器学习势、LAMMPS MD 和扩散分析流程。MACE-MPA-0 与 M3GNet 在相同计算条件下均可完成稳定 MD，并能得到可拟合的温度依赖扩散结果。
 
