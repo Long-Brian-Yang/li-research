@@ -106,7 +106,7 @@ flowchart TD
 
 | 模型 | (E_a) | (R^2) | (D(300\,K)) | 说明 |
 |---|---:|---:|---:|---|
-| MACE-MPA-0 | 0.355 eV | 0.991 | (4.05\times10^{-9}\,\mathrm{cm^2\,s^{-1}}) | Arrhenius 外推 |
+| MACE-MPA-0 | 0.302 eV | 0.991 | (1.55\times10^{-8}\,\mathrm{cm^2\,s^{-1}}) | Arrhenius 外推（MSD 25–90%） |
 | M3GNet (GPU) | 0.212 eV | 0.998 | (1.02\times10^{-7}\,\mathrm{cm^2\,s^{-1}}) | Arrhenius 外推 |
 | 实验参考 | 约 0.40 eV | — | (\sigma(300\,K)=5.1\times10^{-4}\,\mathrm{S\,cm^{-1}}) | 文献值 |
 | NGK M3GNet (CPU reference) | 约 0.18 eV | — | (\sigma(300\,K)=9.69\times10^{-3}\,\mathrm{S\,cm^{-1}}) | 企业参考值 |

@@ -1,5 +1,5 @@
 model,Ea_eV,R2,D300_cm2_s,sigmaNE300_note,MSD_temperature_K,MSD_replica
-MACE-MPA-0,0.3565607794,0.9854668642,5.04729613e-09,Arrhenius extrapolation,600,3
+MACE-MPA-0,0.3015787370,0.9914338799,1.54591655e-08,Arrhenius extrapolation,600,3
 M3GNet,0.2115687977,0.9978903873,1.0206543e-07,Arrhenius extrapolation,600,2
 Experiment,,,,reported sigma(300 K)=5.1e-4 S/cm,,
 NGK reference,,,,reported sigma(300 K)=9.69e-3 S/cm,,

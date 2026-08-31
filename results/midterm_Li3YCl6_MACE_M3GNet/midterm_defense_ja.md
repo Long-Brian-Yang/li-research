@@ -106,7 +106,7 @@ flowchart TD
 
 | Model | $E_a$ | $R^2$ | $D(300\,K)$ | 備考 |
 |---|---:|---:|---:|---|
-| MACE-MPA-0 | 0.355 eV | 0.991 | $4.05\times10^{-9}\,\mathrm{cm^2\,s^{-1}}$ | Arrhenius 外挿 |
+| MACE-MPA-0 | 0.302 eV | 0.991 | $1.55\times10^{-8}\,\mathrm{cm^2\,s^{-1}}$ | Arrhenius 外挿（MSD 25–90%） |
 | M3GNet (GPU) | 0.212 eV | 0.998 | $1.02\times10^{-7}\,\mathrm{cm^2\,s^{-1}}$ | Arrhenius 外挿 |
 | 実験参考値 | 約 0.40 eV | — | $\sigma(300\,\mathrm{K})=5.1\times10^{-4}\,\mathrm{S\,cm^{-1}}$ | 文献値 |
 | NGK M3GNet (CPU reference) | 約 0.18 eV | — | $\sigma(300\,\mathrm{K})=9.69\times10^{-3}\,\mathrm{S\,cm^{-1}}$ | 企業側参考値 |
@@ -121,7 +121,7 @@ flowchart TD
 
 | Model / reference | $E_a$ (eV) | $R^2$ | $D(300\,K)$ (cm² s⁻¹) |
 |---|---:|---:|---:|
-| MACE-MPA-0 | 0.355 | 0.991 | $4.05\times10^{-9}$ |
+| MACE-MPA-0 | 0.302 | 0.991 | $1.55\times10^{-8}$ |
 | M3GNet (GPU) | 0.212 | 0.998 | $1.02\times10^{-7}$ |
 | Experiment | 0.400 | — | — |
 | NGK M3GNet (CPU reference) | 0.180 | — | — |
