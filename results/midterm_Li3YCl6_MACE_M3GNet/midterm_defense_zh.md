@@ -66,6 +66,15 @@ Li₃YCl₆ 是氯化物型锂离子固态电解质，具有用于全固态锂�
 
 本阶段比较的是通用模型在相同结构、相同温度和相同分析流程下的结果，不将其解释为针对 Li₃YCl₆ 专门微调后的高精度模型。
 
+### 正式 MD 运行时间
+
+下表为单个温度、单个 replica 完成结构优化、50 ps 平衡和 500 ps production 的实际 wall time。四温度各运行一个 replica 时，MACE 总计约 18.0 h，M3GNet GPU 总计约 10.0 h。
+
+| 模型 | 400 K | 600 K | 800 K | 1000 K | 四温度合计 |
+|---|---:|---:|---:|---:|---:|
+| MACE-MPA-0 | 3 h 59 min | 3 h 55 min | 5 h 26 min | 4 h 40 min | 约 18.0 h |
+| M3GNet GPU | 2 h 21 min | 2 h 24 min | 2 h 34 min | 2 h 38 min | 约 10.0 h |
+
 ### 计算引擎
 
 采用 LAMMPS 进行 MD。相较于 Python/ASE 直接驱动，LAMMPS 更适合统一管理 NVT、长时间运行、轨迹输出和重启计算。

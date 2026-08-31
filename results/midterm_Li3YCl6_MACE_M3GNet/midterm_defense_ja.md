@@ -66,6 +66,15 @@ Li₃YCl₆ は塩化物系の Li⁺ 固体電解質であり、全固体リチ�
 
 同一構造、同一温度、同一解析条件で比較している。いずれも Li₃YCl₆ 専用に fine-tune したモデルではないため、実験精度を直接保証するものではない。
 
+### 本計算の実行時間
+
+下表は、1 温度・1 replica について、構造最適化、50 ps の平衡化、500 ps の production を完了するまでの実測 wall time である。4 温度を各 1 replica で実行した場合、MACE は合計約 18.0 h、M3GNet GPU は約 10.0 h である。
+
+| Model | 400 K | 600 K | 800 K | 1000 K | 4 温度合計 |
+|---|---:|---:|---:|---:|---:|
+| MACE-MPA-0 | 3 h 59 min | 3 h 55 min | 5 h 26 min | 4 h 40 min | 約 18.0 h |
+| M3GNet GPU | 2 h 21 min | 2 h 24 min | 2 h 34 min | 2 h 38 min | 約 10.0 h |
+
 ### 計算エンジン
 
 MD 計算には LAMMPS を使用した。Python/ASE による直接計算と比べ、NVT 条件、長時間計算、trajectory 出力および restart の管理を統一しやすい点が利点である。
