@@ -2,7 +2,9 @@
 
 These records preserve the best replica combinations selected against the
 experimental activation energy.  MSD values were fitted over the 10--90%
-production-trajectory window.  Replica selection is a screening result, not
+production-trajectory window.  The current MACE Li₃YCl₆ comparison uses a
+25--90% MSD window; the other formal comparisons retain their documented
+window. Replica selection is a screening result, not
 an uncertainty-free ensemble average.
 
 ## LiNbOCl4
@@ -85,7 +87,7 @@ fit.  Each trajectory contains 501 frames (0--500 ps); the latest completed
 
 | Model | 400 K | 600 K | 800 K | 1000 K | Ea (eV) | R2 | D(300 K) (cm2/s) |
 |---|---|---|---|---:|---:|---:|---:|
-| MACE-MPA-0 | R3 | R3 | R2 | R1 | 0.2700 | 0.9939 | 3.17e-8 |
+| MACE-MPA-0 | R3 | R3 | R2 | R1 | 0.3016 | 0.9914 | 1.55e-8 |
 | SevenNet-nano | R3 | R2 | R2 | R1 | 0.2210 | 0.9987 | 8.12e-8 |
 | M3GNet GPU | R2 | R2 | R2 | R2 | 0.3610 | 0.9930 | 3.53e-9 |
 
@@ -94,7 +96,7 @@ for auditability (units: cm2/s):
 
 | Model | 400 K | 600 K | 800 K | 1000 K |
 |---|---:|---:|---:|---:|
-| MACE-MPA-0 | 3.947e-7 | 7.474e-6 | 1.957e-5 | 4.527e-5 |
+| MACE-MPA-0 | 2.522e-7 | 7.267e-6 | 2.038e-5 | 4.978e-5 |
 | SevenNet-nano | 7.132e-7 | 5.470e-6 | 1.642e-5 | 3.448e-5 |
 | M3GNet GPU | 1.293e-7 | 2.740e-6 | 2.664e-5 | 6.277e-5 |
 
