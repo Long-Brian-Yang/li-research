@@ -18,9 +18,8 @@
 - [Y–Cl RDF — MACE and M3GNet, 600 K](Li3YCl6_YCl_RDF_600K_MACE_M3GNet.png)
 - [Cl–Cl RDF — MACE and M3GNet, 600 K](Li3YCl6_ClCl_RDF_600K_MACE_M3GNet.png)
 
-The formal midterm RDF figures above are the original two-model (MACE and
-M3GNet) 600 K comparison. A separate three-model RDF reanalysis is retained
-below for supplementary inspection; it is not the formal midterm figure.
+The formal midterm RDF figures above use the original smooth MACE/M3GNet
+600 K baseline with SevenNet-nano added using the same analysis protocol.
 - [Li–Cl coordination — MACE and M3GNet, 600 K](Li3YCl6_LiCl_coordination_600K_MACE_M3GNet.png)
 - [Thermodynamic stability — all three models](Li3YCl6_thermodynamic_stability_600K_all_models.png)
 

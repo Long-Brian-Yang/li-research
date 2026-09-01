@@ -267,13 +267,13 @@ flowchart TD
 | 800 K | R2 | $1.56\times10^{-5}$ | 481 |
 | 1000 K | R2 | $3.43\times10^{-5}$ | 843 |
 
-![Li–Cl RDF（MACE 与 M3GNet，600 K）](plots/Li3YCl6_LiCl_RDF_600K_MACE_M3GNet.png)
+![Li–Cl RDF（三模型，600 K）](plots/Li3YCl6_LiCl_RDF_600K_all_models.png)
 
-![Y–Cl RDF（MACE 与 M3GNet，600 K）](plots/Li3YCl6_YCl_RDF_600K_MACE_M3GNet.png)
+![Y–Cl RDF（三模型，600 K）](plots/Li3YCl6_YCl_RDF_600K_all_models.png)
 
-![Cl–Cl RDF（MACE 与 M3GNet，600 K）](plots/Li3YCl6_ClCl_RDF_600K_MACE_M3GNet.png)
+![Cl–Cl RDF（三模型，600 K）](plots/Li3YCl6_ClCl_RDF_600K_all_models.png)
 
-![Li–Cl 配位数（MACE 与 M3GNet，600 K）](plots/Li3YCl6_LiCl_coordination_600K_MACE_M3GNet.png)
+![Li–Cl 配位数（三模型，600 K）](plots/Li3YCl6_LiCl_coordination_600K_all_models.png)
 
 ![Li–Cl 配位数波动](plots/Li3YCl6_LiCl_coordination_fluctuations_600K_MACE_M3GNet.png)
 
@@ -307,7 +307,7 @@ MSD 随时间近似线性增长，表示 Li⁺ 已进入扩散阶段；斜率越
 
 ### RDF 图
 
-Li–Cl、Y–Cl 和 Cl–Cl RDF 用于比较局部配位环境和阴离子骨架。峰位置反映平均近邻距离，峰宽和峰高反映热振动及局部结构分布。两种模型的峰位置相近时，说明它们给出了相似的局部结构；峰形不同则表示模型对局部无序程度的描述不同。
+Li–Cl、Y–Cl 和 Cl–Cl RDF 用于比较局部配位环境和阴离子骨架。峰位置反映平均近邻距离，峰宽和峰高反映热振动及局部结构分布。三个模型的峰位置相近时，说明它们给出了相似的局部结构；峰形不同则表示模型对局部无序程度的描述不同。
 
 ### 配位数图
 
