@@ -43,7 +43,7 @@ for name, sigma300, ea, color, marker, ls in references:
 
 ax.set_title(r"Li$_3$YCl$_6$ — Arrhenius analysis of Li-ion transport", fontsize=18, pad=10)
 ax.set_xlabel(r"1000/T (K$^{-1}$)", fontsize=15)
-ax.set_ylabel(r"ln σ$_{NE}$ (S cm$^{-1}$)", fontsize=15)
+ax.set_ylabel(r"$\ln\,\sigma_{\mathrm{NE}}$ (S cm$^{-1}$)", fontsize=15)
 ax.tick_params(labelsize=12, width=1.2, length=5)
 for spine in ax.spines.values():
     spine.set_linewidth(1.2)
@@ -79,7 +79,7 @@ for name, sigma300, ea, color, marker, ls in references:
              mfc="white", mec=color, mew=2.2)
 ax2.set_title(r"Li$_3$YCl$_6$ — Arrhenius analysis of Li-ion transport", fontsize=18, pad=10)
 ax2.set_xlabel(r"1000/T (K$^{-1}$)", fontsize=15)
-ax2.set_ylabel(r"ln σ$_{NE}$ (S cm$^{-1}$)", fontsize=15)
+ax2.set_ylabel(r"$\ln\,\sigma_{\mathrm{NE}}$ (S cm$^{-1}$)", fontsize=15)
 ax2.tick_params(labelsize=12, width=1.2, length=5)
 for spine in ax2.spines.values():
     spine.set_linewidth(1.2)
