@@ -241,12 +241,13 @@ flowchart TD
 
 4 温度の Li⁺ 拡散係数を Arrhenius 形式で比較した図である。実線は MD データの fit、破線は 300 K への外挿を示す。凡例の $E_a$ は同じ fit から求めた値である。
 
-| Model / reference | $E_a$ (eV) | $R^2$ | $D(300\,K)$ (cm² s⁻¹) | Conductivity at 300 K |
-|---|---:|---:|---:|---:|
-| MACE-MPA-0 | 0.302 | 0.991 | $1.55\times10^{-8}$ | $\sigma_{\mathrm{NE}}=1.27$ mS/cm |
-| M3GNet (GPU) | 0.212 | 0.998 | $1.02\times10^{-7}$ | $\sigma_{\mathrm{NE}}=8.37$ mS/cm |
-| Experiment | 0.400 | — | — | $0.51$ mS/cm |
-| NGK M3GNet (CPU reference) | 0.180 | — | — | $9.69$ mS/cm |
+| Model / reference | Fit temperatures (K) | $E_a$ (eV) | $R^2$ | $D(300\,K)$ (cm² s⁻¹) | Conductivity at 300 K |
+|---|---|---:|---:|---:|---:|
+| MACE-MPA-0 | 400/600/800/1000 | 0.302 | 0.991 | $1.55\times10^{-8}$ | $\sigma_{\mathrm{NE}}=1.27$ mS/cm |
+| SevenNet-nano | 400/600/800/1000 | 0.246 | 0.9999 | $5.62\times10^{-8}$ | $\sigma_{\mathrm{NE}}=4.62$ mS/cm |
+| M3GNet (GPU) | 400/600/800/1000 | 0.212 | 0.998 | $1.02\times10^{-7}$ | $\sigma_{\mathrm{NE}}=8.37$ mS/cm |
+| Experiment | — | 0.400 | — | — | $0.51$ mS/cm |
+| NGK M3GNet (CPU reference) | — | 0.180 | — | — | $9.69$ mS/cm |
 
 ![Li₃YCl₆ MACE-MPA-0 四温度 MSD](plots/Li3YCl6_MSD_4T_MACE_MPA_0.png)
 

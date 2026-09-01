@@ -239,6 +239,8 @@ flowchart TD
 
 ![Li₃YCl₆ 三模型 Arrhenius / Ea 比较](plots/Li3YCl6_Arrhenius_all_models.png)
 
+图中实线为 400/600/800/1000 K 的 MD 拟合，虚线为向 300 K 的 Arrhenius 外推；图例和下表中的数值来自同一组拟合数据。
+
 ![Li₃YCl₆ MACE-MPA-0 四温度 MSD](plots/Li3YCl6_MSD_4T_MACE_MPA_0.png)
 
 对应 MSD 线性拟合得到的扩散系数和 Nernst–Einstein 电导率如下。$D_{\mathrm{Li}}$ 的单位为 cm²/s，$\sigma_{\mathrm{NE}}$ 的单位为 mS/cm。

@@ -17,7 +17,7 @@ models = [
     ("M3GNet (GPU)", np.array([0.0499968539, 0.2422683654, 0.4811228915, 0.8433514808]), 0.212, "#d62728"),
 ]
 
-fig, ax = plt.subplots(figsize=(12, 8), dpi=180)
+fig, ax = plt.subplots(figsize=(12.5, 8), dpi=180)
 for name, sigma, ea, color in models:
     y = np.log(sigma)
     slope, intercept = np.polyfit(x, y, 1)
@@ -41,12 +41,16 @@ for name, sigma300, ea, color, marker, ls in references:
     ax.plot(xx, yline, color=color, lw=2.5, ls=ls, label=fr"{name} ($E_a$={ea:.3f} eV)")
     ax.plot(1000.0 / 300.0, y300, marker=marker, ms=11, mfc="white", mec=color, mew=2.2)
 
-ax.set_title(r"Li$_3$YCl$_6$ — Arrhenius analysis of Li-ion transport", fontsize=20, pad=12)
-ax.set_xlabel(r"1000/T (K$^{-1}$)", fontsize=17)
-ax.set_ylabel(r"ln σ$_{NE}$ (S cm$^{-1}$)", fontsize=17)
-ax.tick_params(labelsize=14)
+ax.set_title(r"Li$_3$YCl$_6$ — Arrhenius analysis of Li-ion transport", fontsize=19, pad=12)
+ax.set_xlabel(r"1000/T (K$^{-1}$)", fontsize=16)
+ax.set_ylabel(r"ln σ$_{NE}$ (S cm$^{-1}$)", fontsize=16)
+ax.tick_params(labelsize=13, width=1.4, length=5)
+for spine in ax.spines.values():
+    spine.set_linewidth(1.6)
 ax.grid(True, alpha=0.23)
-ax.legend(fontsize=13, loc="upper center", bbox_to_anchor=(0.63, 0.97), frameon=False)
-fig.tight_layout()
+ax.legend(fontsize=11.5, loc="upper left", bbox_to_anchor=(1.015, 1.0),
+          frameon=True, edgecolor="#bdbdbd", facecolor="white", framealpha=0.96,
+          borderpad=0.7, labelspacing=0.55)
+fig.tight_layout(rect=(0, 0, 0.80, 1))
 for out in OUTS:
     fig.savefig(out, bbox_inches="tight")
