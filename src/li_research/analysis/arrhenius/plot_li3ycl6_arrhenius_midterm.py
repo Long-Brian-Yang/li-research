@@ -54,3 +54,39 @@ ax.legend(fontsize=12.0, loc="upper right",
 fig.tight_layout()
 for out in OUTS:
     fig.savefig(out, bbox_inches="tight")
+
+# Keep the two-model midterm comparison used in the presentation README,
+# using exactly the same typography and axis style as the three-model figure.
+fig2, ax2 = plt.subplots(figsize=(10, 7), dpi=180)
+for name, sigma, ea, color in (models[0], models[2]):
+    y = np.log(sigma)
+    slope, intercept = np.polyfit(x, y, 1)
+    xx = np.linspace(x.min(), x.max(), 200)
+    ax2.plot(xx, slope * xx + intercept, color=color, lw=2.2)
+    ax2.scatter(x, y, color=color, s=105, zorder=3,
+                label=fr"{name} ($E_a$={ea:.3f} eV)")
+    x300 = 1000.0 / 300.0
+    y300 = slope * x300 + intercept
+    ax2.plot([x.max(), x300], [slope * x.max() + intercept, y300],
+             color=color, lw=2.2, ls="--")
+    ax2.plot(x300, y300, marker="o", ms=11, mfc="white", mec=color, mew=2.2)
+for name, sigma300, ea, color, marker, ls in references:
+    y300 = np.log(sigma300)
+    yline = y300 - (ea / kB) * (xx / 1000.0 - 1.0 / 300.0)
+    ax2.plot(xx, yline, color=color, lw=2.5, ls=ls,
+             label=fr"{name} ($E_a$={ea:.3f} eV)")
+    ax2.plot(1000.0 / 300.0, y300, marker=marker, ms=11,
+             mfc="white", mec=color, mew=2.2)
+ax2.set_title(r"Li$_3$YCl$_6$ — Arrhenius analysis of Li-ion transport", fontsize=18, pad=10)
+ax2.set_xlabel(r"1000/T (K$^{-1}$)", fontsize=15)
+ax2.set_ylabel(r"ln σ$_{NE}$ (S cm$^{-1}$)", fontsize=15)
+ax2.tick_params(labelsize=12, width=1.2, length=5)
+for spine in ax2.spines.values():
+    spine.set_linewidth(1.2)
+ax2.grid(True, alpha=0.23)
+ax2.legend(fontsize=12.0, loc="upper right", frameon=True,
+           edgecolor="#bdbdbd", facecolor="white", framealpha=0.96,
+           borderpad=0.85, labelspacing=0.65, handlelength=2.6)
+fig2.tight_layout()
+fig2.savefig(ROOT / "results/midterm_Li3YCl6_MACE_M3GNet/plots/Li3YCl6_Arrhenius_MACE_M3GNet_exp_company.png",
+             bbox_inches="tight")
