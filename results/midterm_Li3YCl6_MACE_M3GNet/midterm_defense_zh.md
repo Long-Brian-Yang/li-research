@@ -261,6 +261,8 @@ flowchart TD
 
 对应 MSD 线性拟合得到的扩散系数和 Nernst–Einstein 电导率如下。$D_{\mathrm{Li}}$ 的单位为 cm²/s，$\sigma_{\mathrm{NE}}$ 的单位为 mS/cm。
 
+**MACE-MPA-0 的 MSD 扩散系数与电导率**
+
 | 温度 | Replica | $D_{\mathrm{Li}}$ (cm²/s) | $\sigma_{\mathrm{NE}}$ (mS/cm) |
 |---:|---:|---:|---:|
 | 400 K | R3 | $2.52\times10^{-7}$ | 15.5 |

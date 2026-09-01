@@ -259,6 +259,8 @@ flowchart TD
 
 MSD の線形 fit から得た拡散係数と Nernst–Einstein 電導度を示す。$D_{\mathrm{Li}}$ の単位は cm²/s、$\sigma_{\mathrm{NE}}$ の単位は mS/cm である。
 
+**MACE-MPA-0 の MSD 拡散係数と電導度**
+
 | 温度 | Replica | $D_{\mathrm{Li}}$ (cm²/s) | $\sigma_{\mathrm{NE}}$ (mS/cm) |
 |---:|---:|---:|---:|
 | 400 K | R3 | $2.52\times10^{-7}$ | 15.5 |
