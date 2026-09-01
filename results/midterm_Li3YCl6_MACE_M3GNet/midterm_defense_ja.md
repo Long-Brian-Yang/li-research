@@ -272,6 +272,8 @@ MACE-MPA-0 による 400、600、800、1000 K の Li MSD である。温度上�
 
 MSD の線形 fit から得た拡散係数と Nernst–Einstein 電導度を示す。$D_{\mathrm{Li}}$ の単位は cm²/s、$\sigma_{\mathrm{NE}}$ の単位は mS/cm である。
 
+**SevenNet-nano の MSD 拡散係数と電導度**
+
 | 温度 | Replica | $D_{\mathrm{Li}}$ (cm²/s) | $\sigma_{\mathrm{NE}}$ (mS/cm) |
 |---:|---:|---:|---:|
 | 400 K | R2 | $8.13\times10^{-7}$ | 50.0 |
