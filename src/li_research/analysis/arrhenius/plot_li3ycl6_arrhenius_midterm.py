@@ -22,13 +22,13 @@ for name, sigma, ea, color in models:
     y = np.log(sigma)
     slope, intercept = np.polyfit(x, y, 1)
     xx = np.linspace(x.min(), x.max(), 200)
-    ax.plot(xx, slope * xx + intercept, color=color, lw=2.2)
-    ax.scatter(x, y, color=color, s=105, zorder=3,
+    ax.plot(xx, slope * xx + intercept, color=color, lw=3.0)
+    ax.scatter(x, y, color=color, s=125, zorder=3,
                label=fr"{name} ($E_a$={ea:.3f} eV)")
     x300 = 1000.0 / 300.0
     y300 = slope * x300 + intercept
-    ax.plot([x.max(), x300], [slope * x.max() + intercept, y300], color=color, lw=2.2, ls="--")
-    ax.plot(x300, y300, marker="o", ms=11, mfc="white", mec=color, mew=2.2)
+    ax.plot([x.max(), x300], [slope * x.max() + intercept, y300], color=color, lw=3.0, ls="--")
+    ax.plot(x300, y300, marker="o", ms=12, mfc="white", mec=color, mew=2.4)
 
 references = [
     ("Experiment", 5.1e-4, 0.400, "#111111", "s", ":"),
@@ -38,17 +38,17 @@ xx = np.linspace(1.0, 1000.0 / 300.0, 250)
 for name, sigma300, ea, color, marker, ls in references:
     y300 = np.log(sigma300)
     yline = y300 - (ea / kB) * (xx / 1000.0 - 1.0 / 300.0)
-    ax.plot(xx, yline, color=color, lw=2.5, ls=ls, label=fr"{name} ($E_a$={ea:.3f} eV)")
-    ax.plot(1000.0 / 300.0, y300, marker=marker, ms=11, mfc="white", mec=color, mew=2.2)
+    ax.plot(xx, yline, color=color, lw=3.0, ls=ls, label=fr"{name} ($E_a$={ea:.3f} eV)")
+    ax.plot(1000.0 / 300.0, y300, marker=marker, ms=12, mfc="white", mec=color, mew=2.4)
 
-ax.set_title(r"Li$_3$YCl$_6$ — Arrhenius analysis of Li-ion transport", fontsize=18, pad=10)
-ax.set_xlabel(r"1000/T (K$^{-1}$)", fontsize=15)
-ax.set_ylabel(r"$\ln\,\sigma_{\mathrm{NE}}$ (S cm$^{-1}$)", fontsize=15)
-ax.tick_params(labelsize=12, width=1.2, length=5)
+ax.set_title(r"Li$_3$YCl$_6$ — Arrhenius analysis of Li-ion transport", fontsize=20, pad=10)
+ax.set_xlabel(r"1000/T (K$^{-1}$)", fontsize=17)
+ax.set_ylabel(r"$\ln\,\sigma_{\mathrm{NE}}$ (S cm$^{-1}$)", fontsize=17)
+ax.tick_params(labelsize=14, width=1.4, length=5)
 for spine in ax.spines.values():
-    spine.set_linewidth(1.2)
+    spine.set_linewidth(1.4)
 ax.grid(True, alpha=0.23)
-ax.legend(fontsize=12.0, loc="upper right",
+ax.legend(fontsize=13.0, loc="upper right",
           frameon=True, edgecolor="#bdbdbd", facecolor="white", framealpha=0.96,
           borderpad=0.85, labelspacing=0.65, handlelength=2.6)
 fig.tight_layout()
@@ -62,29 +62,29 @@ for name, sigma, ea, color in (models[0], models[2]):
     y = np.log(sigma)
     slope, intercept = np.polyfit(x, y, 1)
     xx = np.linspace(x.min(), x.max(), 200)
-    ax2.plot(xx, slope * xx + intercept, color=color, lw=2.2)
-    ax2.scatter(x, y, color=color, s=105, zorder=3,
+    ax2.plot(xx, slope * xx + intercept, color=color, lw=3.0)
+    ax2.scatter(x, y, color=color, s=125, zorder=3,
                 label=fr"{name} ($E_a$={ea:.3f} eV)")
     x300 = 1000.0 / 300.0
     y300 = slope * x300 + intercept
     ax2.plot([x.max(), x300], [slope * x.max() + intercept, y300],
-             color=color, lw=2.2, ls="--")
-    ax2.plot(x300, y300, marker="o", ms=11, mfc="white", mec=color, mew=2.2)
+             color=color, lw=3.0, ls="--")
+    ax2.plot(x300, y300, marker="o", ms=12, mfc="white", mec=color, mew=2.4)
 for name, sigma300, ea, color, marker, ls in references:
     y300 = np.log(sigma300)
     yline = y300 - (ea / kB) * (xx / 1000.0 - 1.0 / 300.0)
-    ax2.plot(xx, yline, color=color, lw=2.5, ls=ls,
+    ax2.plot(xx, yline, color=color, lw=3.0, ls=ls,
              label=fr"{name} ($E_a$={ea:.3f} eV)")
-    ax2.plot(1000.0 / 300.0, y300, marker=marker, ms=11,
-             mfc="white", mec=color, mew=2.2)
-ax2.set_title(r"Li$_3$YCl$_6$ — Arrhenius analysis of Li-ion transport", fontsize=18, pad=10)
-ax2.set_xlabel(r"1000/T (K$^{-1}$)", fontsize=15)
-ax2.set_ylabel(r"$\ln\,\sigma_{\mathrm{NE}}$ (S cm$^{-1}$)", fontsize=15)
-ax2.tick_params(labelsize=12, width=1.2, length=5)
+    ax2.plot(1000.0 / 300.0, y300, marker=marker, ms=12,
+             mfc="white", mec=color, mew=2.4)
+ax2.set_title(r"Li$_3$YCl$_6$ — Arrhenius analysis of Li-ion transport", fontsize=20, pad=10)
+ax2.set_xlabel(r"1000/T (K$^{-1}$)", fontsize=17)
+ax2.set_ylabel(r"$\ln\,\sigma_{\mathrm{NE}}$ (S cm$^{-1}$)", fontsize=17)
+ax2.tick_params(labelsize=14, width=1.4, length=5)
 for spine in ax2.spines.values():
-    spine.set_linewidth(1.2)
+    spine.set_linewidth(1.4)
 ax2.grid(True, alpha=0.23)
-ax2.legend(fontsize=12.0, loc="upper right", frameon=True,
+ax2.legend(fontsize=13.0, loc="upper right", frameon=True,
            edgecolor="#bdbdbd", facecolor="white", framealpha=0.96,
            borderpad=0.85, labelspacing=0.65, handlelength=2.6)
 fig2.tight_layout()
