@@ -17,6 +17,11 @@
 - [Li–Cl RDF — all three models](Li3YCl6_LiCl_RDF_600K_all_models.png)
 - [Y–Cl RDF — all three models](Li3YCl6_YCl_RDF_600K_all_models.png)
 - [Cl–Cl RDF — all three models](Li3YCl6_ClCl_RDF_600K_all_models.png)
+
+The 600 K RDF figures were recomputed with MDAnalysis `InterRDF` using the
+production frames after equilibration, periodic boundary conditions, 120 bins,
+and a common 0–6 Å range. The per-model radial-distribution data are stored as
+CSV files beside the figures for reproducibility.
 - [Li–Cl coordination — all three models](Li3YCl6_LiCl_coordination_600K_all_models.png)
 - [Thermodynamic stability — all three models](Li3YCl6_thermodynamic_stability_600K_all_models.png)
 
