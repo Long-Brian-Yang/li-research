@@ -272,20 +272,27 @@ flowchart TD
 
 ![Li₃YCl₆ M3GNet 四温度 MSD](plots/Li3YCl6_MSD_4T_M3GNet.png)
 
+**M3GNet GPU 的 MSD 扩散系数与电导率**
+
+| 温度 | Replica | $D_{\mathrm{Li}}$ (cm²/s) | $\sigma_{\mathrm{NE}}$ (mS/cm) |
+|---:|---:|---:|---:|
+| 400 K | R2 | $1.29\times10^{-7}$ | 7.9 |
+| 600 K | R2 | $2.74\times10^{-6}$ | 112 |
+| 800 K | R2 | $2.66\times10^{-5}$ | 818 |
+| 1000 K | R2 | $6.28\times10^{-5}$ | 1544 |
+
 ![Li₃YCl₆ SevenNet-nano 四温度 MSD](plots/Li3YCl6_MSD_4T_SevenNet_nano.png)
-
-![Li₃YCl₆ 三模型四温度 MSD](plots/Li3YCl6_MSD_4T_all_models.png)
-
-对应 MSD 线性拟合得到的扩散系数和 Nernst–Einstein 电导率如下。$D_{\mathrm{Li}}$ 的单位为 cm²/s，$\sigma_{\mathrm{NE}}$ 的单位为 mS/cm。
 
 **SevenNet-nano 的 MSD 扩散系数与电导率**
 
 | 温度 | Replica | $D_{\mathrm{Li}}$ (cm²/s) | $\sigma_{\mathrm{NE}}$ (mS/cm) |
 |---:|---:|---:|---:|
-| 400 K | R2 | $8.13\times10^{-7}$ | 50.0 |
-| 600 K | R2 | $5.91\times10^{-6}$ | 242 |
-| 800 K | R2 | $1.56\times10^{-5}$ | 481 |
-| 1000 K | R2 | $3.43\times10^{-5}$ | 843 |
+| 400 K | R3 | $7.13\times10^{-7}$ | 43.8 |
+| 600 K | R2 | $5.47\times10^{-6}$ | 224 |
+| 800 K | R2 | $1.64\times10^{-5}$ | 505 |
+| 1000 K | R1 | $3.45\times10^{-5}$ | 847 |
+
+![Li₃YCl₆ 三模型四温度 MSD](plots/Li3YCl6_MSD_4T_all_models.png)
 
 ![Li–Cl RDF（三模型，600 K）](plots/Li3YCl6_LiCl_RDF_600K_all_models.png)
 

@@ -274,18 +274,27 @@ MACE-MPA-0 による 400、600、800、1000 K の Li MSD である。温度上�
 
 MSD の線形 fit から得た拡散係数と Nernst–Einstein 電導度を示す。$D_{\mathrm{Li}}$ の単位は cm²/s、$\sigma_{\mathrm{NE}}$ の単位は mS/cm である。
 
-**SevenNet-nano の MSD 拡散係数と電導度**
+**M3GNet GPU の MSD 拡散係数と電導度**
 
 | 温度 | Replica | $D_{\mathrm{Li}}$ (cm²/s) | $\sigma_{\mathrm{NE}}$ (mS/cm) |
 |---:|---:|---:|---:|
-| 400 K | R2 | $8.13\times10^{-7}$ | 50.0 |
-| 600 K | R2 | $5.91\times10^{-6}$ | 242 |
-| 800 K | R2 | $1.56\times10^{-5}$ | 481 |
-| 1000 K | R2 | $3.43\times10^{-5}$ | 843 |
+| 400 K | R2 | $1.29\times10^{-7}$ | 7.9 |
+| 600 K | R2 | $2.74\times10^{-6}$ | 112 |
+| 800 K | R2 | $2.66\times10^{-5}$ | 818 |
+| 1000 K | R2 | $6.28\times10^{-5}$ | 1544 |
 
 M3GNet の同じ 4 温度条件の MSD である。MACE-MPA-0 と同じ軸・条件を用いているため、モデル間の拡散挙動を直接比較できる。
 
 ![Li₃YCl₆ SevenNet-nano 四温度 MSD](plots/Li3YCl6_MSD_4T_SevenNet_nano.png)
+
+**SevenNet-nano の MSD 拡散係数と電導度**
+
+| 温度 | Replica | $D_{\mathrm{Li}}$ (cm²/s) | $\sigma_{\mathrm{NE}}$ (mS/cm) |
+|---:|---:|---:|---:|
+| 400 K | R3 | $7.13\times10^{-7}$ | 43.8 |
+| 600 K | R2 | $5.47\times10^{-6}$ | 224 |
+| 800 K | R2 | $1.64\times10^{-5}$ | 505 |
+| 1000 K | R1 | $3.45\times10^{-5}$ | 847 |
 
 ![Li₃YCl₆ 三モデル四温度 MSD](plots/Li3YCl6_MSD_4T_all_models.png)
 
