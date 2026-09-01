@@ -181,14 +181,14 @@ $$
 
 其中 $n_{\mathrm{Li}}$ 是单位体积内可迁移 Li 数密度，$q_{\mathrm{Li}}=+e$ 是 Li⁺ 电荷。该式假设不同 Li⁺ 的运动相关性可以忽略，因此得到的是 tracer/Nernst–Einstein estimate，不等同于包含集体相关效应的严格电导率。
 
-单位换算采用
+文献中的电导率通常用 σ (S cm⁻¹) 表示；单位换算采用
 
 $$
 D\,[\mathrm{cm^2/s}]=10^{-4}D\,[\mathrm{\AA^2/ps}],\qquad
-\sigma\,[\mathrm{mS/cm}]=10^3\sigma\,[\mathrm{S/cm}].
+1\,\mathrm{mS/cm}=10^{-3}\,\mathrm{S/cm}.
 $$
 
-如果使用 SI 制先得到 $\sigma$ (S/m)，则 $\sigma$ (mS/cm) $=10\,\sigma$ (S/m)。因此表格中的 mS/cm 数值不是直接把 S/cm 的数值照搬，而是经过上述换算得到。
+如果使用 SI 制先得到 $\sigma$ (S/m)，则 $\sigma$ (S/cm) $=10^{-2}\sigma$ (S/m)。Arrhenius 表格直接使用 $\mathrm{S\,cm^{-1}}$ 表示。
 
 ### 7.5 RDF 与配位数
 
@@ -247,13 +247,13 @@ flowchart TD
 
 图中实线为 400/600/800/1000 K 的 MD 拟合，虚线为向 300 K 的 Arrhenius 外推；图例和下表中的数值来自同一组拟合数据。
 
-| 模型 | $E_a$ (eV) | $R^2$ | $D(300\,\mathrm{K})$ (cm²/s) | $\sigma_{\mathrm{NE}}(300\,\mathrm{K})$ (mS/cm) |
-|---|---:|---:|---:|---:|
-| MACE-MPA-0 | 0.302 | 0.991 | $1.55\times10^{-8}$ | 1.27 |
-| SevenNet-nano | 0.246 | 0.9999 | $5.62\times10^{-8}$ | 4.62 |
-| M3GNet (GPU) | 0.212 | 0.998 | $1.02\times10^{-7}$ | 8.37 |
-| 实验参考 | 0.400 | — | — | 0.51 |
-| NGK M3GNet（CPU reference） | 0.180 | — | — | 9.69 |
+| 模型 | $E_a$ (eV) | $R^2$ | $\sigma_{\mathrm{NE}}(300\,\mathrm{K})$ (S cm⁻¹) |
+|---|---:|---:|---:|
+| MACE-MPA-0 | 0.302 | 0.991 | $1.27\times10^{-3}$ |
+| SevenNet-nano | 0.246 | 0.9999 | $4.62\times10^{-3}$ |
+| M3GNet (GPU) | 0.212 | 0.998 | $8.37\times10^{-3}$ |
+| 实验参考 | 0.400 | — | $5.10\times10^{-4}$ |
+| NGK M3GNet（CPU reference） | 0.180 | — | $9.69\times10^{-3}$ |
 
 这些结果用于比较模型趋势和工作流一致性；由于使用的是通用模型，不能直接宣称已经达到实验精度。
 

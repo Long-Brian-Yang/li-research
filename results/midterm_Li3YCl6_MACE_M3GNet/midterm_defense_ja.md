@@ -181,14 +181,14 @@ $$
 
 を用いる。$n_{\mathrm{Li}}$ は可動 Li の数密度、$q_{\mathrm{Li}}=+e$ は Li⁺ の電荷である。Li⁺ 間の集団相関を無視した tracer/Nernst–Einstein estimate であり、厳密な実験電導度とは区別する。
 
-単位換算は
+文献で一般的な電導度表記に合わせ、単位換算は
 
 $$
 D\,[\mathrm{cm^2/s}]=10^{-4}D\,[\mathrm{\AA^2/ps}],\qquad
-\sigma\,[\mathrm{mS/cm}]=10^3\sigma\,[\mathrm{S/cm}]
+1\,\mathrm{mS/cm}=10^{-3}\,\mathrm{S/cm}
 $$
 
-を用いる。SI 単位で $\sigma$ を S/m で計算した場合は、$\sigma$ (mS/cm) $=10\,\sigma$ (S/m) である。
+を用いる。SI 単位で $\sigma$ を S/m で計算した場合は、$\sigma$ (S/cm) $=10^{-2}\sigma$ (S/m) である。Arrhenius 表では $\mathrm{S\,cm^{-1}}$ を使用する。
 
 ### 7.5 RDF と配位数
 
@@ -247,13 +247,13 @@ flowchart TD
 
 4 温度の Li⁺ 拡散係数を Arrhenius 形式で比較した図である。実線は MD データの fit、破線は 300 K への外挿を示す。凡例の $E_a$ は同じ fit から求めた値である。
 
-| Model / reference | Fit temperatures (K) | $E_a$ (eV) | $R^2$ | $D(300\,K)$ (cm² s⁻¹) | Conductivity at 300 K |
-|---|---|---:|---:|---:|---:|
-| MACE-MPA-0 | 400/600/800/1000 | 0.302 | 0.991 | $1.55\times10^{-8}$ | $\sigma_{\mathrm{NE}}=1.27$ mS/cm |
-| SevenNet-nano | 400/600/800/1000 | 0.246 | 0.9999 | $5.62\times10^{-8}$ | $\sigma_{\mathrm{NE}}=4.62$ mS/cm |
-| M3GNet (GPU) | 400/600/800/1000 | 0.212 | 0.998 | $1.02\times10^{-7}$ | $\sigma_{\mathrm{NE}}=8.37$ mS/cm |
-| Experiment | — | 0.400 | — | — | $0.51$ mS/cm |
-| NGK M3GNet (CPU reference) | — | 0.180 | — | — | $9.69$ mS/cm |
+| Model / reference | Fit temperatures (K) | $E_a$ (eV) | $R^2$ | $\sigma_{\mathrm{NE}}(300\,K)$ (S cm⁻¹) |
+|---|---|---:|---:|---:|
+| MACE-MPA-0 | 400/600/800/1000 | 0.302 | 0.991 | $1.27\times10^{-3}$ |
+| SevenNet-nano | 400/600/800/1000 | 0.246 | 0.9999 | $4.62\times10^{-3}$ |
+| M3GNet (GPU) | 400/600/800/1000 | 0.212 | 0.998 | $8.37\times10^{-3}$ |
+| Experiment | — | 0.400 | — | $5.10\times10^{-4}$ |
+| NGK M3GNet (CPU reference) | — | 0.180 | — | $9.69\times10^{-3}$ |
 
 ![Li₃YCl₆ MACE-MPA-0 四温度 MSD](plots/Li3YCl6_MSD_4T_MACE_MPA_0.png)
 
