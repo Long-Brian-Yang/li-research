@@ -14,15 +14,14 @@
 - [Li–Cl coordination](Li3YCl6_LiCl_coordination_600K_MACE_M3GNet.png)
 - [Li–Cl coordination fluctuations](Li3YCl6_LiCl_coordination_fluctuations_600K_MACE_M3GNet.png)
 - [Thermodynamic fluctuations](Li3YCl6_thermodynamic_fluctuations_600K_MACE_M3GNet.png)
-- [Li–Cl RDF — all three models](Li3YCl6_LiCl_RDF_600K_all_models.png)
-- [Y–Cl RDF — all three models](Li3YCl6_YCl_RDF_600K_all_models.png)
-- [Cl–Cl RDF — all three models](Li3YCl6_ClCl_RDF_600K_all_models.png)
+- [Li–Cl RDF — MACE and M3GNet, 600 K](Li3YCl6_LiCl_RDF_600K_MACE_M3GNet.png)
+- [Y–Cl RDF — MACE and M3GNet, 600 K](Li3YCl6_YCl_RDF_600K_MACE_M3GNet.png)
+- [Cl–Cl RDF — MACE and M3GNet, 600 K](Li3YCl6_ClCl_RDF_600K_MACE_M3GNet.png)
 
-The 600 K RDF figures were recomputed with MDAnalysis `InterRDF` using the
-production frames after equilibration, periodic boundary conditions, 120 bins,
-and a common 0–6 Å range. The per-model radial-distribution data are stored as
-CSV files beside the figures for reproducibility.
-- [Li–Cl coordination — all three models](Li3YCl6_LiCl_coordination_600K_all_models.png)
+The formal midterm RDF figures above are the original two-model (MACE and
+M3GNet) 600 K comparison. A separate three-model RDF reanalysis is retained
+below for supplementary inspection; it is not the formal midterm figure.
+- [Li–Cl coordination — MACE and M3GNet, 600 K](Li3YCl6_LiCl_coordination_600K_MACE_M3GNet.png)
 - [Thermodynamic stability — all three models](Li3YCl6_thermodynamic_stability_600K_all_models.png)
 
 ## Supplementary priority analyses

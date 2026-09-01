@@ -265,13 +265,13 @@ flowchart TD
 | 800 K | R2 | $1.56\times10^{-5}$ | 481 |
 | 1000 K | R2 | $3.43\times10^{-5}$ | 843 |
 
-![Li–Cl RDF（三模型）](plots/Li3YCl6_LiCl_RDF_600K_all_models.png)
+![Li–Cl RDF（MACE 与 M3GNet，600 K）](plots/Li3YCl6_LiCl_RDF_600K_MACE_M3GNet.png)
 
-![Y–Cl RDF（三模型）](plots/Li3YCl6_YCl_RDF_600K_all_models.png)
+![Y–Cl RDF（MACE 与 M3GNet，600 K）](plots/Li3YCl6_YCl_RDF_600K_MACE_M3GNet.png)
 
-![Cl–Cl RDF（三模型）](plots/Li3YCl6_ClCl_RDF_600K_all_models.png)
+![Cl–Cl RDF（MACE 与 M3GNet，600 K）](plots/Li3YCl6_ClCl_RDF_600K_MACE_M3GNet.png)
 
-![Li–Cl 配位数（三模型）](plots/Li3YCl6_LiCl_coordination_600K_all_models.png)
+![Li–Cl 配位数（MACE 与 M3GNet，600 K）](plots/Li3YCl6_LiCl_coordination_600K_MACE_M3GNet.png)
 
 ![Li–Cl 配位数波动](plots/Li3YCl6_LiCl_coordination_fluctuations_600K_MACE_M3GNet.png)
 

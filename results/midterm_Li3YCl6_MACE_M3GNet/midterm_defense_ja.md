@@ -278,19 +278,19 @@ M3GNet の同じ 4 温度条件の MSD である。MACE-MPA-0 と同じ軸・条
 
 ![Li₃YCl₆ 三モデル四温度 MSD](plots/Li3YCl6_MSD_4T_all_models.png)
 
-![Li–Cl RDF（三模型）](plots/Li3YCl6_LiCl_RDF_600K_all_models.png)
+![Li–Cl RDF（MACE と M3GNet、600 K）](plots/Li3YCl6_LiCl_RDF_600K_MACE_M3GNet.png)
 
 Li 周囲の局所配位環境を示す。第一ピークの位置は平均 Li–Cl 距離、ピーク幅は熱振動と局所構造分布を反映する。
 
-![Y–Cl RDF（三模型）](plots/Li3YCl6_YCl_RDF_600K_all_models.png)
+![Y–Cl RDF（MACE と M3GNet、600 K）](plots/Li3YCl6_YCl_RDF_600K_MACE_M3GNet.png)
 
 ハライド骨格側の局所環境を比較する図であり、Y–Cl 骨格が MD 中に維持されているかを確認する。
 
-![Cl–Cl RDF（三模型）](plots/Li3YCl6_ClCl_RDF_600K_all_models.png)
+![Cl–Cl RDF（MACE と M3GNet、600 K）](plots/Li3YCl6_ClCl_RDF_600K_MACE_M3GNet.png)
 
 陰イオン部分の秩序と熱的な広がりを示す。高温でのピーク幅の変化は熱振動の増加に対応する。
 
-![Li–Cl 配位数（三模型）](plots/Li3YCl6_LiCl_coordination_600K_all_models.png)
+![Li–Cl 配位数（MACE と M3GNet、600 K）](plots/Li3YCl6_LiCl_coordination_600K_MACE_M3GNet.png)
 
 Li–Cl RDF の第一配位殻を積分した平均配位数であり、RDF の形状を定量的に補足する指標である。
 
