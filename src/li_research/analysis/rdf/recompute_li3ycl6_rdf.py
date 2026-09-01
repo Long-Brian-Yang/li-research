@@ -27,24 +27,26 @@ OUT = ROOT / "results/midterm_Li3YCl6_MACE_M3GNet/plots"
 def main():
     OUT.mkdir(parents=True, exist_ok=True)
     for pair_name, (a_type, b_type) in PAIRS.items():
-        fig, ax = plt.subplots(figsize=(10, 7), dpi=180)
+        fig, ax = plt.subplots(figsize=(8.8, 5.8667), dpi=180)
         for model, path in TRAJECTORIES.items():
             u = mda.Universe(str(path), format="LAMMPSDUMP")
             ag1 = u.select_atoms(f"type {a_type}")
             ag2 = u.select_atoms(f"type {b_type}")
             rdf = InterRDF(ag1, ag2, nbins=120, range=(0.0, 6.0), norm="rdf")
             rdf.run(start=50, stop=u.trajectory.n_frames, step=1)
-            ax.plot(rdf.results.bins, rdf.results.rdf, lw=2.6, color=COLORS[model], label=model)
+            ax.plot(rdf.results.bins, rdf.results.rdf, lw=3.4, color=COLORS[model], label=model)
             np.savetxt(OUT / f"Li3YCl6_{pair_name.replace('-', '')}_RDF_600K_{model.replace('-', '_')}.csv",
                        np.column_stack([rdf.results.bins, rdf.results.rdf]), delimiter=",", header="r_A,g_r", comments="")
-        ax.set_title(f"Li$_3$YCl$_6$ — {pair_name} RDF at 600 K", fontsize=18, pad=10)
-        ax.set_xlabel("Distance r (Å)", fontsize=15)
-        ax.set_ylabel("g(r)", fontsize=15)
-        ax.tick_params(labelsize=12)
+        ax.set_title(f"Li$_3$YCl$_6$ — {pair_name} RDF at 600 K", fontsize=22, pad=12)
+        ax.set_xlabel("Distance r (Å)", fontsize=19)
+        ax.set_ylabel("g(r)", fontsize=19)
+        ax.tick_params(labelsize=15, width=1.5, length=6)
+        for spine in ax.spines.values():
+            spine.set_linewidth(1.5)
         ax.grid(True, alpha=0.22)
-        ax.legend(fontsize=12, frameon=True)
+        ax.legend(fontsize=13, loc="upper right", frameon=False)
         fig.tight_layout()
-        fig.savefig(OUT / f"Li3YCl6_{pair_name.replace('-', '')}_RDF_600K_all_models.png", bbox_inches="tight")
+        fig.savefig(OUT / f"Li3YCl6_{pair_name.replace('-', '')}_RDF_600K_all_models.png")
         plt.close(fig)
 
 
