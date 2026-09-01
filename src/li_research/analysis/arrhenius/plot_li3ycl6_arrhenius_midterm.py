@@ -48,9 +48,9 @@ ax.tick_params(labelsize=13, width=1.4, length=5)
 for spine in ax.spines.values():
     spine.set_linewidth(1.6)
 ax.grid(True, alpha=0.23)
-ax.legend(fontsize=11.5, loc="upper left", bbox_to_anchor=(1.015, 1.0),
+ax.legend(fontsize=10.5, loc="upper right",
           frameon=True, edgecolor="#bdbdbd", facecolor="white", framealpha=0.96,
-          borderpad=0.7, labelspacing=0.55)
-fig.tight_layout(rect=(0, 0, 0.80, 1))
+          borderpad=0.65, labelspacing=0.45)
+fig.tight_layout()
 for out in OUTS:
     fig.savefig(out, bbox_inches="tight")
