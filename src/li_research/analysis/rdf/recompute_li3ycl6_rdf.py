@@ -13,7 +13,9 @@ import numpy as np
 
 ROOT = Path(__file__).resolve().parents[4]
 TRAJECTORIES = {
-    "MACE-MPA-0": ROOT / "runs/md/mace_mpa0_medium/Li3YCl6_03_2x2x2/600K/replica_3/8477947.9_20260825_003119/trajectory.lammpstrj",
+    # Use the original smooth 600 K MACE production trajectory that defined
+    # the midterm two-model RDF baseline; SevenNet is added to that baseline.
+    "MACE-MPA-0": ROOT / "runs/md/history/md_runs/selected_600K_50ps_eq_500ps_20260823_054114/Li3YCl6_03/Li3YCl6_03_600K_prod.lammpstrj",
     "SevenNet-nano": ROOT / "runs/md/sevennet_nano_55/Li3YCl6_03_2x2x2/600K/replica_2/8477949.8_20260824_185237/trajectory.lammpstrj",
     "M3GNet": ROOT / "runs/md/m3gnet_matgl_gpu/Li3YCl6_03_2x2x2/600K/replica_2/8486065.2_20260825_050347/trajectory.lammpstrj",
 }
