@@ -172,6 +172,15 @@ $$
 
 其中 $n_{\mathrm{Li}}$ 是单位体积内可迁移 Li 数密度，$q_{\mathrm{Li}}=+e$ 是 Li⁺ 电荷。该式假设不同 Li⁺ 的运动相关性可以忽略，因此得到的是 tracer/Nernst–Einstein estimate，不等同于包含集体相关效应的严格电导率。
 
+单位换算采用
+
+$$
+D\,[\mathrm{cm^2/s}]=10^{-4}D\,[\mathrm{\AA^2/ps}],\qquad
+\sigma\,[\mathrm{mS/cm}]=10^3\sigma\,[\mathrm{S/cm}].
+$$
+
+如果使用 SI 制先得到 $\sigma$ (S/m)，则 $\sigma$ (mS/cm) $=10\,\sigma$ (S/m)。因此表格中的 mS/cm 数值不是直接把 S/cm 的数值照搬，而是经过上述换算得到。
+
 ### 7.5 RDF 与配位数
 
 两种元素 (a,b) 的径向分布函数 (g_{ab}(r)) 表示距离为 (r) 处找到 (b) 原子的相对概率，RDF 峰位置对应平均近邻距离，峰宽反映热振动和局部无序。第一配位壳层内的平均配位数由
@@ -223,23 +232,21 @@ flowchart TD
     I --> J[与实验值、NGK 参考值比较]
 ```
 
-## 9. 中期主要结果
-
-| 模型 | $E_a$ | $R^2$ | $D(300\,\mathrm{K})$ | $\sigma_{\mathrm{NE}}(300\,\mathrm{K})$ | 说明 |
-|---|---:|---:|---:|---:|---|
-| MACE-MPA-0 | 0.302 eV | 0.991 | $1.55\times10^{-8}\,\mathrm{cm^2\,s^{-1}}$ | **1.27 mS/cm** | Arrhenius 外推（MSD 25–90%） |
-| SevenNet-nano | 0.246 eV | 0.9999 | $5.62\times10^{-8}\,\mathrm{cm^2\,s^{-1}}$ | **4.62 mS/cm** | Arrhenius 外推 |
-| M3GNet (GPU) | 0.212 eV | 0.998 | $1.02\times10^{-7}\,\mathrm{cm^2\,s^{-1}}$ | **8.37 mS/cm** | Arrhenius 外推 |
-| 实验参考 | 0.40 eV | — | — | $0.51$ mS/cm | 文献值 |
-| NGK M3GNet (CPU reference) | 0.18 eV | — | — | $9.69$ mS/cm | 企业参考值 |
-
-这些结果用于比较模型趋势和工作流一致性；由于使用的是通用模型，不能直接宣称已经达到实验精度。
-
-## 10. 中期主图
+## 9. 中期主图
 
 ![Li₃YCl₆ 三模型 Arrhenius / Ea 比较](plots/Li3YCl6_Arrhenius_all_models.png)
 
 图中实线为 400/600/800/1000 K 的 MD 拟合，虚线为向 300 K 的 Arrhenius 外推；图例和下表中的数值来自同一组拟合数据。
+
+| 模型 | $E_a$ (eV) | $R^2$ | $D(300\,\mathrm{K})$ (cm²/s) | $\sigma_{\mathrm{NE}}(300\,\mathrm{K})$ (mS/cm) |
+|---|---:|---:|---:|---:|
+| MACE-MPA-0 | 0.302 | 0.991 | $1.55\times10^{-8}$ | 1.27 |
+| SevenNet-nano | 0.246 | 0.9999 | $5.62\times10^{-8}$ | 4.62 |
+| M3GNet (GPU) | 0.212 | 0.998 | $1.02\times10^{-7}$ | 8.37 |
+| 实验参考 | 0.400 | — | — | 0.51 |
+| NGK M3GNet（CPU reference） | 0.180 | — | — | 9.69 |
+
+这些结果用于比较模型趋势和工作流一致性；由于使用的是通用模型，不能直接宣称已经达到实验精度。
 
 ![Li₃YCl₆ MACE-MPA-0 四温度 MSD](plots/Li3YCl6_MSD_4T_MACE_MPA_0.png)
 
@@ -279,7 +286,7 @@ flowchart TD
 
 ![热力学稳定性（三模型）](plots/Li3YCl6_thermodynamic_stability_600K_all_models.png)
 
-## 11. Supplementary 分析
+## 10. Supplementary 分析
 
 以下内容不作为中期主讲图，但用于确认结果可靠性：
 
@@ -295,7 +302,7 @@ flowchart TD
 
 ![热力学稳定性](plots/supplementary_priority/Li3YCl6_thermodynamic_stability_600K_MACE_M3GNet.png)
 
-## 12. 图表解释要点
+## 11. 图表解释要点
 
 ### Arrhenius 图
 
@@ -321,7 +328,7 @@ Li–Cl 配位数由 Li–Cl RDF 的第一配位壳层积分得到，用于补�
 
 本阶段的重点是验证工作流和比较通用模型趋势。MACE-MPA-0 与 M3GNet 均未针对 Li₃YCl₆ 专门 fine-tune，因此 (D)、(E_a) 和 300 K 外推值不能直接替代实验测量值。后续若需要提高定量精度，应使用 DFT/AIMD 数据进行验证或微调。
 
-## 13. 中期结论
+## 12. 中期结论
 
 本阶段完成了 Li₃YCl₆ 的有序结构、supercell、通用机器学习势、LAMMPS MD 和扩散分析流程。MACE-MPA-0、M3GNet 和 SevenNet 在相同计算条件下均可完成稳定 MD，并能得到可拟合的温度依赖扩散结果。
 

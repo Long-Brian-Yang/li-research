@@ -172,6 +172,15 @@ $$
 
 を用いる。$n_{\mathrm{Li}}$ は可動 Li の数密度、$q_{\mathrm{Li}}=+e$ は Li⁺ の電荷である。Li⁺ 間の集団相関を無視した tracer/Nernst–Einstein estimate であり、厳密な実験電導度とは区別する。
 
+単位換算は
+
+$$
+D\,[\mathrm{cm^2/s}]=10^{-4}D\,[\mathrm{\AA^2/ps}],\qquad
+\sigma\,[\mathrm{mS/cm}]=10^3\sigma\,[\mathrm{S/cm}]
+$$
+
+を用いる。SI 単位で $\sigma$ を S/m で計算した場合は、$\sigma$ (mS/cm) $=10\,\sigma$ (S/m) である。
+
 ### 7.5 RDF と配位数
 
 元素 $a,b$ の RDF $g_{ab}(r)$ は距離 $r$ における相対的な存在確率を示し、ピーク位置は平均近接距離、ピーク幅は熱振動および局所無秩序を反映する。第一配位殻の配位数は
@@ -223,19 +232,7 @@ flowchart TD
     I --> J[実験値・NGK 参考値と比較]
 ```
 
-## 9. 中間結果
-
-| Model | $E_a$ | $R^2$ | $D(300\,K)$ | $\sigma_{\mathrm{NE}}(300\,K)$ | 備考 |
-|---|---:|---:|---:|---:|---|
-| MACE-MPA-0 | 0.302 eV | 0.991 | $1.55\times10^{-8}\,\mathrm{cm^2\,s^{-1}}$ | **1.27 mS/cm** | Arrhenius 外挿（MSD 25–90%） |
-| SevenNet-nano | 0.246 eV | 0.9999 | $5.62\times10^{-8}\,\mathrm{cm^2\,s^{-1}}$ | **4.62 mS/cm** | Arrhenius 外挿 |
-| M3GNet (GPU) | 0.212 eV | 0.998 | $1.02\times10^{-7}\,\mathrm{cm^2\,s^{-1}}$ | **8.37 mS/cm** | Arrhenius 外挿 |
-| 実験参考値 | 0.40 eV | — | — | $0.51$ mS/cm | 文献値 |
-| NGK M3GNet (CPU reference) | 0.18 eV | — | — | $9.69$ mS/cm | 企業側参考値 |
-
-これらの結果はモデル間の傾向とワークフローの検証を目的とする。汎用ポテンシャルを使用しているため、実験値との完全な一致を主張するものではない。
-
-## 10. 中間発表の主図
+## 9. 中間発表の主図
 
 ![Li₃YCl₆ 三模型 Arrhenius / Ea 比較](plots/Li3YCl6_Arrhenius_all_models.png)
 
@@ -303,7 +300,7 @@ Li–Cl RDF の第一配位殻を積分した平均配位数であり、RDF の�
 
 温度、エネルギー、圧力が平均値の周囲で揺らぎ、持続的なドリフトや発散を示さないことを確認する図である。
 
-## 11. Supplementary 解析
+## 10. Supplementary 解析
 
 以下は中間発表の主図には含めないが、結果の妥当性確認に用いる。
 
@@ -331,7 +328,7 @@ Li の変位分布と self Van Hove correlation により、局所振動と長�
 
 温度・エネルギー・圧力の平均値と揺らぎを補足する図であり、主図と重複するため supplementary として扱う。
 
-## 12. 図の読み方
+## 11. 図の読み方
 
 ### Arrhenius 図
 
@@ -353,7 +350,7 @@ Li–Cl 配位数は Li–Cl RDF の第一配位殻を積分して求めた平�
 
 温度、ポテンシャルエネルギー、全エネルギー、圧力が production 区間で平均値の周囲を揺らぎ、持続的なドリフトを示さなければ、MD は数値的に安定と判断できる。
 
-## 13. 中間発表の結論
+## 12. 中間発表の結論
 
 Li₃YCl₆ について、有序構造、supercell、汎用機械学習ポテンシャル、LAMMPS MD、拡散解析を一つの再現可能な流れとして構築した。MACE-MPA-0、M3GNet、SevenNet は同一条件で安定 MD を実行でき、温度依存の拡散挙動を評価できた。
 
