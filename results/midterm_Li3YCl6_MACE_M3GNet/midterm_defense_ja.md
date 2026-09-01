@@ -148,6 +148,15 @@ $$
 E_a=-m\,1000\,k_{\mathrm B}
 $$
 
+文献と同じ表示に合わせ、Arrhenius 主図では伝導度をフィットする。
+
+$$
+\sigma(T)=\sigma_0\exp\left(-\frac{E_a}{k_{\mathrm B}T}\right),\qquad
+\ln\sigma=\ln\sigma_0-\frac{E_a}{k_{\mathrm B}}\frac{1}{T}
+$$
+
+縦軸は $\ln[\sigma\,(\mathrm{S/cm})]$ であり、MD で得た $D$ を Nernst–Einstein 式で $\sigma_{\mathrm{NE}}$ に変換してからフィットする。$1\,\mathrm{mS/cm}=10^{-3}\,\mathrm{S/cm}$ である。
+
 を得る。$D_0$ は前指数因子、$E_a$ は活性化エネルギー、$k_{\mathrm B}=8.617333262\times10^{-5}$ eV K⁻¹、$T$ は絶対温度である。直線性は
 
 $$
@@ -332,7 +341,7 @@ Li の変位分布と self Van Hove correlation により、局所振動と長�
 
 ### Arrhenius 図
 
-横軸は $1000/T$、縦軸は $\ln D$ である。直線の傾きから活性化エネルギー $E_a$ を求める。破線部分は高温 MD の結果から 300 K へ外挿した領域であり、300 K を直接 MD 計算した結果ではない。
+横軸は $1000/T$、縦軸は $\ln[\sigma\,(\mathrm{S/cm})]$ である。直線の傾きから活性化エネルギー $E_a$ を求める。破線部分は高温 MD の結果から 300 K へ外挿した領域であり、300 K を直接 MD 計算した結果ではない。
 
 ### MSD 図
 

@@ -148,6 +148,15 @@ $$
 E_a=-m\,1000\,k_{\mathrm B}.
 $$
 
+为与文献中的表示一致，Arrhenius 主图拟合传导度：
+
+$$
+\sigma(T)=\sigma_0\exp\left(-\frac{E_a}{k_{\mathrm B}T}\right),\qquad
+\ln\sigma=\ln\sigma_0-\frac{E_a}{k_{\mathrm B}}\frac{1}{T}.
+$$
+
+纵轴为 $\ln[\sigma\,(\mathrm{S/cm})]$；MD 得到的 $D$ 先通过 Nernst–Einstein 关系换算为 $\sigma_{\mathrm{NE}}$。其中 $1\,\mathrm{mS/cm}=10^{-3}\,\mathrm{S/cm}$。
+
 其中 $D_0$ 是指前因子，$E_a$ 是活化能，$k_{\mathrm B}=8.617333262\times10^{-5}$ eV K⁻¹，$T$ 为绝对温度。拟合优度用
 
 $$
@@ -306,7 +315,7 @@ flowchart TD
 
 ### Arrhenius 图
 
-横轴为 (1000/T)，纵轴为 (ln D)。直线斜率对应活化能 (E_a)。虚线部分是根据高温 MD 结果向 300 K 的外推，不是 300 K 的直接 MD 计算。三个通用模型的 (E_a) 和外推值不同，说明通用势函数对 Li⁺ 迁移势垒的描述存在模型依赖性。
+横轴为 $1000/T$，纵轴为 $\ln[\sigma\,(\mathrm{S/cm})]$。直线斜率对应活化能 $E_a$。虚线部分是根据高温 MD 结果向 300 K 的外推，不是 300 K 的直接 MD 计算。
 
 ### MSD 图
 
