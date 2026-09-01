@@ -252,8 +252,8 @@ flowchart TD
 | MACE-MPA-0 | 400/600/800/1000 | 0.302 | 0.991 | $1.27\times10^{-3}$ |
 | SevenNet-nano | 400/600/800/1000 | 0.246 | 0.9999 | $4.62\times10^{-3}$ |
 | M3GNet (GPU) | 400/600/800/1000 | 0.212 | 0.998 | $8.37\times10^{-3}$ |
-| Experiment | — | 0.400 | — | $5.10\times10^{-4}$ |
-| NGK M3GNet (CPU reference) | — | 0.180 | — | $9.69\times10^{-3}$ |
+| 文献実験値（reference） | — | 0.400 | — | $5.10\times10^{-4}$ |
+| NGK reference（M3GNet + LAMMPS CPU） | — | 0.180 | — | $9.69\times10^{-3}$ |
 
 ![Li₃YCl₆ MACE-MPA-0 四温度 MSD](plots/Li3YCl6_MSD_4T_MACE_MPA_0.png)
 
