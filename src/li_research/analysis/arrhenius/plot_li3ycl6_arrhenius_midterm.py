@@ -17,7 +17,7 @@ models = [
     ("M3GNet (GPU)", np.array([0.0499968539, 0.2422683654, 0.4811228915, 0.8433514808]), 0.212, "#d62728"),
 ]
 
-fig, ax = plt.subplots(figsize=(10, 7), dpi=180)
+fig, ax = plt.subplots(figsize=(8.8, 5.8667), dpi=180)
 for name, sigma, ea, color in models:
     y = np.log(sigma)
     slope, intercept = np.polyfit(x, y, 1)
@@ -57,7 +57,7 @@ for out in OUTS:
 
 # Keep the two-model midterm comparison used in the presentation README,
 # using exactly the same typography and axis style as the three-model figure.
-fig2, ax2 = plt.subplots(figsize=(10, 7), dpi=180)
+fig2, ax2 = plt.subplots(figsize=(8.8, 5.8667), dpi=180)
 for name, sigma, ea, color in (models[0], models[2]):
     y = np.log(sigma)
     slope, intercept = np.polyfit(x, y, 1)
