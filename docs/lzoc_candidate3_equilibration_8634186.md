@@ -16,6 +16,6 @@ group `tgj-26ICP`, one `gpu_1`, wall-time limit 90 minutes.
 After completion, inspect successive density/energy blocks and residual order
 before accepting the structure for a separately specified production temperature.
 The job completed successfully in 54 min 22 s; final data and restart were
-generated. See the [post-equilibration check](../materials/candidates/LZOC/equilibration_8634186/analysis/README.md)
+generated. See the [post-equilibration check](../materials/candidates/LZOC/archive/equilibration_8634186/analysis/README.md)
 and [proposed next temperatures](lzoc_next_md_plan_2026-09-11.md).
 Numerical completion does not imply full physical equilibration.

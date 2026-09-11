@@ -10,9 +10,9 @@ NPT 平衡。后者任务号 8634186，实际运行耗时 54 分 22 秒。
 可以作为探索性 MD 的起始结构，但不宣称完全收敛、完全非晶化或势函数
 已被实验验证。不再增加候选结构。NEP89/GPUMD 部署已取消，继续使用 MACE。
 
-- [平衡后检查、RDF 与数值](../materials/candidates/LZOC/equilibration_8634186/analysis/README.md)
-- [制备后初步检查](../materials/candidates/LZOC/completed_reference_trials/candidate3_check/README.md)
-- [三组制备归档](../materials/candidates/LZOC/completed_reference_trials/README.md)
+- [平衡后检查、RDF 与数值](../materials/candidates/LZOC/archive/equilibration_8634186/analysis/README.md)
+- [制备后初步检查](../materials/candidates/LZOC/archive/completed_reference_trials/candidate3_check/README.md)
+- [三组制备归档](../materials/candidates/LZOC/archive/completed_reference_trials/README.md)
 
 ## 讨论中的四温度方案：尚未提交
 

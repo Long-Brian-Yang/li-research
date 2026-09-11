@@ -13,4 +13,4 @@ Source: J.-S. Kim et al., *Divalent anion-driven framework regulation in Zr-base
 
 Priority structures: Data 4 is optimized Li15Zr6Cl33O3, equivalent to Li2.5ZrCl5.5O0.5; Data 18/19 are AIMD start/end configurations at 600 K for that composition. They are not target-composition amorphous structures. The description repeats a formula for Data 5; inspect atom counts rather than relying only on its description.
 
-Our modified seed and its explicit adaptation history are in `../../candidates/LZOC/kim2025_derived_seed/`. It is not an author-provided structure and is not yet relaxed or amorphized.
+Our modified seed and its explicit adaptation history are in `../../candidates/LZOC/archive/kim2025_derived_seed/`. It is not an author-provided structure and is not yet relaxed or amorphized.

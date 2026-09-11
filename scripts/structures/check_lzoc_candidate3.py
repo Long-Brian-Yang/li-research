@@ -14,7 +14,7 @@ import numpy as np
 from ase.io import read
 
 ROOT = Path(__file__).resolve().parents[2]
-P = ROOT/'materials/candidates/LZOC/completed_reference_trials/source_3'
+P = ROOT/'materials/candidates/LZOC/archive/completed_reference_trials/source_3'
 OUT = P.parent/'candidate3_check'
 OUT.mkdir(exist_ok=True)
 expected = Counter(Li=42, Zr=24, O=12, Cl=114)

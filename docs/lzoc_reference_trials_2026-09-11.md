@@ -5,7 +5,7 @@
 All three preparation jobs completed. Candidate 3 was provisionally selected
 by the user; full amorphization and physical equilibration remain unverified.
 Final structures, intermediate endpoints, logs and actual job inputs are
-archived in [completed_reference_trials](../materials/candidates/LZOC/completed_reference_trials/README.md).
+archived in [completed_reference_trials](../materials/candidates/LZOC/archive/completed_reference_trials/README.md).
 The chronology below preserves earlier submission-time status; it is not a
 live queue report. No formal 50+200 ps transport job has been submitted.
 

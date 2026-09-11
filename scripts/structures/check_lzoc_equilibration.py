@@ -9,10 +9,10 @@ import numpy as np
 from ase.io import read
 
 ROOT=Path(__file__).resolve().parents[2]
-P=ROOT/'materials/candidates/LZOC/equilibration_8634186'
+P=ROOT/'materials/candidates/LZOC/archive/equilibration_8634186'
 OUT=P/'analysis'
 OUT.mkdir(exist_ok=True)
-old=ROOT/'materials/candidates/LZOC/completed_reference_trials/candidate3_check'
+old=ROOT/'materials/candidates/LZOC/archive/completed_reference_trials/candidate3_check'
 previous=json.loads((old/'diagnostics.json').read_text())
 mapping=None
 for block in (P/'equilibration.lammpstrj').read_text().split('ITEM: TIMESTEP\n')[1:]:
