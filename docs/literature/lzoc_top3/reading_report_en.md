@@ -8,6 +8,16 @@ There is a direct experimental reference for our nominal composition, as well as
 
 The reading order below is based on relevance: exact composition first, amorphous local structure second, and structural identification plus AIMD third. It is not a bibliometric ranking.
 
+### Are these experimental or computational papers?
+
+| Study | Research type | Evidence used in this report |
+|---|---|---|
+| Hu et al. (2023) | Primarily experimental | Material synthesis, diffraction, microscopy and measured ionic conductivity |
+| Zhang et al. (2024) | Experimental, with structural modelling | Transport and structural measurements interpreted using reverse Monte Carlo; not an MD-only study |
+| Kim et al. (2025) | Combined experimental and computational | Structural/transport experiments together with DFT and AIMD |
+
+All three contain experimental evidence. The conductivity values compared in Section 5 are experimental measurements, not three MD predictions. The structural reconstruction in the second paper and dynamical simulations in the third paper serve different purposes. Sources: [Hu](https://doi.org/10.1038/s41467-023-39522-1), [Zhang](https://doi.org/10.1021/jacs.3c07343), [Kim](https://doi.org/10.1038/s41467-025-65702-2).
+
 ### Report outline
 
 The report addresses three linked questions: **why choose this composition, what local structure should be examined, and how can that structure be assessed computationally?** Sections 2–4 use one principal paper for each question; Section 5 compares their evidence, and Section 6 defines the current project scope. Chemical composition, phase identity, self-diffusion and ionic conductivity are kept distinct throughout.
@@ -107,6 +117,24 @@ Sources: [Hu et al.](https://www.nature.com/articles/s41467-023-39522-1), [Zhang
 The three studies serve different evidential roles: **a composition-matched experimental baseline, a local-structure interpretation, and a structural-identification/AIMD methodology**. Their conductivity values should therefore not be ranked as if they were three predictions for an identical material. The practical conclusion is to connect transport to a documented structural model, without claiming that one preparation route or one calculation reproduces every experimental specimen.
 
 ## 6. Current research scope and next step
+
+### 6.1 My research plan
+
+**Objective:** investigate the local structure and Li transport of one plausible melt-quenched Li₁.₇₅ZrCl₄.₇₅O₀.₅ candidate using MACE-MPA-0 with LAMMPS on TSUBAME, then compare the calculated observables with the appropriate experimental references.
+
+| Stage | Planned work | Output / decision |
+|---|---|---|
+| 1. Prepare one candidate | Use the Li₅₆Zr₃₂O₁₆Cl₁₅₂ cell. The current preparation protocol uses 10 ps high-temperature NVT mixing at 1500 K, 30 ps cooling to 300 K, 5 ps NVT holding, 10 ps NPT relaxation, then fixed-cell minimization. | One candidate structure with recorded preparation history. These are project choices, not a recipe reproduced from the three papers. |
+| 2. Basic structural checks | Confirm composition, absence of abnormal close contacts, plausible density/local coordination and relaxation stability. Assess whether the candidate supports an amorphous description. | Accept the candidate for exploratory MD or revise its preparation. A successful job exit alone is not acceptance. |
+| 3. Transport MD | For each subsequently confirmed temperature, perform 50 ps equilibration followed by 200 ps production. | Production trajectory and thermodynamic log. Temperature points and production ensemble remain to be finalized; no extra structural or velocity-seed replicas are planned at this stage. |
+| 4. Analysis | Calculate RDF/coordination, Li MSD and diffusion coefficients; inspect stability and fitting sensitivity. | Figures and data tables tied to the same documented trajectory. |
+| 5. Experimental comparison | Once suitable multi-temperature diffusion data are available, fit activation energy and conditionally extrapolate conductivity. Use Hu et al. as the composition-matched conductivity reference. | Discuss agreement and limitations without replacing experimental conductivity by tracer diffusion or tuning the selection to a desired barrier. |
+
+**Plan versus completion:** this table describes intended work. It does not state that the candidate has passed acceptance, that transport MD has finished, or that MACE accuracy has been established. The 55 ps preparation is separate from the planned 50 + 200 ps transport calculation.
+
+**Scope:** one candidate only. No additional replica campaign, model expansion or job submission is authorized by this document update. One candidate permits a focused exploratory study, but does not quantify differences among independently prepared amorphous structures.
+
+### 6.2 Methodological boundaries
 
 The following are **our methodological conclusions**, not results already demonstrated for our candidate:
 
