@@ -1,26 +1,18 @@
-# Li–Zr–O–Cl electrolytes: three priority readings
+# Literature report: structure and ion transport in Li–Zr–O–Cl electrolytes
 
 Date: 2026-09-11 | Project target: **Li₁.₇₅ZrCl₄.₇₅O₀.₅**
 
-## 1. Main conclusion
+## 1. Research background and objective
 
 There is a direct experimental reference for our nominal composition, as well as two particularly useful Zr-based studies of local structure and ion transport. However, **matching a chemical formula is not equivalent to reproducing an experimental microstructure**. These readings support studying Li–Zr–O–Cl, but they do not independently validate our current melt–quench structure or MACE potential.
 
 The reading order below is based on relevance: exact composition first, amorphous local structure second, and structural identification plus AIMD third. It is not a bibliometric ranking.
 
-## 2. Composition and experimental reference map
+### Report outline
 
-| Reading | Composition associated with the listed measurement | Conductivity at 25 °C | Interpretation |
-|---|---|---:|---|
-| Hu et al. (2023) | Li₁.₇₅ZrCl₄.₇₅O₀.₅ | 2.42 mS/cm = 2.42 × 10⁻³ S/cm | Direct nominal-composition reference for this project |
-| Zhang et al. (2024) | Li₃ZrCl₄O₁.₅ | 1.35 ± 0.07 mS/cm | Related amorphous oxychloride, not the same composition |
-| Kim et al. (2025) | 0.8Li₂O–ZrCl₄; nominal Li₁.₆ZrCl₄O₀.₈ | 1.78 mS/cm | Related composition and processing route; not an interchangeable baseline |
+The report addresses three linked questions: **why choose this composition, what local structure should be examined, and how can that structure be assessed computationally?** Sections 2–4 use one principal paper for each question; Section 5 compares their evidence, and Section 6 defines the current project scope. Chemical composition, phase identity, self-diffusion and ionic conductivity are kept distinct throughout.
 
-Sources: [Hu et al.](https://www.nature.com/articles/s41467-023-39522-1), [Zhang et al.](https://doi.org/10.1021/jacs.3c07343), [Kim et al.](https://www.nature.com/articles/s41467-025-65702-2).
-
-**25 °C means 298.15 K, not exactly 300 K.** Report the experimental measurement temperature explicitly when comparing it with a simulated 300 K extrapolation. Also, pellet relative density is not an absolute density in g/cm³.
-
-## 3. Paper 1 — original reference for the target composition
+## 2. Material selection: the composition-matched experimental evidence
 
 **L. Hu et al., “A cost-effective, ionically conductive and compressible oxychloride solid-state electrolyte for stable all-solid-state lithium-based batteries.”** *Nature Communications* **14**, 3807 (2023). Published 27 June 2023. [DOI: 10.1038/s41467-023-39522-1](https://doi.org/10.1038/s41467-023-39522-1).
 
@@ -49,7 +41,9 @@ Read **Fig. 1** for phase identification, **Fig. 3** for the optimized LiCl-defi
 
 **Project interpretation:** our Li₅₆Zr₃₂O₁₆Cl₁₅₂ cell has the intended nominal ratio, but its local structure, density, and degree of crystallinity remain separate validation questions.
 
-## 4. Paper 2 — amorphous local structure in a related Zr composition
+Having established the composition-matched reference, the next question is what structural information is needed beyond conductivity. The following study provides a related, but compositionally distinct, example.
+
+## 3. Structural interpretation: local coordination and ion transport
 
 **S. Zhang et al., “Amorphous Oxyhalide Matters for Achieving Lithium Superionic Conduction.”** *Journal of the American Chemical Society* **146**(5), 2977–2985 (2024). Online 29 January 2024. [DOI: 10.1021/jacs.3c07343](https://doi.org/10.1021/jacs.3c07343). [Author-hosted full text](https://www.eng.uwo.ca/nanoenergy/publications/2024-amorphoxyh.pdf).
 
@@ -63,7 +57,9 @@ This reading motivates a structural question for our own calculations: does oxyg
 
 Its activation energy is **not a target to impose on Li₁.₇₅ZrCl₄.₇₅O₀.₅**. Agreement obtained by selecting trajectories or fitting windows to approach that number would not establish model accuracy.
 
-## 5. Paper 3 — structural identification and an AIMD reference
+Local coordination is only one part of the description. The next question is whether the material is fully amorphous or retains nanocrystalline order, and how the identified structure enters an MD calculation.
+
+## 4. Structural identification and simulation methodology
 
 **J.-S. Kim et al., “Divalent anion-driven framework regulation in Zr-based halide solid electrolytes for all-solid-state batteries.”** *Nature Communications* **16**, 10678 (2025). Published 27 November 2025. [DOI: 10.1038/s41467-025-65702-2](https://doi.org/10.1038/s41467-025-65702-2).
 
@@ -94,11 +90,27 @@ Read **Fig. 1** for structural identification, **Figs. 2–3** for local structu
 
 **Correction checked:** the 29 January 2026 [Author Correction](https://doi.org/10.1038/s41467-026-68882-7) corrects the spelling of **Yoon Seok Jung**; it does not report a change to the transport results.
 
-## 6. Implications for our next simulation
+## 5. Cross-paper comparison and discussion
+
+| Reading | Composition associated with the listed measurement | Conductivity at 25 °C | Interpretation |
+|---|---|---:|---|
+| Hu et al. (2023) | Li₁.₇₅ZrCl₄.₇₅O₀.₅ | 2.42 mS/cm = 2.42 × 10⁻³ S/cm | Direct nominal-composition reference for this project |
+| Zhang et al. (2024) | Li₃ZrCl₄O₁.₅ | 1.35 ± 0.07 mS/cm | Related amorphous oxychloride, not the same composition |
+| Kim et al. (2025) | 0.8Li₂O–ZrCl₄; nominal Li₁.₆ZrCl₄O₀.₈ | 1.78 mS/cm | Related composition and processing route; not an interchangeable baseline |
+
+Sources: [Hu et al.](https://www.nature.com/articles/s41467-023-39522-1), [Zhang et al.](https://doi.org/10.1021/jacs.3c07343), [Kim et al.](https://www.nature.com/articles/s41467-025-65702-2).
+
+**25 °C means 298.15 K, not exactly 300 K.** Report the experimental measurement temperature explicitly when comparing it with a simulated 300 K extrapolation. Also, pellet relative density is not an absolute density in g/cm³.
+
+### Synthesis for this project
+
+The three studies serve different evidential roles: **a composition-matched experimental baseline, a local-structure interpretation, and a structural-identification/AIMD methodology**. Their conductivity values should therefore not be ranked as if they were three predictions for an identical material. The practical conclusion is to connect transport to a documented structural model, without claiming that one preparation route or one calculation reproduces every experimental specimen.
+
+## 6. Current research scope and next step
 
 The following are **our methodological conclusions**, not results already demonstrated for our candidate:
 
-1. **One candidate is sufficient for a pilot, not for structural uncertainty.** It can test whether the workflow runs and reveal obvious failures. Independent preparations are needed before claiming representative amorphous transport.
+1. **The current scope is one structurally plausible candidate.** Check composition, close contacts, density/local coordination and relaxation stability. After these checks, the planned MD is 50 ps equilibration followed by 200 ps production. No additional structural replicas or velocity-seed repetitions are included in this stage. Results will be described as a single-candidate study, without an estimate of between-structure uncertainty.
 2. **Separate composition from phase identity.** Describe the present system as a “melt-quenched model at the nominal Li₁.₇₅ZrCl₄.₇₅O₀.₅ composition” until local order and density have been assessed.
 3. **MACE remains a hypothesis to test.** These papers are not validations of our checkpoint. Element coverage alone does not establish accuracy for oxygen/chlorine chemistry, high-temperature liquids, forces, stress, or diffusion barriers.
 4. **Do not transfer an AIMD time step automatically.** Our potential, thermostat, cell, and temperature require their own numerical checks. Neither 200 ps nor 300 ps guarantees converged diffusion.
@@ -113,6 +125,12 @@ $$
 
 Here $D_{\mathrm{Li}}$ is the Li self-diffusion coefficient, $n_{\mathrm{Li}}$ is number density, $e$ is the elementary charge, and $k_{\mathrm B}$ is Boltzmann's constant. SI inputs give S/m; **1 S/m = 10 mS/cm**. The number density and approximation must be stated, rather than treating the experimental conductivity as a directly measured diffusion coefficient.
 
-## 7. Reading and reuse limitations
+## 7. Conclusion
+
+The literature supports investigating the target composition and identifies useful structural and transport observables. For the present project, the immediate objective is one documented, plausible candidate followed by the planned MD, not a search for a uniquely optimal structure. Agreement with an experimental number will be evaluated as an outcome, not used to select the desired result.
+
+## Appendix. Reading scope and references
 
 Publisher metadata and main texts were consulted; the reports are not an exhaustive audit of all supplementary information or a reproduction of the simulations. Exact numerical values not checked are identified as such. Papers 1 and 3 are [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/); these notes are original paraphrases with attribution. Paper 2 is summarized briefly and linked without reproducing its figures or full text. See [verification notes](source_notes.md).
+
+The three full references and DOI links appear at the start of Sections 2–4. [BibTeX](references.bib) · [Report index](README.md).
