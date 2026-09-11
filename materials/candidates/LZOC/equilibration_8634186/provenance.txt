@@ -1,0 +1,5 @@
+source=/gs/fs/tgj-26ICP/uf03782/yang/li-research/runs/amorphous/LZOC/mace_mpa0/reference_8631935/source_3/relaxed_300K.data
+model=/gs/fs/tgj-26ICP/uf03782/yang/li-research/models/mace/mace-mpa-0-medium.model-mliap_lammps.pt
+job=8634186
+stage=additional_300K_NPT_50ps_not_production
+velocity=retained_thermostat_barostat=reinitialized
