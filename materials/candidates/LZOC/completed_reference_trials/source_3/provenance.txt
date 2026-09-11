@@ -1,0 +1,5 @@
+source=/gs/fs/tgj-26ICP/uf03782/yang/li-research/materials/candidates/LZOC/kim2025_data18_seed
+model=/gs/fs/tgj-26ICP/uf03782/yang/li-research/models/mace/mace-mpa-0-medium.model-mliap_lammps.pt
+job=8631935
+stage=exploratory_candidate_not_validated
+initial_density=derived_from_literature_cell_after_LiCl_removal

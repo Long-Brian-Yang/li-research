@@ -19,13 +19,12 @@ The formal 50 ps equilibration + 200 ps production has not been submitted.
 
 ## Archive completeness
 
-Final structures and `candidate.log` are present for all three candidates.
-During additional endpoint/provenance retrieval, TSUBAME SSH timed out.
-Source 1 has the full textual/endpoint set listed below; source 2 is missing
-`in.lmp` and `submitted_job.sh`; source 3 currently has only the final structure
-and `candidate.log`. Missing supplementary records remain on TSUBAME and are
-not claimed as archived here. The repository also includes the reference
-workflow scripts, but these are not substitutes for missing job snapshots.
+All three candidates now have the complete 15-file textual/structure-endpoint
+set listed below. The interrupted transfer was resumed successfully, including
+the actual job snapshots for sources 2 and 3. Archived input, input script and
+job-wrapper hashes were checked against each run's `input_sha256.txt`.
+Trajectory, restart and model/environment files remain excluded as described
+below; completeness here refers to the textual/structure-endpoint archive.
 
 ## Run file definitions
 
