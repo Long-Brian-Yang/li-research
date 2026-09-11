@@ -1,0 +1,163 @@
+{
+  "doi": "10.1038/s41467-025-65702-2",
+  "source_file": "materials/references/kim_2025_lzoc/extracted/Supplementary_Data_revised/Supplymentary_data_19 (AIMD_diffusion_300ps_end_Li2p5ZrCl5p5O0p5_600K).cif",
+  "source_sha256": "882bb5a8537f2884b0d96d13a3d8e028235756873340e9dc5093192e83b44b4c",
+  "license": "CC BY 4.0",
+  "seed": 20260911,
+  "repeat": [
+    2,
+    2,
+    1
+  ],
+  "removed_zero_based_parent_supercell_indices": [
+    2,
+    3,
+    8,
+    13,
+    24,
+    38,
+    39,
+    57,
+    63,
+    68,
+    70,
+    71,
+    84,
+    85,
+    86,
+    95,
+    105,
+    115,
+    121,
+    123,
+    125,
+    127,
+    128,
+    136,
+    138,
+    145,
+    154,
+    159,
+    165,
+    167,
+    176,
+    184,
+    185,
+    209,
+    221,
+    223
+  ],
+  "method": "Choose 18 Cl with fixed seed; remove each with its nearest still-available Li under PBC. Keep all Zr/O and unchanged cell.",
+  "status": "unrelaxed composition-adjusted crystalline seed; NOT validated amorphous",
+  "coordination_warning": "Fixed diagnostic cutoffs, not RDF-derived first minima; different temperatures/compositions are not equivalent.",
+  "comparisons": {
+    "materials/references/kim_2025_lzoc/extracted/Supplementary_Data_revised/Supplymentary_data_19 (AIMD_diffusion_300ps_end_Li2p5ZrCl5p5O0p5_600K).cif": {
+      "counts": {
+        "Li": 15,
+        "Zr": 6,
+        "Cl": 33,
+        "O": 3
+      },
+      "atoms": 57,
+      "volume_A3": 1306.7942265169265,
+      "density_g_cm3": 2.375301841221884,
+      "minimum_pair_distance_A": 1.7059362707537413,
+      "cell_lengths_A": [
+        12.454677,
+        10.909568999999998,
+        11.183586
+      ],
+      "cell_angles_deg": [
+        59.334846,
+        89.901596,
+        88.92524000000002
+      ],
+      "pairs": {
+        "Zr-O": {
+          "minimum_A": 1.8138497537739244,
+          "nearest_neighbor_median_A": 3.4977307275202105,
+          "diagnostic_cutoff_A": 2.6,
+          "mean_neighbors_within_cutoff": 0.5
+        },
+        "Zr-Cl": {
+          "minimum_A": 2.326927085888062,
+          "nearest_neighbor_median_A": 2.396889540012567,
+          "diagnostic_cutoff_A": 3.0,
+          "mean_neighbors_within_cutoff": 5.5
+        },
+        "Li-O": {
+          "minimum_A": 1.7059362707537413,
+          "nearest_neighbor_median_A": 4.3594447437737776,
+          "diagnostic_cutoff_A": 2.7,
+          "mean_neighbors_within_cutoff": 0.5333333333333333
+        },
+        "Li-Cl": {
+          "minimum_A": 2.1584265577889963,
+          "nearest_neighbor_median_A": 2.360759133245396,
+          "diagnostic_cutoff_A": 3.2,
+          "mean_neighbors_within_cutoff": 4.266666666666667
+        },
+        "O-O": {
+          "minimum_A": 3.3482326364133512,
+          "nearest_neighbor_median_A": 3.3482326364133512,
+          "diagnostic_cutoff_A": 1.9,
+          "mean_neighbors_within_cutoff": 0.0
+        }
+      }
+    },
+    "target_unrelaxed": {
+      "counts": {
+        "Li": 42,
+        "Zr": 24,
+        "Cl": 114,
+        "O": 12
+      },
+      "atoms": 192,
+      "volume_A3": 5227.1769060677025,
+      "density_g_cm3": 2.1329100987257763,
+      "minimum_pair_distance_A": 1.70593627075374,
+      "cell_lengths_A": [
+        24.909354,
+        21.819137999999995,
+        11.183586
+      ],
+      "cell_angles_deg": [
+        59.334846,
+        89.901596,
+        88.92524000000002
+      ],
+      "pairs": {
+        "Zr-O": {
+          "minimum_A": 1.8138497537739235,
+          "nearest_neighbor_median_A": 3.497730727520209,
+          "diagnostic_cutoff_A": 2.6,
+          "mean_neighbors_within_cutoff": 0.5
+        },
+        "Zr-Cl": {
+          "minimum_A": 2.3269270858880646,
+          "nearest_neighbor_median_A": 2.3968895400125674,
+          "diagnostic_cutoff_A": 3.0,
+          "mean_neighbors_within_cutoff": 4.75
+        },
+        "Li-O": {
+          "minimum_A": 1.70593627075374,
+          "nearest_neighbor_median_A": 4.30159114383617,
+          "diagnostic_cutoff_A": 2.7,
+          "mean_neighbors_within_cutoff": 0.5952380952380952
+        },
+        "Li-Cl": {
+          "minimum_A": 2.158426557788997,
+          "nearest_neighbor_median_A": 2.399071463601973,
+          "diagnostic_cutoff_A": 3.2,
+          "mean_neighbors_within_cutoff": 3.857142857142857
+        },
+        "O-O": {
+          "minimum_A": 3.3482326364133512,
+          "nearest_neighbor_median_A": 3.3482326364133534,
+          "diagnostic_cutoff_A": 1.9,
+          "mean_neighbors_within_cutoff": 0.0
+        }
+      }
+    }
+  }
+}
