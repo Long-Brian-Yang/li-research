@@ -73,7 +73,36 @@ In short: **three numerically converged candidates were obtained; one was retain
 
 Direct log sources: [candidate 1](../../../materials/candidates/LZOC/archive/completed_reference_trials/source_1/candidate.log), [candidate 2](../../../materials/candidates/LZOC/archive/completed_reference_trials/source_2/candidate.log), [candidate 3](../../../materials/candidates/LZOC/archive/completed_reference_trials/source_3/candidate.log). Preparation times and densities: [archive summary](../../../materials/candidates/LZOC/archive/completed_reference_trials/README.md).
 
-#### Rationale for the preparation stages
+### Preparation plots and coverage of stability checks
+
+![Three-candidate LZOC preparation](figures/LZOC_three_candidate_preparation.png)
+
+Columns correspond to candidates 1–3. The first two rows show temperature and potential energy per atom over the same 55 ps preparation; the third row enlarges the 45–55 ps NPT segment. All candidates share the same y scale within each row. Curves are unsmoothed archived thermo samples (0.05 ps spacing); initial and final minimization iterations are excluded. The dashed temperature line is the programmed target, not another measurement. Energy decreases during cooling are expected protocol responses, not evidence of equilibrium or an NVE conservation test.
+
+| NPT block comparison | Candidate 1 | Candidate 2 | Candidate 3 |
+|---|---:|---:|---:|
+| Mean density, (45,50] ps / g cm⁻³ | 1.93464 | 1.91478 | 1.96028 |
+| Mean density, (50,55] ps / g cm⁻³ | 1.93549 | 1.87597 | 1.93174 |
+| Mean temperature, (50,55] ps / K | 297.70 | 297.79 | 298.81 |
+| Mean PE, (45,50] ps / eV per cell | −911.0429 | −911.0659 | −912.0484 |
+| Mean PE, (50,55] ps / eV per cell | −911.3667 | −911.7363 | −912.1959 |
+
+Each block contains 100 time-correlated samples. These are descriptive means, not independent replica statistics or confidence intervals. Candidate 1 has the smallest density-block difference in this comparison; therefore these density data do **not** support a claim that candidate 3 was uniquely the most equilibrated. Candidates 2 and 3 have lower late-block mean densities, and all three show changes in mean potential energy. Ten ps of NPT is insufficient to establish complete structural equilibration.
+
+| Check documented in this workflow | Candidate 1 | Candidate 2 | Candidate 3 |
+|---|---|---|---|
+| Complete 55 ps preparation logs, 192 atoms in thermo output | Yes | Yes | Yes |
+| Initial/final minimization reached force tolerance | Yes | Yes | Yes |
+| Same-stage temperature, energy and NPT density comparison | Added here | Added here | Added here |
+| Detailed trajectory identity / close-contact screening | Not equivalently documented | Not equivalently documented | Documented |
+| Sampled RDF and residual initial-order screening | Not equivalently documented | Not equivalently documented | Documented, limited sampling |
+| Additional 50 ps NPT at 300 K | Not performed in this workflow | Not performed in this workflow | Completed; late blocks checked |
+| 600 K production and framework checks | Not performed in this workflow | Not performed in this workflow | Performed; volume/framework concerns remain |
+| Complete physical validation | Not established | Not established | Not established |
+
+Thus, **all three underwent preparation and basic numerical checks, but not an equivalent complete stability assessment**. Candidate 3 has more follow-up evidence because it was continued, not proof of superiority over the other two. This figure adds log-based comparison only; no new MD or three-candidate RDF calculation was performed. [Source-data and figure notes](figures/README.md).
+
+### Rationale for each preparation stage
 
 An amorphous material does not have a unique periodic atomic arrangement like a crystal, so composition alone does not specify its starting configuration. A related literature structure provides a reference for local coordination rather than starting from a completely random arrangement. However, changing the composition also changes the structure, making further relaxation and validation necessary.
 

@@ -1,0 +1,62 @@
+{
+  "1": {
+    "source": "materials/candidates/LZOC/archive/completed_reference_trials/source_1/candidate.log",
+    "sha256": "fda09e2c5b78918d28e95931a84ed59206a050d58a397e1b3af70b4f7eac5316",
+    "blocks": {
+      "45_50_ps": {
+        "n": 100,
+        "T_mean_K": 303.8437943,
+        "rho_mean_g_cm3": 1.9346400570000002,
+        "rho_frame_sd": 0.039272428015203545,
+        "PE_mean_eV": -911.0429162
+      },
+      "50_55_ps": {
+        "n": 100,
+        "T_mean_K": 297.69812170000006,
+        "rho_mean_g_cm3": 1.9354902729999999,
+        "rho_frame_sd": 0.03251498808006609,
+        "PE_mean_eV": -911.3667361
+      }
+    }
+  },
+  "2": {
+    "source": "materials/candidates/LZOC/archive/completed_reference_trials/source_2/candidate.log",
+    "sha256": "07f7f20661039805f90c7b3f7df764a28fea4146fc10549bb8ebf215fdca54b0",
+    "blocks": {
+      "45_50_ps": {
+        "n": 100,
+        "T_mean_K": 302.2784877,
+        "rho_mean_g_cm3": 1.9147767130000002,
+        "rho_frame_sd": 0.034994102819364485,
+        "PE_mean_eV": -911.0658868999999
+      },
+      "50_55_ps": {
+        "n": 100,
+        "T_mean_K": 297.78758559999994,
+        "rho_mean_g_cm3": 1.875969245,
+        "rho_frame_sd": 0.02848289421261372,
+        "PE_mean_eV": -911.7362946000001
+      }
+    }
+  },
+  "3": {
+    "source": "materials/candidates/LZOC/archive/completed_reference_trials/source_3/candidate.log",
+    "sha256": "c5fe69610dfc5208057282a0953c4718447c35e42d1d827e85f0af89312bee35",
+    "blocks": {
+      "45_50_ps": {
+        "n": 100,
+        "T_mean_K": 296.1266779,
+        "rho_mean_g_cm3": 1.9602764729999997,
+        "rho_frame_sd": 0.03323210576470495,
+        "PE_mean_eV": -912.048446
+      },
+      "50_55_ps": {
+        "n": 100,
+        "T_mean_K": 298.8072395,
+        "rho_mean_g_cm3": 1.9317396129999997,
+        "rho_frame_sd": 0.02708658575635726,
+        "PE_mean_eV": -912.1959295
+      }
+    }
+  }
+}
