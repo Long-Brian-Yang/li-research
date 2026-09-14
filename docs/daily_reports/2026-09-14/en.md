@@ -49,6 +49,32 @@ Sources and records: [literature DOI](https://doi.org/10.1038/s41467-025-65702-2
 
 ### Why prepare the structure this way?
 
+#### What happened to candidates 1 and 2?
+
+Both completed the same preparation protocol successfully and remain archived. The table below compares the same stage for all three: the endpoint of the 55 ps preparation, followed by fixed-cell atomic minimization. It does **not** compare candidates 1 and 2 with candidate 3 after its additional 50 ps equilibration.
+
+| Preparation result | Candidate 1 | Candidate 2 | Candidate 3 |
+|---|---:|---:|---:|
+| Preparation MD duration / ps | 55 | 55 | 55 |
+| Wall time | 48 min 28 s | 47 min 20 s | 48 min 28 s |
+| Final-cell density / g cm⁻³ | 1.898929 | 1.911125 | 1.983256 |
+| Final minimized potential energy / eV per 192-atom cell | −918.983585 | −919.730365 | −920.025929 |
+| Final force two-norm / eV Å⁻¹ | 0.00951324 | 0.00951450 | 0.00996079 |
+| Final minimization stopping reason | Force tolerance | Force tolerance | Force tolerance |
+| Follow-up in this workflow | Archived; not continued | Archived; not continued | Additional 300 K equilibration and 600 K MD |
+
+The energies and force norms were re-read from the **last** minimization block in each archived `candidate.log`. These are minimized potential energies, not finite-temperature mean energies or free energies. The density describes the final cell, not an NPT time average. Force two-norm is the norm of all force components; it is not the largest per-atom force magnitude.
+
+- **Candidate 1:** preparation converged. Its endpoint is less dense and its minimized energy is higher than candidate 3's. These observations describe different local minima; they do not establish that candidate 1 is physically invalid. It was not carried forward because the workflow was narrowed to one working candidate, not because a documented failure criterion rejected it.
+- **Candidate 2:** preparation also converged. Its endpoint density and minimized energy lie between candidates 1 and 3. No equivalent additional 50 ps equilibration or 600 K production comparison was performed for it in this workflow, so there is no basis to claim poorer long-time stability or diffusion.
+- **Candidate 3:** was provisionally chosen and then received the additional equilibration and structural checks. Its lowest minimized energy among these three endpoints is a retrospective supporting observation, **not a documented original selection rule**, and its highest density is not an experimental validation. The extra checks support its use as an exploratory starting point, not proof that it is the best amorphous structure.
+
+In short: **three numerically converged candidates were obtained; one was retained for follow-up, rather than two being proven unsuitable.** A fair physical ranking would require comparable density, structural and long-time checks for all three. Such additional runs are not required for the present single-candidate report and have not been started here.
+
+Direct log sources: [candidate 1](../../../materials/candidates/LZOC/archive/completed_reference_trials/source_1/candidate.log), [candidate 2](../../../materials/candidates/LZOC/archive/completed_reference_trials/source_2/candidate.log), [candidate 3](../../../materials/candidates/LZOC/archive/completed_reference_trials/source_3/candidate.log). Preparation times and densities: [archive summary](../../../materials/candidates/LZOC/archive/completed_reference_trials/README.md).
+
+#### Rationale for the preparation stages
+
 An amorphous material does not have a unique periodic atomic arrangement like a crystal, so composition alone does not specify its starting configuration. A related literature structure provides a reference for local coordination rather than starting from a completely random arrangement. However, changing the composition also changes the structure, making further relaxation and validation necessary.
 
 | Preparation stage | Conditions | Purpose and limitations |
