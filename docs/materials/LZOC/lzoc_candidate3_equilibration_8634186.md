@@ -1,5 +1,7 @@
 # Candidate 3 additional equilibration
 
+> Historical record / 历史记录：保留记录当时的设置与判断，不作为实时任务状态。参见 [材料文档索引](README.md)。
+
 Submitted 2026-09-11 after user approval. Job **8634186** (`lzoc_eq300`),
 group `tgj-26ICP`, one `gpu_1`, wall-time limit 90 minutes.
 
@@ -16,6 +18,6 @@ group `tgj-26ICP`, one `gpu_1`, wall-time limit 90 minutes.
 After completion, inspect successive density/energy blocks and residual order
 before accepting the structure for a separately specified production temperature.
 The job completed successfully in 54 min 22 s; final data and restart were
-generated. See the [post-equilibration check](../materials/candidates/LZOC/archive/equilibration_8634186/analysis/README.md)
+generated. See the [post-equilibration check](../../../materials/candidates/LZOC/archive/equilibration_8634186/analysis/README.md)
 and [proposed next temperatures](lzoc_next_md_plan_2026-09-11.md).
 Numerical completion does not imply full physical equilibration.

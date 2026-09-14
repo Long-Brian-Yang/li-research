@@ -1,5 +1,7 @@
 # Li Research: Direction 2 Halide Electrolytes
 
+Documentation: [分类导航](docs/README.md) · [日常汇报](docs/daily_reports/README.md) · [LZOC 建模与运行](docs/materials/LZOC/README.md)。以下 Direction 2 介绍保留原有晶态研究背景；后续 LZOC 探索见独立材料记录。
+
 This repository contains the working materials for **Direction 2**: reproducing
 and comparing fast-ion-conducting halide and oxyhalide solid electrolytes with
 MACE-MPA-0 and LAMMPS.

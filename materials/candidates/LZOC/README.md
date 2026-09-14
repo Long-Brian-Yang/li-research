@@ -18,7 +18,8 @@ Data 中的原子类型 1/2/3/4 对应 Li/Zr/O/Cl；CIF 仅供结构查看，不
 
 MACE，600/700/800/900 K，每温度先一组：升温 → 50 ps 目标温度平衡 →
 200 ps NVT production，时间步长 0.5 fs。温度列表是本项目方案，参考文献
-已核实的温度范围为 600–900 K，不声称原文就是这四点。尚未提交运行。
+已核实的温度范围为 600–900 K，不声称原文就是这四点。
+已提交任务数组 **8635176.1–4**，详见 [运行设置与输出路径](MD_4T_8635176.md)。
 
 ## 归档（通常不需要打开）
 
@@ -27,7 +28,7 @@ MACE，600/700/800/900 K，每温度先一组：升温 → 50 ps 目标温度平
 
 - [最新检查结论](archive/equilibration_8634186/analysis/README.md)
 - [三组制备记录](archive/completed_reference_trials/README.md)
-- [详细运行方案](../../../docs/lzoc_next_md_plan_2026-09-11.md)
+- [详细运行方案](../../../docs/materials/LZOC/lzoc_next_md_plan_2026-09-11.md)
 
 本次整理仅修改本地/GitHub 布局；TSUBAME 原始运行路径未移动，实际运行
 脚本快照及 provenance 中的历史路径保持原样。轨迹不上传 GitHub。

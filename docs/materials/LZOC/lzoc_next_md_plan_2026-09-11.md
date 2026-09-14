@@ -1,5 +1,7 @@
 # LZOC：候选结构检查与后续 MD 方案
 
+> Historical record / 历史记录：保留记录当时的设置与判断，不作为实时任务状态。参见 [材料文档索引](README.md)。
+
 ## 当前结论
 
 采用候选 3，组成为 Li42Zr24O12Cl114（192 原子），对应
@@ -10,11 +12,14 @@ NPT 平衡。后者任务号 8634186，实际运行耗时 54 分 22 秒。
 可以作为探索性 MD 的起始结构，但不宣称完全收敛、完全非晶化或势函数
 已被实验验证。不再增加候选结构。NEP89/GPUMD 部署已取消，继续使用 MACE。
 
-- [平衡后检查、RDF 与数值](../materials/candidates/LZOC/archive/equilibration_8634186/analysis/README.md)
-- [制备后初步检查](../materials/candidates/LZOC/archive/completed_reference_trials/candidate3_check/README.md)
-- [三组制备归档](../materials/candidates/LZOC/archive/completed_reference_trials/README.md)
+- [平衡后检查、RDF 与数值](../../../materials/candidates/LZOC/archive/equilibration_8634186/analysis/README.md)
+- [制备后初步检查](../../../materials/candidates/LZOC/archive/completed_reference_trials/candidate3_check/README.md)
+- [三组制备归档](../../../materials/candidates/LZOC/archive/completed_reference_trials/README.md)
 
-## 讨论中的四温度方案：尚未提交
+## 四温度方案：已提交 8635176.1–4
+
+2026-09-11 已按用户批准提交；实际设置和输出路径见
+[运行记录](../../../materials/candidates/LZOC/MD_4T_8635176.md)。
 
 | 项目 | 设置 |
 |---|---|
@@ -27,8 +32,8 @@ NPT 平衡。后者任务号 8634186，实际运行耗时 54 分 22 秒。
 | 组数 | 每个温度先 1 组，共 4 个温度分支 |
 | 目标分析 | MSD、D(T)、Arrhenius/Ea、结构与热力学稳定性、分段收敛性 |
 
-300 K 已完成的平衡不能替代各目标温度的平衡。升温时长、目标温度平衡
-使用的系综及 NVT 体积选择尚待在运行输入中明确；上述讨论不是已提交任务。
+300 K 已完成的平衡不能替代各目标温度的平衡。实际提交采用 10 ps NVT
+升温、50 ps 目标温度/1 bar NPT，再以 NPT 末帧晶胞进行 200 ps NVT。
 200 ps 不保证扩散收敛，应保留原始数据并按统计质量判断是否需要延长。
 同一起始非晶结构的四个温度分支不是四个独立非晶构型。
 
@@ -45,8 +50,8 @@ production、2 fs 时间步长、80 fs 温控周期。
 论文相关 AIMD 组成为 Li2.5ZrCl5.5O0.5，与本项目组成不同；不能直接
 把不同组成的传导率或 Ea 当作同一体系的验证目标。
 
-- [日语阅读报告及 AIMD 条件](literature/lzoc_top3/reading_report_ja.md)
-- [英语阅读报告及 AIMD 条件](literature/lzoc_top3/reading_report_en.md)
+- [日语阅读报告及 AIMD 条件](../../literature/lzoc_top3/reading_report_ja.md)
+- [英语阅读报告及 AIMD 条件](../../literature/lzoc_top3/reading_report_en.md)
 
 此前聊天提供的 `reading_report_zh.md` 链接不存在，应以上面已存在的
 日语或英语报告为准。
