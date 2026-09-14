@@ -22,6 +22,31 @@ Structural files for a related composition reported in the literature were used 
 
 This is an exploratory model informed by the literature, not a direct reproduction of an experimentally determined amorphous configuration. Its consistency with the real material must be assessed through structural and density analysis.
 
+### How was candidate 3 selected?
+
+Rather than committing immediately to one atomic arrangement, three starting configurations were prepared from supplementary structures for a related composition reported by Kim et al. (2025). “Candidate 3” is a preparation identifier, not a stability ranking.
+
+| Candidate | Literature starting file | Preparation job | Instantaneous final preparation density / g cm⁻³ |
+|---|---|---|---:|
+| 1 | Supplementary Data 4 | 8631903.1 | 1.8989 |
+| 2 | Supplementary Data 19 | 8631903.2 | 1.9111 |
+| 3 | Supplementary Data 18, the starting configuration for AIMD at 600 K | 8631935.3 | 1.9833 |
+
+Each parent structure was expanded into a 2×2×1 supercell, and 18 LiCl pairs were removed to obtain the same Li42Zr24O12Cl114 composition and atom count. The construction procedure and initial volume were matched, followed by the same 55 ps preparation MD and final fixed-cell relaxation. These are candidates derived from related literature configurations, not three independently generated amorphous replicas. The LiCl removal pattern is not claimed to be energetically optimal.
+
+All three preparation runs completed and satisfied their force-convergence criteria. Candidate 3 was provisionally adopted for follow-up checks, and additional structural screening was performed on it. This was not a selection of the best structure based on comparative free energies or equivalent long-duration stability tests across all three candidates. Its higher final density was not treated as proof of correctness.
+
+The following checks supported continuing with candidate 3:
+
+- Atom counts and composition were preserved, with no obvious atomic overlaps detected.
+- The final fixed-cell relaxation reached the force-convergence criterion.
+- Tracking strong diffraction components of the starting configuration showed substantial attenuation, supporting loss of much of the initial periodic order. This diagnostic is not a crystalline-fraction measurement.
+- Instead of proceeding directly to production, another 50 ps of equilibration was performed at 300 K and 1 bar. Mean densities in the final two 10 ps blocks differed by approximately 0.85%, and local coordination was broadly similar.
+
+Candidate 3 was therefore selected as a **working structure for exploratory MD at 600 K after additional equilibration and structural checks**, not as the most stable or fully validated structure. Checks at 300 K do not guarantee stability at 600 K; volume and framework behavior after heating require separate assessment. Candidates 1 and 2 remain archived for comparison and traceability.
+
+Sources and records: [literature DOI](https://doi.org/10.1038/s41467-025-65702-2), [three-candidate preparation archive](../../../materials/candidates/LZOC/archive/completed_reference_trials/README.md), [selection record](../../../materials/candidates/LZOC/archive/completed_reference_trials/SELECTION.md), and [post-equilibration check](../../../materials/candidates/LZOC/archive/equilibration_8634186/analysis/README.md).
+
 ### Why prepare the structure this way?
 
 An amorphous material does not have a unique periodic atomic arrangement like a crystal, so composition alone does not specify its starting configuration. A related literature structure provides a reference for local coordination rather than starting from a completely random arrangement. However, changing the composition also changes the structure, making further relaxation and validation necessary.
@@ -73,6 +98,36 @@ Li motion is expected to be easier to observe at 600 K than at room temperature,
 - **A 0.5 fs time step:** This provides a fine temporal resolution for atomic motion. Its adequacy must still be assessed from numerical stability and, if necessary, short time-step comparison tests.
 - **A 200 ps production period:** This was selected for initial diffusion and structural analysis. Whether it is sufficient must be evaluated by comparing analysis windows and time blocks.
 - **One initial structure and one run:** The initial priority was workflow verification. This cannot quantify variability between independently prepared amorphous structures or establish reproducible material properties.
+
+### How to assess each stage and determine whether equilibration is adequate
+
+Completing the scheduled simulation time, terminating without errors, and reaching equilibrium are different outcomes. The practical question is whether the properties relevant to the study become stationary over the observation period and whether the conclusions remain consistent when analysis intervals are changed. Finite MD cannot prove complete thermodynamic equilibration, and slow structural relaxation may persist in an amorphous material.
+
+| Stage | What to examine | Interpretation and response to problems |
+|---|---|---|
+| Initial structure and relaxation | Composition, atom count, element mapping, periodic boundaries, minimum distances, maximum force, and stopping reason | Check for abnormal close contacts and large residual forces. Reaching an iteration limit alone does not establish force convergence. Fixed-cell relaxation does not equilibrate the cell. |
+| High-temperature treatment at 1500 K | Temperature, potential energy, species-resolved displacements, and retention of initial order | Look for atomic rearrangement and changes in initial order. Reaching 1500 K alone does not demonstrate melting; Li motion alone does not establish melting of the framework. |
+| Cooling | Temperature tracking, cell constraints, structural changes, and order after cooling | Cooling is a nonequilibrium process. Assess temperature tracking and structure formation rather than claiming equilibrium during cooling. Check for recrystallization or retained initial order before characterizing the candidate as amorphous. |
+| Holding and NPT at 300 K | Temperature, potential energy, density, and consecutive block averages | Examine persistent density changes and structural relaxation near the end. If changes continue, consider further equilibration, revised preparation, or potential applicability. |
+| Heating to 600 K | Temperature tracking, abnormal energy changes, close contacts, and framework changes | Distinguish the heating transient from the state after heating. Stability at 300 K does not guarantee stability at 600 K. |
+| NPT at 600 K | Density, volume, potential energy, mean pressure, and framework displacement | Both volume and structure must be assessed, not temperature alone. Assess statistical consistency of mean pressure with its target; large instantaneous pressure fluctuations alone do not demonstrate failure. Do not call a terminal cell equilibrated while density is drifting. |
+| NVT production at 600 K | Stationarity of temperature, potential energy, and structure; time-block comparisons; MSD fit-window sensitivity | Fixed volume is a constraint, not evidence of equilibrium. Ordinary total energy need not be strictly conserved in NVT. Diffusive MSD continues to increase, so an MSD plateau is not a convergence requirement. |
+
+#### Practical equilibration checks
+
+1. **Inspect time series.** Examine temperature, potential energy, and density on the same time axis to identify transients and sustained changes. A mean temperature close to the target is an important check but is not sufficient.
+2. **Compare successive intervals.** For example, divide the late trajectory into 10 ps blocks and compare their means, variability, and trends. A 10 ps block is not a universal standard; its suitability depends on correlation times and observed relaxation.
+3. **Include structural diagnostics.** Combine RDFs, coordination numbers, neighbor retention and exchange, and framework-species MSD. Similar local coordination can coexist with motion of entire coordination units, so no single indicator is sufficient.
+4. **Vary analysis windows.** Assess whether excluding initial transients or changing time blocks materially changes the density, structural assessment, or D. For time-origin-averaged MSD, distinguish the portion of the trajectory excluded from analysis from the lag-time interval used to fit the slope.
+5. **Choose further calculations only where needed.** If relaxation persists, assess whether extending the run is useful. Persistent abnormal expansion calls for checking reference density, structure preparation, stress implementation, and potential applicability rather than simply running longer.
+
+No universal pass threshold such as a particular percentage density change or a fixed number of picoseconds is imposed. The standard deviation of correlated frames is not the uncertainty of their mean; quantitative comparisons require methods such as block analysis that account for correlation. Criteria should reflect the scientific objective and statistical precision, not be adjusted to obtain a preferred D or Eₐ.
+
+#### What has been established for this model?
+
+Force convergence in the initial and final relaxations, preservation of composition, absence of obvious overlaps, and attenuation of initial periodic order were checked. During the additional equilibration of candidate 3 at 300 K, late-block density and local coordination changed relatively little, supporting its continued use as an exploratory starting structure. The approximately 0.85% difference between density blocks was not used as a standalone acceptance threshold; complete equilibration and agreement with the experimental structure remain unproven.
+
+The 600 K job terminated normally, but volume and framework behavior require further assessment. This report therefore describes completed simulation stages with validation in progress, not a workflow in which every stage has already been established as physically valid and fully equilibrated.
 
 ## 4. Current milestone
 
