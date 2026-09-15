@@ -1,0 +1,219 @@
+{
+  "records": [
+    {
+      "T": 320,
+      "fit": {
+        "D_cm2_s": 1.3307044422356806e-07,
+        "R2": 0.9851259219388475,
+        "intercept_A2": 0.7024365030077071,
+        "alpha": 0.3289517344236331,
+        "lo_ps": 20,
+        "hi_ps": 80
+      },
+      "windows": [
+        {
+          "D_cm2_s": 1.3307044422356806e-07,
+          "R2": 0.9851259219388475,
+          "intercept_A2": 0.7024365030077071,
+          "alpha": 0.3289517344236331,
+          "lo_ps": 20,
+          "hi_ps": 80
+        },
+        {
+          "D_cm2_s": 1.4511977283285559e-07,
+          "R2": 0.9878684217628628,
+          "intercept_A2": 0.6708299203901329,
+          "alpha": 0.381952107079205,
+          "lo_ps": 20,
+          "hi_ps": 100
+        },
+        {
+          "D_cm2_s": 1.4991997622688418e-07,
+          "R2": 0.9964401219179454,
+          "intercept_A2": 0.65498226037102,
+          "alpha": 0.45691928504824214,
+          "lo_ps": 20,
+          "hi_ps": 150
+        },
+        {
+          "D_cm2_s": 1.5255567601904103e-07,
+          "R2": 0.9961128081496293,
+          "intercept_A2": 0.6378698649208093,
+          "alpha": 0.5361665883240663,
+          "lo_ps": 40,
+          "hi_ps": 150
+        },
+        {
+          "D_cm2_s": 1.214378471556933e-07,
+          "R2": 0.9455261408494754,
+          "intercept_A2": 0.8121160829703397,
+          "alpha": 0.5182679008235465,
+          "lo_ps": 50,
+          "hi_ps": 200
+        }
+      ],
+      "sigma_mS_cm": 3.039988601045223,
+      "CN": [
+        4.0,
+        1.6223569651741294,
+        4.232898009950249,
+        0.7523320895522388
+      ],
+      "SO4_fraction": 1.0,
+      "mean_T": 320.1633831209133,
+      "PE_change_meV_atom": -2.3291729283088483,
+      "density": 1.8803225020417738,
+      "block_D": [
+        -1.6791967565036111e-09,
+        2.0261707425157723e-07,
+        7.42625203342247e-08
+      ],
+      "MSD300": 1.2451133127278953,
+      "mobility": [
+        [
+          0.0,
+          3160,
+          0.7345941316448656
+        ],
+        [
+          1.0,
+          1624,
+          0.7626524665927782
+        ],
+        [
+          2.0,
+          1069,
+          0.5746927936708461
+        ],
+        [
+          3.0,
+          205,
+          0.5920710676042974
+        ],
+        [
+          4.0,
+          53,
+          0.6646547311778873
+        ],
+        [
+          5.0,
+          1,
+          0.47741220196383205
+        ]
+      ]
+    },
+    {
+      "T": 350,
+      "fit": {
+        "D_cm2_s": 1.0497249258910153e-07,
+        "R2": 0.9653424825120435,
+        "intercept_A2": 0.9264725253525419,
+        "alpha": 0.2333908894740957,
+        "lo_ps": 20,
+        "hi_ps": 80
+      },
+      "windows": [
+        {
+          "D_cm2_s": 1.0497249258910153e-07,
+          "R2": 0.9653424825120435,
+          "intercept_A2": 0.9264725253525419,
+          "alpha": 0.2333908894740957,
+          "lo_ps": 20,
+          "hi_ps": 80
+        },
+        {
+          "D_cm2_s": 8.354027709311889e-08,
+          "R2": 0.9306796807934017,
+          "intercept_A2": 0.9815577928648672,
+          "alpha": 0.217366179964395,
+          "lo_ps": 20,
+          "hi_ps": 100
+        },
+        {
+          "D_cm2_s": 7.482006693631561e-08,
+          "R2": 0.9689001526457023,
+          "intercept_A2": 1.0072956981232424,
+          "alpha": 0.23601962082044695,
+          "lo_ps": 20,
+          "hi_ps": 150
+        },
+        {
+          "D_cm2_s": 6.80684588492922e-08,
+          "R2": 0.9627538798470059,
+          "intercept_A2": 1.0519757672891594,
+          "alpha": 0.24544509481102697,
+          "lo_ps": 40,
+          "hi_ps": 150
+        },
+        {
+          "D_cm2_s": 8.584310412546108e-08,
+          "R2": 0.9607320720796925,
+          "intercept_A2": 0.9581789213697114,
+          "alpha": 0.34739539048645635,
+          "lo_ps": 50,
+          "hi_ps": 200
+        }
+      ],
+      "sigma_mS_cm": 2.046298219377911,
+      "CN": [
+        4.0,
+        1.5724502487562189,
+        4.2643034825870645,
+        0.8666044776119403
+      ],
+      "SO4_fraction": 1.0,
+      "mean_T": 349.82155885586167,
+      "PE_change_meV_atom": -4.447565576838616,
+      "density": 1.7549044591572813,
+      "block_D": [
+        1.865534810025752e-07,
+        -4.5967269126313094e-08,
+        9.650183547576628e-08
+      ],
+      "MSD300": 2.270260183892618,
+      "mobility": [
+        [
+          0.0,
+          2754,
+          0.8386562441084336
+        ],
+        [
+          1.0,
+          2027,
+          0.8506322694054764
+        ],
+        [
+          2.0,
+          862,
+          0.6077283154469955
+        ],
+        [
+          3.0,
+          322,
+          0.7673997255040181
+        ],
+        [
+          4.0,
+          133,
+          0.3682018012189611
+        ],
+        [
+          5.0,
+          14,
+          0.4359640689585314
+        ]
+      ]
+    }
+  ],
+  "hashes": {
+    "results/amorphous_review_20260915/source/LSZC_endpoints/production300_320K_8677465/production/model.xyz": "d4b29f986d8a6d548f9e6e320ea7b78df263a0bd0849adc78c60a6309c316b03",
+    "results/amorphous_review_20260915/source/LSZC_endpoints/production300_320K_8677465/production/dump.xyz": "5c575de8bf93e334c3f1f211926d62c17312e7b44f56eb69d548b5e79a624730",
+    "results/amorphous_review_20260915/source/LSZC_endpoints/production300_320K_8677465/production/thermo.out": "3d98d60f1ce5cba0c9a3199c429aa2900451cfb3bb19cc6e16d2d57d40447a7c",
+    "results/amorphous_review_20260915/source/LSZC_endpoints/production300_320K_8677465/production/run.in": "627c25ead029da27bb6f455f9c8f5738b4e738e7e6f137478b63b616f3a50333",
+    "results/amorphous_review_20260915/source/LSZC_endpoints/production300_350K_8677465/production/model.xyz": "6dce9ab19d67a20000d4c44609195f1cc508e837184756b689bcab3f9969422c",
+    "results/amorphous_review_20260915/source/LSZC_endpoints/production300_350K_8677465/production/dump.xyz": "ad787d1fa1991c28d3cc42d45e87567ee7c2093f22949d13c1d21e0fa45f435b",
+    "results/amorphous_review_20260915/source/LSZC_endpoints/production300_350K_8677465/production/thermo.out": "3bc46925e2b78b8eb4a9c3e8a48d5bf0a5d96a2bcd50efdba5341978ef298fa3",
+    "results/amorphous_review_20260915/source/LSZC_endpoints/production300_350K_8677465/production/run.in": "a8bf6dd230631b19691c153ce2e42359ac5d41f3d88c43dce83bc1a62ed0872d"
+  },
+  "method": "Common 20\u201380 ps diagnostic; system mass COM corrected all-origin MSD. No target-based window selection. RDF 100\u2013300 ps every 1 ps, 0.05 A bins. Li\u2013O origin CN / 10 ps displacement; correlated observations, no confidence interval."
+}

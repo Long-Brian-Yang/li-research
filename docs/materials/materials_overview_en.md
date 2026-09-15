@@ -101,7 +101,7 @@ Panels a–c show full 0–300 ps Li MSD, one trajectory per temperature. Panel 
 |360|3.808×10⁻⁷|(1.77±0.04)×10⁻⁶|0.215|
 |380|1.028×10⁻⁶|(3.50±0.10)×10⁻⁶|0.294|
 
-**Result:** NEP89 predicts lower apparent diffusion than AIMD at all three temperatures, with deviations of approximately −65%, −78% and −71%. Both displayed series decrease from 340 to 360 K before increasing at 380 K, but this exploratory agreement in direction is not evidence of a reproduced temperature dependence. Repeated trajectories show substantial variability, particularly at 360 K, and residual energy relaxation remains. A converged activation energy is therefore not claimed.
+**Result:** NEP89 predicts lower apparent diffusion than AIMD at all three temperatures, with deviations of approximately −65%, −78% and −71%. Both displayed series decrease from 340 to 360 K before increasing at 380 K, but this exploratory agreement in direction is not evidence of a reproduced temperature dependence. Diffusivity convergence remains unestablished, and residual energy relaxation is present; a converged activation energy is therefore not claimed.
 
 ### Analysis method and scope
 
@@ -140,102 +140,77 @@ At 80 ps, that fraction is **5.43/8.28/23.66%** at 340/360/380 K, respectively; 
 <a id="lszc"></a>
 ## 3. LSZC: extending the comparison to experiment
 
-**Latest endpoint results:** 320 and 350 K each completed 300 ps NVT production. Mean temperatures were 320.16 and 349.82 K; potential-energy changes between the first and last 50 ps were −2.33 and −4.45 meV/atom. Transport analysis of these new runs is pending. At 350 K the preceding NPT density still decreased by 2.06%, so fixed-volume production is exploratory and does not establish equilibrium density. These results are separate from the earlier four-temperature analysis below.
+### Background and literature benchmark
 
+[Tang et al. (2026)](https://doi.org/10.1038/s41467-026-69737-x) investigate the amorphous sulfate–chloride electrolyte 0.5Li₂SO₄–ZrCl₄. The scientific question here is whether a pretrained NEP potential reproduces its Li transport and local sulfate/Zr environment without material-specific training. The paper reports **1.5 mS/cm at 30 °C and E_a = 0.33 eV**. Its tuned-MACE MD is a separate computational benchmark, not AIMD or an experimental measurement.
 
-### Endpoint NPT follow-up: completed, not yet production-ready as a pair
+|Benchmark|Published result|Comparison in this review|
+|---|---|---|
+|Experiment|Conductivity increases over approximately 303–353 K; E_a = 0.33 eV|Temperature-resolved conductivity, not experimental self-diffusion|
+|Tuned-MACE MD|320–350 K MSD and conductivity; 300 ps series|Same nominal endpoint temperatures and duration|
+|Local structure|EXAFS Zr–O CN 2.6, Zr–Cl CN 3.0; distances 2.23 and 2.45 Å|Compare with cutoff coordination and RDF, noting different definitions|
+|Density|2.05 g/cm³, experimental sample|Context for our fixed-volume calculations|
 
-The initial 150 ps NPT stage showed different late-stage density trends at the two temperatures:
+### Latest calculation and direct transport comparison
 
-|T (K)|Density: 100–125 → 125–150 ps (g/cm³)|Relative change|PE change (meV/atom)|
-|---:|---|---:|---:|
-|320|1.8773 → 1.8840|+0.35%|−0.281|
-|350|1.8747 → 1.7814|−4.98%|+0.361|
+The latest 320 and 350 K runs each completed **300 ps NVT production**, using the same 272-atom composition and NEP89 with a 0.5 fs step. The longer NPT preparation replaces the earlier endpoint preparation; the old four-temperature series is not mixed with these results. The model size, potential and preparation differ from the paper's 1088-atom tuned-MACE calculation.
 
-320 K shows relatively small late changes in these observables, but this is not a complete structural validation. At 350 K the late density drop prevents treating a single late average as a settled equilibrium volume. The temperature branches therefore do not yet support an equivalent paired NVT production setup. No 300 ps LSZC production was submitted in this analysis update; do not force the density to its experimental value. Existing four-temperature transport below is retained as the previous dataset, not the result of this NPT follow-up.
+![LSZC latest MSD and literature comparison](../../results/plots/amorphous/18_LSZC_endpoint_transport.png)
 
+The first two panels show full 0–300 ps NEP MSD and published Supplementary Fig. 24 MSD at the corresponding temperature, on common axes. The paper's exact time-origin averaging convention is not established, so this is a comparison of published curves rather than identical estimators. The conductivity panel separates experiment, tuned-MACE MD and our apparent NE conversion; connecting lines guide the eye, not Arrhenius fits. Source y-errors for the paper MD are transformed from ln(σT); their statistical definition is not established.
 
-The next question is whether the selected potential captures transport in a polyanion-containing oxychloride. Tang's experimental conductivity and local coordination, together with the published tuned-MACE trajectories, provide complementary benchmarks. They are distinct references, not interchangeable measurements. The current NEP series does not reproduce their temperature trend; the structure analysis below examines possible contributors without assigning a unique cause.
-
-### Four-temperature transport and the paper comparison
-
-**Earlier four-temperature analysis:** the original 320–350 K series completed 300 ps per temperature. Trajectory consistency and MSD calculations were checked. All four temperatures are retained, including nonmonotonic apparent transport.
-
-![LSZC four temperatures versus published MSD](../../results/plots/amorphous/12_LSZC_4T_MSD.png)
-
-The shaded interval is the primary fitting interval; all panels share axes. NEP uses centre-of-mass-corrected, all-time-origin MSD from the full 300 ps production. The dashed curves are Tang's published Supplementary Fig. 24 source arrays, shown over the same 0–100 ps interval. Their exact time-origin averaging convention is not established, so the overlay is not a strictly identical estimator comparison. The workbook labels its first column “MSD”, but the published axes and array ranges identify it as time in ps and the second as MSD in Å²; the extraction follows the published figure, not the reversed headers.
-
-|T (K)|NEP D_app (cm²/s)|NEP σ_app (mS/cm)|Tang tuned-MACE σ (mS/cm)|NEP / reference|MSD exponent α|
+|T (K)|NEP D_app (cm²/s)|Conditional σ_NE (mS/cm)|Paper tuned-MACE σ (mS/cm)|NEP / paper MD|MSD exponent α|
 |---:|---:|---:|---:|---:|---:|
-|320|1.408×10⁻⁷|3.183|2.987|1.066|0.303|
-|330|4.003×10⁻⁷|8.855|4.086|2.167|0.572|
-|340|2.661×10⁻⁷|5.561|6.624|0.839|0.447|
-|350|1.043×10⁻⁷|2.215|8.246|0.269|0.260|
+|320|1.331×10⁻⁷|3.040|2.987|1.018|0.329|
+|350|1.050×10⁻⁷|2.046|8.246|0.248|0.233|
 
-Here α is the log–log MSD slope over the same 20–80 ps interval. The ordinary linear-fit R² values are 0.9908/0.9965/0.9990/0.9921, but high R² does not establish asymptotic diffusion when the MSD includes a large localized-motion offset. Conductivities are conditional Nernst–Einstein conversions using each cell volume; they are not independent conductivity measurements or converged long-time transport coefficients. Fit-window D ranges are 1.408–3.258, 3.763–5.391, 2.632–3.807 and 1.043–1.588 ×10⁻⁷ cm²/s, respectively. These ranges describe estimator sensitivity, not independent-glass confidence intervals.
+**Interpretation:** the 320 K conductivity estimate is close to the paper MD value, but that numerical agreement does not establish reproduction. The 350 K estimate is about 75% lower, and the endpoint temperature dependence is opposite to the reference. The 320 K MSD develops a plateau at long lag; neither trajectory establishes stable long-time diffusion. The last points also have few time origins and must not be used alone to infer D. A higher final MSD at 350 K is not equivalent to a higher fitted slope.
 
-![LSZC conductivity and Arrhenius comparison](../../results/plots/amorphous/13_LSZC_literature_transport.png)
+**Activation energy:** a reliable NEP E_a cannot be obtained from this pair. Two points cannot test Arrhenius linearity, and the apparent D values decrease with temperature. We therefore replace the old Arrhenius display with direct conductivity comparison and retain the experimental **0.33 eV** as a benchmark, without a fitted NEP line or room-temperature extrapolation.
 
-**a:** direct temperature-resolved values; lines guide the eye. Tang Fig. 3g is tuned-MACE MD, not AIMD or experiment. The separate open square near 300 K is the author's 3 ns result and is not combined with the four 300 ps points. The published inverse temperatures are rounded (3.125, 3.030, 2.941, 2.857); conversions use T=1000/x rather than silently replacing the source coordinates. **b:** NEP points are displayed without an Arrhenius regression line. Source error bars are the workbook's stated y-errors in ln(σT), transformed exponentially in panel a; their statistical definition was not independently established.
-
-The conversion is y=ln[σT/(S cm⁻¹ K)], hence σ(mS/cm)=1000 exp(y)/T. The experimental Supplementary Fig. 3 source coordinates give:
-
-|T from published 1000/T (K, rounded here)|Experimental σ (mS/cm)|
+|Experimental source temperature (K, rounded)|σ (mS/cm)|
 |---:|---:|
-|303.000|1.490|
-|313.000|2.123|
-|323.000|3.015|
-|333.000|4.246|
-|343.000|5.807|
-|353.000|7.522|
+|303|1.490|
+|313|2.123|
+|323|3.015|
+|333|4.246|
+|343|5.807|
+|353|7.522|
 
-These are source-coordinate conversions, not six new measurements by us. The paper labels measurements 30–80 °C, whereas its source x values correspond to 303–353 K; keep this 0.15 K convention difference explicit. The headline 1.5 mS/cm at 30 °C and Figure 1 source value 1.4383 mS/cm are retained as distinct reported values, not silently reconciled.
+These values are converted from the paper's Supplementary Fig. 3 source coordinates using σ(mS/cm)=1000 exp[y]/T, where y=ln[σT/(S cm⁻¹ K)]. They are not exact 320/350 K experimental measurements; no nearest-temperature point is relabelled. The paper's 30–80 °C labels and its rounded 303–353 K coordinates differ by 0.15 K. The headline 1.5 mS/cm and Figure 1 source value 1.4383 mS/cm are distinct reported values.
 
-**Conclusion:** a near match at 320 K does not establish reproduction: the NEP temperature trend is nonmonotonic and does not follow either reference series. A forced ln(σT) fit gives a diagnostic slope corresponding to −0.1097 eV with R²=0.0600 (ln D: −0.1148 eV, R²=0.0637). This is not a reportable physical activation energy; no NEP room-temperature extrapolation is reported. Refitting the four published MD ln(σT) points yields 0.3696 eV, R²=0.9863, and the six experimental points 0.3302 eV, R²=0.9997; these are our regressions of source points, not new author-reported values.
+### Local structure and connection to mobility
 
-Basic checks support completed execution, not full equilibration: mean T=319.73/329.87/339.81/349.64 K and P=−0.00070/+0.04764/+0.02975/+0.10571 GPa. Density is 1.8603/1.8773/1.8274/1.9112 g/cm³ versus the experimental reference 2.05. First-to-last-quarter PE changes are −3.413/−6.567/−8.568/+0.958 meV/atom. All sampled late S sites retain four O neighbours (ten frames per temperature, cutoff 2.0 Å), while mean Zr–O coordination is only 1.456–1.563 and Zr–Cl is 4.256–4.366. Preserving sulfate alone therefore does not reproduce the full Zr environment or transport. Preparation, finite sampling, cell density and potential applicability are plausible contributors; these results do not isolate their causal effects.
+![LSZC latest partial RDF](../../results/plots/amorphous/19_LSZC_endpoint_RDF.png)
 
-### Completed400 K pilot
+|Quantity|NEP 320 K|NEP 350 K|Experimental reference|
+|---|---:|---:|---|
+|Mean S–O CN (<2.0 Å)|4.000|4.000|Sulfate structural motif|
+|Sampled S sites with four O|100%|100%|Not a quantitative experimental fraction|
+|Mean Zr–O CN (<2.6 Å)|1.622|1.572|2.6, EXAFS fit|
+|Mean Zr–Cl CN (<3.2 Å)|4.233|4.264|3.0, EXAFS fit|
+|Mean Li–O CN (<2.7 Å)|0.752|0.867|No matched numerical benchmark used|
+|Density (g/cm³)|1.880|1.755|2.05|
 
-![LSZC transport and relaxation](../../results/plots/amorphous/02_LSZC_transport.png)
+The sulfate units remain intact in the sampled frames, but the Zr environment remains less O-coordinated and more Cl-coordinated than the EXAFS reference. Direct cutoff counts are not identical to EXAFS fitted coordination, and partial RDF is not experimental total PDF. These discrepancies can inform potential/preparation limitations; they do not identify a unique cause of the transport mismatch.
 
-**a:** Li MSD and20–80 ps fit; **b:** framework MSD, including substantial Cl motion; **c:** raw PE per atom and5 ps means; **d:** four consecutive50 ps blocks, each fitted at5–20 ps lag. Block estimates and the full-trajectory fit use different windows and are not interchangeable error bars.200 ps production is complete; apparent transport coexists with residual relaxation.
+![LSZC latest coordination and mobility](../../results/plots/amorphous/20_LSZC_endpoint_mobility.png)
 
-|Quantity|400 K result|
-|---|---:|
-|D_app,20–80 ps|1.1003×10⁻⁶ cm²/s|
-|R² / log–log α|0.99919 /0.748|
-|Conditional σ_NE|19.43 mS/cm|
-|D over the four specified full-trajectory windows|1.083–1.152×10⁻⁶ cm²/s|
-|D across50 ps blocks,5–20 ps fits|0.255–1.941×10⁻⁶ cm²/s|
-|Mean T / P|399.71 K /0.03884 GPa|
-|Fixed density|1.81705 g/cm³|
-|Final-minus-first50 ps mean PE|−0.01070 eV/atom|
+At both temperatures, Li with zero or one O neighbour moves more over 10 ps than Li with two O neighbours: mean squared displacements for CN 0/1/2 are **0.735/0.763/0.575 Å² at 320 K** and **0.839/0.851/0.608 Å² at 350 K**. This partially supports the paper's low-O-coordination mobility picture, but the full CN dependence is not monotonic and does not establish a causal mechanism. Open, unconnected markers have fewer than 100 Li–origin observations; counts are correlated samples, not independent confidence estimates.
 
-The conductivity is conditional NE conversion with32Li and8421.93 Å³, not a validated experimental value. Do not divide400 K conductivity by303 K experiment to claim an accuracy score.
+### Analysis scope and conclusion
 
-### Coordination and mobility
+MSD uses all available time origins after periodic unwrapping and removal of total-system mass-weighted COM motion. The common 20–80 ps slope gives the diagnostic D_app above, through D = slope/6, with Å²/ps converted to cm²/s by 10⁻⁴. Wider-window checks remain in source records; they do not resolve the long-time limitation. Conductivity uses σ_NE = (N_Li/V)e²D/(k_BT), with the actual cell volume and unit Li charge, and neglects ion correlations. It is not a direct experimental conductivity.
 
-![LSZC coordination-conditioned mobility](../../results/plots/amorphous/03_LSZC_mobility.png)
+RDF and CN average 201 snapshots from 100–300 ps with 0.05 Å bins and no smoothing. Mobility pairs the Li–O coordination at each origin with its subsequent 10 ps displacement. The original trajectories are unchanged.
 
-Li–O CN is measured at each origin (<2.7 Å), then displacement over10 ps is evaluated; origins are1 ps apart. For CN0/1/2/3, mean |Δr|²=1.693/1.598/1.446/0.979 Å². Open points for CN4/5/6 remain visible but unconnected: only43/9/1 observations support them. The count panel makes this limitation explicit. Common coordination states support a qualitative lower-O/higher-mobility association, not causation. Counts are correlated Li–origin observations, not independent samples; no uncertainty band is invented.
-
-### Structural correspondence, not full agreement
-
-![LSZC structure versus reference distances](../../results/plots/amorphous/04_LSZC_structure.png)
-
-Early0.1–45.1 ps and late150.1–195.1 ps each use10 snapshots,0.05 Å bins, no smoothing. Dotted lines are experimental **EXAFS fitted distances**, not experimental RDF peaks or a total PDF. The Zr–O position discrepancy remains; similar Zr–Cl peak positions alone do not establish reproduction.
-
-|Quantity|NEP400 K production, late|Tang2026 experiment|
+|Execution context|320 K|350 K|
 |---|---:|---:|
-|Zr–O CN (<2.6 Å)|1.553|2.6, EXAFS fit|
-|Zr–Cl CN (<3.2 Å)|4.250|3.0, EXAFS fit|
-|Density|1.81705 g/cm³, fixed at400 K|2.05 g/cm³, experimental sample|
-|Fitted Zr–O / Zr–Cl distances|See model RDF above|2.23 /2.45 Å|
+|Mean temperature (K)|320.16|349.82|
+|Last−first 50 ps potential energy (meV/atom)|−2.33|−4.45|
+|Production duration (ps)|300|300|
 
-Direct cutoff counts and EXAFS fitted CN differ in definition. All sampled sulfates retain four O neighbours(<2.0 Å). Earlier NPT checks give93.75% of sulfates linked to at least two Zr and2.75 Zr per sulfate; this is local connectivity, not proof of percolation. Modest cutoff changes and20 ps pressure relaxation did not remove the coordination discrepancy.
-
-[Tang2026](https://doi.org/10.1038/s41467-026-69737-x) reports1.5 mS/cm at30 °C and0.33 eV; Figure1 source data instead lists1.4383 mS/cm and0.33052 eV for x=0.5. Keep those source distinctions. The deposited geometry density2.03549 g/cm³ is not the experimental density. Four-temperature transport and its unsuccessful Arrhenius trend are analysed above; correctly weighted total PDF remains outside this completed analysis. Ordinary partial RDF is not substituted for total PDF.
+The 350 K preparation still showed a 2.06% density decrease during the preceding NPT check. Fixed-volume production does not resolve that equilibrium-density uncertainty. **The usable result is partial structural/mechanistic correspondence, but failure so far to reproduce the reference temperature-dependent transport—not a validated NEP activation energy.** The earlier four-temperature and 400 K outputs remain archived, not presented as the latest dataset.
 
 <a id="lps"></a>
 ## 4. Li₃PS₄: a sulfide transferability comparison
@@ -307,7 +282,7 @@ The narrative closes with two separate conclusions. NEP offers substantially low
 
 |Material / item|Current result|Further calculation|
 |---|---|---|
-|LSZC|Four temperatures analysed and compared with published tuned-MACE and experimental series; no valid NEP E_a extracted|NPT follow-up completed; 350 K late density drift remains. Production not submitted.|
+|LSZC|Latest 320/350 K 300 ps MSD, conductivity, RDF and mobility analysed against the paper|No valid NEP E_a; 350 K preparation density uncertainty remains. No new run submitted.|
 |New LZOC|2 fs primary figure/table and direct AIMD D* comparison updated|No further timestep comparison.|
 |Li₃PS₄|Existing transport and local-structure results interpreted against the paper; partial structural agreement does not imply transport reproduction|No new production for the present exploratory comparison.|
 |LiPON|Contact checks complete; persistent N–N mismatch reported as a limitation|No blind extension or DFT.|
@@ -317,7 +292,7 @@ The narrative closes with two separate conclusions. NEP offers substantially low
 
 The completed scope is a paper-facing pretrained-potential comparison, not a claim that every material reproduces experiment or AIMD. No new MD was submitted in this update. Remaining physical limitations are retained as results rather than “fixed” by selecting favourable trajectories.
 
-**Figure policy:**17 core groups, including the two new LSZC paper comparisons. Repeated raw-temperature/pressure grids, near-duplicate RDFs, flat CN traces and redundant fit diagnostics are removed from the master display, not from source data. Replaced exports unique to the previous supplement are deleted; historical images still referenced by older reports remain archived. Git history can restore removed exports. No CSV, trajectory, fit or adverse finding is deleted.
+**Figure policy:** latest LSZC figures replace the old pilot/four-temperature displays in the main narrative. Historical exports remain archived; raw data are unchanged.
 
 Images use PNG/PDF/SVG with editable text, at most two columns and consistent document-width typography. Raw trajectories remain local/on TSUBAME, outside this commit. The≤100-point alert remains a separate monitor, not a live balance in this report.
 
@@ -329,12 +304,12 @@ Four chemical systems, five preparation routes. New and legacy LZOC have the sam
 |Route|Model size|Completed / submitted|Interpretation|
 |---|---|---|---|
 |New LZOC|192: Li42Zr24Cl114O12|340/360/380 K, 300 ps, NHC 2 fs analysed; nested 80/150/300 ps compared|Direct AIMD table comparison available; long-time convergence not established|
-|LSZC|272: Li32Zr32Cl128S16O64|400 K pilot and 320/330/340/350 K, 300 ps series analysed|Sulfate retained, but Zr environment/density and the temperature trend differ from reference|
+|LSZC|272: Li32Zr32Cl128S16O64|Latest 320/350 K 300 ps endpoints analysed; older series archived|Sulfate retained; temperature-dependent transport remains unreproduced|
 |Li₃PS₄|512: Li192P64S256|300/500/700/900 K200 ps production analysed|Transport differs from reference;300 K plateau and900 K host motion remain|
 |LiPON|124: Li47P16O56N5|Preparation,pressure release and paired0.5/0.25 fs checks analysed|Short N–N contacts persist; no long transport prediction|
 |Legacy LZOC|192, same nominal LZOC|600 K detailed comparison,700–900 K MSD/RDF andfour-temperature timing analysed|Efficiency and structural sensitivity, not an accuracy ranking|
 
-Completed job status and completed analysis are distinguished throughout. The four LSZC productions and legacy NPT extensions are now analysed; no new MD or DFT was submitted here.
+The latest LSZC endpoint production and analysis are complete. No new MD or DFT was submitted for this update.
 
 ### Preparation and literature differences
 
@@ -346,7 +321,7 @@ Completed job status and completed analysis are distinguished throughout. The fo
 |LiPON|2000 K10 ps;2000→250 K7 ps;250 K20 ps;250 K1 bar20 ps release;0.5 fs|[Seth2025](https://doi.org/10.1021/acsmaterialsau.4c00117):selected parameters only; NEP replaces NequIP, independent precursor|
 |Legacy LZOC|Earlier candidate3;600/700/800/900 K;600 K50 ps NPT+200 ps NVT|Exploratory workflow; not retrospectively labelled a literature reproduction|
 
-NPT target1 bar=0.0001 GPa; project temperature/pressure coupling periods100/1000 fs unless specified. Production thermo/trajectory intervals generally0.05/0.1 ps. New LSZC array uses10 ps400→target NPT,50 ps target NPT,300 ps NVT;320/330/340/350 K follow the paper's temperature grid, while0.5 fs/272 atoms/NEP differ from3 fs/1088 atoms/tuned MACE. Each temperature starts from the same prepared glass, not independent glass replicas.
+NPT target is 1 bar (0.0001 GPa). Latest LSZC: 320 K uses 150 ps NPT followed by 50 ps NVT equilibration and 300 ps NVT production; 350 K uses 150+50 ps NPT, mean-volume cell preparation, 50 ps NVT equilibration and 300 ps production. Both use 0.5 fs and 100 fs temperature coupling. The older four-temperature preparation is archived and is not the latest protocol.
 
 <a id="methods"></a>
 ## Supporting methods: definitions and units
