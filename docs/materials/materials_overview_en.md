@@ -356,9 +356,13 @@ The 300 K plateau and the 900 K framework motion delimit the useful interpretati
 
 **Li₃PS₄ conclusion:** NEP captures some short-range glass structure but overestimates the reference computational diffusion values. This is a transferability limitation, not evidence that the calculated sample is a better electrolyte. The current evidence supports comparing structure and apparent transport, without converting the high-temperature fit into a room-temperature performance claim.
 
-### Continuation: two fresh thermal preparations
+### Continuation: R1 preparation reviewed; one transport series
 
-Two additional 512-atom preparations have been submitted. They use the same documented precursor but different initial velocities **before melting and cooling**, rather than only repeating production on one finished glass. The purpose is to test preparation sensitivity, not select a value closest to the paper. The existing figures above remain the completed results; these new runs have no analysed result yet.
+Two additional 512-atom preparations use the same documented precursor but different initial velocities **before melting and cooling**. **R1 has completed preparation and its basic structural review; only R1 proceeds to transport. R2 is retained without a second transport series.** This ordering was fixed before inspecting transport results, not selected for agreement with literature. The figures above still show the earlier transport results, not the new R1 series.
+
+R1's final20 ps hold has mean T=300.52 K and mean P=0.00227 GPa. The first/last10 ps mean densities are2.20961/2.20529 g/cm³ (−0.20%), and the corresponding potential-energy difference is+0.299 meV/atom. In100 snapshots from the final10 ps, P–S coordination is4.000 with all sampled P fourfold at2.6 Å cutoff; the minimum periodic distance is1.902 Å. Composition and finite outputs passed. These checks support exploratory continuation, not full structural or transport validation.
+
+R1 transport uses300/500/700/900 K, each with10 ps NPT temperature adjustment,50 ps NPT at1 bar and200 ps NVT production,0.5 fs integration andMTTK100/1000 fs thermal/pressure coupling. This preserves the previous transport protocol for a preparation comparison;300 K diffusion may remain unresolved and900 K host motion must still be checked. No R2 transport is submitted.
 
 |Stage|New preparation setting|Basis|
 |---|---|---|
@@ -433,7 +437,7 @@ The narrative closes with two separate conclusions. NEP offers substantially low
 |---|---|---|
 |LSZC|Completed320/350 K comparison has no valid NEP E_a|Fresh320/330/340/350 K common-cell NVT50+300 ps series submitted; analysis pending.|
 |LZOC|2 fs primary figure/table and direct AIMD D* comparison updated|No further timestep comparison.|
-|Li₃PS₄|Existing transport and local-structure comparison retained|Two fresh 611 ps preparations submitted; structural review before further production.|
+|Li₃PS₄|R1 preparation and basic structure checks completed; prior transport comparison retained|Only R1 continues with300/500/700/900 K transport; new transport results pending.|
 |LiPON|Existing short-contact analysis retained|Two fresh 63 ps preparations submitted; no automatic transport or DFT.|
 |Legacy LZOC|Extra NPT analysis complete, alongside high-temperature structure/motion and runtime comparisons|No additional run.|
 |Weighted total PDF / structure factor|Not performed; partial RDF is not experimental total PDF|Optional separate scattering analysis requiring matched definitions and reference conditions, not a mandatory MD rerun.|
