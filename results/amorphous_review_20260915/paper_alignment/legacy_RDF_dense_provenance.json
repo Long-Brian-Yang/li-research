@@ -1,0 +1,23 @@
+{
+  "reference": "https://github.com/zhyan0603/GPUMDkit/blob/main/Scripts/plt_scripts/plt_rdf.py",
+  "window_ps": [
+    150,
+    200
+  ],
+  "bin_A": 0.05,
+  "smoothing": false,
+  "models": {
+    "MACE": {
+      "frames": 501,
+      "source": "results/LZOC/analysis_20260912/source/mace/900K_R1/production/trajectory.lammpstrj",
+      "sha256": "56a183b7b425090e15f2a48d5aa2bf6838b536ff944342fff101cbf4874f323b",
+      "max_abs_change_from_sparse": 8.588132045907642
+    },
+    "NEP89": {
+      "frames": 501,
+      "source": "results/LZOC/legacy_comparison_20260915/source_900K/production/dump.xyz",
+      "sha256": "c773b6593d699e9e006c8933b44077c7d305acdb340af2c2d10f08d47dab34b5",
+      "max_abs_change_from_sparse": 7.969622185098039
+    }
+  }
+}

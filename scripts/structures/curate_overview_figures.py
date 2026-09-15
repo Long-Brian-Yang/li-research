@@ -159,10 +159,10 @@ def legacy():
     finish(fig,'10_legacy_motion')
     fig,aa=grid(2)
     for m,c,ls in [('MACE',BLUE,'-'),('NEP89',RED,'--')]:
-        a=load(P/f'legacy_{m}_900K_RDF.csv')
+        a=load(P/f'legacy_{m}_900K_RDF_dense.csv')
         for j,ax in enumerate(aa.ravel(),1):ax.plot(a[:,0],a[:,j],color=c,ls=ls,label=m)
     for ax,title in zip(aa.ravel(),['Li–Cl','Li–O','Zr–Cl','Zr–O']):
-        ax.set(title=f'900 K: {title}',xlabel='r (Å)',ylabel='g(r)');ax.legend()
+        ax.set(title=f'900 K: {title}',xlabel='Radius (Å)',ylabel='g(r)',xlim=(0,5));ax.legend(loc='upper left')
     finish(fig,'11_legacy_structure')
 
 def main():
