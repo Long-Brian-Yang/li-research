@@ -1,5 +1,7 @@
 # Materials portfolio — current assessment, 15 September 2026
 
+[New diagnostic figures and detailed English explanations](../../results/amorphous_review_20260915/targeted_diagnostics/report_en.md): LSZC volume/pressure/RDF and LZOC timestep/framework/fit-window comparison. Two figure families, source data and editable PDF/SVG added; no new MD in this plotting update.
+
 **Latest continuation completed:** [Diagnostics8675392.1–2 and results](targeted_diagnostics_20260915.md). LSZC400 K20 ps NPT did not resolve the density/coordination mismatch. LZOC380 K80 ps NHC/0.5 fs changes the10–40 ps apparent D by+12.1% versus2 fs; other windows differ less and with opposite sign. Neither is a validated repair. Earlier no-new-job statements below describe the previous postprocessing stage only.
 
 [Complete latest analysis: 11 new figure families, data, literature comparisons and limits](../../results/amorphous_review_20260915/final_comparisons/report_en.md) · [Japanese](materials_overview_ja.md)

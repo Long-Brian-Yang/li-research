@@ -1,5 +1,7 @@
 # Targeted diagnostic runs / 問題切り分けの追加計算
 
+[Full illustrated English report](../../results/amorphous_review_20260915/targeted_diagnostics/report_en.md) · [図・表付き日本語報告](../../results/amorphous_review_20260915/targeted_diagnostics/report_ja.md)
+
 ## Completed results / 完了結果
 
 Both tasks finished normally; complete trajectories were downloaded locally. The postprocessing checks passed: LSZC200 frames/400 thermodynamic records; LZOC800 frames/1600 records; finite values; identical LZOC starting positions, cell and velocities. The tested MSD helper passed its direct-sum regression test (five existing analysis tests passed).
@@ -16,7 +18,7 @@ The 10–40 ps log–log MSD slopes remain approximately0.56 and0.57, and the fr
 
 [Numerical results and source hashes](../../results/amorphous_review_20260915/targeted_diagnostics/results.json) · [LSZC time series](../../results/amorphous_review_20260915/targeted_diagnostics/LSZC_structure.csv) · [LZOC0.5 fs MSD](../../results/amorphous_review_20260915/targeted_diagnostics/NHC_0.5fs_MSD.csv) · [LZOC2 fs MSD](../../results/amorphous_review_20260915/targeted_diagnostics/NHC_2fs_MSD.csv) · [Reproducible analysis](../../scripts/structures/analyze_targeted_diagnostics.py)
 
-The following sections preserve the submission plan; their pending-status statements are superseded by the completed results above.
+The following sections record the executed settings. Completion, structural checks and diagnostic comparisons are finished; quantitative reproduction and long-time transport convergence remain unestablished.
 
 ## English
 
@@ -35,7 +37,7 @@ LZOC starts from `transport_380K_8674278/equil/restart.xyz` (SHA256 `2006cc9502d
 
 LiPON short N–N contacts and Li₃PS₄ network-component differences remain recorded limitations. No atom deletion, trajectory substitution, fitted target rescaling, DFT or blind production extension was performed. The legacy LZOC route remains archived.
 
-Outputs are fresh directories below the remote repository's `runs/amorphous/`: `LSZC/nep89/packed272_npt400_8675392/` and `LZOC_Hussain2024/nep89/nhc_dt05_380K_8675392/`. Scientific follow-up is pending; submission must not be reported as a successful repair.
+Outputs are fresh directories below the remote repository's `runs/amorphous/`: `LSZC/nep89/packed272_npt400_8675392/` and `LZOC_Hussain2024/nep89/nhc_dt05_380K_8675392/`. The diagnostic comparisons are complete and linked above; a successful repair is not demonstrated.
 
 ## 日本語
 
@@ -44,7 +46,7 @@ Outputs are fresh directories below the remote repository's `runs/amorphous/`: `
 - **LSZC、272原子**：既存400 K保持の最終構造から、400 K・1 barで20 psのNPT MTTKを実施。時間刻み0.5 fs、温度／圧力結合周期100／1000 fs。固定セルの影響を調べ、密度・圧力・エネルギーのブロック変化、Zr–O／Zr–Cl RDFと配位、S–O四配位を比較する。実験値に合わせた密度調整はしない。
 - **新LZOC、192原子**：従来のNHC／2 fs計算と同じ380 K初期状態から、NVT Nosé–Hoover鎖・0.5 fs・80 psを実施。温度結合は100 fsを維持し、時間刻みだけを変更する。同じ時間範囲のMSD・解析区間感度・エネルギーを比較する。単一軌跡の対照から収束やEaの妥当性を断定しない。
 
-熱力学量は0.05 ps、軌跡は0.1 ps、restartは1 ps間隔で出力する。正常終了と有限値の確認は基本検査であり、平衡の証明ではない。結果の解析は未完了。
+熱力学量は0.05 ps、軌跡は0.1 ps、restartは1 ps間隔で出力した。正常終了と有限値の確認は基本検査であり、平衡の証明ではない。診断結果の解析と図表は完了し、上記報告に整理した。
 
 LiPONの短いN–N接触とLi₃PS₄のネットワーク差は限界として保持する。原子削除、軌跡の差し替え、数値の再スケーリング、DFT、根拠のない長時間延長は実施しない。旧LZOCも追加しない。
 

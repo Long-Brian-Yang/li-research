@@ -1,5 +1,7 @@
 # 材料研究の全体整理 — 2026年9月15日の最新評価
 
+[追加診断の図表・日本語解説](../../results/amorphous_review_20260915/targeted_diagnostics/report_ja.md)：LSZC体積／圧力／RDFと新LZOC時間刻み／骨格運動／解析区間を比較。2種類の図、源データ、編集可能PDF／SVGを追加した。今回の図表更新では新規MDなし。
+
 **最新の継続計算は完了：** [8675392.1–2の結果](targeted_diagnostics_20260915.md)。LSZC400 K20 ps NPT後も密度・配位差は解消されない。新LZOC380 K80 ps NHC／0.5 fsでは10–40 psの見かけのDが2 fsより12.1%高いが、短い区間では小さな負の差となる。修復・収束を断定しない。以下の「新規投入なし」は前回の後処理段階を指す。
 
 [最新解析：追加11種類の図・数値・文献比較・限界](../../results/amorphous_review_20260915/final_comparisons/report_ja.md) · [English](materials_overview_en.md)
