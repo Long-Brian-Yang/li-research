@@ -83,6 +83,8 @@ Average pressure near the target does not establish structural equilibration. En
 <a id="lzoc"></a>
 ## 2. Reconstructed LZOC: the primary AIMD comparison
 
+**Additional dynamics repeats submitted on 15 September 2026:** array **8677221.1–4**, with tasks 1/2 at 340 K (seeds 34009151/34009152) and tasks 3/4 at 360 K (seeds 36009151/36009152). Each uses the original temperature-specific 192-atom starting coordinates and fixed cell, NEP89, a 2 fs step and NVT Nosé–Hoover-chain coupling of 50 steps (100 fs). Existing velocities are removed before seeded initialization. A separate 50 ps NVT equilibration precedes 300 ps production; this extra equilibration duration is our choice, not a verified paper parameter. These are velocity-seed repeats, not independently prepared glasses. All repeats will be analysed consistently and retained, including unfavourable results; existing results are not overwritten. Submission is confirmed, while completion and analysis remain pending.
+
 ### Literature comparison using the completed 300 ps series
 
 Jobs 8676684.1–3 completed 300 ps at 340/360/380 K, with 192 atoms, 2 fs and NVT Nosé–Hoover-chain coupling of 100 fs. Each rerun starts from its original input; the old 80 ps trajectories are preserved, not concatenated. These are not independent glass replicas.
