@@ -272,6 +272,20 @@ The former12-panel grid is replaced by a readable900 K representative four-pair 
 <a id="remaining"></a>
 ## Remaining work and source record
 
+### Paper-aligned priorities: checked 15 September 2026
+
+Live TSUBAME accounting confirms LSZC tasks 8676216.1–4 all ended with failed=0 and exit_status=0 (last completion 14:31:35 JST). Each has a 300 ps completion marker and 6000 production thermo records. Earlier submission statuses above are superseded: production is complete, analysis is pending. No new job was submitted in this check.
+
+|Priority / material|Necessary work against the reference|Additional MD now?|
+|---|---|---|
+|1. LSZC|Analyse the completed 320/330/340/350 K trajectories for MSD, D(T), conditional conductivity and justified E_a; compare Tang's temperature-resolved source data before the 303.15 K experimental anchor. Include density/coordination differences and the existing Li–O/mobility association.|No. Extend only if the existing trajectories cannot support the desired transport estimate.|
+|2. New LZOC|Use the completed 2 fs series against Hussain's tracer D*. The current figure/table still needs removal of the 0.5 fs control from the primary display. Compare Li/Cl motion and local structure; do not confuse local anion vibration with long-range diffusion or tracer D* with charge D.|No further timestep comparison. Keep preparation, atom-count and potential differences explicit.|
+|3. Li₃PS₄|Connect existing transport/structure differences to Chen's DeePMD glass results, not call that reference AIMD/experiment. The 300 K plateau limits conductivity claims; the 293.15 K experimental value is not an exact temperature match.|No immediate new run. Longer room-temperature sampling is conditional on a quantitative room-temperature claim.|
+|4. LiPON|Explain persistent short N–N contacts and reference-structure mismatch as a pretrained-potential limitation, not successful reproduction.|No blind extension or DFT; no transport claim from the unresolved structure.|
+|5. Legacy LZOC|Analyse already completed extra NPT trajectories if retaining the density-relaxation discussion; keep efficiency/high-temperature comparison supplementary.|No new run.|
+
+Weighted total PDF/structure-factor comparison is optional and needs suitable reference data and scattering definitions, not new production by default. Independent-glass statistics are not required for this exploratory single-structure comparison, but their absence remains a limitation. Numerical disagreement alone is not a reason to rerun or reselect trajectories.
+
 |Item|Remaining work|
 |---|---|
 |LSZC320/330/340/350 K|Retrieve/check array8676216 outputs, then compare D(T),conditional σ andE_a; no completed result claimed here|
