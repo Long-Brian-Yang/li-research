@@ -7,6 +7,8 @@ Japanese Markdown. Source data remain in results; no trajectories belong here.
 - 01: preview_lzoc_closest.py (exploratory selection disclosed in methods).
 - 05–11 and 14–17: curate_overview_figures.py.
 - 18–20: analyze_lszc_endpoints.py (plot() redraws saved analysis).
+- 21–22: analyze_lipon_repeats.py (matched preparation stability,
+  coordination motifs and partial RDFs).
 
 Historical 02–04 and 12–13 exports and the older 01 dataset remain outside this
 folder. Historical reports keep their existing links. Migration changes locations,

@@ -394,21 +394,54 @@ Each preparation is 611 ps with 0.5 fs integration. GPUMD uses MTTK, isotropic 1
 <a id="lipon"></a>
 ## 5. LiPON: limits of applicability
 
-LiPON provides the boundary case: can the same pretrained potential maintain a credible local environment before we interpret diffusion? Persistent short N–N contacts limit that claim. We therefore report the structural discrepancy rather than promote this trajectory to a reliable transport prediction.
+LiPON tests whether a general pretrained potential can preserve the local phosphate–nitrogen network needed before Li transport is interpreted. The expanded comparison shows that the earlier short N–N contact is preparation-dependent: it recurs in two thermal histories but is absent in a third. This makes LiPON a useful transferability test rather than a contact-only failure case.
 
 ### Background and literature question
 
-*Investigating Ionic Diffusivity in Amorphous LiPON using Machine-Learned Interatomic Potentials* develops a NequIP model for LiPON using a DFT-based training dataset and studies bulk and interface transport. Its relevance here is the need for a credible local chemical environment before interpreting diffusivity. Replacing that material-specific potential with NEP89 is an applicability test, not a reproduction of its trained model. [Seth et al., 2025](https://doi.org/10.1021/acsmaterialsau.4c00117)
+Seth et al. trained a material-specific NequIP potential on 13,454 DFT configurations and generated amorphous Li2.94PO3.5N0.31. Their central structural result is that N occupies both nonbridging apical and bridging sites in a network containing PO4, PO3N and condensed phosphate units; they then evaluated bulk Li diffusivity and conductivity from 300 to 900 K. [Seth et al., 2025; DOI: 10.1021/acsmaterialsau.4c00117](https://doi.org/10.1021/acsmaterialsau.4c00117)
 
-Our 124-atom model contains only five N atoms. A short contact involving two N atoms therefore affects a substantial part of the represented nitrogen environment, rather than being a negligible isolated feature. The present comparison stops at this structural question; it does not test the paper's Li-metal interface or claim agreement with bulk transport.
+An independent experimental–computational reference combined AIMD with neutron pair-distribution and infrared measurements and likewise assigned N to apical and bridging environments. This is a stronger structural benchmark than a generic partial RDF alone. [Lacivita et al., 2018; DOI: 10.1021/jacs.8b05192](https://doi.org/10.1021/jacs.8b05192)
+
+Our composition, Li47P16O56N5 = Li2.9375PO3.5N0.3125, closely matches Seth's bulk model. The potential and atomic realization do not: NEP89 replaces the LiPON-specific NequIP model, and the substitution arrangement was generated independently. The present work therefore asks which literature motifs survive this transfer. It does not reproduce the Li|LiPON interfaces.
 
 ### Precursor construction and scope of MD
 
-A 16-atom Li₃PO₄ source cell was repeated 2×2×2. Five O atoms were replaced by N, three further O atoms and one Li atom were removed, yielding **Li47P16O56N5 (124 atoms)** with zero formal charge under Li⁺/P⁵⁺/O²⁻/N³⁻ counting. The substitutions are an independent seeded realization; formal charge balance does not establish the correct amorphous bonding network.
+A 16-atom Li₃PO₄ source cell was repeated 2×2×2. Five O atoms were replaced by N, and three further O atoms and one Li atom were removed, yielding **124 atoms** and formal charge neutrality under Li⁺/P⁵⁺/O²⁻/N³⁻ counting. The same precursor topology was used for three preparations; their velocities were assigned before melting, so the comparison tests thermal-history sensitivity rather than independent substitution patterns.
 
-The executed NEP preparation consists of 2000 K for 10 ps, cooling to 250 K over 7 ps, a 20 ps hold and a further 20 ps pressure-release stage at 250 K and 1 bar, using 0.5 fs integration. This is not the author's NequIP trajectory or a full reproduction of its protocol. No long production transport series is interpreted here.
+|Stage|Our GPUMD/NEP89 setting|Relation to literature|
+|---|---|---|
+|Position check|FIRE to 0.01 eV/Å; 300 K NVT, 1 ps|Project numerical check|
+|Heating|300→2000 K, 5 ps NVT|Project ramp|
+|Melt hold|2000 K, 10 ps NVT|Matched to the recorded Seth protocol|
+|Quench|2000→250 K, 7 ps NVT (250 K/ps)|Matched to the recorded Seth protocol|
+|Low-temperature hold|250 K, 20 ps NVT|Project structural sampling|
+|Cell release|250 K, 1 bar, 20 ps NPT|Project stress check|
 
-**Reading the contact figure:** pressure release tests bulk stress relaxation; the paired timestep branches test whether the short contact disappears when integration is refined. Neither test determines chemical bond identity. The persistent N–N distance is therefore reported as a limitation in structural interpretation, not repaired numerically or converted into a conductivity claim. This material tests the boundary of the pretrained NNP's use under the chosen preparation conditions.
+All stages used 0.5 fs integration, with MTTK temperature/pressure periods of 100/1000 fs. Seth used the material-specific NequIP workflow; therefore agreement in temperature history does not make the NEP trajectory an exact reproduction.
+
+### Reproducibility of preparation and local environments
+
+Preparations A–C have identical composition and substitution pattern. A is the original trajectory; B and C use different pre-melt velocities. Results below use the matched final 10 ps of their 250 K, 1 bar stages. The 2.1 Å P–O/P–N and 1.6 Å N–N values are geometric analysis cutoffs, not bond-order definitions.
+
+![LiPON preparation stability and local coordination](figures/21_LiPON_preparation_structure.png)
+
+|Preparation|⟨T⟩ (K)|⟨P⟩ (GPa)|⟨ρ⟩ (g/cm³)|Δρ, last−first 5 ps|Minimum N–N (Å)|Frames with N–N <1.6 Å|Apical / bridging / three-P N|
+|---|---:|---:|---:|---:|---:|---:|---:|
+|A|248.70|0.0061|2.5091|+0.22%|1.270|100%|60% / 40% / 0%|
+|B|249.66|0.0228|2.4955|+0.60%|2.566|0%|60% / 40% / 0%|
+|C|251.61|0.0063|2.5210|+0.08%|1.311|100%|60% / 20% / 20%|
+
+All three cells remain close to 250 K and near zero mean pressure, and their final-stage density changes are below 0.6%. These global observables do not distinguish the local outcomes. A and C retain a short N–N contact throughout every late frame, whereas B does not. B also reproduces the literature-level qualitative requirement that N occurs in both apical and bridging environments without a three-P N site. Because five N atoms are present, the reported fractions occur in 20% increments and should not be interpreted as precise bulk population estimates.
+
+The phosphorus environments provide a second, independent check. PO4 and PO3N account for 87.5% of P atom–frames in A, 93.75% in B and 87.5% in C. B's remaining 6.25% is geometrically PO2N2; A and C each contain 12.5% outside the listed tetrahedral motifs. Thus B is not declared structurally exact, but it has the cleanest combination of no short N–N contact, apical-plus-bridging N and predominantly tetrahedral P units.
+
+![LiPON partial radial distribution functions](figures/22_LiPON_partial_RDF.png)
+
+The P–O and Li–O RDFs are similar across all three preparations, indicating that the oxygen-dominated framework is less sensitive to thermal history than the nitrogen environment. The P–N first-shell peak changes substantially, consistent with the discrete differences in N coordination. Li–N varies mainly beyond the first peak. These are partial RDFs from our trajectories; they are not neutron-weighted total PDFs and are not plotted as a quantitative replacement for the Lacivita experiment.
+
+### Numerical diagnosis of the original contact
+
+The earlier timestep test remains useful as a numerical control for Preparation A, but it is no longer the whole LiPON result. Pressure release tests bulk stress relaxation, and the paired timestep branches test whether finer integration removes the contact. Neither determines chemical bond identity.
 
 ![LiPON contact diagnosis](figures/08_LiPON_contacts.png)
 
@@ -421,46 +454,30 @@ The executed NEP preparation consists of 2000 K for 10 ps, cooling to 250 K over
 |Fraction below1.6 Å|99%|99%|
 |Mean temperature (K)|2024.48|2004.80|
 
-The1.6 Å line is a screening cutoff, not a universal bond criterion. Late P–O/P–N counts(<2.1 Å)=3.688/0.438;2/5 N atoms have a short N neighbour. Formation was traced to2.2–2.3 ps of the original2000 K hold. A distance does not identify chemical charge/bond order. Retain this limitation case; no DFT or long production is proposed.
+The 1.6 Å line is a screening cutoff, not a universal bond criterion. The contact formed at 2.2–2.3 ps of the original 2000 K hold. Its persistence at both timesteps shows that simple timestep refinement did not repair A; its absence in B shows that it is not inevitable for this composition under every thermal history.
 
 ### Physical interpretation and conclusion
 
-Pressure is a cell-averaged observable; an acceptable average does not uniquely determine the local bonding environment. The persistence of the contact after pressure release, and in both timestep branches, shows that these two changes did not remove it. It does not prove that all numerical or preparation effects have been excluded.
+Pressure and density are cell-averaged and cannot certify local chemistry. Conversely, a short distance alone cannot establish a particular reaction. The three-preparation result supports a narrower interpretation: NEP89 preserves the oxygen framework reproducibly, but its nitrogen topology is sensitive to the melt trajectory.
 
-Conversely, a short distance alone cannot establish an incorrect chemical species. Without an independent local-environment reference for the affected configuration, the defensible statement is that the contact remains unresolved—not that a specific reaction has been demonstrated.
-
-**LiPON conclusion:** retain the completed structural analysis as the boundary of the present NEP assessment. Reporting a transport coefficient from this model would add numerical output without resolving the underlying interpretation. No new production or DFT is implied by this conclusion.
-
-### Continuation: testing whether the contact recurs
-
-Two new 124-atom thermal preparations have been submitted from the original charge-balanced precursor with different initial velocities. The atomic substitution pattern is unchanged, so this tests thermal-history sensitivity, not all possible LiPON configurations. The earlier short-contact structure is neither overwritten nor silently discarded.
-
-|Stage|New preparation setting|Basis|
-|---|---|---|
-|Position relaxation and short check|FIRE 0.01 eV/Å; 300 K NVT, 1 ps|Project numerical check|
-|Heating|300→2000 K, 5 ps NVT|Project ramp|
-|High-temperature hold|2000 K, 10 ps NVT|Previously recorded Seth Methods|
-|Cooling|2000→250 K, 7 ps NVT (250 K/ps)|Previously recorded Seth Methods|
-|Hold and pressure release|250 K, 20 ps NVT + 20 ps NPT at 1 bar|Project checks|
-
-Each run is 63 ps. The 0.5 fs timestep, MTTK 100 fs thermal coupling and 1000 fs pressure coupling are our settings, not a claim of exact NequIP reproduction ([DOI: 10.1021/acsmaterialsau.4c00117](https://doi.org/10.1021/acsmaterialsau.4c00117)). Inspect the full N–N contact history, P–O/P–N environment, density and energy before considering transport. A short distance alone is not a chemical verdict; persistence across preparations must be reported. If neither structure supports a credible interpretation, retain that model limitation rather than keep generating seeds until one appears favourable. No DFT or automatic long production is included.
+**LiPON conclusion:** Preparation B is the defensible working structure for an exploratory bulk-transport series because it passes the predefined structural checks without selecting on diffusivity. A and C remain reported as transferability failures rather than being deleted. The next comparison should use Seth's 300–900 K temperatures and show complete Li MSD, D(T), framework MSD and Arrhenius behaviour; any numerical mismatch remains a NEP89 result. Until that production is completed, this section establishes structural readiness, not reproduced conductivity.
 
 <a id="remaining"></a>
 ## 6. Synthesis: reproduction, deviations and next steps
 
-The narrative closes with two separate conclusions. NEP offers substantially lower cost in the measured workflow, which motivated its use; the literature comparisons do not establish uniform predictive accuracy. LZOC underestimates the AIMD tracer diffusion values, LSZC fails to reproduce the temperature trend, Li₃PS₄ shows partial local-structure agreement without quantitative transport agreement, and LiPON retains a local-contact discrepancy. These material-dependent outcomes, not runtime alone, define the present applicability limits. The LSZC NPT follow-up is complete; a late density decrease at 350 K prevents treating both endpoints as equilibrated.
+The narrative closes with two separate conclusions. NEP offers substantially lower cost in the measured workflow, which motivated its use; the literature comparisons do not establish uniform predictive accuracy. LZOC underestimates the AIMD tracer diffusion values, LSZC fails to reproduce the temperature trend, Li₃PS₄ shows partial local-structure agreement without quantitative transport agreement, and LiPON shows preparation-sensitive nitrogen topology. These material-dependent outcomes, not runtime alone, define the present applicability limits. The LSZC NPT follow-up is complete; a late density decrease at 350 K prevents treating both endpoints as equilibrated.
 
 |Material / item|Current result|Further calculation|
 |---|---|---|
 |LSZC|Completed320/350 K comparison has no valid NEP E_a|Two320/330/340/350 K common-cell NVT50+300 ps series submitted; analysis pending.|
 |LZOC|2 fs primary figure/table and direct AIMD D* comparison updated|No further timestep comparison.|
 |Li₃PS₄|R1 preparation and basic structure checks completed; prior transport comparison retained|Only R1 continues with300/500/700/900 K transport; new transport results pending.|
-|LiPON|Existing short-contact analysis retained|Two fresh 63 ps preparations submitted; no automatic transport or DFT.|
+|LiPON|Three preparations analysed; B has no short N–N contact and retains apical plus bridging N|Use B for one literature-temperature bulk-transport series; no DFT.|
 |Legacy LZOC|Extra NPT analysis complete, alongside high-temperature structure/motion and runtime comparisons|No additional run.|
 |Weighted total PDF / structure factor|Not performed; partial RDF is not experimental total PDF|Optional separate scattering analysis requiring matched definitions and reference conditions, not a mandatory MD rerun.|
 |Independent-glass uncertainty|Not assessed; one prepared glass and temperature branches|Not claimed as replica statistics.|
 
-The completed scope is a paper-facing pretrained-potential comparison, not a claim that every material reproduces experiment or AIMD. Four preparation runs are newly submitted; their results are pending. Remaining physical limitations are retained rather than “fixed” by selecting favourable trajectories.
+The completed scope is a paper-facing pretrained-potential comparison, not a claim that every material reproduces experiment or AIMD. The three LiPON preparations are complete and analysed; the transport calculations still identified as pending in the table remain pending. Physical limitations are retained rather than “fixed” by selecting favourable trajectories.
 
 **Figure policy:** latest LSZC figures replace the old pilot/four-temperature displays in the main narrative. Historical exports remain archived; raw data are unchanged.
 
@@ -476,10 +493,10 @@ Four chemical systems, five preparation routes. LZOC and legacy LZOC have the sa
 |LZOC|192: Li42Zr24Cl114O12|340/360/380 K, 300 ps, NHC 2 fs analysed; nested 80/150/300 ps compared|Direct AIMD table comparison available; long-time convergence not established|
 |LSZC|272: Li32Zr32Cl128S16O64|Latest 320/350 K 300 ps endpoints analysed; older series archived|Sulfate retained; temperature-dependent transport remains unreproduced|
 |Li₃PS₄|512: Li192P64S256|300/500/700/900 K200 ps production analysed|Transport differs from reference;300 K plateau and900 K host motion remain|
-|LiPON|124: Li47P16O56N5|Preparation,pressure release and paired0.5/0.25 fs checks analysed|Short N–N contacts persist; no long transport prediction|
+|LiPON|124: Li47P16O56N5|Three preparations, pressure release, RDF, coordination and paired-timestep control analysed|Nitrogen topology is preparation-sensitive; B is structurally suitable for exploratory transport|
 |Legacy LZOC|192, same nominal LZOC|600 K detailed comparison,700–900 K MSD/RDF andfour-temperature timing analysed|Efficiency and structural sensitivity, not an accuracy ranking|
 
-The latest LSZC endpoint production and analysis are complete. New Li₃PS₄/LiPON preparation MD is described above; no DFT is submitted.
+The latest LSZC endpoint production and analysis are complete. Li₃PS₄ transport and all three LiPON preparation trajectories are analysed above; no DFT is submitted.
 
 ### Preparation and literature differences
 
@@ -529,6 +546,7 @@ These references identify the evidence used in this review. Citing a preparation
 |Chen et al., 2025|Li₃PS₄: glass structure and DeePMD transport benchmark, not experimental D|[10.1038/s41467-025-56322-x](https://doi.org/10.1038/s41467-025-56322-x)|
 |Mirmira et al., 2021|Li₃PS₄: separate experimental-literature conductivity reference at 293.15 K|[10.1039/D1TA02754A](https://doi.org/10.1039/D1TA02754A)|
 |Seth et al., 2025|LiPON: composition/preparation context and material-specific NequIP study; our NEP test is distinct|[10.1021/acsmaterialsau.4c00117](https://doi.org/10.1021/acsmaterialsau.4c00117)|
+|Lacivita et al., 2018|LiPON: AIMD structure validated against neutron PDF and infrared spectroscopy; apical and bridging N benchmark|[10.1021/jacs.8b05192](https://doi.org/10.1021/jacs.8b05192)|
 
 The MACE–NEP runtime and legacy density comparison are our simulation results, not values taken from these papers. Their provenance is retained below.
 

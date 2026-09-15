@@ -1,0 +1,74 @@
+{
+  "Preparation A": {
+    "mean_temperature_K": 248.69873880195001,
+    "mean_pressure_GPa": 0.006139206894497885,
+    "density_g_cm3": 2.5090783463153095,
+    "density_last5_minus_first5_percent": 0.219938232283301,
+    "PE_last5_minus_first5_meV_atom": -0.22717363225943643,
+    "late_NN_min_A": 1.2700070047773129,
+    "late_NN_maximum_of_frame_minima_A": 1.3470273602674265,
+    "fraction_late_frames_NN_below_1p6A": 1.0,
+    "N_P_neighbour_fraction": {
+      "0": 0.0,
+      "1": 0.6,
+      "2": 0.4,
+      "3": 0.0
+    },
+    "P_coordination_motif_fraction": {
+      "P-O4_N0": 0.6875,
+      "P-O3_N1": 0.1875,
+      "P-O3_N0": 0.0,
+      "P-O2_N1": 0.0,
+      "P-O2_N2": 0.0,
+      "Other": 0.125
+    }
+  },
+  "Preparation B": {
+    "mean_temperature_K": 249.65893347405,
+    "mean_pressure_GPa": 0.02275771217262652,
+    "density_g_cm3": 2.4955201610196753,
+    "density_last5_minus_first5_percent": 0.5979663548586034,
+    "PE_last5_minus_first5_meV_atom": 0.7165080032249804,
+    "late_NN_min_A": 2.5661548392919182,
+    "late_NN_maximum_of_frame_minima_A": 2.8538930475286777,
+    "fraction_late_frames_NN_below_1p6A": 0.0,
+    "N_P_neighbour_fraction": {
+      "0": 0.0,
+      "1": 0.6,
+      "2": 0.4,
+      "3": 0.0
+    },
+    "P_coordination_motif_fraction": {
+      "P-O4_N0": 0.625,
+      "P-O3_N1": 0.3125,
+      "P-O3_N0": 0.0,
+      "P-O2_N1": 0.0,
+      "P-O2_N2": 0.0625,
+      "Other": 0.0
+    }
+  },
+  "Preparation C": {
+    "mean_temperature_K": 251.60839583395003,
+    "mean_pressure_GPa": 0.006260913660416085,
+    "density_g_cm3": 2.5209692979801592,
+    "density_last5_minus_first5_percent": 0.08347042208551869,
+    "PE_last5_minus_first5_meV_atom": 0.8571311395133563,
+    "late_NN_min_A": 1.3114569203449593,
+    "late_NN_maximum_of_frame_minima_A": 1.412469390980186,
+    "fraction_late_frames_NN_below_1p6A": 1.0,
+    "N_P_neighbour_fraction": {
+      "0": 0.0,
+      "1": 0.6,
+      "2": 0.2,
+      "3": 0.2
+    },
+    "P_coordination_motif_fraction": {
+      "P-O4_N0": 0.625,
+      "P-O3_N1": 0.25,
+      "P-O3_N0": 0.0,
+      "P-O2_N1": 0.0,
+      "P-O2_N2": 0.0,
+      "Other": 0.125
+    }
+  }
+}

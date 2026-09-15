@@ -1,6 +1,6 @@
 {
   "operation": "Location consolidation only; image bytes preserved. Historical sources retained for earlier reports.",
-  "figure_groups": 15,
+  "figure_groups": 17,
   "assets": [
     {
       "file": "09_legacy_cost_density.png",
@@ -226,6 +226,36 @@
       "file": "08_LiPON_contacts.svg",
       "sha256": "798e984f79950c29f820301c822034d2258b09cfe527ed683b177058256144d4",
       "historical_source": "results/plots/amorphous/08_LiPON_contacts.svg"
+    },
+    {
+      "file": "21_LiPON_preparation_structure.png",
+      "sha256": "d2f0c076fb7b6302eed3c0bc1e55ecdb71b5f29fc3b90d03077800c9555a369f",
+      "source": "scripts/structures/analyze_lipon_repeats.py"
+    },
+    {
+      "file": "21_LiPON_preparation_structure.pdf",
+      "sha256": "6c1bf6e6dee10e1b28b4654d1963a2d06fea6130ca2b417c63994474e033ec6c",
+      "source": "scripts/structures/analyze_lipon_repeats.py"
+    },
+    {
+      "file": "21_LiPON_preparation_structure.svg",
+      "sha256": "6be10f237da9427179dd427affec9c9977ee78e4ae4252a9ddb19d68ba322004",
+      "source": "scripts/structures/analyze_lipon_repeats.py"
+    },
+    {
+      "file": "22_LiPON_partial_RDF.png",
+      "sha256": "6545a95c610708aabcedf51874a06dba6cfc00884b46b69df988b694dc47af92",
+      "source": "scripts/structures/analyze_lipon_repeats.py"
+    },
+    {
+      "file": "22_LiPON_partial_RDF.pdf",
+      "sha256": "7f83e370e051821b98f3512f60c1a4f01c14751b271f3d805949c47c24b46e2f",
+      "source": "scripts/structures/analyze_lipon_repeats.py"
+    },
+    {
+      "file": "22_LiPON_partial_RDF.svg",
+      "sha256": "1b156f91eac31966c27758ebad15df53707c635b573e4f548d793c8d3e6e3f89",
+      "source": "scripts/structures/analyze_lipon_repeats.py"
     }
   ]
 }
