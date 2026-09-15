@@ -1,0 +1,61 @@
+{
+  "Li3PS4_CPU_GPU_max_abs_eVA": 5.468957931997753e-05,
+  "LiPON_CPU_GPU_max_abs_eVA": 7.817340842120046e-05,
+  "Li3PS4_CP2K_3000K": {
+    "frames": 12,
+    "component_MAE_eVA": 0.2363161301820681,
+    "component_RMSE_eVA": 0.3335229519980802,
+    "reference_component_RMS_eVA": 1.1071243782770095,
+    "elements": {
+      "Li": {
+        "component_MAE_eVA": 0.12360823568213114,
+        "component_RMSE_eVA": 0.15766636244043586,
+        "reference_component_RMS_eVA": 0.6244009235518412
+      },
+      "P": {
+        "component_MAE_eVA": 0.44656907756952946,
+        "component_RMSE_eVA": 0.5673158160562602,
+        "reference_component_RMS_eVA": 1.8053164911294648
+      },
+      "S": {
+        "component_MAE_eVA": 0.26828381421015546,
+        "component_RMSE_eVA": 0.3512396601299932,
+        "reference_component_RMS_eVA": 1.1594177351865957
+      }
+    }
+  },
+  "LiPON_VASP_Li50P16O62N2": {
+    "frames": 12,
+    "component_MAE_eVA": 0.2790631800959656,
+    "component_RMSE_eVA": 0.4301246883539771,
+    "reference_component_RMS_eVA": 1.3596514524440781,
+    "elements": {
+      "Li": {
+        "component_MAE_eVA": 0.18041880986729783,
+        "component_RMSE_eVA": 0.2360430617015311,
+        "reference_component_RMS_eVA": 0.7063039299474067
+      },
+      "N": {
+        "component_MAE_eVA": 0.3826923198793476,
+        "component_RMSE_eVA": 0.4877676527581771,
+        "reference_component_RMS_eVA": 1.515534827210371
+      },
+      "O": {
+        "component_MAE_eVA": 0.26422063386248135,
+        "component_RMSE_eVA": 0.3722182124225409,
+        "reference_component_RMS_eVA": 1.374340076561628
+      },
+      "P": {
+        "component_MAE_eVA": 0.6318880612423814,
+        "component_RMSE_eVA": 0.8731915099658378,
+        "reference_component_RMS_eVA": 2.419730816959593
+      }
+    }
+  },
+  "hashes": {
+    "/tmp/nep89_validation.txt": "75168ece02e840e4a32644f982b78d43cba697f5b64b4c8134ab66c7a8c28be1",
+    "/tmp/lips_force.raw": "55b22bdf2e5b20aca38c6703ab41305451ad1e7a2ef4eb57f41612e93cd89d2c",
+    "/tmp/lipon_complete.7z": "3682ba9a34ab4ffae8020166f9c12ce5a0210bcf2a2c333016411361a93de3cc"
+  },
+  "limitations": "Li3PS4: 12 frames of same-composition 3000 K CP2K PBE-D3 training data, not room-temperature glass. LiPON: 12 evenly spaced frames of Li50P16O62N2 VASP data, NOT target Li47P16O56N5. No universal acceptance threshold. CPU evaluation cross-checked against actual GPUMD output."
+}

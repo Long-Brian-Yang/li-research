@@ -1,0 +1,179 @@
+{
+  "Li3PS4": {
+    "n_atoms": 512,
+    "relaxation_samples": 400,
+    "relaxation_mean": {
+      "T_K": 298.6557550329,
+      "PE_eV_atom": -4.502025176201662,
+      "P_GPa": -0.00012235596261628344,
+      "rho_g_cm3": 2.2130494208823777
+    },
+    "relaxation_SD_not_SE": {
+      "T_K": 10.76252182698096,
+      "PE_eV_atom": 0.0015156363637518118,
+      "P_GPa": 0.18228882721868353,
+      "rho_g_cm3": 0.009733145946854146
+    },
+    "last_minus_first_5ps_block": {
+      "T_K": 0.7561343048997173,
+      "PE_eV_atom": -7.002515429643807e-05,
+      "P_GPa": -0.0027087573032514656,
+      "rho_g_cm3": 0.001231588246318971
+    },
+    "PE_slope_eV_atom_ps": -1.987634309695347e-05,
+    "initial_density_g_cm3": 1.8532642364677774,
+    "minimum_distance_relaxation_A": 1.9021763933719684,
+    "pairs": {
+      "P-S": {
+        "cutoff_A": 2.6,
+        "initial_mean_CN": 4.0,
+        "late_mean_CN": 4.0,
+        "late_CN_distribution": {
+          "4": 1.0
+        }
+      },
+      "Li-S": {
+        "cutoff_A": 3.2,
+        "initial_mean_CN": 4.0,
+        "late_mean_CN": 5.365625,
+        "late_CN_distribution": {
+          "3": 0.0005208333333333333,
+          "4": 0.08541666666666667,
+          "5": 0.471875,
+          "6": 0.4322916666666667,
+          "7": 0.009895833333333333
+        }
+      },
+      "P-P": {
+        "cutoff_A": 4.0,
+        "initial_mean_CN": 0.0,
+        "late_mean_CN": 0.15,
+        "late_CN_distribution": {
+          "0": 0.85,
+          "1": 0.15
+        }
+      }
+    },
+    "P_initial_top20_order_mean": 0.7230241499262503,
+    "P_late_same_top20_order_mean": 0.034589716464223125,
+    "melt_endpoint_MIC_displacement2_A2": {
+      "Li": 130.61266148532852,
+      "P": 109.5749057792253,
+      "S": 119.41731630108455
+    },
+    "hashes": {
+      "smoke/dump.xyz": "c1f1d759a1379a6fa37e9b0084549a641991119c5e813a0c0d95e9b3ac995396",
+      "smoke/thermo.out": "7c4fc76d58716189cb42ae81f519772617033936d526b00d10fa98705f10f5b3",
+      "smoke/model.xyz": "8976c5ee5a0d89ea15e817c95afef9c4cda4c4dbd5a8980febe1e50831054e48",
+      "quench/dump.xyz": "52ac947cc25f2986a277a2a0bc0ff38fdbad6800c45d23498bdb6cc1b3bf46b5",
+      "quench/thermo.out": "a4d951d00534149c62cb1fbe1a81365af625644a82bbc8ce1355a42fbab4e954",
+      "quench/model.xyz": "2c7eba70be0b59d8abeea3f3eb93dba460bee5f8a693965a6cd2e17b682a004a",
+      "melt/dump.xyz": "f1804d639899a29421374a50219b13b6c3cf009ec46c2cf1a2be6eb82bb9ca64",
+      "melt/thermo.out": "1958623ece2bcd0da041532a97ecd99c593443d3a6804a0c68f55347fedc9ed1",
+      "melt/model.xyz": "70df75957f0eb5814ed269db1feee48e949a914c19443a10574f90a33a63071a",
+      "relaxation/dump.xyz": "fcde1a2c6b544714adbba4cd749e23cfe6d352bf2b045f22c1a93938918f2180",
+      "relaxation/thermo.out": "4932395145e8493fd97a5e420093a4992741d8a5c28f9e589ce6ca5e8b1ad3cb",
+      "relaxation/model.xyz": "15df167c3eff8c117f452784bdde6b1b9e374fdfc821d445d6b47214a26a2c02",
+      "heating/dump.xyz": "f8ac02d937634304dab1415a6a1c014107f8bdc4b0fbfb640358c72b8a2d01a8",
+      "heating/thermo.out": "3444cd89e51adaa2d14cd754be85330d5c82a37500903f87a8bc7ee647fc0fc1",
+      "heating/model.xyz": "4a3e77a6cc3f7a553b2cfc559bda7744d27a4edb93a7e93aae6f24e9c9ca4b01"
+    }
+  },
+  "LiPON": {
+    "n_atoms": 124,
+    "relaxation_samples": 400,
+    "relaxation_mean": {
+      "T_K": 248.24117263954992,
+      "PE_eV_atom": -6.272795347936094,
+      "P_GPa": -2.8002452040316,
+      "rho_g_cm3": 2.3379231291493467
+    },
+    "relaxation_SD_not_SE": {
+      "T_K": 17.796907502295475,
+      "PE_eV_atom": 0.0025279621261228226,
+      "P_GPa": 0.528738030197472,
+      "rho_g_cm3": 1.9564396032263245e-14
+    },
+    "last_minus_first_5ps_block": {
+      "T_K": -5.882463087599945,
+      "PE_eV_atom": -0.0015914993266132882,
+      "P_GPa": -0.0283126099466271,
+      "rho_g_cm3": 0.0
+    },
+    "PE_slope_eV_atom_ps": -0.00010757930139247225,
+    "initial_density_g_cm3": 2.3379334656366852,
+    "minimum_distance_relaxation_A": 1.2551790911003076,
+    "pairs": {
+      "P-O": {
+        "cutoff_A": 2.1,
+        "initial_mean_CN": 3.5,
+        "late_mean_CN": 3.6875,
+        "late_CN_distribution": {
+          "3": 0.3125,
+          "4": 0.6875
+        }
+      },
+      "P-N": {
+        "cutoff_A": 2.1,
+        "initial_mean_CN": 0.3125,
+        "late_mean_CN": 0.4375,
+        "late_CN_distribution": {
+          "0": 0.6875,
+          "1": 0.1875,
+          "2": 0.125
+        }
+      },
+      "Li-O": {
+        "cutoff_A": 2.8,
+        "initial_mean_CN": 3.5106382978723403,
+        "late_mean_CN": 4.28468085106383,
+        "late_CN_distribution": {
+          "2": 0.002127659574468085,
+          "3": 0.1453191489361702,
+          "4": 0.4542553191489362,
+          "5": 0.36234042553191487,
+          "6": 0.03595744680851064
+        }
+      },
+      "N-P": {
+        "cutoff_A": 2.1,
+        "initial_mean_CN": 1.0,
+        "late_mean_CN": 1.4,
+        "late_CN_distribution": {
+          "1": 0.6,
+          "2": 0.4
+        }
+      }
+    },
+    "P_initial_top20_order_mean": 0.9190483746834339,
+    "P_late_same_top20_order_mean": 0.20469498258212093,
+    "melt_endpoint_MIC_displacement2_A2": {
+      "Li": 33.449953653340536,
+      "N": 10.38914500234748,
+      "O": 5.730324824825162,
+      "P": 1.4304048779816598
+    },
+    "hashes": {
+      "smoke/dump.xyz": "81eed271952b3ed599f1959cfe3f212ac8d43e12fb0f1ad136e1580eed9a74dc",
+      "smoke/thermo.out": "5286f04db30aa82717bc688339e550b1796134d24576e097fc6a3f97f3e2a464",
+      "smoke/model.xyz": "059d2d5793fd4bfe9dfcc77905b0c8735e3e050737abc6cde0d890d3ac3dd8e7",
+      "quench/dump.xyz": "81b42076e907be9c8e391f85d680ce365ef0f1ef61d84c5f358ff0f13c1bf96b",
+      "quench/thermo.out": "2f39039255bc94e35b7e02c8f0d2d05f0115eec525c81472e11ed534c2047491",
+      "quench/model.xyz": "3da4529a614ecba1a3edf3d76116114605f5c893388f1dc7ce692505572128dd",
+      "melt/dump.xyz": "5e853a30c972c892aab787e1506bcf7ba0b69889c0b91aa87ca81844d6a8a825",
+      "melt/thermo.out": "56998805162c8d0e6a4b6a137df1fd7b40ec7c6966f9b66c50c0b5aeb59cc6e4",
+      "melt/model.xyz": "369dfee7c77e30377d63f30151eb4a4d7cc22aa956511068f39c3971d55ac69c",
+      "relaxation/dump.xyz": "3ee6c89d4f0625b3d58a3f80243add36664ff9c2095c2930b7d4e098f43a10e6",
+      "relaxation/thermo.out": "becd6c276497dcfa99ec7c22d08d12f40963ae9cbeee7e653e4062bb10a7a7fb",
+      "relaxation/model.xyz": "b0a59a5469410437e9f57b9546b28916f7fa00369f97431f0e6980d962e96572",
+      "heating/dump.xyz": "568c873a7c721e052820a7276fd27996f8de5ef5795fc5c7b9ea2930f6ced76c",
+      "heating/thermo.out": "270afbb795b199e0002931a2b14e1122ad06da813bd2d414b8096cdfac060799",
+      "heating/model.xyz": "7887e1c322140b36465dd85d349de927e175e6e31af060597cfba398546a28c1"
+    },
+    "N_N_minimum_distance_range_A": [
+      1.2551790911003076,
+      1.3330102525797716
+    ],
+    "fraction_relaxation_frames_N_N_under_1_6A": 1.0
+  }
+}
