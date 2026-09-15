@@ -40,7 +40,9 @@ def run():
     pairs=[('Li','Cl',3.2),('Zr','Cl',3.2),('Zr','O',2.6),('Cl','Cl',4.)]
     edges=np.arange(0,5.0001,.05);r=(edges[:-1]+edges[1:])/2
     def save(fig,name):
-        fig.savefig(dest/(name+'.png'),dpi=180)
+        from li_diffusion_style import apply_style
+        apply_style(fig)
+        fig.savefig(dest/(name+'.png'),dpi=300)
         fig.savefig(dest/(name+'.pdf'));fig.savefig(dest/(name+'.svg'));plt.close(fig)
     def csv(name,a,h):np.savetxt(dest/name,a,delimiter=',',header=h,comments='')
     figth,ath=plt.subplots(3,3,figsize=(14,9),layout='constrained')

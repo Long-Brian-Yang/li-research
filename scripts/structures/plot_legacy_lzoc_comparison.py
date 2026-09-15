@@ -31,10 +31,11 @@ def run():
         assert np.isfinite(a).all(), name
         return a
     def save(fig,name):
-        for ax in fig.axes: ax.grid(alpha=.18)
-        for ext in ['png','pdf','svg']:fig.savefig(OUT/f'{name}.{ext}',dpi=200,bbox_inches='tight')
+        from li_diffusion_style import apply_style
+        apply_style(fig)
+        for ext in ['png','pdf','svg']:fig.savefig(OUT/f'{name}.{ext}',dpi=300,bbox_inches='tight')
         plt.close(fig)
-    models=['MACE','NEP89']; colors=['#32698B','#B64655']; styles=['-','--']
+    models=['MACE','NEP89']; colors=['#31688e','#d73027']; styles=['-','--']
     times=np.array([[600,14830.478,544.344],[700,18019.970,502.105],
         [800,14485.452,501.880],[900,18975.057,497.137]])
     np.savetxt(OUT/'timing.csv',times,delimiter=',',header='T_K,MACE_job_seconds,NEP_job_seconds',comments='')
