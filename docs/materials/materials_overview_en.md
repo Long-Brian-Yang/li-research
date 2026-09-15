@@ -2,6 +2,14 @@
 
 Updated 15 September 2026. [日本語](materials_overview_ja.md)
 
+### Active continuation: Li₃PS₄ transport control
+
+Array **8675738.1–4** has been submitted (300/500/700/900 K, maximum two concurrent tasks). This closes the missing dedicated-transport step only when completed and analysed; it is not a completed reproduction. Every branch starts independently from the same512-atom preparation endpoint, SHA256 `a92cb37de5d8aaf4fd110edcb8aa85ebc6a1b9798b8588d2c1dbae08f25c45df`. NEP89/GPUMD,0.5 fs;10 ps300→target ramp (300 K branch is a hold),50 ps NPT1 bar,200 ps NVT; MTTK periods100/1000 fs. Output0.05 ps thermo/0.1 ps trajectory. Numerical and broad volume guardrails run after each stage; they do not certify structural agreement. Each task has a30-minute scheduler limit. [Submitted script](../../hpc/tsubame_26icp/production/lips_transport_control.sh).
+
+Rechecked [Chen2025 Methods and transport discussion](https://www.nature.com/articles/s41467-025-56322-x): the paper uses0.5 fs structural MD and discusses300–900 K transport, with non-Arrhenius behaviour at low temperature. The selected four temperatures are a subset of the published source grid; the10/50/200 ps schedule, fixed-cell production and coupling periods are project choices, not a verified exact paper protocol. NEP and our512-atom preparation remain different from the author's DeePMD model. No room-temperature Ea extrapolation will be forced across a non-diffusive regime.
+
+**Reference-unit check remains open:** the Fig.3a source workbook labels columns as conductivity(S/cm), whereas the article describes Fig.3a as diffusion coefficients. Preserve the published values/labels; do not silently reinterpret their units or compute a quantitative error until the plotted axis/source discrepancy is resolved. Planned outputs are Li and framework MSD, window/block fits, RDF/network stability, and then conditional D/σ with limitations. Other material limitations remain below; this submission does not resolve LSZC/LiPON chemistry.
+
 This is the single maintained English record; the Japanese companion contains the same evidence. Settings, figures, tables, interpretation and remaining work are collected here. Earlier short reports are historical snapshots, not separate current-status pages. Original data and figure paths are unchanged. This consolidation submits no new MD and does not change fitted results.
 
 ## Contents
@@ -327,6 +335,16 @@ Late mean P–O and P–N counts below 2.1 Å are 3.688 and 0.438. Two of five N
 
 ### Runtime
 
+#### Additional existing-data audit: 700–900 K thermodynamics
+
+|T/K|MACE mean density/g cm⁻³|NEP mean density/g cm⁻³|MACE ΔPE/eV atom⁻¹|NEP ΔPE/eV atom⁻¹|
+|---|---:|---:|---:|---:|
+|700|1.14742|1.78576|−0.00385|−0.00976|
+|800|1.27278|1.66334|−0.00059|−0.01075|
+|900|0.92513|1.53955|−0.00015|−0.00922|
+
+ΔPE is the final50 ps mean minus the first50 ps mean of the existing200 ps NVT production, not an energy difference between potentials. MACE includes its t=0 record (4001 records); NEP has4000 records starting at0.05 ps. Mean temperatures lie within about1.1 K of target. These trajectories have different imposed densities and preparation histories; appreciable NEP energy relaxation and density differences preclude ranking transport accuracy from MSD amplitude alone. This adds thermodynamic analysis, **not yet the missing high-temperature RDF/MSD comparison or the later NPT-extension analysis**. [Table](../../results/LZOC/legacy_comparison_20260915/highT_thermo_summary.csv) · [Hashes](../../results/LZOC/legacy_comparison_20260915/highT_source_hashes.json) · [Script](../../scripts/structures/summarize_legacy_highT.py).
+
 ![Runtime](../../results/LZOC/legacy_comparison_20260915/01_runtime.png)
 
 Left: actual scheduler job runtimes excluding queues for 600/700/800/900 K. Right: engine-reported 600 K production runtime for 200 ps, 400,000 steps, 0.5 fs. MACE/LAMMPS took 11,395.5 s; NEP89/GPUMD 366.428 s, a ratio of 31.10. Both requested gpu_1, but nodes, engines and preprocessing differ; this is not an isolated potential-kernel benchmark. The four-job sums are 18 h 25 min versus 34 min, not parallel elapsed time or points cost. [Timing provenance and job IDs](LZOC/candidate3_mace_nep_comparison.md).
@@ -394,9 +412,9 @@ All four-temperature timing records are included. Structural/transport panels co
 |Atom counts, finite outputs, temperature, block energies, distances and RDF/CN|Completed for the analysed stages|Continue these basic checks for any new calculation; successful execution is not equilibration|
 |New LZOC D/Ea|Window/block sensitivity established, not converged|A declared longer-time/independent-sampling test if this route is continued; do not select a preferred Ea|
 |LSZC reference agreement|NPT and cutoff diagnostics completed; mismatch persists|Revisit preparation/model applicability before transport production; more of the same NPT is not a demonstrated remedy|
-|Li₃PS₄ transport and species fractions|No dedicated transport production; geometric network counted|Match paper's species definitions/denominators; dedicated transport is needed for D/Ea|
+|Li₃PS₄ transport and species fractions|Dedicated transport array8675738 submitted; geometric network counted|Finish and validate the trajectories; resolve reference units and species definitions before quantitative comparison|
 |LiPON chemistry|Contact origin and persistence documented|Retain limitation without pretending MD extension resolves chemical validity; no DFT available/requested|
-|Legacy700–900 K detailed structure/transport|Not covered by600 K figure set; timing is complete|Optional archived-data analysis, not current evidence for model accuracy|
+|Legacy700–900 K detailed structure/transport|Timing and basic thermodynamics complete; RDF/MSD and later NPT-extension analysis pending|Continue archived-data analysis, not current evidence for model accuracy|
 |Independent-glass and size uncertainty|Not established|Do not treat time frames/temperature branches as independent glasses|
 |Raman/IR and experimental scattering fits|Not established|Appropriate response/weighting and matching source data are needed; no synthetic experimental curves|
 
