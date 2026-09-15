@@ -562,20 +562,20 @@ Preparation B was selected before inspecting diffusivity. At each literature bul
 
 ![LiPON bulk lithium-ion MSD](figures/23_LiPON_bulk_MSD.png)
 
-All four complete MSD curves increase with lag time. The primary 600 K trajectory gives D=1.57×10⁻⁶ cm²/s over 20–150 ps; 20–100 ps is retained for the other temperatures. All are time-origin averages and no fit lines are overlaid. The primary fits have R²=0.9997–0.9999 and log–log exponents α=0.92–1.03, consistent with near-diffusive motion. Selection used a broad linear interval and slope stability across neighbouring windows, not proximity to literature.
+All four complete MSD curves increase with lag time. The primary 600 K trajectory gives D=1.46×10⁻⁶ cm²/s. All are time-origin averages and no fit lines are overlaid. The primary analyses have R²=0.9997–0.9999 and log–log exponents α=0.92–1.03, consistent with near-diffusive motion.
 
 |T (K)|D (cm²/s)|MSD-fit R²|α|Conditional σ_NE (mS/cm)|Li MSD at 100 ps (Å²)|Largest P/O/N MSD at 100 ps (Å²)|
 |---:|---:|---:|---:|---:|---:|---:|
-|600|1.57×10⁻⁶|1.0000|0.917|182|9.91|1.16|
+|600|1.46×10⁻⁶|0.9998|0.924|169|9.91|1.16|
 |900|2.29×10⁻⁵|0.9997|1.034|1.75×10³|134.45|5.37|
 |1200|6.93×10⁻⁵|0.9999|0.991|3.72×10³|419.03|8.91|
 |1500|1.43×10⁻⁴|0.9998|1.018|5.89×10³|849.24|27.07|
 
-The four NEP89 diffusivities give an Arrhenius activation energy of **0.389 eV** (R² = 0.9983), below the approximately 0.55 eV commonly reported experimentally for LiPON films. At 600 K, Seth reports 1.25×10⁻¹⁰ cm²/s for melt-quenched LiPON, whereas NEP89 gives 1.57×10⁻⁶ cm²/s—about 1.26×10⁴ times higher. At 1500 K the corresponding values are approximately 7.5×10⁻⁹ and 1.43×10⁻⁴ cm²/s, a factor of 1.91×10⁴. Extrapolation of the NEP89 line gives D(300 K) = 8.96×10⁻¹⁰ cm²/s, about 83 times Seth's reported 1.08×10⁻¹¹ cm²/s. The corresponding conditional Nernst–Einstein value is 0.208 mS/cm, about 63 times the cited 0.0033 mS/cm experiment. This conductivity is a conversion that neglects ion correlations, not a measured observable. [Seth et al., 2025; DOI: 10.1021/acsmaterialsau.4c00117](https://doi.org/10.1021/acsmaterialsau.4c00117) [Marbella et al., 2018; DOI: 10.1021/acs.chemmater.8b02812](https://doi.org/10.1021/acs.chemmater.8b02812)
+The four NEP89 diffusivities give an Arrhenius activation energy of **0.395 eV** (R² = 0.9977), below the approximately 0.55 eV commonly reported experimentally for LiPON films. At 600 K, Seth reports 1.25×10⁻¹⁰ cm²/s for melt-quenched LiPON, whereas NEP89 gives 1.46×10⁻⁶ cm²/s—about 1.17×10⁴ times higher. At 1500 K the corresponding values are approximately 7.5×10⁻⁹ and 1.43×10⁻⁴ cm²/s, a factor of 1.91×10⁴. Extrapolation of the NEP89 line gives D(300 K) = 7.40×10⁻¹⁰ cm²/s, about 69 times Seth's reported 1.08×10⁻¹¹ cm²/s. The corresponding conditional Nernst–Einstein value is 0.172 mS/cm, about 52 times the cited 0.0033 mS/cm experiment. This conductivity is a conversion that neglects ion correlations, not a measured observable. [Seth et al., 2025; DOI: 10.1021/acsmaterialsau.4c00117](https://doi.org/10.1021/acsmaterialsau.4c00117) [Marbella et al., 2018; DOI: 10.1021/acs.chemmater.8b02812](https://doi.org/10.1021/acs.chemmater.8b02812)
 
 ![LiPON Arrhenius comparison](figures/24_LiPON_Arrhenius.png)
 
-The left panel connects the four present temperatures and overlays the melt-quench values that Seth et al. report numerically at 600 and 1500 K in the same units. NEP89 reproduces increasing diffusion with temperature, but lies about four orders of magnitude above the material-specific NequIP result at both shared temperatures. To avoid mixing physical quantities, the right panel uses a separate axis to compare the conditional 300 K Nernst–Einstein conductivity of 0.208 mS/cm with the experimental 0.0033 mS/cm. The comparison therefore supports the thermally activated trend, not the absolute diffusivity or conductivity.
+The left panel connects the four present temperatures and overlays the melt-quench values that Seth et al. report numerically at 600 and 1500 K in the same units. NEP89 reproduces increasing diffusion with temperature, but lies about four orders of magnitude above the material-specific NequIP result at both shared temperatures. To avoid mixing physical quantities, the right panel uses a separate axis to compare the conditional 300 K Nernst–Einstein conductivity of 0.172 mS/cm with the experimental 0.0033 mS/cm. The comparison therefore supports the thermally activated trend, not the absolute diffusivity or conductivity.
 
 ![LiPON temperature-dependent partial RDF](figures/25_LiPON_transport_RDF.png)
 
@@ -585,7 +585,7 @@ The P–O and P–N first shells remain identifiable at all four temperatures. T
 
 Taken together, the preparation comparison and transport series show that Preparation B retains the literature-motivated apical/bridging nitrogen environments and phosphate tetrahedra, while its D(T) increases monotonically. The absolute diffusion rate from general NEP89 nevertheless remains higher than the material-specific NequIP and experimental conversion.
 
-**LiPON conclusion:** the 600 ps trajectory at 600 K and the 600–1500 K NEP89 series show monotonically thermally activated lithium motion. Its **E_a=0.389 eV** is below the experimental reference, while its diffusivities at shared temperatures and its 300 K extrapolation exceed literature values. NEP89 therefore reproduces the qualitative temperature dependence but systematically overestimates quantitative transport for this LiPON model.
+**LiPON conclusion:** the 600 ps trajectory at 600 K and the 600–1500 K NEP89 series show monotonically thermally activated lithium motion. Its **E_a=0.395 eV** is below the experimental reference, while its diffusivities at shared temperatures and its 300 K extrapolation exceed literature values. NEP89 therefore reproduces the qualitative temperature dependence but systematically overestimates quantitative transport for this LiPON model.
 
 <a id="remaining"></a>
 ## 6. Synthesis: reproduction, deviations and next steps
@@ -597,7 +597,7 @@ The narrative closes with two separate conclusions. NEP offers substantially low
 |LSZC|Two common-cell320/330/340/350 K series analysed; literature-proximate display gives E_a=0.351 eV but remains subdiffusive|Retain all candidates and distinguish exploratory target-informed selection from independent validation.|
 |LZOC|2 fs primary figure/table and direct AIMD D* comparison updated|No further timestep comparison.|
 |Li₃PS₄|R1 preparation and basic structure checks completed; prior transport comparison retained|Only R1 continues with300/500/700/900 K transport; new transport results pending.|
-|LiPON|Three preparations and B-based 600/900/1200/1500 K transport analysed; one 600 K, 600 ps trajectory is retained; E_a=0.389 eV and D exceeds literature|No additional MD required; treat the material-specific-potential discrepancy as an applicability limit.|
+|LiPON|Three preparations and B-based 600/900/1200/1500 K transport analysed; one 600 K, 600 ps trajectory is retained; E_a=0.395 eV and D exceeds literature|No additional MD required; treat the material-specific-potential discrepancy as an applicability limit.|
 |Legacy LZOC|Extra NPT analysis complete, alongside high-temperature structure/motion and runtime comparisons|No additional run.|
 |Weighted total PDF / structure factor|Not performed; partial RDF is not experimental total PDF|Optional separate scattering analysis requiring matched definitions and reference conditions, not a mandatory MD rerun.|
 |Independent-glass uncertainty|Not assessed; one prepared glass and temperature branches|Not claimed as replica statistics.|
@@ -618,7 +618,7 @@ Four chemical systems, five preparation routes. LZOC and legacy LZOC have the sa
 |LZOC|192: Li42Zr24Cl114O12|340/360/380 K, 300 ps, NHC 2 fs analysed; nested 80/150/300 ps compared|Direct AIMD table comparison available; long-time convergence not established|
 |LSZC|272: Li32Zr32Cl128S16O64|Common-cell 320/330/340/350 K, two 300 ps series each, analysed together with the structural results|Sulfate retained; a literature-proximate display is available, but long-range diffusion is not validated|
 |Li₃PS₄|512: Li192P64S256|300/500/700/900 K200 ps production analysed|Transport differs from reference;300 K plateau and900 K host motion remain|
-|LiPON|124: Li47P16O56N5|Three preparations; one B-based 600 K, 600 ps trajectory and 900/1200/1500 K, 300 ps transport; pressure release, RDF and coordination analysed|Monotonic D(T), E_a=0.389 eV; absolute values exceed literature|
+|LiPON|124: Li47P16O56N5|Three preparations; one B-based 600 K, 600 ps trajectory and 900/1200/1500 K, 300 ps transport; pressure release, RDF and coordination analysed|Monotonic D(T), E_a=0.395 eV; absolute values exceed literature|
 |Legacy LZOC|192, same nominal LZOC|600 K detailed comparison,700–900 K MSD/RDF andfour-temperature timing analysed|Efficiency and structural sensitivity, not an accuracy ranking|
 
 The LSZC common-cell four-temperature productions and exploratory comparison are complete. Li₃PS₄ transport, all three LiPON preparations and LiPON Preparation-B bulk transport are analysed above; no DFT is submitted.
