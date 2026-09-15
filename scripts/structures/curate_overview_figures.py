@@ -14,7 +14,7 @@ import matplotlib.pyplot as plt
 
 ROOT=Path(__file__).resolve().parents[2]
 BASE=ROOT/'results/amorphous_review_20260915'
-OUT=BASE/'overview_figures'
+OUT=ROOT/'results/plots/amorphous'
 P=BASE/'paper_alignment';F=BASE/'final_comparisons';L=BASE/'Li3PS4_transport'
 OLD=ROOT/'results/LZOC/legacy_comparison_20260915'
 BLUE='#31688e';RED='#d73027';GREEN='#35a77b';GRAY='#727272';PURPLE='#654394'

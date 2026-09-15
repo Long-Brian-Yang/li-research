@@ -74,7 +74,7 @@ RDFは周期最短距離、自己対除外、球殻体積と数密度で規格�
 
 ### 共通条件の輸送・AIMD原表比較
 
-![LZOC輸送比較](../../results/amorphous_review_20260915/overview_figures/01_LZOC_transport.png)
+![LZOC輸送比較](../../results/plots/amorphous/01_LZOC_transport.png)
 
 **a–c：**同じ初期位置・セル・保存速度。MTTK0.5 fsは元200 psの最初80 ps、NHC2 fsは別の2 psチェック後の80 ps productionを使用する。productionはチェック終点ではなく元入力から開始。両者100 fs結合、密度2.2340 g/cm³。MSD三面は共通y軸で0–40 ps遅延を表示する。**d：**10–40 psの勾配を補足Table4のトレーサーD*と比較。誤差棒は報告された±をそのまま使用。線は目のガイドでありArrheniusフィットではない。
 
@@ -125,7 +125,7 @@ RDFは周期最短距離、自己対除外、球殻体積と数密度で規格�
 
 ### 完了した400 K試行
 
-![LSZC輸送と緩和](../../results/amorphous_review_20260915/overview_figures/02_LSZC_transport.png)
+![LSZC輸送と緩和](../../results/plots/amorphous/02_LSZC_transport.png)
 
 **a：**Li MSDと20–80 psフィット。**b：**Clを含む骨格MSD。**c：**原子当たりPEの生時系列と5 ps平均。**d：**連続50 psブロックを各5–20 ps遅延でフィット。ブロックと全軌跡は窓が異なり、同じ推定量の誤差棒とはしない。200 ps production8676040.3は完了し、見かけの輸送と残留緩和が共存する。
 
@@ -144,13 +144,13 @@ RDFは周期最短距離、自己対除外、球殻体積と数密度で規格�
 
 ### 配位と移動
 
-![LSZC配位別移動](../../results/amorphous_review_20260915/overview_figures/03_LSZC_mobility.png)
+![LSZC配位別移動](../../results/plots/amorphous/03_LSZC_mobility.png)
 
 各原点のLi–O配位数（<2.7 Å）から、その後10 psの移動を分類。原点間隔1 ps。CN0／1／2／3の平均|Δr|²は1.693／1.598／1.446／0.979 Å²。CN4／5／6は43／9／1観測しかないため空心点を残し、線で結ばない。右側に観測数を明記した。主要な配位状態では低O配位ほど移動が大きい傾向があるが因果関係ではない。相関した原子–原点観測であり、根拠のない信頼帯は描かない。
 
 ### 構造の対応と不一致
 
-![LSZC構造と参照距離](../../results/amorphous_review_20260915/overview_figures/04_LSZC_structure.png)
+![LSZC構造と参照距離](../../results/plots/amorphous/04_LSZC_structure.png)
 
 初期0.1–45.1 ps、後期150.1–195.1 psの各10構造、0.05 Å刻み、平滑化なし。点線は実験の**EXAFSフィット距離**であり、実験RDFピークや全PDFではない。Zr–Oの位置差は残り、Zr–Clピークが近いだけで再現とはしない。
 
@@ -170,7 +170,7 @@ RDFは周期最短距離、自己対除外、球殻体積と数密度で規格�
 
 ### 四温度輸送
 
-![Li3PS4四温度MSD](../../results/amorphous_review_20260915/overview_figures/05_LPS_MSD.png)
+![Li3PS4四温度MSD](../../results/plots/amorphous/05_LPS_MSD.png)
 
 各200 ps productionに2,000保存フレーム＋入力構造。0–100 ps遅延を表示し、破線は20–80 psの切片自由フィット。**y範囲は温度ごとに異なる**ため見かけの高さで振幅を比較しない。300 KのMSD(80 ps)＝0.414 Å²、α＝0.049でプラトーを示し、長時間拡散係数として未収束。
 
@@ -183,7 +183,7 @@ RDFは周期最短距離、自己対除外、球殻体積と数密度で規格�
 
 すべて条件付き換算であり、特に300 Kの検証済み伝導率ではない。300 Kの窓依存範囲は7.14×10⁻⁹–4.99×10⁻⁸ cm²/s。
 
-![Li3PS4参照と骨格](../../results/amorphous_review_20260915/overview_figures/06_LPS_reference.png)
+![Li3PS4参照と骨格](../../results/plots/amorphous/06_LPS_reference.png)
 
 **a：**同温度のNEPとChen2025ガラスD。線は目のガイドで全温度Arrhenius回帰ではない。公開表の伝導率という見出しはFig.3aのln[D(cm²/s)]と矛盾するため、正式な図軸に従う。参照は**DeePMDガラスMDであり、実験やAIMDのDではない**。**b：**全温度の80 ps遅延でのP／S MSD。900 Kで5.99／12.50 Å²に達し、骨格は不動ではない。
 
@@ -198,7 +198,7 @@ RDFは周期最短距離、自己対除外、球殻体積と数密度で規格�
 
 ### 局所構造と限界
 
-![Li3PS4文献構造比較](../../results/amorphous_review_20260915/overview_figures/07_LPS_structure.png)
+![Li3PS4文献構造比較](../../results/plots/amorphous/07_LPS_structure.png)
 
 NEP作製後の最後10 ps保持と公開ガラス曲線を比較。Li–Sピークは2.425対2.459 Å、S–P–S平均109.40°。角度分布は別々に面積1へ規格化（NEP2°ビン、参照は細かい格子）。著者の平均温度・区間は独立確認できておらず、局所的類似は完全な構造検証ではない。
 
@@ -209,7 +209,7 @@ NEP作製後の最後10 ps保持と公開ガラス曲線を比較。Li–Sピー
 <a id="lipon"></a>
 ## LiPON
 
-![LiPON接触診断](../../results/amorphous_review_20260915/overview_figures/08_LiPON_contacts.png)
+![LiPON接触診断](../../results/plots/amorphous/08_LiPON_contacts.png)
 
 **a：**250 K除圧中の全200点で最短N–Nは1.270–1.347 Å。平均Pは0.00614 GPa、密度2.50908 g/cm³へ改善したが接触は残る。**b：**同一の接触形成前スナップショットを2000 K、2 ps、0.5／0.25 fsで比較（100 fs結合、0.01 ps出力）。両分岐198/200点でN76–N108<1.6 Å。刻み幅半減は解決にならない。左右は別の段階であり連続する時間軸ではない。
 
@@ -227,7 +227,7 @@ NEP作製後の最後10 ps保持と公開ガラス曲線を比較。Li–Sピー
 
 ### 効率と密度の差
 
-![旧LZOC計時と密度](../../results/amorphous_review_20260915/overview_figures/09_legacy_cost_density.png)
+![旧LZOC計時と密度](../../results/plots/amorphous/09_legacy_cost_density.png)
 
 **a：**待機を除いたジョブ実時間。両方式を読めるよう対数y軸を使用。**b：**600 K NPT密度を共通y軸で比較。点線は共通300 K入力であり実験ではない。NEPはこの手順で速く膨張も小さいが、それだけで実験精度が高いとはいえない。
 
@@ -253,7 +253,7 @@ NEP作製後の最後10 ps保持と公開ガラス曲線を比較。Li–Sピー
 
 ### 保存済み高温運動
 
-![旧LZOCモデル運動](../../results/amorphous_review_20260915/overview_figures/10_legacy_motion.png)
+![旧LZOCモデル運動](../../results/plots/amorphous/10_legacy_motion.png)
 
 **a–c：**700／800／900 Kの既存200 ps productionから時間原点平均Li MSDを共通y軸で表示。**d：**900 K骨格曲線。色は元素、線種はモデルで統一。700／800 Kの骨格曲線も元データに保持する。骨格運動が大きいため固定ホスト中Li拡散だけとは解釈できない。
 
@@ -265,7 +265,7 @@ NEP作製後の最後10 ps保持と公開ガラス曲線を比較。Li–Sピー
 
 Dはすべて20–80 ps窓。平均Tは目標±1.1 K以内。最後−最初50 psのPE差はMACE−0.00385／−0.00059／−0.00015 eV/atom、NEP−0.00976／−0.01075／−0.00922。緩和・密度差を制限として残す。
 
-![旧LZOC代表RDF](../../results/amorphous_review_20260915/overview_figures/11_legacy_structure.png)
+![旧LZOC代表RDF](../../results/plots/amorphous/11_legacy_structure.png)
 
 従来12面グリッドを読みやすい900 K代表4対へ置換。150–200 psの21構造、0.05 Å刻み、平滑化なし。700／800 Kの全RDF数値は元データに保持する。近いピーク位置と大きい骨格運動は共存しうる。実験／AIMD RDFではない。別のNPT延長解析は未完了。
 
@@ -306,7 +306,7 @@ TSUBAME会計記録でLSZCの8676216.1–4は全てfailed=0、exit_status=0（�
 <details>
 <summary>元データ・再現用ファイル</summary>
 
-- [出典ハッシュと図一覧](../../results/amorphous_review_20260915/overview_figures/provenance.json)
+- [出典ハッシュと図一覧](../../results/plots/amorphous/provenance.json)
 - [再描画スクリプト](../../scripts/structures/curate_overview_figures.py)
 - [LZOCと文献数値表](../../results/amorphous_review_20260915/final_comparisons)
 - [LSZC400 K・旧高温系列](../../results/amorphous_review_20260915/paper_alignment)
