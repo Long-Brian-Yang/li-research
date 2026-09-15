@@ -2,6 +2,8 @@
 
 15 September 2026. [日本語](report_ja.md) · [Portfolio](../../../docs/materials/materials_overview_en.md)
 
+Follow-up completed: [P/S connectivity and LSZC cutoff sensitivity](../structure_followup/report_en.md). Only79.7% of P belongs to isolated geometric P₁S₄ components despite100% S-four-coordinate P; therefore RDF/angle similarity does not establish network agreement. The LSZC coordination difference persists across the tested cutoff grids. This supersedes the connectivity-pending statement below.
+
 ## 1. Conclusions and scope
 
 This package adds **11 figure families (PNG/PDF/SVG)**, numerical CSVs, input hashes and reproducible analysis. It analyses existing data only: no new MD, no new DFT and no alteration of trajectories, replicas or MSD amplitudes. It does not certify that every candidate reproduces experiment.

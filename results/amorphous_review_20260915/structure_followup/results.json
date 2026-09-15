@@ -1,0 +1,103 @@
+{
+  "Li3PS4": {
+    "2.4": {
+      "component_counts_over_10_frames": {
+        "P1S4": 510,
+        "P3S10": 10,
+        "P2S7": 50,
+        "P0S1": 70
+      },
+      "fraction_of_P_in_isolated_P1S4": 0.796875,
+      "fraction_of_S_shared_by_at_least_two_P": 0.02734375,
+      "mean_PP_pairs_below_2point6_A": 0.0
+    },
+    "2.6": {
+      "component_counts_over_10_frames": {
+        "P1S4": 510,
+        "P3S10": 10,
+        "P2S7": 50,
+        "P0S1": 70
+      },
+      "fraction_of_P_in_isolated_P1S4": 0.796875,
+      "fraction_of_S_shared_by_at_least_two_P": 0.02734375,
+      "mean_PP_pairs_below_2point6_A": 0.0
+    },
+    "2.8": {
+      "component_counts_over_10_frames": {
+        "P1S4": 510,
+        "P3S10": 10,
+        "P2S7": 50,
+        "P0S1": 70
+      },
+      "fraction_of_P_in_isolated_P1S4": 0.796875,
+      "fraction_of_S_shared_by_at_least_two_P": 0.02734375,
+      "mean_PP_pairs_below_2point6_A": 0.0
+    }
+  },
+  "LSZC": [
+    [
+      "O",
+      2.2,
+      1.299375,
+      0.042875458297753785
+    ],
+    [
+      "O",
+      2.4,
+      1.4965625,
+      0.03320732575179547
+    ],
+    [
+      "O",
+      2.6,
+      1.5315625,
+      0.013686578943688526
+    ],
+    [
+      "O",
+      2.8,
+      1.5465625,
+      0.02412246152971386
+    ],
+    [
+      "O",
+      3.0,
+      1.6175,
+      0.044885164924538604
+    ],
+    [
+      "Cl",
+      2.8,
+      4.024375,
+      0.05056108791463165
+    ],
+    [
+      "Cl",
+      3.0,
+      4.1628125,
+      0.03670640709698646
+    ],
+    [
+      "Cl",
+      3.2,
+      4.2178125,
+      0.03728235451702767
+    ],
+    [
+      "Cl",
+      3.4,
+      4.2584375,
+      0.03136185788582215
+    ],
+    [
+      "Cl",
+      3.6,
+      4.2953125,
+      0.03422545524337348
+    ]
+  ],
+  "hashes": {
+    "results/amorphous_validation_20260914/source/Li3PS4/relaxation/dump.xyz": "fcde1a2c6b544714adbba4cd749e23cfe6d352bf2b045f22c1a93938918f2180",
+    "results/amorphous_review_20260915/source/LSZC_anneal/hold/dump.xyz": "d1f120602bdb96156aa6136f79c44182347ddda9f327f1a8a05064cb1e670822"
+  }
+}

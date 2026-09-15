@@ -4,6 +4,8 @@
 
 Four amorphous chemical systems, five preparation routes. Legacy and reconstructed LZOC share one composition. No new MD or DFT was submitted during this postprocessing. Numerical completion is distinct from scientific agreement.
 
+[Additional structural analysis](../../results/amorphous_review_20260915/structure_followup/report_en.md): Li₃PS₄ isolated geometric P₁S₄ contains79.7% of P; shared-S components remain despite fourfold local coordination. LSZC Zr-coordination mismatch is not removed by the tested cutoff sweep. These findings qualify the local-agreement statement below; dedicated transport convergence and structural-model validation remain unresolved. No new jobs in this follow-up.
+
 | Material / route | Latest completed work | Result / disposition |
 |---|---|---|
 | Reconstructed LZOC, 192 atoms | 340/360/380 K: original 200 ps completed; NHC/2 fs controls 8675022.1–3 completed 80 ps each. Matched first-80-ps analysis finished | Settings/window sensitivity remains. No adopted Ea or 300 K extrapolation |
