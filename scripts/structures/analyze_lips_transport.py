@@ -90,7 +90,6 @@ def run():
                     vals5=vals.reshape(40,100,4).mean(1)
                     at.flat[j].plot(np.arange(40)*5+2.5,vals5[:,j],color=COLORS[i],ls=['-','--','-.',':'][i],label=f'{T} K')
         ax=am.flat[i];ax.plot(t[:1001],y['Li'][:1001],color=COLORS[i],label='Li MSD')
-        fit=fits[2];tt=np.array([20.,80.]);ax.plot(tt,fit['intercept_A2']+6e4*fit['D_cm2_s']*tt,'k--',label='20–80 ps fit')
         ax.set(title=f'{T} K: lithium',xlabel='Lag time (ps)',ylabel='MSD (Å²)',ylim=(0,None));ax.legend()
         for el,ls in [('P','--'),('S',':')]:af.flat[i].plot(t[:1001],y[el][:1001],ls=ls,label=el)
         af.flat[i].set(title=f'{T} K: framework control',xlabel='Lag time (ps)',ylabel='MSD (Å²)');af.flat[i].legend()

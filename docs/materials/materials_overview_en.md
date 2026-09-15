@@ -329,7 +329,7 @@ The NEP route uses 1500 K NPT for 100 ps, cooling to 300 K over 480 ps (2.5 K/ps
 
 ![Li3PS4 four-temperature MSD](figures/05_LPS_MSD.png)
 
-All four200 ps productions have2,000 saved frames plus their input frame.0–100 ps lag is displayed; dashed fits use20–80 ps with a free intercept. **Different y ranges** expose the300 K plateau; panel heights must not be used to compare amplitudes. At300 K, MSD(80 ps)=0.414 Å² and α=0.049, so the slope is not a converged long-time diffusivity.
+All four200 ps productions have2,000 saved frames plus their input frame. The figure displays the complete 0–100 ps MSD curves without fitting-window overlays. **Different y ranges** expose the300 K plateau; panel heights must not be used to compare amplitudes. At300 K, MSD(80 ps)=0.414 Å² and α=0.049, so the slope is not a converged long-time diffusivity.
 
 |T (K)|D_app (cm²/s)|R²|α|Conditional σ_NE (mS/cm)|
 |---:|---:|---:|---:|---:|

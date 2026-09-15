@@ -103,12 +103,10 @@ def lszc():
     finish(fig,'04_LSZC_structure')
 
 def lips():
-    fig,aa=grid(2);summary=js(L/'analysis.json')
+    fig,aa=grid(2)
     for ax,T,c in zip(aa.ravel(),[300,500,700,900],[PURPLE,BLUE,GREEN,RED]):
         a=load(L/f'{T}K_MSD.csv');a=a[a[:,0]<=100]
         ax.plot(a[:,0],a[:,1],color=c,label='Li MSD')
-        fit=summary['temperatures'][str(T)]['fits'][2] if 'temperatures' in summary else summary['results'][str(T)]['fits'][2]
-        x=np.array([20,80]);ax.plot(x,fit['intercept_A2']+6e4*fit['D_cm2_s']*x,'k--',label='20–80 ps fit')
         ax.set(title=f'{T} K'+(' — plateau' if T==300 else ''),xlabel='Lag time (ps)',ylabel='Li MSD (Å²)');ax.legend()
     finish(fig,'05_LPS_MSD')
     fig,aa=grid();ax=aa[0];a=load(L/'reference_comparison.csv')
