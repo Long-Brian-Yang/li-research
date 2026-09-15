@@ -14,6 +14,8 @@ All subsequent results are inserted, revised or replaced directly in the relevan
 
 **Figure location:** all active review images and their vector exports are in `docs/materials/figures/`, referenced here as `figures/...`. Future revisions replace the corresponding asset there and update both language versions together. Historical source exports are retained only for older reports.
 
+**Figure naming:** use material + physical observable + essential condition. Legends identify NEP89, MACE, AIMD or the actual literature method. Do not use “selected”, “best”, “preview”, job IDs or fit-window labels as figure titles or model names. Necessary selection and fitting disclosure remains in Methods; removing a workflow label does not change the evidential status of a result.
+
 ## Contents
 
 - [1. MACE versus NEP: why NEP was selected](#legacy)
@@ -80,7 +82,7 @@ Whole-job time includes setup/equilibration and is different from the600 K produ
 
 All D fits use20–80 ps. Mean temperatures are within1.1 K of target; final-minus-first50 ps PE changes are−0.00385/−0.00059/−0.00015 eV/atom for MACE and−0.00976/−0.01075/−0.00922 for NEP. Retain relaxation/density differences as limitations.
 
-![Legacy representative RDF](figures/11_legacy_structure.png)
+![LZOC partial radial distribution functions: MACE and NEP89](figures/11_legacy_structure.png)
 
 The 900 K four-pair view follows [GPUMDkit's RDF plotting method](https://github.com/zhyan0603/GPUMDkit/blob/main/Scripts/plt_scripts/plt_rdf.py): direct lines, one pair per panel, without interpolation or smoothing filters. We retain a 2×2 layout and report-matched fonts for readability. RDFs now average all 501 saved frames over the same 150–200 ps interval (0.1 ps spacing), instead of 21 sparse frames; 0.05 Å bins, spherical-shell normalization and the original trajectories are unchanged. This changes the sampling average, not merely styling. Correlated frames are not independent replicas; denser sampling does not guarantee elimination of noise. Original sparse CSVs and all 700/800 K RDFs remain archived. Similar peak positions can coexist with large framework motion. This is not experimental or AIMD RDF. The separately analysed NPT extensions are summarized below.
 

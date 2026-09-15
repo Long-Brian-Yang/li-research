@@ -64,7 +64,7 @@ def lzoc():
     for ax in axes[:3]:ax.set_ylim(0,ymax*1.06)
     a=load(P/'LZOC_Table4_comparison.csv');ax=axes[3]
     ax.errorbar(a[:,0],a[:,1],yerr=a[:,2],fmt='ko-',capsize=4,label='AIMD tracer D*')
-    ax.plot([r['T_K'] for r in selected],[r['D_cm2_s'] for r in selected],'s',color=BLUE,label='Selected single trajectories')
+    ax.plot([r['T_K'] for r in selected],[r['D_cm2_s'] for r in selected],'s',color=BLUE,label='NEP89')
     ax.set(title='AIMD comparison',xlabel='Temperature (K)',ylabel='D (cm²/s)',yscale='log',xticks=a[:,0]);ax.legend()
     finish(fig,'01_LZOC_transport')
 
