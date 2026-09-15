@@ -101,19 +101,6 @@ NEP remains below AIMD at every temperature. The NEP series increases monotonica
 
 ### Does longer sampling stabilize the result?
 
-#### Wider-window comparison on the full 300 ps trajectories
-
-|Lag window (ps)|D340 (×10⁻⁷ cm²/s)|D360 (×10⁻⁷ cm²/s)|D380 (×10⁻⁷ cm²/s)|
-|---|---:|---:|---:|
-|20–80, current primary|3.105|3.808|10.155|
-|20–100|2.908|3.612|10.283|
-|30–120|2.623|3.378|9.663|
-|20–150|2.399|3.309|8.613|
-|40–150|2.204|3.182|8.079|
-|50–200|2.303|2.922|7.442|
-
-Extending to 20–150 ps lowers D by approximately 23/13/15% relative to 20–80 ps; 50–200 ps lowers it by 26/23/27%. This systematic window dependence does not establish a common slope plateau. The longer windows are retained as sensitivity results, not used to claim better convergence merely because they span more time. The current 20–80 ps primary remains provisional, not uniquely optimal. All 300 ps contribute to the time-origin averaging. No additional run is submitted by this comparison.
-
 **Current primary window: 20–80 ps.** Selected after inspecting the curves, not preregistered: it avoids the initial rapid rise and differs by less than 4% in slope from nearby 20–60 and 30–90 ps fits at all temperatures. Later windows show greater drift. This is a practical local-stability choice, not a unique optimum or demonstrated asymptotic diffusion regime. The current apparent **E_a is 0.3255 eV, Arrhenius R²=0.8528**. MSD R² values are 0.9953/0.9980/0.9989 and log–log exponents are 0.524/0.490/0.647. No window was chosen to match literature Ea. The 10–40 ps results below remain duration-sensitivity diagnostics; 0.428 eV is not the current primary estimate.
 
 All estimates below use the same 10–40 ps lag fit; only the total trajectory length changes.
