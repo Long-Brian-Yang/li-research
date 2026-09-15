@@ -46,7 +46,7 @@ This is a **workflow-level NNP comparison**, not a same-configuration force-erro
 
 ![Legacy runtime and density](figures/09_legacy_cost_density.png)
 
-**a:** actual job runtimes, excluding queue time, use a logarithmic y axis so both workflows remain visible. **b:**600 K NPT density uses the same y axis for both models; dotted line is the common300 K input, not experiment. NEP is faster and expands less in this workflow, but these facts alone do not establish experimental accuracy.
+(a) actual job runtimes, excluding queue time, use a logarithmic y axis so both workflows remain visible. (b) 600 K NPT density uses the same y axis for both models; dotted line is the common300 K input, not experiment. NEP is faster and expands less in this workflow, but these facts alone do not establish experimental accuracy.
 
 |600 K quantity|MACE / LAMMPS|NEP89 / GPUMD|
 |---|---:|---:|
@@ -72,7 +72,7 @@ Whole-job time includes setup/equilibration and is different from the600 K produ
 
 ![Legacy model motion](figures/10_legacy_motion.png)
 
-**a–c:** time-origin-averaged Li MSD, common y limits,700/800/900 K existing200 ps productions. **d:**900 K framework curves; color identifies species and line style identifies model. All700/800 K framework source curves remain available. Substantial host movement precludes interpreting this solely as Li diffusion in a static host.
+(a–c) time-origin-averaged Li MSD, common y limits,700/800/900 K existing200 ps productions. (d) 900 K framework curves; color identifies species and line style identifies model. All700/800 K framework source curves remain available. Substantial host movement precludes interpreting this solely as Li diffusion in a static host.
 
 |T (K)|MACE D (cm²/s)|NEP D (cm²/s)|MACE / NEP density (g/cm³)|
 |---:|---:|---:|---:|
@@ -325,7 +325,7 @@ These are conditional conversions, particularly not a validated300 K conductivit
 
 ![Li3PS4 reference and framework](figures/06_LPS_reference.png)
 
-**a:** NEP and Chen2025 glass D at the same temperatures; lines are guides, not a forced all-temperature Arrhenius fit. The source workbook's conductivity header conflicts with the official Fig.3a axis ln[D(cm²/s)]; the published axis defines this comparison. Chen's curve is **DeePMD glass MD, not experimental or AIMD D**. **b:** P/S MSD at80 ps lag for every temperature. It rises to5.99/12.50 Å² at900 K; the framework is not immobile.
+(a) NEP and Chen2025 glass D at the same temperatures; lines are guides, not a forced all-temperature Arrhenius fit. The source workbook's conductivity header conflicts with the official Fig.3a axis ln[D(cm²/s)]; the published axis defines this comparison. Chen's curve is **DeePMD glass MD, not experimental or AIMD D**. (b) P/S MSD at80 ps lag for every temperature. It rises to5.99/12.50 Å² at900 K; the framework is not immobile.
 
 |T (K)|Chen glass D (cm²/s)|NEP / Chen|
 |---:|---:|---:|
@@ -391,7 +391,7 @@ The executed NEP preparation consists of 2000 K for 10 ps, cooling to 250 K over
 
 ![LiPON contact diagnosis](figures/08_LiPON_contacts.png)
 
-**a:**250 K pressure release leaves minimum N–N1.270–1.347 Å in all200 samples. Mean P improves to0.00614 GPa and density2.50908 g/cm³, but contact remains. **b:** the same precontact snapshot is tested at2000 K for2 ps with0.5/0.25 fs,100 fs coupling and0.01 ps output. N76–N108 stays below1.6 Å in198/200 samples in both branches. Halving the timestep is not a demonstrated repair. The panels are different stages, not consecutive sections of one time axis.
+(a) 250 K pressure release leaves minimum N–N1.270–1.347 Å in all200 samples. Mean P improves to0.00614 GPa and density2.50908 g/cm³, but contact remains. (b) the same precontact snapshot is tested at2000 K for2 ps with0.5/0.25 fs,100 fs coupling and0.01 ps output. N76–N108 stays below1.6 Å in198/200 samples in both branches. Halving the timestep is not a demonstrated repair. The panels are different stages, not consecutive sections of one time axis.
 
 |Paired2000 K check|0.5 fs|0.25 fs|
 |---|---:|---:|
