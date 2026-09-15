@@ -36,7 +36,11 @@ This comparison establishes the method choice before the material comparisons be
 
 For the present study, the practical benefit of the faster workflow is the ability to examine several materials and temperature conditions. Whether that workflow remains useful scientifically is then decided by the literature comparisons below. This is an assessment of the implemented MACE/LAMMPS and NEP89/GPUMD workflows, not a general ranking of the two potential families.
 
-### Efficiency and different densities
+### Construction and comparison design
+
+The legacy comparison starts from the previously prepared 192-atom candidate 3, not from the Hussain reconstruction used in the next section. Candidate 3 is the working structure selected for continued testing; its selection does not establish that it is the most stable possible glass. MACE and NEP are evaluated at the same nominal composition and temperature, but each potential produces its own subsequent structural and density evolution. The 600 K comparison includes 50 ps NPT followed by 200 ps NVT production.
+
+This is a **workflow-level NNP comparison**, not a same-configuration force-error benchmark. Runtime measures practical cost; density, species-resolved MSD and RDF measure the resulting material response. Because the simulation engines and resulting densities differ, a difference in D cannot be assigned solely to the potential's migration barrier. Neither potential was retrained here against the reference data. NEP is carried forward for its measured computational advantage, while its predictive performance is assessed separately below.
 
 ![Legacy runtime and density](figures/09_legacy_cost_density.png)
 
@@ -115,7 +119,15 @@ The present question is narrower than reproducing the entire paper: at its low-t
 |Underlying potential|DFT forces|Pretrained NEP89|
 |Primary comparison|Tracer D*|Apparent self-diffusion D_app|
 
-### Lithium transport compared with AIMD
+### Structure construction and MD configuration
+
+The starting model resolves the fractional occupancies in Hussain's SI Table 2 into an integer-occupancy 2×2×2 realization: **42 Li, 24 Zr, 114 Cl and 12 O (192 atoms)**. Site populations are constrained to the target composition and close contacts are excluded geometrically. This procedure is not an energy minimization and does not reproduce the author's atomic coordinates. The initial cell has a=b=21.874 Å, c=12.044 Å and γ=120°; its tilted shape is a cell geometry, not evidence of structural damage.
+
+The recorded thermal preparation progresses through 100 K (2 ps), 500 K (30 ps), 1000 K (50 ps), 1500 K (30 ps) and 2000 K (20 ps), followed by 2 ps stages at 1500, 1000, 500 and 100 K and 300 K relaxation for 20+50 ps. These are the executed NEP preparation stages, not a claim of exact AIMD melt–quench reproduction. Heating alone is not proof of complete melting; the resulting RDF and framework motion provide the structural evidence used here.
+
+Transport uses **340/360/380 K, a fixed periodic cell, NVT Nosé–Hoover-chain control, 2 fs integration and 300 ps production**. The thermostat parameter corresponds to 100 fs. The original 300 ps runs restart from the original 80 ps calculation inputs rather than append to their outputs. Additional velocity-seed runs at 340/360 K include 50 ps NVT equilibration before production; they are not independently prepared glasses. Matching temperature and timestep enables a useful AIMD comparison, but the potential, model size, preparation and sampling duration still differ.
+
+**Reading the transport figure:** the MSD panel shows the full lag-time dependence, whereas the D panel compares fitted slopes at matching temperatures. A curve's final height is not its diffusion coefficient. The table supplies the numerical comparison; the selection and fitting scope are specified once below. Structural figures subsequently test whether local coordination and host motion are consistent with the transport interpretation, rather than serving as an independent confirmation of the selected D values.
 
 [Hussain et al. (2024)](https://doi.org/10.1038/s41524-024-01346-y) provides AIMD tracer diffusion coefficients at 340, 360 and 380 K for amorphous LZOC. Our NEP89 calculations use a 192-atom model and 300 ps NVT trajectories. The question is whether the pretrained potential captures lithium mobility at comparable temperatures.
 
@@ -189,7 +201,20 @@ The evidence does not yet distinguish stronger trapping, different pathway conne
 
 The sulfate-containing material extends the main line without changing it into an unrelated screening exercise: Zr–Cl environments remain central, while O is introduced within a polyanion-containing network. The existing data allow three distinct checks—whether sulfate remains intact, whether the Zr environment resembles the experimental reference, and whether Li motion reproduces the temperature dependence. Passing the first check alone does not answer the other two.
 
-### Latest calculation and direct transport comparison
+### Structure construction and endpoint MD
+
+Five finite cluster types were extracted with their periodic connectivity preserved, then two copies of each were combined with 32 Li to form **Li32Zr32Cl128S16O64 (272 atoms)**. Independent geometric packing produced a 20.174 Å cubic precursor at 1.864 g/cm³. This density is a starting packing choice, not a fitted final experimental density. Fixed-cell NEP position relaxation reduced the maximum force to 0.0493 eV/Å while retaining S–O fourfold coordination. The precursor is not a scaled copy of the author's 1088-atom glass.
+
+Following the recorded 300–400 K conditioning stages summarized in the preparation table, the latest endpoint calculations use the following sequence:
+
+|Temperature|Volume preparation|Fixed-cell sampling|
+|---|---|---|
+|320 K|150 ps NPT; cell based on the late-stage mean volume|50 ps NVT equilibration + 300 ps NVT production|
+|350 K|150+50 ps NPT; cell based on the late-stage mean volume|50 ps NVT equilibration + 300 ps NVT production|
+
+Both productions use NEP89, **0.5 fs integration and 100 fs temperature coupling**; the NPT target is 1 bar. The fixed production cells isolate displacement analysis from a changing simulation volume, but do not prove that the preceding density relaxation was complete. Each trajectory contains 3000 saved frames at 0.1 ps spacing, with thermodynamic output every 0.05 ps. These endpoints replace, rather than mix with, the older four-temperature estimates.
+
+**Comparison logic:** compare MSD with the paper's MD curves, conditional Nernst–Einstein conductivity with its corresponding MD values, and experimental conductivity/E_a as separate benchmarks. The paper's tuned MACE is not the same model as off-the-shelf NEP89. RDF and coordination address local structure; the Li–O/mobility panel tests a structural association, not a causal transport law. The captions and tables below retain this distinction.
 
 The latest 320 and 350 K runs each completed **300 ps NVT production**, using the same 272-atom composition and NEP89 with a 0.5 fs step. The longer NPT preparation replaces the earlier endpoint preparation; the old four-temperature series is not mixed with these results. The model size, potential and preparation differ from the paper's 1088-atom tuned-MACE calculation.
 
@@ -267,7 +292,13 @@ In *Disorder-induced enhancement of lithium-ion transport in solid-state electro
 
 This material tests transfer beyond oxychlorides: the reference local motifs involve P–S rather than Zr–O/Cl environments. Keeping that distinction explicit is important when judging a broadly pretrained potential. The published DeePMD diffusion values are the temperature-matched computational baseline, while the experimental conductivity cited below is a separate measurement with a different sample history and temperature.
 
-### Four-temperature transport
+### Starting structure and thermal protocol
+
+The first 64-atom Li24P8S32 frame in the downloaded author training data was repeated 2×2×2 to give **512 atoms (Li192P64S256)**. Element mapping, periodic distances and composition were checked before simulation. A training-data frame is a precursor, not automatically an equilibrated glass; subsequent thermal treatment is therefore part of the model construction.
+
+The NEP route uses 1500 K NPT for 100 ps, cooling to 300 K over 480 ps (2.5 K/ps), and a 20 ps hold. Each target temperature (300/500/700/900 K) then uses a 10 ps ramp, 50 ps NPT at 1 bar and 200 ps NVT production, with a 0.5 fs timestep. This adopts a literature-informed thermal schedule but changes the potential to NEP and does not exactly reproduce the author's starting configuration, coupling or production setup.
+
+**How the figures answer the question:** Li MSD establishes whether motion is diffusive on the sampled timescale; the D comparison quantifies transfer from the published DeePMD glass result to NEP. P/S motion checks whether the host can be treated as stationary. RDF and tetrahedral-angle agreement support local structural similarity, but cannot by themselves validate diffusion or conductivity. Experimental conductivity remains a separate macroscopic reference, not a direct measurement of the plotted self-D.
 
 ![Li3PS4 four-temperature MSD](figures/05_LPS_MSD.png)
 
@@ -326,7 +357,13 @@ LiPON provides the boundary case: can the same pretrained potential maintain a c
 
 Our 124-atom model contains only five N atoms. A short contact involving two N atoms therefore affects a substantial part of the represented nitrogen environment, rather than being a negligible isolated feature. The present comparison stops at this structural question; it does not test the paper's Li-metal interface or claim agreement with bulk transport.
 
-### Results: pressure and local contacts
+### Precursor construction and scope of MD
+
+A 16-atom Li₃PO₄ source cell was repeated 2×2×2. Five O atoms were replaced by N, three further O atoms and one Li atom were removed, yielding **Li47P16O56N5 (124 atoms)** with zero formal charge under Li⁺/P⁵⁺/O²⁻/N³⁻ counting. The substitutions are an independent seeded realization; formal charge balance does not establish the correct amorphous bonding network.
+
+The executed NEP preparation consists of 2000 K for 10 ps, cooling to 250 K over 7 ps, a 20 ps hold and a further 20 ps pressure-release stage at 250 K and 1 bar, using 0.5 fs integration. This is not the author's NequIP trajectory or a full reproduction of its protocol. No long production transport series is interpreted here.
+
+**Reading the contact figure:** pressure release tests bulk stress relaxation; the paired timestep branches test whether the short contact disappears when integration is refined. Neither test determines chemical bond identity. The persistent N–N distance is therefore reported as a limitation in structural interpretation, not repaired numerically or converted into a conductivity claim. This material tests the boundary of the pretrained NNP's use under the chosen preparation conditions.
 
 ![LiPON contact diagnosis](figures/08_LiPON_contacts.png)
 
