@@ -2,6 +2,37 @@
 
 Updated 15 September 2026. [日本語](materials_overview_ja.md)
 
+### Portfolio supplement: numerical comparison and bounded follow-up
+
+Pretrained-potential deviations are reported rather than tuned away. Using the **same NHC2 fs,80 ps LZOC series** at340/360/380 K, fit lnD against1/T and extrapolate to300 K. The fixed model volume is4990.647 Å³,N_Li=42; σ_NE uses this density, not an independently equilibrated300 K volume.
+
+|Common MSD lag window|Apparent E_a (eV)|Arrhenius R²|Extrapolated D300 (cm²/s)|Conditional σ300 (mS/cm)|
+|---|---:|---:|---:|---:|
+|5–20 ps|0.2196|0.72188|1.706e−7|8.90|
+|10–30 ps|0.3245|0.99271|7.761e−8|4.05|
+|10–40 ps|0.2803|0.99982|9.097e−8|4.74|
+
+For the10–40 ps row, E_a is0.0303 eV above Hussain's0.25±0.10 eV. σ300=4.74 mS/cm is0.110 times the theoretical43.3±3.3 mS/cm and1.96 times Hu's experimental2.42 mS/cm **at298.15 K**. The experiment is not exactly300 K and is a different physical sample. These are conditional numerical comparisons, not validated room-temperature predictions. Keep all windows; do not select one because it approaches experiment. [Source and calculation](../../results/amorphous_review_20260915/portfolio_supplement/LZOC_300K_conditional.csv), [script](../../scripts/structures/portfolio_supplement.py). The earlier “no formal extrapolation” statements mean no validated extrapolation is adopted; this new table explicitly supplies a diagnostic only.
+
+For LSZC, the last10 ps of the completed400 K NPT run give mean Zr–O/Zr–Cl/total O+Cl neighbour counts **1.5159/4.2597/5.7756** at2.6/3.2 Å cutoffs. All sampled sulfates retain four O neighbours(<2.0 Å). **93.75% of sulfates connect to at least two unique Zr**, with2.75 Zr per sulfate on average; none has zero Zr neighbours. Thus low Zr–O coordination does not mean the packed clusters remain completely disconnected. This local graph statistic does not establish system-spanning percolation, chemical bond order or EXAFS equivalence. [Neighbour distributions](../../results/amorphous_review_20260915/portfolio_supplement/LSZC_coordination_distribution.csv), [connectivity over time](../../results/amorphous_review_20260915/portfolio_supplement/LSZC_sulfate_connectivity.csv).
+
+![LSZC coordination distribution](../../results/amorphous_review_20260915/portfolio_supplement/LSZC_coordination.png)
+
+Each curve counts32 Zr atoms over100 sampled frames from the same last10 ps interval (3,200 atom–frames, not independent samples). The total O+Cl distribution shows that the low O coordination coexists with more Cl neighbours; it does not alone establish agreement with EXAFS.
+
+Follow-up: **LSZC8676040.3 is running** (80/200 ps confirmed at this check). LiPON8676040.1/2 exited at input-hash verification because the new remote input directory had not yet synchronized; no MD was run. After creating the directory and verifying the input hash, **only LiPON was resubmitted as8676059.1/2; both2 ps runs completed and were analysed**:
+
+|Task|System and purpose|Settings|
+|---|---|---|
+|1/2|LiPON precontact timestep control|Same124-atom2.2 ps snapshot and velocities;2000 K NVT MTTK;0.5/0.25 fs;2 ps each;100 fs physical coupling;0.01 ps output|
+|3|LSZC first transport pilot|Latest272-atom400 K NPT endpoint;400 K NVT MTTK;0.5 fs;200 ps;100 fs coupling;0.1 ps output|
+
+LiPON thermostat internal state is reinitialized in both branches: this is a matched restart comparison, not an exact replay of the original trajectory. Only masses were added to the copied input; coordinates and velocities were not altered. LSZC is a single-temperature exploratory pilot, not a paper-matched activation-energy calculation. No DFT and no artificial bond/density tuning. Submission script: [portfolio_followup.sh](../../hpc/tsubame_26icp/production/portfolio_followup.sh). Group tgj-26ICP balance checked before submission:219.58 points, above the100-point notification threshold.
+
+![LiPON short-timestep contact comparison](../../results/amorphous_review_20260915/portfolio_supplement/LiPON_timestep_NN.png)
+
+Both branches show N76–N108<1.6 Å at the first0.01 ps sample and in198/200 samples(99%). Minimum distances are1.1791 Å(0.5 fs) and1.1787 Å(0.25 fs); final distances1.2327/1.2776 Å. Mean temperatures are2024.5/2004.8 K over this short2 ps segment. **Halving the timestep does not remove the contact**, so reducing0.5 fs alone is not a demonstrated repair. This does not identify a chemical species or prove the potential wrong. No DFT or further long LiPON production is submitted. [Numerical results and hashes](../../results/amorphous_review_20260915/portfolio_supplement/LiPON_diagnostic.json), [analysis script](../../scripts/structures/analyze_lipon_precontact.py).
+
 ### Completed analysis: Li₃PS₄ transport control
 
 Array **8675738.1–4** completed (300/500/700/900 K), and all four 200 ps production trajectories have been analysed. This is an analysed NEP control, **not a successful quantitative reproduction**: apparent D is 3.97–7.58 times the Chen glass reference, with a non-diffusive plateau at 300 K. See the [transport results](#lps-transport). Every branch starts independently from the same512-atom preparation endpoint, SHA256 `a92cb37de5d8aaf4fd110edcb8aa85ebc6a1b9798b8588d2c1dbae08f25c45df`. NEP89/GPUMD,0.5 fs;10 ps300→target ramp (300 K branch is a hold),50 ps NPT1 bar,200 ps NVT; MTTK periods100/1000 fs. Output0.05 ps thermo/0.1 ps trajectory. Each task had a30-minute scheduler limit. [Submitted script](../../hpc/tsubame_26icp/production/lips_transport_control.sh).

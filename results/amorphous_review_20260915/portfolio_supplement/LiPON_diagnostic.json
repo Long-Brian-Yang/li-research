@@ -1,0 +1,44 @@
+{
+  "results": {
+    "dt05": {
+      "pair76_108_min_A": 1.179079290202357,
+      "pair76_108_max_A": 1.717946909562091,
+      "fraction_samples_pair_below1point6": 0.99,
+      "first_sample_below1point6_ps": 0.01,
+      "final_pair_A": 1.2327092731762226,
+      "mean_T_K": 2024.4777951365
+    },
+    "dt025": {
+      "pair76_108_min_A": 1.178709173638945,
+      "pair76_108_max_A": 1.717983840637938,
+      "fraction_samples_pair_below1point6": 0.99,
+      "first_sample_below1point6_ps": 0.01,
+      "final_pair_A": 1.2775898815942626,
+      "mean_T_K": 2004.7969174300001
+    }
+  },
+  "source_hashes": {
+    "results/amorphous_review_20260915/source/LiPON_precontact/precontact_dt05_8676059/dump.xyz": "1b8692f74764ae9bf42b870ce1c562d5fb45a96dd8485b03bef88edf7ab79a43",
+    "results/amorphous_review_20260915/source/LiPON_precontact/precontact_dt05_8676059/stdout.txt": "0fbd591a2e68c1ee8d9389fa3a3cbee491a9c1b142d2673b8c52c1ea3f87fff9",
+    "results/amorphous_review_20260915/source/LiPON_precontact/precontact_dt05_8676059/thermo.out": "6f024caddd4cd7a69239161f522c7d5dde254a844659ca9331a2ca0984d2aece",
+    "results/amorphous_review_20260915/source/LiPON_precontact/precontact_dt05_8676059/model.xyz": "66c4b08c1056a0a14d2d73825f5849497b2b2f3a6c0a9b8b0d11a72d9b9a4123",
+    "results/amorphous_review_20260915/source/LiPON_precontact/precontact_dt05_8676059/run.in": "3b58b27b9914d1e089d0609e649bb47cdc30bb50eecc86a737015ed61696147e",
+    "results/amorphous_review_20260915/source/LiPON_precontact/precontact_dt05_8676059/neighbor.out": "b5d7ec5e2748be055d70ef1a4da140477403ece3602294089b9f232a0f869c1a",
+    "results/amorphous_review_20260915/source/LiPON_precontact/precontact_dt05_8676059/restart.xyz": "548c34b962b36a0502f3b00d9c52d7ba3cd784c3c1c3af75f823f33cce35f26e",
+    "results/amorphous_review_20260915/source/LiPON_precontact/precontact_dt05_8676059/submitted_job.sh": "3d06247574128db1e45a0e2feb2e10afafd46bb3ae31f6fe2caaf7d39d156877",
+    "results/amorphous_review_20260915/source/LiPON_precontact/precontact_dt05_8676059/provenance.sha256": "76952fdda0f3907ba13a4c5f1d2c773410d4104484756ca00815cb5dbd5e715f",
+    "results/amorphous_review_20260915/source/LiPON_precontact/precontact_dt05_8676059/stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results/amorphous_review_20260915/source/LiPON_precontact/precontact_dt05_8676059/completed.txt": "65041fc5dd9f8b7533f015efe898a469522e13e9255bb3072a37c256d273402b",
+    "results/amorphous_review_20260915/source/LiPON_precontact/precontact_dt025_8676059/dump.xyz": "4c15c9a32a41481e880e47e90e88b781e89a30766d9987f09d6e0d41a1bbcee3",
+    "results/amorphous_review_20260915/source/LiPON_precontact/precontact_dt025_8676059/stdout.txt": "2a425dfb0eb10498b734023e2cfd6d91868a6e51a3614f2a98678351d4a47703",
+    "results/amorphous_review_20260915/source/LiPON_precontact/precontact_dt025_8676059/thermo.out": "1a02dda6780fb4c71e9e40d576db3ca01c743542bb974ff344cb30896e94352a",
+    "results/amorphous_review_20260915/source/LiPON_precontact/precontact_dt025_8676059/model.xyz": "66c4b08c1056a0a14d2d73825f5849497b2b2f3a6c0a9b8b0d11a72d9b9a4123",
+    "results/amorphous_review_20260915/source/LiPON_precontact/precontact_dt025_8676059/run.in": "2406737c87c8f9267447d69b0210c4f049fa4ee285ba4a5cc94e67a1bcd1c378",
+    "results/amorphous_review_20260915/source/LiPON_precontact/precontact_dt025_8676059/neighbor.out": "3a99ffe3307aa4df6f7895626b689b1c353e625a0ed1911a03d956705f8fbf78",
+    "results/amorphous_review_20260915/source/LiPON_precontact/precontact_dt025_8676059/restart.xyz": "f312699d28e4ad42c7f58aa6274d99cb93067e12cfe7193cf824dd34387dcc3a",
+    "results/amorphous_review_20260915/source/LiPON_precontact/precontact_dt025_8676059/submitted_job.sh": "3d06247574128db1e45a0e2feb2e10afafd46bb3ae31f6fe2caaf7d39d156877",
+    "results/amorphous_review_20260915/source/LiPON_precontact/precontact_dt025_8676059/provenance.sha256": "76952fdda0f3907ba13a4c5f1d2c773410d4104484756ca00815cb5dbd5e715f",
+    "results/amorphous_review_20260915/source/LiPON_precontact/precontact_dt025_8676059/stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results/amorphous_review_20260915/source/LiPON_precontact/precontact_dt025_8676059/completed.txt": "65041fc5dd9f8b7533f015efe898a469522e13e9255bb3072a37c256d273402b"
+  }
+}

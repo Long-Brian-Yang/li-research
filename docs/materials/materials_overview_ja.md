@@ -2,6 +2,37 @@
 
 更新：2026年9月15日。[English](materials_overview_en.md)
 
+### 統合補足：数値比較と限定的な継続計算
+
+事前学習ポテンシャルの偏差は数値として報告し、実験に合わせて調整しない。**同一のLZOC NHC2 fs・80 ps系列**の340／360／380 KでlnD対1/Tを回帰し、300 Kへ外挿した。固定体積4990.647 Å³、N_Li=42を用いる。300 Kで独立に平衡化した密度ではない。
+
+|共通MSD lag回帰区間|見かけのE_a (eV)|Arrhenius R²|外挿D300 (cm²/s)|条件付きσ300 (mS/cm)|
+|---|---:|---:|---:|---:|
+|5–20 ps|0.2196|0.72188|1.706e−7|8.90|
+|10–30 ps|0.3245|0.99271|7.761e−8|4.05|
+|10–40 ps|0.2803|0.99982|9.097e−8|4.74|
+
+10–40 psのE_aはHussainの0.25±0.10 eVより0.0303 eV大きい。σ300=4.74 mS/cmは理論43.3±3.3 mS/cmの0.110倍、Huの実験2.42 mS/cm（**298.15 K**）の1.96倍である。実験温度は厳密には300 Kではなく、試料状態も異なる。条件付き数値比較であり、検証済み室温予測ではない。全区間を残し、実験に近い区間を選別しない。[数値表](../../results/amorphous_review_20260915/portfolio_supplement/LZOC_300K_conditional.csv)、[計算スクリプト](../../scripts/structures/portfolio_supplement.py)。以前の「正式外挿なし」は検証済み外挿を採用しない意味であり、この表は診断的外挿だけを追加したものである。
+
+LSZCの400 K NPT末尾10 psでは、Zr–O／Zr–Cl／O+Cl総近接数の平均が**1.5159／4.2597／5.7756**（cutoff2.6／3.2 Å）。全サンプルの硫酸根はO四配位(<2.0 Å)を保持した。**93.75%の硫酸根が異なるZrを2個以上接続**し、平均2.75 Zr／硫酸根、Zr近接数ゼロはない。低いZr–O配位数は、団簇が完全に孤立している意味ではない。ただし局所グラフ指標であり、系全体のパーコレーション、化学結合次数、EXAFSとの同等性は証明しない。[近接数分布](../../results/amorphous_review_20260915/portfolio_supplement/LSZC_coordination_distribution.csv)、[接続性時系列](../../results/amorphous_review_20260915/portfolio_supplement/LSZC_sulfate_connectivity.csv)。
+
+![LSZC配位数分布](../../results/amorphous_review_20260915/portfolio_supplement/LSZC_coordination.png)
+
+各曲線は同じ末尾10 psの100フレーム、32 Zrからなる3,200 atom–framesの分布であり、独立サンプルではない。O配位が少ない一方でCl近接が多く、総O+Cl配位に寄与していることが分かる。これだけでEXAFS一致とは判定しない。
+
+継続状況：**LSZC8676040.3は実行中**（今回確認時点で80／200 ps）。LiPON8676040.1／2は新しい遠隔入力ディレクトリの同期前にハッシュ検証で終了し、MDは実行されなかった。ディレクトリを作成し入力ハッシュを確認後、**LiPONだけを8676059.1／2として再投入し、両方2 ps完了・解析済み**である。
+
+|Task|系と目的|条件|
+|---|---|---|
+|1／2|LiPON接触形成前の時間刻み対照|同じ124原子2.2 ps快照と速度；2000 K NVT MTTK；0.5／0.25 fs；各2 ps；物理的結合周期100 fs；出力0.01 ps|
+|3|LSZC最初の輸送試行|最新272原子400 K NPT末態；400 K NVT MTTK；0.5 fs；200 ps；結合100 fs；出力0.1 ps|
+
+LiPONの温調器内部状態は両分岐で再初期化するため、元軌跡の完全な再演ではなく同条件restart対照である。入力コピーには質量のみ追加し、座標と速度は変更していない。LSZCは単温度の探索計算であり、論文と一致した活性化エネルギー計算ではない。DFTや人為的な結合・密度調整は行わない。[投入スクリプト](../../hpc/tsubame_26icp/production/portfolio_followup.sh)。投入前のtgj-26ICP残高は219.58 pointsで、通知閾値100を上回る。
+
+![LiPON短時間刻み接触比較](../../results/amorphous_review_20260915/portfolio_supplement/LiPON_timestep_NN.png)
+
+両分岐とも最初の0.01 psサンプルでN76–N108<1.6 Åとなり、198／200サンプル（99%）が閾値未満だった。最短距離は1.1791 Å（0.5 fs）と1.1787 Å（0.25 fs）、最終距離は1.2327／1.2776 Å、2 ps平均温度は2024.5／2004.8 K。**時間刻み半減でも接触は消失せず**、0.5 fsを小さくするだけでは修復できたと言えない。化学種の同定やポテンシャル誤りの証明でもない。DFTや追加長時間LiPON輸送は投入していない。[数値とハッシュ](../../results/amorphous_review_20260915/portfolio_supplement/LiPON_diagnostic.json)、[解析スクリプト](../../scripts/structures/analyze_lipon_precontact.py)。
+
 ### 解析完了：Li₃PS₄輸送対照
 
 **8675738.1–4**（300／500／700／900 K）が完了し、各200 psの本計算を解析した。**定量的な再現成功ではない**。見かけのDはChenのガラス参照値の3.97–7.58倍であり、300 KではMSDがプラトーに近い。[輸送解析結果](#lps-transport)。全分岐は同じ512原子の作製末態から独立に開始した。入力SHA256：`a92cb37de5d8aaf4fd110edcb8aa85ebc6a1b9798b8588d2c1dbae08f25c45df`。NEP89／GPUMD、0.5 fs、300 Kから目標まで10 ps（300 Kは保持）、1 bar NPT50 ps、NVT200 ps。MTTK温度／圧力周期100／1000 fs。熱力学量0.05 ps、軌跡0.1 ps間隔。各タスクの上限は30分。[投入スクリプト](../../hpc/tsubame_26icp/production/lips_transport_control.sh)。
