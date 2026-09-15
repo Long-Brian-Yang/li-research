@@ -18,6 +18,8 @@ runs/
 results/gpumd_nep89/300K_2x2x4/job_*/
 results/amorphous_review_20260915/source/LSZC_4T/
 results/amorphous_review_20260915/source/legacy_NPT/
+results/amorphous_review_20260915/source/LZOC300/
+results/amorphous_review_20260915/source/LSZC150/
 
 # Python cache and local environments
 __pycache__/

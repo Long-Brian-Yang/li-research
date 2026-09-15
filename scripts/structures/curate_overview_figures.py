@@ -47,16 +47,17 @@ def finish(fig,name):
 
 def lzoc():
     fig,aa=grid(2);axes=aa.ravel()
-    fig.suptitle('LZOC — NEP · NHC · 2 fs · 80 ps production', fontsize=17)
+    fig.suptitle('LZOC — NEP · NHC · 2 fs · 300 ps production', fontsize=17)
     for ax,T in zip(axes,[340,360,380]):
         for model,c,ls in [('NHC_2fs',RED,'-')]:
-            a=load(F/f'LZOC_{T}K_{model}_MSD.csv');a=a[a[:,0]<=40]
+            a=load(BASE/f'followup300/LZOC_{T}K_300ps_MSD.csv');a=a[a[:,0]<=40]
             ax.plot(a[:,0],a[:,1],color=c,ls=ls,label=model.replace('_',' '))
-        ax.set(title=f'{T} K',xlabel='Lag time (ps)',ylabel='Li MSD (Å²)',ylim=(0,5.7));ax.legend()
+        ax.set(title=f'{T} K',xlabel='Lag time (ps)',ylabel='Li MSD (Å²)',ylim=(0,4.5));ax.legend()
     a=load(P/'LZOC_Table4_comparison.csv');ax=axes[3]
     ax.errorbar(a[:,0],a[:,1],yerr=a[:,2],fmt='ko-',capsize=4,label='AIMD tracer D*')
     for j,c,ls,lab in [(5,RED,'-','NEP: NHC 2 fs')]:
-        ax.plot(a[:,0],a[:,j],'o',color=c,ls=ls,label=lab)
+        data=js(BASE/'followup300/analysis.json')
+        ax.plot(a[:,0],[r['D_cm2_s'] for r in data['records'] if r['duration_ps']==300],'o',color=c,ls=ls,label=lab+' (300 ps)')
     ax.set(title='AIMD comparison',xlabel='Temperature (K)',ylabel='D (cm²/s)',yscale='log',xticks=a[:,0]);ax.legend()
     finish(fig,'01_LZOC_transport')
 

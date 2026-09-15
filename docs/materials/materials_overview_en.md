@@ -83,44 +83,53 @@ Average pressure near the target does not establish structural equilibration. En
 <a id="lzoc"></a>
 ## 2. Reconstructed LZOC: the primary AIMD comparison
 
-**Fresh 300 ps series submitted, 15 September 2026:** array **8676684.1–3**, respectively 340/360/380 K. Each starts from its original 80 ps production input (192 atoms, stored coordinates/cell/velocities), not the old endpoint. Only the run length changes to 150,000 steps: 2 fs, NVT Nosé–Hoover chain, 100 fs coupling, 0.05 ps thermo and 0.1 ps trajectory output remain unchanged. Old 80 ps results are preserved. After completion, compare nested 80/150/300 ps estimates using the same primary 10–40 ps fitting interval and block diagnostics. These are not independent replicas; restarting the same inputs may reproduce the original early segment. The figures and values below remain the completed 80 ps results until the new analysis is available.
+### Literature comparison using the completed 300 ps series
 
-Having selected the workflow, we first return to the oxychloride research direction. The decisive comparison is temperature-resolved Li tracer diffusion against AIMD; agreement of an extrapolated conductivity alone is not sufficient.
-
-### Paper question and 2 fs transport comparison
-
-[Hussain et al. (2024)](https://doi.org/10.1038/s41524-024-01346-y) investigates whether LiCl-deficient amorphous LZOC supports fast Li transport. Our comparison now uses only the completed NEP NVT Nosé–Hoover-chain **2 fs, 80 ps, 340/360/380 K** series. The coupling period is our 100 fs setting; 192 atoms, the reconstructed starting structure and NEP are not the paper's 48-atom AIMD setup. A separate 2 ps execution check preceded production, which restarted from the original input rather than the check endpoint. Density is 2.2340 g/cm³. Earlier 0.5 fs tests remain archived and are not a competing primary series.
+Jobs 8676684.1–3 completed 300 ps at 340/360/380 K, with 192 atoms, 2 fs and NVT Nosé–Hoover-chain coupling of 100 fs. Each rerun starts from its original input; the old 80 ps trajectories are preserved, not concatenated. These are not independent glass replicas.
 
 ![LZOC transport and AIMD comparison](../../results/plots/amorphous/01_LZOC_transport.png)
 
-Only the 2 fs, 80 ps production series is plotted at 340/360/380 K. Superseded 0.5 fs and timestep-comparison figure exports have been removed; raw data remain archived.
+Panels a–c show all-time-origin, whole-system COM-corrected Li MSD from 300 ps, over 0–40 ps lag with common axes. Panel d compares the fixed 10–40 ps slope with [Hussain2024](https://doi.org/10.1038/s41524-024-01346-y), Supplementary Table 4. Published ± values are retained as reported. Only the 2 fs series is shown.
 
-**a–c:** all-time-origin Li MSD at the three temperatures, common y scale and 0–40 ps lag. **d:** 10–40 ps slope estimates against the paper's tracer D* in Supplementary Table 4. Reported ± values are reproduced as given, not reinterpreted as replica confidence intervals. Lines guide the eye.
-
-|T (K)|AIMD D* (cm²/s), reported ±|NEP 2 fs D_app (cm²/s)|NEP / AIMD|
+|T (K)|AIMD D* (cm²/s)|NEP 300 ps D_app (cm²/s)|NEP/AIMD|
 |---:|---:|---:|---:|
-|340|(2.09±0.06)×10⁻⁶|3.270×10⁻⁷|0.156|
-|360|(1.77±0.04)×10⁻⁶|5.501×10⁻⁷|0.311|
-|380|(3.50±0.10)×10⁻⁶|8.957×10⁻⁷|0.256|
+|340|(2.09±0.06)×10⁻⁶|2.460×10⁻⁷|0.118|
+|360|(1.77±0.04)×10⁻⁶|3.592×10⁻⁷|0.203|
+|380|(3.50±0.10)×10⁻⁶|1.164×10⁻⁶|0.333|
 
-NEP gives approximately 69–84% lower tracer-diffusion estimates than the source table. The published 340→360 K decrease is retained rather than replaced by points on a fitted line. Thus the current result captures increasing NEP mobility with temperature but does not quantitatively reproduce the AIMD values. Tracer D* and charge D are different observables.
+NEP remains below AIMD at every temperature. The NEP series increases monotonically, while the reference includes a 340→360 K decrease. Thus neither pointwise agreement nor the exact temperature trend is reproduced. Cell size, preparation and potential differ from the paper; the discrepancy cannot be assigned uniquely to the potential.
 
-The paper discusses localized Cl motion; a nonzero Cl MSD alone is not evidence of long-range anion diffusion. Our NHC 340 K Cl MSD at 40 ps is 0.923 Å². Energy relaxation and framework motion remain relevant, so we do not attribute all differences solely to the potential or claim long-time convergence.
+### Does longer sampling stabilize the result?
 
-### Conditional extrapolation from the same 2 fs series
+All estimates below use the same 10–40 ps lag fit; only the total trajectory length changes.
 
-|MSD window (ps)|Diagnostic E_a (eV)|R²|D(300 K) (cm²/s)|σ_NE(300 K) (mS/cm)|
-|---|---:|---:|---:|---:|
-|5–20|0.2196|0.72188|1.706×10⁻⁷|8.90|
-|10–30|0.3245|0.99271|7.761×10⁻⁸|4.05|
-|10–40 — primary comparison|0.2803|0.99982|9.097×10⁻⁸|4.74|
+|Prefix duration (ps)|D340 (cm²/s)|D360 (cm²/s)|D380 (cm²/s)|Diagnostic E_a (eV)|Arrhenius R²|
+|---:|---:|---:|---:|---:|---:|
+|80|6.099×10⁻⁷|1.960×10⁻⁸|7.109×10⁻⁷|0.0064|0.00003|
+|150|4.794×10⁻⁷|2.038×10⁻⁷|6.760×10⁻⁷|0.0850|0.0612|
+|300|2.460×10⁻⁷|3.592×10⁻⁷|1.164×10⁻⁶|0.4280|0.9010|
 
-These archived fit values are diagnostic, not a validated room-temperature prediction; the primary slope window is unchanged. The common volume is 4990.647 Å³ with 42 Li, not a separately equilibrated 300 K volume. [Hu et al. (2023)](https://doi.org/10.1038/s41467-023-39522-1) reports 2.42 mS/cm at 298.15 K; Hussain reports a theoretical 43.3±3.3 mS/cm at 300 K and 0.25±0.10 eV. Physical sample, temperature, preparation and transport estimators differ. Agreement of one extrapolation is weaker evidence than the direct temperature-resolved comparison above.
+These are nested prefixes of the new runs, not the old 80 ps dataset. The new first-80-ps estimates differ from the older runs despite retained starting inputs; the cause of trajectory divergence has not been isolated, and the datasets must not be silently interchanged. Nested prefixes and consecutive blocks are correlated, not independent replicas.
+
+The large duration sensitivity means that 300 ps has not demonstrated converged diffusion or activation energy. The 300 ps log–log MSD exponents over 10–40 ps are 0.282/0.316/0.566; localized-motion offsets can affect these exponents, so they are diagnostics rather than proof of asymptotic subdiffusion. The 0.428 eV value is a diagnostic fit, not a validated material E_a. No new room-temperature conductivity extrapolation is promoted. The earlier 0.280 eV estimate belongs only to the old 80 ps analysis.
+
+**Interpretation:** additional sampling changes the estimate substantially rather than simply improving agreement with the paper. The present result supports a bounded comparison of apparent transport, not a claim of full AIMD reproduction.
 
 <a id="lszc"></a>
 ## 3. LSZC: extending the comparison to experiment
 
-**Follow-up submitted, 15 September 2026:** array **8676678.1–2**, respectively 320/350 K. Both branches start from the same documented 272-atom, 400 K mother structure: 10 ps NPT ramp, then **150 ps NPT at 1 bar**, timestep 0.5 fs, MTTK coupling periods 100/1000 fs, one GPU per task. The jobs stop for late-block density/energy review. Mean-volume NVT equilibration and **300 ps NVT production per temperature** are planned only after that review; they are not yet submitted. Existing results below remain unchanged.
+### Endpoint NPT follow-up: completed, not yet production-ready as a pair
+
+Jobs 8676678.1–2 completed 150 ps NPT after the 10 ps ramp. Comparing the last two consecutive 25 ps means:
+
+|T (K)|Density: 100–125 → 125–150 ps (g/cm³)|Relative change|PE change (meV/atom)|
+|---:|---|---:|---:|
+|320|1.8773 → 1.8840|+0.35%|−0.281|
+|350|1.8747 → 1.7814|−4.98%|+0.361|
+
+320 K shows relatively small late changes in these observables, but this is not a complete structural validation. At 350 K the late density drop prevents treating a single late average as a settled equilibrium volume. The temperature branches therefore do not yet support an equivalent paired NVT production setup. No 300 ps LSZC production was submitted in this analysis update; do not force the density to its experimental value. Existing four-temperature transport below is retained as the previous dataset, not the result of this NPT follow-up.
+
+**Submission history (now completed), 15 September 2026:** array **8676678.1–2**, respectively 320/350 K. Both branches start from the same documented 272-atom, 400 K mother structure: 10 ps NPT ramp, then **150 ps NPT at 1 bar**, timestep 0.5 fs, MTTK coupling periods 100/1000 fs, one GPU per task. The jobs stop for late-block density/energy review. Mean-volume NVT equilibration and **300 ps NVT production per temperature** are planned only after that review; they are not yet submitted. Existing results below remain unchanged.
 
 The next question is whether the selected potential captures transport in a polyanion-containing oxychloride. Tang's experimental conductivity and local coordination, together with the published tuned-MACE trajectories, provide complementary benchmarks. They are distinct references, not interchangeable measurements. The current NEP series does not reproduce their temperature trend; the structure analysis below examines possible contributors without assigning a unique cause.
 
@@ -270,11 +279,11 @@ The1.6 Å line is a screening cutoff, not a universal bond criterion. Late P–O
 <a id="remaining"></a>
 ## 6. Synthesis: reproduction, deviations and next steps
 
-The narrative closes with two separate conclusions. NEP offers substantially lower cost in the measured workflow, which motivated its use; the literature comparisons do not establish uniform predictive accuracy. New LZOC underestimates the AIMD tracer diffusion values, LSZC fails to reproduce the temperature trend, Li₃PS₄ shows partial local-structure agreement without quantitative transport agreement, and LiPON retains a local-contact discrepancy. These material-dependent outcomes, not runtime alone, define the present applicability limits. The LSZC endpoint follow-up has now been submitted for NPT equilibration only; its 300 ps productions await review.
+The narrative closes with two separate conclusions. NEP offers substantially lower cost in the measured workflow, which motivated its use; the literature comparisons do not establish uniform predictive accuracy. New LZOC underestimates the AIMD tracer diffusion values, LSZC fails to reproduce the temperature trend, Li₃PS₄ shows partial local-structure agreement without quantitative transport agreement, and LiPON retains a local-contact discrepancy. These material-dependent outcomes, not runtime alone, define the present applicability limits. The LSZC NPT follow-up is complete; a late density decrease at 350 K prevents treating both endpoints as equilibrated.
 
 |Material / item|Current result|Further calculation|
 |---|---|---|
-|LSZC|Four temperatures analysed and compared with published tuned-MACE and experimental series; no valid NEP E_a extracted|Endpoint NPT follow-up 8676678.1–2 submitted; 300 ps production awaits equilibrium review.|
+|LSZC|Four temperatures analysed and compared with published tuned-MACE and experimental series; no valid NEP E_a extracted|NPT follow-up completed; 350 K late density drift remains. Production not submitted.|
 |New LZOC|2 fs primary figure/table and direct AIMD D* comparison updated|No further timestep comparison.|
 |Li₃PS₄|Existing transport and local-structure results interpreted against the paper; partial structural agreement does not imply transport reproduction|No new production for the present exploratory comparison.|
 |LiPON|Contact checks complete; persistent N–N mismatch reported as a limitation|No blind extension or DFT.|
@@ -295,7 +304,7 @@ Four chemical systems, five preparation routes. New and legacy LZOC have the sam
 
 |Route|Model size|Completed / submitted|Interpretation|
 |---|---|---|---|
-|New LZOC|192: Li42Zr24Cl114O12|340/360/380 K, 80 ps, NHC 2 fs primary comparison analysed|Direct AIMD table comparison available; long-time convergence not established|
+|New LZOC|192: Li42Zr24Cl114O12|340/360/380 K, 300 ps, NHC 2 fs analysed; nested 80/150/300 ps compared|Direct AIMD table comparison available; long-time convergence not established|
 |LSZC|272: Li32Zr32Cl128S16O64|400 K pilot and 320/330/340/350 K, 300 ps array8676216 analysed|Sulfate retained, but Zr environment/density and the temperature trend differ from reference|
 |Li₃PS₄|512: Li192P64S256|300/500/700/900 K200 ps production analysed, array8675738|Transport differs from reference;300 K plateau and900 K host motion remain|
 |LiPON|124: Li47P16O56N5|Preparation,pressure release and paired0.5/0.25 fs checks analysed|Short N–N contacts persist; no long transport prediction|
