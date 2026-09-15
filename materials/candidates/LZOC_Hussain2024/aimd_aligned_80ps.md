@@ -1,5 +1,9 @@
 # AIMD-aligned NEP transport control / AIMD条件に合わせたNEP比較
 
+## Completion / 完了確認（2026-09-15）
+
+All three tasks completed: each production has 1600 thermo records, 800 trajectory frames, completion marker and GPUMD finished log. Outputs downloaded locally. Matched first-80-ps analysis: [English](../../../results/amorphous_review_20260915/final_comparisons/report_en.md) / [日本語](../../../results/amorphous_review_20260915/final_comparisons/report_ja.md). Initial positions/cell/stored velocities agree with the earlier production input. No strict-reproduction claim; no adopted converged Ea. All numerical source hashes are included in the report directory.
+
 ## English
 
 Hussain et al. (2024), [DOI](https://doi.org/10.1038/s41524-024-01346-y), reports amorphous transport at 340/360/380 K for80 ps, NVT Nosé–Hoover,2 fs. This control uses those temperatures, timestep and transport duration, with GPUMD Nosé–Hoover chain (`nvt_nhc`). Coupling100 fs (`50` timesteps) is our retained physical coupling choice, not a verified paper setting. [GPUMD syntax](https://gpumd.org/gpumd/input_parameters/ensemble_standard.html), [coupling units](https://gpumd.org/gpumd/input_parameters/ensemble.html).

@@ -1,4 +1,27 @@
-# Materials portfolio and next-step plan
+# Materials portfolio — current assessment, 15 September 2026
+
+[Complete latest analysis: 11 new figure families, data, literature comparisons and limits](../../results/amorphous_review_20260915/final_comparisons/report_en.md) · [Japanese](materials_overview_ja.md)
+
+Four amorphous chemical systems, five preparation routes. Legacy and reconstructed LZOC share one composition. No new MD or DFT was submitted during this postprocessing. Numerical completion is distinct from scientific agreement.
+
+| Material / route | Latest completed work | Result / disposition |
+|---|---|---|
+| Reconstructed LZOC, 192 atoms | 340/360/380 K: original 200 ps completed; NHC/2 fs controls 8675022.1–3 completed 80 ps each. Matched first-80-ps analysis finished | Settings/window sensitivity remains. No adopted Ea or 300 K extrapolation |
+| LSZC, 272 atoms | Independent cluster packing/relaxation, 300 K diagnostic, 100 ps ramp +20 ps at 400 K completed; experimental EXAFS and deposited-geometry comparisons finished | S–O fourfold retained. Zr–O CN1.532 versus EXAFS2.6; density below author geometry. Not yet quantitative reproduction |
+| Li₃PS₄, 512 atoms | Preparation completed; final RDF and S–P–S angle distribution compared with Chen2025 numerical source data | Encouraging local agreement; no transport production or Ea established |
+| LiPON, 124 atoms | Preparation and 250 K release completed; coordination and contact tracing analysed | N–N1.270–1.347 Å persists. Retain as limitation case, not validated transport model |
+| Legacy LZOC candidate3 | Existing MACE/NEP600 K and four-temperature timing report complete | Archived supplementary comparison; no new extension |
+
+Main line: LZOC and LSZC; Li₃PS₄ is a methodological control, LiPON a documented limitation case. Existing crystalline Li₃YCl₆/LiNbOCl₄ benchmarks are not reanalysed in this update. The cancelled Zhou2024 route is not counted as executed. No new materials were added.
+
+Reference anchors: [Hussain2024 AIMD](https://doi.org/10.1038/s41524-024-01346-y), [Hu2023 experiment](https://doi.org/10.1038/s41467-023-39522-1), [Tang2026 LSZC](https://doi.org/10.1038/s41467-026-69737-x), [Chen2025 Li₃PS₄](https://doi.org/10.1038/s41467-025-56322-x), [Seth2025 LiPON](https://doi.org/10.1021/acsmaterialsau.4c00117). See the latest report for per-setting deviations and source distinctions. None of the routes is labelled strict full-protocol AIMD reproduction.
+
+All newly produced figures link to CSV/JSON and scripts; raw trajectories stay local/TSUBAME rather than Git. Source hashes identify analysed versions. The ≤100-point notification requirement is unchanged.
+
+<details>
+<summary>Historical snapshots below — superseded by the current table (including old “not pushed” statements)</summary>
+
+## Previous portfolio records
 
 Legacy candidate 3: [completed 600 K MACE/NEP comparison and four-temperature timing figures](../../results/LZOC/legacy_comparison_20260915/report_en.md). Later high-temperature NEP structural/transport analysis is outside this package.
 
@@ -107,3 +130,5 @@ P1 Lacivita 2018, P2 Smith & Siegel 2020, P3 Zhou 2024, P4 Sadowski & Albe 2020 
 - [Chinese overview](materials_overview_zh.md) / [Japanese overview](materials_overview_ja.md)
 
 Check each material README against its actual input scripts for detailed settings. This overview does not overwrite raw data, relabel potentials or modify diffusion results. These Markdown versions were prepared locally; no Git push was performed in this update.
+
+</details>
