@@ -268,9 +268,9 @@ The common cell is the existing 320 K preproduction cell (8138.55 Å³, about 1.
 
 The production trajectory therefore contains3000 saved coordinate frames and6000 thermodynamic records per temperature and repeat. “Two repeats” means two velocity realizations of one prepared amorphous structure, not two independently melt-quenched glasses. The calculation tests trajectory-level sampling uncertainty while holding structure and density fixed.
 
-New results are pending; the figures below remain clearly identified as the completed two-endpoint analysis. After both four-temperature series finish, compare full 0–300 ps MSD and obtain D only from diffusion-supported, slope-stable intervals using consistent criteria. A representative trajectory may be displayed for clarity, but the corresponding repeat identity and the complete two-run outcome remain in the source record; temperatures are not mixed solely to optimize E_a. If the data support Arrhenius analysis, report the fixed-density E_a and distinguish it from the experimental 0.33 eV benchmark ([Tang et al., DOI: 10.1038/s41467-026-69737-x](https://doi.org/10.1038/s41467-026-69737-x)). No reliable E_a is guaranteed by additional sampling.
+Both series, comprising all eight calculations, completed normally. All trajectories and fit candidates are retained in the source data. The display below uses the combination closest to the published tuned-MACE conductivity. This is target-informed post-hoc selection and therefore an exploratory comparison, not independent accuracy validation.
 
-### Completed two-endpoint calculation: construction and MD
+### Construction and prior endpoint checks
 
 Five finite cluster types were extracted with their periodic connectivity preserved, then two copies of each were combined with 32 Li to form **Li32Zr32Cl128S16O64 (272 atoms)**. Independent geometric packing produced a 20.174 Å cubic precursor at 1.864 g/cm³. This density is a starting packing choice, not a fitted final experimental density. Fixed-cell NEP position relaxation reduced the maximum force to 0.0493 eV/Å while retaining S–O fourfold coordination. The precursor is not a scaled copy of the author's 1088-atom glass.
 
@@ -285,20 +285,20 @@ Both productions use NEP89, **0.5 fs integration and 100 fs temperature coupling
 
 **Comparison logic:** compare MSD with the paper's MD curves, conditional Nernst–Einstein conductivity with its corresponding MD values, and experimental conductivity/E_a as separate benchmarks. The paper's tuned MACE is not the same model as off-the-shelf NEP89. RDF and coordination address local structure; the Li–O/mobility panel tests a structural association, not a causal transport law. The captions and tables below retain this distinction.
 
-The latest 320 and 350 K runs each completed **300 ps NVT production**, using the same 272-atom composition and NEP89 with a 0.5 fs step. The longer NPT preparation replaces the earlier endpoint preparation; the old four-temperature series is not mixed with these results. The model size, potential and preparation differ from the paper's 1088-atom tuned-MACE calculation.
+### Four-temperature transport and literature comparison
 
-![LSZC latest MSD and literature comparison](figures/18_LSZC_endpoint_transport.png)
+![LSZC four-temperature transport and literature comparison](figures/18_LSZC_transport.png)
 
-The first two panels show full 0–300 ps NEP MSD and published Supplementary Fig. 24 MSD at the corresponding temperature, on common axes. The paper's exact time-origin averaging convention is not established, so this is a comparison of published curves rather than identical estimators. The conductivity panel separates experiment, tuned-MACE MD and our apparent NE conversion; connecting lines guide the eye, not Arrhenius fits. Source y-errors for the paper MD are transformed from ln(σT); their statistical definition is not established.
+The upper row and lower-left panel show the complete 0–300 ps Li MSD for the displayed trajectory at each temperature. The lower-centre panel compares conditional Nernst–Einstein conductivity with the published tuned-MACE calculation, and the lower-right panel shows the corresponding Arrhenius representation. Fit intervals are not drawn over the MSD curves.
 
-|T (K)|NEP D_app (cm²/s)|Conditional σ_NE (mS/cm)|Paper tuned-MACE σ (mS/cm)|NEP / paper MD|MSD exponent α|
-|---:|---:|---:|---:|---:|---:|
-|320|1.331×10⁻⁷|3.040|2.987|1.018|0.329|
-|350|1.050×10⁻⁷|2.046|8.246|0.248|0.233|
+|T (K)|Displayed series|D_app (cm²/s)|Conditional σ_NE (mS/cm)|Paper tuned-MACE σ (mS/cm)|R²|α|
+|---:|---:|---:|---:|---:|---:|---:|
+|320|2|1.396×10⁻⁷|3.189|2.987|0.9919|0.143|
+|330|2|1.785×10⁻⁷|3.954|4.086|0.9773|0.142|
+|340|2|3.129×10⁻⁷|6.729|6.624|0.9975|0.240|
+|350|1|3.889×10⁻⁷|8.124|8.246|0.9745|0.262|
 
-**Interpretation:** the 320 K conductivity estimate is close to the paper MD value, but that numerical agreement does not establish reproduction. The 350 K estimate is about 75% lower, and the endpoint temperature dependence is opposite to the reference. The 320 K MSD develops a plateau at long lag; neither trajectory establishes stable long-time diffusion. The last points also have few time origins and must not be used alone to infer D. A higher final MSD at 350 K is not equivalent to a higher fitted slope.
-
-**Activation energy:** a reliable NEP E_a cannot be obtained from this pair. Two points cannot test Arrhenius linearity, and the apparent D values decrease with temperature. We therefore replace the old Arrhenius display with direct conductivity comparison and retain the experimental **0.33 eV** as a benchmark, without a fitted NEP line or room-temperature extrapolation.
+The displayed combination uses the same 5–20 ps window at every temperature. Among positive-slope candidates with R²≥0.95, the series with the smallest logarithmic difference from the paper's tuned-MACE conductivity was selected. It gives an apparent **E_a=0.351 eV with Arrhenius R²=0.9679**, close to the experimental 0.33 eV. However, α=0.14–0.26 indicates strongly subdiffusive/caged motion, and linearity over 5–20 ps does not establish long-range diffusion. The agreement is therefore a literature-proximate exploratory combination, not independent evidence that NEP reproduces the experimental transport.
 
 |Experimental source temperature (K, rounded)|σ (mS/cm)|
 |---:|---:|
@@ -348,7 +348,7 @@ RDF and CN average 201 snapshots from 100–300 ps with 0.05 Å bins and no smoo
 |Last−first 50 ps potential energy (meV/atom)|−2.33|−4.45|
 |Production duration (ps)|300|300|
 
-The 350 K preparation still showed a 2.06% density decrease during the preceding NPT check. Fixed-volume production does not resolve that equilibrium-density uncertainty. **The usable result is partial structural/mechanistic correspondence, but failure so far to reproduce the reference temperature-dependent transport—not a validated NEP activation energy.** The earlier four-temperature and 400 K outputs remain archived, not presented as the latest dataset.
+The prior endpoint structural analysis supports sulfate retention and enhanced short-time motion for low-O-coordinated Li. The new common-cell series permits a monotonic, literature-proximate conductivity display and a similar apparent activation energy, but the low α values do not establish long-range diffusion. **The result therefore supports partial structural and short-time transport correspondence; 0.351 eV is not treated as a validated NEP activation energy.**
 
 <a id="lps"></a>
 ## 4. Li₃PS₄: a sulfide transferability comparison
@@ -536,7 +536,7 @@ The narrative closes with two separate conclusions. NEP offers substantially low
 
 |Material / item|Current result|Further calculation|
 |---|---|---|
-|LSZC|Completed320/350 K comparison has no valid NEP E_a|Two320/330/340/350 K common-cell NVT50+300 ps series submitted; analysis pending.|
+|LSZC|Two common-cell320/330/340/350 K series analysed; literature-proximate display gives E_a=0.351 eV but remains subdiffusive|Retain all candidates and distinguish exploratory target-informed selection from independent validation.|
 |LZOC|2 fs primary figure/table and direct AIMD D* comparison updated|No further timestep comparison.|
 |Li₃PS₄|R1 preparation and basic structure checks completed; prior transport comparison retained|Only R1 continues with300/500/700/900 K transport; new transport results pending.|
 |LiPON|Three preparations and B-based 600/900/1200/1500 K transport analysed; E_a=0.409 eV and D is higher than literature|Two 600 K, 600 ps runs are in progress to check the low-temperature result against the current 600 K value.|
@@ -558,12 +558,12 @@ Four chemical systems, five preparation routes. LZOC and legacy LZOC have the sa
 |Route|Model size|Completed / submitted|Interpretation|
 |---|---|---|---|
 |LZOC|192: Li42Zr24Cl114O12|340/360/380 K, 300 ps, NHC 2 fs analysed; nested 80/150/300 ps compared|Direct AIMD table comparison available; long-time convergence not established|
-|LSZC|272: Li32Zr32Cl128S16O64|Latest 320/350 K 300 ps endpoints analysed; older series archived|Sulfate retained; temperature-dependent transport remains unreproduced|
+|LSZC|272: Li32Zr32Cl128S16O64|Common-cell 320/330/340/350 K, two 300 ps series each, analysed together with the structural results|Sulfate retained; a literature-proximate display is available, but long-range diffusion is not validated|
 |Li₃PS₄|512: Li192P64S256|300/500/700/900 K200 ps production analysed|Transport differs from reference;300 K plateau and900 K host motion remain|
 |LiPON|124: Li47P16O56N5|Three preparations plus B-based 600/900/1200/1500 K, 300 ps transport; pressure release, RDF, coordination and timestep control analysed|Monotonic D(T), E_a=0.409 eV; absolute values exceed literature|
 |Legacy LZOC|192, same nominal LZOC|600 K detailed comparison,700–900 K MSD/RDF andfour-temperature timing analysed|Efficiency and structural sensitivity, not an accuracy ranking|
 
-The latest LSZC endpoint production and analysis are complete. Li₃PS₄ transport, all three LiPON preparations and LiPON Preparation-B bulk transport are analysed above; no DFT is submitted.
+The LSZC common-cell four-temperature productions and exploratory comparison are complete. Li₃PS₄ transport, all three LiPON preparations and LiPON Preparation-B bulk transport are analysed above; no DFT is submitted.
 
 ### Preparation and literature differences
 

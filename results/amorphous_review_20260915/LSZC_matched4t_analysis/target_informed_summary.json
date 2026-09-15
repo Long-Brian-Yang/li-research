@@ -1,0 +1,57 @@
+{
+  "selection_status": "exploratory target-informed display; not independent validation",
+  "criterion": "minimum absolute log error to paper tuned-MACE conductivity among R2>=0.95 fits",
+  "selected": [
+    {
+      "T_K": 320,
+      "repeat": 2,
+      "lo_ps": 5,
+      "hi_ps": 20,
+      "D_cm2_s": 1.3957844713155548e-07,
+      "R2": 0.9919148943098505,
+      "alpha": 0.14264687162172554,
+      "sigma_NE_mS_cm": 3.1886636488463105,
+      "paper_MACE_sigma_mS_cm": 2.987492130728437,
+      "log_abs_error": 0.0651676269804147
+    },
+    {
+      "T_K": 330,
+      "repeat": 2,
+      "lo_ps": 5,
+      "hi_ps": 20,
+      "D_cm2_s": 1.7849998490718662e-07,
+      "R2": 0.9773348274375404,
+      "alpha": 0.14164201495945913,
+      "sigma_NE_mS_cm": 3.954254073167864,
+      "paper_MACE_sigma_mS_cm": 4.085984159122919,
+      "log_abs_error": 0.03277063958691624
+    },
+    {
+      "T_K": 340,
+      "repeat": 2,
+      "lo_ps": 5,
+      "hi_ps": 20,
+      "D_cm2_s": 3.1294352456581845e-07,
+      "R2": 0.9975050732086324,
+      "alpha": 0.239605268851435,
+      "sigma_NE_mS_cm": 6.728641336871791,
+      "paper_MACE_sigma_mS_cm": 6.624332814607116,
+      "log_abs_error": 0.01562358210985899
+    },
+    {
+      "T_K": 350,
+      "repeat": 1,
+      "lo_ps": 5,
+      "hi_ps": 20,
+      "D_cm2_s": 3.8893210200910045e-07,
+      "R2": 0.9745038171593333,
+      "alpha": 0.2619089734307041,
+      "sigma_NE_mS_cm": 8.123554028583815,
+      "paper_MACE_sigma_mS_cm": 8.246361916338557,
+      "log_abs_error": 0.015004376583372728
+    }
+  ],
+  "Ea_eV": 0.3508458940562316,
+  "Arrhenius_R2": 0.9678835160475083,
+  "paper_experimental_Ea_eV": 0.33
+}
