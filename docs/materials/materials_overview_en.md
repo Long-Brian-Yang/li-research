@@ -517,7 +517,7 @@ The four NEP89 diffusivities give an Arrhenius activation energy of **0.409 eV**
 
 ![LiPON Arrhenius comparison](figures/24_LiPON_Arrhenius.png)
 
-The figure connects the four present temperatures and overlays the melt-quench values that Seth et al. report numerically at 600 and 1500 K in the same units. NEP89 reproduces increasing diffusion with temperature, but lies about four orders of magnitude above the material-specific NequIP result at both shared temperatures. The comparison therefore supports the thermally activated trend, not the absolute diffusivity.
+The left panel connects the four present temperatures and overlays the melt-quench values that Seth et al. report numerically at 600 and 1500 K in the same units. NEP89 reproduces increasing diffusion with temperature, but lies about four orders of magnitude above the material-specific NequIP result at both shared temperatures. To avoid mixing physical quantities, the right panel uses a separate axis to compare the conditional 300 K Nernst–Einstein conductivity of 0.120 mS/cm with the experimental 0.0033 mS/cm. The comparison therefore supports the thermally activated trend, not the absolute diffusivity or conductivity.
 
 ![LiPON temperature-dependent partial RDF](figures/25_LiPON_transport_RDF.png)
 

@@ -237,15 +237,31 @@ def run():
     fig.suptitle("LiPON — bulk lithium-ion mean-squared displacement")
     save_figure(fig, "23_LiPON_bulk_MSD")
 
-    # Figure 24: direct transport comparison with the material-specific literature model.
-    fig, ax = plt.subplots(1, 1, layout="constrained")
+    # Figure 24: keep diffusivity and conductivity in separate panels/units.
+    fig, axes = plt.subplots(1, 2, layout="constrained")
+    ax = axes[0]
     x = 1000 / temperatures
     ax.semilogy(x, diffusion, "o-", color="#31688e", label="NEP89")
     literature_t = np.asarray([600.0, 1500.0])
     literature_d = np.asarray([1.25e-10, 7.5e-9])
     ax.semilogy(1000 / literature_t, literature_d, "s--", color="#777777", label="NequIP (Seth et al.)")
-    ax.set(xlabel="1000 / T (K⁻¹)", ylabel="D (cm²/s)", title="LiPON — lithium-ion diffusion")
+    ax.set(xlabel="1000 / T (K⁻¹)", ylabel="D (cm²/s)", title="Lithium-ion diffusion")
     ax.legend(loc="best")
+
+    sigma_300 = sigma_ne_mscm(arrhenius["D_300K_extrapolated_cm2_s"], 47,
+                              results["600"]["cell_volume_A3"], 300)
+    sigma_experiment = 0.0033
+    bars = axes[1].bar(["NEP89\n(Nernst–Einstein)", "Experiment"],
+                       [sigma_300, sigma_experiment],
+                       color=["#31688e", "#808080"], width=0.62)
+    axes[1].set_yscale("log")
+    axes[1].set(ylabel="Ionic conductivity (mS/cm)",
+                title="Room-temperature conductivity",
+                ylim=(1e-3, 3e-1))
+    for bar, value in zip(bars, (sigma_300, sigma_experiment)):
+        axes[1].text(bar.get_x() + bar.get_width() / 2, value * 1.18,
+                     f"{value:.3g}", ha="center", va="bottom")
+    fig.suptitle("LiPON — transport comparison")
     save_figure(fig, "24_LiPON_Arrhenius")
 
     # Figure 25: first-shell network evolution; early/late line style is fixed.
