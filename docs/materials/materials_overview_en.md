@@ -93,11 +93,20 @@ Jobs 8676684.1–3 completed 300 ps at 340/360/380 K, with 192 atoms, 2 fs and N
 
 Panels a–c show the complete 0–300 ps lag range of all-time-origin, whole-system COM-corrected Li MSD; fit overlays are omitted for clarity. Panel d compares the 20–80 ps slope with [Hussain2024](https://doi.org/10.1038/s41524-024-01346-y), Supplementary Table 4. Published ± values are retained as reported. Only the 2 fs series is shown. The 300 ps endpoint has only one time-origin pair; the tail is shown for transparency, not treated as equally well sampled as short lags.
 
-|T (K)|AIMD D* (cm²/s)|NEP 300 ps D_app (cm²/s)|NEP/AIMD|
-|---:|---:|---:|---:|
-|340|(2.09±0.06)×10⁻⁶|3.105×10⁻⁷|0.149|
-|360|(1.77±0.04)×10⁻⁶|3.808×10⁻⁷|0.215|
-|380|(3.50±0.10)×10⁻⁶|1.015×10⁻⁶|0.290|
+|T (K)|Existing source job|AIMD D* (cm²/s)|NEP 300 ps D_app (cm²/s)|NEP/AIMD|Additional repeats|
+|---:|---|---:|---:|---:|---|
+|340|8676684.1|(2.09±0.06)×10⁻⁶|3.105×10⁻⁷|0.149|8677221.1–2: submitted; analysis pending|
+|360|8676684.2|(1.77±0.04)×10⁻⁶|3.808×10⁻⁷|0.215|8677221.3–4: submitted; analysis pending|
+|380|8676684.3|(3.50±0.10)×10⁻⁶|1.015×10⁻⁶|0.290|No additional run submitted|
+
+The D values above and the current apparent E_a = 0.3255 eV (Arrhenius R² = 0.8528) refer only to the existing series, not averages including the new repeats. New repeat D values and their spread remain pending; no new numerical result is inferred from submission.
+
+|New repeat|Job|Velocity seed|NVT equilibration (ps)|Production (ps)|Step (fs)|D_app (cm²/s)|
+|---|---|---:|---:|---:|---:|---|
+|340 K R1|8677221.1|34009151|50|300|2|Pending analysis|
+|340 K R2|8677221.2|34009152|50|300|2|Pending analysis|
+|360 K R1|8677221.3|36009151|50|300|2|Pending analysis|
+|360 K R2|8677221.4|36009152|50|300|2|Pending analysis|
 
 NEP remains below AIMD at every temperature. The NEP series increases monotonically, while the reference includes a 340→360 K decrease. Thus neither pointwise agreement nor the exact temperature trend is reproduced. Cell size, preparation and potential differ from the paper; the discrepancy cannot be assigned uniquely to the potential.
 
