@@ -203,7 +203,15 @@ The evidence does not yet distinguish stronger trapping, different pathway conne
 
 The sulfate-containing material extends the main line without changing it into an unrelated screening exercise: Zr–Cl environments remain central, while O is introduced within a polyanion-containing network. The existing data allow three distinct checks—whether sulfate remains intact, whether the Zr environment resembles the experimental reference, and whether Li motion reproduces the temperature dependence. Passing the first check alone does not answer the other two.
 
-### Structure construction and endpoint MD
+### Four-temperature rerun: separating temperature from density
+
+The completed endpoint series below does **not** provide a usable NEP activation energy and will not be combined with old 330/340 K runs to construct one. A fresh 320/330/340/350 K series uses the same documented 272-atom structure and fixed cell at all temperatures, with 50 ps NVT equilibration followed by 300 ps NVT production per temperature. NEP89, 0.5 fs integration and MTTK temperature coupling of 100 fs remain unchanged; target-temperature velocities are initialized separately.
+
+The common cell is the existing 320 K preproduction cell (8138.55 Å³, about 1.880 g/cm³), without rescaling toward the experimental density. This removes the changing starting density of the previous endpoints as a confounder. It is an **isochoric control**, not proof of equilibrium density at every temperature or an exact reproduction of the paper's thermodynamic path. Its pressure, energy relaxation and framework structure must be inspected alongside MSD.
+
+New results are pending; the figures below remain clearly identified as the completed two-endpoint analysis. After all four runs finish, compare full 0–300 ps MSD and obtain D only from diffusion-supported, slope-stable intervals using consistent criteria. If the series supports Arrhenius analysis, report its fixed-density E_a and distinguish it from the experimental 0.33 eV benchmark ([Tang et al., DOI: 10.1038/s41467-026-69737-x](https://doi.org/10.1038/s41467-026-69737-x)). If it does not, report that outcome rather than forcing a line or selecting favourable temperatures. No reliable E_a is guaranteed by rerunning.
+
+### Completed two-endpoint calculation: construction and MD
 
 Five finite cluster types were extracted with their periodic connectivity preserved, then two copies of each were combined with 32 Li to form **Li32Zr32Cl128S16O64 (272 atoms)**. Independent geometric packing produced a 20.174 Å cubic precursor at 1.864 g/cm³. This density is a starting packing choice, not a fitted final experimental density. Fixed-cell NEP position relaxation reduced the maximum force to 0.0493 eV/Å while retaining S–O fourfold coordination. The precursor is not a scaled copy of the author's 1088-atom glass.
 
@@ -423,7 +431,7 @@ The narrative closes with two separate conclusions. NEP offers substantially low
 
 |Material / item|Current result|Further calculation|
 |---|---|---|
-|LSZC|Latest 320/350 K 300 ps MSD, conductivity, RDF and mobility analysed against the paper|No valid NEP E_a; 350 K preparation density uncertainty remains. No new run submitted.|
+|LSZC|Completed320/350 K comparison has no valid NEP E_a|Fresh320/330/340/350 K common-cell NVT50+300 ps series submitted; analysis pending.|
 |LZOC|2 fs primary figure/table and direct AIMD D* comparison updated|No further timestep comparison.|
 |Li₃PS₄|Existing transport and local-structure comparison retained|Two fresh 611 ps preparations submitted; structural review before further production.|
 |LiPON|Existing short-contact analysis retained|Two fresh 63 ps preparations submitted; no automatic transport or DFT.|
