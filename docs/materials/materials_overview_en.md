@@ -15,7 +15,7 @@ All subsequent results are inserted, revised or replaced directly in the relevan
 ## Contents
 
 - [1. MACE versus NEP: why NEP was selected](#legacy)
-- [2. Reconstructed LZOC: the primary AIMD comparison](#lzoc)
+- [2. LZOC: the primary AIMD comparison](#lzoc)
 - [3. LSZC: extending the comparison to experiment](#lszc)
 - [4. Li₃PS₄: a sulfide transferability comparison](#lps)
 - [5. LiPON: limits of applicability](#lipon)
@@ -85,7 +85,7 @@ The existing NEP 700/800/900 K extensions have now been analysed separately from
 Average pressure near the target does not establish structural equilibration. Endpoint and block-average densities are both given because instantaneous NPT volumes fluctuate, especially at 800 K. Continued expansion and decreasing PE at 700/900 K weaken the interpretation of the earlier high-temperature results as a stable, fixed host. This supports retaining the route as a model-sensitivity and efficiency comparison, not using it to validate room-temperature conductivity. No further blind extension is planned.
 
 <a id="lzoc"></a>
-## 2. Reconstructed LZOC: the primary AIMD comparison
+## 2. LZOC: the primary AIMD comparison
 
 ### Lithium transport compared with AIMD
 
@@ -278,12 +278,12 @@ The1.6 Å line is a screening cutoff, not a universal bond criterion. Late P–O
 <a id="remaining"></a>
 ## 6. Synthesis: reproduction, deviations and next steps
 
-The narrative closes with two separate conclusions. NEP offers substantially lower cost in the measured workflow, which motivated its use; the literature comparisons do not establish uniform predictive accuracy. New LZOC underestimates the AIMD tracer diffusion values, LSZC fails to reproduce the temperature trend, Li₃PS₄ shows partial local-structure agreement without quantitative transport agreement, and LiPON retains a local-contact discrepancy. These material-dependent outcomes, not runtime alone, define the present applicability limits. The LSZC NPT follow-up is complete; a late density decrease at 350 K prevents treating both endpoints as equilibrated.
+The narrative closes with two separate conclusions. NEP offers substantially lower cost in the measured workflow, which motivated its use; the literature comparisons do not establish uniform predictive accuracy. LZOC underestimates the AIMD tracer diffusion values, LSZC fails to reproduce the temperature trend, Li₃PS₄ shows partial local-structure agreement without quantitative transport agreement, and LiPON retains a local-contact discrepancy. These material-dependent outcomes, not runtime alone, define the present applicability limits. The LSZC NPT follow-up is complete; a late density decrease at 350 K prevents treating both endpoints as equilibrated.
 
 |Material / item|Current result|Further calculation|
 |---|---|---|
 |LSZC|Latest 320/350 K 300 ps MSD, conductivity, RDF and mobility analysed against the paper|No valid NEP E_a; 350 K preparation density uncertainty remains. No new run submitted.|
-|New LZOC|2 fs primary figure/table and direct AIMD D* comparison updated|No further timestep comparison.|
+|LZOC|2 fs primary figure/table and direct AIMD D* comparison updated|No further timestep comparison.|
 |Li₃PS₄|Existing transport and local-structure results interpreted against the paper; partial structural agreement does not imply transport reproduction|No new production for the present exploratory comparison.|
 |LiPON|Contact checks complete; persistent N–N mismatch reported as a limitation|No blind extension or DFT.|
 |Legacy LZOC|Extra NPT analysis complete, alongside high-temperature structure/motion and runtime comparisons|No additional run.|
@@ -303,7 +303,7 @@ Four chemical systems, five preparation routes. New and legacy LZOC have the sam
 
 |Route|Model size|Completed / submitted|Interpretation|
 |---|---|---|---|
-|New LZOC|192: Li42Zr24Cl114O12|340/360/380 K, 300 ps, NHC 2 fs analysed; nested 80/150/300 ps compared|Direct AIMD table comparison available; long-time convergence not established|
+|LZOC|192: Li42Zr24Cl114O12|340/360/380 K, 300 ps, NHC 2 fs analysed; nested 80/150/300 ps compared|Direct AIMD table comparison available; long-time convergence not established|
 |LSZC|272: Li32Zr32Cl128S16O64|Latest 320/350 K 300 ps endpoints analysed; older series archived|Sulfate retained; temperature-dependent transport remains unreproduced|
 |Li₃PS₄|512: Li192P64S256|300/500/700/900 K200 ps production analysed|Transport differs from reference;300 K plateau and900 K host motion remain|
 |LiPON|124: Li47P16O56N5|Preparation,pressure release and paired0.5/0.25 fs checks analysed|Short N–N contacts persist; no long transport prediction|
@@ -315,7 +315,7 @@ The latest LSZC endpoint production and analysis are complete. No new MD or DFT 
 
 |Route|Executed preparation / transport|Reference and difference|
 |---|---|---|
-|New LZOC|100 K2 ps;500 K30 ps;1000 K50 ps;1500 K30 ps;2000 K20 ps; cooling via1500/1000/500/100 K,2 ps each;300 K20+50 ps. Transport details below.|[Hussain2024](https://doi.org/10.1038/s41524-024-01346-y):192-atom reconstructed NEP is not its48-atom AIMD transport model or exact preparation protocol|
+|LZOC|100 K2 ps;500 K30 ps;1000 K50 ps;1500 K30 ps;2000 K20 ps; cooling via1500/1000/500/100 K,2 ps each;300 K20+50 ps. Transport details below.|[Hussain2024](https://doi.org/10.1038/s41524-024-01346-y):192-atom reconstructed NEP is not its48-atom AIMD transport model or exact preparation protocol|
 |LSZC|Five finite cluster types, two copies each +32Li; fixed-cell relaxation to0.0493 eV/Å;300 K20 ps NVT;100 ps ramp to400 K;20 ps hold;20 ps400 K1 bar NPT;200 ps NVT|[Tang2026](https://doi.org/10.1038/s41467-026-69737-x):independent272-atom packing, not the author's1088-atom geometry or tuned MACE|
 |Li₃PS₄|1500 K100 ps NPT;1500→300 K480 ps (2.5 K/ps);300 K20 ps hold;10 ps temperature ramp +50 ps NPT1 bar +200 ps NVT at each target;0.5 fs|[Chen2025](https://doi.org/10.1038/s41467-025-56322-x):thermal schedule reference; NEP replaces DeePMD; start, coupling and production schedule differ|
 |LiPON|2000 K10 ps;2000→250 K7 ps;250 K20 ps;250 K1 bar20 ps release;0.5 fs|[Seth2025](https://doi.org/10.1021/acsmaterialsau.4c00117):selected parameters only; NEP replaces NequIP, independent precursor|
