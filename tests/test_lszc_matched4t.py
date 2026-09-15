@@ -11,11 +11,19 @@ class MatchedTests(unittest.TestCase):
         for task,T in enumerate([320,330,340,350],1):
             s=subprocess.check_output(['bash',str(SCRIPT),'--plan',str(task)],text=True)
             self.assertIn(f'T={T}',s)
+            self.assertIn('repeat=1',s)
             self.assertIn('equil50|100000',s)
             self.assertIn('production|600000',s)
             self.assertIn('time_step=0.5',s)
             plans.append(s.splitlines()[1])
         self.assertEqual(len(set(plans)),1,'all temperatures must use the same source cell')
+
+    def test_second_repeat_changes_seed_not_protocol(self):
+        one=subprocess.check_output(['bash',str(SCRIPT),'--plan','1'],text=True)
+        two=subprocess.check_output(['bash','-c',f'LSZC_REPEAT=2 bash "{SCRIPT}" --plan 1'],text=True)
+        self.assertIn('repeat=2',two)
+        self.assertNotEqual(one.splitlines()[0],two.splitlines()[0])
+        self.assertEqual(one.splitlines()[1:],two.splitlines()[1:])
 
     def test_reject_bad_task(self):
         self.assertTrue(SCRIPT.is_file(),'matched four-temperature runner missing')
