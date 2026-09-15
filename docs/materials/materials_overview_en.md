@@ -538,6 +538,38 @@ NPT target is 1 bar (0.0001 GPa). Latest LSZC: 320 K uses 150 ps NPT followed by
 <a id="methods"></a>
 ## Supporting methods: definitions and units
 
+### Symbols and reported units
+
+|Symbol / term|Definition|Unit used in this review|
+|---|---|---|
+|$t$, $t_0$, $\tau$|simulation time, time origin and lag time ($\tau=t-t_0$)|fs or ps; $1\,\mathrm{ps}=10^3\,\mathrm{fs}$|
+|$T$|absolute temperature|K|
+|$N_s$|number of atoms of species $s$|dimensionless count|
+|$N_o(\tau)$|number of valid time origins contributing at lag $\tau$|dimensionless count|
+|$\mathbf r_i(t)$|unwrapped, drift-corrected Cartesian position of atom $i$|Å; $1\,\mathrm{\AA}=10^{-10}\,\mathrm{m}$|
+|MSD$_s(\tau)$|mean squared displacement of species $s$|Å²|
+|$a$|slope of a linear MSD fit, $\mathrm{MSD}=a\tau+b$|Å²/ps|
+|$D_s$, $D_{\mathrm{app}}$|three-dimensional tracer/self-diffusion estimate from the MSD slope|cm²/s|
+|$D_0$|Arrhenius prefactor|cm²/s|
+|$E_a$|apparent Arrhenius activation energy|eV|
+|$R^2$|coefficient of determination of the stated regression|dimensionless|
+|$\alpha$|local transport exponent, slope of $\ln(\mathrm{MSD})$ versus $\ln\tau$|dimensionless; $\alpha\approx1$ is consistent with diffusion over the fitted interval|
+|$V$|instantaneous or stated cell volume|Å³; $1\,\mathrm{\AA^3}=10^{-30}\,\mathrm{m^3}$|
+|$n_{\mathrm{Li}}$|Li number density, $N_{\mathrm{Li}}/V$|m⁻³ in the conductivity equation|
+|$\rho$|mass density|g/cm³|
+|$P$|cell-averaged pressure|GPa; $1\,\mathrm{bar}=10^{-4}\,\mathrm{GPa}$|
+|PE, $E_{\mathrm{pot}}$|potential energy|eV/atom unless stated otherwise|
+|$\Delta E_{\mathrm{pot}}$|difference between explicitly stated time-block mean potential energies|meV/atom|
+|$\sigma_{\mathrm{NE}}$|conditional Nernst–Einstein ionic conductivity calculated from tracer $D$|mS/cm|
+|$g_{AB}(r)$|partial radial distribution function between species $A$ and $B$|dimensionless|
+|CN$_{A-B}$|mean number of $B$ neighbours around $A$ inside the stated cutoff|dimensionless|
+|$P(r,\tau)$|normalized radial-displacement probability density $4\pi r^2G_s(r,\tau)$|Å⁻¹; its integral over $r$ is 1|
+|runtime|wall time after dispatch, excluding queue waiting unless explicitly stated|s, min or h|
+
+“Production length” is the propagated physical time, whereas “frames” is the number of stored configurations. Neither is an independent-sample count. NVT means fixed particle number, cell volume and target temperature; NPT means fixed particle number and target pressure/temperature with a variable cell. Reported target values and trajectory means are kept distinct.
+
+### MSD and diffusion
+
 For lag time τ, the time-origin-averaged Li MSD is
 
 $$
@@ -552,13 +584,36 @@ D_{\mathrm{app}}[\mathrm{cm^2/s}]=\frac{a[\mathrm{\AA^2/ps}]}{6}\times10^{-4},\q
 \sigma_{\mathrm{NE}}=\frac{(N_{\mathrm{Li}}/V)e^2D}{k_BT}.
 $$
 
-V is cell volume, e the Li⁺ elementary charge, k_B the Boltzmann constant and T absolute temperature. Use D in m²/s and V in m³ for SI conductivity: D[cm²/s]×10⁻⁴; V[Å³]×10⁻³⁰. Then σ[mS/cm]=10σ[S/m]=10³σ[S/cm]. NE conversion neglects inter-ion correlations and inherits all apparent-D limitations. Experimental conductivity is not experimental self-D.
+The factor 6 is $2d$ for three-dimensional diffusion ($d=3$); it must be changed for a deliberately projected one- or two-dimensional MSD. The unit conversion is $1\,\mathrm{\AA^2/ps}=10^{-4}\,\mathrm{cm^2/s}$. A fitted slope is reported as $D_{\mathrm{app}}$ when a stable long-time diffusive regime is not established. The full displayed trajectory is not necessarily the fitted lag interval, and the sparsely averaged tail is not fitted solely because it is available.
+
+### Conductivity and Arrhenius quantities
+
+$V$ is cell volume, $e=1.602176634\times10^{-19}$ C is the Li⁺ elementary charge, $k_B=1.380649\times10^{-23}$ J/K and $T$ is absolute temperature. Use $D$ in m²/s and $V$ in m³ for SI conductivity: $D[\mathrm{cm^2/s}]\times10^{-4}$ and $V[\mathrm{\AA^3}]\times10^{-30}$. The output conversions are
+
+$$
+\sigma[\mathrm{mS/cm}]=10\,\sigma[\mathrm{S/m}]
+=10^3\,\sigma[\mathrm{S/cm}].
+$$
+
+The Nernst–Einstein conversion assumes unit Li charge and neglects distinct-ion correlations, collective conductivity and the Haven ratio; it inherits every limitation of the fitted tracer $D$. Experimental conductivity is therefore not experimental self-diffusion, and $\sigma_{\mathrm{NE}}$ is labelled conditional throughout.
 
 Arrhenius fits use lnD=lnD₀−E_a/(k_BT), with k_B=8.617333262145×10⁻⁵ eV/K. The reported E_a diagnostics below are not validated barriers. R² alone does not demonstrate diffusion or convergence; α is the log–log MSD slope and can be affected by a nonzero intercept.
 
-For the LSZC conductivity comparison, x=1000/T and y=ln[σT/(S cm⁻¹ K)]; if y=mx+b is justified, E_a=−1000k_Bm. This is a fit to σT, not σ alone. Different temperature-dependent number densities can make its slope differ from a fit to D. A poor or nonphysical regression is retained only as a diagnostic, without a predicted room-temperature value.
+For the LSZC conductivity comparison, $x=1000/T$ in K⁻¹ and $y=\ln[\sigma T/(\mathrm{S\,cm^{-1}\,K})]$; if $y=mx+b$ is justified, $E_a=-1000k_Bm$. This is a fit to $\sigma T$, not $\sigma$ alone. Different temperature-dependent number densities can make its slope differ from a fit to $D$. A poor or nonphysical regression is retained only as a diagnostic, without a predicted room-temperature value.
 
-RDFs use periodic minimum-image distances, excluded self-pairs and shell/number-density normalization. CN counts neighbours below declared cutoffs. No smoothing, trajectory rescaling or target-E_a selection is used. Temporal blocks and atom–origin observations are correlated; their SD is not an independent-glass confidence interval.
+### Structure, thermodynamics and uncertainty
+
+Partial RDFs use periodic minimum-image distances, exclude self-pairs and divide pair counts by spherical-shell volume and bulk number density, so an ideal homogeneous distribution approaches $g_{AB}(r)=1$. Coordination is either counted directly below a declared cutoff $r_c$ or equivalently estimated from
+
+$$
+\mathrm{CN}_{A-B}(r_c)=4\pi\rho_B\int_0^{r_c}r^2g_{AB}(r)\,dr,
+$$
+
+where $\rho_B=N_B/V$ is the number density of species $B$. Every cutoff is an operational geometric definition, not a bond-order criterion. A partial RDF is not a neutron-/X-ray-weighted total PDF or structure factor.
+
+Density is total cell mass divided by $V$. Pressure is a cell-averaged virial observable; a near-zero mean does not by itself validate local chemistry. Energy drift is reported only after normalization per atom and with the two compared time blocks stated. Framework MSD refers to the explicitly named non-Li species and is used to test the approximation of a stationary host.
+
+No smoothing, trajectory-amplitude rescaling or target-$E_a$ selection is used. Stored frames, time origins, atoms and temporal blocks from one trajectory are correlated observations, not independent replicas. A sample SD across them is not an independent-glass confidence interval. Independent velocity seeds probe dynamical repeatability of one glass; they do not represent independently prepared amorphous structures.
 
 ## Reference list and DOI
 
