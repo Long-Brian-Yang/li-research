@@ -58,7 +58,7 @@ def main():
 
 def select_window():
     result=json.loads((OUT/'analysis.json').read_text())
-    windows=[(10,40),(20,60),(20,80),(30,90),(40,100),(50,110),(60,120),(75,150)]
+    windows=[(10,40),(20,60),(20,80),(30,90),(40,100),(50,110),(60,120),(75,150),(20,100),(30,120),(20,150),(40,150),(50,200)]
     rows=[];primary=[]
     for T in [340,360,380]:
         a=np.loadtxt(OUT/f'LZOC_{T}K_300ps_MSD.csv',delimiter=',',skiprows=1)

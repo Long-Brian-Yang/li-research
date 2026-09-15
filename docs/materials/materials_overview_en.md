@@ -89,7 +89,7 @@ Jobs 8676684.1–3 completed 300 ps at 340/360/380 K, with 192 atoms, 2 fs and N
 
 ![LZOC transport and AIMD comparison](../../results/plots/amorphous/01_LZOC_transport.png)
 
-Panels a–c show all-time-origin, whole-system COM-corrected Li MSD from 300 ps over 0–100 ps lag; shading and dashed lines mark the 20–80 ps fit. Panel d compares that slope with [Hussain2024](https://doi.org/10.1038/s41524-024-01346-y), Supplementary Table 4. Published ± values are retained as reported. Only the 2 fs series is shown.
+Panels a–c show the complete 0–300 ps lag range of all-time-origin, whole-system COM-corrected Li MSD; shading and dashed lines mark the 20–80 ps fit. Panel d compares that slope with [Hussain2024](https://doi.org/10.1038/s41524-024-01346-y), Supplementary Table 4. Published ± values are retained as reported. Only the 2 fs series is shown. The 300 ps endpoint has only one time-origin pair; the tail is shown for transparency, not treated as equally well sampled as short lags.
 
 |T (K)|AIMD D* (cm²/s)|NEP 300 ps D_app (cm²/s)|NEP/AIMD|
 |---:|---:|---:|---:|
@@ -100,6 +100,19 @@ Panels a–c show all-time-origin, whole-system COM-corrected Li MSD from 300 ps
 NEP remains below AIMD at every temperature. The NEP series increases monotonically, while the reference includes a 340→360 K decrease. Thus neither pointwise agreement nor the exact temperature trend is reproduced. Cell size, preparation and potential differ from the paper; the discrepancy cannot be assigned uniquely to the potential.
 
 ### Does longer sampling stabilize the result?
+
+#### Wider-window comparison on the full 300 ps trajectories
+
+|Lag window (ps)|D340 (×10⁻⁷ cm²/s)|D360 (×10⁻⁷ cm²/s)|D380 (×10⁻⁷ cm²/s)|
+|---|---:|---:|---:|
+|20–80, current primary|3.105|3.808|10.155|
+|20–100|2.908|3.612|10.283|
+|30–120|2.623|3.378|9.663|
+|20–150|2.399|3.309|8.613|
+|40–150|2.204|3.182|8.079|
+|50–200|2.303|2.922|7.442|
+
+Extending to 20–150 ps lowers D by approximately 23/13/15% relative to 20–80 ps; 50–200 ps lowers it by 26/23/27%. This systematic window dependence does not establish a common slope plateau. The longer windows are retained as sensitivity results, not used to claim better convergence merely because they span more time. The current 20–80 ps primary remains provisional, not uniquely optimal. All 300 ps contribute to the time-origin averaging. No additional run is submitted by this comparison.
 
 **Current primary window: 20–80 ps.** Selected after inspecting the curves, not preregistered: it avoids the initial rapid rise and differs by less than 4% in slope from nearby 20–60 and 30–90 ps fits at all temperatures. Later windows show greater drift. This is a practical local-stability choice, not a unique optimum or demonstrated asymptotic diffusion regime. The current apparent **E_a is 0.3255 eV, Arrhenius R²=0.8528**. MSD R² values are 0.9953/0.9980/0.9989 and log–log exponents are 0.524/0.490/0.647. No window was chosen to match literature Ea. The 10–40 ps results below remain duration-sensitivity diagnostics; 0.428 eV is not the current primary estimate.
 
