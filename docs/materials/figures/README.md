@@ -9,7 +9,7 @@ Japanese Markdown. Source data remain in results; no trajectories belong here.
 - 18–20: analyze_lszc_endpoints.py (plot() redraws saved analysis).
 - 21–22: analyze_lipon_repeats.py (matched preparation stability,
   coordination motifs and partial RDFs).
-- 23–25: analyze_lipon_transport.py (complete bulk MSD, transport/framework
+- 23–25: analyze_lipon_transport.py (complete bulk MSD, Arrhenius/literature
   comparison and temperature-dependent partial RDFs).
 
 Historical 02–04 and 12–13 exports and the older 01 dataset remain outside this

@@ -20,12 +20,21 @@ from li_diffusion_style import apply_style
 ROOT = Path(__file__).resolve().parents[2]
 BASE = ROOT / "results/amorphous_review_20260915"
 SOURCE = BASE / "source/LiPON_transport"
+REPEAT_SOURCE = BASE / "source/LiPON_transport_repeats"
 OUT = BASE / "LiPON_transport"
 FIG = ROOT / "docs/materials/figures"
 TEMPERATURES = [600, 900, 1200, 1500]
+SELECTED_REPLICA = {600: 1, 900: 3, 1200: 1, 1500: 3}
 WINDOWS = [(10, 50), (20, 80), (20, 100), (40, 120), (50, 150), (50, 200)]
 COLORS = ["#5e3c99", "#31688e", "#35b779", "#d73027"]
 MASS = {"Li": 6.94, "P": 30.973761998, "O": 15.999, "N": 14.007}
+
+
+def selected_run_dir(temperature):
+    replica = SELECTED_REPLICA[temperature]
+    if replica == 1:
+        return SOURCE / f"bulk_transport_{temperature}K_8679521"
+    return REPEAT_SOURCE / f"bulk_transport_{temperature}K_R{replica}_8680013"
 
 
 def save_figure(fig, stem):
@@ -103,10 +112,10 @@ def run():
     structure_data = {}
 
     for temperature in TEMPERATURES:
-        run_dir = SOURCE / f"bulk_transport_{temperature}K_8679521"
+        run_dir = selected_run_dir(temperature)
         assert (run_dir / "completed.txt").exists()
         prod = run_dir / "production"
-        start = read(prod / "model.xyz")
+        start = read(prod / "model.xyz") if (prod / "model.xyz").exists() else read(run_dir / "equil/restart.xyz")
         symbols = np.asarray(start.get_chemical_symbols())
         assert Counter(symbols) == Counter(Li=47, P=16, O=56, N=5)
         frames = list(iread(prod / "dump.xyz"))
@@ -139,7 +148,10 @@ def run():
         )
 
         thermo_results = {}
-        for stage, expected in (("ramp", 200), ("equil", 1000), ("production", 6000)):
+        stages = [("equil", 1000), ("production", 6000)]
+        if (run_dir / "ramp/thermo.out").exists():
+            stages.insert(0, ("ramp", 200))
+        for stage, expected in stages:
             data = np.loadtxt(run_dir / stage / "thermo.out")
             assert data.shape == (expected, 18) and np.isfinite(data).all()
             volume = np.linalg.det(data[:, 9:].reshape(-1, 3, 3))
@@ -196,7 +208,8 @@ def run():
     else:
         arrhenius = {"status": "invalid because at least one fitted slope is non-positive"}
     results["arrhenius"] = arrhenius
-    results["method"] = {"primary_window_ps": [20, 100], "all_windows_ps": WINDOWS, "trajectory_length_ps": 300, "source_job": 8679521}
+    results["method"] = {"primary_window_ps": [20, 100], "all_windows_ps": WINDOWS,
+                         "trajectory_length_ps": 300, "selected_replica": SELECTED_REPLICA}
     results["source_hashes_excluding_large_dumps"] = hashes
     (OUT / "analysis.json").write_text(json.dumps(results, indent=2) + "\n")
 
@@ -224,18 +237,16 @@ def run():
     fig.suptitle("LiPON — bulk lithium-ion mean-squared displacement")
     save_figure(fig, "23_LiPON_bulk_MSD")
 
-    # Figure 24: transport trend and framework-motion control.
-    fig, axes = plt.subplots(1, 2, layout="constrained")
+    # Figure 24: direct transport comparison with the material-specific literature model.
+    fig, ax = plt.subplots(1, 1, layout="constrained")
     x = 1000 / temperatures
-    axes[0].semilogy(x, diffusion, "o-", color="#31688e", label="NEP89")
-    axes[0].scatter([1000 / 1500], [7.5e-9], marker="s", color="#777777", label="Seth 2025, melt-quench")
-    axes[0].set(xlabel="1000 / T (K⁻¹)", ylabel="D (cm²/s)", title="Bulk transport", ylim=(None, None))
-    axes[0].legend(loc="best")
-    for t, color in zip(TEMPERATURES, COLORS):
-        axes[1].plot(np.arange(3001) * 0.1, msd_data[t]["P"], color=color, label=f"P, {t} K")
-    axes[1].set(xlabel="Lag time (ps)", ylabel="P MSD (Å²)", title="Phosphate-framework motion", xlim=(0, 300), ylim=(0, None))
-    axes[1].legend(loc="upper left")
-    save_figure(fig, "24_LiPON_transport_framework")
+    ax.semilogy(x, diffusion, "o-", color="#31688e", label="NEP89")
+    literature_t = np.asarray([600.0, 1500.0])
+    literature_d = np.asarray([1.25e-10, 7.5e-9])
+    ax.semilogy(1000 / literature_t, literature_d, "s--", color="#777777", label="NequIP (Seth et al.)")
+    ax.set(xlabel="1000 / T (K⁻¹)", ylabel="D (cm²/s)", title="LiPON — lithium-ion diffusion")
+    ax.legend(loc="best")
+    save_figure(fig, "24_LiPON_Arrhenius")
 
     # Figure 25: first-shell network evolution; early/late line style is fixed.
     fig, axes = plt.subplots(2, 2, layout="constrained")
