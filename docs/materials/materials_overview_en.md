@@ -89,7 +89,7 @@ Jobs 8676684.1–3 completed 300 ps at 340/360/380 K, with 192 atoms, 2 fs and N
 
 ![LZOC transport and AIMD comparison](../../results/plots/amorphous/01_LZOC_transport.png)
 
-Panels a–c show the complete 0–300 ps lag range of all-time-origin, whole-system COM-corrected Li MSD; shading and dashed lines mark the 20–80 ps fit. Panel d compares that slope with [Hussain2024](https://doi.org/10.1038/s41524-024-01346-y), Supplementary Table 4. Published ± values are retained as reported. Only the 2 fs series is shown. The 300 ps endpoint has only one time-origin pair; the tail is shown for transparency, not treated as equally well sampled as short lags.
+Panels a–c show the complete 0–300 ps lag range of all-time-origin, whole-system COM-corrected Li MSD; fit overlays are omitted for clarity. Panel d compares the 20–80 ps slope with [Hussain2024](https://doi.org/10.1038/s41524-024-01346-y), Supplementary Table 4. Published ± values are retained as reported. Only the 2 fs series is shown. The 300 ps endpoint has only one time-origin pair; the tail is shown for transparency, not treated as equally well sampled as short lags.
 
 |T (K)|AIMD D* (cm²/s)|NEP 300 ps D_app (cm²/s)|NEP/AIMD|
 |---:|---:|---:|---:|
