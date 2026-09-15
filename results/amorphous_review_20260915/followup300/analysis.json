@@ -290,5 +290,45 @@
     "results/amorphous_review_20260915/source/LSZC150/endpoint_npt150_350K_8676678/equil150/thermo.out": "7d1c5bcbccb90ef621911211759aa4c0670fd79ef8524e422e8e78559fa54242",
     "results/amorphous_review_20260915/source/LSZC150/endpoint_npt150_350K_8676678/equil150/run.in": "f9b3c7ee537e12d76dee57aabd5d7ddae89cfd0aaa00927be338a931efd30698"
   },
-  "method": "COM-corrected all-origin MSD, fixed 10\u201340 ps fit. Nested durations and blocks are not independent replicas."
+  "method": "COM-corrected all-origin MSD, fixed 10\u201340 ps fit. Nested durations and blocks are not independent replicas.",
+  "primary_20_80": [
+    {
+      "T_K": 340,
+      "D_cm2_s": 3.1047000426967185e-07,
+      "R2": 0.9953136638294593,
+      "intercept_A2": 0.7181194559767963,
+      "alpha": 0.5240123626186062,
+      "lo_ps": 20,
+      "hi_ps": 80,
+      "neighbor_relative_change_max": 0.038328417725957076
+    },
+    {
+      "T_K": 360,
+      "D_cm2_s": 3.807975483226802e-07,
+      "R2": 0.997991575979186,
+      "intercept_A2": 1.0154127166839864,
+      "alpha": 0.4901255111502013,
+      "lo_ps": 20,
+      "hi_ps": 80,
+      "neighbor_relative_change_max": 0.034110273330353436
+    },
+    {
+      "T_K": 380,
+      "D_cm2_s": 1.01546494961736e-06,
+      "R2": 0.9989422807033731,
+      "intercept_A2": 1.4537311274258635,
+      "alpha": 0.6466408074832202,
+      "lo_ps": 20,
+      "hi_ps": 80,
+      "neighbor_relative_change_max": 0.031506949431958864
+    }
+  ],
+  "primary_arrhenius": {
+    "Ea_eV": 0.3254987052960312,
+    "R2": 0.8527698575663206,
+    "slope": -3.7772556241489617,
+    "intercept": -4.008080670269765,
+    "value_303_15": 7.046832482661298e-08
+  },
+  "selection_note": "Post-analysis common 20\u201380 ps window; nearby 20\u201360 and 30\u201390 slopes differ by <4%. Exploratory local stability, not a unique optimum or demonstrated long-time convergence. Ea was not the selection criterion. Original 10\u201340 diagnostics retained."
 }

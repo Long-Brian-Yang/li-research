@@ -89,17 +89,19 @@ Jobs 8676684.1–3 completed 300 ps at 340/360/380 K, with 192 atoms, 2 fs and N
 
 ![LZOC transport and AIMD comparison](../../results/plots/amorphous/01_LZOC_transport.png)
 
-Panels a–c show all-time-origin, whole-system COM-corrected Li MSD from 300 ps, over 0–40 ps lag with common axes. Panel d compares the fixed 10–40 ps slope with [Hussain2024](https://doi.org/10.1038/s41524-024-01346-y), Supplementary Table 4. Published ± values are retained as reported. Only the 2 fs series is shown.
+Panels a–c show all-time-origin, whole-system COM-corrected Li MSD from 300 ps over 0–100 ps lag; shading and dashed lines mark the 20–80 ps fit. Panel d compares that slope with [Hussain2024](https://doi.org/10.1038/s41524-024-01346-y), Supplementary Table 4. Published ± values are retained as reported. Only the 2 fs series is shown.
 
 |T (K)|AIMD D* (cm²/s)|NEP 300 ps D_app (cm²/s)|NEP/AIMD|
 |---:|---:|---:|---:|
-|340|(2.09±0.06)×10⁻⁶|2.460×10⁻⁷|0.118|
-|360|(1.77±0.04)×10⁻⁶|3.592×10⁻⁷|0.203|
-|380|(3.50±0.10)×10⁻⁶|1.164×10⁻⁶|0.333|
+|340|(2.09±0.06)×10⁻⁶|3.105×10⁻⁷|0.149|
+|360|(1.77±0.04)×10⁻⁶|3.808×10⁻⁷|0.215|
+|380|(3.50±0.10)×10⁻⁶|1.015×10⁻⁶|0.290|
 
 NEP remains below AIMD at every temperature. The NEP series increases monotonically, while the reference includes a 340→360 K decrease. Thus neither pointwise agreement nor the exact temperature trend is reproduced. Cell size, preparation and potential differ from the paper; the discrepancy cannot be assigned uniquely to the potential.
 
 ### Does longer sampling stabilize the result?
+
+**Current primary window: 20–80 ps.** Selected after inspecting the curves, not preregistered: it avoids the initial rapid rise and differs by less than 4% in slope from nearby 20–60 and 30–90 ps fits at all temperatures. Later windows show greater drift. This is a practical local-stability choice, not a unique optimum or demonstrated asymptotic diffusion regime. The current apparent **E_a is 0.3255 eV, Arrhenius R²=0.8528**. MSD R² values are 0.9953/0.9980/0.9989 and log–log exponents are 0.524/0.490/0.647. No window was chosen to match literature Ea. The 10–40 ps results below remain duration-sensitivity diagnostics; 0.428 eV is not the current primary estimate.
 
 All estimates below use the same 10–40 ps lag fit; only the total trajectory length changes.
 

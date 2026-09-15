@@ -56,4 +56,24 @@ def main():
     (OUT/'analysis.json').write_text(json.dumps(result,indent=2)+'\n')
     print(json.dumps({k:v for k,v in result.items() if k!='source_hashes'},indent=2))
 
-if __name__=='__main__':main()
+def select_window():
+    result=json.loads((OUT/'analysis.json').read_text())
+    windows=[(10,40),(20,60),(20,80),(30,90),(40,100),(50,110),(60,120),(75,150)]
+    rows=[];primary=[]
+    for T in [340,360,380]:
+        a=np.loadtxt(OUT/f'LZOC_{T}K_300ps_MSD.csv',delimiter=',',skiprows=1)
+        fits={w:fit_msd(a[:,0],a[:,1],*w) for w in windows}
+        for (lo,hi),f in fits.items():rows.append([T,lo,hi,f['D_cm2_s'],f['R2'],f['alpha']])
+        f=fits[(20,80)]
+        delta=max(abs(fits[w]['D_cm2_s']/f['D_cm2_s']-1) for w in [(20,60),(30,90)])
+        primary.append(dict(T_K=T,**f,neighbor_relative_change_max=delta))
+    result['primary_20_80']=primary
+    result['primary_arrhenius']=arrhenius([340,360,380],[f['D_cm2_s'] for f in primary])
+    result['selection_note']='Post-analysis common 20–80 ps window; nearby 20–60 and 30–90 slopes differ by <4%. Exploratory local stability, not a unique optimum or demonstrated long-time convergence. Ea was not the selection criterion. Original 10–40 diagnostics retained.'
+    np.savetxt(OUT/'LZOC_window_sensitivity.csv',rows,delimiter=',',header='T_K,lo_ps,hi_ps,D_cm2_s,R2,alpha',comments='')
+    (OUT/'analysis.json').write_text(json.dumps(result,indent=2)+'\n')
+
+if __name__=='__main__':
+    import sys
+    if '--select-only' not in sys.argv:main()
+    select_window()
