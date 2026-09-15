@@ -54,9 +54,9 @@ The comparison follows a hierarchy. First, numerical completeness requires finit
 
 ### Scope of the conclusions
 
-This is a benchmark of practical pretrained-potential workflows, not a new potential-training study and not an exact reproduction of every cited simulation. MACE and NEP are first compared to explain the computational choice. The subsequent material sections then test that choice against literature. Differences in starting structures, cell sizes, ensembles, thermostats and available trajectory lengths are stated where they affect interpretation. Deviations are retained as results rather than removed by tuning trajectories toward a target value.
+This is a benchmark of practical pretrained-potential workflows, not a new potential-training study and not an exact reproduction of every cited simulation. Development began from the company's existing **M3GNet–LAMMPS CPU** workflow. The first acceleration test was therefore **LAMMPS CPU versus GPU** within the MatGL route, not ASE versus LAMMPS. This was followed by the multi-model benchmark and the practical MACE–NEP comparison; subsequent material sections test the resulting choice against literature. Differences in starting structures, cell sizes, ensembles, thermostats and available trajectory lengths are stated where they affect interpretation. Deviations are retained as results rather than removed by tuning trajectories toward a target value.
 
-The report consequently proceeds from method selection to increasingly demanding material tests: MACE versus NEP efficiency, the LZOC AIMD comparison, the LSZC experimental extension, Li₃PS₄ sulfide transferability and finally the LiPON applicability limit.
+The report consequently proceeds from M3GNet–LAMMPS CPU-to-GPU acceleration, through the multi-potential benchmark and MACE-versus-NEP efficiency comparison, to increasingly demanding material tests: the LZOC AIMD comparison, the LSZC experimental extension, Li₃PS₄ sulfide transferability and finally the LiPON applicability limit.
 
 ## Contents
 
@@ -71,6 +71,10 @@ The report consequently proceeds from method selection to increasingly demanding
 
 <a id="legacy"></a>
 ## 1. MACE versus NEP: why NEP was selected
+
+### Development baseline: M3GNet–LAMMPS CPU to GPU
+
+The company's initial workflow ran M3GNet through native LAMMPS `matgl` on CPU. The first implementation comparison was therefore not ASE-MD versus LAMMPS, but LAMMPS CPU versus LAMMPS `matgl/kk` GPU using the same 240-atom Li₃YCl₆ benchmark. Under the common 100-step warm-up plus 1,000 timed-step protocol, the retained results are 3.285 steps/s on CPU and 56.621 steps/s on one H100 GPU, an approximately 17.2-fold throughput increase. This is an implementation-speed result, not evidence of improved physical accuracy. The work then expanded to MACE, SevenNet and NEP89 implementations, after which NEP89/GPUMD was selected for long amorphous trajectories.
 
 The first question is practical: which workflow allows us to investigate several amorphous electrolytes within the available computing budget? The existing candidate-3 LZOC calculations provide the starting comparison. We select NEP89/GPUMD for its observed throughput, not as a claim that NEP is intrinsically more accurate than MACE. The subsequent material sections test how far that economical choice reproduces published structure and transport results.
 

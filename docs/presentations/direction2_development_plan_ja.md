@@ -9,8 +9,8 @@
 ```mermaid
 flowchart TD
     A["① 構造選定<br/>Li₃YCl₆・LiNbOCl₄"]
-    --> B["② 構造最適化<br/>M3GNet → MACE"]
-    --> C["③ 分子動力学<br/>ASE-MD → LAMMPS"]
+    --> B["② 初期環境の再現<br/>M3GNet・LAMMPS CPU"]
+    --> C["③ 計算高速化<br/>LAMMPS CPU → GPU"]
     --> D["④ Li+拡散・伝導度<br/>MSD"]
 
     classDef step fill:#FFFFFF,stroke:#000000,stroke-width:1.5px,color:#000000;
@@ -27,15 +27,7 @@ flowchart TD
 
 ### 2. 現在の計算における課題
 
-これまで企業内で使用されてきた計算方法は、
-
-> 【現在の計算手法を記入】
-
-です。また、これまでに得られている主な結果は、
-
-> 【既存計算の結果を記入】
-
-です。
+これまで企業内で使用されてきた計算方法は、**M3GNetポテンシャルをLAMMPSのCPU実装で実行するMD**である。したがって、本開発の最初の計算環境比較はASE-MD対LAMMPSではなく、既存のLAMMPS CPU経路を再現した上で行う**LAMMPS CPU対LAMMPS GPU**である。
 
 既存の計算結果を分析したところ、主に以下の課題があると考えています。
 
@@ -109,28 +101,26 @@ M3GNet は、原子をノード、原子間の関係をエッジとして表現�
 
 として整理します。
 
-### 6. ASE-MD から LAMMPS への変更理由
+### 6. LAMMPS CPUからGPUへの変更理由
 
-計算エンジンについては、Python/ASE を用いた MD から LAMMPS への変更を検討します。
+企業内の初期計算はM3GNetを用いたLAMMPS CPU計算である。本検討では計算エンジンをASEからLAMMPSへ変更したのではなく、同じLAMMPS／MatGL系においてCPU実装からGPU対応実装へ移行する効果を検証する。
 
-ASE は、構造作製、計算条件の設定、原子間ポテンシャルとの接続を柔軟に行える Python のインターフェースです。小規模な検証や workflow の試作には適しています。
+CPU側はLAMMPSのnative `matgl`、GPU側はKokkos対応の`matgl/kk`を用いる。比較の目的は、モデルやMDエンジンの変更ではなく、M3GNet–LAMMPS実装におけるハードウェア経路の高速化を確認することである。
 
-一方、長時間の ionic transport MD では、1 step ごとの Python 側の処理やデータの受け渡しが計算効率に影響する可能性があります。
+240原子Li₃YCl₆、100 stepのwarm-upと1000 stepの計測という共通プロトコルでは、保存済み基準値はCPU **3.285 steps/s**、H100 GPU **56.621 steps/s**であり、GPU化によって約**17.2倍**のthroughputを得た。
 
-LAMMPS は、大規模な分子動力学計算を目的とした計算エンジンであり、MPI 並列、GPU、Kokkos などの高速化機能に対応しています。MACE の力計算を LAMMPS 内で実行することで、Python/ASE を介した計算よりも、長時間 MD を効率的に実行できる可能性があります。
+この結果は速度比較であり、GPU化によってM3GNetの物理精度が向上したことを意味しない。構造安定性、MSD、拡散係数および文献値との一致は、後続の材料計算で別途評価する。
 
-| 比較項目 | ASE-MD | LAMMPS | 今回の扱い |
+| 比較項目 | LAMMPS CPU | LAMMPS GPU | 今回の扱い |
 |---|---|---|---|
-| 役割 | Python から MD を制御するインターフェース | 大規模 MD を実行する計算エンジン | 同じモデルで比較 |
-| 主な利点 | 構造作製や条件設定が柔軟 | MPI、GPU、Kokkos に対応 | TSUBAME で検証 |
-| 計算規模 | 小規模な検証や workflow 試作に適する | 長時間・大規模 MD に適する | 2×2×4、2×2×3 を計算 |
-| データ処理 | Python 側で制御・受け渡し | LAMMPS 内で連続的に処理 | trajectory を比較 |
-| 期待する効果 | 試作・検証のしやすさ | 計算速度と長時間計算の安定性 | timesteps/s を比較 |
-| 注意点 | Python 側の処理が計算速度に影響する可能性 | 入力形式と GPU 環境の構築が必要 | 同一条件で再現性を確認 |
+| 実装 | native `matgl` | `matgl/kk` | M3GNet–LAMMPS経路を比較 |
+| ハードウェア | CPU | H100 GPU | TSUBAMEで検証 |
+| ベンチマーク構造 | Li₃YCl₆、240原子 | Li₃YCl₆、240原子 | 同一構造 |
+| 計測プロトコル | warm-up 100 + 計測1000 step | warm-up 100 + 計測1000 step | steps/sを比較 |
+| 保存済み速度 | 3.285 steps/s | 56.621 steps/s | 約17.2倍 |
+| 注意点 | CPU基準 | GPU高速化 | 精度比較ではない |
 
-![ASE-MD と LAMMPS の比較](ase_md_vs_lammps_ja.png)
-
-今回の変更では、単にソフトウェアを変更するのではなく、同じポテンシャルと同じ初期構造を用いて ASE-MD と LAMMPS を比較します。
+今回の変更では、同じM3GNetポテンシャル、同じ初期構造、同じLAMMPS計算を用いてCPUとGPUの計算速度を比較する。
 
 比較する項目は、
 
@@ -139,15 +129,15 @@ LAMMPS は、大規模な分子動力学計算を目的とした計算エンジ�
 - 構造の安定性
 - Li⁺の MSD と拡散係数
 - timesteps per second
-- GPU メモリ使用量
+- GPU利用の確認
 
 です。
 
-ただし、LAMMPS の方が必ず同じ結果を出す、または必ず高精度であるという意味ではありません。物理モデルが同じ場合には、結果の再現性を確認した上で、計算速度と長時間計算の安定性を比較します。
+ただし、GPUの方が高精度であるという意味ではない。物理モデルが同じ条件で結果の再現性を確認した上で、計算速度と長時間計算の安定性を比較する。
 
 比較結果は、
 
-> 【ASE-MD と LAMMPS の計算速度・結果比較を記入】
+> M3GNet–LAMMPS CPU：3.285 steps/s、M3GNet–LAMMPS GPU：56.621 steps/s（240原子、共通短時間ベンチマーク）。
 
 として整理します。
 
