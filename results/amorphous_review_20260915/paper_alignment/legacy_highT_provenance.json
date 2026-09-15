@@ -1,0 +1,109 @@
+{
+  "hashes": {
+    "results/LZOC/analysis_20260912/source/mace/700K_R1/production/trajectory.lammpstrj": "66e5a533cc8f0f043bff5ce2c295bb0f9e66b76403e133b2c64cfc19967ffada",
+    "results/LZOC/legacy_comparison_20260915/source_700K/production/dump.xyz": "46139227b84dfccc30f9f0b88ae8036d9676bdfd9c5decc9d4aaca0ae80ffe0e",
+    "results/LZOC/analysis_20260912/source/mace/800K_R1/production/trajectory.lammpstrj": "04a6a553cf99636e5900bbf255607d28fa77d8fca70a2e0c77479fc765434d1d",
+    "results/LZOC/legacy_comparison_20260915/source_800K/production/dump.xyz": "bfc7d78232626df018db85eb2bee383ea3b1fc62884269f4945c63eb3a7d91e3",
+    "results/LZOC/analysis_20260912/source/mace/900K_R1/production/trajectory.lammpstrj": "56a183b7b425090e15f2a48d5aa2bf6838b536ff944342fff101cbf4874f323b",
+    "results/LZOC/legacy_comparison_20260915/source_900K/production/dump.xyz": "c773b6593d699e9e006c8933b44077c7d305acdb340af2c2d10f08d47dab34b5"
+  },
+  "source": "archived 200 ps production; not NPT extension",
+  "structure": {
+    "MACE_700K": {
+      "CN": [
+        3.5521541950113376,
+        0.12358276643990933,
+        4.3273809523809526,
+        1.132936507936508
+      ],
+      "fit": {
+        "D_cm2_s": 3.42891350602879e-05,
+        "R2": 0.9998170174994135,
+        "intercept_A2": 8.062464253771367,
+        "alpha": 0.9112285818280144,
+        "lo_ps": 20,
+        "hi_ps": 80
+      }
+    },
+    "NEP89_700K": {
+      "CN": [
+        4.4807256235827655,
+        0.18934240362811788,
+        4.859126984126984,
+        1.33531746031746
+      ],
+      "fit": {
+        "D_cm2_s": 1.6864629091478722e-05,
+        "R2": 0.997965926774667,
+        "intercept_A2": 12.59291909475936,
+        "alpha": 0.7850856832474591,
+        "lo_ps": 20,
+        "hi_ps": 80
+      }
+    },
+    "MACE_800K": {
+      "CN": [
+        3.424036281179138,
+        0.0963718820861678,
+        4.353174603174604,
+        1.2103174603174605
+      ],
+      "fit": {
+        "D_cm2_s": 5.35270848818754e-05,
+        "R2": 0.9995577872486568,
+        "intercept_A2": 11.607950270217401,
+        "alpha": 0.9280635977889501,
+        "lo_ps": 20,
+        "hi_ps": 80
+      }
+    },
+    "NEP89_800K": {
+      "CN": [
+        4.315192743764171,
+        0.20521541950113378,
+        4.841269841269841,
+        1.28968253968254
+      ],
+      "fit": {
+        "D_cm2_s": 3.6152738861957994e-05,
+        "R2": 0.998656873504179,
+        "intercept_A2": 12.053616853475049,
+        "alpha": 0.8983838369741421,
+        "lo_ps": 20,
+        "hi_ps": 80
+      }
+    },
+    "MACE_900K": {
+      "CN": [
+        3.3696145124716557,
+        0.12131519274376419,
+        4.174603174603174,
+        1.0317460317460316
+      ],
+      "fit": {
+        "D_cm2_s": 6.25723288205609e-05,
+        "R2": 0.999878513646516,
+        "intercept_A2": 20.036854040786665,
+        "alpha": 0.8829046100223978,
+        "lo_ps": 20,
+        "hi_ps": 80
+      }
+    },
+    "NEP89_900K": {
+      "CN": [
+        4.2687074829931975,
+        0.1564625850340136,
+        4.807539682539682,
+        1.331349206349206
+      ],
+      "fit": {
+        "D_cm2_s": 5.267268377720772e-05,
+        "R2": 0.9995815887722761,
+        "intercept_A2": 17.30243187569019,
+        "alpha": 0.8899397875464788,
+        "lo_ps": 20,
+        "hi_ps": 80
+      }
+    }
+  }
+}

@@ -2,7 +2,69 @@
 
 Updated 15 September 2026. [日本語](materials_overview_ja.md)
 
-This is the maintained English research record, paired with the Japanese version. Results, figures and source tables are organized by material. This edit reorganizes documentation only; it does not change calculations or submit jobs. Queue information below is the last recorded observation, not a live status.
+This is the maintained English research record, paired with the Japanese version. The dated paper-alignment supplement below contains the latest analyses and submissions; earlier sections retain historical context. Queue information is a recorded observation, not a live status.
+
+## Paper-aligned additions — 15 September 2026
+
+This section supersedes the older LSZC “80/200 ps” status below. LSZC 400 K production (8676040.3) completed and was analysed. Array **8676216.1–4** adds 320/330/340/350 K: tasks 1–2 were running and 3–4 queued at the latest check. These new four-temperature results are **not yet available**.
+
+### LSZC: completed 400 K transport and mechanism comparison
+
+![LSZC transport](../../results/amorphous_review_20260915/paper_alignment/LSZC400_transport.png)
+
+Time-origin-averaged MSD uses the entire 200 ps trajectory, periodic unwrapping and whole-system mass-weighted COM removal. The 20–80 ps fit gives apparent D=1.1003×10⁻⁶ cm²/s, R²=0.99919 and conditional σ_NE=19.43 mS/cm at400 K (32Li;8421.93 Å³). Fit-window estimates span1.083–1.152×10⁻⁶ cm²/s. Four50 ps blocks span0.255–1.941×10⁻⁶ cm²/s; relaxation and framework motion remain visible. High R² does not establish convergence. This400 K value is not divided by the303 K experimental value to claim an accuracy error.
+
+![LSZC coordination-conditioned mobility](../../results/amorphous_review_20260915/paper_alignment/LSZC400_coordination_mobility.png)
+
+Li–O CN is measured at each starting time with a2.7 Å cutoff; subsequent displacement uses1/5/10 ps lags and1 ps-separated origins. At10 ps, CN0/1/2/3 give mean squared displacements1.693/1.598/1.446/0.979 Å², from2463/2250/1036/310 Li–origin observations. This supports a qualitative association of lower O coordination with higher mobility, not causality or independent statistics. CN4/5/6 have only43/9/1 observations and must not drive the conclusion. [Counts and all lags](../../results/amorphous_review_20260915/paper_alignment/LSZC400_conditioned_mobility.csv).
+
+![LSZC RDF](../../results/amorphous_review_20260915/paper_alignment/LSZC400_RDF.png)
+
+Early0.1–45.1 ps and late150.1–195.1 ps windows each contain10 snapshots;0.05 Å bins, no smoothing. Late Zr–O/Zr–Cl CN is1.553/4.250 at2.6/3.2 Å. Every sampled sulfate remains four-coordinate below2.0 Å. These are partial RDFs, not experimental total PDF.
+
+![LSZC thermodynamics](../../results/amorphous_review_20260915/paper_alignment/LSZC400_thermodynamics.png)
+
+Mean T=399.71 K, mean P=0.03884 GPa; fixed-cell density1.81705 g/cm³. Final-minus-first50 ps potential energy is−0.01070 eV/atom. The paper reports experimental density2.05 g/cm³, whereas the deposited geometry gives2.03549 g/cm³: distinguish these references and the temperature/preparation differences.
+
+[Tang2026](https://doi.org/10.1038/s41467-026-69737-x) reports1.5 mS/cm at30 °C and0.33 eV. Its Figure1 source table instead lists1.4383 mS/cm and0.33052 eV for x=0.5; preserve that source distinction rather than silently substituting values. The new array follows its320/330/340/350 K,300 ps transport grid: each branch has10 ps400→target NPT,50 ps target NPT at1 bar, then300 ps NVT. NEP89/GPUMD,272 atoms,0.5 fs and100/1000 fs coupling remain project settings, unlike the paper’s tuned MACE,1088 atoms and3 fs. All branches inherit the same prepared glass. [Job script](../../hpc/tsubame_26icp/production/lszc_paper_temperatures.sh). No experimental total PDF has been claimed; matched-temperature sampling and scattering-weighted calculation remain separate work.
+
+### New LZOC: direct comparison with AIMD Table 4
+
+![LZOC Table4 comparison](../../results/amorphous_review_20260915/paper_alignment/LZOC_Table4_comparison.png)
+
+[Hussain2024 Supplementary Table4](https://doi.org/10.1038/s41524-024-01346-y) distinguishes charge diffusion D from tracer D*. Our single-particle MSD corresponds to D*, not D. The numbers below are transcribed from the published table, not digitized curves or fitted reference lines.
+
+|T (K)|AIMD D* (cm²/s), reported ±|NEP NHC2 fs,10–40 ps|NEP MTTK0.5 fs,10–40 ps|NHC / AIMD D*|
+|---:|---:|---:|---:|---:|
+|340|(2.09±0.06)×10⁻⁶|3.270×10⁻⁷|1.080×10⁻⁷|0.156|
+|360|(1.77±0.04)×10⁻⁶|5.501×10⁻⁷|5.266×10⁻⁷|0.311|
+|380|(3.50±0.10)×10⁻⁶|8.957×10⁻⁷|1.705×10⁻⁶|0.256|
+
+The author's non-monotonic340/360 K tracer values are retained. NEP is lower at each matched temperature; both settings are shown without selecting individual temperatures. Different preparation,192 versus48 atoms, potential and sampling prevent a potential-only attribution. Apparent slopes retain the earlier plateau/convergence limitations. [Complete comparison including charge D](../../results/amorphous_review_20260915/paper_alignment/LZOC_Table4_comparison.csv).
+
+### Li₃PS₄: experimental anchor
+
+[Mirmira et al.,2021, J. Mater. Chem. A, DOI10.1039/D1TA02754A](https://pubs.rsc.org/en/content/articlepdf/2021/ta/d1ta02754a?page=search) reports ball-milled amorphous Li₃PS₄ conductivity **3.5×10⁻⁴ S/cm =0.35 mS/cm at20 °C (293.15 K)** in its abstract. This is an experimental-literature anchor, distinct from Chen’s simulated glass D. Our300 K conditional σ_NE=0.989 mS/cm is shown for context only: the temperatures, preparation and transport definitions differ, and the300 K MSD plateau prevents treating0.989 as a validated prediction. No experimental self-D is inferred without correlation and density assumptions.
+
+### Legacy LZOC: archived high-temperature analysis now added
+
+![Legacy Li MSD](../../results/amorphous_review_20260915/paper_alignment/legacy_highT_Li_MSD.png)
+
+|T (K)|MACE D (cm²/s)|NEP89 D (cm²/s)|
+|---:|---:|---:|
+|700|3.429×10⁻⁵|1.686×10⁻⁵|
+|800|5.353×10⁻⁵|3.615×10⁻⁵|
+|900|6.257×10⁻⁵|5.267×10⁻⁵|
+
+All use200 ps existing production and20–80 ps lag fits with total COM correction. These controls complement the existing600 K comparison; they do not rank accuracy against experiment.
+
+![Legacy framework MSD](../../results/amorphous_review_20260915/paper_alignment/legacy_highT_framework.png)
+
+Substantial Zr/O/Cl motion, particularly for MACE at900 K, means the host cannot be assumed immobile. Different fixed volumes and histories remain confounders.
+
+![Legacy RDF](../../results/amorphous_review_20260915/paper_alignment/legacy_highT_RDF.png)
+
+Each curve averages21 snapshots over150–200 ps with0.05 Å bins. The Li/O/Cl environments differ between models, consistent with structural sensitivity rather than speed alone. [Numerical results](../../results/amorphous_review_20260915/paper_alignment/legacy_highT_summary.csv) and [source hashes](../../results/amorphous_review_20260915/paper_alignment/legacy_highT_provenance.json). The separate NPT-extension analysis remains pending; these are not those extensions.
 
 ## Contents
 

@@ -2,7 +2,69 @@
 
 更新：2026年9月15日。[English](materials_overview_en.md)
 
-本書は英語版と対応する日本語の統合研究記録である。結果・図・数値表・出典を材料別にまとめる。今回の編集は文書整理のみで、計算値の変更やジョブ投入は行わない。以下の実行状況は最後に記録した確認値であり、リアルタイムの状態ではない。
+本書は英語版と対応する日本語の統合研究記録である。冒頭の日付付き文献対応追記が最新の解析・投入状況を示し、後続部分は従来の経緯も保存する。実行状況は記録時点の確認値であり、リアルタイムの状態ではない。
+
+## 文献対応の追記 — 2026年9月15日
+
+本節は下記の旧LSZC「80/200 ps」という進捗記録を更新する。400 K production（8676040.3）は完了・解析済み。320／330／340／350 Kの配列ジョブ**8676216.1–4**を投入し、最終確認時は1–2が実行中、3–4が待機中である。四温度の結果はまだ未取得。
+
+### LSZC：400 Kの輸送と局所配位
+
+![LSZC輸送](../../results/amorphous_review_20260915/paper_alignment/LSZC400_transport.png)
+
+200 ps全軌跡を周期境界でアンラップし、系全体の質量重み付き重心移動を除去した時間原点平均MSDである。20–80 psの見かけのDは1.1003×10⁻⁶ cm²/s、R²=0.99919、条件付きσ_NEは400 Kで19.43 mS/cm（Li32個、8421.93 Å³）。窓変更ではD=1.083–1.152×10⁻⁶、50 psブロック間では0.255–1.941×10⁻⁶ cm²/s。高いR²だけで収束とはしない。303 K実験値との直接比を精度誤差として報告しない。
+
+![配位と移動](../../results/amorphous_review_20260915/paper_alignment/LSZC400_coordination_mobility.png)
+
+各時間原点のLi–O配位数（2.7 Å）で分類し、その後1／5／10 psの移動を集計した。原点間隔は1 ps。10 psではCN0／1／2／3の平均二乗変位が1.693／1.598／1.446／0.979 Å²、観測数は2463／2250／1036／310である。低酸素配位ほど移動しやすいという定性的傾向を示すが、因果関係や独立標本ではない。CN4／5／6は43／9／1点のみで結論には使わない。[全数値](../../results/amorphous_review_20260915/paper_alignment/LSZC400_conditioned_mobility.csv)。
+
+![RDF](../../results/amorphous_review_20260915/paper_alignment/LSZC400_RDF.png)
+
+初期0.1–45.1 ps、後期150.1–195.1 psの各10構造、0.05 Å刻み、平滑化なし。後期Zr–O／Zr–Cl配位数は1.553／4.250（2.6／3.2 Å）。全サンプリングで硫酸根のS–O四配位（2.0 Å未満）は維持された。分波RDFを実験の全PDFとは呼ばない。
+
+![熱力学](../../results/amorphous_review_20260915/paper_alignment/LSZC400_thermodynamics.png)
+
+平均温度399.71 K、平均圧力0.03884 GPa、固定セル密度1.81705 g/cm³。最後と最初の50 psの平均ポテンシャルエネルギー差は−0.01070 eV/atom。論文の実験密度2.05 g/cm³と公開構造の2.03549 g/cm³は別の参照値であり、温度・作製法の差も残る。
+
+[Tang2026](https://doi.org/10.1038/s41467-026-69737-x)の本文は30 °Cで1.5 mS/cm、0.33 eVを報告する。一方、Figure1公開数値表のx=0.5は1.4383 mS/cm、0.33052 eVであり、出典の違いを保持する。新計算は論文の320／330／340／350 K、300 ps輸送条件に対応する。各分岐は400→目標温度10 ps NPT、目標温度1 barで50 ps NPT、300 ps NVT。NEP89／GPUMD、272原子、0.5 fs、温度／圧力結合100／1000 fsは本研究設定であり、論文の調整済みMACE・1088原子・3 fsとは異なる。同じガラスから開始する。[投入スクリプト](../../hpc/tsubame_26icp/production/lszc_paper_temperatures.sh)。実験全PDFとの比較は未完了で、温度と散乱重みを合わせる必要がある。
+
+### 新LZOC：AIMD Table4との同温度比較
+
+![Table4比較](../../results/amorphous_review_20260915/paper_alignment/LZOC_Table4_comparison.png)
+
+[Hussain2024補足Table4](https://doi.org/10.1038/s41524-024-01346-y)は電荷拡散Dとトレーサー拡散D*を区別する。単粒子MSDの比較対象はD*であり、図の推定値ではなく表の原数値を用いた。
+
+|T (K)|AIMD D* (cm²/s)、報告±|NEP NHC2 fs、10–40 ps|NEP MTTK0.5 fs、10–40 ps|NHC／AIMD D*|
+|---:|---:|---:|---:|---:|
+|340|(2.09±0.06)×10⁻⁶|3.270×10⁻⁷|1.080×10⁻⁷|0.156|
+|360|(1.77±0.04)×10⁻⁶|5.501×10⁻⁷|5.266×10⁻⁷|0.311|
+|380|(3.50±0.10)×10⁻⁶|8.957×10⁻⁷|1.705×10⁻⁶|0.256|
+
+340→360 Kで参照D*が低下する原数値も変更しない。NEPは各温度で低い。192対48原子、作製履歴、ポテンシャル、時間長が異なるため、差をポテンシャルだけに帰属しない。既述のプラトー／収束の制限も残る。[電荷Dを含むCSV](../../results/amorphous_review_20260915/paper_alignment/LZOC_Table4_comparison.csv)。
+
+### Li₃PS₄：実験参照値の補足
+
+[Mirmira et al.,2021, J. Mater. Chem. A, DOI10.1039/D1TA02754A](https://pubs.rsc.org/en/content/articlepdf/2021/ta/d1ta02754a?page=search)の要旨はボールミル非晶Li₃PS₄について**20 °C（293.15 K）で3.5×10⁻⁴ S/cm＝0.35 mS/cm**を記載する。ChenのシミュレーションDとは別の実験文献基準である。本計算の300 K条件付きσ_NE=0.989 mS/cmは参考併記に留める。温度・作製法・定義が異なり、300 KのMSDはプラトーを示すため検証済み予測ではない。実験伝導率を追加仮定なしに自己拡散Dへ変換しない。
+
+### 旧LZOC：高温の保存データ解析
+
+![Li MSD](../../results/amorphous_review_20260915/paper_alignment/legacy_highT_Li_MSD.png)
+
+|T (K)|MACE D (cm²/s)|NEP89 D (cm²/s)|
+|---:|---:|---:|
+|700|3.429×10⁻⁵|1.686×10⁻⁵|
+|800|5.353×10⁻⁵|3.615×10⁻⁵|
+|900|6.257×10⁻⁵|5.267×10⁻⁵|
+
+既存200 ps production、20–80 ps窓、系全体COM補正を共通に使用した。既存600 K比較を補うモデル対照であり、実験精度の順位ではない。
+
+![骨格MSD](../../results/amorphous_review_20260915/paper_alignment/legacy_highT_framework.png)
+
+特に900 KのMACEではZr／O／Clも大きく移動し、固定骨格とはみなせない。密度と履歴の差もある。
+
+![高温RDF](../../results/amorphous_review_20260915/paper_alignment/legacy_highT_RDF.png)
+
+150–200 psの21構造、0.05 Å刻みで平均した。速度だけでなく局所構造のモデル依存性を示す。[数値表](../../results/amorphous_review_20260915/paper_alignment/legacy_highT_summary.csv)・[出典ハッシュ](../../results/amorphous_review_20260915/paper_alignment/legacy_highT_provenance.json)。別途実施したNPT延長の解析は未完了で、本図はその延長軌跡ではない。
 
 ## 目次
 
