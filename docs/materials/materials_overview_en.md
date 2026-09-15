@@ -83,6 +83,8 @@ Average pressure near the target does not establish structural equilibration. En
 <a id="lzoc"></a>
 ## 2. Reconstructed LZOC: the primary AIMD comparison
 
+**Fresh 300 ps series submitted, 15 September 2026:** array **8676684.1–3**, respectively 340/360/380 K. Each starts from its original 80 ps production input (192 atoms, stored coordinates/cell/velocities), not the old endpoint. Only the run length changes to 150,000 steps: 2 fs, NVT Nosé–Hoover chain, 100 fs coupling, 0.05 ps thermo and 0.1 ps trajectory output remain unchanged. Old 80 ps results are preserved. After completion, compare nested 80/150/300 ps estimates using the same primary 10–40 ps fitting interval and block diagnostics. These are not independent replicas; restarting the same inputs may reproduce the original early segment. The figures and values below remain the completed 80 ps results until the new analysis is available.
+
 Having selected the workflow, we first return to the oxychloride research direction. The decisive comparison is temperature-resolved Li tracer diffusion against AIMD; agreement of an extrapolated conductivity alone is not sufficient.
 
 ### Paper question and 2 fs transport comparison
