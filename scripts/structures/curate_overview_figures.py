@@ -50,27 +50,17 @@ def finish(fig,name):
 def lzoc():
     fig,aa=grid(2);axes=aa.ravel()
     fig.suptitle('LZOC — NEP · NHC · 2 fs · 300 ps production', fontsize=17)
-    repeats=js(BASE/'seed_repeats/analysis.json')
+    selected=js(BASE/'seed_repeats/representatives.json')['selected']
     ymax=0
-    for ax,T in zip(axes,[340,360,380]):
-        a=load(BASE/f'followup300/LZOC_{T}K_300ps_MSD.csv')
-        ax.plot(a[:,0],a[:,1],color=GRAY,label='Original run')
+    for ax,r,c in zip(axes,selected,[BLUE,GREEN,RED]):
+        T=r['T_K'];a=load(BASE/r['source'])
+        ax.plot(a[:,0],a[:,1],color=c,label=f"Job {r['job']}")
         ymax=max(ymax,float(a[:,1].max()))
-        if T in [340,360]:
-            for rep,c in [(1,BLUE),(2,RED)]:
-                a=load(BASE/f'seed_repeats/LZOC_{T}K_R{rep}_MSD.csv')
-                ax.plot(a[:,0],a[:,1],color=c,label=f'Seed repeat {rep}')
-                ymax=max(ymax,float(a[:,1].max()))
         ax.set(title=f'{T} K',xlabel='Lag time (ps)',ylabel='Li MSD (Å²)',xlim=(0,300));ax.legend()
     for ax in axes[:3]:ax.set_ylim(0,ymax*1.06)
     a=load(P/'LZOC_Table4_comparison.csv');ax=axes[3]
     ax.errorbar(a[:,0],a[:,1],yerr=a[:,2],fmt='ko-',capsize=4,label='AIMD tracer D*')
-    for j,c,ls,lab in [(5,RED,'-','NEP: NHC 2 fs')]:
-        data=js(BASE/'followup300/analysis.json')
-        ax.plot(a[:,0],[r['D_cm2_s'] for r in data['primary_20_80']],'o',color=GRAY,label='Original series')
-    for i,row in enumerate(repeats['summary']):
-        ax.errorbar(row['T_K'],row['D_mean'],yerr=row['D_sample_sd'],fmt='s',color=BLUE,capsize=5,label='New repeats: mean ± SD' if i==0 else None)
-    ax.scatter([r['T_K'] for r in repeats['records']],[r['D_cm2_s'] for r in repeats['records']],marker='x',color=RED,label='Individual repeats')
+    ax.plot([r['T_K'] for r in selected],[r['D_cm2_s'] for r in selected],'s',color=BLUE,label='Selected single trajectories')
     ax.set(title='AIMD comparison',xlabel='Temperature (K)',ylabel='D (cm²/s)',yscale='log',xticks=a[:,0]);ax.legend()
     finish(fig,'01_LZOC_transport')
 

@@ -93,7 +93,15 @@ Jobs 8676684.1–3 completed 300 ps at 340/360/380 K, with 192 atoms, 2 fs and N
 
 ![LZOC transport and AIMD comparison](../../results/plots/amorphous/01_LZOC_transport.png)
 
-Grey lines show the original runs; blue/red lines show both new velocity repeats at 340/360 K. Panel d shows individual repeats and their arithmetic mean ± sample SD (n=2, not a confidence interval); original runs are separate. Panels a–c show the complete 0–300 ps lag range of all-time-origin, whole-system COM-corrected Li MSD; fit overlays are omitted for clarity. Panel d compares the 20–80 ps slope with [Hussain2024](https://doi.org/10.1038/s41524-024-01346-y), Supplementary Table 4. Published ± values are retained as reported. Only the 2 fs series is shown. The 300 ps endpoint has only one time-origin pair; the tail is shown for transparency, not treated as equally well sampled as short lags.
+Panels a–c now display one stability-ranked representative per temperature over the complete 0–300 ps lag range, with a common y scale and no fit overlays. Selection did not use AIMD values: positive slope and R²≥0.99 were required, then the maximum relative slope change on shifting each fit window by ±10 ps was minimized. Candidate windows were 20–80, 20–100, 20–150, 40–150 and 50–200 ps. This is a post-analysis display selection, not an unbiased estimate across replicas or proof of asymptotic diffusion. Panel d compares these individual apparent D values with Hussain2024 Supplementary Table 4; published uncertainties are retained. No repeat mean or SD is plotted. At 300 ps only one time-origin pair remains.
+
+|T (K)|Selected job|Fit window (ps)|D_app (cm²/s)|MSD R²|Neighbour slope change|
+|---:|---|---:|---:|---:|---:|
+|340|8677221.1 (R1)|20–150|4.479×10⁻⁷|0.9978|1.62%|
+|360|8676684.2 (original)|20–150|3.309×10⁻⁷|0.9962|2.04%|
+|380|8676684.3 (original)|20–100|1.028×10⁻⁶|0.9994|1.94%|
+
+These selected results remain below AIMD (21.4%, 18.7% and 29.4% of its values). The selected series is not monotonic. Different equilibration histories and fitted windows are explicitly retained; no new material Ea is inferred from this mixed display selection. The tables below retain the original fixed-window and repeat results as the audit record, not the data plotted above.
 
 |T (K)|Existing source job|AIMD D* (cm²/s)|NEP 300 ps D_app (cm²/s)|NEP/AIMD|Additional repeats|
 |---:|---|---:|---:|---:|---|
