@@ -4,7 +4,7 @@
 
 | 类别 | 入口 | 内容 |
 |---|---|---|
-| 非晶研究主报告（仅维护这两份） | [日本語](materials/materials_overview_ja.md) / [English](materials/materials_overview_en.md) | 按材料集中设置、27组图、表格、公式、文献对照、未解决事项与数据保存规则 |
+| Material Review（仅维护这两份完整正文） | [日本語](materials/materials_overview_ja.md) / [English](materials/materials_overview_en.md) | 按材料内嵌设置、11组核心图、数值表、公式、解释与文献对照；无需跳转至分散报告，源数据链接集中在文末 |
 | 历史设置快照 | [2026-09-15 阶段设置](materials/current_run_settings_20260915.md) / [旧中文总览](materials/materials_overview_zh.md) | 历史记录，不作为当前状态入口；以两份主报告为准 |
 | 日常汇报 | [Daily reports](daily_reports/README.md) | 按日期整理，英语／日语分别保存 |
 | LZOC 建模与运行 | [LZOC](materials/LZOC/README.md) | 候选背景、制备、平衡、协议与探索性分析 |

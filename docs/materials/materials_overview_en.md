@@ -1,8 +1,8 @@
-# Amorphous materials — consolidated research record
+# Material Review — Amorphous Solid Electrolytes
 
 Updated 15 September 2026. [日本語](materials_overview_ja.md)
 
-This is the maintained English record. Eleven core figure groups replace the previous 43 displays. Redundant diagnostics are summarized in tables or linked source data; unfavourable results are retained. This revision changes presentation, not trajectories, fit windows, numerical results or simulation settings.
+This is the complete English Material Review. Read the methods, figures, numerical tables and interpretation here in sequence; opening another report is not required. Source files and scripts are optional audit material collected at the end. Eleven core figure groups replace the previous 43 displays. Redundant diagnostics are summarized directly in tables; unfavourable results are retained. This revision changes presentation, not trajectories, fit windows, numerical results or simulation settings.
 
 ## Contents
 
@@ -40,7 +40,7 @@ Four chemical systems, five preparation routes. New and legacy LZOC have the sam
 |LiPON|2000 K10 ps;2000→250 K7 ps;250 K20 ps;250 K1 bar20 ps release;0.5 fs|[Seth2025](https://doi.org/10.1021/acsmaterialsau.4c00117):selected parameters only; NEP replaces NequIP, independent precursor|
 |Legacy LZOC|Earlier candidate3;600/700/800/900 K;600 K50 ps NPT+200 ps NVT|Exploratory workflow; not retrospectively labelled a literature reproduction|
 
-NPT target1 bar=0.0001 GPa; project temperature/pressure coupling periods100/1000 fs unless specified. Production thermo/trajectory intervals generally0.05/0.1 ps. New LSZC array uses10 ps400→target NPT,50 ps target NPT,300 ps NVT;320/330/340/350 K follow the paper's temperature grid, while0.5 fs/272 atoms/NEP differ from3 fs/1088 atoms/tuned MACE. [LSZC script](../../hpc/tsubame_26icp/production/lszc_paper_temperatures.sh) · [Li₃PS₄ script](../../hpc/tsubame_26icp/production/lips_transport_control.sh). Each temperature starts from the same prepared glass, not independent glass replicas.
+NPT target1 bar=0.0001 GPa; project temperature/pressure coupling periods100/1000 fs unless specified. Production thermo/trajectory intervals generally0.05/0.1 ps. New LSZC array uses10 ps400→target NPT,50 ps target NPT,300 ps NVT;320/330/340/350 K follow the paper's temperature grid, while0.5 fs/272 atoms/NEP differ from3 fs/1088 atoms/tuned MACE. Each temperature starts from the same prepared glass, not independent glass replicas.
 
 <a id="methods"></a>
 ## Definitions and units
@@ -72,7 +72,7 @@ RDFs use periodic minimum-image distances, excluded self-pairs and shell/number-
 
 ![LZOC transport and AIMD comparison](../../results/amorphous_review_20260915/overview_figures/01_LZOC_transport.png)
 
-**a–c:** same80 ps starting positions, cell and stored velocities; MTTK0.5 fs uses the first80 ps of the retained200 ps run, NHC2 fs uses80 ps production following a separate2 ps check. Production restarts from the original input, not the check endpoint. Both have100 fs coupling and density2.2340 g/cm³. All three MSD panels share y limits and show0–40 ps lag. **d:** our10–40 ps slopes compared with the author's tracer D* from Supplementary Table4; error bars reproduce its reported ±. Lines guide the eye, not an Arrhenius fit. [Execution record](../../materials/candidates/LZOC_Hussain2024/aimd_aligned_80ps.md).
+**a–c:** same80 ps starting positions, cell and stored velocities; MTTK0.5 fs uses the first80 ps of the retained200 ps run, NHC2 fs uses80 ps production following a separate2 ps check. Production restarts from the original input, not the check endpoint. Both have100 fs coupling and density2.2340 g/cm³. All three MSD panels share y limits and show0–40 ps lag. **d:** our10–40 ps slopes compared with the author's tracer D* from Supplementary Table4; error bars reproduce its reported ±. Lines guide the eye, not an Arrhenius fit.
 
 |T (K)|AIMD D* (cm²/s), reported ±|NEP NHC2 fs D_app|NEP MTTK0.5 fs D_app|NHC / AIMD D*|
 |---:|---:|---:|---:|---:|
@@ -80,9 +80,31 @@ RDFs use periodic minimum-image distances, excluded self-pairs and shell/number-
 |360|(1.77±0.04)×10⁻⁶|5.501×10⁻⁷|5.266×10⁻⁷|0.311|
 |380|(3.50±0.10)×10⁻⁶|8.957×10⁻⁷|1.705×10⁻⁶|0.256|
 
-[Hussain2024](https://doi.org/10.1038/s41524-024-01346-y) distinguishes tracer D* from charge D; the former matches single-particle MSD. The340→360 K decrease in the published tracer values is retained. The controls differ jointly in thermostat/timestep and use192 rather than48 atoms, so this is neither strict AIMD reproduction nor an isolated potential comparison. [Numerical table](../../results/amorphous_review_20260915/paper_alignment/LZOC_Table4_comparison.csv).
+[Hussain2024](https://doi.org/10.1038/s41524-024-01346-y) distinguishes tracer D* from charge D; the former matches single-particle MSD. The340→360 K decrease in the published tracer values is retained. The controls differ jointly in thermostat/timestep and use192 rather than48 atoms, so this is neither strict AIMD reproduction nor an isolated potential comparison.
 
-Repeated thermodynamic/RDF diagnostics are reduced to their essential findings: temperature control is maintained, energy still relaxes, and framework motion is nonzero. NHC340 K Cl MSD(40 ps)=0.923 Å² versus0.447 Å² for matched MTTK. A separate380 K NHC0.5 fs check changes D by−4.4/−2.9/+12.1% for5–20/10–30/10–40 ps windows. These are sensitivity results, not an accuracy guarantee. [Matched fits and blocks](../../results/amorphous_review_20260915/final_comparisons/results.json) · [timestep data](../../results/amorphous_review_20260915/targeted_diagnostics).
+Repeated thermodynamic/RDF diagnostics are reduced to their essential findings: temperature control is maintained, energy still relaxes, and framework motion is nonzero. NHC340 K Cl MSD(40 ps)=0.923 Å² versus0.447 Å² for matched MTTK. A separate380 K NHC0.5 fs check changes D by−4.4/−2.9/+12.1% for5–20/10–30/10–40 ps windows. These are sensitivity results, not an accuracy guarantee.
+
+### Supporting numerical checks
+
+The original MTTK200 ps series is distinct from the matched80 ps comparison. Its20–80 ps slopes and basic statistics are:
+
+|T (K)|D_app (cm²/s)|R²|Mean T (K)|Mean P (GPa)|
+|---:|---:|---:|---:|---:|
+|340|1.814×10⁻⁷|0.9965|339.761|−0.1860|
+|360|1.715×10⁻⁷|0.9657|360.543|−0.1106|
+|380|1.028×10⁻⁶|0.9984|380.174|−0.2227|
+
+All cells have imposed density2.2340 g/cm³. The380 K potential energy continues to decrease in its final50 ps block. This table records the earlier results without substituting them into the AIMD comparison.
+
+For the isolated380 K NHC timestep check, the same80 ps duration, starting positions/velocities/cell and100 fs coupling were used:
+
+|MSD window (ps)|D,0.5 fs (cm²/s)|D,2 fs (cm²/s)|Relative change|
+|---|---:|---:|---:|
+|5–20|1.13169×10⁻⁶|1.18405×10⁻⁶|−4.4%|
+|10–30|1.09127×10⁻⁶|1.12433×10⁻⁶|−2.9%|
+|10–40|1.00361×10⁻⁶|8.95684×10⁻⁷|+12.1%|
+
+Relative change=(D_0.5fs/D_2fs−1)×100%. Different finite-trajectory realizations and sampling remain relevant; this is not a certified integration-error bound.
 
 ### Conditional extrapolation, retained as a table only
 
@@ -92,7 +114,7 @@ Repeated thermodynamic/RDF diagnostics are reduced to their essential findings: 
 |10–30|0.3245|0.99271|7.761×10⁻⁸|4.05|
 |10–40|0.2803|0.99982|9.097×10⁻⁸|4.74|
 
-All windows use the same three-temperature NHC series, V=4990.647 Å³ and42Li. The model volume is not independently equilibrated at300 K. [Hu2023](https://doi.org/10.1038/s41467-023-39522-1) reports2.42 mS/cm at298.15 K; Hussain reports a theoretical43.3±3.3 mS/cm at300 K and0.25±0.10 eV. Different temperatures, physical samples, preparation and estimators limit direct comparison. No window is selected for agreement and no validated300 K prediction is claimed. [Conditional calculation](../../results/amorphous_review_20260915/portfolio_supplement/LZOC_300K_conditional.csv). The original200 ps estimates are retained separately in [source analysis](../../results/amorphous_review_20260915/analysis_complete/summary.json), not mixed into the80 ps table.
+All windows use the same three-temperature NHC series, V=4990.647 Å³ and42Li. The model volume is not independently equilibrated at300 K. [Hu2023](https://doi.org/10.1038/s41467-023-39522-1) reports2.42 mS/cm at298.15 K; Hussain reports a theoretical43.3±3.3 mS/cm at300 K and0.25±0.10 eV. Different temperatures, physical samples, preparation and estimators limit direct comparison. No window is selected for agreement and no validated300 K prediction is claimed. The original 200 ps estimates are listed in the supporting-check table above, separately from the 80 ps estimates.
 
 <a id="lszc"></a>
 ## LSZC
@@ -114,13 +136,13 @@ All windows use the same three-temperature NHC series, V=4990.647 Å³ and42Li. 
 |Fixed density|1.81705 g/cm³|
 |Final-minus-first50 ps mean PE|−0.01070 eV/atom|
 
-The conductivity is conditional NE conversion with32Li and8421.93 Å³, not a validated experimental value. Do not divide400 K conductivity by303 K experiment to claim an accuracy score. [Summary and source hashes](../../results/amorphous_review_20260915/paper_alignment/LSZC400_summary.json).
+The conductivity is conditional NE conversion with32Li and8421.93 Å³, not a validated experimental value. Do not divide400 K conductivity by303 K experiment to claim an accuracy score.
 
 ### Coordination and mobility
 
 ![LSZC coordination-conditioned mobility](../../results/amorphous_review_20260915/overview_figures/03_LSZC_mobility.png)
 
-Li–O CN is measured at each origin (<2.7 Å), then displacement over10 ps is evaluated; origins are1 ps apart. For CN0/1/2/3, mean |Δr|²=1.693/1.598/1.446/0.979 Å². Open points for CN4/5/6 remain visible but unconnected: only43/9/1 observations support them. The count panel makes this limitation explicit. Common coordination states support a qualitative lower-O/higher-mobility association, not causation. Counts are correlated Li–origin observations, not independent samples; no uncertainty band is invented. [All1/5/10 ps values](../../results/amorphous_review_20260915/paper_alignment/LSZC400_conditioned_mobility.csv).
+Li–O CN is measured at each origin (<2.7 Å), then displacement over10 ps is evaluated; origins are1 ps apart. For CN0/1/2/3, mean |Δr|²=1.693/1.598/1.446/0.979 Å². Open points for CN4/5/6 remain visible but unconnected: only43/9/1 observations support them. The count panel makes this limitation explicit. Common coordination states support a qualitative lower-O/higher-mobility association, not causation. Counts are correlated Li–origin observations, not independent samples; no uncertainty band is invented.
 
 ### Structural correspondence, not full agreement
 
@@ -135,7 +157,7 @@ Early0.1–45.1 ps and late150.1–195.1 ps each use10 snapshots,0.05 Å bins, n
 |Density|1.81705 g/cm³, fixed at400 K|2.05 g/cm³, experimental sample|
 |Fitted Zr–O / Zr–Cl distances|See model RDF above|2.23 /2.45 Å|
 
-Direct cutoff counts and EXAFS fitted CN differ in definition. All sampled sulfates retain four O neighbours(<2.0 Å). Earlier NPT checks give93.75% of sulfates linked to at least two Zr and2.75 Zr per sulfate; this is local connectivity, not proof of percolation. Modest cutoff changes and20 ps pressure relaxation did not remove the coordination discrepancy. [Cutoff sensitivity](../../results/amorphous_review_20260915/structure_followup/LSZC_cutoff_sensitivity.csv) · [connectivity](../../results/amorphous_review_20260915/portfolio_supplement/LSZC_sulfate_connectivity.csv).
+Direct cutoff counts and EXAFS fitted CN differ in definition. All sampled sulfates retain four O neighbours(<2.0 Å). Earlier NPT checks give93.75% of sulfates linked to at least two Zr and2.75 Zr per sulfate; this is local connectivity, not proof of percolation. Modest cutoff changes and20 ps pressure relaxation did not remove the coordination discrepancy.
 
 [Tang2026](https://doi.org/10.1038/s41467-026-69737-x) reports1.5 mS/cm at30 °C and0.33 eV; Figure1 source data instead lists1.4383 mS/cm and0.33052 eV for x=0.5. Keep those source distinctions. The deposited geometry density2.03549 g/cm³ is not the experimental density. Four-temperature production8676216 is submitted; D(T)/E_a comparison and properly weighted total PDF remain pending. Ordinary partial RDF is not substituted for total PDF.
 
@@ -155,7 +177,7 @@ All four200 ps productions have2,000 saved frames plus their input frame.0–100
 |700|8.079×10⁻⁶|0.99989|0.925|450|
 |900|3.615×10⁻⁵|0.99983|0.964|1490|
 
-These are conditional conversions, particularly not a validated300 K conductivity.300 K slopes span7.14×10⁻⁹–4.99×10⁻⁸ cm²/s across windows. [All fits](../../results/amorphous_review_20260915/Li3PS4_transport/fit_windows.csv) · [transport table](../../results/amorphous_review_20260915/Li3PS4_transport/transport_summary.csv).
+These are conditional conversions, particularly not a validated300 K conductivity.300 K slopes span7.14×10⁻⁹–4.99×10⁻⁸ cm²/s across windows.
 
 ![Li3PS4 reference and framework](../../results/amorphous_review_20260915/overview_figures/06_LPS_reference.png)
 
@@ -168,7 +190,7 @@ These are conditional conversions, particularly not a validated300 K conductivit
 |700|1.524×10⁻⁶|5.30|
 |900|9.106×10⁻⁶|3.97|
 
-Different model, preparation and density remain confounders. A500/700/900 K-only diagnostic givesE_a=0.3795 eV,R²=0.99927 versus the paper's0.47 eV annotation; ranges are not matched and this is not extrapolated to300 K. [Source comparison](../../results/amorphous_review_20260915/Li3PS4_transport/reference_comparison.csv). [Mirmira2021](https://doi.org/10.1039/D1TA02754A) provides an experimental-literature anchor of0.35 mS/cm at293.15 K for ball-milled amorphous LPS. This is not a same-temperature comparison to the conditional0.989 mS/cm at300 K.
+Different model, preparation and density remain confounders. A500/700/900 K-only diagnostic givesE_a=0.3795 eV,R²=0.99927 versus the paper's0.47 eV annotation; ranges are not matched and this is not extrapolated to300 K. [Mirmira2021](https://doi.org/10.1039/D1TA02754A) provides an experimental-literature anchor of0.35 mS/cm at293.15 K for ball-milled amorphous LPS. This is not a same-temperature comparison to the conditional0.989 mS/cm at300 K.
 
 ### Local structure and its limits
 
@@ -176,9 +198,9 @@ Different model, preparation and density remain confounders. A500/700/900 K-only
 
 NEP's final10 ps preparation hold is compared with published glass source curves: Li–S RDF peak2.425 Å versus2.459 Å; S–P–S mean109.40°. Angle distributions are independently normalized to unit area (NEP2° bins versus finer source grid). The author's averaging temperature/window is not independently confirmed; local resemblance is not full structural validation.
 
-The preparation graph contains51 P₁S₄,5 P₂S₇ and1 P₃S₁₀ components, plus7 S without a P edge, at P–S2.4/2.6/2.8 Å and P–P2.6 Å; counts conserve64P/256S. These are geometric components, not verified charge/species assignments. At900 K, four-S-coordinated P falls99.38→94.38% between early and late production. [Components](../../results/amorphous_review_20260915/Li3PS4_transport/geometric_components.csv).
+The preparation graph contains51 P₁S₄,5 P₂S₇ and1 P₃S₁₀ components, plus7 S without a P edge, at P–S2.4/2.6/2.8 Å and P–P2.6 Å; counts conserve64P/256S. These are geometric components, not verified charge/species assignments. At900 K, four-S-coordinated P falls99.38→94.38% between early and late production.
 
-Basic checks remain recorded without another repetitive figure: mean T=300.32/500.65/700.32/899.88 K; mean P=+0.252/−0.120/−0.134/−0.244 GPa; fixed densities2.2270/2.1493/2.0915/1.9886 g/cm³. Fixed NVT density is imposed, not proof of equilibrium. [Full checks and hashes](../../results/amorphous_review_20260915/Li3PS4_transport/analysis.json).
+Basic checks remain recorded without another repetitive figure: mean T=300.32/500.65/700.32/899.88 K; mean P=+0.252/−0.120/−0.134/−0.244 GPa; fixed densities2.2270/2.1493/2.0915/1.9886 g/cm³. Fixed NVT density is imposed, not proof of equilibrium.
 
 <a id="lipon"></a>
 ## LiPON
@@ -187,7 +209,14 @@ Basic checks remain recorded without another repetitive figure: mean T=300.32/50
 
 **a:**250 K pressure release leaves minimum N–N1.270–1.347 Å in all200 samples. Mean P improves to0.00614 GPa and density2.50908 g/cm³, but contact remains. **b:** the same precontact snapshot is tested at2000 K for2 ps with0.5/0.25 fs,100 fs coupling and0.01 ps output. N76–N108 stays below1.6 Å in198/200 samples in both branches. Halving the timestep is not a demonstrated repair. The panels are different stages, not consecutive sections of one time axis.
 
-The1.6 Å line is a screening cutoff, not a universal bond criterion. Late P–O/P–N counts(<2.1 Å)=3.688/0.438;2/5 N atoms have a short N neighbour. Formation was traced to2.2–2.3 ps of the original2000 K hold. A distance does not identify chemical charge/bond order. Retain this limitation case; no DFT or long production is proposed. [Diagnosis and hashes](../../results/amorphous_review_20260915/portfolio_supplement/LiPON_diagnostic.json) · [origin trace](../../results/amorphous_review_20260915/LiPON/contact_origin.md).
+|Paired2000 K check|0.5 fs|0.25 fs|
+|---|---:|---:|
+|Minimum N76–N108 (Å)|1.1791|1.1787|
+|Final N76–N108 (Å)|1.2327|1.2776|
+|Fraction below1.6 Å|99%|99%|
+|Mean temperature (K)|2024.48|2004.80|
+
+The1.6 Å line is a screening cutoff, not a universal bond criterion. Late P–O/P–N counts(<2.1 Å)=3.688/0.438;2/5 N atoms have a short N neighbour. Formation was traced to2.2–2.3 ps of the original2000 K hold. A distance does not identify chemical charge/bond order. Retain this limitation case; no DFT or long production is proposed.
 
 <a id="legacy"></a>
 ## Legacy LZOC: MACE–NEP
@@ -205,7 +234,18 @@ The1.6 Å line is a screening cutoff, not a universal bond criterion. Late P–O
 |Volume increase from300 K input|30.3%|2.0%|
 |D_app,20–80 ps|1.7197×10⁻⁵ cm²/s|1.0757×10⁻⁵ cm²/s|
 
-Engine time ratio31.10; sum of four whole-job runtimes18 h25 min versus34 min. These are not parallel elapsed times or a controlled potential-kernel benchmark: engine, node, preprocessing, seed, density and structure differ. [Timing provenance](LZOC/candidate3_mace_nep_comparison.md).
+Engine time ratio31.10; sum of four whole-job runtimes18 h25 min versus34 min. These are not parallel elapsed times or a controlled potential-kernel benchmark: engine, node, preprocessing, seed, density and structure differ.
+
+### Complete runtime table
+
+|Temperature (K)|MACE whole-job time (min)|NEP whole-job time (min)|
+|---:|---:|---:|
+|600|247.17|9.07|
+|700|300.33|8.37|
+|800|241.42|8.36|
+|900|316.25|8.29|
+
+Whole-job time includes setup/equilibration and is different from the600 K production-only189.93/6.11 min above. Both workflows requested one GPU; they are not hardware-identical kernel measurements. NEP was selected for economical exploratory throughput, not because lower expansion proves correctness.
 
 ### Archived high-temperature motion
 
@@ -219,11 +259,11 @@ Engine time ratio31.10; sum of four whole-job runtimes18 h25 min versus34 min. T
 |800|5.353×10⁻⁵|3.615×10⁻⁵|1.27278 /1.66334|
 |900|6.257×10⁻⁵|5.267×10⁻⁵|0.92513 /1.53955|
 
-All D fits use20–80 ps. Mean temperatures are within1.1 K of target; final-minus-first50 ps PE changes are−0.00385/−0.00059/−0.00015 eV/atom for MACE and−0.00976/−0.01075/−0.00922 for NEP. Retain relaxation/density differences as limitations. [Results](../../results/amorphous_review_20260915/paper_alignment/legacy_highT_summary.csv) · [basic thermodynamics](../../results/LZOC/legacy_comparison_20260915/highT_thermo_summary.csv).
+All D fits use20–80 ps. Mean temperatures are within1.1 K of target; final-minus-first50 ps PE changes are−0.00385/−0.00059/−0.00015 eV/atom for MACE and−0.00976/−0.01075/−0.00922 for NEP. Retain relaxation/density differences as limitations.
 
 ![Legacy representative RDF](../../results/amorphous_review_20260915/overview_figures/11_legacy_structure.png)
 
-The former12-panel grid is replaced by a readable900 K representative four-pair view:21 snapshots over150–200 ps,0.05 Å bins, no smoothing. All700/800 K numerical RDFs are retained in the [source directory](../../results/amorphous_review_20260915/paper_alignment). Similar peak positions can coexist with large framework motion. This is not experimental or AIMD RDF. Separate NPT-extension analysis is still pending.
+The former12-panel grid is replaced by a readable900 K representative four-pair view:21 snapshots over150–200 ps,0.05 Å bins, no smoothing. All700/800 K numerical RDFs are retained as source data. Similar peak positions can coexist with large framework motion. This is not experimental or AIMD RDF. Separate NPT-extension analysis is still pending.
 
 <a id="remaining"></a>
 ## Remaining work and source record
@@ -239,4 +279,20 @@ The former12-panel grid is replaced by a readable900 K representative four-pair 
 
 **Figure policy:**43→11 core groups. Repeated raw-temperature/pressure grids, near-duplicate RDFs, flat CN traces and redundant fit diagnostics are removed from the master display, not from source data. Replaced exports unique to the previous supplement are deleted; historical images still referenced by older reports remain archived. Git history can restore removed exports. No CSV, trajectory, fit or adverse finding is deleted.
 
-[Replot script](../../scripts/structures/curate_overview_figures.py) · [source hashes and export inventory](../../results/amorphous_review_20260915/overview_figures/provenance.json). Images use PNG/PDF/SVG with editable text, at most two columns and consistent document-width typography. Raw trajectories remain local/on TSUBAME, outside this commit. The≤100-point alert remains a separate monitor, not a live balance in this report.
+Images use PNG/PDF/SVG with editable text, at most two columns and consistent document-width typography. Raw trajectories remain local/on TSUBAME, outside this commit. The≤100-point alert remains a separate monitor, not a live balance in this report.
+
+## Optional source archive
+
+The report above contains the interpretation and required numerical comparisons. The links below are only for checking original arrays or rerunning the analysis.
+
+<details>
+<summary>Source data and reproducibility files</summary>
+
+- [Source hashes and figure inventory](../../results/amorphous_review_20260915/overview_figures/provenance.json)
+- [Replot script](../../scripts/structures/curate_overview_figures.py)
+- [LZOC and reference source tables](../../results/amorphous_review_20260915/final_comparisons)
+- [LSZC400 K and legacy high-temperature source tables](../../results/amorphous_review_20260915/paper_alignment)
+- [Li₃PS₄ transport source tables](../../results/amorphous_review_20260915/Li3PS4_transport)
+- [LiPON and additional diagnostic source tables](../../results/amorphous_review_20260915/portfolio_supplement)
+
+</details>
