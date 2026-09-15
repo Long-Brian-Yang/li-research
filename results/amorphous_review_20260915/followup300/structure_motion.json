@@ -1,0 +1,128 @@
+{
+  "records": [
+    {
+      "T_K": 340,
+      "mean_CN": [
+        0.1834040546911834,
+        4.922442244224422,
+        1.3333333333333333,
+        4.95503300330033
+      ],
+      "RDF_peak_r_A": [
+        2.0250000000000004,
+        2.375,
+        1.975,
+        2.475
+      ],
+      "displacements": [
+        {
+          "lag_ps": 10.0,
+          "rms_A": 0.9718090519724083,
+          "fraction_over3A": 0.013599579783654241
+        },
+        {
+          "lag_ps": 40.0,
+          "rms_A": 1.2015847842997618,
+          "fraction_over3A": 0.033485289540652864
+        },
+        {
+          "lag_ps": 80.0,
+          "rms_A": 1.4761602370796536,
+          "fraction_over3A": 0.05430432054693754
+        }
+      ]
+    },
+    {
+      "T_K": 360,
+      "mean_CN": [
+        0.19000471475719,
+        4.778642149929278,
+        1.3333333333333333,
+        5.026402640264027
+      ],
+      "RDF_peak_r_A": [
+        1.975,
+        2.4250000000000003,
+        1.975,
+        2.475
+      ],
+      "displacements": [
+        {
+          "lag_ps": 10.0,
+          "rms_A": 1.0948108869666193,
+          "fraction_over3A": 0.02073176737085734
+        },
+        {
+          "lag_ps": 40.0,
+          "rms_A": 1.3825586073598402,
+          "fraction_over3A": 0.05201296204756412
+        },
+        {
+          "lag_ps": 80.0,
+          "rms_A": 1.6714563643563838,
+          "fraction_over3A": 0.08275459206854027
+        }
+      ]
+    },
+    {
+      "T_K": 380,
+      "mean_CN": [
+        0.16737388024516736,
+        4.855728429985856,
+        1.3333333333333333,
+        4.976072607260726
+      ],
+      "RDF_peak_r_A": [
+        2.075,
+        2.375,
+        1.975,
+        2.475
+      ],
+      "displacements": [
+        {
+          "lag_ps": 10.0,
+          "rms_A": 1.3432134562562337,
+          "fraction_over3A": 0.04433610741780338
+        },
+        {
+          "lag_ps": 40.0,
+          "rms_A": 1.9849347861914484,
+          "fraction_over3A": 0.1454385675838963
+        },
+        {
+          "lag_ps": 80.0,
+          "rms_A": 2.5115539709254486,
+          "fraction_over3A": 0.23660241015988404
+        }
+      ]
+    }
+  ],
+  "pairs": [
+    [
+      "Li",
+      "O",
+      2.7
+    ],
+    [
+      "Li",
+      "Cl",
+      3.2
+    ],
+    [
+      "Zr",
+      "O",
+      2.6
+    ],
+    [
+      "Zr",
+      "Cl",
+      3.2
+    ]
+  ],
+  "method": "RDF/CN: 101 frames,100\u2013300 ps every2 ps, 0.05 A bins, no smoothing; fixed project cutoffs, not experimental CN. Radial displacement P(r,t)=4*pi*r^2*Gs(r,t); all origins,COM corrected,0.1 A bins. 3 A is descriptive threshold, not a site-defined jump.",
+  "source_hashes": {
+    "results/amorphous_review_20260915/source/LZOC300/nhc300_340K_8676684/dump.xyz": "9642e89768800bbe701c8264a31bc7c36399c6d45e56f4dfbc7d43d04474e9ba",
+    "results/amorphous_review_20260915/source/LZOC300/nhc300_360K_8676684/dump.xyz": "1685e8ba05484f57fcd3e999b93b6a1cb50498f9d465cea8f423f60b8eacd46c",
+    "results/amorphous_review_20260915/source/LZOC300/nhc300_380K_8676684/dump.xyz": "4fd794346bdb0b87e5ad4e93ad7df3061583192ffe142180505dcf72714609fa"
+  }
+}

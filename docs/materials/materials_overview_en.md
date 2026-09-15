@@ -2,7 +2,7 @@
 
 Updated 15 September 2026. [日本語](materials_overview_ja.md)
 
-This is the complete English Material Review. Read the methods, figures, numerical tables and interpretation here in sequence; opening another report is not required. Source files and scripts are optional audit material collected at the end. Thirteen core figure groups summarize the material comparisons. Redundant diagnostics are summarized directly in tables; unfavourable results are retained. This update adds analysis of completed trajectories without changing simulation inputs or trajectories.
+This is the complete English Material Review. Read the methods, figures, numerical tables and interpretation here in sequence; opening another report is not required. Source files and scripts are optional audit material collected at the end. Seventeen core figure groups summarize the material comparisons. Redundant diagnostics are summarized directly in tables; unfavourable results are retained. This update adds analysis of completed trajectories without changing simulation inputs or trajectories.
 
 ## How this review is maintained
 
@@ -116,6 +116,36 @@ These are nested prefixes of the new runs, not the old 80 ps dataset. The new fi
 The large duration sensitivity means that 300 ps has not demonstrated converged diffusion or activation energy. The 300 ps log–log MSD exponents over 10–40 ps are 0.282/0.316/0.566; localized-motion offsets can affect these exponents, so they are diagnostics rather than proof of asymptotic subdiffusion. The 0.428 eV value is a diagnostic fit, not a validated material E_a. No new room-temperature conductivity extrapolation is promoted. The earlier 0.280 eV estimate belongs only to the old 80 ps analysis.
 
 **Interpretation:** additional sampling changes the estimate substantially rather than simply improving agreement with the paper. The present result supports a bounded comparison of apparent transport, not a claim of full AIMD reproduction.
+
+### Local motion and structure: what can explain the transport difference?
+
+[Hussain2024](https://doi.org/10.1038/s41524-024-01346-y) discusses mobile Li and localized Cl vibration in the amorphous phase. The following analyses test the corresponding physical distinction in our 300 ps NEP trajectories; they do not establish quantitative agreement with an unavailable matched AIMD structural dataset.
+
+![LZOC element-resolved MSD](../../results/plots/amorphous/14_LZOC_species_MSD.png)
+
+Each panel shows one species at all three temperatures over the full 0–300 ps lag range. **Y ranges differ between species** to expose framework motion; compare numerical amplitudes, not panel heights. Nonzero Cl MSD alone does not prove long-range anion diffusion or reproduce the paper's localization analysis. The small number of origins at the longest lags limits interpretation of the tail.
+
+![LZOC pair RDF](../../results/plots/amorphous/15_LZOC_RDF.png)
+
+RDFs average 101 configurations from 100–300 ps at 2 ps intervals, using 0.05 Å bins, periodic minimum-image distances and spherical-shell normalization, without smoothing. Zr–O and Zr–Cl dominant peaks are near 1.975 and 2.475 Å across temperatures. The similar peak locations indicate persistent local distance scales, not proof of structural immobility or agreement with experiment. No unverified experimental/AIMD peak values have been added as reference lines.
+
+![LZOC coordination distributions](../../results/plots/amorphous/16_LZOC_coordination.png)
+
+CN counts neighbours within fixed project cutoffs: Li–O 2.7, Li–Cl 3.2, Zr–O 2.6 and Zr–Cl 3.2 Å. Distributions pool central atoms and sampled frames; these correlated samples are not independent replicas. These cutoffs are operational definitions, not verified literature shell boundaries.
+
+|T (K)|Mean Li–O CN|Mean Li–Cl CN|Mean Zr–O CN|Mean Zr–Cl CN|
+|---:|---:|---:|---:|---:|
+|340|0.183|4.922|1.333|4.955|
+|360|0.190|4.779|1.333|5.026|
+|380|0.167|4.856|1.333|4.976|
+
+Average coordination changes are small and nonmonotonic compared with the rise in apparent Li diffusion. These means therefore do not identify a unique coordination-driven cause of the temperature trend or the AIMD discrepancy. A stable mean can coexist with neighbour exchanges and heterogeneous local environments.
+
+![LZOC radial Li displacement distributions](../../results/plots/amorphous/17_LZOC_radial_displacement.png)
+
+The first three panels show the normalized radial displacement density **P(r,τ)=4πr²G_s(r,τ)** at τ=10/40/80 ps, not the unweighted self Van Hove function. Here r is displacement magnitude and G_s is the angular-averaged self correlation per volume. P integrates to one over r; bins are 0.1 Å, all valid time origins and Li atoms are included after whole-system COM correction. Arrays retain 0–30 Å; panels show 0–10 Å for readability. Panel d reports the fraction above 3 Å using the full distribution.
+
+At 80 ps, that fraction is **5.43/8.28/23.66%** at 340/360/380 K, respectively; RMS displacements are **1.476/1.671/2.512 Å**. This is the fraction of atom–origin displacement samples, not the fraction of distinct mobile ions, nor a site-defined jump rate. The broader displacement distribution supports increased Li mobility at 380 K without requiring a large change in average CN. This is our supplementary mechanistic characterization; no matching paper distribution has been verified for a quantitative overlay. It does not by itself prove the cause of lower NEP diffusivity.
 
 <a id="lszc"></a>
 ## 3. LSZC: extending the comparison to experiment
@@ -297,7 +327,7 @@ The narrative closes with two separate conclusions. NEP offers substantially low
 
 The completed scope is a paper-facing pretrained-potential comparison, not a claim that every material reproduces experiment or AIMD. No new MD was submitted in this update. Remaining physical limitations are retained as results rather than “fixed” by selecting favourable trajectories.
 
-**Figure policy:**13 core groups, including the two new LSZC paper comparisons. Repeated raw-temperature/pressure grids, near-duplicate RDFs, flat CN traces and redundant fit diagnostics are removed from the master display, not from source data. Replaced exports unique to the previous supplement are deleted; historical images still referenced by older reports remain archived. Git history can restore removed exports. No CSV, trajectory, fit or adverse finding is deleted.
+**Figure policy:**17 core groups, including the two new LSZC paper comparisons. Repeated raw-temperature/pressure grids, near-duplicate RDFs, flat CN traces and redundant fit diagnostics are removed from the master display, not from source data. Replaced exports unique to the previous supplement are deleted; historical images still referenced by older reports remain archived. Git history can restore removed exports. No CSV, trajectory, fit or adverse finding is deleted.
 
 Images use PNG/PDF/SVG with editable text, at most two columns and consistent document-width typography. Raw trajectories remain local/on TSUBAME, outside this commit. The≤100-point alert remains a separate monitor, not a live balance in this report.
 

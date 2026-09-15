@@ -1,6 +1,6 @@
 """Recompose existing source tables for the EN/JA overview; no new MD/refits.
 
-Contract: thirteen evidence-bearing figures, at most two columns, fixed document
+Contract: seventeen evidence-bearing figures, at most two columns, fixed document
 width. Keep model/reference mismatches and sparse data visible. PNG/PDF/SVG
 with editable text; source SHA256 and export inventory accompany the figures.
 """
@@ -168,8 +168,8 @@ def legacy():
 def main():
     OUT.mkdir(exist_ok=True)
     plt.rcParams.update({'font.family':'DejaVu Sans','font.size':13,'axes.titlesize':16,'axes.labelsize':14,'xtick.labelsize':12,'ytick.labelsize':12,'axes.linewidth':1.5,'lines.linewidth':2.5,'legend.frameon':False,'svg.fonttype':'none','pdf.fonttype':42})
-    lzoc();lszc();lips();lipon();legacy();lszc_four_temperatures()
-    assert len(EXPORTS)==13
+    lzoc();lszc();lips();lipon();legacy();lszc_four_temperatures();lzoc_structure_motion()
+    assert len(EXPORTS)==17
     (OUT/'provenance.json').write_text(json.dumps({'sources_sha256':HASHES,'figures':EXPORTS,'operation':'Presentation only: original CSV ordinates retained; no refits. Angle PDFs normalized to unit area; 5 ps energy means and framework80 endpoints as labelled.','size_inches':[12,4.65],'rows':'1 or 2','font_pt':{'title':16,'axis':14,'ticks':12,'legend':11.5}},indent=2)+'\n')
     print('Created',len(EXPORTS),'figure families from',len(HASHES),'sources')
 
@@ -198,5 +198,35 @@ def lszc_four_temperatures():
     bx.plot(exp[:,0],exp[:,2],'D:',color=GRAY,label='Tang: experiment')
     bx.set(title='Arrhenius trend',xlabel='1000/T (K⁻¹)',ylabel='ln[σT / (S cm⁻¹ K)]');bx.legend()
     finish(fig,'13_LSZC_literature_transport')
+
+def lzoc_structure_motion():
+    source=BASE/'followup300';colors=[BLUE,GREEN,RED];temps=[340,360,380]
+    fig,aa=grid(2)
+    for j,(el,c) in enumerate(zip(['Li','Zr','Cl','O'],[BLUE,GRAY,GREEN,PURPLE]),1):
+        ax=aa.ravel()[j-1]
+        for T,color in zip(temps,colors):
+            a=load(source/f'LZOC_{T}K_300ps_MSD.csv');ax.plot(a[:,0],a[:,j],color=color,label=f'{T} K')
+        ax.set(title=el,xlabel='Lag time (ps)',ylabel='MSD (Å²)',xlim=(0,300));ax.legend()
+    finish(fig,'14_LZOC_species_MSD')
+    for kind,filename,ylabel in [('RDF','15_LZOC_RDF','g(r)'),('CN','16_LZOC_coordination','Probability')]:
+        fig,aa=grid(2)
+        for j,pair in enumerate(['Li–O','Li–Cl','Zr–O','Zr–Cl'],1):
+            ax=aa.ravel()[j-1]
+            for T,color in zip(temps,colors):
+                a=load(source/f'LZOC_{T}K_{kind}.csv')
+                ax.plot(a[:,0],a[:,j],color=color,label=f'{T} K',drawstyle='steps-mid' if kind=='CN' else 'default')
+            ax.set(title=pair,xlabel='Coordination number' if kind=='CN' else 'r (Å)',ylabel=ylabel,xlim=(0,10) if kind=='CN' else (1,5));ax.legend()
+        finish(fig,filename)
+    fig,aa=grid(2);data=js(source/'structure_motion.json')
+    for j,lag in enumerate([10,40,80],1):
+        ax=aa.ravel()[j-1]
+        for T,color in zip(temps,colors):
+            a=load(source/f'LZOC_{T}K_radial_displacement.csv');ax.plot(a[:,0],a[:,j],color=color,label=f'{T} K')
+        ax.set(title=f'Lag: {lag} ps',xlabel='Li displacement r (Å)',ylabel='P(r, τ) (Å⁻¹)',xlim=(0,10));ax.legend()
+    ax=aa.ravel()[3]
+    for r,color in zip(data['records'],colors):
+        ax.plot([d['lag_ps'] for d in r['displacements']],[d['fraction_over3A'] for d in r['displacements']],'o-',color=color,label=f"{r['T_K']} K")
+    ax.set(title='Displacements above 3 Å',xlabel='Lag time (ps)',ylabel='Fraction');ax.legend()
+    finish(fig,'17_LZOC_radial_displacement')
 
 if __name__=='__main__':main()
