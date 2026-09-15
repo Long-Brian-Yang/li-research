@@ -1,6 +1,6 @@
-# Material Review — Amorphous Solid Electrolytes
+# Material Review — From Crystalline Benchmarks to Amorphous Solid Electrolytes
 
-Updated 15 September 2026. [日本語](materials_overview_ja.md)
+Updated 16 September 2026. [日本語](materials_overview_ja.md)
 
 ## Overview: motivation, literature basis and study design
 
@@ -14,9 +14,62 @@ Ab initio molecular dynamics (AIMD) can connect local structure with diffusion w
 
 These three levels of evidence answer different questions. Experiment establishes the actual conductivity, activation energy and average/local structure of a synthesized material, but normally does not provide a unique atomistic trajectory. AIMD supplies an electronic-structure-based trajectory and tracer diffusion, but often over tens of picoseconds in a relatively small periodic cell. A material-specific machine-learned potential can reach larger systems and longer times while retaining a direct training link to DFT. A general pretrained potential trades that material-specific calibration for transferability and speed. The present study is positioned at this last step: it tests whether computational economy survives contact with material-specific evidence.
 
-### Literature landscape and material selection
+<a id="crystalline"></a>
+### Part I: reproducing the company workflow and benchmarking crystalline materials
 
-The four systems in this review were selected because together they test progressively different chemical environments while retaining explicit literature comparators.
+The first phase of this project is the crystalline benchmark documented in the midterm report for Li₃YCl₆ and LiNbOCl₄. The immediate objective was not amorphous-material screening. It was to reproduce the company's existing calculation, then connect environment construction, structural modelling, MD, MSD, diffusion and Arrhenius analysis in one rerunnable workflow.
+
+The environments were constructed in the following order:
+
+1. **M3GNet + LAMMPS CPU** reproduced the company baseline.
+2. **M3GNet + LAMMPS GPU** isolated CPU-to-GPU acceleration within the same LAMMPS/MatGL route.
+3. **MACE + LAMMPS GPU** added a general equivariant model.
+4. **SevenNet + LAMMPS** added a third general model family.
+
+This order separates backend effects from potential-model effects. In the common short benchmark on 240-atom Li₃YCl₆, M3GNet–LAMMPS achieved 3.285 steps/s on CPU and 56.621 steps/s on one H100 GPU, an approximately 17.2-fold speedup. The result establishes throughput only; neither GPU execution nor a model change implies improved physical accuracy.
+
+#### Why these crystalline materials were selected
+
+Li₃YCl₆ is a representative chloride solid electrolyte reported to combine high-voltage-cathode compatibility with room-temperature conductivity above 1 mS cm⁻¹. [Asano et al., 2018; DOI: 10.1002/adma.201803075](https://doi.org/10.1002/adma.201803075) Rather than propagate a partially occupied average structure directly, we constructed an explicit full-occupancy Li/Y ordered model and used a 2×2×2, 240-atom supercell.
+
+LiNbOCl₄ is a mixed O²⁻/Cl⁻ oxyhalide in which anion chemistry reshapes the Li migration environment; its reported room-temperature conductivity is approximately 10.4 mS cm⁻¹. [Tanaka et al., 2023; DOI: 10.1002/anie.202217581](https://doi.org/10.1002/anie.202217581) It therefore tests whether the same workflow transfers from a chloride framework to a different local chemical environment.
+
+#### Common three-model MD design
+
+After structural relaxation, Li₃YCl₆ was evaluated at 400/600/800/1000 K and LiNbOCl₄ at 600/800/1000/1200 K. The midterm primary series used NVT, a 1 fs timestep, 50 ps equilibration and 500 ps production. MACE-MPA-0, SevenNet-nano and M3GNet GPU were compared using matched temperature series and analysis definitions. Li MSD supplied $D_{\mathrm{Li}}$; Arrhenius fitting supplied $E_a$ and the 300 K extrapolation. This is a general-model comparison, not a test of material-specific fine-tuned potentials.
+
+![Three-model, four-temperature Li₃YCl₆ MSD](figures/01_Li3YCl6_three_model_MSD.png)
+
+|Li₃YCl₆|$E_a$ (eV)|Arrhenius $R^2$|$D(300\,\mathrm K)$ (cm²/s)|
+|---|---:|---:|---:|
+|MACE-MPA-0|0.302|0.9914|1.55×10⁻⁸|
+|SevenNet-nano|0.246|0.9999|5.62×10⁻⁸|
+|M3GNet GPU|0.212|0.9979|1.02×10⁻⁷|
+|Experimental reference|0.400|—|conductivity 5.10×10⁻⁴ S/cm|
+|Company M3GNet reference|0.180|—|conductivity 9.69×10⁻³ S/cm|
+
+All three Li₃YCl₆ models show increasing MSD with temperature, but their activation energies and 300 K extrapolations remain model dependent. Thus, even with a common structure and analysis, general-potential choice can control the transport prediction—an important conclusion before moving to amorphous systems.
+
+![Three-model, four-temperature LiNbOCl₄ MSD](figures/02_LiNbOCl4_three_model_MSD.png)
+
+|LiNbOCl₄|$E_a$ (eV)|Arrhenius $R^2$|$D(300\,\mathrm K)$ (cm²/s)|
+|---|---:|---:|---:|
+|MACE-MPA-0|0.313|0.9953|5.19×10⁻⁹|
+|SevenNet-nano|0.357|0.9953|2.18×10⁻⁹|
+|M3GNet GPU|0.397|0.8768|5.66×10⁻¹¹|
+|Experimental reference|0.240|—|room-temperature conductivity ≈10.4 mS/cm|
+
+LiNbOCl₄ likewise shows substantial model dependence, and the M3GNet Arrhenius linearity is lower than for the other two models. Experimental conductivity is not a self-diffusion coefficient, so the comparison keeps $D$, activation energy and conditional Nernst–Einstein conversion distinct.
+
+|Li₃YCl₆|LiNbOCl₄|
+|---|---|
+|![Li₃YCl₆ Arrhenius analysis](figures/03_Li3YCl6_Arrhenius.png)|![LiNbOCl₄ Arrhenius analysis](figures/04_LiNbOCl4_Arrhenius.png)|
+
+The first phase therefore establishes that GPU acceleration makes long MD practical, but speed alone cannot determine predictive reliability. Motivated by the model dependence observed for the two crystals, Part II moves to amorphous materials whose response is more sensitive to preparation history and evaluates not only $D$, but also density, RDF, coordination and host motion against experiment, AIMD and material-specific ML potentials.
+
+### Part II: literature landscape and amorphous-material selection
+
+The four Part-II systems were selected because together they test progressively different amorphous chemical environments while retaining explicit literature comparators.
 
 |System|Reason for inclusion|Primary literature benchmark|
 |---|---|---|
@@ -60,6 +113,7 @@ The report consequently proceeds from M3GNet–LAMMPS CPU-to-GPU acceleration, t
 
 ## Contents
 
+- [Part I: company-workflow reproduction and crystalline benchmarks](#crystalline)
 - [1. MACE versus NEP: why NEP was selected](#legacy)
 - [2. LZOC: the primary AIMD comparison](#lzoc)
 - [3. LSZC: extending the comparison to experiment](#lszc)
