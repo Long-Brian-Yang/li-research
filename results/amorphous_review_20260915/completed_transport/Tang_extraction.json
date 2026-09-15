@@ -1,0 +1,8 @@
+{
+  "source_sha256": "40b855142187c7e1c4dec6a4a5d2bddb4f23c2fa839c181cb82cae254c6466e8",
+  "doi": "10.1038/s41467-026-69737-x",
+  "MSD_axes": "S24 time first, MSD second; workbook headers reversed, SI p19 controls",
+  "experimental_axis": "SI p4 S3: ln(sigma T), sigma in S/cm",
+  "Figure3g": "MLFF-MD: 320\u2013350 K 300ps, ~300K separate 3ns; x rounded by source; error definition not independently established",
+  "conversion": "sigma(mS/cm)=1000*exp(y)/T; T=1000/x"
+}

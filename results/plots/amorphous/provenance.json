@@ -1,10 +1,7 @@
 {
   "sources_sha256": {
-    "results/amorphous_review_20260915/final_comparisons/LZOC_340K_MTTK_0.5fs_MSD.csv": "fa242eb445893e3c5e931ec2c85da0e0a4b188a289e587a293355c8225c09092",
     "results/amorphous_review_20260915/final_comparisons/LZOC_340K_NHC_2fs_MSD.csv": "f123f9e71ee02f0486383f6c0926e0e53bae4d6ed9047628c0b587dd6caa5b08",
-    "results/amorphous_review_20260915/final_comparisons/LZOC_360K_MTTK_0.5fs_MSD.csv": "d030dea815d4dfe22a6efd14900f51586513f15cfb6b85bf7714b116593202ec",
     "results/amorphous_review_20260915/final_comparisons/LZOC_360K_NHC_2fs_MSD.csv": "0b15f088253bf8d67f4bcdcc228714961b7190a1222862d20116d8edf151ad93",
-    "results/amorphous_review_20260915/final_comparisons/LZOC_380K_MTTK_0.5fs_MSD.csv": "a7b4bc0acc5172fb2a350a86286b9cd4d492987e7fa105b2b8dadf6d0f76b834",
     "results/amorphous_review_20260915/final_comparisons/LZOC_380K_NHC_2fs_MSD.csv": "da9da0011e63568955c546530a16874d91a0907f856a9a745e888d25e77e660a",
     "results/amorphous_review_20260915/paper_alignment/LZOC_Table4_comparison.csv": "57084fc62123d5cc994534a33a26760ff7f5b1c53e3aaa2b3a9d66e4a7969136",
     "results/amorphous_review_20260915/paper_alignment/LSZC400_MSD.csv": "188e7475b9b32b93401f72e65a64b82b575d4e619e787695cbef3770087fcaf3",
@@ -37,7 +34,18 @@
     "results/amorphous_review_20260915/paper_alignment/legacy_MACE_900K_MSD.csv": "cf6cb45cb4ccfe9bfadc53ebb12f8d2a7d25c74c4d22336982d8bfa6a195d2b3",
     "results/amorphous_review_20260915/paper_alignment/legacy_NEP89_900K_MSD.csv": "2d799349a1b721830a9265b6b746b12d23272a30acd3238434e4917932c8c656",
     "results/amorphous_review_20260915/paper_alignment/legacy_MACE_900K_RDF.csv": "d050da0837934d298553a182a0608082c55d0824649158793d93cf5fbb0bc7ac",
-    "results/amorphous_review_20260915/paper_alignment/legacy_NEP89_900K_RDF.csv": "fc3b874bc4475498ebd71f7b6a6b1b65c6b34197bb21eb54bcb521ddd4c750d9"
+    "results/amorphous_review_20260915/paper_alignment/legacy_NEP89_900K_RDF.csv": "fc3b874bc4475498ebd71f7b6a6b1b65c6b34197bb21eb54bcb521ddd4c750d9",
+    "results/amorphous_review_20260915/completed_transport/LSZC_320K_MSD.csv": "5d3970d6d9ccdf98af05bf745637b1c9e7bdfe73b57847e548eb56d1af4e4703",
+    "results/amorphous_review_20260915/completed_transport/Tang_S24_320K.csv": "dda4e9aedeca96330b5f72abfef4133883e063ceb7003a09ec4791d1a9172622",
+    "results/amorphous_review_20260915/completed_transport/LSZC_330K_MSD.csv": "17bacc519b97b00e46dc5963a29f28c77eb6f0180da0a9feb8ad048326c7669a",
+    "results/amorphous_review_20260915/completed_transport/Tang_S24_330K.csv": "4d676d0a51ff5193ea1b1bbfad6a54c8603c9dedb0b7e3bfbfef6bc51feed725",
+    "results/amorphous_review_20260915/completed_transport/LSZC_340K_MSD.csv": "a00bcc449b11854909ee94e360cbac0c8ec5abcf1d738bf6140617b04c91a00c",
+    "results/amorphous_review_20260915/completed_transport/Tang_S24_340K.csv": "e2412e94d87bb537f2b26653a19d06ade324fdd1c632a46a9f46e0773026d284",
+    "results/amorphous_review_20260915/completed_transport/LSZC_350K_MSD.csv": "8686082bb2d03a108604d27da3798fe4486e3fe7891e65c8c04cfaed882f6a53",
+    "results/amorphous_review_20260915/completed_transport/Tang_S24_350K.csv": "2e4647c5fd9b2fb00f1cea6c13b67e451122ecf8b1ac9406d4a755df0846cdc8",
+    "results/amorphous_review_20260915/completed_transport/LSZC_4T_summary.csv": "728da211242bc543d061a43833cda03bfce698991648c56bb9394bbff279aad1",
+    "results/amorphous_review_20260915/completed_transport/Tang_Fig3g.csv": "22fdac7631af2efbd828b6e2530d2fb9affe89dc8288f991978847dca5397bcf",
+    "results/amorphous_review_20260915/completed_transport/Tang_S3_experiment.csv": "9e58b9bf0cd36245c92a545b8cc2b86a89b9bbd8e3804d0054621c9b980060af"
   },
   "figures": [
     "01_LZOC_transport",
@@ -50,7 +58,9 @@
     "08_LiPON_contacts",
     "09_legacy_cost_density",
     "10_legacy_motion",
-    "11_legacy_structure"
+    "11_legacy_structure",
+    "12_LSZC_4T_MSD",
+    "13_LSZC_literature_transport"
   ],
   "operation": "Presentation only: original CSV ordinates retained; no refits. Angle PDFs normalized to unit area; 5 ps energy means and framework80 endpoints as labelled.",
   "size_inches": [

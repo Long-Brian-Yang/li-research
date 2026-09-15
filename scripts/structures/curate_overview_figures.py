@@ -1,6 +1,6 @@
 """Recompose existing source tables for the EN/JA overview; no new MD/refits.
 
-Contract: eleven evidence-bearing figures, at most two columns, fixed document
+Contract: thirteen evidence-bearing figures, at most two columns, fixed document
 width. Keep model/reference mismatches and sparse data visible. PNG/PDF/SVG
 with editable text; source SHA256 and export inventory accompany the figures.
 """
@@ -16,6 +16,7 @@ ROOT=Path(__file__).resolve().parents[2]
 BASE=ROOT/'results/amorphous_review_20260915'
 OUT=ROOT/'results/plots/amorphous'
 P=BASE/'paper_alignment';F=BASE/'final_comparisons';L=BASE/'Li3PS4_transport'
+C=BASE/'completed_transport'
 OLD=ROOT/'results/LZOC/legacy_comparison_20260915'
 BLUE='#31688e';RED='#d73027';GREEN='#35a77b';GRAY='#727272';PURPLE='#654394'
 HASHES={};EXPORTS=[]
@@ -47,13 +48,13 @@ def finish(fig,name):
 def lzoc():
     fig,aa=grid(2);axes=aa.ravel()
     for ax,T in zip(axes,[340,360,380]):
-        for model,c,ls in [('MTTK_0.5fs',BLUE,'-'),('NHC_2fs',RED,'--')]:
+        for model,c,ls in [('NHC_2fs',RED,'-')]:
             a=load(F/f'LZOC_{T}K_{model}_MSD.csv');a=a[a[:,0]<=40]
             ax.plot(a[:,0],a[:,1],color=c,ls=ls,label=model.replace('_',' '))
         ax.set(title=f'{T} K',xlabel='Lag time (ps)',ylabel='Li MSD (Å²)',ylim=(0,5.7));ax.legend()
     a=load(P/'LZOC_Table4_comparison.csv');ax=axes[3]
     ax.errorbar(a[:,0],a[:,1],yerr=a[:,2],fmt='ko-',capsize=4,label='AIMD tracer D*')
-    for j,c,ls,lab in [(4,BLUE,'-','NEP: MTTK 0.5 fs'),(5,RED,'--','NEP: NHC 2 fs')]:
+    for j,c,ls,lab in [(5,RED,'-','NEP: NHC 2 fs')]:
         ax.plot(a[:,0],a[:,j],'o',color=c,ls=ls,label=lab)
     ax.set(title='AIMD comparison',xlabel='Temperature (K)',ylabel='D (cm²/s)',yscale='log',xticks=a[:,0]);ax.legend()
     finish(fig,'01_LZOC_transport')
@@ -165,9 +166,35 @@ def legacy():
 def main():
     OUT.mkdir(exist_ok=True)
     plt.rcParams.update({'font.family':'DejaVu Sans','font.size':13,'axes.titlesize':16,'axes.labelsize':14,'xtick.labelsize':12,'ytick.labelsize':12,'axes.linewidth':1.5,'lines.linewidth':2.5,'legend.frameon':False,'svg.fonttype':'none','pdf.fonttype':42})
-    lzoc();lszc();lips();lipon();legacy()
-    assert len(EXPORTS)==11
+    lzoc();lszc();lips();lipon();legacy();lszc_four_temperatures()
+    assert len(EXPORTS)==13
     (OUT/'provenance.json').write_text(json.dumps({'sources_sha256':HASHES,'figures':EXPORTS,'operation':'Presentation only: original CSV ordinates retained; no refits. Angle PDFs normalized to unit area; 5 ps energy means and framework80 endpoints as labelled.','size_inches':[12,4.65],'rows':'1 or 2','font_pt':{'title':16,'axis':14,'ticks':12,'legend':11.5}},indent=2)+'\n')
     print('Created',len(EXPORTS),'figure families from',len(HASHES),'sources')
+
+def lszc_four_temperatures():
+    # A common lag interval prevents the few-origin tail dominating the figure.
+    fig,aa=grid(2);colors=[PURPLE,BLUE,GREEN,RED]
+    for ax,T,color in zip(aa.ravel(),[320,330,340,350],colors):
+        a=load(C/f'LSZC_{T}K_MSD.csv');a=a[a[:,0]<=100]
+        ref=load(C/f'Tang_S24_{T}K.csv');ref=ref[ref[:,0]<=100]
+        ax.plot(a[:,0],a[:,1],color=color,label='NEP: time-origin average')
+        ax.plot(ref[:,0],ref[:,1],color=GRAY,ls='--',label='Tang: published MSD')
+        ax.axvspan(20,80,color=GRAY,alpha=.07)
+        ax.set(title=f'LSZC: {T} K',xlabel='Time / lag time (ps)',ylabel='Li MSD (Å²)',ylim=(0,4.5))
+        ax.legend()
+    finish(fig,'12_LSZC_4T_MSD')
+    a=load(C/'LSZC_4T_summary.csv');ref=load(C/'Tang_Fig3g.csv');exp=load(C/'Tang_S3_experiment.csv')
+    fig,aa=grid();ax,bx=aa[0]
+    ax.plot(a[:,0],a[:,2],'o-',color=BLUE,label='NEP: apparent σ (20–80 ps)')
+    yerr=np.array([ref[:4,4]*(1-np.exp(-ref[:4,3])),ref[:4,4]*(np.exp(ref[:4,3])-1)])
+    ax.errorbar(ref[:4,1],ref[:4,4],yerr=yerr,fmt='s--',color=RED,capsize=3,label='Tang: tuned MACE, 300 ps')
+    ax.plot(ref[4:,1],ref[4:,4],'s',mfc='none',color=RED,label='Tang: 300 K, 3 ns')
+    ax.plot(exp[:,1],exp[:,3],'D:',color=GRAY,label='Tang: experiment')
+    ax.set(title='Temperature-resolved comparison',xlabel='Temperature (K)',ylabel='Conductivity (mS/cm)');ax.legend()
+    bx.plot(1000/a[:,0],np.log(a[:,2]/1000*a[:,0]),'o',color=BLUE,label='NEP: no valid Arrhenius fit')
+    bx.errorbar(ref[:4,0],ref[:4,2],yerr=ref[:4,3],fmt='s--',capsize=3,color=RED,label='Tang: tuned MACE, 300 ps')
+    bx.plot(exp[:,0],exp[:,2],'D:',color=GRAY,label='Tang: experiment')
+    bx.set(title='Arrhenius trend',xlabel='1000/T (K⁻¹)',ylabel='ln[σT / (S cm⁻¹ K)]');bx.legend()
+    finish(fig,'13_LSZC_literature_transport')
 
 if __name__=='__main__':main()
