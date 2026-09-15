@@ -1,3 +1,5 @@
+> Superseded LZOC figures have been removed. Only the 2 fs series is displayed in the maintained Material Review; archived numerical data below are unchanged.
+
 > Historical snapshot. The complete, maintained report is [here](../../../docs/materials/materials_overview_en.md).
 
 # Amorphous-material comparisons: completed-data assessment
@@ -35,7 +37,6 @@ Jobs 8675022.1–3 completed their separate 2 ps numerical check and 80 ps produ
 
 The 340/360/380 K, 2 fs and 80 ps transport settings follow [Hussain et al., 2024](https://doi.org/10.1038/s41524-024-01346-y). However, that transport branch used 48-atom AIMD. Our preparation draws on another branch and retains a reconstructed 192-atom NEP model without DFT volume optimization. **This is a joint thermostat/timestep control, not strict AIMD reproduction or an isolated timestep test.** [Full execution record](../../../materials/candidates/LZOC_Hussain2024/aimd_aligned_80ps.md).
 
-![Matched MSD](LZOC_matched80_MSD.png)
 
 MSD uses all available time origins after periodic unwrapping and total-system mass-weighted centre-of-mass subtraction. All three panels share the same y scale; only lags up to 40 ps are displayed, while CSVs retain 80 ps. Neither Li-only COM removal nor amplitude rescaling is used. The two settings nearly coincide at 360 K but differ at 340 and 380 K.
 
@@ -47,19 +48,15 @@ MSD uses all available time origins after periodic unwrapping and total-system m
 
 All entries use a **10–40 ps lag fit with a free intercept**. These are finite-window apparent slopes, not certified long-time self-diffusion coefficients. The NHC log–log slopes are 0.333/0.464/0.574; an intercept and restricted sampling can affect this diagnostic, so it is not by itself proof of anomalous diffusion.
 
-![Block sensitivity](LZOC_matched80_blocks.png)
 
 Four consecutive 20 ps blocks are each fitted over 2–8 ps lag. Blocks are correlated portions of one trajectory, not independent glass replicas. A slightly negative block slope at 340 K is retained as a sign of estimator noise/plateau behaviour; it is not a physical negative diffusivity. Every full-trajectory 5–20, 10–30 and 10–40 ps fit is in [results.json](results.json). No window was chosen to obtain a desired Ea. Applying Arrhenius mechanically to the three NHC apparent slopes yields 0.220/0.325/0.280 eV for those windows respectively. **These are sensitivity diagnostics, not reported material activation energies; no 300 K extrapolation is adopted.**
 
-![Matched thermodynamics](LZOC_matched80_thermo.png)
 
 Thin traces are raw records, thick markers consecutive 20 ps means. Energy is absolute potential energy per atom, not zero-centred. Mean temperatures and pressures are stored in JSON; residual energy relaxation must be considered along with temperature control. Fixed NVT density does not demonstrate equilibrium. A finite 2 fs run is not a timestep-convergence test.
 
-![Matched RDF](LZOC_matched80_RDF.png)
 
 The representative 360 K comparison averages 40 frames at 41–80 ps, one per ps. Both settings use 0.05 Å bins and identical normalization/cutoffs. Data for all three temperatures are supplied. Similar first-shell statistics do not establish identical long-range structure or transport.
 
-![Framework motion](LZOC_matched80_framework.png)
 
 Framework MSD uses the same time-origin and COM treatment as Li. Zr/O/Cl displacements include vibrations and structural relaxation; these curves must not automatically be labelled anion diffusion. In the NHC 340 K case, Cl MSD at 40 ps is 0.923 Å² versus 0.447 Å² in the matched MTTK trajectory, accompanying the changed Li motion.
 

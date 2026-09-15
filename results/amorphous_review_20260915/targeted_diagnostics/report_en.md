@@ -1,3 +1,5 @@
+> Superseded LZOC figures have been removed. Only the 2 fs series is displayed in the maintained Material Review; archived numerical data below are unchanged.
+
 > Historical snapshot. The complete, maintained report is [here](../../../docs/materials/materials_overview_en.md).
 
 # Targeted diagnostics: structure and transport sensitivity
@@ -21,7 +23,6 @@ Coordination averages use 100 final-stage frames at 0.1 ps spacing. The density 
 
 ## 2. LZOC: a smaller timestep does not remove all sensitivity
 
-![LZOC timestep and framework comparison](LZOC_timestep_diagnostic.png)
 
 **Panels a–d:** lithium time-origin-averaged MSD; apparent diffusion coefficient across fitting windows; framework-species MSD; consecutive 20 ps potential-energy means. Both runs start from identical positions, velocities and cell, at 380 K, with NVT Nosé–Hoover chain and a 100 fs coupling time. Each lasts 80 ps. Only the integration timestep differs (blue 0.5 fs; red 2 fs). MSD is shown to 40 ps lag, using the full 80 ps trajectory plus its starting frame; periodic wrapping and whole-system mass-weighted centre-of-mass motion are removed. No species-specific drift subtraction is used.
 

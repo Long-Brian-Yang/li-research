@@ -80,6 +80,8 @@ RDFs use periodic minimum-image distances, excluded self-pairs and shell/number-
 
 ![LZOC transport and AIMD comparison](../../results/plots/amorphous/01_LZOC_transport.png)
 
+Only the 2 fs, 80 ps production series is plotted at 340/360/380 K. Superseded 0.5 fs and timestep-comparison figure exports have been removed; raw data remain archived.
+
 **a–c:** all-time-origin Li MSD at the three temperatures, common y scale and 0–40 ps lag. **d:** 10–40 ps slope estimates against the paper's tracer D* in Supplementary Table 4. Reported ± values are reproduced as given, not reinterpreted as replica confidence intervals. Lines guide the eye.
 
 |T (K)|AIMD D* (cm²/s), reported ±|NEP 2 fs D_app (cm²/s)|NEP / AIMD|

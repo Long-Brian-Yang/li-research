@@ -80,6 +80,8 @@ RDFは周期最短距離、自己対除外、球殻体積と数密度で規格�
 
 ![LZOC輸送とAIMD比較](../../results/plots/amorphous/01_LZOC_transport.png)
 
+掲載図は340／360／380 K、2 fs、80 ps production系列のみ。旧0.5 fs図と刻み幅比較図の出力ファイルは削除し、元データは保存している。
+
 **a–c：**三温度の時間原点平均Li MSD。共通y軸、遅延0–40 ps。**d：**10–40 psの勾配から得た値を補足表4のtracer D*と比較。文献の±をそのまま示し、独立試料の信頼区間とは再解釈しない。線は目のガイド。
 
 |T (K)|AIMD D* (cm²/s)、記載±|NEP 2 fs D_app (cm²/s)|NEP／AIMD|

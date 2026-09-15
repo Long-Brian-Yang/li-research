@@ -1,3 +1,5 @@
+> Superseded LZOC figures have been removed. Only the 2 fs series is displayed in the maintained Material Review; archived numerical data below are unchanged.
+
 > Historical snapshot. The complete, maintained report is [here](../../../docs/materials/materials_overview_en.md).
 
 # Completed-run analysis: reconstructed LZOC and LSZC
@@ -18,7 +20,6 @@ MPLCONFIGDIR=/tmp/lzoc-mpl python scripts/structures/finish_amorphous_analysis.p
 
 ## 2. LZOC thermodynamics
 
-![LZOC thermodynamics](LZOC_thermodynamics.png)
 
 Each column is one temperature. Coloured traces show all thermo records; black lines connect consecutive 5 ps block averages, not independent observations. Potential energy is absolute NEP energy per atom, not a zero-centred difference. Pressure is the mean of the three normal components. Axes auto-scale separately, so compare values rather than visual fluctuation heights.
 
@@ -32,7 +33,6 @@ Temperatures track their targets. The 380 K energy declines in the final 50 ps b
 
 ## 3. Li MSD and fit sensitivity
 
-![LZOC MSD](LZOC_MSD.png)
 
 Periodic trajectories are unwrapped between saved frames, and total-system mass-weighted centre-of-mass motion is removed. Li-only centre-of-mass subtraction is not used. The plotted MSD averages all available time origins. The linear view stops at 100 ps to avoid the least-sampled long-lag tail; CSV files retain all 200 ps lags. FFT results were checked against direct displacement averages at three lags.
 
@@ -44,7 +44,6 @@ MSD(τ) = mean over Li atoms and valid origins of |r(t+τ)−r(t)|². Fit MSD = 
 |360|1.715×10⁻⁷|0.9657|1.366|
 |380|1.028×10⁻⁶|0.9984|1.553|
 
-![LZOC MSD robustness](LZOC_MSD_robustness.png)
 
 Left: four contiguous 50 ps trajectory blocks, each fitted over 5–20 ps lag. Right: full-trajectory fits with four specified lag windows. These two panels have different lag definitions and must not be treated as equivalent estimators. No window was selected to target an activation energy.
 
@@ -60,15 +59,12 @@ Data: `LZOC_*K_msd.csv`, `LZOC_*K_block_D.csv`, `summary.json`.
 
 ## 4. LZOC local structure and framework motion
 
-![LZOC RDF](LZOC_RDF.png)
 
 RDFs use 100 frames from 101–200 ps, spaced 1 ps apart, minimum-image periodic distances, excluded self-pairs and shell/number-density normalization. Bin width 0.05 Å, range 0–5 Å, below half the minimum perpendicular cell height. No smoothing. Large Zr–O peak height partly reflects a dilute O denominator and localized distances; peak height alone is not a coordination number or an error.
 
-![LZOC coordination](LZOC_coordination.png)
 
 Time series sample 1–200 ps at 1 ps spacing. Cutoffs appear in titles; Cl–Cl is a geometrical neighbour count, not chemical valence. Late Li–Cl means are 4.850, 4.752, 4.804; Zr–Cl 4.997, 4.987, 4.966; Zr–O 1.333, 1.333, 1.332 at 340/360/380 K. Similar local statistics do not certify long-range disorder or thermodynamic stability.
 
-![LZOC framework MSD](LZOC_framework_MSD.png)
 
 Zr/O/Cl time-origin averaged MSD is computed with the same unwrapping and system-COM correction as Li. At 80 ps, Zr is 0.249–0.498 Å², O 0.183–0.301 Å² and Cl 0.661–0.968 Å². Nonzero framework MSD may include local relaxation/vibration and is not automatically anion conduction. Data: `LZOC_*K_rdf.csv`, `LZOC_*K_coordination.csv`; framework curves are regenerated from the script and raw trajectories.
 

@@ -47,6 +47,7 @@ def finish(fig,name):
 
 def lzoc():
     fig,aa=grid(2);axes=aa.ravel()
+    fig.suptitle('LZOC — NEP · NHC · 2 fs · 80 ps production', fontsize=17)
     for ax,T in zip(axes,[340,360,380]):
         for model,c,ls in [('NHC_2fs',RED,'-')]:
             a=load(F/f'LZOC_{T}K_{model}_MSD.csv');a=a[a[:,0]<=40]
