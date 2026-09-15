@@ -170,6 +170,8 @@ At 80 ps, that fraction is **5.43/8.28/23.66%** at 340/360/380 K, respectively; 
 <a id="lszc"></a>
 ## 3. LSZC: extending the comparison to experiment
 
+**New production submitted (8677465.1–2):** 320 K proceeds from the completed 50 ps NVT restart to 300 ps NVT production. At 350 K, the additional NPT still showed a 2.06% density decrease between its two 25 ps halves; use its final-25-ps mean volume (8720.237 Å³), preserve fractional positions and velocities, equilibrate 50 ps NVT, then run 300 ps NVT production. Both retain 272 atoms, NEP89, 0.5 fs and MTTK `tperiod 200`. These are project settings, not a claim of exact paper reproduction. The 350 K branch is exploratory fixed-volume transport: the NPT density drift is unresolved and the extra NVT stage does not prove equilibrium density. Runs stop on numerical/output failure; physical convergence remains to be checked. Submission is confirmed; results are pending. Previous results remain separate.
+
 **Next stage submitted: 8677026.1–2.** Task 1: 320 K, 50 ps NVT at the arithmetic mean volume over the preceding NPT's last 50 ps (8138.512 Å³). The endpoint cell and coordinates were scaled isotropically by 1.009478; species, fractional positions and velocities were preserved. Task 2: 350 K, 50 ps NPT at 1 bar from its preceding restart, without cell adjustment. Both retain 272 atoms, NEP89, 0.5 fs and 100 fs thermostat coupling (NPT barostat 1000 fs). Both stop for review; 300 ps production has not been submitted.
 
 ### Endpoint NPT follow-up: completed, not yet production-ready as a pair

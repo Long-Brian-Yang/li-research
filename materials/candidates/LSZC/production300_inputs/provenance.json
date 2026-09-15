@@ -1,0 +1,20 @@
+{
+  "320": {
+    "volume_A3": 8138.552255353784,
+    "input_sha256": "d4b29f986d8a6d548f9e6e320ea7b78df263a0bd0849adc78c60a6309c316b03",
+    "source_hashes": {
+      "restart.xyz": "2bbd50bbd48c7d5bd1cb735e0533837200f48f6e4a869d803733afb440fb7d50",
+      "thermo.out": "f57d0b32081a74806e4ae5eb70e13cdd9b3739a96a8ad6042c459a7433966dc1"
+    },
+    "method": "320 K: preserve completed NVT cell; 350 K: mean volume of additional NPT 25\u201350 ps, then 50 ps NVT before production. Density drift unresolved; exploratory fixed-volume transport."
+  },
+  "350": {
+    "volume_A3": 8720.236787888289,
+    "input_sha256": "f18397b2b92a0863b7b3743f874268c4c0fb0969d26d7e0d160b4c056a9ab69f",
+    "source_hashes": {
+      "restart.xyz": "a7d43576252d6b4a45ca906b6c87561b44c29a30f2a2c89056767ff637f50fd9",
+      "thermo.out": "87639e546405d20ed803dc274d4ea8a84174c225d11ce542f2412e4d29fa0c18"
+    },
+    "method": "320 K: preserve completed NVT cell; 350 K: mean volume of additional NPT 25\u201350 ps, then 50 ps NVT before production. Density drift unresolved; exploratory fixed-volume transport."
+  }
+}
