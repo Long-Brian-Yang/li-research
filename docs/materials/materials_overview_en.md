@@ -411,6 +411,8 @@ The prior endpoint structural analysis supports sulfate retention and enhanced s
 <a id="lps"></a>
 ## 4. Li₃PS₄: a sulfide transferability comparison
 
+A focused status and research plan is maintained in the [Li₃PS₄ standalone work package](Li3PS4/README.md).
+
 Li₃PS₄ is a methodological comparison beyond the oxychloride main line. We ask whether local-structure agreement transfers to transport agreement in a sulfide glass. The following results distinguish these two levels of reproduction rather than treating a matching RDF peak as validation of conductivity.
 
 ### Background and literature question
