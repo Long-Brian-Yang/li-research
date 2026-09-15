@@ -1,3 +1,5 @@
+> 履歴版。図表を統合した最新の更新対象は [こちら](../../../docs/materials/materials_overview_ja.md).
+
 # 新LZOC・LSZC：終了計算の解析結果
 
 2026年9月15日。[English](report_en.md)。本報告は既存計算の後処理をまとめたもので、定量的な予測精度の検証完了を意味しない。新しいMD・DFTは投入していない。

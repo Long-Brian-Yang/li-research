@@ -1,3 +1,5 @@
+> Historical snapshot. The complete, maintained report is [here](../../../docs/materials/materials_overview_en.md).
+
 # Completed-run analysis: reconstructed LZOC and LSZC
 
 Updated 15 September 2026. This package completes the stated postprocessing of existing runs, not validation of quantitative predictive accuracy. No new MD or DFT was submitted. [Japanese version](report_ja.md).

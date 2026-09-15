@@ -1,3 +1,5 @@
+> Historical snapshot. The complete, maintained report is [here](../../../docs/materials/materials_overview_en.md).
+
 # Structural follow-up: connectivity and cutoff sensitivity
 
 15 September 2026. [日本語](report_ja.md) · [Main report](../final_comparisons/report_en.md)

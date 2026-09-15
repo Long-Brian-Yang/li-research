@@ -1,3 +1,5 @@
+> 履歴版。図表を統合した最新の更新対象は [こちら](../../../docs/materials/materials_overview_ja.md).
+
 # 非晶質材料：完了済み計算の解析・文献比較
 
 2026年9月15日。[English](report_en.md) · [全体計画](../../../docs/materials/materials_overview_ja.md)

@@ -1,5 +1,7 @@
 # Li Research: Direction 2 Halide Electrolytes
 
+Current amorphous-material record (settings, all figures, results and limits): **[日本語](docs/materials/materials_overview_ja.md) · [English](docs/materials/materials_overview_en.md)**. These are the two maintained reports; earlier short reports are historical snapshots. The crystalline-project introduction below is retained as background, not the current amorphous status.
+
 Documentation: [分类导航](docs/README.md) · [日常汇报](docs/daily_reports/README.md) · [LZOC 建模与运行](docs/materials/LZOC/README.md)。以下 Direction 2 介绍保留原有晶态研究背景；后续 LZOC 探索见独立材料记录。
 
 This repository contains the working materials for **Direction 2**: reproducing

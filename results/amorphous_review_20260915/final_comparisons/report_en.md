@@ -1,3 +1,5 @@
+> Historical snapshot. The complete, maintained report is [here](../../../docs/materials/materials_overview_en.md).
+
 # Amorphous-material comparisons: completed-data assessment
 
 15 September 2026. [日本語](report_ja.md) · [Portfolio](../../../docs/materials/materials_overview_en.md)

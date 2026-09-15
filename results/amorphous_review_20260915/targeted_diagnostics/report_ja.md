@@ -1,3 +1,5 @@
+> 履歴版。図表を統合した最新の更新対象は [こちら](../../../docs/materials/materials_overview_ja.md).
+
 # 追加診断：構造と輸送解析の感度
 
 2026年9月15日 · [English](report_en.md) · [計算条件と終了記録](../../../docs/materials/targeted_diagnostics_20260915.md)

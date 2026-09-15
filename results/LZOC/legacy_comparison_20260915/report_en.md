@@ -1,3 +1,5 @@
+> Historical snapshot. The complete, maintained report is [here](../../../docs/materials/materials_overview_en.md).
+
 # Legacy LZOC candidate 3: MACE / NEP comparison
 
 15 September 2026. [日本語](report_ja.md). Replotted from the audited 12 September results; no new MD or trajectory modification. This is a workflow/structure comparison, not completed experimental–AIMD–MLIP accuracy validation. The common starting candidate contains Li42Zr24O12Cl114 (192 atoms).

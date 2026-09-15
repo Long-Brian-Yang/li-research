@@ -1,3 +1,5 @@
+> Historical snapshot. The complete, maintained report is [here](../../../docs/materials/materials_overview_en.md).
+
 # Targeted diagnostics: structure and transport sensitivity
 
 15 September 2026 · [日本語](report_ja.md) · [Settings and completion record](../../../docs/materials/targeted_diagnostics_20260915.md)

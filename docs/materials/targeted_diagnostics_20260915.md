@@ -1,5 +1,7 @@
 # Targeted diagnostic runs / 問題切り分けの追加計算
 
+> Historical execution record. Current figures, settings and conclusions are integrated into [English](materials_overview_en.md) / [日本語](materials_overview_ja.md). Update those two reports for future status changes.
+
 [Full illustrated English report](../../results/amorphous_review_20260915/targeted_diagnostics/report_en.md) · [図・表付き日本語報告](../../results/amorphous_review_20260915/targeted_diagnostics/report_ja.md)
 
 ## Completed results / 完了結果

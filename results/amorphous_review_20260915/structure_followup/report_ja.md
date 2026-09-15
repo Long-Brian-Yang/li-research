@@ -1,3 +1,5 @@
+> 履歴版。図表を統合した最新の更新対象は [こちら](../../../docs/materials/materials_overview_ja.md).
+
 # 構造の追加解析：接続性と配位截断への感度
 
 2026年9月15日。[English](report_en.md) · [主報告](../final_comparisons/report_ja.md)
