@@ -2,7 +2,43 @@
 
 Updated 15 September 2026. [日本語](materials_overview_ja.md)
 
-This Material Review follows one argument: the measured efficiency of NEP89 makes multi-material exploration feasible, while its agreement with literature must be assessed separately for structure and transport. Each material is introduced through its reference question, compared numerically, interpreted physically and closed with a bounded conclusion. Fifteen figure groups and the essential numerical tables are embedded below; no separate report is needed. This revision expands the discussion and organizes existing figures without changing data or simulations.
+## Overview: motivation, literature basis and study design
+
+### Scientific background
+
+Solid electrolytes must combine fast Li-ion transport with chemical, mechanical and thermal stability. Crystalline conductors can often be described through periodic sites and well-defined migration pathways, whereas amorphous conductors contain distributions of bond lengths, coordination environments and free volumes. Their macroscopic transport therefore depends not only on composition, but also on preparation history and the connectivity of local environments. A useful simulation must consequently reproduce both Li motion and the host network in which that motion occurs.
+
+Ab initio molecular dynamics (AIMD) can connect local structure with diffusion without an empirical force field, but its accessible cell sizes and trajectories are limited. Material-specific machine-learned potentials extend the time and length scales after training on suitable electronic-structure data. General pretrained neural-network potentials offer a more economical alternative because they can be applied without new material-specific training. The unresolved question is not whether such a model produces a trajectory, but whether the resulting glass structure and transport remain consistent with material-specific AIMD and experiment.
+
+### Literature landscape and material selection
+
+The four systems in this review were selected because together they test progressively different chemical environments while retaining explicit literature comparators.
+
+|System|Reason for inclusion|Primary literature benchmark|
+|---|---|---|
+|Li₁.₇₅ZrCl₄.₇₅O₀.₅ (LZOC)|Oxychloride main line closest to the original project; direct finite-temperature diffusion comparison|340/360/380 K AIMD structure and tracer diffusion from [Hussain et al., 2024; DOI: 10.1038/s41524-024-01346-y](https://doi.org/10.1038/s41524-024-01346-y), with experimental conductivity from [Hu et al., 2023; DOI: 10.1038/s41467-023-39522-1](https://doi.org/10.1038/s41467-023-39522-1)|
+|0.5Li₂SO₄–ZrCl₄ (LSZC)|Extends the oxychloride question to sulfate-containing glass and provides experimental transport and local-structure constraints|30 °C conductivity, activation energy, EXAFS/PDF and tuned-MACE MD from [Tang et al., 2026; DOI: 10.1038/s41467-026-69737-x](https://doi.org/10.1038/s41467-026-69737-x)|
+|Li₃PS₄ glass|Tests transfer from oxychlorides to a sulfide glass with a published machine-learning-potential transport baseline|Glass structure and DeePMD diffusion from [Chen et al., 2025; DOI: 10.1038/s41467-025-56322-x](https://doi.org/10.1038/s41467-025-56322-x), with a separate experimental conductivity reference|
+|LiPON|Tests a phosphate/oxynitride network whose N topology is experimentally constrained and chemically distinct from the NEP89 training-use cases examined above|AIMD structure validated by neutron PDF and infrared spectroscopy from [Lacivita et al., 2018; DOI: 10.1021/jacs.8b05192](https://doi.org/10.1021/jacs.8b05192), and material-specific NequIP transport from [Seth et al., 2025; DOI: 10.1021/acsmaterialsau.4c00117](https://doi.org/10.1021/acsmaterialsau.4c00117)|
+
+These references do not form one uniform benchmark. Some report tracer diffusion, others ionic conductivity, local coordination or scattering-derived structure. The review therefore compares only matched physical quantities and labels digitized, conditional or extrapolated values explicitly. An experimental conductivity is not treated as an experimental self-diffusion coefficient, and a partial RDF is not treated as an experimental total PDF.
+
+### Research questions and evidence strategy
+
+The study asks four connected questions:
+
+1. Does NEP89/GPUMD provide enough computational advantage over the existing MACE/LAMMPS workflow to support multi-material amorphous screening?
+2. For each material, does the pretrained potential preserve the literature-relevant local network during preparation and finite-temperature MD?
+3. Are the temperature dependence and absolute magnitude of Li MSD, tracer diffusion, conditional Nernst–Einstein conductivity and apparent activation energy consistent with the appropriate AIMD or experimental reference?
+4. When transport differs, do density, framework MSD, RDF and coordination analyses identify a physically plausible limitation rather than merely a numerical fitting difference?
+
+The evidence is organized in the same order for every material: literature benchmark, corresponding model construction and MD conditions, direct numerical comparison, structural interpretation and bounded conclusion. Agreement in one metric is not used to certify the whole model. A good Arrhenius fit, for example, is interpreted together with the absolute diffusion scale and host-network motion.
+
+### Scope of the conclusions
+
+This is a benchmark of practical pretrained-potential workflows, not a new potential-training study and not an exact reproduction of every cited simulation. MACE and NEP are first compared to explain the computational choice. The subsequent material sections then test that choice against literature. Differences in starting structures, cell sizes, ensembles, thermostats and available trajectory lengths are stated where they affect interpretation. Deviations are retained as results rather than removed by tuning trajectories toward a target value.
+
+The report consequently proceeds from method selection to increasingly demanding material tests: MACE versus NEP efficiency, the LZOC AIMD comparison, the LSZC experimental extension, Li₃PS₄ sulfide transferability and finally the LiPON applicability limit.
 
 ## Contents
 
@@ -609,6 +645,7 @@ These references identify the evidence used in this review. Citing a preparation
 
 |Reference|Role in this review|DOI|
 |---|---|---|
+|Hu et al., 2023|LZOC: experimental room-temperature ionic conductivity and materials context|[10.1038/s41467-023-39522-1](https://doi.org/10.1038/s41467-023-39522-1)|
 |Hussain et al., 2024|LZOC: occupancy information and 340/360/380 K AIMD diffusion benchmark|[10.1038/s41524-024-01346-y](https://doi.org/10.1038/s41524-024-01346-y)|
 |Tang et al., 2026|LSZC: experimental conductivity, activation energy and local structure; separately, tuned-MACE MD comparison|[10.1038/s41467-026-69737-x](https://doi.org/10.1038/s41467-026-69737-x)|
 |Chen et al., 2025|Li₃PS₄: glass structure and DeePMD transport benchmark, not experimental D|[10.1038/s41467-025-56322-x](https://doi.org/10.1038/s41467-025-56322-x)|
