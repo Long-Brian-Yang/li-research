@@ -1,0 +1,231 @@
+{
+  "operation": "Location consolidation only; image bytes preserved. Historical sources retained for earlier reports.",
+  "figure_groups": 15,
+  "assets": [
+    {
+      "file": "09_legacy_cost_density.png",
+      "sha256": "0d11d92c03123a224c1969173a7c4db712c32cc9c0aa3707de3e99e894beb39b",
+      "historical_source": "results/plots/amorphous/09_legacy_cost_density.png"
+    },
+    {
+      "file": "09_legacy_cost_density.pdf",
+      "sha256": "b968bbbb4d4ae5da8dd08c7a4329f0d8f859855f204e6c5493836d1dc5ed6e66",
+      "historical_source": "results/plots/amorphous/09_legacy_cost_density.pdf"
+    },
+    {
+      "file": "09_legacy_cost_density.svg",
+      "sha256": "38830a570ac9fea6ba661c890bb8e1fb86df4c9a53b107c76b6e008074bbacc8",
+      "historical_source": "results/plots/amorphous/09_legacy_cost_density.svg"
+    },
+    {
+      "file": "10_legacy_motion.png",
+      "sha256": "30b813c8a7886a7c396f13371796b525dad15a82bfd12d893eed6309fc54c4b0",
+      "historical_source": "results/plots/amorphous/10_legacy_motion.png"
+    },
+    {
+      "file": "10_legacy_motion.pdf",
+      "sha256": "564ee26242d855a816e4fe7882de7af5d5e849eb455f5c1dd99eb9f7c05ff6c2",
+      "historical_source": "results/plots/amorphous/10_legacy_motion.pdf"
+    },
+    {
+      "file": "10_legacy_motion.svg",
+      "sha256": "ec465a60353aa662c0e01d0c4e4cdff81e74dd8ce7eb8eb2f504969bee955880",
+      "historical_source": "results/plots/amorphous/10_legacy_motion.svg"
+    },
+    {
+      "file": "11_legacy_structure.png",
+      "sha256": "41cc63b482c3ca0f82b6c41b8f86eab96a2fe67dc5ba50831ed1aeef0ce26b83",
+      "historical_source": "results/plots/amorphous/11_legacy_structure.png"
+    },
+    {
+      "file": "11_legacy_structure.pdf",
+      "sha256": "3f3423db4724908baa3b949dd58d383338721ca4019df1f5ce5a5d9a76767871",
+      "historical_source": "results/plots/amorphous/11_legacy_structure.pdf"
+    },
+    {
+      "file": "11_legacy_structure.svg",
+      "sha256": "c98d55754a7742686cd2d3732a774ee48c979e640053c0ef9ccea571d602007f",
+      "historical_source": "results/plots/amorphous/11_legacy_structure.svg"
+    },
+    {
+      "file": "01_LZOC_transport.png",
+      "sha256": "27a441f51af7b7e7ea75ab2b524df2020abe90c8a058e45777765e1f05614d5c",
+      "historical_source": "results/amorphous_review_20260915/exploratory_closest_preview/closest_preview.png"
+    },
+    {
+      "file": "01_LZOC_transport.pdf",
+      "sha256": "92151677864f6ccdc4f5d8dba956d5815da6c992bae0fb4ab8cea8c75d6d221e",
+      "historical_source": "results/amorphous_review_20260915/exploratory_closest_preview/closest_preview.pdf"
+    },
+    {
+      "file": "01_LZOC_transport.svg",
+      "sha256": "c4e3ee4be90735bb0fc4c1bc9f066d0a8f3b55373e2a23e41e3db61caa1c64c4",
+      "historical_source": "results/amorphous_review_20260915/exploratory_closest_preview/closest_preview.svg"
+    },
+    {
+      "file": "14_LZOC_species_MSD.png",
+      "sha256": "1bb7e3e3844444b0d461a61039b9fecfe341077296dcbadf12f3b66c2c320f35",
+      "historical_source": "results/plots/amorphous/14_LZOC_species_MSD.png"
+    },
+    {
+      "file": "14_LZOC_species_MSD.pdf",
+      "sha256": "1f0c2ea836b47167fdd770dc9ff251488d5d26f1d00aeb6dab5604a57499491e",
+      "historical_source": "results/plots/amorphous/14_LZOC_species_MSD.pdf"
+    },
+    {
+      "file": "14_LZOC_species_MSD.svg",
+      "sha256": "61473c65c5613c5389da89e0617f4522904ac39bf124a39d1e7f8f0435572e6d",
+      "historical_source": "results/plots/amorphous/14_LZOC_species_MSD.svg"
+    },
+    {
+      "file": "15_LZOC_RDF.png",
+      "sha256": "98716b60d595659919f7afc579a60e2b05711d514ef471b048b312aa89b0a1d5",
+      "historical_source": "results/plots/amorphous/15_LZOC_RDF.png"
+    },
+    {
+      "file": "15_LZOC_RDF.pdf",
+      "sha256": "428da172a688a1e49dc493a9ff0f82449f9f302fa969e2e82c1f182a2a9159aa",
+      "historical_source": "results/plots/amorphous/15_LZOC_RDF.pdf"
+    },
+    {
+      "file": "15_LZOC_RDF.svg",
+      "sha256": "05bd6492ff2d53d83d2a3384b38b9ca912da8615a2bba8482f00b991b4208b10",
+      "historical_source": "results/plots/amorphous/15_LZOC_RDF.svg"
+    },
+    {
+      "file": "16_LZOC_coordination.png",
+      "sha256": "6b1c102266f0a3aadb9abbe12b1db9e893769348da847144fc8783201cab9895",
+      "historical_source": "results/plots/amorphous/16_LZOC_coordination.png"
+    },
+    {
+      "file": "16_LZOC_coordination.pdf",
+      "sha256": "f4fa50b8a5be76c9fbe27d5312eb52a66db3ca36db7ebd3660bacdc3b91f23c4",
+      "historical_source": "results/plots/amorphous/16_LZOC_coordination.pdf"
+    },
+    {
+      "file": "16_LZOC_coordination.svg",
+      "sha256": "84d4117986fd7522cbe7d2b944f6cb177b8abe61b70586240062daab0077534b",
+      "historical_source": "results/plots/amorphous/16_LZOC_coordination.svg"
+    },
+    {
+      "file": "17_LZOC_radial_displacement.png",
+      "sha256": "31fdfe711d5d3edaea5e1e2db9243b8c39e353866ce5e3a9b5be4a1d6e693159",
+      "historical_source": "results/plots/amorphous/17_LZOC_radial_displacement.png"
+    },
+    {
+      "file": "17_LZOC_radial_displacement.pdf",
+      "sha256": "67cdc6ee443bc6f349ef6b4618228e5b05b3add12bc89cb68be078c585a3ae8c",
+      "historical_source": "results/plots/amorphous/17_LZOC_radial_displacement.pdf"
+    },
+    {
+      "file": "17_LZOC_radial_displacement.svg",
+      "sha256": "951ec8d06781f4d4cb66de6072edf1b576ed5b1ffaf9d654a8f683eb3a77177e",
+      "historical_source": "results/plots/amorphous/17_LZOC_radial_displacement.svg"
+    },
+    {
+      "file": "18_LSZC_endpoint_transport.png",
+      "sha256": "127ff30b238616424c4fd20cf6a2b3597c9484abd752bca6f85bb952fad79c0e",
+      "historical_source": "results/plots/amorphous/18_LSZC_endpoint_transport.png"
+    },
+    {
+      "file": "18_LSZC_endpoint_transport.pdf",
+      "sha256": "b24c8fd841f0057560b58cc4229493c107e3fab8819e1754b1e6d86535f4e6ad",
+      "historical_source": "results/plots/amorphous/18_LSZC_endpoint_transport.pdf"
+    },
+    {
+      "file": "18_LSZC_endpoint_transport.svg",
+      "sha256": "e34bafee73e5b7cf4f9cd5f469e321ba8086f8cd6c4b107ffffa721aa3d8bfbf",
+      "historical_source": "results/plots/amorphous/18_LSZC_endpoint_transport.svg"
+    },
+    {
+      "file": "19_LSZC_endpoint_RDF.png",
+      "sha256": "5801bd740ae12eaa5b621fb3868b385f0d58749bd8d08385f491f9348c55feb1",
+      "historical_source": "results/plots/amorphous/19_LSZC_endpoint_RDF.png"
+    },
+    {
+      "file": "19_LSZC_endpoint_RDF.pdf",
+      "sha256": "c2cb8ddfbdf7cc9d76e856635dd291cfe49724db47c2196c190611cd1cecf264",
+      "historical_source": "results/plots/amorphous/19_LSZC_endpoint_RDF.pdf"
+    },
+    {
+      "file": "19_LSZC_endpoint_RDF.svg",
+      "sha256": "71de30230e8757e89b8c6ac9f1577a11efbfa7ce2762f4ee912cf3fd1cba0637",
+      "historical_source": "results/plots/amorphous/19_LSZC_endpoint_RDF.svg"
+    },
+    {
+      "file": "20_LSZC_endpoint_mobility.png",
+      "sha256": "f46d89c08a3f20b3678ef76178293015df9ef46b0510e481c0bed37256bf093d",
+      "historical_source": "results/plots/amorphous/20_LSZC_endpoint_mobility.png"
+    },
+    {
+      "file": "20_LSZC_endpoint_mobility.pdf",
+      "sha256": "64a5e0831a6d7a1c9f95c68ae8fc12387ff6264bcfb3c3adf4b1558ba2bc755e",
+      "historical_source": "results/plots/amorphous/20_LSZC_endpoint_mobility.pdf"
+    },
+    {
+      "file": "20_LSZC_endpoint_mobility.svg",
+      "sha256": "22c39f926a43f2e3a8199b535a96ae16fbbb182da16c86d12a6ab2434ce50865",
+      "historical_source": "results/plots/amorphous/20_LSZC_endpoint_mobility.svg"
+    },
+    {
+      "file": "05_LPS_MSD.png",
+      "sha256": "b1a41b779b7ec4e1964acbf264623901fbe43abc332d9456636fd6593e084f3c",
+      "historical_source": "results/plots/amorphous/05_LPS_MSD.png"
+    },
+    {
+      "file": "05_LPS_MSD.pdf",
+      "sha256": "084bd117755c4aad13a7a3d99f9a53bd00b0a74768584decf72a66874e358520",
+      "historical_source": "results/plots/amorphous/05_LPS_MSD.pdf"
+    },
+    {
+      "file": "05_LPS_MSD.svg",
+      "sha256": "3ad1d18667a38035bb04f33503c42d69b71db6e224b159dfbfa403da9f14b744",
+      "historical_source": "results/plots/amorphous/05_LPS_MSD.svg"
+    },
+    {
+      "file": "06_LPS_reference.png",
+      "sha256": "13c8a17bbe28892ef24e736c8fdec0dfc8b1f4a984ab9843d4a7bab25ca4a202",
+      "historical_source": "results/plots/amorphous/06_LPS_reference.png"
+    },
+    {
+      "file": "06_LPS_reference.pdf",
+      "sha256": "f3d6443d9661a0e9ed67c78d5d614f557e5b7fef679a076b1e380abfab5aaa71",
+      "historical_source": "results/plots/amorphous/06_LPS_reference.pdf"
+    },
+    {
+      "file": "06_LPS_reference.svg",
+      "sha256": "799ae2890860b24225e638e3681bce9ac62a4f4ed0fed80b76db9485a829dcaf",
+      "historical_source": "results/plots/amorphous/06_LPS_reference.svg"
+    },
+    {
+      "file": "07_LPS_structure.png",
+      "sha256": "0c27308b7dac1836f303afb19bb72672d538afc79a8a0091c42778e44ff04a56",
+      "historical_source": "results/plots/amorphous/07_LPS_structure.png"
+    },
+    {
+      "file": "07_LPS_structure.pdf",
+      "sha256": "68e743079e9982bc0bb426229b4171c2377c6095d7838ba0a3e16fffc66fb354",
+      "historical_source": "results/plots/amorphous/07_LPS_structure.pdf"
+    },
+    {
+      "file": "07_LPS_structure.svg",
+      "sha256": "76bf9fb873b3425e1a0e5fad2956831023070509f8ddb1a9c2c3616df727aa31",
+      "historical_source": "results/plots/amorphous/07_LPS_structure.svg"
+    },
+    {
+      "file": "08_LiPON_contacts.png",
+      "sha256": "a328f720e93e73412698102c06ab827e66e61a7e73c2d3bf15eaeb00ec57d0ce",
+      "historical_source": "results/plots/amorphous/08_LiPON_contacts.png"
+    },
+    {
+      "file": "08_LiPON_contacts.pdf",
+      "sha256": "c1505831f0f4ea98412f8061e4d1ec91bb69207fbc0fbfb03ce66803e6f73377",
+      "historical_source": "results/plots/amorphous/08_LiPON_contacts.pdf"
+    },
+    {
+      "file": "08_LiPON_contacts.svg",
+      "sha256": "798e984f79950c29f820301c822034d2258b09cfe527ed683b177058256144d4",
+      "historical_source": "results/plots/amorphous/08_LiPON_contacts.svg"
+    }
+  ]
+}

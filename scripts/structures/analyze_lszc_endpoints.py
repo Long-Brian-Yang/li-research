@@ -17,7 +17,7 @@ from finish_amorphous_analysis import frame_metrics, block_slopes
 ROOT=Path(__file__).resolve().parents[2]
 BASE=ROOT/'results/amorphous_review_20260915'
 OUT=BASE/'LSZC_endpoints'; OUT.mkdir(exist_ok=True)
-FIG=ROOT/'results/plots/amorphous'
+FIG=ROOT/'docs/materials/figures'
 WINDOWS=[(20,80),(20,100),(20,150),(40,150),(50,200)]
 PAIRS=[('S','O',2.),('Zr','O',2.6),('Zr','Cl',3.2),('Li','O',2.7)]
 
@@ -73,6 +73,7 @@ def plot():
  import matplotlib.pyplot as plt
  from li_diffusion_style import apply_style
  plt.rcParams.update({'svg.fonttype':'none','pdf.fonttype':42})
+ FIG.mkdir(parents=True,exist_ok=True)
  def save(fig,name):
   apply_style(fig)
   for ext in ('png','pdf','svg'):fig.savefig(FIG/f'{name}.{ext}',dpi=200,bbox_inches='tight')

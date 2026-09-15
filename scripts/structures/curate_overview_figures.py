@@ -14,7 +14,9 @@ import matplotlib.pyplot as plt
 
 ROOT=Path(__file__).resolve().parents[2]
 BASE=ROOT/'results/amorphous_review_20260915'
-OUT=ROOT/'results/plots/amorphous'
+OUT=ROOT/'docs/materials/figures'
+ARCHIVE=ROOT/'results/plots/amorphous'
+ARCHIVED_FIGURES={'01_LZOC_transport','02_LSZC_transport','03_LSZC_mobility','04_LSZC_structure','12_LSZC_4T_MSD','13_LSZC_literature_transport'}
 P=BASE/'paper_alignment';F=BASE/'final_comparisons';L=BASE/'Li3PS4_transport'
 C=BASE/'completed_transport'
 OLD=ROOT/'results/LZOC/legacy_comparison_20260915'
@@ -43,7 +45,9 @@ def finish(fig,name):
             ax.legend(frameon=False,fontsize=10,loc='upper center',bbox_to_anchor=(.5,-.22),ncol=2)
     fig.canvas.draw()
     for ext in ('png','pdf','svg'):
-        path=OUT/f'{name}.{ext}';fig.savefig(path,dpi=220)
+        directory=ARCHIVE if name in ARCHIVED_FIGURES else OUT
+        directory.mkdir(parents=True,exist_ok=True)
+        path=directory/f'{name}.{ext}';fig.savefig(path,dpi=220)
         if ext=='svg':path.write_text('\n'.join(s.rstrip() for s in path.read_text().splitlines())+'\n')
     EXPORTS.append(name);plt.close(fig)
 
@@ -169,7 +173,7 @@ def legacy():
     finish(fig,'11_legacy_structure')
 
 def main():
-    OUT.mkdir(exist_ok=True)
+    OUT.mkdir(parents=True,exist_ok=True)
     plt.rcParams.update({'font.family':'DejaVu Sans','font.size':13,'axes.titlesize':16,'axes.labelsize':14,'xtick.labelsize':12,'ytick.labelsize':12,'axes.linewidth':1.5,'lines.linewidth':2.5,'legend.frameon':False,'svg.fonttype':'none','pdf.fonttype':42})
     lzoc();lszc();lips();lipon();legacy();lszc_four_temperatures();lzoc_structure_motion()
     assert len(EXPORTS)==17
