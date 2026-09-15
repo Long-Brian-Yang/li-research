@@ -1,0 +1,15 @@
+{
+  "volume_A3": 8138.511662695822,
+  "old_volume_A3": 7911.40904173098,
+  "linear_scale": 1.0094784455280656,
+  "averaging_interval_ps": [
+    100,
+    150
+  ],
+  "method": "Arithmetic mean of instantaneous volumes over last 50 ps. Isotropic affine coordinate/cell scaling; velocities retained. 50 ps NVT review precedes production.",
+  "source_hashes": {
+    "restart.xyz": "b18b1531430eded228f84759bbf4b08784bb99b2872cd38a6dc138e894265331",
+    "thermo.out": "cfbe4c6e2211990f9205eb411bce4a3626dc2834149c8778a28a30262a803d2f"
+  },
+  "input_sha256": "702019f708d4cbef45e4e66578b68b3b35a226753d631059c2ee0e82a200ef13"
+}

@@ -120,6 +120,8 @@ The large duration sensitivity means that 300 ps has not demonstrated converged 
 <a id="lszc"></a>
 ## 3. LSZC: extending the comparison to experiment
 
+**Next stage submitted: 8677026.1–2.** Task 1: 320 K, 50 ps NVT at the arithmetic mean volume over the preceding NPT's last 50 ps (8138.512 Å³). The endpoint cell and coordinates were scaled isotropically by 1.009478; species, fractional positions and velocities were preserved. Task 2: 350 K, 50 ps NPT at 1 bar from its preceding restart, without cell adjustment. Both retain 272 atoms, NEP89, 0.5 fs and 100 fs thermostat coupling (NPT barostat 1000 fs). Both stop for review; 300 ps production has not been submitted.
+
 ### Endpoint NPT follow-up: completed, not yet production-ready as a pair
 
 Jobs 8676678.1–2 completed 150 ps NPT after the 10 ps ramp. Comparing the last two consecutive 25 ps means:
