@@ -539,7 +539,7 @@ The narrative closes with two separate conclusions. NEP offers substantially low
 |LSZC|Completed320/350 K comparison has no valid NEP E_a|Two320/330/340/350 K common-cell NVT50+300 ps series submitted; analysis pending.|
 |LZOC|2 fs primary figure/table and direct AIMD D* comparison updated|No further timestep comparison.|
 |Li₃PS₄|R1 preparation and basic structure checks completed; prior transport comparison retained|Only R1 continues with300/500/700/900 K transport; new transport results pending.|
-|LiPON|Three preparations and B-based 600/900/1200/1500 K transport analysed; E_a=0.409 eV and D is higher than literature|Four-temperature MSD, D, Arrhenius, RDF and numerical literature comparison are complete.|
+|LiPON|Three preparations and B-based 600/900/1200/1500 K transport analysed; E_a=0.409 eV and D is higher than literature|Two 600 K, 600 ps runs are in progress to check the low-temperature result against the current 600 K value.|
 |Legacy LZOC|Extra NPT analysis complete, alongside high-temperature structure/motion and runtime comparisons|No additional run.|
 |Weighted total PDF / structure factor|Not performed; partial RDF is not experimental total PDF|Optional separate scattering analysis requiring matched definitions and reference conditions, not a mandatory MD rerun.|
 |Independent-glass uncertainty|Not assessed; one prepared glass and temperature branches|Not claimed as replica statistics.|
