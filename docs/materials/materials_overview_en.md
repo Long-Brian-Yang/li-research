@@ -4,6 +4,10 @@ Updated 15 September 2026. [日本語](materials_overview_ja.md)
 
 This is the complete English Material Review. Read the methods, figures, numerical tables and interpretation here in sequence; opening another report is not required. Source files and scripts are optional audit material collected at the end. Eleven core figure groups replace the previous 43 displays. Redundant diagnostics are summarized directly in tables; unfavourable results are retained. This revision changes presentation, not trajectories, fit windows, numerical results or simulation settings.
 
+## How this review is maintained
+
+All subsequent results are inserted, revised or replaced directly in the relevant material section of this review, with the Japanese version updated in parallel. Each section follows the paper's question and reference results, our corresponding calculation, numerical comparison, structural interpretation and conclusion. Figures, numerical tables, necessary equations and symbol definitions, settings, limitations and next steps belong in the body—not behind links to separate reports. Source files and DOI links are optional provenance only. Superseded results are clearly identified rather than silently mixed with current results; pending analyses remain labelled pending. Separate progress reports are not created unless explicitly requested.
+
 ## Contents
 
 - [Status and preparation](#status)
