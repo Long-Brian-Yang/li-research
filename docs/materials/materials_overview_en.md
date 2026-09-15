@@ -4,18 +4,6 @@ Updated 15 September 2026. [日本語](materials_overview_ja.md)
 
 This Material Review follows one argument: the measured efficiency of NEP89 makes multi-material exploration feasible, while its agreement with literature must be assessed separately for structure and transport. Each material is introduced through its reference question, compared numerically, interpreted physically and closed with a bounded conclusion. Fifteen figure groups and the essential numerical tables are embedded below; no separate report is needed. This revision expands the discussion and organizes existing figures without changing data or simulations.
 
-## How this review is maintained
-
-The narrative omits scheduler IDs, velocity seed numbers and filesystem paths. These remain in source provenance. Plot legends identify materials, temperatures and models; fitting and selection details are stated once in the relevant methods paragraph, not repeated in each caption.
-
-**Plotting convention:** For subsequent figures and revisions in this project, use the corresponding GPUMDkit plotting script as the primary reference, including MSD, RDF, Arrhenius and thermodynamic plots where supported. Inspect the actual script before adapting it; preserve readable report-wide fonts, units and model identities. Distinguish plotting conventions from calculation definitions: do not silently change averaging, normalization, fitting windows or source trajectories to match an example. Document any such methodological change. When GPUMDkit has no matching plot, state the adaptation rather than claiming it is a GPUMDkit output. This convention applies to future plotting; it does not mean all existing figures have already been redrawn.
-
-All subsequent results are inserted, revised or replaced directly in the relevant material section of this review, with the Japanese version updated in parallel. Each section follows the paper's question and reference results, our corresponding calculation, numerical comparison, structural interpretation and conclusion. Figures, numerical tables, necessary equations and symbol definitions, settings, limitations and next steps belong in the body—not behind links to separate reports. Source files and DOI links are optional provenance only. Superseded results are clearly identified rather than silently mixed with current results; pending analyses remain labelled pending. Separate progress reports are not created unless explicitly requested.
-
-**Figure location:** all active review images and their vector exports are in `docs/materials/figures/`, referenced here as `figures/...`. Future revisions replace the corresponding asset there and update both language versions together. Historical source exports are retained only for older reports.
-
-**Figure naming:** use material + physical observable + essential condition. Legends identify NEP89, MACE, AIMD or the actual literature method. Do not use “selected”, “best”, “preview”, job IDs or fit-window labels as figure titles or model names. Necessary selection and fitting disclosure remains in Methods; removing a workflow label does not change the evidential status of a result.
-
 ## Contents
 
 - [1. MACE versus NEP: why NEP was selected](#legacy)
