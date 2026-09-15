@@ -1,0 +1,146 @@
+{
+  "LSZC": {
+    "last10ps_density_g_cm3": 1.8155039986514532,
+    "last10ps_CN_ZrO_ZrCl_fraction_S4O": [
+      1.5159375,
+      4.2596875,
+      1.0
+    ],
+    "5ps_blocks_T_PE_atom_P": [
+      [
+        398.2388669343001,
+        -5.462415655966912,
+        0.01802216631328736
+      ],
+      [
+        400.6282624579999,
+        -5.462131031040441,
+        0.0025199540974219954
+      ],
+      [
+        401.25572645249997,
+        -5.460906389441176,
+        0.0128483562604065
+      ],
+      [
+        397.1540276975,
+        -5.461849257176471,
+        0.008714917503521264
+      ]
+    ]
+  },
+  "NHC_0.5fs": {
+    "fits": {
+      "5-20ps": {
+        "D_cm2_s": 1.1316916020210269e-06,
+        "R2": 0.9982055862372735,
+        "intercept_A2": 0.9026314056921417,
+        "alpha": 0.4509396088982445,
+        "lo_ps": 5,
+        "hi_ps": 20
+      },
+      "10-30ps": {
+        "D_cm2_s": 1.0912665666268854e-06,
+        "R2": 0.9993959259976375,
+        "intercept_A2": 0.9425815780894655,
+        "alpha": 0.5542107173583507,
+        "lo_ps": 10,
+        "hi_ps": 30
+      },
+      "10-40ps": {
+        "D_cm2_s": 1.0036064448389439e-06,
+        "R2": 0.996213858873929,
+        "intercept_A2": 1.0369187735760648,
+        "alpha": 0.5614504961422497,
+        "lo_ps": 10,
+        "hi_ps": 40
+      }
+    },
+    "20ps_blocks_T_PE_atom_P": [
+      [
+        380.0004835194499,
+        -4.890601537014071,
+        -0.14541927355838646
+      ],
+      [
+        382.1142962805256,
+        -4.890102792328257,
+        -0.03806825258391476
+      ],
+      [
+        380.046644115725,
+        -4.891562216430206,
+        -0.0907990447607203
+      ],
+      [
+        380.15241995422525,
+        -4.892292241611848,
+        -0.061053525277047875
+      ]
+    ]
+  },
+  "NHC_2fs": {
+    "fits": {
+      "5-20ps": {
+        "D_cm2_s": 1.1840506164561967e-06,
+        "R2": 0.9951556612772622,
+        "intercept_A2": 0.6916529674101819,
+        "alpha": 0.5088499317855044,
+        "lo_ps": 5,
+        "hi_ps": 20
+      },
+      "10-30ps": {
+        "D_cm2_s": 1.1243267003668524e-06,
+        "R2": 0.9903330754776974,
+        "intercept_A2": 0.7440101264227046,
+        "alpha": 0.6358826555823819,
+        "lo_ps": 10,
+        "hi_ps": 30
+      },
+      "10-40ps": {
+        "D_cm2_s": 8.956841862001401e-07,
+        "R2": 0.9616104385520535,
+        "intercept_A2": 0.9957155801696087,
+        "alpha": 0.574097620120245,
+        "lo_ps": 10,
+        "hi_ps": 40
+      }
+    },
+    "20ps_blocks_T_PE_atom_P": [
+      [
+        380.01301814330014,
+        -4.891370378208592,
+        -0.09633479353411432
+      ],
+      [
+        376.995606282825,
+        -4.891346275225003,
+        -0.07448224011057925
+      ],
+      [
+        379.63978351130027,
+        -4.891644026759243,
+        -0.07954288895888993
+      ],
+      [
+        379.1872366306505,
+        -4.893258340480602,
+        -0.0678158406659705
+      ]
+    ]
+  },
+  "source_hashes": {
+    "results/amorphous_review_20260915/source/LSZC_npt400/dump.xyz": "53f1206a4eaa6a1234a87faea433d74ac5656e7473ec6afcfd68ade4b2e6a70d",
+    "results/amorphous_review_20260915/source/LSZC_npt400/model.xyz": "c3c17a4d4b62d5b2decfe314946abb1668290784806e08371a85d514f3795795",
+    "results/amorphous_review_20260915/source/LSZC_npt400/thermo.out": "31e4998ecefd6e823d9f63fb8451c596c0ea226d3aa06f34652f254d1288afb9",
+    "results/amorphous_review_20260915/source/LSZC_npt400/run.in": "58ab780d5c3b251fd3de586285f1d55ccc26c18f3959425f116f413d686e42b5",
+    "results/amorphous_review_20260915/source/LZOC_NHC05_380/dump.xyz": "addb3a1ca7c70cd6c18cffe1a555bb49b9580c3e9e42f48c62a626d2bc9fed6d",
+    "results/amorphous_review_20260915/source/LZOC_NHC05_380/model.xyz": "2006cc9502d9ae18133c81d8b27fd02890484b5f20f799c0f102eb14d0df5dd9",
+    "results/amorphous_review_20260915/source/LZOC_NHC05_380/thermo.out": "8d09ae46c5d85273d1d82612b5d4421220be8a6e70a0a5791214e8aff69fe0a5",
+    "results/amorphous_review_20260915/source/LZOC_NHC05_380/run.in": "c2e519ae6c472fae9629d022eb5bacad4394dbbd32b45c27c6bc7f20efe06898",
+    "results/amorphous_review_20260915/source/LZOC_NHC80/aimd_aligned_380K_8675022/production/dump.xyz": "df92447eb125328c3bfc9a02e1b5bce32b0a2547dee3b1ea1b9028d4e49c15a4",
+    "results/amorphous_review_20260915/source/LZOC_NHC80/aimd_aligned_380K_8675022/production/model.xyz": "2006cc9502d9ae18133c81d8b27fd02890484b5f20f799c0f102eb14d0df5dd9",
+    "results/amorphous_review_20260915/source/LZOC_NHC80/aimd_aligned_380K_8675022/production/thermo.out": "8284993f10c2f27493d341ae63b1d683d8b3c72c31121cdb453deeb8f0c8d44b",
+    "results/amorphous_review_20260915/source/LZOC_NHC80/aimd_aligned_380K_8675022/production/run.in": "b8a965dc8b6b45bf5166a562f5a22f617340d448674684c027b1fd1366c61fc5"
+  }
+}

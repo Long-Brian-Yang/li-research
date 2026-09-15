@@ -1,5 +1,23 @@
 # Targeted diagnostic runs / 問題切り分けの追加計算
 
+## Completed results / 完了結果
+
+Both tasks finished normally; complete trajectories were downloaded locally. The postprocessing checks passed: LSZC200 frames/400 thermodynamic records; LZOC800 frames/1600 records; finite values; identical LZOC starting positions, cell and velocities. The tested MSD helper passed its direct-sum regression test (five existing analysis tests passed).
+
+| Diagnostic | Result | Interpretation |
+|---|---|---|
+|LSZC NPT, final10 ps|Density1.81550 g/cm³ versus initial1.86376; Zr–O CN1.51594; Zr–Cl CN4.25969; all sampled S remain fourfold O-coordinated|Volume relaxation did not resolve the reference discrepancy. No claim of repaired structure|
+|LZOC380 K NHC, 10–40 ps fitted D|0.5 fs:1.00361×10⁻⁶ cm²/s;2 fs:8.95684×10⁻⁷ cm²/s|About12.1% higher in this window, not an order-of-magnitude change; a single-trajectory sensitivity result|
+|LZOC0.5 fs, fitting-window check|D=1.13169/1.09127/1.00361×10⁻⁶ cm²/s for5–20/10–30/10–40 ps|Window sensitivity remains; no new validated Ea or300 K extrapolation|
+
+The 10–40 ps log–log MSD slopes remain approximately0.56 and0.57, and the free-fit intercept is approximately1 Å². High linear-fit R² alone therefore does not establish long-time diffusion. At5–20 and10–30 ps, timestep differences are approximately−4.4% and−2.9%, respectively: the12.1% value is not a universal correction factor.
+
+**日本語：** 両ジョブは正常終了し、全軌跡をローカルへ保存した。LSZCはNPT後もZr配位の差が残り、密度も低下したため、単なる体積緩和で修復できたとは言えない。新LZOCの0.5 fs対照では10–40 psの見かけのDが約12.1%増加したが、短い解析区間では差の符号も異なる。時間刻み変更だけで輸送の収束を証明したわけではない。既存データは変更せず、根拠のない追加延長は行っていない。
+
+[Numerical results and source hashes](../../results/amorphous_review_20260915/targeted_diagnostics/results.json) · [LSZC time series](../../results/amorphous_review_20260915/targeted_diagnostics/LSZC_structure.csv) · [LZOC0.5 fs MSD](../../results/amorphous_review_20260915/targeted_diagnostics/NHC_0.5fs_MSD.csv) · [LZOC2 fs MSD](../../results/amorphous_review_20260915/targeted_diagnostics/NHC_2fs_MSD.csv) · [Reproducible analysis](../../scripts/structures/analyze_targeted_diagnostics.py)
+
+The following sections preserve the submission plan; their pending-status statements are superseded by the completed results above.
+
 ## English
 
 Submitted array **8675392.1–2**, 15 September 2026. These are controlled diagnostics, not confirmed repairs or exact reproductions of a paper. Existing results remain unchanged. Both use the existing NEP89/GPUMD installation and preserved restart velocities, with no velocity reinitialisation or manual density adjustment.
