@@ -85,7 +85,7 @@ Average pressure near the target does not establish structural equilibration. En
 <a id="lzoc"></a>
 ## 2. Reconstructed LZOC: the primary AIMD comparison
 
-**Additional dynamics repeats submitted on 15 September 2026:** array **8677221.1–4**, with tasks 1/2 at 340 K (seeds 34009151/34009152) and tasks 3/4 at 360 K (seeds 36009151/36009152). Each uses the original temperature-specific 192-atom starting coordinates and fixed cell, NEP89, a 2 fs step and NVT Nosé–Hoover-chain coupling of 50 steps (100 fs). Existing velocities are removed before seeded initialization. A separate 50 ps NVT equilibration precedes 300 ps production; this extra equilibration duration is our choice, not a verified paper parameter. These are velocity-seed repeats, not independently prepared glasses. All repeats will be analysed consistently and retained, including unfavourable results; existing results are not overwritten. Submission is confirmed, while completion and analysis remain pending.
+**Additional dynamics repeats submitted on 15 September 2026:** array **8677221.1–4**, with tasks 1/2 at 340 K (seeds 34009151/34009152) and tasks 3/4 at 360 K (seeds 36009151/36009152). Each uses the original temperature-specific 192-atom starting coordinates and fixed cell, NEP89, a 2 fs step and NVT Nosé–Hoover-chain coupling of 50 steps (100 fs). Existing velocities are removed before seeded initialization. A separate 50 ps NVT equilibration precedes 300 ps production; this extra equilibration duration is our choice, not a verified paper parameter. These are velocity-seed repeats, not independently prepared glasses. All four repeats completed and have been analysed with the same 20–80 ps window. Each production contains 3000 frames and 6000 finite thermo rows. Existing source results remain archived; all repeats, including unfavourable results, are reported below.
 
 ### Literature comparison using the completed 300 ps series
 
@@ -93,28 +93,35 @@ Jobs 8676684.1–3 completed 300 ps at 340/360/380 K, with 192 atoms, 2 fs and N
 
 ![LZOC transport and AIMD comparison](../../results/plots/amorphous/01_LZOC_transport.png)
 
-Panels a–c show the complete 0–300 ps lag range of all-time-origin, whole-system COM-corrected Li MSD; fit overlays are omitted for clarity. Panel d compares the 20–80 ps slope with [Hussain2024](https://doi.org/10.1038/s41524-024-01346-y), Supplementary Table 4. Published ± values are retained as reported. Only the 2 fs series is shown. The 300 ps endpoint has only one time-origin pair; the tail is shown for transparency, not treated as equally well sampled as short lags.
+Grey lines show the original runs; blue/red lines show both new velocity repeats at 340/360 K. Panel d shows individual repeats and their arithmetic mean ± sample SD (n=2, not a confidence interval); original runs are separate. Panels a–c show the complete 0–300 ps lag range of all-time-origin, whole-system COM-corrected Li MSD; fit overlays are omitted for clarity. Panel d compares the 20–80 ps slope with [Hussain2024](https://doi.org/10.1038/s41524-024-01346-y), Supplementary Table 4. Published ± values are retained as reported. Only the 2 fs series is shown. The 300 ps endpoint has only one time-origin pair; the tail is shown for transparency, not treated as equally well sampled as short lags.
 
 |T (K)|Existing source job|AIMD D* (cm²/s)|NEP 300 ps D_app (cm²/s)|NEP/AIMD|Additional repeats|
 |---:|---|---:|---:|---:|---|
-|340|8676684.1|(2.09±0.06)×10⁻⁶|3.105×10⁻⁷|0.149|8677221.1–2: submitted; analysis pending|
-|360|8676684.2|(1.77±0.04)×10⁻⁶|3.808×10⁻⁷|0.215|8677221.3–4: submitted; analysis pending|
+|340|8676684.1|(2.09±0.06)×10⁻⁶|3.105×10⁻⁷|0.149|8677221.1–2: completed and analysed|
+|360|8676684.2|(1.77±0.04)×10⁻⁶|3.808×10⁻⁷|0.215|8677221.3–4: completed and analysed|
 |380|8676684.3|(3.50±0.10)×10⁻⁶|1.015×10⁻⁶|0.290|No additional run submitted|
 
-The D values above and the current apparent E_a = 0.3255 eV (Arrhenius R² = 0.8528) refer only to the existing series, not averages including the new repeats. New repeat D values and their spread remain pending; no new numerical result is inferred from submission.
+The D values above and the current apparent E_a = 0.3255 eV (Arrhenius R² = 0.8528) refer only to the existing series, not averages including the new repeats. New repeat results are listed below, without pooling with the original runs because the added equilibration changes their history. No updated three-temperature E_a is claimed: 380 K has no matching new repeat series.
 
 |New repeat|Job|Velocity seed|NVT equilibration (ps)|Production (ps)|Step (fs)|D_app (cm²/s)|
 |---|---|---:|---:|---:|---:|---|
-|340 K R1|8677221.1|34009151|50|300|2|Pending analysis|
-|340 K R2|8677221.2|34009152|50|300|2|Pending analysis|
-|360 K R1|8677221.3|36009151|50|300|2|Pending analysis|
-|360 K R2|8677221.4|36009152|50|300|2|Pending analysis|
+|340 K R1|8677221.1|34009151|50|300|2|4.163×10⁻⁷|
+|340 K R2|8677221.2|34009152|50|300|2|7.176×10⁻⁷|
+|360 K R1|8677221.3|36009151|50|300|2|2.061×10⁻⁷|
+|360 K R2|8677221.4|36009152|50|300|2|7.919×10⁻⁸|
 
-NEP remains below AIMD at every temperature. The NEP series increases monotonically, while the reference includes a 340→360 K decrease. Thus neither pointwise agreement nor the exact temperature trend is reproduced. Cell size, preparation and potential differ from the paper; the discrepancy cannot be assigned uniquely to the potential.
+|T (K)|New-repeat mean ± sample SD (cm²/s), n=2|Mean/AIMD|MSD fit R² (R1/R2)|
+|---:|---:|---:|---:|
+|340|(5.669 ± 2.130)×10⁻⁷|0.271|0.9961 / 0.9978|
+|360|(1.426 ± 0.897)×10⁻⁷|0.081|0.9842 / 0.8597|
+
+**Repeat result:** the new 360 K mean is below the 340 K mean; increasing the number of velocity seeds did not establish a stable monotonic temperature dependence. Both means remain below AIMD. The new 360 K R2 curve has a weak linear fit (R²=0.8597); nearby-window slope changes reach 51.7%, versus 14.6% for 360 K R1 and 6.1–6.4% at 340 K. We retain these as apparent finite-window estimates rather than selecting a favourable trajectory or claiming converged diffusion. Mean production temperatures are 340.30/339.94 and 359.85/360.25 K. Last-minus-first 50 ps potential-energy shifts are −4.23/−5.55 and +0.54/−1.87 meV/atom, respectively. Temperature control is near target, but energy relaxation and the velocity-repeat spread remain limitations. The RDF, coordination and species-motion analyses below still refer to original jobs 8676684, not these new repeats.
+
+NEP remains below AIMD at every temperature. The original NEP series increases monotonically, while the reference includes a 340→360 K decrease. Thus neither pointwise agreement nor the exact temperature trend is reproduced. Cell size, preparation and potential differ from the paper; the discrepancy cannot be assigned uniquely to the potential.
 
 ### Does longer sampling stabilize the result?
 
-**Current primary window: 20–80 ps.** Selected after inspecting the curves, not preregistered: it avoids the initial rapid rise and differs by less than 4% in slope from nearby 20–60 and 30–90 ps fits at all temperatures. Later windows show greater drift. This is a practical local-stability choice, not a unique optimum or demonstrated asymptotic diffusion regime. The current apparent **E_a is 0.3255 eV, Arrhenius R²=0.8528**. MSD R² values are 0.9953/0.9980/0.9989 and log–log exponents are 0.524/0.490/0.647. No window was chosen to match literature Ea. The 10–40 ps results below remain duration-sensitivity diagnostics; 0.428 eV is not the current primary estimate.
+**Original-series primary window: 20–80 ps.** Selected after inspecting the curves, not preregistered: it avoids the initial rapid rise and differs by less than 4% in slope from nearby 20–60 and 30–90 ps fits at all temperatures. Later windows show greater drift. This is a practical local-stability choice, not a unique optimum or demonstrated asymptotic diffusion regime. The current apparent **E_a is 0.3255 eV, Arrhenius R²=0.8528**. MSD R² values are 0.9953/0.9980/0.9989 and log–log exponents are 0.524/0.490/0.647. No window was chosen to match literature Ea. The 10–40 ps results below remain duration-sensitivity diagnostics; 0.428 eV is not the current primary estimate.
 
 All estimates below use the same 10–40 ps lag fit; only the total trajectory length changes.
 

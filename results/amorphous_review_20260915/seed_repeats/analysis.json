@@ -1,0 +1,93 @@
+{
+  "records": [
+    {
+      "T_K": 340,
+      "repeat": 1,
+      "job": "8677221.1",
+      "D_cm2_s": 4.163101454309515e-07,
+      "R2": 0.9961203407573953,
+      "intercept_A2": 0.98561709297742,
+      "alpha": 0.510420996637903,
+      "lo_ps": 20,
+      "hi_ps": 80,
+      "neighbor_change": 0.06083439167002824,
+      "T_mean": 340.2971501370567,
+      "PE_drift_meV_atom": -4.230302199895064
+    },
+    {
+      "T_K": 340,
+      "repeat": 2,
+      "job": "8677221.2",
+      "D_cm2_s": 7.175529695008589e-07,
+      "R2": 0.9978170985870091,
+      "intercept_A2": 0.8130164642724096,
+      "alpha": 0.6759881543443507,
+      "lo_ps": 20,
+      "hi_ps": 80,
+      "neighbor_change": 0.06367828875108972,
+      "T_mean": 339.94137737038335,
+      "PE_drift_meV_atom": -5.549169411458148
+    },
+    {
+      "T_K": 360,
+      "repeat": 1,
+      "job": "8677221.3",
+      "D_cm2_s": 2.0607271342385366e-07,
+      "R2": 0.9841550208255485,
+      "intercept_A2": 0.7705455810346573,
+      "alpha": 0.41831946385721885,
+      "lo_ps": 20,
+      "hi_ps": 80,
+      "neighbor_change": 0.1455266500898147,
+      "T_mean": 359.84976723758837,
+      "PE_drift_meV_atom": 0.5429955688539915
+    },
+    {
+      "T_K": 360,
+      "repeat": 2,
+      "job": "8677221.4",
+      "D_cm2_s": 7.918787651245784e-08,
+      "R2": 0.8597081181873129,
+      "intercept_A2": 1.200124149737823,
+      "alpha": 0.16194148582650203,
+      "lo_ps": 20,
+      "hi_ps": 80,
+      "neighbor_change": 0.516767453619531,
+      "T_mean": 360.24998481512,
+      "PE_drift_meV_atom": -1.86657047760382
+    }
+  ],
+  "summary": [
+    {
+      "T_K": 340,
+      "n": 2,
+      "D_mean": 5.669315574659052e-07,
+      "D_sample_sd": 2.1301084368361765e-07,
+      "D_min": 4.163101454309515e-07,
+      "D_max": 7.175529695008589e-07
+    },
+    {
+      "T_K": 360,
+      "n": 2,
+      "D_mean": 1.4263029496815576e-07,
+      "D_sample_sd": 8.972112860979714e-08,
+      "D_min": 7.918787651245784e-08,
+      "D_max": 2.0607271342385366e-07
+    }
+  ],
+  "source_hashes": {
+    "results/amorphous_review_20260915/source/LZOC_repeats/seed300_340K_R1_8677221/production/model.xyz": "54ef3af041ab101ec46a8e9d2989b04194ada0302b1a547189b98ef1f536c132",
+    "results/amorphous_review_20260915/source/LZOC_repeats/seed300_340K_R1_8677221/production/dump.xyz": "f7e39371f4cd779b0519272dea1caf2f4a2202ffca7a2eb2f55a640ca96f2db3",
+    "results/amorphous_review_20260915/source/LZOC_repeats/seed300_340K_R1_8677221/production/thermo.out": "aabee0807f52de3d8d5ba3d6a9efcaa890c05ef6323e6a9b7d27c073e962207c",
+    "results/amorphous_review_20260915/source/LZOC_repeats/seed300_340K_R2_8677221/production/model.xyz": "e8d86dc15cd43f7c8d47612be73d67e5fbc6e7009cc1d2afb080e1857549c363",
+    "results/amorphous_review_20260915/source/LZOC_repeats/seed300_340K_R2_8677221/production/dump.xyz": "4d93f6162dac372568e846c1f7312ac1589346a82574be1f151af2d00444f6dd",
+    "results/amorphous_review_20260915/source/LZOC_repeats/seed300_340K_R2_8677221/production/thermo.out": "aa0e62a33373fa2e55ba13cf8eb83fe22dac8884792f41eb047a8fe18ccb2e84",
+    "results/amorphous_review_20260915/source/LZOC_repeats/seed300_360K_R1_8677221/production/model.xyz": "90901948ac6818169614bd9426a4b41b5c8a4ad6930ceb6b1ef50a600462e8c4",
+    "results/amorphous_review_20260915/source/LZOC_repeats/seed300_360K_R1_8677221/production/dump.xyz": "6bed46f6409013c797c9dee70c8f950988eb12b395bfaea41960fabd7bfcef7b",
+    "results/amorphous_review_20260915/source/LZOC_repeats/seed300_360K_R1_8677221/production/thermo.out": "d08da1b97efaa970d25f2b12e754e4660b9c6a45ea0dada045ca9ed461ca1e39",
+    "results/amorphous_review_20260915/source/LZOC_repeats/seed300_360K_R2_8677221/production/model.xyz": "e1e23f5ecec16a42bf6bc8714da1d3abb27e7f47bfcdd74309137165cb2ab4f8",
+    "results/amorphous_review_20260915/source/LZOC_repeats/seed300_360K_R2_8677221/production/dump.xyz": "dd3525e295b5439de835d7440836841b98fbeeb4a1ce1b5990e32c798edc5b9f",
+    "results/amorphous_review_20260915/source/LZOC_repeats/seed300_360K_R2_8677221/production/thermo.out": "6847aaedb18c91f179dca207ebb7fffadda3f01ea2e63608bed93cb3df6a779c"
+  },
+  "method": "All-origin COM-corrected MSD; full 300 ps shown, common 20\u201380 ps fit. Two velocity repeats per temperature, same glass; sample SD is not a confidence interval. Original runs have different equilibration history and are not pooled. No new three-temperature Ea without matching 380 K repeats."
+}
