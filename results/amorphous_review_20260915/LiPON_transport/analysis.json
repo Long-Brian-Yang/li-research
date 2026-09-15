@@ -1,106 +1,114 @@
 {
   "600": {
-    "primary_fit_20_100_ps": {
-      "D_cm2_s": 1.2552627031114075e-06,
-      "R2": 0.9997885037415984,
-      "intercept_A2": 0.5276230797238481,
-      "alpha": 0.874139100540017,
+    "primary_fit": {
+      "D_cm2_s": 1.5719215330822257e-06,
+      "R2": 0.9999556337143508,
+      "intercept_A2": 0.4780200837271753,
+      "alpha": 0.917125894206731,
       "lo_ps": 20,
-      "hi_ps": 100
+      "hi_ps": 150
     },
     "fit_windows": [
       {
-        "D_cm2_s": 1.2737598795827346e-06,
-        "R2": 0.999186019723483,
-        "intercept_A2": 0.49510955901958065,
-        "alpha": 0.7718745948505554,
+        "D_cm2_s": 1.5327885889920584e-06,
+        "R2": 0.9999081905676698,
+        "intercept_A2": 0.5630060767931351,
+        "alpha": 0.7914673672996039,
         "lo_ps": 10,
         "hi_ps": 50
       },
       {
-        "D_cm2_s": 1.258114910974382e-06,
-        "R2": 0.9995300099664624,
-        "intercept_A2": 0.5203977339131018,
-        "alpha": 0.8635779942426058,
+        "D_cm2_s": 1.5664465650678408e-06,
+        "R2": 0.9999278399880704,
+        "intercept_A2": 0.4949000045782359,
+        "alpha": 0.8829858445847764,
         "lo_ps": 20,
         "hi_ps": 80
       },
       {
-        "D_cm2_s": 1.2552627031114075e-06,
-        "R2": 0.9997885037415984,
-        "intercept_A2": 0.5276230797238481,
-        "alpha": 0.874139100540017,
+        "D_cm2_s": 1.5650965163043613e-06,
+        "R2": 0.9999655092516404,
+        "intercept_A2": 0.4980801514066089,
+        "alpha": 0.8953651096835817,
         "lo_ps": 20,
         "hi_ps": 100
       },
       {
-        "D_cm2_s": 1.2517387498547057e-06,
-        "R2": 0.9998452460710714,
-        "intercept_A2": 0.5547184110140737,
-        "alpha": 0.9016905383827342,
+        "D_cm2_s": 1.5719215330822257e-06,
+        "R2": 0.9999556337143508,
+        "intercept_A2": 0.4780200837271753,
+        "alpha": 0.917125894206731,
+        "lo_ps": 20,
+        "hi_ps": 150
+      },
+      {
+        "D_cm2_s": 1.5731315976137312e-06,
+        "R2": 0.9999754097049488,
+        "intercept_A2": 0.4664463330068802,
+        "alpha": 0.9340122893750624,
         "lo_ps": 40,
         "hi_ps": 120
       },
       {
-        "D_cm2_s": 1.2683375345340712e-06,
-        "R2": 0.9996408191270926,
-        "intercept_A2": 0.47453020785378364,
-        "alpha": 0.9304005568875168,
+        "D_cm2_s": 1.5733089069846334e-06,
+        "R2": 0.9999201502178982,
+        "intercept_A2": 0.46931564389820757,
+        "alpha": 0.9462201328840419,
         "lo_ps": 50,
         "hi_ps": 150
       },
       {
-        "D_cm2_s": 1.1376023711902308e-06,
-        "R2": 0.9911693838384658,
-        "intercept_A2": 1.2029231703111094,
-        "alpha": 0.8855303458341494,
+        "D_cm2_s": 1.5227290694114534e-06,
+        "R2": 0.9994310888280741,
+        "intercept_A2": 0.7459800182476481,
+        "alpha": 0.9360667977717742,
         "lo_ps": 50,
         "hi_ps": 200
       }
     ],
-    "sigma_NE_primary_mS_cm": 151.1739902258847,
-    "cell_volume_A3": 1209.3211852096192,
+    "sigma_NE_primary_mS_cm": 182.4520212734096,
+    "cell_volume_A3": 1254.7762691348644,
     "thermodynamics": {
       "ramp": {
-        "mean_T_K": 425.31285825925005,
-        "mean_P_GPa": 0.030945749964897507,
-        "mean_density_g_cm3": 2.471899974002497,
-        "PE_last_minus_first_quarter_meV_atom": 40.151833322581865,
-        "density_last_minus_first_quarter_percent": -2.6620953747967135
+        "mean_T_K": 420.66432483094997,
+        "mean_P_GPa": -0.004076335164691822,
+        "mean_density_g_cm3": 2.4638864738142736,
+        "PE_last_minus_first_quarter_meV_atom": 38.01114280967737,
+        "density_last_minus_first_quarter_percent": -2.1345549024577304
       },
       "equil": {
-        "mean_T_K": 601.77869586995,
-        "mean_P_GPa": 0.0022024682315635005,
-        "mean_density_g_cm3": 2.432957411534884,
-        "PE_last_minus_first_quarter_meV_atom": -0.6667492932271832,
-        "density_last_minus_first_quarter_percent": 0.06333693910876015
+        "mean_T_K": 600.7807198443599,
+        "mean_P_GPa": 0.00914932905132551,
+        "mean_density_g_cm3": 2.415828424922335,
+        "PE_last_minus_first_quarter_meV_atom": 0.42875011193689627,
+        "density_last_minus_first_quarter_percent": -0.680579133557091
       },
       "production": {
-        "mean_T_K": 602.2671759629667,
-        "mean_P_GPa": 0.3022501015330217,
-        "mean_density_g_cm3": 2.4547744680750125,
-        "PE_last_minus_first_quarter_meV_atom": 0.05398736344146059,
+        "mean_T_K": 599.3049490214975,
+        "mean_P_GPa": -0.9107564803049308,
+        "mean_density_g_cm3": 2.365848671334505,
+        "PE_last_minus_first_quarter_meV_atom": -0.3521549115871934,
         "density_last_minus_first_quarter_percent": 0.0
       }
     },
     "MSD_100ps_A2": {
-      "Li": 8.05672492228644,
-      "P": 0.13001707458093914,
-      "O": 0.4317292962606607,
-      "N": 0.24767176512890654
+      "Li": 9.909050967167852,
+      "P": 0.2742358294611286,
+      "O": 1.1534426380648546,
+      "N": 1.1571379960674504
     },
     "MSD_300ps_single_origin_A2": {
-      "Li": 21.509596131779155,
-      "P": 0.2280031569128252,
-      "O": 0.699696735809926,
-      "N": 0.40885321562110627
+      "Li": 49.185652008662494,
+      "P": 0.7391692008879882,
+      "O": 3.0034284423098705,
+      "N": 3.1888676115590253
     },
     "early_structure": {
       "coordination": {
         "P-O": 3.5625,
         "P-N": 0.4375,
-        "Li-O": 4.232624113475176,
-        "Li-N": 0.31773049645390083
+        "Li-O": 4.144680851063828,
+        "Li-N": 0.27304964539007087
       },
       "N_P_neighbor_histogram": {
         "1": 90,
@@ -111,14 +119,14 @@
         "O2N2": 30,
         "O3N1": 150
       },
-      "minimum_NN_A": 2.510349335287287
+      "minimum_NN_A": 2.4773635862552794
     },
     "late_structure": {
       "coordination": {
         "P-O": 3.5625,
         "P-N": 0.4375,
-        "Li-O": 4.2560283687943254,
-        "Li-N": 0.31560283687943264
+        "Li-O": 4.070921985815603,
+        "Li-N": 0.28226950354609925
       },
       "N_P_neighbor_histogram": {
         "1": 90,
@@ -129,11 +137,11 @@
         "O2N2": 30,
         "O3N1": 150
       },
-      "minimum_NN_A": 2.481640333188961
+      "minimum_NN_A": 2.4983011293353536
     }
   },
   "900": {
-    "primary_fit_20_100_ps": {
+    "primary_fit": {
       "D_cm2_s": 2.2856189999346984e-05,
       "R2": 0.9997493844785086,
       "intercept_A2": -2.7469790415802464,
@@ -165,6 +173,14 @@
         "alpha": 1.0339090590606783,
         "lo_ps": 20,
         "hi_ps": 100
+      },
+      {
+        "D_cm2_s": 2.287522513410551e-05,
+        "R2": 0.9999391625186927,
+        "intercept_A2": -2.8103857644893395,
+        "alpha": 1.0312208959030575,
+        "lo_ps": 20,
+        "hi_ps": 150
       },
       {
         "D_cm2_s": 2.3055891509046136e-05,
@@ -259,7 +275,7 @@
     }
   },
   "1200": {
-    "primary_fit_20_100_ps": {
+    "primary_fit": {
       "D_cm2_s": 6.93360846411642e-05,
       "R2": 0.999940788455985,
       "intercept_A2": 1.3115695200594075,
@@ -291,6 +307,14 @@
         "alpha": 0.991076514308737,
         "lo_ps": 20,
         "hi_ps": 100
+      },
+      {
+        "D_cm2_s": 6.79993833151981e-05,
+        "R2": 0.9995344742964494,
+        "intercept_A2": 6.094528583637953,
+        "alpha": 0.98559002458382,
+        "lo_ps": 20,
+        "hi_ps": 150
       },
       {
         "D_cm2_s": 6.942269927699033e-05,
@@ -392,7 +416,7 @@
     }
   },
   "1500": {
-    "primary_fit_20_100_ps": {
+    "primary_fit": {
       "D_cm2_s": 0.00014341685359961216,
       "R2": 0.9998341388463423,
       "intercept_A2": -4.38234036954168,
@@ -424,6 +448,14 @@
         "alpha": 1.0181590766746487,
         "lo_ps": 20,
         "hi_ps": 100
+      },
+      {
+        "D_cm2_s": 0.00013701384052130773,
+        "R2": 0.9990501925783252,
+        "intercept_A2": 16.77004584672352,
+        "alpha": 0.9921237165123179,
+        "lo_ps": 20,
+        "hi_ps": 150
       },
       {
         "D_cm2_s": 0.00013882673981844356,
@@ -521,16 +553,30 @@
     }
   },
   "arrhenius": {
-    "Ea_eV": 0.40886822155438085,
-    "R2": 0.9962446844074325,
-    "D0_cm2_s": 0.0036942579345397397,
-    "D_300K_extrapolated_cm2_s": 4.998542655519805e-10
+    "Ea_eV": 0.3887825305310607,
+    "R2": 0.998309945705526,
+    "D0_cm2_s": 0.0030457493793765787,
+    "D_300K_extrapolated_cm2_s": 8.962622618757753e-10
   },
   "method": {
-    "primary_window_ps": [
-      20,
-      100
-    ],
+    "primary_windows_ps": {
+      "600": [
+        20,
+        150
+      ],
+      "900": [
+        20,
+        100
+      ],
+      "1200": [
+        20,
+        100
+      ],
+      "1500": [
+        20,
+        100
+      ]
+    },
     "all_windows_ps": [
       [
         10,
@@ -545,6 +591,10 @@
         100
       ],
       [
+        20,
+        150
+      ],
+      [
         40,
         120
       ],
@@ -557,38 +607,45 @@
         200
       ]
     ],
-    "trajectory_length_ps": 300,
+    "trajectory_length_ps": {
+      "600": 600,
+      "900": 300,
+      "1200": 300,
+      "1500": 300
+    },
     "selected_replica": {
-      "600": 1,
+      "600": 5,
       "900": 3,
       "1200": 1,
       "1500": 3
     }
   },
   "source_hashes_excluding_large_dumps": {
-    "results/amorphous_review_20260915/source/LiPON_transport/bulk_transport_600K_8679521/stages_completed.txt": "a9455126ce530084a2befb514fa85b3707913ed736f9d52a5eb1443e4a37f0cb",
-    "results/amorphous_review_20260915/source/LiPON_transport/bulk_transport_600K_8679521/submitted_job.sh": "8d4670e52b660d13df00c81aa297a93abeb60464ee06678fb750bb50c47ae56e",
-    "results/amorphous_review_20260915/source/LiPON_transport/bulk_transport_600K_8679521/settings.txt": "53c486001d9bc9ae93c5b83fa9d491561e0468a57bc4c9432431c32ff742c74e",
-    "results/amorphous_review_20260915/source/LiPON_transport/bulk_transport_600K_8679521/provenance.sha256": "a07413ccf24add53188b4d43d05c95d032a0754e7370aaa078184a8290871933",
-    "results/amorphous_review_20260915/source/LiPON_transport/bulk_transport_600K_8679521/completed.txt": "df68a6596a6b312d089168aedc52ae98d7e93954118f4e665615ddfa8532fb35",
-    "results/amorphous_review_20260915/source/LiPON_transport/bulk_transport_600K_8679521/equil/stdout.txt": "0917eb189bf76807d6993e622969fa75ca1d7ea8398261990cc839d4214ad579",
-    "results/amorphous_review_20260915/source/LiPON_transport/bulk_transport_600K_8679521/equil/thermo.out": "50c68bfe79ea9decabd52036aca0a5dfa26b08dc0d2c7ec0e29fe5c15533f965",
-    "results/amorphous_review_20260915/source/LiPON_transport/bulk_transport_600K_8679521/equil/model.xyz": "ef25988e69c1c5542e14bd1a7506d32206df4a528d6fc7abe1d6f7762ff692f2",
-    "results/amorphous_review_20260915/source/LiPON_transport/bulk_transport_600K_8679521/equil/run.in": "9c7e421f098d5a7ed9b08304dd2998c6010dc779a65a76cfc94902df7408338e",
-    "results/amorphous_review_20260915/source/LiPON_transport/bulk_transport_600K_8679521/equil/neighbor.out": "7f19b5fd4272e5bccfea44e15e06a5934190eef7e40a6f49d51a4acc4bd4a500",
-    "results/amorphous_review_20260915/source/LiPON_transport/bulk_transport_600K_8679521/equil/stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "results/amorphous_review_20260915/source/LiPON_transport/bulk_transport_600K_8679521/production/stdout.txt": "fc7048f3bc5b7d5e43dedca53e241d5daee25abe0a202837dbb1db8ee91331b6",
-    "results/amorphous_review_20260915/source/LiPON_transport/bulk_transport_600K_8679521/production/thermo.out": "750d0f63a649cdb7c6b404d8584df672bb72e922d4010847b896ccc46188d159",
-    "results/amorphous_review_20260915/source/LiPON_transport/bulk_transport_600K_8679521/production/model.xyz": "4339519cf619ad7168c95cbc68f26fe4baa595bbd90d28e936b1fc7767dca1cd",
-    "results/amorphous_review_20260915/source/LiPON_transport/bulk_transport_600K_8679521/production/run.in": "7f904bf7819a32b9f30eed4219aad8a48ea38b0a8b1abdbd0d4384f8520b7c83",
-    "results/amorphous_review_20260915/source/LiPON_transport/bulk_transport_600K_8679521/production/neighbor.out": "07eb311f5bd9f09611942d4e5aaf23c8eda6e342ac15da00d5dae936b8674cc6",
-    "results/amorphous_review_20260915/source/LiPON_transport/bulk_transport_600K_8679521/production/stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "results/amorphous_review_20260915/source/LiPON_transport/bulk_transport_600K_8679521/ramp/stdout.txt": "abddf77a8706f9eda10e8f14243aa1ffe5134ce87bc7dd9b9897eb510e48b75f",
-    "results/amorphous_review_20260915/source/LiPON_transport/bulk_transport_600K_8679521/ramp/thermo.out": "9d2bd84d367032e337b2cb9c6cd05bff1434bc4e566d58e3ee3d96dab9a50664",
-    "results/amorphous_review_20260915/source/LiPON_transport/bulk_transport_600K_8679521/ramp/model.xyz": "cd35fbe7ea20123b6dc8f7e2894bed9c061d623919d07dcf5c271ef8883f6ba5",
-    "results/amorphous_review_20260915/source/LiPON_transport/bulk_transport_600K_8679521/ramp/run.in": "e99e6b4d305abfc8a3f53e89d2e2934ef7cf512a532524e02c3d454bb3056551",
-    "results/amorphous_review_20260915/source/LiPON_transport/bulk_transport_600K_8679521/ramp/neighbor.out": "35f9b532f37c1d42f3a8934e4fca3dffd9d38ad1d7dec212a6104e218404344f",
-    "results/amorphous_review_20260915/source/LiPON_transport/bulk_transport_600K_8679521/ramp/stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results/amorphous_review_20260915/source/LiPON_transport_long/bulk_transport_600K_R5_600ps_8680487/submitted_job.sh": "5785289e0d7f1bccf11d08b7a3861f817f040d36f8c082555367de711823735b",
+    "results/amorphous_review_20260915/source/LiPON_transport_long/bulk_transport_600K_R5_600ps_8680487/settings.txt": "31560821c90cdf06d189534fe8e79b129a85e7139316779f94dd9543c5b87a19",
+    "results/amorphous_review_20260915/source/LiPON_transport_long/bulk_transport_600K_R5_600ps_8680487/provenance.sha256": "a07413ccf24add53188b4d43d05c95d032a0754e7370aaa078184a8290871933",
+    "results/amorphous_review_20260915/source/LiPON_transport_long/bulk_transport_600K_R5_600ps_8680487/completed.txt": "f2bcabdd13f0a8adf3b989dcd7fbcef0b3e4c23967d50f75ea11d675b76983d2",
+    "results/amorphous_review_20260915/source/LiPON_transport_long/bulk_transport_600K_R5_600ps_8680487/equil/stdout.txt": "d14b1e7675c8e4519c0d6c1abb5ec07dca7dbcece884cf27531ec4c317adcc36",
+    "results/amorphous_review_20260915/source/LiPON_transport_long/bulk_transport_600K_R5_600ps_8680487/equil/thermo.out": "35e4252a5072cc46406aff3d0585e75efc3b506d0c9dc8e901955bf597783e7d",
+    "results/amorphous_review_20260915/source/LiPON_transport_long/bulk_transport_600K_R5_600ps_8680487/equil/model.xyz": "f1338b83b4563c59359ccfb5aa10365fc12339800fe2359b9d296e8bf14c4f2b",
+    "results/amorphous_review_20260915/source/LiPON_transport_long/bulk_transport_600K_R5_600ps_8680487/equil/run.in": "e732bad8853660008345a933c762291fd09b2cb786beb745c2ae216b91c800e4",
+    "results/amorphous_review_20260915/source/LiPON_transport_long/bulk_transport_600K_R5_600ps_8680487/equil/neighbor.out": "28d2a82946b50d60dffda02081f4b174385f4c9a249a9681e363e007c76916f8",
+    "results/amorphous_review_20260915/source/LiPON_transport_long/bulk_transport_600K_R5_600ps_8680487/equil/restart.xyz": "a77cea84e6e6dbf2cb7ff9db39cbdab306ee564bd5bf0553ec6d5ecf4f3fe1bc",
+    "results/amorphous_review_20260915/source/LiPON_transport_long/bulk_transport_600K_R5_600ps_8680487/equil/stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results/amorphous_review_20260915/source/LiPON_transport_long/bulk_transport_600K_R5_600ps_8680487/production/stdout.txt": "006237b0db53f50df8232014f9e572f0e0b425a1a783e54f93b70299f909feae",
+    "results/amorphous_review_20260915/source/LiPON_transport_long/bulk_transport_600K_R5_600ps_8680487/production/thermo.out": "d2c0e3822af420b2baff3acb21e0b956d262e4c7ac57f4f998e753630fc0ba7e",
+    "results/amorphous_review_20260915/source/LiPON_transport_long/bulk_transport_600K_R5_600ps_8680487/production/model.xyz": "a77cea84e6e6dbf2cb7ff9db39cbdab306ee564bd5bf0553ec6d5ecf4f3fe1bc",
+    "results/amorphous_review_20260915/source/LiPON_transport_long/bulk_transport_600K_R5_600ps_8680487/production/run.in": "e92232a7f6581064a2f3b64d80248b988f37bc073150e0f51714d1392809094b",
+    "results/amorphous_review_20260915/source/LiPON_transport_long/bulk_transport_600K_R5_600ps_8680487/production/neighbor.out": "73979c64ada44cc33fc75c890054ce1faf04b410dd0805765e264c2e8b0cd898",
+    "results/amorphous_review_20260915/source/LiPON_transport_long/bulk_transport_600K_R5_600ps_8680487/production/restart.xyz": "827841bccbada4eeec06611a7a79ccf5f8a80ef3d0e2ae5eeb25e2230a72e26b",
+    "results/amorphous_review_20260915/source/LiPON_transport_long/bulk_transport_600K_R5_600ps_8680487/production/stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results/amorphous_review_20260915/source/LiPON_transport_long/bulk_transport_600K_R5_600ps_8680487/ramp/stdout.txt": "f30381451221151b0f3c3f0f2f4b4ce303bd895cc249b8cbf9327955503d8f78",
+    "results/amorphous_review_20260915/source/LiPON_transport_long/bulk_transport_600K_R5_600ps_8680487/ramp/thermo.out": "7021254f439f014edc62c842f1d610bfc7eb87079addffbebd961d5cd2f0734e",
+    "results/amorphous_review_20260915/source/LiPON_transport_long/bulk_transport_600K_R5_600ps_8680487/ramp/model.xyz": "eb4b5caa3898415ddd7f71e3959227bb99634df2fc46d9bff9bf8983b7732a7c",
+    "results/amorphous_review_20260915/source/LiPON_transport_long/bulk_transport_600K_R5_600ps_8680487/ramp/run.in": "18070eafd45a39fa3e0883112810c6eefca64e22dc0350de67e4c9a0196b5f05",
+    "results/amorphous_review_20260915/source/LiPON_transport_long/bulk_transport_600K_R5_600ps_8680487/ramp/neighbor.out": "55dd141bfd29ebb78abc47e884958afc34d87b1ca0742c1eda1cf72b66ccbfcd",
+    "results/amorphous_review_20260915/source/LiPON_transport_long/bulk_transport_600K_R5_600ps_8680487/ramp/restart.xyz": "f1338b83b4563c59359ccfb5aa10365fc12339800fe2359b9d296e8bf14c4f2b",
+    "results/amorphous_review_20260915/source/LiPON_transport_long/bulk_transport_600K_R5_600ps_8680487/ramp/stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "results/amorphous_review_20260915/source/LiPON_transport_repeats/bulk_transport_900K_R3_8680013/settings.txt": "97d4194855d5796c90317d6f0eed9f4f396e049fe4dad67dedcd1c9eff636a38",
     "results/amorphous_review_20260915/source/LiPON_transport_repeats/bulk_transport_900K_R3_8680013/completed.txt": "3173a716496ed5d470c334512aa01258e49efce0960c00f2ea9c50e563ddcf21",
     "results/amorphous_review_20260915/source/LiPON_transport_repeats/bulk_transport_900K_R3_8680013/equil/thermo.out": "704937e90522cd16984e860fa3b7800fc645ae70bda60871eaf7f7c4a92b0724",

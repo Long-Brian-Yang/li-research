@@ -21,17 +21,21 @@ ROOT = Path(__file__).resolve().parents[2]
 BASE = ROOT / "results/amorphous_review_20260915"
 SOURCE = BASE / "source/LiPON_transport"
 REPEAT_SOURCE = BASE / "source/LiPON_transport_repeats"
+LONG_SOURCE = BASE / "source/LiPON_transport_long"
 OUT = BASE / "LiPON_transport"
 FIG = ROOT / "docs/materials/figures"
 TEMPERATURES = [600, 900, 1200, 1500]
 SELECTED_REPLICA = {600: 1, 900: 3, 1200: 1, 1500: 3}
-WINDOWS = [(10, 50), (20, 80), (20, 100), (40, 120), (50, 150), (50, 200)]
+PRIMARY_WINDOWS = {600: (20, 150), 900: (20, 100), 1200: (20, 100), 1500: (20, 100)}
+WINDOWS = [(10, 50), (20, 80), (20, 100), (20, 150), (40, 120), (50, 150), (50, 200)]
 COLORS = ["#5e3c99", "#31688e", "#35b779", "#d73027"]
 MASS = {"Li": 6.94, "P": 30.973761998, "O": 15.999, "N": 14.007}
 
 
 def selected_run_dir(temperature):
     replica = SELECTED_REPLICA[temperature]
+    if temperature == 600:
+        return LONG_SOURCE / "bulk_transport_600K_R5_600ps_8680487"
     if replica == 1:
         return SOURCE / f"bulk_transport_{temperature}K_8679521"
     return REPEAT_SOURCE / f"bulk_transport_{temperature}K_R{replica}_8680013"
@@ -119,9 +123,10 @@ def run():
         symbols = np.asarray(start.get_chemical_symbols())
         assert Counter(symbols) == Counter(Li=47, P=16, O=56, N=5)
         frames = list(iread(prod / "dump.xyz"))
-        assert len(frames) == 3000
+        expected_frames = 6000 if temperature == 600 else 3000
+        assert len(frames) == expected_frames
         times = np.asarray([frame.info["Time"] for frame in frames]) / 1000
-        np.testing.assert_allclose(times, np.arange(1, 3001) * 0.1, atol=1e-7)
+        np.testing.assert_allclose(times, np.arange(1, expected_frames + 1) * 0.1, atol=1e-7)
         assert all(np.array_equal(symbols, frame.get_chemical_symbols()) for frame in frames)
         assert all(np.allclose(start.cell, frame.cell, atol=1e-7, rtol=0) for frame in frames)
 
@@ -130,7 +135,7 @@ def run():
         masses = np.asarray([MASS[s] for s in symbols])
         com = np.average(unwrapped, axis=1, weights=masses)
         corrected = unwrapped - com[:, None, :]
-        lag = np.arange(3001) * 0.1
+        lag = np.arange(expected_frames + 1) * 0.1
         species_msd = {s: window_msd(corrected[:, symbols == s]) for s in ("Li", "P", "O", "N")}
         for step in (10, 500, 1500):
             direct = np.mean(np.sum((corrected[step:, symbols == "Li"] - corrected[:-step, symbols == "Li"]) ** 2, axis=2))
@@ -138,7 +143,8 @@ def run():
 
         fits = [fit_msd(lag, species_msd["Li"], lo, hi) for lo, hi in WINDOWS]
         # The common 20-100 ps result is the primary value; sensitivity remains auditable.
-        primary = next(value for value in fits if value["lo_ps"] == 20 and value["hi_ps"] == 100)
+        primary_window = PRIMARY_WINDOWS[temperature]
+        primary = next(value for value in fits if (value["lo_ps"], value["hi_ps"]) == primary_window)
         np.savetxt(
             OUT / f"{temperature}K_MSD.csv",
             np.column_stack([lag] + [species_msd[s] for s in ("Li", "P", "O", "N")]),
@@ -148,7 +154,7 @@ def run():
         )
 
         thermo_results = {}
-        stages = [("equil", 1000), ("production", 6000)]
+        stages = [("equil", 1000), ("production", expected_frames * 2)]
         if (run_dir / "ramp/thermo.out").exists():
             stages.insert(0, ("ramp", 200))
         for stage, expected in stages:
@@ -169,7 +175,7 @@ def run():
             }
 
         early = rdf_and_coordination(frames, symbols, range(0, 300, 10))
-        late = rdf_and_coordination(frames, symbols, range(2700, 3000, 10))
+        late = rdf_and_coordination(frames, symbols, range(expected_frames - 300, expected_frames, 10))
         np.savetxt(
             OUT / f"{temperature}K_RDF.csv",
             np.column_stack([early["r_A"]] + [values for interval in (early, late) for values in interval["rdf"].values()]),
@@ -182,7 +188,7 @@ def run():
             if file.is_file() and file.name != "dump.xyz":
                 hashes[str(file.relative_to(ROOT))] = hashlib.sha256(file.read_bytes()).hexdigest()
         results[str(temperature)] = {
-            "primary_fit_20_100_ps": primary,
+            "primary_fit": primary,
             "fit_windows": fits,
             "sigma_NE_primary_mS_cm": sigma_ne_mscm(primary["D_cm2_s"], 47, start.get_volume(), temperature),
             "cell_volume_A3": float(start.get_volume()),
@@ -196,7 +202,7 @@ def run():
         structure_data[temperature] = {"early": early, "late": late}
 
     temperatures = np.asarray(TEMPERATURES, dtype=float)
-    diffusion = np.asarray([results[str(t)]["primary_fit_20_100_ps"]["D_cm2_s"] for t in TEMPERATURES])
+    diffusion = np.asarray([results[str(t)]["primary_fit"]["D_cm2_s"] for t in TEMPERATURES])
     if np.all(diffusion > 0):
         reg = linregress(1 / temperatures, np.log(diffusion))
         arrhenius = {
@@ -208,17 +214,18 @@ def run():
     else:
         arrhenius = {"status": "invalid because at least one fitted slope is non-positive"}
     results["arrhenius"] = arrhenius
-    results["method"] = {"primary_window_ps": [20, 100], "all_windows_ps": WINDOWS,
-                         "trajectory_length_ps": 300, "selected_replica": SELECTED_REPLICA}
+    results["method"] = {"primary_windows_ps": PRIMARY_WINDOWS, "all_windows_ps": WINDOWS,
+                         "trajectory_length_ps": {600: 600, 900: 300, 1200: 300, 1500: 300},
+                         "selected_replica": {600: 5, 900: 3, 1200: 1, 1500: 3}}
     results["source_hashes_excluding_large_dumps"] = hashes
     (OUT / "analysis.json").write_text(json.dumps(results, indent=2) + "\n")
 
     with (OUT / "transport_summary.csv").open("w", newline="") as handle:
         writer = csv.writer(handle, lineterminator="\n")
-        writer.writerow(["T_K", "D_20_100_cm2_s", "R2", "alpha", "sigma_NE_mS_cm", "Li_MSD100_A2", "framework_max_MSD100_A2"])
+        writer.writerow(["T_K", "D_primary_cm2_s", "R2", "alpha", "sigma_NE_mS_cm", "Li_MSD100_A2", "framework_max_MSD100_A2"])
         for t in TEMPERATURES:
             item = results[str(t)]
-            fit = item["primary_fit_20_100_ps"]
+            fit = item["primary_fit"]
             framework = max(item["MSD_100ps_A2"][s] for s in ("P", "O", "N"))
             writer.writerow([t, fit["D_cm2_s"], fit["R2"], fit["alpha"], item["sigma_NE_primary_mS_cm"], item["MSD_100ps_A2"]["Li"], framework])
     with (OUT / "fit_sensitivity.csv").open("w", newline="") as handle:
@@ -231,8 +238,9 @@ def run():
     # Figure 23: complete Li MSD curves; no fit-window annotations.
     fig, axes = plt.subplots(2, 2, layout="constrained")
     for ax, t, color in zip(axes.flat, TEMPERATURES, COLORS):
-        ax.plot(np.arange(3001) * 0.1, msd_data[t]["Li"], color=color, label="NEP89")
-        ax.set(title=f"{t} K", xlabel="Lag time (ps)", ylabel="Li MSD (Å²)", xlim=(0, 300), ylim=(0, None))
+        lag = np.arange(len(msd_data[t]["Li"])) * 0.1
+        ax.plot(lag, msd_data[t]["Li"], color=color, label="NEP89")
+        ax.set(title=f"{t} K", xlabel="Lag time (ps)", ylabel="Li MSD (Å²)", xlim=(0, lag[-1]), ylim=(0, None))
         ax.legend(loc="upper left")
     fig.suptitle("LiPON — bulk lithium-ion mean-squared displacement")
     save_figure(fig, "23_LiPON_bulk_MSD")
