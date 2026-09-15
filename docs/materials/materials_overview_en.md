@@ -1,5 +1,7 @@
 # Materials portfolio — current assessment, 15 September 2026
 
+**Latest continuation:** [Targeted diagnostics 8675392.1–2](targeted_diagnostics_20260915.md) submitted: LSZC400 K20 ps NPT volume relaxation and LZOC380 K80 ps NHC/0.5 fs timestep control. Results pending; earlier no-new-job statements below describe the completed postprocessing stage only.
+
 [Complete latest analysis: 11 new figure families, data, literature comparisons and limits](../../results/amorphous_review_20260915/final_comparisons/report_en.md) · [Japanese](materials_overview_ja.md)
 
 Four amorphous chemical systems, five preparation routes. Legacy and reconstructed LZOC share one composition. No new MD or DFT was submitted during this postprocessing. Numerical completion is distinct from scientific agreement.
