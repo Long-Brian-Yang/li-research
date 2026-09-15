@@ -1,0 +1,528 @@
+{
+  "results": {
+    "300": {
+      "fits": [
+        {
+          "D_cm2_s": 4.9893947977379535e-08,
+          "R2": 0.9132265396974254,
+          "intercept_A2": 0.3265276074900494,
+          "alpha": 0.09791426953318366,
+          "lo_ps": 5,
+          "hi_ps": 20
+        },
+        {
+          "D_cm2_s": 1.4785581248461827e-08,
+          "R2": 0.8481884183179697,
+          "intercept_A2": 0.3604381372139763,
+          "alpha": 0.05577252162108919,
+          "lo_ps": 10,
+          "hi_ps": 40
+        },
+        {
+          "D_cm2_s": 7.14314574114794e-09,
+          "R2": 0.9345216858164347,
+          "intercept_A2": 0.37539965038188694,
+          "alpha": 0.04895191096251397,
+          "lo_ps": 20,
+          "hi_ps": 80
+        },
+        {
+          "D_cm2_s": 7.431327676526418e-09,
+          "R2": 0.887080166886316,
+          "intercept_A2": 0.37509668671634777,
+          "alpha": 0.07278745836707266,
+          "lo_ps": 40,
+          "hi_ps": 100
+        }
+      ],
+      "block_D_5to20_cm2_s": [
+        2.7704307503241464e-08,
+        5.070568695997053e-08,
+        1.4786097222972315e-08,
+        3.374294157255937e-08
+      ],
+      "block_SD_not_SE_cm2_s": 1.491565821775809e-08,
+      "sigma_NE_apparent_mS_cm": 0.9893442242890199,
+      "stages": {
+        "ramp": {
+          "mean_T_K": 299.7363370356,
+          "mean_P_GPa": -0.0004054341806952055,
+          "mean_rho_g_cm3": 2.212660111622673,
+          "rho_first_quarter": 2.213502872125053,
+          "rho_last_quarter": 2.2125049472194904,
+          "PE_last_quarter_minus_first_eV_atom": 0.00015308908984401626
+        },
+        "equil": {
+          "mean_T_K": 300.16074601693,
+          "mean_P_GPa": 0.0008192914387142364,
+          "mean_rho_g_cm3": 2.211700396492968,
+          "rho_first_quarter": 2.2123221935603326,
+          "rho_last_quarter": 2.2130122829818544,
+          "PE_last_quarter_minus_first_eV_atom": -0.00019759690937437568
+        },
+        "production": {
+          "mean_T_K": 300.32291800643503,
+          "mean_P_GPa": 0.251698698952134,
+          "mean_rho_g_cm3": 2.2270166343618705,
+          "rho_first_quarter": 2.2270166343618705,
+          "rho_last_quarter": 2.2270166343618705,
+          "PE_last_quarter_minus_first_eV_atom": 8.322517460968015e-05
+        }
+      },
+      "structure": {
+        "early": {
+          "CN_LiS_PS": [
+            5.369270833333333,
+            4.0
+          ],
+          "P_four_S_fraction": 1.0,
+          "P_isolated_P1S4_fraction": 0.796875,
+          "minimum_distance_A": 1.9065264086689018
+        },
+        "late": {
+          "CN_LiS_PS": [
+            5.332291666666667,
+            4.0
+          ],
+          "P_four_S_fraction": 1.0,
+          "P_isolated_P1S4_fraction": 0.796875,
+          "minimum_distance_A": 1.907658280996852
+        }
+      },
+      "volume_A3": 8591.313505019994,
+      "MSD80_A2": {
+        "Li": 0.41425771783910587,
+        "P": 0.08068230338178393,
+        "S": 0.13659413939259055
+      },
+      "max_fractional_MIC_step": 0.11800388595004971,
+      "max_COM_displacement_A": 0.0001358514305458901,
+      "raw_D20to80_cm2_s": 7.143213836794447e-09,
+      "independent_MSD_error_A2": 1.2212453270876722e-15
+    },
+    "500": {
+      "fits": [
+        {
+          "D_cm2_s": 8.049790144369245e-07,
+          "R2": 0.9958751912868329,
+          "intercept_A2": 0.8147492438799496,
+          "alpha": 0.39738741295577373,
+          "lo_ps": 5,
+          "hi_ps": 20
+        },
+        {
+          "D_cm2_s": 7.309215203099309e-07,
+          "R2": 0.9997638621706961,
+          "intercept_A2": 0.88760237567729,
+          "alpha": 0.5144477573018272,
+          "lo_ps": 10,
+          "hi_ps": 40
+        },
+        {
+          "D_cm2_s": 7.08996850745456e-07,
+          "R2": 0.9996778340666378,
+          "intercept_A2": 0.9306062155362382,
+          "alpha": 0.6599233782611662,
+          "lo_ps": 20,
+          "hi_ps": 80
+        },
+        {
+          "D_cm2_s": 6.821927064724478e-07,
+          "R2": 0.9992382314824608,
+          "intercept_A2": 1.0233484914094384,
+          "alpha": 0.7260932373672853,
+          "lo_ps": 40,
+          "hi_ps": 100
+        }
+      ],
+      "block_D_5to20_cm2_s": [
+        8.292035166800485e-07,
+        1.005872746836919e-06,
+        8.533259862383862e-07,
+        8.613910704466751e-07
+      ],
+      "block_SD_not_SE_cm2_s": 8.012514357980982e-08,
+      "sigma_NE_apparent_mS_cm": 56.86264529717182,
+      "stages": {
+        "ramp": {
+          "mean_T_K": 399.97353369664995,
+          "mean_P_GPa": 0.006718186779759083,
+          "mean_rho_g_cm3": 2.1893715685888395,
+          "rho_first_quarter": 2.2078000302926677,
+          "rho_last_quarter": 2.169604108480756,
+          "PE_last_quarter_minus_first_eV_atom": 0.023314564843749608
+        },
+        "equil": {
+          "mean_T_K": 498.96577490382003,
+          "mean_P_GPa": -0.0003393987978320089,
+          "mean_rho_g_cm3": 2.160944944499635,
+          "rho_first_quarter": 2.1610719172317863,
+          "rho_last_quarter": 2.160862860252513,
+          "PE_last_quarter_minus_first_eV_atom": 0.0003424595359371452
+        },
+        "production": {
+          "mean_T_K": 500.64663970101,
+          "mean_P_GPa": -0.11967724537124673,
+          "mean_rho_g_cm3": 2.149300067664213,
+          "rho_first_quarter": 2.149300067664213,
+          "rho_last_quarter": 2.149300067664213,
+          "PE_last_quarter_minus_first_eV_atom": -0.0011580689667978206
+        }
+      },
+      "structure": {
+        "early": {
+          "CN_LiS_PS": [
+            5.202604166666666,
+            4.0
+          ],
+          "P_four_S_fraction": 1.0,
+          "P_isolated_P1S4_fraction": 0.796875,
+          "minimum_distance_A": 1.8883344475376107
+        },
+        "late": {
+          "CN_LiS_PS": [
+            5.159895833333333,
+            4.0
+          ],
+          "P_four_S_fraction": 1.0,
+          "P_isolated_P1S4_fraction": 0.796875,
+          "minimum_distance_A": 1.894681963498979
+        }
+      },
+      "volume_A3": 8901.96691218198,
+      "MSD80_A2": {
+        "Li": 4.299039448565531,
+        "P": 0.26441523673696915,
+        "S": 0.4922283635023361
+      },
+      "max_fractional_MIC_step": 0.15814510595874126,
+      "max_COM_displacement_A": 0.00021805766508126766,
+      "raw_D20to80_cm2_s": 7.089948302135475e-07,
+      "independent_MSD_error_A2": 9.992007221626409e-15
+    },
+    "700": {
+      "fits": [
+        {
+          "D_cm2_s": 8.286160987362062e-06,
+          "R2": 0.9998694254747994,
+          "intercept_A2": 1.4394485433260185,
+          "alpha": 0.7861648309146141,
+          "lo_ps": 5,
+          "hi_ps": 20
+        },
+        {
+          "D_cm2_s": 8.070054736493803e-06,
+          "R2": 0.9999878264513484,
+          "intercept_A2": 1.6397395459713575,
+          "alpha": 0.8600892520990164,
+          "lo_ps": 10,
+          "hi_ps": 40
+        },
+        {
+          "D_cm2_s": 8.079431076360655e-06,
+          "R2": 0.9998888783135652,
+          "intercept_A2": 1.6606114374834,
+          "alpha": 0.9251236503171981,
+          "lo_ps": 20,
+          "hi_ps": 80
+        },
+        {
+          "D_cm2_s": 7.861311077856394e-06,
+          "R2": 0.9997287272685255,
+          "intercept_A2": 2.4217524595724953,
+          "alpha": 0.9302812401136374,
+          "lo_ps": 40,
+          "hi_ps": 100
+        }
+      ],
+      "block_D_5to20_cm2_s": [
+        7.943592553729833e-06,
+        8.848010409739311e-06,
+        9.428847964148102e-06,
+        7.397707187341015e-06
+      ],
+      "block_SD_not_SE_cm2_s": 9.077550459972641e-07,
+      "sigma_NE_apparent_mS_cm": 450.4020083942843,
+      "stages": {
+        "ramp": {
+          "mean_T_K": 500.8585558563001,
+          "mean_P_GPa": 0.0030201147501598548,
+          "mean_rho_g_cm3": 2.1618639725228825,
+          "rho_first_quarter": 2.201421180552781,
+          "rho_last_quarter": 2.1225673639717044,
+          "PE_last_quarter_minus_first_eV_atom": 0.0504365183828126
+        },
+        "equil": {
+          "mean_T_K": 698.8732795281899,
+          "mean_P_GPa": 0.0014976843221992339,
+          "mean_rho_g_cm3": 2.106487766284686,
+          "rho_first_quarter": 2.1038629705227776,
+          "rho_last_quarter": 2.1138221057625377,
+          "PE_last_quarter_minus_first_eV_atom": -0.0032230632898446743
+        },
+        "production": {
+          "mean_T_K": 700.31626170106,
+          "mean_P_GPa": -0.13411191270255382,
+          "mean_rho_g_cm3": 2.0915192811174426,
+          "rho_first_quarter": 2.0915192811174426,
+          "rho_last_quarter": 2.0915192811174426,
+          "PE_last_quarter_minus_first_eV_atom": -0.0013258877189450402
+        }
+      },
+      "structure": {
+        "early": {
+          "CN_LiS_PS": [
+            5.016145833333333,
+            4.0
+          ],
+          "P_four_S_fraction": 1.0,
+          "P_isolated_P1S4_fraction": 0.796875,
+          "minimum_distance_A": 1.8666167231004613
+        },
+        "late": {
+          "CN_LiS_PS": [
+            5.022395833333333,
+            3.996875
+          ],
+          "P_four_S_fraction": 0.996875,
+          "P_isolated_P1S4_fraction": 0.83125,
+          "minimum_distance_A": 1.8746607668875932
+        }
+      },
+      "volume_A3": 9147.894671320011,
+      "MSD80_A2": {
+        "Li": 40.170537099753226,
+        "P": 0.7258881836278904,
+        "S": 1.6914703316835782
+      },
+      "max_fractional_MIC_step": 0.20020075742223126,
+      "max_COM_displacement_A": 0.00024063065779222827,
+      "raw_D20to80_cm2_s": 8.079442512756368e-06,
+      "independent_MSD_error_A2": 7.105427357601002e-14
+    },
+    "900": {
+      "fits": [
+        {
+          "D_cm2_s": 3.704365951189418e-05,
+          "R2": 0.9999823129367387,
+          "intercept_A2": 2.168105341661743,
+          "alpha": 0.9151676862040821,
+          "lo_ps": 5,
+          "hi_ps": 20
+        },
+        {
+          "D_cm2_s": 3.683507850845183e-05,
+          "R2": 0.9999969773409652,
+          "intercept_A2": 2.3612643112442484,
+          "alpha": 0.950110752670015,
+          "lo_ps": 10,
+          "hi_ps": 40
+        },
+        {
+          "D_cm2_s": 3.6151961802728213e-05,
+          "R2": 0.9998293651543004,
+          "intercept_A2": 3.868501862149756,
+          "alpha": 0.9642932386128965,
+          "lo_ps": 20,
+          "hi_ps": 80
+        },
+        {
+          "D_cm2_s": 3.418760168601665e-05,
+          "R2": 0.9991871968798974,
+          "intercept_A2": 10.79541723611419,
+          "alpha": 0.9329007441220737,
+          "lo_ps": 40,
+          "hi_ps": 100
+        }
+      ],
+      "block_D_5to20_cm2_s": [
+        3.692200906802244e-05,
+        4.276466581081566e-05,
+        3.531914886379634e-05,
+        3.47073847399883e-05
+      ],
+      "block_SD_not_SE_cm2_s": 3.678089583019094e-06,
+      "sigma_NE_apparent_mS_cm": 1490.3928453483716,
+      "stages": {
+        "ramp": {
+          "mean_T_K": 597.5753389764,
+          "mean_P_GPa": 0.004470660275070331,
+          "mean_rho_g_cm3": 2.138368194857311,
+          "rho_first_quarter": 2.1956514473598894,
+          "rho_last_quarter": 2.0700774965705206,
+          "PE_last_quarter_minus_first_eV_atom": 0.07984208262109327
+        },
+        "equil": {
+          "mean_T_K": 900.19440134446,
+          "mean_P_GPa": -0.0012916141989806076,
+          "mean_rho_g_cm3": 2.023759785812193,
+          "rho_first_quarter": 2.0314154364857093,
+          "rho_last_quarter": 2.0155052198310335,
+          "PE_last_quarter_minus_first_eV_atom": 0.00533989927187406
+        },
+        "production": {
+          "mean_T_K": 899.8794874919274,
+          "mean_P_GPa": -0.24373681775720085,
+          "mean_rho_g_cm3": 1.9886378064023413,
+          "rho_first_quarter": 1.9886378064023413,
+          "rho_last_quarter": 1.9886378064023413,
+          "PE_last_quarter_minus_first_eV_atom": 0.0017783801773427754
+        }
+      },
+      "structure": {
+        "early": {
+          "CN_LiS_PS": [
+            4.753645833333334,
+            3.99375
+          ],
+          "P_four_S_fraction": 0.99375,
+          "P_isolated_P1S4_fraction": 0.7875,
+          "minimum_distance_A": 1.8434338462277264
+        },
+        "late": {
+          "CN_LiS_PS": [
+            4.738541666666666,
+            3.9421875
+          ],
+          "P_four_S_fraction": 0.94375,
+          "P_isolated_P1S4_fraction": 0.8046875,
+          "minimum_distance_A": 1.8733966057083715
+        }
+      },
+      "volume_A3": 9621.157771968015,
+      "MSD80_A2": {
+        "Li": 175.86283713348328,
+        "P": 5.990178371330528,
+        "S": 12.503604831594883
+      },
+      "max_fractional_MIC_step": 0.22685786861459328,
+      "max_COM_displacement_A": 0.0003210878118737,
+      "raw_D20to80_cm2_s": 3.615195163313565e-05,
+      "independent_MSD_error_A2": 4.827249711070181e-13
+    }
+  },
+  "highT_diagnostic": {
+    "range_K": [
+      500,
+      700,
+      900
+    ],
+    "Ea_apparent_eV": 0.3794580247734695,
+    "R2": 0.9992678051653651,
+    "status": "exploratory only: 500 K offset and 900 K network motion; no 300 K extrapolation"
+  },
+  "hashes": {
+    "results/amorphous_review_20260915/source/Li3PS4_transport/transport_300K_8675738/stages_completed.txt": "a9455126ce530084a2befb514fa85b3707913ed736f9d52a5eb1443e4a37f0cb",
+    "results/amorphous_review_20260915/source/Li3PS4_transport/transport_300K_8675738/submitted_job.sh": "48ee874dddb0efb9a7fbd8aa328d24862a6df679d49c2c78e8232f2893c607bb",
+    "results/amorphous_review_20260915/source/Li3PS4_transport/transport_300K_8675738/provenance.sha256": "3367424bedcabce3a0f92f52df7554e13395f86baf7d3d85413435ba1f23eb11",
+    "results/amorphous_review_20260915/source/Li3PS4_transport/transport_300K_8675738/completed.txt": "9cd77a7f1ddbe140068dae9958cfa89a233cd410cb69cbc772701d806577edac",
+    "results/amorphous_review_20260915/source/Li3PS4_transport/transport_300K_8675738/equil/dump.xyz": "07ab9f333acf759666c04df03edd2509e6c70a2ee7075bc83a522dfdeabcdc9a",
+    "results/amorphous_review_20260915/source/Li3PS4_transport/transport_300K_8675738/equil/stdout.txt": "2b9b981eaf6f5e805753195c803fc8c52412cb697ff0020395cf186063e8dd5a",
+    "results/amorphous_review_20260915/source/Li3PS4_transport/transport_300K_8675738/equil/thermo.out": "64f98ef0f4ec6af117e5b6638fec83d3d1a27d36418ee853e2039014c9cb0946",
+    "results/amorphous_review_20260915/source/Li3PS4_transport/transport_300K_8675738/equil/model.xyz": "3077b93689b261fef3acc2acf405cebb8cc61ba4c2117aefcb5f9646ea9990dd",
+    "results/amorphous_review_20260915/source/Li3PS4_transport/transport_300K_8675738/equil/run.in": "45a2d86b15e55be189d47f71fe916486c2b4a4c35675a2542c35a9860201c14b",
+    "results/amorphous_review_20260915/source/Li3PS4_transport/transport_300K_8675738/equil/neighbor.out": "203f11e01cae502771195b020a02cbeb69e7705f3b9ab938e497eb5459aba7cf",
+    "results/amorphous_review_20260915/source/Li3PS4_transport/transport_300K_8675738/equil/restart.xyz": "c976ec5443f220f85800d8448801d6ac286b1e02f671eada3f052a6f94713c7c",
+    "results/amorphous_review_20260915/source/Li3PS4_transport/transport_300K_8675738/equil/stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results/amorphous_review_20260915/source/Li3PS4_transport/transport_300K_8675738/production/dump.xyz": "a7d055f6ed155b4eab8a24bdeab1b9342fcf18978fa3ca797a8cd37a43fdc491",
+    "results/amorphous_review_20260915/source/Li3PS4_transport/transport_300K_8675738/production/stdout.txt": "17ff327885f3b9a3b0f46c594f7b8052dd72a72bed7e17b888933f229ec9c6ee",
+    "results/amorphous_review_20260915/source/Li3PS4_transport/transport_300K_8675738/production/thermo.out": "7d21577235221a8049f1f537b12b185638e17e749534ff878c7773217a8b1fc1",
+    "results/amorphous_review_20260915/source/Li3PS4_transport/transport_300K_8675738/production/model.xyz": "c976ec5443f220f85800d8448801d6ac286b1e02f671eada3f052a6f94713c7c",
+    "results/amorphous_review_20260915/source/Li3PS4_transport/transport_300K_8675738/production/run.in": "01f7bad4aef9f5cc59778a2ae97d0f643126d2e002e3c09210a7a540405b24dd",
+    "results/amorphous_review_20260915/source/Li3PS4_transport/transport_300K_8675738/production/neighbor.out": "ec09aaabd527a0beefcdadd1538b0b1f9febb801b9a63b6f4ae90354f0b5c365",
+    "results/amorphous_review_20260915/source/Li3PS4_transport/transport_300K_8675738/production/restart.xyz": "b266b138395e3a32d2e25ea9e5ab8fd8829beca40a81ca49fd46899f600d0f51",
+    "results/amorphous_review_20260915/source/Li3PS4_transport/transport_300K_8675738/production/stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results/amorphous_review_20260915/source/Li3PS4_transport/transport_300K_8675738/ramp/dump.xyz": "3eb414afb4f3e000465b452664f1b60142556d068410b19923f3db24dbc64c5a",
+    "results/amorphous_review_20260915/source/Li3PS4_transport/transport_300K_8675738/ramp/stdout.txt": "fbb01e11ad71112c90486273d30fda4401fadc727a0cbfae808d025059a1c296",
+    "results/amorphous_review_20260915/source/Li3PS4_transport/transport_300K_8675738/ramp/thermo.out": "8959eb9da22d7de5cc728159ed6fcb35219539216c48b5e04b1dd3ff23a499f7",
+    "results/amorphous_review_20260915/source/Li3PS4_transport/transport_300K_8675738/ramp/model.xyz": "a92cb37de5d8aaf4fd110edcb8aa85ebc6a1b9798b8588d2c1dbae08f25c45df",
+    "results/amorphous_review_20260915/source/Li3PS4_transport/transport_300K_8675738/ramp/run.in": "d47a35e1392630886aaf46297332210fa4f7002dc56b2397816685ea533689d9",
+    "results/amorphous_review_20260915/source/Li3PS4_transport/transport_300K_8675738/ramp/neighbor.out": "fd443b219f540499448ce97a49009c903a30488c243594fd440135a711735cd5",
+    "results/amorphous_review_20260915/source/Li3PS4_transport/transport_300K_8675738/ramp/restart.xyz": "3077b93689b261fef3acc2acf405cebb8cc61ba4c2117aefcb5f9646ea9990dd",
+    "results/amorphous_review_20260915/source/Li3PS4_transport/transport_300K_8675738/ramp/stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results/amorphous_review_20260915/source/Li3PS4_transport/transport_500K_8675738/stages_completed.txt": "a9455126ce530084a2befb514fa85b3707913ed736f9d52a5eb1443e4a37f0cb",
+    "results/amorphous_review_20260915/source/Li3PS4_transport/transport_500K_8675738/submitted_job.sh": "48ee874dddb0efb9a7fbd8aa328d24862a6df679d49c2c78e8232f2893c607bb",
+    "results/amorphous_review_20260915/source/Li3PS4_transport/transport_500K_8675738/provenance.sha256": "3367424bedcabce3a0f92f52df7554e13395f86baf7d3d85413435ba1f23eb11",
+    "results/amorphous_review_20260915/source/Li3PS4_transport/transport_500K_8675738/completed.txt": "9cd77a7f1ddbe140068dae9958cfa89a233cd410cb69cbc772701d806577edac",
+    "results/amorphous_review_20260915/source/Li3PS4_transport/transport_500K_8675738/equil/dump.xyz": "e9e7d83f2acf7e2a36a0852650499f042f87b9b9248f75821901668e7a8a4ebf",
+    "results/amorphous_review_20260915/source/Li3PS4_transport/transport_500K_8675738/equil/stdout.txt": "0fb3b67e17f1ada29a043883fded99312e7a6ceea86cb02f928be2a48321b96b",
+    "results/amorphous_review_20260915/source/Li3PS4_transport/transport_500K_8675738/equil/thermo.out": "77174db6212cd3de018f8ba4d55dcb6b716e3ee64c3169c5c2fc809bfff41d82",
+    "results/amorphous_review_20260915/source/Li3PS4_transport/transport_500K_8675738/equil/model.xyz": "a42a9ff86a5ddf9961669cfd9c64c9d5975abf98194fd0638211a909409cc978",
+    "results/amorphous_review_20260915/source/Li3PS4_transport/transport_500K_8675738/equil/run.in": "81c1699e2ee06704ea6ef00e4995967f85c1d4b001865048a4870b753c09f43c",
+    "results/amorphous_review_20260915/source/Li3PS4_transport/transport_500K_8675738/equil/neighbor.out": "7a7c00f6d71255b0d29fb9caeeb6166b044f01d2790e515b09ffa8e7f65b9c7a",
+    "results/amorphous_review_20260915/source/Li3PS4_transport/transport_500K_8675738/equil/restart.xyz": "839142fb95d278a564a1250306aec57050034d7df9d7770481b8dd685fe2936b",
+    "results/amorphous_review_20260915/source/Li3PS4_transport/transport_500K_8675738/equil/stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results/amorphous_review_20260915/source/Li3PS4_transport/transport_500K_8675738/production/dump.xyz": "8d77f799bb68c0bedc38c8d25fdea402b3d513e169972646ebe70115fb55218a",
+    "results/amorphous_review_20260915/source/Li3PS4_transport/transport_500K_8675738/production/stdout.txt": "1fea1473fe62fe27acd036868da48ccd8af0973671744ebd795aaf671f7a770e",
+    "results/amorphous_review_20260915/source/Li3PS4_transport/transport_500K_8675738/production/thermo.out": "729481c6172a173e212d6b55f8280c5f59f854fa44165cd90e958e8d61d30479",
+    "results/amorphous_review_20260915/source/Li3PS4_transport/transport_500K_8675738/production/model.xyz": "839142fb95d278a564a1250306aec57050034d7df9d7770481b8dd685fe2936b",
+    "results/amorphous_review_20260915/source/Li3PS4_transport/transport_500K_8675738/production/run.in": "5ef2df42235b7f03a79dbc0fbcc5922e26587e6a4fa0b456cc96594a48b0d592",
+    "results/amorphous_review_20260915/source/Li3PS4_transport/transport_500K_8675738/production/neighbor.out": "357bc566dd27d219d8c3b3ee4f3c7b67cb3b403a0a9c9959d2b84e650138b733",
+    "results/amorphous_review_20260915/source/Li3PS4_transport/transport_500K_8675738/production/restart.xyz": "71907358b6be6edd026861313b81c8d4bb8eb4d8feb5b0ea3c327e9370365dcb",
+    "results/amorphous_review_20260915/source/Li3PS4_transport/transport_500K_8675738/production/stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results/amorphous_review_20260915/source/Li3PS4_transport/transport_500K_8675738/ramp/dump.xyz": "148dd8cf777d37ac8e9e5fd9cdb0f27bcef7a8c00821c911eeb50a80384cf179",
+    "results/amorphous_review_20260915/source/Li3PS4_transport/transport_500K_8675738/ramp/stdout.txt": "a8854d46638f386fc93ff84250106d416c5fd61c7ec97f8fc174ce88c23c3dd3",
+    "results/amorphous_review_20260915/source/Li3PS4_transport/transport_500K_8675738/ramp/thermo.out": "ae0f8865e2c4cf7899dd4ea298fcb3f16ecb60cb48757227123793c83b98356e",
+    "results/amorphous_review_20260915/source/Li3PS4_transport/transport_500K_8675738/ramp/model.xyz": "a92cb37de5d8aaf4fd110edcb8aa85ebc6a1b9798b8588d2c1dbae08f25c45df",
+    "results/amorphous_review_20260915/source/Li3PS4_transport/transport_500K_8675738/ramp/run.in": "affe5639baa4a83d141536fc594e4d305a2f9cc1b56eb84d87cd24f50956cd51",
+    "results/amorphous_review_20260915/source/Li3PS4_transport/transport_500K_8675738/ramp/neighbor.out": "a695114d30adc9bab442e23741bcfa2dbf9f3522e6dea92b28e7c8bf7be54602",
+    "results/amorphous_review_20260915/source/Li3PS4_transport/transport_500K_8675738/ramp/restart.xyz": "a42a9ff86a5ddf9961669cfd9c64c9d5975abf98194fd0638211a909409cc978",
+    "results/amorphous_review_20260915/source/Li3PS4_transport/transport_500K_8675738/ramp/stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results/amorphous_review_20260915/source/Li3PS4_transport/transport_700K_8675738/stages_completed.txt": "a9455126ce530084a2befb514fa85b3707913ed736f9d52a5eb1443e4a37f0cb",
+    "results/amorphous_review_20260915/source/Li3PS4_transport/transport_700K_8675738/submitted_job.sh": "48ee874dddb0efb9a7fbd8aa328d24862a6df679d49c2c78e8232f2893c607bb",
+    "results/amorphous_review_20260915/source/Li3PS4_transport/transport_700K_8675738/provenance.sha256": "3367424bedcabce3a0f92f52df7554e13395f86baf7d3d85413435ba1f23eb11",
+    "results/amorphous_review_20260915/source/Li3PS4_transport/transport_700K_8675738/completed.txt": "9cd77a7f1ddbe140068dae9958cfa89a233cd410cb69cbc772701d806577edac",
+    "results/amorphous_review_20260915/source/Li3PS4_transport/transport_700K_8675738/equil/dump.xyz": "2193a3e1aeb617b73a9ba5f8c77a933b8b45b26b4703f52eab5cf0f2f420a11d",
+    "results/amorphous_review_20260915/source/Li3PS4_transport/transport_700K_8675738/equil/stdout.txt": "aa6e6558dd3c27d2dab6db28af298b2d3047c81f00036e9ca6d244804614abe1",
+    "results/amorphous_review_20260915/source/Li3PS4_transport/transport_700K_8675738/equil/thermo.out": "7b273b716aa2afa80dc528150d41eab8b2f09a62f5e2ae84db7153a1ebfa8d00",
+    "results/amorphous_review_20260915/source/Li3PS4_transport/transport_700K_8675738/equil/model.xyz": "4e1f53f75762ef5518299c78cad2c916cb8142e25aafab26cb7122d51beee254",
+    "results/amorphous_review_20260915/source/Li3PS4_transport/transport_700K_8675738/equil/run.in": "7136633425a1cedc2e8f6d7cb3e8200796d8fff9a25a16a8c0d98503d2d716a5",
+    "results/amorphous_review_20260915/source/Li3PS4_transport/transport_700K_8675738/equil/neighbor.out": "414c8e2429f0464032367485711b333539fa04363e5341dc1c51ba5112261f53",
+    "results/amorphous_review_20260915/source/Li3PS4_transport/transport_700K_8675738/equil/restart.xyz": "d5caeba7ca9b1d9351a4767567effeb5d03a642fc4c8e83ca7ff83efca8436b9",
+    "results/amorphous_review_20260915/source/Li3PS4_transport/transport_700K_8675738/equil/stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results/amorphous_review_20260915/source/Li3PS4_transport/transport_700K_8675738/production/dump.xyz": "c0d6ae4c340d0ecbf5486b8d8de5cc7a1fbd06ba5886d30e5f8f2656ced16ecb",
+    "results/amorphous_review_20260915/source/Li3PS4_transport/transport_700K_8675738/production/stdout.txt": "57aeffb5b44bf69f2d4c60fb6035602fd0c3356b1644ec5075cf7fbd3650a7e6",
+    "results/amorphous_review_20260915/source/Li3PS4_transport/transport_700K_8675738/production/thermo.out": "d68c806c3e801f903bce5762631725a70f96f06b9c33d281d3f81c1607c8b5b7",
+    "results/amorphous_review_20260915/source/Li3PS4_transport/transport_700K_8675738/production/model.xyz": "d5caeba7ca9b1d9351a4767567effeb5d03a642fc4c8e83ca7ff83efca8436b9",
+    "results/amorphous_review_20260915/source/Li3PS4_transport/transport_700K_8675738/production/run.in": "ca282fb912d1bd0e90ddccf7841a77bc82c5bdc0825a0560a89413f93d077381",
+    "results/amorphous_review_20260915/source/Li3PS4_transport/transport_700K_8675738/production/neighbor.out": "ae5dcec74bc038e3a9134ab2b6d2922619643b8a60eb1c8e1ac25e1a363051ce",
+    "results/amorphous_review_20260915/source/Li3PS4_transport/transport_700K_8675738/production/restart.xyz": "87df3bf67336f25ed05adaeaeadb174b009521449f14ef14d9482dc17f0fc8bb",
+    "results/amorphous_review_20260915/source/Li3PS4_transport/transport_700K_8675738/production/stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results/amorphous_review_20260915/source/Li3PS4_transport/transport_700K_8675738/ramp/dump.xyz": "0e6177ae7694f46ba35bdfceab7c4d8bdfdbf4cddef23290ffce3f8bf4aec4fc",
+    "results/amorphous_review_20260915/source/Li3PS4_transport/transport_700K_8675738/ramp/stdout.txt": "048bcf9fae00be2b2e57ebef397778ab1c268324d1dd16ee7151b1cd765256eb",
+    "results/amorphous_review_20260915/source/Li3PS4_transport/transport_700K_8675738/ramp/thermo.out": "111264c5efb960b3a006009f59488e2a3049b5b1a62cdcb5cd7ff77d03d578a3",
+    "results/amorphous_review_20260915/source/Li3PS4_transport/transport_700K_8675738/ramp/model.xyz": "a92cb37de5d8aaf4fd110edcb8aa85ebc6a1b9798b8588d2c1dbae08f25c45df",
+    "results/amorphous_review_20260915/source/Li3PS4_transport/transport_700K_8675738/ramp/run.in": "25e70499f2d598d1ec32ec7264a3cc8c856185ab3bf793e55d3e0620fcf7e2d0",
+    "results/amorphous_review_20260915/source/Li3PS4_transport/transport_700K_8675738/ramp/neighbor.out": "0e7daf88463bfec2c7352a0fa76d4ef1aebce4831bade7f6297455725adbbdf2",
+    "results/amorphous_review_20260915/source/Li3PS4_transport/transport_700K_8675738/ramp/restart.xyz": "4e1f53f75762ef5518299c78cad2c916cb8142e25aafab26cb7122d51beee254",
+    "results/amorphous_review_20260915/source/Li3PS4_transport/transport_700K_8675738/ramp/stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results/amorphous_review_20260915/source/Li3PS4_transport/transport_900K_8675738/stages_completed.txt": "a9455126ce530084a2befb514fa85b3707913ed736f9d52a5eb1443e4a37f0cb",
+    "results/amorphous_review_20260915/source/Li3PS4_transport/transport_900K_8675738/submitted_job.sh": "48ee874dddb0efb9a7fbd8aa328d24862a6df679d49c2c78e8232f2893c607bb",
+    "results/amorphous_review_20260915/source/Li3PS4_transport/transport_900K_8675738/provenance.sha256": "3367424bedcabce3a0f92f52df7554e13395f86baf7d3d85413435ba1f23eb11",
+    "results/amorphous_review_20260915/source/Li3PS4_transport/transport_900K_8675738/completed.txt": "9cd77a7f1ddbe140068dae9958cfa89a233cd410cb69cbc772701d806577edac",
+    "results/amorphous_review_20260915/source/Li3PS4_transport/transport_900K_8675738/equil/dump.xyz": "e4c5db63e2b6d347d57bb4cbeff48041a4ce6fcd9390a9ede2f0e106a2d6040f",
+    "results/amorphous_review_20260915/source/Li3PS4_transport/transport_900K_8675738/equil/stdout.txt": "629d34e13d9f43a3f985b1778b7668d06a6d8e3aaca39e8c30e77b48b0228b2c",
+    "results/amorphous_review_20260915/source/Li3PS4_transport/transport_900K_8675738/equil/thermo.out": "fdd1c7910d7df9bc66a858bf1cebbd5bde25b475800be1110f3a0efdc7ca4f0d",
+    "results/amorphous_review_20260915/source/Li3PS4_transport/transport_900K_8675738/equil/model.xyz": "b7c04d83d087147d59345fcf8c6445728e7c193cdef3c2a4df414685c46b4d11",
+    "results/amorphous_review_20260915/source/Li3PS4_transport/transport_900K_8675738/equil/run.in": "6e8e160386fd4f7299e424bd1290c452fe9fc6d50b7cd424111b7bcc529ce010",
+    "results/amorphous_review_20260915/source/Li3PS4_transport/transport_900K_8675738/equil/neighbor.out": "ea1e94d7969f5adcc6635fcbbb0867b2f3642ab0244b3514f213c5e8a43f93a8",
+    "results/amorphous_review_20260915/source/Li3PS4_transport/transport_900K_8675738/equil/restart.xyz": "3462edf6b778831734e6bb9eaa927360a1a698142c1b2613b93bfd573ebe4494",
+    "results/amorphous_review_20260915/source/Li3PS4_transport/transport_900K_8675738/equil/stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results/amorphous_review_20260915/source/Li3PS4_transport/transport_900K_8675738/production/dump.xyz": "b8c68d816420a942b5f6be79f65f5e9e1a08a20de7cee133ea0121a61d5fa42e",
+    "results/amorphous_review_20260915/source/Li3PS4_transport/transport_900K_8675738/production/stdout.txt": "cdf6ab510a45314546f370c981f984e51a8a8dbe824733b1cf3b113c2745145b",
+    "results/amorphous_review_20260915/source/Li3PS4_transport/transport_900K_8675738/production/thermo.out": "6290ea22744f20ec26e705119bb759c86f4bfd20ca4e67ff7e88948c0bde1168",
+    "results/amorphous_review_20260915/source/Li3PS4_transport/transport_900K_8675738/production/model.xyz": "3462edf6b778831734e6bb9eaa927360a1a698142c1b2613b93bfd573ebe4494",
+    "results/amorphous_review_20260915/source/Li3PS4_transport/transport_900K_8675738/production/run.in": "e58918323d59f6d0bfaad7c535fdfad631b8c1db52c74e79a7eae0448591d185",
+    "results/amorphous_review_20260915/source/Li3PS4_transport/transport_900K_8675738/production/neighbor.out": "21508d2c5bf3ed72f53195476ac7e2874c3ac7a322d10124d38d7fdd75e457a0",
+    "results/amorphous_review_20260915/source/Li3PS4_transport/transport_900K_8675738/production/restart.xyz": "8079de1492b950bc8cfac8c3b6c6793aba4d84c9afa2d370316bdf1808abbf3e",
+    "results/amorphous_review_20260915/source/Li3PS4_transport/transport_900K_8675738/production/stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results/amorphous_review_20260915/source/Li3PS4_transport/transport_900K_8675738/ramp/dump.xyz": "80094b7d7ad280b24cb7b6e88601535be09c62780d4e2a7a34e913c9b5581f82",
+    "results/amorphous_review_20260915/source/Li3PS4_transport/transport_900K_8675738/ramp/stdout.txt": "87401e439f94949ffd023659319b215c02b2eb18e30eab5a1434c395e362b5f3",
+    "results/amorphous_review_20260915/source/Li3PS4_transport/transport_900K_8675738/ramp/thermo.out": "b68e5b2ace20cdaa02634d46d24741fbeead78faf637b7b39979685379054c56",
+    "results/amorphous_review_20260915/source/Li3PS4_transport/transport_900K_8675738/ramp/model.xyz": "a92cb37de5d8aaf4fd110edcb8aa85ebc6a1b9798b8588d2c1dbae08f25c45df",
+    "results/amorphous_review_20260915/source/Li3PS4_transport/transport_900K_8675738/ramp/run.in": "7693b0d050179e401a4f1d3ba3efeb6298787387fce467cf8d73e25219c7d483",
+    "results/amorphous_review_20260915/source/Li3PS4_transport/transport_900K_8675738/ramp/neighbor.out": "d846105c186527497f5b6779b7f69d6db8782e2931696b00dd48f80503bb59fd",
+    "results/amorphous_review_20260915/source/Li3PS4_transport/transport_900K_8675738/ramp/restart.xyz": "b7c04d83d087147d59345fcf8c6445728e7c193cdef3c2a4df414685c46b4d11",
+    "results/amorphous_review_20260915/source/Li3PS4_transport/transport_900K_8675738/ramp/stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

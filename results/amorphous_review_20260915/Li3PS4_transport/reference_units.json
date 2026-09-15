@@ -1,0 +1,14 @@
+{
+  "reference": "Chen et al. 2025, Nature Communications 16, 1057",
+  "doi": "10.1038/s41467-025-56322-x",
+  "source_values": "../final_comparisons/Chen2025_Fig._3a.csv",
+  "original_column": "ionic conductivity_glass (S/cm)",
+  "interpretation": "Li self-diffusion coefficient D in cm^2/s, based on the official Fig.3a axis and caption; original source file is unchanged",
+  "official_axis": "ln[D (cm^2 s^-1)]",
+  "official_figure": "https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41467-025-56322-x/MediaObjects/41467_2025_56322_Fig3_HTML.png",
+  "checked": "2026-09-15: official full-size figure visually inspected. ln(source D) is consistent with plotted glass points, e.g. about -20.55 at 300 K and -11.61 at 900 K",
+  "reference_type": "author DeePMD simulations, not direct experimental self-diffusion data",
+  "comparison_limit": "NEP controls differ in potential, preparation, volume and sampling; ratios of apparent D are diagnostic differences, not isolated force-field errors",
+  "published_glass_Ea_annotation_eV": 0.47,
+  "Ea_limit": "published fit range is not matched to the exploratory NEP 500/700/900 K fit; no validated 300 K extrapolation"
+}

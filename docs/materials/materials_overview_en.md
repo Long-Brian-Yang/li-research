@@ -2,13 +2,13 @@
 
 Updated 15 September 2026. [日本語](materials_overview_ja.md)
 
-### Active continuation: Li₃PS₄ transport control
+### Completed analysis: Li₃PS₄ transport control
 
-Array **8675738.1–4** has been submitted (300/500/700/900 K, maximum two concurrent tasks). This closes the missing dedicated-transport step only when completed and analysed; it is not a completed reproduction. Every branch starts independently from the same512-atom preparation endpoint, SHA256 `a92cb37de5d8aaf4fd110edcb8aa85ebc6a1b9798b8588d2c1dbae08f25c45df`. NEP89/GPUMD,0.5 fs;10 ps300→target ramp (300 K branch is a hold),50 ps NPT1 bar,200 ps NVT; MTTK periods100/1000 fs. Output0.05 ps thermo/0.1 ps trajectory. Numerical and broad volume guardrails run after each stage; they do not certify structural agreement. Each task has a30-minute scheduler limit. [Submitted script](../../hpc/tsubame_26icp/production/lips_transport_control.sh).
+Array **8675738.1–4** completed (300/500/700/900 K), and all four 200 ps production trajectories have been analysed. This is an analysed NEP control, **not a successful quantitative reproduction**: apparent D is 3.97–7.58 times the Chen glass reference, with a non-diffusive plateau at 300 K. See the [transport results](#lps-transport). Every branch starts independently from the same512-atom preparation endpoint, SHA256 `a92cb37de5d8aaf4fd110edcb8aa85ebc6a1b9798b8588d2c1dbae08f25c45df`. NEP89/GPUMD,0.5 fs;10 ps300→target ramp (300 K branch is a hold),50 ps NPT1 bar,200 ps NVT; MTTK periods100/1000 fs. Output0.05 ps thermo/0.1 ps trajectory. Each task had a30-minute scheduler limit. [Submitted script](../../hpc/tsubame_26icp/production/lips_transport_control.sh).
 
 Rechecked [Chen2025 Methods and transport discussion](https://www.nature.com/articles/s41467-025-56322-x): the paper uses0.5 fs structural MD and discusses300–900 K transport, with non-Arrhenius behaviour at low temperature. The selected four temperatures are a subset of the published source grid; the10/50/200 ps schedule, fixed-cell production and coupling periods are project choices, not a verified exact paper protocol. NEP and our512-atom preparation remain different from the author's DeePMD model. No room-temperature Ea extrapolation will be forced across a non-diffusive regime.
 
-**Reference-unit check remains open:** the Fig.3a source workbook labels columns as conductivity(S/cm), whereas the article describes Fig.3a as diffusion coefficients. Preserve the published values/labels; do not silently reinterpret their units or compute a quantitative error until the plotted axis/source discrepancy is resolved. Planned outputs are Li and framework MSD, window/block fits, RDF/network stability, and then conditional D/σ with limitations. Other material limitations remain below; this submission does not resolve LSZC/LiPON chemistry.
+**Reference-unit check resolved from the plotted axis:** the [official Fig.3a](https://www.nature.com/articles/s41467-025-56322-x/figures/3) explicitly plots ln[D(cm²/s)], consistent with the text. The workbook's conductivity(S/cm) header conflicts with the figure. Original source values/headers remain untouched; the derived comparison explicitly interprets that column as D based on the published axis. These are the author's DeePMD glass results, not direct experimental D or our AIMD. Other material limitations remain below.
 
 This is the single maintained English record; the Japanese companion contains the same evidence. Settings, figures, tables, interpretation and remaining work are collected here. Earlier short reports are historical snapshots, not separate current-status pages. Original data and figure paths are unchanged. This consolidation submits no new MD and does not change fitted results.
 
@@ -33,7 +33,7 @@ Four chemical systems, five preparation routes. New and legacy LZOC share a comp
 |---|---|---|---|
 |New LZOC|192; Li42Zr24Cl114O12|Preparation,340/360/380 K200 ps;80 ps NHC controls;380 K0.5 fs control; structure/transport diagnostics|No converged Ea or room-temperature conductivity|
 |LSZC|272; Li32Zr32Cl128S16O64|Independent cluster packing and relaxation,400 Khold,20 ps NPT; RDF/CN/EXAFS/cutoff comparisons|Sulfate retained; density and Zr environment disagree with reference|
-|Li₃PS₄|512; Li192P64S256|Preparation,300 Khold; RDF/angle/source-data and graph-connectivity comparisons|Local agreement does not establish network or transport agreement|
+|Li₃PS₄|512; Li192P64S256|Preparation and four-temperature200 ps production analysed; MSD,D,NE diagnostic,blocks,RDF/network,reference comparison|Apparent D exceeds reference;300 K plateau and900 K framework evolution limit interpretation|
 |LiPON|124; Li47P16O56N5|Preparation,250 Kpressure release; N–N contact tracing and coordination|Persistent short contacts; not a validated transport structure|
 |Legacy LZOC|192; same nominal LZOC|MACE/NEP600 K comparison; four-temperature timing|Efficiency/structural-sensitivity control, not an accuracy ranking|
 
@@ -282,6 +282,62 @@ Grey is computed from the author's deposited 1088-atom Data 2 geometry, **not an
 <a id="lps"></a>
 ## Li₃PS₄
 
+<a id="lps-transport"></a>
+### Four-temperature transport: completed control, quantitative disagreement
+
+All outputs are backed up locally and on TSUBAME. Each production has 2,000 frames at0.1 ps plus its input frame and4,000 thermo records at0.05 ps; 512 atoms and species ordering are unchanged. The production cell is fixed. Whole-system mass-weighted centre-of-mass translation is removed after minimum-image unwrapping; Li-only COM subtraction is not used. Source hashes and numerical checks are in [analysis.json](../../results/amorphous_review_20260915/Li3PS4_transport/analysis.json). This is one prepared glass per temperature, not independent structural replicas.
+
+![Li3PS4 four-temperature Li MSD](../../results/amorphous_review_20260915/Li3PS4_transport/Li_MSD.png)
+
+The curves are time-origin-averaged Li MSD, not manually smoothed traces. The graph shows lags0–100 ps from the complete200 ps trajectories; the CSV retains all lags. **Panels use different y ranges** to expose the300 K plateau. Dashed lines are identical20–80 ps linear-fit windows with a free intercept. At300 K, MSD(80 ps)=0.414 Å² and the log–log slope is0.049: this does not establish long-time diffusion. At500 K, a positive offset contributes to α<1, so that exponent alone is not proof of anomalous diffusion.700/900 K are closer to a linear regime over these windows.
+
+|T (K)|Apparent D,20–80 ps (cm²/s)|R²|Log–log slope α|Conditional σ_NE (mS/cm)|
+|---:|---:|---:|---:|---:|
+|300|7.143e−9|0.93452|0.049|0.989|
+|500|7.090e−7|0.99968|0.660|56.9|
+|700|8.079e−6|0.99989|0.925|450|
+|900|3.615e−5|0.99983|0.964|1490|
+
+The conductivity column is a **conditional Nernst–Einstein conversion of the fitted slope**, not a measured or validated conductivity; especially300 K must not be reported as a converged room-temperature prediction. It neglects inter-ion correlations. With τ in ps and MSD in Å²:
+
+$$
+D_{\mathrm{app}}=\frac{1}{6}\frac{d\mathrm{MSD}}{d\tau}\,10^{-4}\quad[\mathrm{cm^2/s}],\qquad
+\sigma_{\mathrm{NE}}=\frac{(N_{\mathrm{Li}}/V) e^2 D}{k_B T}.
+$$
+
+For the second expression use SI volume and D, then multiply S/m by10 to obtain mS/cm. Here N_Li=192, V is each fixed production cell volume, e is the elementary charge, k_B the Boltzmann constant and T the nominal target. [Transport table](../../results/amorphous_review_20260915/Li3PS4_transport/transport_summary.csv).
+
+![Li3PS4 fit-window and block sensitivity](../../results/amorphous_review_20260915/Li3PS4_transport/fit_sensitivity.png)
+
+Left: common5–20,10–40,20–80 and40–100 ps windows; right: four disjoint50 ps blocks, each fitted at5–20 ps lag. Logarithmic y axes expose the low-temperature sensitivity.300 K D spans7.14e−9–4.99e−8 cm²/s across windows. Block standard deviations for300/500/700/900 K are1.49e−8/8.01e−8/9.08e−7/3.68e−6 cm²/s. These are time-block spreads, **not confidence intervals or error bars for the20–80 ps estimates**, because the fit windows differ and only one glass is sampled. [All fits](../../results/amorphous_review_20260915/Li3PS4_transport/fit_windows.csv).
+
+![Li3PS4 reference comparison](../../results/amorphous_review_20260915/Li3PS4_transport/D_reference_comparison.png)
+
+Markers use the original numerical glass series from Chen Fig.3a, interpreted as D after checking the official axis. Connecting lines are guides, not an all-temperature Arrhenius regression. NEP and the reference share an increasing mobility trend but **do not agree quantitatively**. Differences in potential, preparation, density, sampling duration and diffusion regime prevent attribution to the potential alone. [Comparison CSV](../../results/amorphous_review_20260915/Li3PS4_transport/reference_comparison.csv).
+
+|T (K)|Chen glass D (cm²/s)|NEP apparent D / Chen D|
+|---:|---:|---:|
+|300|1.186e−9|6.02|
+|500|9.350e−8|7.58|
+|700|1.524e−6|5.30|
+|900|9.106e−6|3.97|
+
+A diagnostic fit of lnD against1/T using **500/700/900 K only** gives apparent E_a=0.3795 eV,R²=0.99927. The published glass annotation is0.47 eV; fitting ranges and structural conditions are not matched, so this is not a controlled accuracy test. Do not extrapolate this diagnostic fit to300 K or adopt it as a validated glass barrier.
+
+![Li3PS4 framework motion](../../results/amorphous_review_20260915/Li3PS4_transport/framework_MSD.png)
+
+P and S motion is shown separately from Li so that a small-looking framework trace is not hidden by the Li scale. At80 ps, P/S MSD rises from0.0807/0.137 Å² at300 K to5.99/12.50 Å² at900 K. The high-temperature network is not an immobile host; mobility cannot be interpreted only as Li hopping in an unchanged framework. Motion and RDF alone do not prove melting.
+
+![Li3PS4 early and late RDF](../../results/amorphous_review_20260915/Li3PS4_transport/RDF_early_late.png)
+
+Early and late samples are0.1–45.1 and150.1–195.1 ps, respectively, with10 frames each; bin width0.05 Å, no smoothing. Same-pair panels share y scales. The P–S first shell persists, but a similar RDF peak does not guarantee unchanged connectivity. With P–S<2.6 Å and P–P<2.6 Å, late four-S-coordinated P fractions are100/100/99.69/94.38% for300/500/700/900 K; isolated geometric P1S4 fractions are79.69/79.69/83.13/80.47%. At900 K the four-coordinate fraction falls from99.38% early to94.38% late. These geometric components are not assigned chemical charge states. [Frame-wise components](../../results/amorphous_review_20260915/Li3PS4_transport/geometric_components.csv).
+
+![Li3PS4 thermodynamic control](../../results/amorphous_review_20260915/Li3PS4_transport/thermodynamics.png)
+
+Five-ps block means improve readability; full-resolution thermo CSVs are retained. Mean production temperatures are300.32/500.65/700.32/899.88 K. Fixed-cell densities are2.2270/2.1493/2.0915/1.9886 g/cm³. **Constant NVT density is imposed, not evidence of density convergence.** Production mean pressures are+0.252/−0.120/−0.134/−0.244 GPa: the final instantaneous NPT cell is not necessarily the mean-pressure-equilibrated NVT volume. At900 K, NPT first-to-last-quarter mean density changes2.0314→2.0155 g/cm³; residual relaxation and subsequent network evolution remain limitations.
+
+**Conclusion:** the requested four-temperature postprocessing and paper comparison are complete within this single-glass control. Local structural resemblance survives, but transport is faster than the reference and the low/high-temperature limitations remain. No additional calculation is claimed here. Reproduction is not established; a matched-volume/preparation control or longer low-temperature sampling would be a separate follow-up, not a reason to alter these results.
+
 ### Li₃PS₄: published source-data comparison
 
 The existing NEP preparation includes a 1500 K, 100 ps melt and cooling at 2.5 K/ps to 300 K under NPT, as in [Chen et al., 2025](https://doi.org/10.1038/s41467-025-56322-x). NEP replaces DeePMD, and the replicated training-frame start, coupling choices and final 20 ps hold differ. This is not the cancelled Zhou 2024 route. The final hold has only 20 frames at 1 ps spacing; the present structural average uses the final 10 frames.
@@ -412,7 +468,7 @@ All four-temperature timing records are included. Structural/transport panels co
 |Atom counts, finite outputs, temperature, block energies, distances and RDF/CN|Completed for the analysed stages|Continue these basic checks for any new calculation; successful execution is not equilibration|
 |New LZOC D/Ea|Window/block sensitivity established, not converged|A declared longer-time/independent-sampling test if this route is continued; do not select a preferred Ea|
 |LSZC reference agreement|NPT and cutoff diagnostics completed; mismatch persists|Revisit preparation/model applicability before transport production; more of the same NPT is not a demonstrated remedy|
-|Li₃PS₄ transport and species fractions|Dedicated transport array8675738 submitted; geometric network counted|Finish and validate the trajectories; resolve reference units and species definitions before quantitative comparison|
+|Li₃PS₄ transport and species fractions|Array8675738 completed and analysed;reference D units checked;6 figure groups andtables added|Quantitative reproduction not achieved;300 K plateau,900 K framework evolution and unmatched preparation remain;chemical species fractions are not inferred from graph labels|
 |LiPON chemistry|Contact origin and persistence documented|Retain limitation without pretending MD extension resolves chemical validity; no DFT available/requested|
 |Legacy700–900 K detailed structure/transport|Timing and basic thermodynamics complete; RDF/MSD and later NPT-extension analysis pending|Continue archived-data analysis, not current evidence for model accuracy|
 |Independent-glass and size uncertainty|Not established|Do not treat time frames/temperature branches as independent glasses|
