@@ -6,6 +6,8 @@ This is the complete English Material Review. Read the methods, figures, numeric
 
 ## How this review is maintained
 
+The narrative omits scheduler IDs, velocity seed numbers and filesystem paths. These remain in source provenance. Plot legends identify materials, temperatures and models; fitting and selection details are stated once in the relevant methods paragraph, not repeated in each caption.
+
 **Plotting convention:** For subsequent figures and revisions in this project, use the corresponding GPUMDkit plotting script as the primary reference, including MSD, RDF, Arrhenius and thermodynamic plots where supported. Inspect the actual script before adapting it; preserve readable report-wide fonts, units and model identities. Distinguish plotting conventions from calculation definitions: do not silently change averaging, normalization, fitting windows or source trajectories to match an example. Document any such methodological change. When GPUMDkit has no matching plot, state the adaptation rather than claiming it is a GPUMDkit output. This convention applies to future plotting; it does not mean all existing figures have already been redrawn.
 
 All subsequent results are inserted, revised or replaced directly in the relevant material section of this review, with the Japanese version updated in parallel. Each section follows the paper's question and reference results, our corresponding calculation, numerical comparison, structural interpretation and conclusion. Figures, numerical tables, necessary equations and symbol definitions, settings, limitations and next steps belong in the body—not behind links to separate reports. Source files and DOI links are optional provenance only. Superseded results are clearly identified rather than silently mixed with current results; pending analyses remain labelled pending. Separate progress reports are not created unless explicitly requested.
@@ -72,7 +74,7 @@ The 900 K four-pair view follows [GPUMDkit's RDF plotting method](https://github
 
 ### Completed 50 ps NPT extensions
 
-The existing NEP 700/800/900 K extensions (8665996/8665995/8665994) have now been analysed separately from production. Each contains 1000 finite thermo records at 0.05 ps. No additional run was submitted.
+The existing NEP 700/800/900 K extensions have now been analysed separately from production. Each contains 1000 finite thermo records at 0.05 ps. No additional run was submitted.
 
 |T (K)|Start → final density (g/cm³)|First → last 10 ps mean density|Endpoint volume change|Mean P (GPa)|PE last−first 10 ps (meV/atom)|
 |---:|---|---|---:|---:|---:|
@@ -138,13 +140,12 @@ At 80 ps, that fraction is **5.43/8.28/23.66%** at 340/360/380 K, respectively; 
 <a id="lszc"></a>
 ## 3. LSZC: extending the comparison to experiment
 
-**New production submitted (8677465.1–2):** 320 K proceeds from the completed 50 ps NVT restart to 300 ps NVT production. At 350 K, the additional NPT still showed a 2.06% density decrease between its two 25 ps halves; use its final-25-ps mean volume (8720.237 Å³), preserve fractional positions and velocities, equilibrate 50 ps NVT, then run 300 ps NVT production. Both retain 272 atoms, NEP89, 0.5 fs and MTTK `tperiod 200`. These are project settings, not a claim of exact paper reproduction. The 350 K branch is exploratory fixed-volume transport: the NPT density drift is unresolved and the extra NVT stage does not prove equilibrium density. Runs stop on numerical/output failure; physical convergence remains to be checked. Submission is confirmed; results are pending. Previous results remain separate.
+**Latest endpoint results:** 320 and 350 K each completed 300 ps NVT production. Mean temperatures were 320.16 and 349.82 K; potential-energy changes between the first and last 50 ps were −2.33 and −4.45 meV/atom. Transport analysis of these new runs is pending. At 350 K the preceding NPT density still decreased by 2.06%, so fixed-volume production is exploratory and does not establish equilibrium density. These results are separate from the earlier four-temperature analysis below.
 
-**Next stage submitted: 8677026.1–2.** Task 1: 320 K, 50 ps NVT at the arithmetic mean volume over the preceding NPT's last 50 ps (8138.512 Å³). The endpoint cell and coordinates were scaled isotropically by 1.009478; species, fractional positions and velocities were preserved. Task 2: 350 K, 50 ps NPT at 1 bar from its preceding restart, without cell adjustment. Both retain 272 atoms, NEP89, 0.5 fs and 100 fs thermostat coupling (NPT barostat 1000 fs). Both stop for review; 300 ps production has not been submitted.
 
 ### Endpoint NPT follow-up: completed, not yet production-ready as a pair
 
-Jobs 8676678.1–2 completed 150 ps NPT after the 10 ps ramp. Comparing the last two consecutive 25 ps means:
+The initial 150 ps NPT stage showed different late-stage density trends at the two temperatures:
 
 |T (K)|Density: 100–125 → 125–150 ps (g/cm³)|Relative change|PE change (meV/atom)|
 |---:|---|---:|---:|
@@ -153,13 +154,12 @@ Jobs 8676678.1–2 completed 150 ps NPT after the 10 ps ramp. Comparing the last
 
 320 K shows relatively small late changes in these observables, but this is not a complete structural validation. At 350 K the late density drop prevents treating a single late average as a settled equilibrium volume. The temperature branches therefore do not yet support an equivalent paired NVT production setup. No 300 ps LSZC production was submitted in this analysis update; do not force the density to its experimental value. Existing four-temperature transport below is retained as the previous dataset, not the result of this NPT follow-up.
 
-**Submission history (now completed), 15 September 2026:** array **8676678.1–2**, respectively 320/350 K. Both branches start from the same documented 272-atom, 400 K mother structure: 10 ps NPT ramp, then **150 ps NPT at 1 bar**, timestep 0.5 fs, MTTK coupling periods 100/1000 fs, one GPU per task. The jobs stop for late-block density/energy review. Mean-volume NVT equilibration and **300 ps NVT production per temperature** are planned only after that review; they are not yet submitted. Existing results below remain unchanged.
 
 The next question is whether the selected potential captures transport in a polyanion-containing oxychloride. Tang's experimental conductivity and local coordination, together with the published tuned-MACE trajectories, provide complementary benchmarks. They are distinct references, not interchangeable measurements. The current NEP series does not reproduce their temperature trend; the structure analysis below examines possible contributors without assigning a unique cause.
 
 ### Four-temperature transport and the paper comparison
 
-**Completed analysis:** all four tasks 8676216.1–4 completed 300 ps production. Downloaded trajectories were checked for 272 atoms, unchanged element order, a fixed cell, 3000 frames at 0.1 ps, and finite thermo records. FFT MSD was checked against direct displacement averages. The primary 20–80 ps fit was fixed before inspecting the results, matching the existing 400 K analysis; no temperature or replica was replaced.
+**Earlier four-temperature analysis:** the original 320–350 K series completed 300 ps per temperature. Trajectory consistency and MSD calculations were checked. All four temperatures are retained, including nonmonotonic apparent transport.
 
 ![LSZC four temperatures versus published MSD](../../results/plots/amorphous/12_LSZC_4T_MSD.png)
 
@@ -199,7 +199,7 @@ Basic checks support completed execution, not full equilibration: mean T=319.73/
 
 ![LSZC transport and relaxation](../../results/plots/amorphous/02_LSZC_transport.png)
 
-**a:** Li MSD and20–80 ps fit; **b:** framework MSD, including substantial Cl motion; **c:** raw PE per atom and5 ps means; **d:** four consecutive50 ps blocks, each fitted at5–20 ps lag. Block estimates and the full-trajectory fit use different windows and are not interchangeable error bars.200 ps production8676040.3 is complete; apparent transport coexists with residual relaxation.
+**a:** Li MSD and20–80 ps fit; **b:** framework MSD, including substantial Cl motion; **c:** raw PE per atom and5 ps means; **d:** four consecutive50 ps blocks, each fitted at5–20 ps lag. Block estimates and the full-trajectory fit use different windows and are not interchangeable error bars.200 ps production is complete; apparent transport coexists with residual relaxation.
 
 |Quantity|400 K result|
 |---|---:|
@@ -329,8 +329,8 @@ Four chemical systems, five preparation routes. New and legacy LZOC have the sam
 |Route|Model size|Completed / submitted|Interpretation|
 |---|---|---|---|
 |New LZOC|192: Li42Zr24Cl114O12|340/360/380 K, 300 ps, NHC 2 fs analysed; nested 80/150/300 ps compared|Direct AIMD table comparison available; long-time convergence not established|
-|LSZC|272: Li32Zr32Cl128S16O64|400 K pilot and 320/330/340/350 K, 300 ps array8676216 analysed|Sulfate retained, but Zr environment/density and the temperature trend differ from reference|
-|Li₃PS₄|512: Li192P64S256|300/500/700/900 K200 ps production analysed, array8675738|Transport differs from reference;300 K plateau and900 K host motion remain|
+|LSZC|272: Li32Zr32Cl128S16O64|400 K pilot and 320/330/340/350 K, 300 ps series analysed|Sulfate retained, but Zr environment/density and the temperature trend differ from reference|
+|Li₃PS₄|512: Li192P64S256|300/500/700/900 K200 ps production analysed|Transport differs from reference;300 K plateau and900 K host motion remain|
 |LiPON|124: Li47P16O56N5|Preparation,pressure release and paired0.5/0.25 fs checks analysed|Short N–N contacts persist; no long transport prediction|
 |Legacy LZOC|192, same nominal LZOC|600 K detailed comparison,700–900 K MSD/RDF andfour-temperature timing analysed|Efficiency and structural sensitivity, not an accuracy ranking|
 
