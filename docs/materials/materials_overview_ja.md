@@ -1,5 +1,19 @@
 # 材料研究の全体整理と今後の計画
 
+旧候補3：[600 K MACE／NEP構造・輸送比較と四温度計時図](../../results/LZOC/legacy_comparison_20260915/report_ja.md)を追加した。後続NEP高温軌跡の構造・輸送解析は本パッケージに含まれない。
+
+9月15日解析完了：[LZOC・LSZCの10種類の図と結果表](../../results/amorphous_review_20260915/analysis_complete/report_ja.md)。既存計算の後処理で、新規MD・DFTはない。輸送特性の収束は未確定。本更新はローカル保存で、Git pushは未実施。
+
+## 最新の実行状況（2026-09-15）
+
+LSZCのアニールと新LZOC三温度の本計算は終了し基本検証を実施した：[最新実行記録](workflow_execution_20260915.md)。以下の古い未完了・未投入記載は履歴であり最新状態ではない。新規DFTは実施しない。本追記はまだGit pushしていない。
+
+LiPON追加：N76/108を固定して追跡し、短距離接触とともにP近傍数が各1から各2へ変化し、冷却・低温診断でも持続した。[時系列](../../results/amorphous_review_20260915/LiPON/contact_origin.md)。ユーザーの指定によりDFTは実施せず、過去のDFT計画は取り下げる。この候補は本計算へ移行しない。
+
+最新：LSZC新配置272原子の300K20psNVT診断8674265を投入（0.5fs）。DFTは予定しない。投入確認済み、終了未確認。[設定](../../materials/candidates/LSZC/packed_272/README.md)。
+
+LSZC更新：272原子の独立ランダムクラスター配置と固定セルNEP位置緩和が完了（1380ステップ、最大力0.04933eV/Å、設定目標0.05）。全16SのO四配位を保持。応力・有限温度・非晶質性の検証は未完了、新規MD未投入。[構造とログ](../../materials/candidates/LSZC/packed_272/README.md)。以下の配置未完了の記録は過去の状態。
+
 追加構造診断：LSZC著者Data1から非Liの有限な幾何学的連結成分5個を抽出した。各2個と32Liで272原子の組成を保持できるが、配置・緩和は未完了。[団簇記録](../../materials/candidates/LSZC/cluster_library_272/README.md)。LiPONの短N–N接触は2000K保持の2.2–2.3ps間に76/108番目の原子間で生じ、その後持続した。診断用全原子スナップショットを保存したがDFT未実施。[追跡結果](../../results/amorphous_review_20260915/LiPON/contact_origin.md)。
 
 ## 承認済みの追加作業（2026-09-15 10:00 JST）

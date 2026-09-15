@@ -1,5 +1,19 @@
 # 材料研究总览与下一步规划
 
+旧候选3已补齐600 K MACE／NEP结构与输运对比，以及四温度计时图：[日语报告](../../results/LZOC/legacy_comparison_20260915/report_ja.md)／[英语报告](../../results/LZOC/legacy_comparison_20260915/report_en.md)。后续NEP高温轨迹不在本次图文分析范围内。
+
+9月15日已完成现有LZOC／LSZC的后处理：10组图与结果表已嵌入[日语报告](../../results/amorphous_review_20260915/analysis_complete/report_ja.md)和[英语报告](../../results/amorphous_review_20260915/analysis_complete/report_en.md)。未新增MD／DFT；扩散收敛尚未确立。本更新已保存本地，尚未Git push。
+
+## 最新执行状态（2026-09-15）
+
+最新已执行工作的状态另见[执行记录](workflow_execution_20260915.md)：LSZC退火和新LZOC三温度生产均已完成并进行基础验证。**以下较早的“未完成／未提交”记录作为历史快照，不代表最新状态。** 不新增DFT；本次统筹文档修改尚未Git push。
+
+LiPON补充：固定N76/108配位追踪显示短接触伴随P近邻由各1个变为各2个，淬火与两段低温诊断中保持，非已确认的短暂碰撞。[详细时序](../../results/amorphous_review_20260915/LiPON/contact_origin.md)。按用户要求不进行DFT；本候选暂不进入production，历史DFT计划不再执行。
+
+最新：LSZC新装箱272原子已提交300 K、20 ps NVT诊断8674265，0.5 fs；不再安排DFT。状态为已提交，尚未确认完成。[参数记录](../../materials/candidates/LSZC/packed_272/README.md)。
+
+LSZC最新：272原子团簇已独立随机装箱并完成固定晶胞NEP位置松弛（1380步，fmax0.04933 eV/Å，目标0.05）；16个S仍均四配位。尚未完成应力／有限温度／非晶验证，未提交新MD。[结构与日志](../../materials/candidates/LSZC/packed_272/README.md)。此更新取代下文“装箱未完成”的历史状态。
+
 最新结构诊断：LSZC已从作者Data1完整提取5个非Li几何团簇，每个两份加32Li可保持272原子计量；尚未装箱和松弛。[团簇记录](../../materials/candidates/LSZC/cluster_library_272/README.md)。LiPON短N–N来源已定位为2000 K保温2.2–2.3 ps间，第76/108原子，后续持续；已保存DFT诊断候选快照，但未做DFT。[接触追踪](../../results/amorphous_review_20260915/LiPON/contact_origin.md)。
 
 ## 已授权的后续推进（2026-09-15 10:00 JST）

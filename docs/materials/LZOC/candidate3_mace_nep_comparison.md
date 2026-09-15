@@ -1,5 +1,7 @@
 # 旧 LZOC 候选 3：MACE／NEP89 时间与选择依据
 
+已补齐四组综合图、数值源数据及逐图说明：[日本語](../../../results/LZOC/legacy_comparison_20260915/report_ja.md)／[English](../../../results/LZOC/legacy_comparison_20260915/report_en.md)。计时覆盖四温度，结构与输运对照为600 K；不宣称四方精度验证完成。
+
 核查日期：2026-09-15。对象为192原子 Li₄₂Zr₂₄O₁₂Cl₁₁₄，旧候选3，不是Hussain2024重建路线。
 
 ## 1. 结论

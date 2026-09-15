@@ -1,5 +1,19 @@
 # Materials portfolio and next-step plan
 
+Legacy candidate 3: [completed 600 K MACE/NEP comparison and four-temperature timing figures](../../results/LZOC/legacy_comparison_20260915/report_en.md). Later high-temperature NEP structural/transport analysis is outside this package.
+
+Completed postprocessing (15 September): [LZOC/LSZC report with 10 figure families and result tables](../../results/amorphous_review_20260915/analysis_complete/report_en.md). Existing runs only; no new MD/DFT. Transport convergence is not established. This local update has not been Git pushed.
+
+## Latest execution status (2026-09-15)
+
+LSZC annealing and the three-temperature reconstructed-LZOC production runs have now completed with basic checks: [latest execution record](workflow_execution_20260915.md). Older incomplete/unsubmitted statements below are historical snapshots, not the latest status. No new DFT is planned. This portfolio update has not yet been pushed to GitHub.
+
+LiPON update: fixed-pair N76/108 tracking shows persistent short contact with P coordination changing from one neighbour each to two through quench and both low-temperature diagnostics. [Timeline](../../results/amorphous_review_20260915/LiPON/contact_origin.md). NoDFT will be performed per user instruction; earlierDFT plans are superseded. This candidate is not cleared for production.
+
+Latest: LSZC newly packed272atom job8674265 submitted for300K20psNVT at0.5fs; noDFT planned. Submission confirmed, completion not confirmed. [Settings](../../materials/candidates/LSZC/packed_272/README.md).
+
+LSZC update: independent272atom random cluster packing and fixed-cell NEP position relaxation finished (1380steps; fmax0.04933eV/Å against0.05target). All16S retain four O neighbours. Stress, finite-temperature and glass validation remain pending; no new cluster MD submitted. [Structures and logs](../../materials/candidates/LSZC/packed_272/README.md). This supersedes earlier packing-pending entries below.
+
 Latest structural diagnosis: five finite non-Li geometric components were extracted from LSZC author Data1. Two copies of each plus32Li preserve the272atom composition; packing and relaxation remain outstanding. [Cluster record](../../materials/candidates/LSZC/cluster_library_272/README.md). LiPON's short N–N contact between row indices76/108 first appears between2.2–2.3ps of the2000K hold and persists thereafter. Full diagnostic snapshots are saved; no DFT has been run. [Contact tracing](../../results/amorphous_review_20260915/LiPON/contact_origin.md).
 
 ## Authorized continuation (2026-09-15, 10:00 JST)
