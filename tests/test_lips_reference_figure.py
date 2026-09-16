@@ -7,7 +7,7 @@ import numpy as np
 
 ROOT = Path(__file__).resolve().parents[1]
 SCRIPT = ROOT / "scripts" / "structures" / "plot_lips_r1_report.py"
-REFERENCE_STEM = "06_LPS_transport_framework"
+REFERENCE_STEM = "06_Li3PS4_diffusion_framework_MSD"
 
 
 def load_module():
@@ -86,7 +86,7 @@ def test_structure_figure_uses_non_overlapping_legends_inside_axes():
 
 def test_structure_figure_has_cache_safe_report_name():
     script = SCRIPT.read_text()
-    assert 'finish(fig, "07_LPS_structural_comparison")' in script
+    assert 'finish(fig, "07_Li3PS4_local_structure")' in script
     for language in ("ja", "en"):
         review = (ROOT / f"docs/materials/materials_overview_{language}.md").read_text()
-        assert "figures/07_LPS_structural_comparison.png" in review
+        assert "figures/07_Li3PS4_local_structure.png" in review

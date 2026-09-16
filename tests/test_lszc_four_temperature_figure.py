@@ -3,7 +3,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 SCRIPT = ROOT / "scripts/structures/analyze_lszc_matched_repeats.py"
-FIGURE_STEM = "18_LSZC_four_temperature_transport"
+FIGURE_STEM = "18_LSZC_transport_comparison"
 
 
 def test_lszc_primary_figure_uses_cache_safe_four_temperature_name():

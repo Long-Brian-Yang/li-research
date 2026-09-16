@@ -155,7 +155,7 @@ def main():
     for ext in ("png", "pdf", "svg"):
         fig.savefig(
             ROOT
-            / f"docs/materials/figures/18_LSZC_four_temperature_transport.{ext}",
+            / f"docs/materials/figures/18_LSZC_transport_comparison.{ext}",
             dpi=220,
         )
     plt.close(fig)

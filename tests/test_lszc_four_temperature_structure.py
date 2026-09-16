@@ -52,7 +52,7 @@ def test_rdf_figure_contains_four_temperature_series_in_every_panel():
 
 def test_report_references_four_temperature_rdf_asset():
     script = SCRIPT.read_text()
-    assert "19_LSZC_four_temperature_RDF" in script
+    assert "19_LSZC_partial_RDF" in script
     for language in ("ja", "en"):
         review = (ROOT / f"docs/materials/materials_overview_{language}.md").read_text()
-        assert "figures/19_LSZC_four_temperature_RDF.png" in review
+        assert "figures/19_LSZC_partial_RDF.png" in review

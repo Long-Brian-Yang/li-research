@@ -102,7 +102,7 @@ def plot():
  np.savetxt(OUT/'summary.csv',[[r['T'],r['fit']['D_cm2_s'],r['sigma_mS_cm'],r['fit']['R2'],r['fit']['alpha'],r['density'],*r['CN']] for r in records],delimiter=',',header='T_K,D_app_cm2_s,sigma_conditional_mS_cm,R2,alpha,density_g_cm3,CN_SO,CN_ZrO,CN_ZrCl,CN_LiO',comments='')
  rdf_by_temperature={T:np.loadtxt(OUT/f'{T}K_RDF.csv',delimiter=',',skiprows=1) for T in TEMPERATURES}
  fig=build_rdf_figure(rdf_by_temperature)
- save(fig,'19_LSZC_four_temperature_RDF')
+ save(fig,'19_LSZC_partial_RDF')
  fig,axes=plt.subplots(1,2,layout='constrained')
  for T in (320,350):
   c=colors[T]
@@ -114,7 +114,7 @@ def plot():
  axes[0].set(title='Li–O coordination and mobility',xlabel='Li–O coordination number',ylabel='10 ps displacement (Å²)')
  axes[1].set(title='Sampling by coordination',xlabel='Li–O coordination number',ylabel='Li–origin observations',yscale='log')
  for ax in axes:ax.legend()
- save(fig,'20_LSZC_endpoint_mobility')
+ save(fig,'20_LSZC_coordination_mobility')
 
 if __name__=='__main__':
  run();plot()

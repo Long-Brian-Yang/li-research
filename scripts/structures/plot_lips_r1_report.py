@@ -189,7 +189,7 @@ def main():
             ylim=(0, None),
         )
         axis.legend()
-    finish(fig, "05_LPS_MSD")
+    finish(fig, "05_Li3PS4_lithium_MSD")
 
     model_d = []
     framework = []
@@ -219,19 +219,19 @@ def main():
     )
 
     fig = build_reference_figure(TEMPERATURES, model_d, reference_d, framework)
-    finish(fig, "06_LPS_transport_framework")
+    finish(fig, "06_Li3PS4_diffusion_framework_MSD")
 
     r1_rdf = load_csv(DATA / "300K_late_structure.csv")
     chen_rdf = load_reference_csv(REFERENCE / "Chen2025_Fig._1e.csv", (0, 2))
     r1_angle = load_csv(DATA / "300K_late_angles.csv")
     chen_angle = load_reference_csv(REFERENCE / "Chen2025_Fig._1f.csv", (0, 2))
     fig = build_structure_figure(r1_rdf, chen_rdf, r1_angle, chen_angle)
-    finish(fig, "07_LPS_structural_comparison")
+    finish(fig, "07_Li3PS4_local_structure")
 
     plot_summary = {
         "figure_conclusion": "R1 retains local PS4 geometry, while its finite-time apparent Li diffusion remains above the Chen 2025 glass reference across 300–900 K.",
         "archetype": "quantitative grid",
-        "exports": ["05_LPS_MSD", "06_LPS_transport_framework", "07_LPS_structural_comparison"],
+        "exports": ["05_Li3PS4_lithium_MSD", "06_Li3PS4_diffusion_framework_MSD", "07_Li3PS4_local_structure"],
         "reference_comparison": comparison.tolist(),
         "sources_sha256": {
             str(path.relative_to(ROOT)): hashlib.sha256(path.read_bytes()).hexdigest()

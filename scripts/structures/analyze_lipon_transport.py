@@ -285,7 +285,7 @@ def run():
         ax.set(title=f"{t} K", xlabel="Lag time (ps)", ylabel="Li MSD (Å²)", xlim=(0, lag[-1]), ylim=(0, None))
         ax.legend(loc="upper left")
     fig.suptitle("LiPON — bulk lithium-ion mean-squared displacement")
-    save_figure(fig, "23_LiPON_bulk_MSD")
+    save_figure(fig, "23_LiPON_lithium_MSD")
 
     # Figure 24: keep diffusivity and conductivity in separate panels/units.
     fig, axes = plt.subplots(1, 2, layout="constrained")
@@ -312,7 +312,7 @@ def run():
         axes[1].text(bar.get_x() + bar.get_width() / 2, value * 1.18,
                      f"{value:.3g}", ha="center", va="bottom")
     fig.suptitle("LiPON — transport comparison")
-    save_figure(fig, "24_LiPON_Arrhenius")
+    save_figure(fig, "24_LiPON_transport_comparison")
 
     # Figure 25: first-shell network evolution; early/late line style is fixed.
     fig, axes = plt.subplots(2, 2, layout="constrained")
@@ -324,7 +324,7 @@ def run():
         ax.set(title=pair.replace("-", "–"), xlabel="r (Å)", ylabel="g(r)", xlim=(0, 4.5), ylim=(0, None))
     axes[0, 0].legend(loc="upper right")
     fig.suptitle("LiPON — partial radial distribution functions")
-    save_figure(fig, "25_LiPON_transport_RDF")
+    save_figure(fig, "25_LiPON_temperature_RDF")
 
     print(json.dumps({"D": dict(zip(TEMPERATURES, diffusion.tolist())), "arrhenius": arrhenius}, indent=2))
 

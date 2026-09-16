@@ -3,63 +3,63 @@
   "figure_groups": 21,
   "assets": [
     {
-      "file": "18_LSZC_four_temperature_transport.png",
+      "file": "18_LSZC_transport_comparison.png",
       "sha256": "aeb6c373ec940366aa9f69cbee880098c1cbd2711416c6cde406f3a1bd2f44f5",
       "source": "scripts/structures/analyze_lszc_matched_repeats.py"
     },
     {
-      "file": "18_LSZC_four_temperature_transport.pdf",
+      "file": "18_LSZC_transport_comparison.pdf",
       "sha256": "624f2107a037fe59839d078aa3ab1259e70b1639561e6950bcc1edccdb023468",
       "source": "scripts/structures/analyze_lszc_matched_repeats.py"
     },
     {
-      "file": "18_LSZC_four_temperature_transport.svg",
+      "file": "18_LSZC_transport_comparison.svg",
       "sha256": "8a34744d8637bdd9cacf07b79c9b784fc7da48905814eb9b792c540a0995b8da",
       "source": "scripts/structures/analyze_lszc_matched_repeats.py"
     },
     {
-      "file": "09_legacy_cost_density.png",
-      "sha256": "0d11d92c03123a224c1969173a7c4db712c32cc9c0aa3707de3e99e894beb39b",
+      "file": "09_MACE_NEP_runtime_density.png",
+      "sha256": "aa3052a008a4c7471d6f57b6ef45e63205748e7c711b41083fecca1742dbadbc",
       "historical_source": "results/plots/amorphous/09_legacy_cost_density.png"
     },
     {
-      "file": "09_legacy_cost_density.pdf",
-      "sha256": "b968bbbb4d4ae5da8dd08c7a4329f0d8f859855f204e6c5493836d1dc5ed6e66",
+      "file": "09_MACE_NEP_runtime_density.pdf",
+      "sha256": "c3f0b7ea95b172ed2185719a86cd08bb3af0db2ed011948217d76bb3074667d2",
       "historical_source": "results/plots/amorphous/09_legacy_cost_density.pdf"
     },
     {
-      "file": "09_legacy_cost_density.svg",
-      "sha256": "38830a570ac9fea6ba661c890bb8e1fb86df4c9a53b107c76b6e008074bbacc8",
+      "file": "09_MACE_NEP_runtime_density.svg",
+      "sha256": "5bd7a87cb9ed0058eefa132bc6cbe8119afc34f956b69ebcd6eecdfdf40c8e1f",
       "historical_source": "results/plots/amorphous/09_legacy_cost_density.svg"
     },
     {
-      "file": "10_legacy_motion.png",
-      "sha256": "30b813c8a7886a7c396f13371796b525dad15a82bfd12d893eed6309fc54c4b0",
+      "file": "10_MACE_NEP_species_MSD.png",
+      "sha256": "759786ff33f501932705b68d220ff3d0dbb7bfef07cb7226440ed7a9c67752fb",
       "historical_source": "results/plots/amorphous/10_legacy_motion.png"
     },
     {
-      "file": "10_legacy_motion.pdf",
-      "sha256": "564ee26242d855a816e4fe7882de7af5d5e849eb455f5c1dd99eb9f7c05ff6c2",
+      "file": "10_MACE_NEP_species_MSD.pdf",
+      "sha256": "8a13bcc88631758bd5226d70c7df7e15f5c9f26e0a8c404fc91619cc3d931995",
       "historical_source": "results/plots/amorphous/10_legacy_motion.pdf"
     },
     {
-      "file": "10_legacy_motion.svg",
-      "sha256": "ec465a60353aa662c0e01d0c4e4cdff81e74dd8ce7eb8eb2f504969bee955880",
+      "file": "10_MACE_NEP_species_MSD.svg",
+      "sha256": "214df11db4cbf2210241531e610cd37ab8e9c0709819d975bb47080bc5d8d0bc",
       "historical_source": "results/plots/amorphous/10_legacy_motion.svg"
     },
     {
-      "file": "11_legacy_structure.png",
-      "sha256": "41cc63b482c3ca0f82b6c41b8f86eab96a2fe67dc5ba50831ed1aeef0ce26b83",
+      "file": "11_MACE_NEP_partial_RDF.png",
+      "sha256": "fb92b9c92abca10215bc1fb713352eb0789d901a9584eca88ae33af6abe1a322",
       "historical_source": "results/plots/amorphous/11_legacy_structure.png"
     },
     {
-      "file": "11_legacy_structure.pdf",
-      "sha256": "3f3423db4724908baa3b949dd58d383338721ca4019df1f5ce5a5d9a76767871",
+      "file": "11_MACE_NEP_partial_RDF.pdf",
+      "sha256": "7a2f2515e6ea4d57a71e2c6d848fa0a2f4bb5cf4e72e123481d6feed2d3cf6db",
       "historical_source": "results/plots/amorphous/11_legacy_structure.pdf"
     },
     {
-      "file": "11_legacy_structure.svg",
-      "sha256": "c98d55754a7742686cd2d3732a774ee48c979e640053c0ef9ccea571d602007f",
+      "file": "11_MACE_NEP_partial_RDF.svg",
+      "sha256": "fe78d2a455a2a3fd4ef018ca5ca5abc12fcfdb280ff91e2b956c6ab17e0deea7",
       "historical_source": "results/plots/amorphous/11_legacy_structure.svg"
     },
     {
@@ -153,167 +153,167 @@
       "historical_source": "results/plots/amorphous/18_LSZC_endpoint_transport.svg"
     },
     {
-      "file": "19_LSZC_four_temperature_RDF.png",
+      "file": "19_LSZC_partial_RDF.png",
       "sha256": "6814e3605b389dc3bc9e055f646033956d1ad545dddc0f10abc467b4fde4c37a",
       "source": "scripts/structures/analyze_lszc_endpoints.py"
     },
     {
-      "file": "19_LSZC_four_temperature_RDF.pdf",
+      "file": "19_LSZC_partial_RDF.pdf",
       "sha256": "8b67b8f0961200b8cfd535aac5813dd00a0c576682de0d9940bb182195344405",
       "source": "scripts/structures/analyze_lszc_endpoints.py"
     },
     {
-      "file": "19_LSZC_four_temperature_RDF.svg",
+      "file": "19_LSZC_partial_RDF.svg",
       "sha256": "6843ac884769c8be75b6a6e5d26fb17a54c7943724a077d3560e392d723250d3",
       "source": "scripts/structures/analyze_lszc_endpoints.py"
     },
     {
-      "file": "20_LSZC_endpoint_mobility.png",
+      "file": "20_LSZC_coordination_mobility.png",
       "sha256": "1efee8947a8fea6f3026062789d0fe1f821cbb3f5862dc4e8fd9306c8ebea9e3",
       "source": "scripts/structures/analyze_lszc_endpoints.py"
     },
     {
-      "file": "20_LSZC_endpoint_mobility.pdf",
+      "file": "20_LSZC_coordination_mobility.pdf",
       "sha256": "922be0fdb56018d4c7130d911fa071a926565d4096d31a968d06b3347dfc5828",
       "source": "scripts/structures/analyze_lszc_endpoints.py"
     },
     {
-      "file": "20_LSZC_endpoint_mobility.svg",
+      "file": "20_LSZC_coordination_mobility.svg",
       "sha256": "70af1e29baa2b61d2c6b582ca5c55b99f9ad05cacc05a8760b9075747adc5d78",
       "source": "scripts/structures/analyze_lszc_endpoints.py"
     },
     {
-      "file": "05_LPS_MSD.png",
+      "file": "05_Li3PS4_lithium_MSD.png",
       "sha256": "5269d7201c1f4d26f3e407b78d8df172d1f0b97dba3d2a1c759c4d4e7eb07af1",
       "source": "scripts/structures/plot_lips_r1_report.py"
     },
     {
-      "file": "05_LPS_MSD.pdf",
+      "file": "05_Li3PS4_lithium_MSD.pdf",
       "sha256": "d0e009abafb44a8fd82b10c6aa039288b7b3015a2ac6d83e986cb2ae20a1c39f",
       "source": "scripts/structures/plot_lips_r1_report.py"
     },
     {
-      "file": "05_LPS_MSD.svg",
+      "file": "05_Li3PS4_lithium_MSD.svg",
       "sha256": "4d951134138f048f3dc3b98c8651217165fdbee2c7eba8a902529edb33ef756f",
       "source": "scripts/structures/plot_lips_r1_report.py"
     },
     {
-      "file": "06_LPS_transport_framework.png",
+      "file": "06_Li3PS4_diffusion_framework_MSD.png",
       "sha256": "6df1438919c13cab1d893296c83d90276aedb04e84410db128a13305a417d57e",
       "source": "scripts/structures/plot_lips_r1_report.py"
     },
     {
-      "file": "06_LPS_transport_framework.pdf",
+      "file": "06_Li3PS4_diffusion_framework_MSD.pdf",
       "sha256": "76a727a7854d8bac1e57bb75bc65250f4a3f368ec04ffafd65ece35bd9a50318",
       "source": "scripts/structures/plot_lips_r1_report.py"
     },
     {
-      "file": "06_LPS_transport_framework.svg",
+      "file": "06_Li3PS4_diffusion_framework_MSD.svg",
       "sha256": "ba3db20698a1ef6a5c5469484f9a38a122feff6748461838df97c07f1e68bf21",
       "source": "scripts/structures/plot_lips_r1_report.py"
     },
     {
-      "file": "07_LPS_structural_comparison.png",
+      "file": "07_Li3PS4_local_structure.png",
       "sha256": "37991f9bd20b336b08448ad3c559ba2f2043bca052133a7b828ebfa8b80dfa13",
       "source": "scripts/structures/plot_lips_r1_report.py"
     },
     {
-      "file": "07_LPS_structural_comparison.pdf",
+      "file": "07_Li3PS4_local_structure.pdf",
       "sha256": "170c77958f4acd6fad3be19f9df940a69824d158ccf7f067d66238e99f235c7e",
       "source": "scripts/structures/plot_lips_r1_report.py"
     },
     {
-      "file": "07_LPS_structural_comparison.svg",
+      "file": "07_Li3PS4_local_structure.svg",
       "sha256": "c4e0b45d2f27994a153914cc069e7772bfd3b327396109fb7396a0ea53d201f3",
       "source": "scripts/structures/plot_lips_r1_report.py"
     },
     {
-      "file": "08_LiPON_contacts.png",
-      "sha256": "a328f720e93e73412698102c06ab827e66e61a7e73c2d3bf15eaeb00ec57d0ce",
+      "file": "08_LiPON_nitrogen_distance.png",
+      "sha256": "e931cb45d6600317ea7dffd12d40f9f5b025eaf23eaa8c66d5e1df6acb29ff99",
       "historical_source": "results/plots/amorphous/08_LiPON_contacts.png"
     },
     {
-      "file": "08_LiPON_contacts.pdf",
-      "sha256": "c1505831f0f4ea98412f8061e4d1ec91bb69207fbc0fbfb03ce66803e6f73377",
+      "file": "08_LiPON_nitrogen_distance.pdf",
+      "sha256": "58a9321fa7cace6f7ab2be04cce2992e50f6abd9d3de9c60c30482e3be560f00",
       "historical_source": "results/plots/amorphous/08_LiPON_contacts.pdf"
     },
     {
-      "file": "08_LiPON_contacts.svg",
-      "sha256": "798e984f79950c29f820301c822034d2258b09cfe527ed683b177058256144d4",
+      "file": "08_LiPON_nitrogen_distance.svg",
+      "sha256": "3eefda9ca23b9128edd56de92386dce053f4fed96577b7455176fb5ee935e9e4",
       "historical_source": "results/plots/amorphous/08_LiPON_contacts.svg"
     },
     {
-      "file": "21_LiPON_preparation_structure.png",
+      "file": "21_LiPON_glass_structure.png",
       "sha256": "d2f0c076fb7b6302eed3c0bc1e55ecdb71b5f29fc3b90d03077800c9555a369f",
       "source": "scripts/structures/analyze_lipon_repeats.py"
     },
     {
-      "file": "21_LiPON_preparation_structure.pdf",
+      "file": "21_LiPON_glass_structure.pdf",
       "sha256": "6c1bf6e6dee10e1b28b4654d1963a2d06fea6130ca2b417c63994474e033ec6c",
       "source": "scripts/structures/analyze_lipon_repeats.py"
     },
     {
-      "file": "21_LiPON_preparation_structure.svg",
+      "file": "21_LiPON_glass_structure.svg",
       "sha256": "6be10f237da9427179dd427affec9c9977ee78e4ae4252a9ddb19d68ba322004",
       "source": "scripts/structures/analyze_lipon_repeats.py"
     },
     {
-      "file": "22_LiPON_partial_RDF.png",
+      "file": "22_LiPON_preparation_RDF.png",
       "sha256": "6545a95c610708aabcedf51874a06dba6cfc00884b46b69df988b694dc47af92",
       "source": "scripts/structures/analyze_lipon_repeats.py"
     },
     {
-      "file": "22_LiPON_partial_RDF.pdf",
+      "file": "22_LiPON_preparation_RDF.pdf",
       "sha256": "7f83e370e051821b98f3512f60c1a4f01c14751b271f3d805949c47c24b46e2f",
       "source": "scripts/structures/analyze_lipon_repeats.py"
     },
     {
-      "file": "22_LiPON_partial_RDF.svg",
+      "file": "22_LiPON_preparation_RDF.svg",
       "sha256": "1b156f91eac31966c27758ebad15df53707c635b573e4f548d793c8d3e6e3f89",
       "source": "scripts/structures/analyze_lipon_repeats.py"
     },
     {
-      "file": "23_LiPON_bulk_MSD.png",
+      "file": "23_LiPON_lithium_MSD.png",
       "sha256": "20f95b4db3f7d7105024d6b546fcf3651fb9734f4892ff49775b3db0b8cc159c",
       "source": "scripts/structures/analyze_lipon_transport.py"
     },
     {
-      "file": "23_LiPON_bulk_MSD.pdf",
+      "file": "23_LiPON_lithium_MSD.pdf",
       "sha256": "db82191d20bef97703dfbfd429328b195afd3f54319b69a24146a1fafbc99c03",
       "source": "scripts/structures/analyze_lipon_transport.py"
     },
     {
-      "file": "23_LiPON_bulk_MSD.svg",
+      "file": "23_LiPON_lithium_MSD.svg",
       "sha256": "d12b48b89a880331140b03f2aa2cb7d04b5bb229572b4c86636a615cdcc13715",
       "source": "scripts/structures/analyze_lipon_transport.py"
     },
     {
-      "file": "24_LiPON_Arrhenius.png",
+      "file": "24_LiPON_transport_comparison.png",
       "sha256": "4ccd1cbe79ad4691c670d0430f7b97744610b4d56ca4a095c656afb56263ffc3",
       "source": "scripts/structures/analyze_lipon_transport.py"
     },
     {
-      "file": "24_LiPON_Arrhenius.pdf",
+      "file": "24_LiPON_transport_comparison.pdf",
       "sha256": "ad65e7368f6cd8c3091961029072403b9017eecebd869070daccc0beafe45753",
       "source": "scripts/structures/analyze_lipon_transport.py"
     },
     {
-      "file": "24_LiPON_Arrhenius.svg",
+      "file": "24_LiPON_transport_comparison.svg",
       "sha256": "dd1d564f4777715080af80f691989a3b840d03071524b1d65cd3680b99e9c64c",
       "source": "scripts/structures/analyze_lipon_transport.py"
     },
     {
-      "file": "25_LiPON_transport_RDF.png",
+      "file": "25_LiPON_temperature_RDF.png",
       "sha256": "160327340f83154931d3127aac009ad571b96e444cd70b0468240b716d81812e",
       "source": "scripts/structures/analyze_lipon_transport.py"
     },
     {
-      "file": "25_LiPON_transport_RDF.pdf",
+      "file": "25_LiPON_temperature_RDF.pdf",
       "sha256": "c63f3d708b5017c403279f7c22593e92037b3877d7ee78ba4d7f838cd565d92a",
       "source": "scripts/structures/analyze_lipon_transport.py"
     },
     {
-      "file": "25_LiPON_transport_RDF.svg",
+      "file": "25_LiPON_temperature_RDF.svg",
       "sha256": "3328382395337e419c6e6176a8c7f0a3602fb00bcbea32725a08c1aad3be9a91",
       "source": "scripts/structures/analyze_lipon_transport.py"
     }

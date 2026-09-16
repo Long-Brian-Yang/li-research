@@ -108,7 +108,7 @@ def lips():
         a=load(L/f'{T}K_MSD.csv');a=a[a[:,0]<=100]
         ax.plot(a[:,0],a[:,1],color=c,label='Li MSD')
         ax.set(title=f'{T} K'+(' — plateau' if T==300 else ''),xlabel='Lag time (ps)',ylabel='Li MSD (Å²)');ax.legend()
-    finish(fig,'05_LPS_MSD')
+    finish(fig,'05_Li3PS4_lithium_MSD')
     fig,aa=grid();ax=aa[0];a=load(L/'reference_comparison.csv')
     for j,c,ls,lab in [(1,BLUE,'-','NEP89: apparent D'),(2,GRAY,'--','Chen 2025: glass MD')]:
         ax[0].plot(a[:,0],a[:,j],'o',color=c,ls=ls,label=lab)
@@ -119,7 +119,7 @@ def lips():
     endpoints=np.array(endpoints)
     for j,el,c,ls in [(0,'P',BLUE,'--'),(1,'S',RED,'-')]:ax[1].plot([300,500,700,900],endpoints[:,j],'o',color=c,ls=ls,label=el)
     ax[1].set(title='Framework motion at 80 ps lag',xlabel='Temperature (K)',ylabel='MSD (Å²)',yscale='log');ax[1].legend()
-    finish(fig,'06_LPS_reference')
+    finish(fig,'06_Li3PS4_diffusion_framework_MSD')
     fig,aa=grid();ax=aa[0]
     a=load(F/'Li3PS4_late_RDF.csv');b=load(F/'Chen2025_Fig._1e.csv')
     ax[0].plot(a[:,0],a[:,2],color=BLUE,label='NEP: final 10 ps hold')
@@ -129,17 +129,17 @@ def lips():
     for x,y,c,ls,lab in [(a[:,0],a[:,1],BLUE,'-','NEP: final 10 ps hold'),(b[:,0],b[:,2],RED,'--','Chen 2025: glass')]:
         y=y/np.trapezoid(y,x);ax[1].plot(x,y,color=c,ls=ls,label=lab)
     ax[1].set(title='S–P–S angles',xlabel='Angle (°)',ylabel='Probability density (degree⁻¹)',xlim=(60,160));ax[1].legend()
-    finish(fig,'07_LPS_structure')
+    finish(fig,'07_Li3PS4_local_structure')
 
 def lipon():
     fig,aa=grid();ax=aa[0];a=load(F/'LiPON_NN_release.csv')
     ax[0].plot(a[:,0],a[:,1],color=BLUE,label='250 K release')
-    ax[0].set(title='Pressure-release diagnostic',xlabel='Release time (ps)',ylabel='Minimum N–N distance (Å)')
+    ax[0].set(title='N–N distance during pressure release',xlabel='Release time (ps)',ylabel='Minimum N–N distance (Å)')
     for name,c,ls,lab in [('dt05',BLUE,'-','0.5 fs'),('dt025',RED,'--','0.25 fs')]:
         a=load(BASE/f'portfolio_supplement/LiPON_{name}_NN.csv');ax[1].plot(a[:,0],a[:,1],label=lab,color=c,ls=ls,lw=1.5)
-    ax[1].set(title='2000 K: paired timestep test',xlabel='Restart elapsed time (ps)',ylabel='N76–N108 distance (Å)')
+    ax[1].set(title='N–N distance at 2000 K',xlabel='Elapsed time (ps)',ylabel='N76–N108 distance (Å)')
     for a in ax:a.axhline(1.6,color=GRAY,ls=':',label='Screening cutoff');a.set_ylim(1.15,1.75);a.legend()
-    finish(fig,'08_LiPON_contacts')
+    finish(fig,'08_LiPON_nitrogen_distance')
 
 def legacy():
     fig,aa=grid();ax=aa[0];a=load(OLD/'timing.csv')
@@ -147,28 +147,28 @@ def legacy():
         ax[0].plot(a[:,0],a[:,j]/60,'o',color=c,ls=ls,label=m)
         d=load(OLD/f'{"MACE" if j==1 else "NEP89"}_600K_equilibration_thermo.csv')
         ax[1].plot(d[:,0],d[:,6],color=c,ls=ls,lw=1.4,label=m)
-    ax[0].set(title='Four-temperature job runtimes',xlabel='Temperature (K)',ylabel='Runtime (min)',yscale='log');ax[0].legend()
+    ax[0].set(title='Computational cost across temperature',xlabel='Temperature (K)',ylabel='Runtime (min)',yscale='log');ax[0].legend()
     ax[1].axhline(1.913855,color=GRAY,ls=':',label='Common 300 K input')
     ax[1].set(title='600 K: NPT density',xlabel='Time (ps)',ylabel='Density (g/cm³)');ax[1].legend()
-    finish(fig,'09_legacy_cost_density')
+    finish(fig,'09_MACE_NEP_runtime_density')
     fig,aa=grid(2)
     for ax,T in zip(aa.ravel(),[700,800,900]):
         for m,c,ls in [('MACE',BLUE,'-'),('NEP89',RED,'--')]:
             a=load(P/f'legacy_{m}_{T}K_MSD.csv');a=a[a[:,0]<=100];ax.plot(a[:,0],a[:,1],color=c,ls=ls,label=m)
-        ax.set(title=f'{T} K: Li',xlabel='Lag time (ps)',ylabel='MSD (Å²)',ylim=(0,430));ax.legend()
+        ax.set(title=f'Lithium MSD at {T} K',xlabel='Lag time (ps)',ylabel='MSD (Å²)',ylim=(0,430));ax.legend()
     ax=aa[1,1]
     for m,ls in [('MACE','-'),('NEP89','--')]:
         a=load(P/f'legacy_{m}_900K_MSD.csv');a=a[a[:,0]<=100]
         for j,el,c in [(2,'Zr',BLUE),(3,'O',PURPLE),(4,'Cl',GREEN)]:ax.plot(a[:,0],a[:,j],color=c,ls=ls,label=f'{m}: {el}')
-    ax.set(title='900 K: framework',xlabel='Lag time (ps)',ylabel='MSD (Å²)');ax.legend(ncol=2,fontsize=10)
-    finish(fig,'10_legacy_motion')
+    ax.set(title='Framework MSD at 900 K',xlabel='Lag time (ps)',ylabel='MSD (Å²)');ax.legend(ncol=2,fontsize=10)
+    finish(fig,'10_MACE_NEP_species_MSD')
     fig,aa=grid(2)
     for m,c,ls in [('MACE',BLUE,'-'),('NEP89',RED,'--')]:
         a=load(P/f'legacy_{m}_900K_RDF_dense.csv')
         for j,ax in enumerate(aa.ravel(),1):ax.plot(a[:,0],a[:,j],color=c,ls=ls,label=m)
     for ax,title in zip(aa.ravel(),['Li–Cl','Li–O','Zr–Cl','Zr–O']):
-        ax.set(title=f'900 K: {title}',xlabel='Radius (Å)',ylabel='g(r)',xlim=(0,5));ax.legend(loc='upper left')
-    finish(fig,'11_legacy_structure')
+        ax.set(title=f'{title} partial RDF at 900 K',xlabel='r (Å)',ylabel='g(r)',xlim=(0,5));ax.legend(loc='upper left')
+    finish(fig,'11_MACE_NEP_partial_RDF')
 
 def main():
     OUT.mkdir(parents=True,exist_ok=True)
