@@ -54,6 +54,8 @@
   "Ea_eV": 0.3508458940562316,
   "Arrhenius_R2": 0.9678835160475083,
   "paper_experimental_Ea_eV": 0.33,
+  "paper_tuned_MACE_fit_Ea_eV": 0.369639762793766,
+  "paper_tuned_MACE_fit_R2": 0.9862964437847542,
   "paper_experimental_fit_Ea_eV": 0.33022695396059437,
   "paper_experimental_source": "Tang_S3_experiment.csv"
 }

@@ -350,7 +350,7 @@ Both productions use NEP89, **0.5 fs integration and 100 fs temperature coupling
 
 ![LSZC four-temperature transport and literature comparison](figures/18_LSZC_transport.png)
 
-The upper row and lower-left panel show the complete 0–300 ps Li MSD for the displayed trajectory at each temperature. The lower-centre panel compares conditional Nernst–Einstein conductivity with the published tuned-MACE calculation, and the lower-right panel compares the NEP89 and experimental Arrhenius trends. The experimental squares are the 303–353 K source points from Supplementary Fig. 3, and their grey dashed regression gives $E_a=0.330$ eV. Fit intervals are not drawn over the MSD curves.
+The upper row and lower-left panel show the complete 0–300 ps Li MSD for the displayed trajectory at each temperature. The lower-centre panel compares conditional Nernst–Einstein conductivity with the published tuned-MACE calculation. The lower-right panel includes all three Arrhenius trends: NEP89, the paper's tuned-MACE source points and experiment. Regression of the four tuned-MACE points gives $E_a=0.370$ eV ($R^2=0.9863$); this is a fit performed here on the published source data, not a separately reported experimental value. The experimental squares are the 303–353 K source points from Supplementary Fig. 3, and their grey dashed regression gives $E_a=0.330$ eV. Fit intervals are not drawn over the MSD curves.
 
 |T (K)|Displayed series|D_app (cm²/s)|Conditional σ_NE (mS/cm)|Paper tuned-MACE σ (mS/cm)|R²|α|
 |---:|---:|---:|---:|---:|---:|---:|

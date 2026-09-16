@@ -83,6 +83,11 @@ def main():
     diff = np.asarray([r["D_cm2_s"] for r in selected], float)
     reg = linregress(1000 / temp, np.log(diff))
     experimental_reg = linregress(experiment[:, 0], experiment[:, 2])
+    paper_temp = reference[:, 1]
+    paper_sigma = reference[:, 4]
+    paper_x = 1000 / paper_temp
+    paper_y = np.log(paper_sigma * paper_temp / 1000)
+    paper_reg = linregress(paper_x, paper_y)
     summary = {
         "selection_status": "exploratory target-informed display; not independent validation",
         "criterion": "minimum absolute log error to paper tuned-MACE conductivity among R2>=0.95 fits",
@@ -90,6 +95,8 @@ def main():
         "Ea_eV": float(-reg.slope * 1000 * KB),
         "Arrhenius_R2": float(reg.rvalue ** 2),
         "paper_experimental_Ea_eV": 0.33,
+        "paper_tuned_MACE_fit_Ea_eV": float(-paper_reg.slope * 1000 * KB),
+        "paper_tuned_MACE_fit_R2": float(paper_reg.rvalue ** 2),
         "paper_experimental_fit_Ea_eV": float(
             -experimental_reg.slope * 1000 * KB
         ),
@@ -125,6 +132,13 @@ def main():
     ax.plot(x, y, "o", color="#31688e",
             label=fr"NEP89 ($E_a={nep_ea:.3f}$ eV)")
     ax.plot(x, sigma_reg.intercept + sigma_reg.slope * x, "-", color="#31688e")
+    paper_ea = -paper_reg.slope * 1000 * KB
+    paper_xx = np.linspace(paper_x.min(), paper_x.max(), 200)
+    ax.plot(paper_x, paper_y, "^", ms=5.5, color="#d98c10",
+            label=fr"Tuned MACE (paper; fit $E_a={paper_ea:.3f}$ eV)")
+    ax.plot(paper_xx,
+            paper_reg.intercept + paper_reg.slope * paper_xx,
+            "-.", lw=1.8, color="#d98c10")
     x_exp = experiment[:, 0]
     y_exp = experiment[:, 2]
     xx_exp = np.linspace(x_exp.min(), x_exp.max(), 200)
