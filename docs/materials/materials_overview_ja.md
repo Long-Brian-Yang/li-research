@@ -544,7 +544,7 @@ flowchart LR
 
 四温度の$D_{\mathrm{app}}$は、同一の20–80 ps範囲から得た有限時間の見かけ値として表示する。低温ほど有限時間・作製構造への依存性が大きいが、温度依存性を比較するため300／500／700／900 Kを同じNEP89系列として結線した。
 
-![Li3PS4のLi拡散とホスト骨格ダイナミクス](figures/06_LPS_temperature_dependence.png)
+![Li3PS4のLi拡散とホスト骨格ダイナミクス](figures/06_LPS_transport_framework.png)
 
 パネルaはNEP89とChenの**DeePMDガラスMD**を比較し、実験またはAIMDの自己拡散係数ではない。NEP89の四温度$D_{\mathrm{app}}$は同一系列として結線する。パネルbでは、80 ps遅延のP／S MSDが300 Kの0.088／0.145 Å²から900 Kの5.13／12.20 Å²へ増大する。
 

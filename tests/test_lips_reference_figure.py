@@ -7,7 +7,7 @@ import numpy as np
 
 ROOT = Path(__file__).resolve().parents[1]
 SCRIPT = ROOT / "scripts" / "structures" / "plot_lips_r1_report.py"
-REFERENCE_STEM = "06_LPS_temperature_dependence"
+REFERENCE_STEM = "06_LPS_transport_framework"
 
 
 def load_module():
@@ -18,7 +18,7 @@ def load_module():
     return module
 
 
-def test_reference_figure_uses_markdown_readable_vertical_layout():
+def test_reference_figure_uses_side_by_side_report_layout():
     module = load_module()
     temperatures = np.array([300.0, 500.0, 700.0, 900.0])
     model_d = np.array([5.4e-8, 4.2e-7, 7.9e-6, 3.1e-5])
@@ -29,7 +29,12 @@ def test_reference_figure_uses_markdown_readable_vertical_layout():
 
     assert len(fig.axes) == 2
     width, height = fig.get_size_inches()
-    assert height > width
+    assert np.allclose([width, height], [12.0, 4.65])
+    fig.canvas.draw()
+    left_position = fig.axes[0].get_position()
+    right_position = fig.axes[1].get_position()
+    assert left_position.x1 < right_position.x0
+    assert np.isclose(left_position.height, right_position.height, rtol=0.03)
     assert fig.axes[0].get_title() == "Li-ion self-diffusion"
     assert fig.axes[1].get_title() == "Host-framework displacement at 80 ps"
     assert all("comparison" not in axis.get_title().lower() for axis in fig.axes)

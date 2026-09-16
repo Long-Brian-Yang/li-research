@@ -544,7 +544,7 @@ All four panels show the full 0–200 ps production. Their vertical scales are i
 
 The four $D_{\mathrm{app}}$ values are shown as finite-time apparent estimates obtained from the common 20–80 ps interval. The lower-temperature values are more sensitive to finite sampling and glass preparation, but all four temperatures are connected as one NEP89 temperature series.
 
-![Li3PS4 lithium diffusion and host-framework dynamics](figures/06_LPS_temperature_dependence.png)
+![Li3PS4 lithium diffusion and host-framework dynamics](figures/06_LPS_transport_framework.png)
 
 Panel a compares NEP89 with Chen's **DeePMD glass MD**, not experimental or AIMD self-diffusion. The four NEP89 $D_{\mathrm{app}}$ values are connected as a single temperature series. Panel b shows that host motion increases strongly: at an 80 ps lag, P/S MSD rises from 0.088/0.145 Å² at 300 K to 5.13/12.20 Å² at 900 K.
 

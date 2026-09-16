@@ -3,7 +3,7 @@
   "archetype": "quantitative grid",
   "exports": [
     "05_LPS_MSD",
-    "06_LPS_temperature_dependence",
+    "06_LPS_transport_framework",
     "07_LPS_local_structure"
   ],
   "reference_comparison": [
