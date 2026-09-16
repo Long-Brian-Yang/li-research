@@ -36,14 +36,16 @@ Each parent structure was expanded into a 2×2×1 supercell, and 18 LiCl pairs w
 
 All three preparation runs completed and satisfied their force-convergence criteria. Candidate 3 was provisionally adopted for follow-up checks, and additional structural screening was performed on it. This was not a selection of the best structure based on comparative free energies or equivalent long-duration stability tests across all three candidates. Its higher final density was not treated as proof of correctness.
 
-The following checks supported continuing with candidate 3:
+Selection and validation must be distinguished: candidate 3 was provisionally chosen first, then received further checks. There is no documented comparative criterion establishing that it was uniquely preferable to candidates 1 and 2 at the time of selection. Subsequent results must not be presented as the original selection rationale.
+
+The following checks supported continuing with candidate 3, rather than demonstrating its superiority:
 
 - Atom counts and composition were preserved, with no obvious atomic overlaps detected.
 - The final fixed-cell relaxation reached the force-convergence criterion.
 - Tracking strong diffraction components of the starting configuration showed substantial attenuation, supporting loss of much of the initial periodic order. This diagnostic is not a crystalline-fraction measurement.
 - Instead of proceeding directly to production, another 50 ps of equilibration was performed at 300 K and 1 bar. Mean densities in the final two 10 ps blocks differed by approximately 0.85%, and local coordination was broadly similar.
 
-Candidate 3 was therefore selected as a **working structure for exploratory MD at 600 K after additional equilibration and structural checks**, not as the most stable or fully validated structure. Checks at 300 K do not guarantee stability at 600 K; volume and framework behavior after heating require separate assessment. Candidates 1 and 2 remain archived for comparison and traceability.
+Candidate 3 was provisionally selected as a **working structure**, subsequently checked and used for exploratory MD at 600 K. It is not established as the most stable or fully validated structure. Checks at 300 K do not guarantee stability at 600 K; volume and framework behavior after heating require separate assessment. Candidates 1 and 2 remain archived for comparison and traceability.
 
 Sources and records: [literature DOI](https://doi.org/10.1038/s41467-025-65702-2), [three-candidate preparation archive](../../../materials/candidates/LZOC/archive/completed_reference_trials/README.md), [selection record](../../../materials/candidates/LZOC/archive/completed_reference_trials/SELECTION.md), and [post-equilibration check](../../../materials/candidates/LZOC/archive/equilibration_8634186/analysis/README.md).
 
@@ -94,13 +96,37 @@ Each block contains 100 time-correlated samples. These are descriptive means, no
 | Complete 55 ps preparation logs, 192 atoms in thermo output | Yes | Yes | Yes |
 | Initial/final minimization reached force tolerance | Yes | Yes | Yes |
 | Same-stage temperature, energy and NPT density comparison | Added here | Added here | Added here |
-| Detailed trajectory identity / close-contact screening | Not equivalently documented | Not equivalently documented | Documented |
-| Sampled RDF and residual initial-order screening | Not equivalently documented | Not equivalently documented | Documented, limited sampling |
+| Full-trajectory identity/composition check and same-window RDF/CN | Added for all three below | Added for all three below | Added for all three below |
+| Residual initial-order screening and stage-specific MSD | Added below | Added below | Added below |
+| Detailed close-contact screening | Not equivalently documented | Not equivalently documented | Previously documented, limited sampling |
 | Additional 50 ps NPT at 300 K | Not performed in this workflow | Not performed in this workflow | Completed; late blocks checked |
 | 600 K production and framework checks | Not performed in this workflow | Not performed in this workflow | Performed; volume/framework concerns remain |
 | Complete physical validation | Not established | Not established | Not established |
 
-Thus, **all three underwent preparation and basic numerical checks, but not an equivalent complete stability assessment**. Candidate 3 has more follow-up evidence because it was continued, not proof of superiority over the other two. This figure adds log-based comparison only; no new MD or three-candidate RDF calculation was performed. [Source-data and figure notes](figures/README.md).
+Thus, **all three underwent preparation and basic numerical checks, but not an equivalent complete stability assessment**. The added structural comparison below improves common coverage but does not replace extended equilibration. Candidate 3 has more follow-up evidence because it was continued, not proof of superiority over the other two. No new MD was performed for these figures. [Source-data and figure notes](figures/README.md).
+
+### Additional same-window structural comparison
+
+![Late RDF comparison](figures/LZOC_three_candidate_RDF.png)
+
+All three archived trajectories were verified against TSUBAME SHA256 fingerprints. Each contains 1101 frames (0–55 ps); atom IDs and type/element mapping were checked throughout. The RDF uses 21 frames, every 0.25 ps over 50–55 ps, with ASE triclinic minimum-image distances and frame-specific volume normalization. Self pairs are excluded; bin width is 0.05 Å and maximum radius 4.5 Å, below half the minimum cell height for all sampled frames. No smoothing is applied. Li–Cl and Zr–Cl first-shell profiles are broadly similar; Li–O differs more. The large Zr–O peak reflects dilute oxygen and a narrow distance distribution, not a coordination number of 40–50.
+
+![Coordination distributions](figures/LZOC_three_candidate_coordination.png)
+
+The probabilities pool central atoms and sampled frames, not independent replicas; connecting lines are visual guides between integer coordination counts. Common diagnostic cutoffs are used for all candidates, not fitted separately to each RDF. They are distance-based neighbor counts, not formal chemical bond assignments.
+
+| Mean coordination | Cutoff / Å | Candidate 1 | Candidate 2 | Candidate 3 |
+|---|---:|---:|---:|---:|
+| Li–Cl | 3.2 | 3.925 | 3.908 | 3.956 |
+| Li–O | 2.7 | 0.143 | 0.142 | 0.048 |
+| Zr–Cl | 3.0 | 4.722 | 4.756 | 4.605 |
+| Zr–O | 2.6 | 1.042 | 1.000 | 1.125 |
+
+Candidate 3 has fewer nearby O neighbors per Li under this cutoff, while Li–Cl averages are close. This demonstrates different local environments, not better stability or faster diffusion. There are only 12 O atoms and five ps of sampled late structure; the result is not a bulk-material uncertainty estimate.
+
+![NPT block means](figures/LZOC_three_candidate_NPT_blocks.png)
+
+Each point is a 1 ps block mean over (start, start+1] ps, with 20 correlated thermo samples; no confidence intervals or significance claims are made. Candidate 2 shows a clearer late density decrease; candidate 1 fluctuates without a comparable net difference between the two five-ps means. Candidate 3 also retains energy/density evolution. The curves support checking continued relaxation, not labeling any candidate fully equilibrated. These analyses do not determine crystallinity, long-time framework stability or experimental accuracy, and do not use the cooling trajectory for D or Eₐ.
 
 ### Rationale for each preparation stage
 
@@ -116,6 +142,29 @@ An amorphous material does not have a unique periodic atomic arrangement like a 
 | Additional equilibration | 300 K, 1 bar, NPT, 50 ps | Further relax the candidate and prepare the starting point for subsequent MD. |
 
 The 192-atom model represents the target composition with integer atom counts while keeping the multistage preparation and MD calculations computationally manageable. This does not establish that the system size is converged. Finite-size effects and dependence on amorphous preparation remain limitations to assess when needed.
+
+### Added comparison: structural rearrangement and initial-order retention
+
+![Initial and final fractional projections](figures/LZOC_three_candidate_structure_projection.png)
+
+The upper row shows the initial minimized configurations; the lower row shows the finite-temperature endpoint at 55 ps, before final minimization. These are wrapped fractional a/b projections, not real-space square cells or migration paths. Overlapping points in projection do not imply atomic overlaps. This illustration alone cannot establish amorphization.
+
+![Residual initial order](figures/LZOC_three_candidate_initial_order.png)
+
+For each candidate and element, the ten strongest initial reflections within q = 1–5 Å⁻¹ are tracked at the same reciprocal indices. The sum of their intensities in each late frame is divided by its initial sum. The 50–55 ps mean ratios are:
+
+| Initial-peak intensity retained | Candidate 1 | Candidate 2 | Candidate 3 |
+|---|---:|---:|---:|
+| Cl | 16.30% | 5.87% | 12.63% |
+| Zr | 8.09% | 6.97% | 7.61% |
+
+All three lose much of their initial-peak intensity. These are **not crystalline fractions**: selected reflections differ between candidates, thermal motion reduces intensity, and newly formed order is not exhaustively tested. Candidate 3 is therefore not uniquely validated as the most amorphous or most stable structure.
+
+![Stage-specific species MSD](figures/LZOC_three_candidate_stage_MSD.png)
+
+Each stage starts from its own time origin. Unwrapped coordinates preserve boundary crossings; all-atom mass-weighted center-of-mass motion is removed. For NPT, displacements exclude homogeneous cell deformation. High-temperature motion occurs in Zr/O/Cl as well as Li, providing evidence of framework rearrangement rather than Li motion alone. Smaller room-temperature displacements are consistent with reduced mobility, but these short single-origin curves do not establish equilibrium or diffusion coefficients. No D or Eₐ is fitted to preparation stages.
+
+All plots and underlying CSV/JSON data were obtained from the existing MACE preparation trajectories; no new MD jobs were submitted. The additional 50 ps equilibration and subsequent 600 K checks still apply only to candidate 3.
 
 ## 3. MACE MD at 600 K
 
