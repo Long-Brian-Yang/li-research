@@ -1,0 +1,31 @@
+{
+  "counts": {
+    "Li": 47,
+    "P": 16,
+    "N": 5,
+    "O": 56
+  },
+  "formal_charge": 0,
+  "minimum_distance_A": 1.5579355047308472,
+  "cell_A": [
+    9.797106593837665,
+    10.542271282437742,
+    12.29388340926147
+  ],
+  "density_g_cm3": 2.337933465636683,
+  "seed": 20260914,
+  "nitrogen_parent_indices": [
+    8,
+    76,
+    92,
+    108,
+    123
+  ],
+  "removed_oxygen_parent_indices": [
+    74,
+    120,
+    122
+  ],
+  "removed_lithium_parent_index": 113,
+  "source_sha256": "4b46b13b18c99f3682d831c5609993681ee3f4ea441e6f17e9e82846b81b4a52"
+}

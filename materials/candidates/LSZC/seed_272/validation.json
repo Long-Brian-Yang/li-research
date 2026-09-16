@@ -1,0 +1,40 @@
+{
+  "atoms": 272,
+  "counts": {
+    "Cl": 128,
+    "Li": 32,
+    "O": 64,
+    "S": 16,
+    "Zr": 32
+  },
+  "repeat": [
+    1,
+    2,
+    1
+  ],
+  "source_data": 1,
+  "doi": "10.1038/s41467-026-69737-x",
+  "source_sha256": "be0b3fa7be40f4c933b96055e1c2b6b99e4327510f98300b43844704073dc4ca",
+  "cell_A": [
+    [
+      19.362712117104,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      26.332733905827997,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      16.103729978580002
+    ]
+  ],
+  "volume_A3": 8210.859464497742,
+  "density_gcm3": 1.863763836898241,
+  "minimum_distance_A": 1.4477894547181793,
+  "validated_amorphous": false,
+  "status": "Periodic replicated AIMD seed; reconstruction and validation required before transport MD."
+}

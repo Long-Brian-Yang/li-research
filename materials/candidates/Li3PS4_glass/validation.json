@@ -1,0 +1,26 @@
+{
+  "counts": {
+    "Li": 192,
+    "P": 64,
+    "S": 256
+  },
+  "source_frame_zero_based": 0,
+  "repeat": [
+    2,
+    2,
+    2
+  ],
+  "cell_A": [
+    25.63800048828125,
+    16.440000534057617,
+    24.493999481201172
+  ],
+  "minimum_distance_A": 2.0027973409695217,
+  "density_g_cm3": 1.8532642364677876,
+  "source_sha256": {
+    "type_map.raw": "43b60753bd41d047bbe7b4a3ce3b55f4329e856c62253e88c89f1a2ef801e0f3",
+    "box.raw": "7ee7d35ae893cdc39ba20df43bdc0b8254cc143f7b500f5874cbe611057da657",
+    "type.raw": "0c2d80cd5b0a8a3536408b14785e7cd008da29187d185e9e9dd5908f76939aa4",
+    "coord.raw": "d584d36ac96521a4a0c57d72b37c29ccc872a0a611186893d07ca75df9523801"
+  }
+}

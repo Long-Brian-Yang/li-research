@@ -1,0 +1,34 @@
+{
+  "doi": "10.1038/s41467-026-69737-x",
+  "source_data": 2,
+  "counts": {
+    "Li": 128,
+    "Zr": 128,
+    "Cl": 512,
+    "S": 64,
+    "O": 256
+  },
+  "atoms": 1088,
+  "cell_A": [
+    [
+      37.58492917202949,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      26.60036590041043,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      30.07934277204084
+    ]
+  ],
+  "volume_A3": 30072.510800293327,
+  "density_gcm3": 2.035493882291369,
+  "minimum_distance_A": 1.4416256987760174,
+  "source_sha256": "2eb6cb21b14783ae8519ddc1a6fe8844739c72cb7dea79b5fa96a2683b990479",
+  "transformation": "Format conversion only; no repeat, relaxation or atom substitution."
+}

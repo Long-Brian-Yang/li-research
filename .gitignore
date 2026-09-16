@@ -3,6 +3,7 @@
 task_plan.md
 findings.md
 progress.md
+docs/superpowers/
 
 # Large model and simulation artifacts
 *.model
@@ -20,6 +21,37 @@ results/amorphous_review_20260915/source/LSZC_4T/
 results/amorphous_review_20260915/source/legacy_NPT/
 results/amorphous_review_20260915/source/LZOC300/
 results/amorphous_review_20260915/source/LSZC150/
+
+# Local/TSUBAME raw simulation archives.  Keep derived CSV/JSON summaries,
+# reproducible inputs, and report figures in Git; keep full trajectories and
+# scheduler output in their original local/remote archive.
+results/amorphous_review_20260915/source/
+results/amorphous_validation_20260914/source/
+results/amorphous_validation_20260914/DFT_NEP_samples.xyz
+results/LZOC/analysis_20260912/source/
+results/LZOC/legacy_comparison_20260915/source_*/
+results/amorphous_review_20260915/Li3PS4_R1_transport/completed.txt
+results/amorphous_review_20260915/Li3PS4_R1_transport/stdout.txt
+results/amorphous_review_20260915/Li3PS4_R1_transport/stderr.txt
+
+# Third-party article/supporting-information downloads are retained locally;
+# extracted structures, validation records, and bibliographic links are tracked.
+materials/candidates/LSZC/source/
+materials/candidates/LZOC_Hussain2024/supplementary_information.pdf
+materials/candidates/LiNbCl6/source/
+materials/candidates/Li3PS4_glass/source/
+materials/candidates/LiPON/source/
+
+# Superseded visual previews retained locally for comparison only.
+results/analysis/Li3YCl6/*candidate.png
+results/midterm_Li3YCl6_MACE_M3GNet/plots/*preview*.png
+results/midterm_Li3YCl6_MACE_M3GNet/plots/*same_y.png
+results/midterm_Li3YCl6_MACE_M3GNet/plots/*reference_scales.png
+docs/materials/figures/03_crystalline_transport_summary.png
+
+# Deprecated local diagnostic retained only for historical inspection; this
+# project does not include a DFT validation workflow for the amorphous study.
+scripts/structures/check_nep_dft.py
 
 # Python cache and local environments
 __pycache__/

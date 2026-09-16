@@ -1,0 +1,38 @@
+{
+  "atoms": 192,
+  "counts": {
+    "Li": 42,
+    "Cl": 114,
+    "O": 12,
+    "Zr": 24
+  },
+  "minimum_distance_A": 2.3632032026485468,
+  "cell_A": [
+    [
+      21.874,
+      0.0,
+      0.0
+    ],
+    [
+      -10.936999999999994,
+      18.943439682380813,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      12.044
+    ]
+  ],
+  "density_gcm3": 2.2339937553807565,
+  "seed": 20260914,
+  "repeat": [
+    2,
+    2,
+    2
+  ],
+  "source": "SI Table 2, DOI 10.1038/s41524-024-01346-y",
+  "method": "Integer occupancy constraints and geometric exclusion; random objective, NOT energy optimization",
+  "author_configuration": false,
+  "validated_amorphous": false
+}

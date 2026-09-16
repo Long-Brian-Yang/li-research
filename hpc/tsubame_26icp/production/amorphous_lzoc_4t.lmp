@@ -1,0 +1,52 @@
+# units metal: time ps, temperature K, pressure bar, distance Angstrom.
+units metal
+atom_style atomic
+boundary p p p
+atom_modify map yes
+read_data input.data
+pair_style mliap unified ${model} 0
+pair_coeff * * Li Zr O Cl
+neighbor 2.0 bin
+neigh_modify delay 0 every 1 check yes
+timestep 0.0005
+thermo 100
+thermo_style custom step time atoms temp pe ke etotal press vol density lx ly lz fmax
+thermo_modify flush yes lost error
+# A new independent velocity seed at 300 K; same initial coordinates for all T.
+velocity all create 300 ${seed} mom yes rot no dist gaussian
+log heating/log.lammps
+reset_timestep 0
+dump heat all custom 200 heating/trajectory.lammpstrj id type element x y z xu yu zu ix iy iz
+dump_modify heat element Li Zr O Cl sort id
+fix heat all nvt temp 300 ${temperature} 0.1
+run 20000
+unfix heat
+undump heat
+write_data heating/final.data
+# Target-temperature volume equilibration; isotropic scaling preserves cell shape.
+log equilibration/log.lammps
+reset_timestep 0
+dump eq all custom 200 equilibration/trajectory.lammpstrj id type element x y z xu yu zu ix iy iz
+dump_modify eq element Li Zr O Cl sort id
+restart 20000 equilibration/checkpoint.a.restart equilibration/checkpoint.b.restart
+fix equil all npt temp ${temperature} ${temperature} 0.1 iso 1 1 1.0
+run 100000
+write_restart equilibration/final.restart
+unfix equil
+undump eq
+restart 0
+write_data equilibration/final.data
+# NVT uses the terminal NPT cell, not a falsely labelled mean-volume cell.
+# All production outputs start at zero and exclude heating/equilibration.
+log production/log.lammps
+reset_timestep 0
+group lithium type 1
+compute li_msd lithium msd com yes
+fix msdout all ave/time 100 1 100 c_li_msd[1] c_li_msd[2] c_li_msd[3] c_li_msd[4] file production/msd_li.dat
+dump prod all custom 200 production/trajectory.lammpstrj id type element x y z xu yu zu ix iy iz
+dump_modify prod element Li Zr O Cl sort id
+restart 20000 production/checkpoint.a.restart production/checkpoint.b.restart
+fix prod all nvt temp ${temperature} ${temperature} 0.1
+run 400000
+write_restart production/final.restart
+write_data production/final.data

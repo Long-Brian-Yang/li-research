@@ -1,0 +1,8 @@
+potential /gs/fs/tgj-26ICP/uf03782/yang/li-research/models/nep89/nep/nep89_20250409/nep89_20250409.txt
+time_step 0.5
+velocity 300 seed 20260914
+ensemble nvt_mttk temp 300 300 tperiod 200
+dump_thermo 100
+dump_exyz 200 1 1 1
+dump_restart 2000
+run 20000

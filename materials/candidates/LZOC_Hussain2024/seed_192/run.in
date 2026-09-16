@@ -1,0 +1,15 @@
+# Exploratory reconstruction: first heating segment only, no glass/transport claim.
+potential /gs/fs/tgj-26ICP/uf03782/yang/li-research/models/nep89/nep/nep89_20250409/nep89_20250409.txt
+minimize fire 0.01 10000
+time_step 0.5
+velocity 100 seed 20260914
+ensemble nvt_mttk temp 100 100 tperiod 200
+dump_thermo 100
+dump_exyz 200 1 1 1
+dump_restart 2000
+run 4000
+ensemble nvt_mttk temp 500 500 tperiod 200
+dump_thermo 100
+dump_exyz 200 1 1 1
+dump_restart 2000
+run 60000

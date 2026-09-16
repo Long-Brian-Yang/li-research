@@ -1,0 +1,10 @@
+# Stage 1 only: exploratory NEP89 adaptation of Supplementary Fig. 20.
+# 5 kbar = 0.5 GPa; NOT ambient-pressure transport production.
+potential /gs/fs/tgj-26ICP/uf03782/yang/li-research/models/nep89/nep/nep89_20250409/nep89_20250409.txt
+time_step 0.5
+velocity 300 seed 20260915
+ensemble npt_mttk temp 300 300 iso 0.5 0.5 tperiod 200 pperiod 2000
+dump_thermo 100
+dump_exyz 200 1 1 1
+dump_restart 2000
+run 24000

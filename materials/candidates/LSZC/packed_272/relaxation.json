@@ -1,0 +1,30 @@
+{
+  "converged": true,
+  "steps": 1380,
+  "initial_E_eV_atom": -4.9753610732654465,
+  "initial_fmax_eV_A": 8.257808941257037,
+  "final_E_eV_atom": -5.457224001736317,
+  "final_fmax_eV_A": 0.0493301270894417,
+  "minimum_pair_A": 1.4103853660275534,
+  "S_O_CN": [
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4
+  ],
+  "target_fmax": 0.05,
+  "fixed_cell": true,
+  "status": "Position relaxation only; no glass or equilibrium certification"
+}

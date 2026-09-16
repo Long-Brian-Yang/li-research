@@ -1,0 +1,237 @@
+{
+  "seed": 20260915,
+  "packing_attempt": 0,
+  "n_atoms": 272,
+  "composition": {
+    "Cl": 128,
+    "O": 64,
+    "S": 16,
+    "Zr": 32,
+    "Li": 32
+  },
+  "density_g_cm3": 1.8637638368982403,
+  "cubic_length_A": 20.174194627239018,
+  "minimum_all_A": 1.447789458030823,
+  "minimum_intercluster_A": 1.7120759372247363,
+  "placement": [
+    {
+      "start_zero_based": 0,
+      "size": 30,
+      "attempts": 1
+    },
+    {
+      "start_zero_based": 30,
+      "size": 30,
+      "attempts": 1
+    },
+    {
+      "start_zero_based": 60,
+      "size": 30,
+      "attempts": 11
+    },
+    {
+      "start_zero_based": 90,
+      "size": 30,
+      "attempts": 24
+    },
+    {
+      "start_zero_based": 120,
+      "size": 30,
+      "attempts": 36
+    },
+    {
+      "start_zero_based": 150,
+      "size": 30,
+      "attempts": 324
+    },
+    {
+      "start_zero_based": 180,
+      "size": 20,
+      "attempts": 697
+    },
+    {
+      "start_zero_based": 200,
+      "size": 20,
+      "attempts": 863
+    },
+    {
+      "start_zero_based": 220,
+      "size": 10,
+      "attempts": 13
+    },
+    {
+      "start_zero_based": 230,
+      "size": 10,
+      "attempts": 97
+    },
+    {
+      "start_zero_based": 240,
+      "size": 1,
+      "attempts": 1
+    },
+    {
+      "start_zero_based": 241,
+      "size": 1,
+      "attempts": 1
+    },
+    {
+      "start_zero_based": 242,
+      "size": 1,
+      "attempts": 2
+    },
+    {
+      "start_zero_based": 243,
+      "size": 1,
+      "attempts": 2
+    },
+    {
+      "start_zero_based": 244,
+      "size": 1,
+      "attempts": 2
+    },
+    {
+      "start_zero_based": 245,
+      "size": 1,
+      "attempts": 1
+    },
+    {
+      "start_zero_based": 246,
+      "size": 1,
+      "attempts": 3
+    },
+    {
+      "start_zero_based": 247,
+      "size": 1,
+      "attempts": 5
+    },
+    {
+      "start_zero_based": 248,
+      "size": 1,
+      "attempts": 1
+    },
+    {
+      "start_zero_based": 249,
+      "size": 1,
+      "attempts": 5
+    },
+    {
+      "start_zero_based": 250,
+      "size": 1,
+      "attempts": 1
+    },
+    {
+      "start_zero_based": 251,
+      "size": 1,
+      "attempts": 1
+    },
+    {
+      "start_zero_based": 252,
+      "size": 1,
+      "attempts": 1
+    },
+    {
+      "start_zero_based": 253,
+      "size": 1,
+      "attempts": 2
+    },
+    {
+      "start_zero_based": 254,
+      "size": 1,
+      "attempts": 1
+    },
+    {
+      "start_zero_based": 255,
+      "size": 1,
+      "attempts": 2
+    },
+    {
+      "start_zero_based": 256,
+      "size": 1,
+      "attempts": 2
+    },
+    {
+      "start_zero_based": 257,
+      "size": 1,
+      "attempts": 2
+    },
+    {
+      "start_zero_based": 258,
+      "size": 1,
+      "attempts": 1
+    },
+    {
+      "start_zero_based": 259,
+      "size": 1,
+      "attempts": 1
+    },
+    {
+      "start_zero_based": 260,
+      "size": 1,
+      "attempts": 5
+    },
+    {
+      "start_zero_based": 261,
+      "size": 1,
+      "attempts": 1
+    },
+    {
+      "start_zero_based": 262,
+      "size": 1,
+      "attempts": 3
+    },
+    {
+      "start_zero_based": 263,
+      "size": 1,
+      "attempts": 2
+    },
+    {
+      "start_zero_based": 264,
+      "size": 1,
+      "attempts": 1
+    },
+    {
+      "start_zero_based": 265,
+      "size": 1,
+      "attempts": 2
+    },
+    {
+      "start_zero_based": 266,
+      "size": 1,
+      "attempts": 1
+    },
+    {
+      "start_zero_based": 267,
+      "size": 1,
+      "attempts": 4
+    },
+    {
+      "start_zero_based": 268,
+      "size": 1,
+      "attempts": 7
+    },
+    {
+      "start_zero_based": 269,
+      "size": 1,
+      "attempts": 1
+    },
+    {
+      "start_zero_based": 270,
+      "size": 1,
+      "attempts": 1
+    },
+    {
+      "start_zero_based": 271,
+      "size": 1,
+      "attempts": 3
+    }
+  ],
+  "cluster_hashes": {
+    "cluster_1.xyz": "29a6245e131dc79b09b84c321c6d12eecafcfbf045dee9b85f15bdab2186287e",
+    "cluster_3.xyz": "344b7be45a5be6c6f02cbc605223149f423d2e29e0d957ed8631cd53a906c909",
+    "cluster_2.xyz": "16226961c4948f67a349e829bc9e0b13ae848924bb5bedebbdc5849a6ce0d098",
+    "cluster_5.xyz": "3d54b0db1387164b7232eb1871838bea12901daee85f5108911bf4cf381b5e13",
+    "cluster_4.xyz": "6c20fb3d78663f0602e82b3a2bde723f500dcf767b894d703fe30f471e28ba89"
+  },
+  "status": "Packed precursor only; not relaxed or validated glass",
+  "settings_basis": "Independent geometric packing at Data1 density; cross-fragment cutoff1.8A, incomingLi1.7A, not paper parameters"
+}

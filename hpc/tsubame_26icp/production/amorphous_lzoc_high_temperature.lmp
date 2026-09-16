@@ -1,0 +1,24 @@
+# High-temperature screening only: not certified melt or production data.
+units metal
+atom_style atomic
+boundary p p p
+atom_modify map yes
+read_data input.data
+pair_style mliap unified ${model} 0
+pair_coeff * * Li Zr O Cl
+neighbor 2.0 bin
+neigh_modify delay 0 every 1 check yes
+reset_timestep 0
+timestep 0.0005
+thermo 100
+thermo_style custom step time atoms temp pe ke etotal press vol density lx ly lz fmax
+thermo_modify flush yes lost error
+# Saved velocities are retained; the thermostat relaxes to the new target.
+fix bath all npt temp 1500 1500 0.1 iso 1.0 1.0 1.0
+dump traj all custom 100 high_temperature.lammpstrj id type element x y z xu yu zu ix iy iz
+dump_modify traj element Li Zr O Cl sort id
+restart 2000 restart.*.bin
+run 40000
+unfix bath
+write_data high_temperature_final.data
+write_restart high_temperature_final.restart

@@ -1,0 +1,45 @@
+# Exploratory single candidate; fixed initial density is NOT experimental.
+# No transport production and no automatic scientific acceptance.
+units metal
+atom_style atomic
+boundary p p p
+atom_modify map yes
+read_data input.data
+pair_style mliap unified ${model} 0
+pair_coeff * * Li Zr O Cl
+neighbor 2.0 bin
+neigh_modify delay 0 every 1 check yes
+reset_timestep 0
+timestep 0.0005
+thermo 100
+thermo_style custom step time atoms temp pe ke etotal press vol density lx ly lz fmax
+thermo_modify flush yes lost error
+dump traj all custom 100 candidate.lammpstrj id type element x y z xu yu zu ix iy iz
+dump_modify traj element Li Zr O Cl sort id
+restart 2000 checkpoint.*.restart
+# 0–10 ps: high-temperature mixing, existing velocities retained.
+fix mix all nvt temp 1500 1500 0.1
+run 20000
+unfix mix
+write_data mixed.data
+# 10–40 ps: 40 K/ps cooling, fixed volume.
+fix cool all nvt temp 1500 300 0.1
+run 60000
+unfix cool
+write_data quenched.data
+# 40–45 ps: 300 K hold, fixed volume.
+fix hold all nvt temp 300 300 0.1
+run 10000
+unfix hold
+write_data before_release.data
+# 45–55 ps: release the volume constraint; retain all resulting data.
+fix release all npt temp 300 300 0.1 iso 1 1 1.0
+run 20000
+unfix release
+write_data relaxed_300K.data
+write_restart relaxed_300K.restart
+undump traj
+# Inherent structure at the resulting box, distinct from finite-T trajectory.
+min_style cg/kk
+minimize 0 0.01 10000 30000
+write_data candidate_final.data
