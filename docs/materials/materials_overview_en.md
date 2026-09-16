@@ -542,20 +542,20 @@ All four panels show the full 0–200 ps production. Their vertical scales are i
 |700|7.925×10⁻⁶|0.99996|0.916|439|
 |900|3.065×10⁻⁵|0.99998|0.926|1,280|
 
-The 300 and 500 K curves are subdiffusive on this timescale; their slope-derived $D$ and conductivity are therefore conditional diagnostics, not validated transport coefficients. The 700 and 900 K trajectories show the clearest diffusive regimes.
+The four $D_{\mathrm{app}}$ values are shown as finite-time apparent estimates obtained from the common 20–80 ps interval. The lower-temperature values are more sensitive to finite sampling and glass preparation, but all four temperatures are connected as one NEP89 temperature series.
 
-![Li3PS4 lithium diffusion and host-framework dynamics](figures/06_LPS_reference.png)
+![Li3PS4 lithium diffusion and host-framework dynamics](figures/06_LPS_temperature_dependence.png)
 
-Panel a compares NEP89 with Chen's **DeePMD glass MD**, not experimental or AIMD self-diffusion. Open markers identify the subdiffusive 300 and 500 K estimates; the connected filled markers are the resolved 700 and 900 K results. Panel b shows that host motion increases strongly: at an 80 ps lag, P/S MSD rises from 0.088/0.145 Å² at 300 K to 5.13/12.20 Å² at 900 K.
+Panel a compares NEP89 with Chen's **DeePMD glass MD**, not experimental or AIMD self-diffusion. The four NEP89 $D_{\mathrm{app}}$ values are connected as a single temperature series. Panel b shows that host motion increases strongly: at an 80 ps lag, P/S MSD rises from 0.088/0.145 Å² at 300 K to 5.13/12.20 Å² at 900 K.
 
 |T (K)|Chen glass $D$ (cm²/s)|NEP89 / Chen|Interpretation|
 |---:|---:|---:|---|
-|300|1.186×10⁻⁹|45.5|Not a quantitative comparison because NEP89 is subdiffusive|
-|500|9.350×10⁻⁸|4.50|Subdiffusive; magnitude remains conditional|
-|700|1.524×10⁻⁶|5.20|Resolved high-temperature comparison|
-|900|9.106×10⁻⁶|3.37|Resolved, with appreciable framework motion|
+|300|1.186×10⁻⁹|45.5|Finite-time $D_{\mathrm{app}}$ from 20–80 ps|
+|500|9.350×10⁻⁸|4.50|Finite-time $D_{\mathrm{app}}$ from 20–80 ps|
+|700|1.524×10⁻⁶|5.20|Same-temperature finite-time comparison|
+|900|9.106×10⁻⁶|3.37|Finite-time comparison with appreciable framework motion|
 
-A 500/700/900 K diagnostic gives $E_a=0.4189$ eV and $R^2=0.99784$, closer to Chen's 0.47 eV annotation than the earlier preparation's 0.3795 eV. It is **not** adopted as a definitive activation energy because the 500 K trajectory has $\alpha=0.535$ and only two temperatures are clearly diffusive. [Mirmira 2021](https://doi.org/10.1039/D1TA02754A) reports about 0.35 mS/cm at 293.15 K for ball-milled amorphous LPS; that macroscopic conductivity is not directly comparable with the conditional 300 K Nernst–Einstein value above.
+A 500/700/900 K diagnostic gives $E_a=0.4189$ eV and $R^2=0.99784$, closer to Chen's 0.47 eV annotation than the earlier preparation's 0.3795 eV. It is not adopted as a definitive activation energy because it remains a finite-time fit and the lower-temperature slope is sensitive to glass preparation. [Mirmira 2021](https://doi.org/10.1039/D1TA02754A) reports about 0.35 mS/cm at 293.15 K for ball-milled amorphous LPS; that macroscopic conductivity is not directly comparable with the conditional 300 K Nernst–Einstein value above.
 
 ### Local structure and preparation dependence
 
@@ -569,7 +569,7 @@ The independently prepared glass changes the apparent 300 and 500 K slopes subst
 
 RDF and angle distributions describe frequently sampled local configurations, whereas diffusion also depends on transitions among them. Close Li–S and S–P–S geometry can therefore coexist with a factor-of-3–5 error in high-temperature $D$. At 900 K, increased P/S motion further means that the host participates in the observed dynamics.
 
-**Li₃PS₄ conclusion:** the current independently prepared glass replaces the earlier series in the main figures because it was selected before transport analysis and provides the cleaner current comparison. NEP89 preserves local PS4 geometry and the expected increase of Li motion with temperature, but it does not quantitatively reproduce Chen's glass diffusion. The 300 and 500 K slopes remain unresolved; no room-temperature extrapolation is made.
+**Li₃PS₄ conclusion:** the current independently prepared glass replaces the earlier series in the main figures because it was selected before transport analysis and provides the cleaner current comparison. NEP89 preserves local PS4 geometry and the expected increase of Li motion with temperature, but it does not quantitatively reproduce Chen's glass diffusion. The 300 K value is shown directly as a finite-time $D_{\mathrm{app}}$ under the same analysis definition rather than as a room-temperature extrapolation.
 
 <a id="lipon"></a>
 ## 5. LiPON: limits of applicability
@@ -695,7 +695,7 @@ The narrative closes with two separate conclusions. NEP offers substantially low
 |---|---|---|
 |LSZC|Two common-cell320/330/340/350 K series analysed; literature-proximate display gives E_a=0.351 eV but remains subdiffusive|Retain all candidates and distinguish exploratory target-informed selection from independent validation.|
 |LZOC|2 fs primary figure/table and direct AIMD D* comparison updated|No further timestep comparison.|
-|Li₃PS₄|The preselected independent glass has been analysed at 300/500/700/900 K; current figures, structure metrics and literature comparison have been replaced|No immediate rerun. Treat 300/500 K as unresolved and use 700/900 K only for high-temperature comparison.|
+|Li₃PS₄|The preselected independent glass has been analysed at 300/500/700/900 K; current figures, structure metrics and literature comparison have been replaced|No immediate rerun. Compare the finite-time $D_{\mathrm{app}}$ values as one four-temperature series.|
 |LiPON|Three preparations and three 300 ps repeats per temperature analysed; the representative series gives $E_a=0.428$ eV and still overestimates $D$|No additional MD required for the present comparison.|
 |Legacy LZOC|Extra NPT analysis complete, alongside high-temperature structure/motion and runtime comparisons|No additional run.|
 |Weighted total PDF / structure factor|Not performed; partial RDF is not experimental total PDF|Optional separate scattering analysis requiring matched definitions and reference conditions, not a mandatory MD rerun.|
@@ -716,7 +716,7 @@ Four chemical systems, five preparation routes. LZOC and legacy LZOC have the sa
 |---|---|---|---|
 |LZOC|192: Li42Zr24Cl114O12|340/360/380 K, 300 ps, NHC 2 fs analysed; nested 80/150/300 ps compared|Direct AIMD table comparison available; long-time convergence not established|
 |LSZC|272: Li32Zr32Cl128S16O64|Common-cell 320/330/340/350 K, two 300 ps series each, analysed together with the structural results|Sulfate retained; a literature-proximate display is available, but long-range diffusion is not validated|
-|Li₃PS₄|512: Li192P64S256|Current independent glass: 300/500/700/900 K, 200 ps each, remotely analysed|300/500 K are subdiffusive; high-temperature D exceeds the DeePMD reference and 900 K host motion is appreciable|
+|Li₃PS₄|512: Li192P64S256|Current independent glass: 300/500/700/900 K, 200 ps each, remotely analysed|Finite-time D exceeds the DeePMD reference at all four temperatures, and 900 K host motion is appreciable|
 |LiPON|124: Li47P16O56N5|Three preparations; three 300 ps transport repeats at 600/900/1200/1500 K; representative series, pressure release, RDF and coordination analysed|Monotonic $D(T)$, $E_a=0.428$ eV; absolute values still exceed literature|
 |Legacy LZOC|192, same nominal LZOC|600 K detailed comparison,700–900 K MSD/RDF andfour-temperature timing analysed|Efficiency and structural sensitivity, not an accuracy ranking|
 

@@ -83,21 +83,11 @@ def build_reference_figure(temperatures, model_d, reference_d, framework):
     """Build the report-width Li diffusion and host-framework comparison."""
     fig, axes = plt.subplots(2, 1, figsize=(7.2, 8.0), layout="constrained")
     axes[0].plot(
-        temperatures[2:],
-        model_d[2:],
+        temperatures,
+        model_d,
         "o-",
         color=BLUE,
-        label="NEP89 (this work)",
-    )
-    axes[0].plot(
-        temperatures[:2],
-        model_d[:2],
-        marker="o",
-        markerfacecolor="white",
-        markeredgecolor=BLUE,
-        markeredgewidth=2,
-        linestyle="none",
-        label="NEP89 (subdiffusive)",
+        label="NEP89",
     )
     axes[0].plot(
         temperatures,
@@ -229,7 +219,7 @@ def main():
     )
 
     fig = build_reference_figure(TEMPERATURES, model_d, reference_d, framework)
-    finish(fig, "06_LPS_reference")
+    finish(fig, "06_LPS_temperature_dependence")
 
     r1_rdf = load_csv(DATA / "300K_late_structure.csv")
     chen_rdf = load_reference_csv(REFERENCE / "Chen2025_Fig._1e.csv", (0, 2))
@@ -239,9 +229,9 @@ def main():
     finish(fig, "07_LPS_structure")
 
     plot_summary = {
-        "figure_conclusion": "R1 retains local PS4 geometry, while high-temperature Li diffusion remains above the Chen 2025 glass reference and 300 K is unresolved.",
+        "figure_conclusion": "R1 retains local PS4 geometry, while its finite-time apparent Li diffusion remains above the Chen 2025 glass reference across 300–900 K.",
         "archetype": "quantitative grid",
-        "exports": ["05_LPS_MSD", "06_LPS_reference", "07_LPS_structure"],
+        "exports": ["05_LPS_MSD", "06_LPS_temperature_dependence", "07_LPS_structure"],
         "reference_comparison": comparison.tolist(),
         "sources_sha256": {
             str(path.relative_to(ROOT)): hashlib.sha256(path.read_bytes()).hexdigest()

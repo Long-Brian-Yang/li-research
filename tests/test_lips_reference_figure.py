@@ -7,6 +7,7 @@ import numpy as np
 
 ROOT = Path(__file__).resolve().parents[1]
 SCRIPT = ROOT / "scripts" / "structures" / "plot_lips_r1_report.py"
+REFERENCE_STEM = "06_LPS_temperature_dependence"
 
 
 def load_module():
@@ -33,11 +34,19 @@ def test_reference_figure_uses_markdown_readable_vertical_layout():
     assert fig.axes[1].get_title() == "Host-framework displacement at 80 ps"
     assert all("comparison" not in axis.get_title().lower() for axis in fig.axes)
     diffusion_lines = {line.get_label(): line for line in fig.axes[0].lines}
-    assert np.array_equal(diffusion_lines["NEP89 (this work)"].get_xdata(), [700.0, 900.0])
     assert np.array_equal(
-        diffusion_lines["NEP89 (subdiffusive)"].get_xdata(), [300.0, 500.0]
+        diffusion_lines["NEP89"].get_xdata(), [300.0, 500.0, 700.0, 900.0]
     )
+    assert all("subdiffusive" not in label.lower() for label in diffusion_lines)
     plt.close(fig)
+
+
+def test_reference_figure_has_cache_safe_report_name():
+    script = SCRIPT.read_text()
+    assert f'finish(fig, "{REFERENCE_STEM}")' in script
+    for language in ("ja", "en"):
+        review = (ROOT / f"docs/materials/materials_overview_{language}.md").read_text()
+        assert f"figures/{REFERENCE_STEM}.png" in review
 
 
 def test_angle_density_is_normalized_with_current_numpy_api():

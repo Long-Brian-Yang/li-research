@@ -198,18 +198,18 @@
       "source": "scripts/structures/plot_lips_r1_report.py"
     },
     {
-      "file": "06_LPS_reference.png",
-      "sha256": "48aae3b84ce6e14468af77c42c6b4c28265e6816de6b8297bcb5cbcc847594fc",
+      "file": "06_LPS_temperature_dependence.png",
+      "sha256": "5e4ad36e141c5f5bbeaa7ca6765955be962fbdbf11eb33f356dc2c27638f8a36",
       "source": "scripts/structures/plot_lips_r1_report.py"
     },
     {
-      "file": "06_LPS_reference.pdf",
-      "sha256": "471046b93da3555a6fa170fa568fda49811d547a71822843949b6780cea93e73",
+      "file": "06_LPS_temperature_dependence.pdf",
+      "sha256": "f189ab37972f99d3ad4afc38a6b8d4afd7035115c4c52a850b11a184da0815c8",
       "source": "scripts/structures/plot_lips_r1_report.py"
     },
     {
-      "file": "06_LPS_reference.svg",
-      "sha256": "41cf55bc9ef2868591848c9b90a843631b7d9bcc5a66c87dbf65140c1ef3325b",
+      "file": "06_LPS_temperature_dependence.svg",
+      "sha256": "fddbc6a0a73531c84d4004da4fbf15f41f5cf36d8b97ac78d085775799785e41",
       "source": "scripts/structures/plot_lips_r1_report.py"
     },
     {

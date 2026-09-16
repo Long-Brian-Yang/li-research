@@ -1,9 +1,9 @@
 {
-  "figure_conclusion": "R1 retains local PS4 geometry, while high-temperature Li diffusion remains above the Chen 2025 glass reference and 300 K is unresolved.",
+  "figure_conclusion": "R1 retains local PS4 geometry, while its finite-time apparent Li diffusion remains above the Chen 2025 glass reference across 300\u2013900 K.",
   "archetype": "quantitative grid",
   "exports": [
     "05_LPS_MSD",
-    "06_LPS_reference",
+    "06_LPS_temperature_dependence",
     "07_LPS_structure"
   ],
   "reference_comparison": [
