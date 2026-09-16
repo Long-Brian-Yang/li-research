@@ -53,5 +53,7 @@
   ],
   "Ea_eV": 0.3508458940562316,
   "Arrhenius_R2": 0.9678835160475083,
-  "paper_experimental_Ea_eV": 0.33
+  "paper_experimental_Ea_eV": 0.33,
+  "paper_experimental_fit_Ea_eV": 0.33022695396059437,
+  "paper_experimental_source": "Tang_S3_experiment.csv"
 }

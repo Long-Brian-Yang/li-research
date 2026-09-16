@@ -26,6 +26,8 @@ def main():
     OUT.mkdir(parents=True, exist_ok=True)
     reference = np.loadtxt(BASE / "completed_transport/Tang_Fig3g.csv",
                            delimiter=",", skiprows=1)[:4]
+    experiment = np.loadtxt(BASE / "completed_transport/Tang_S3_experiment.csv",
+                            delimiter=",", skiprows=1)
     reference_sigma = {int(round(row[1])): row[4] for row in reference}
     records = []
     curves = {}
@@ -80,6 +82,7 @@ def main():
     temp = np.asarray([r["T_K"] for r in selected], float)
     diff = np.asarray([r["D_cm2_s"] for r in selected], float)
     reg = linregress(1000 / temp, np.log(diff))
+    experimental_reg = linregress(experiment[:, 0], experiment[:, 2])
     summary = {
         "selection_status": "exploratory target-informed display; not independent validation",
         "criterion": "minimum absolute log error to paper tuned-MACE conductivity among R2>=0.95 fits",
@@ -87,6 +90,10 @@ def main():
         "Ea_eV": float(-reg.slope * 1000 * KB),
         "Arrhenius_R2": float(reg.rvalue ** 2),
         "paper_experimental_Ea_eV": 0.33,
+        "paper_experimental_fit_Ea_eV": float(
+            -experimental_reg.slope * 1000 * KB
+        ),
+        "paper_experimental_source": "Tang_S3_experiment.csv",
     }
     (OUT / "target_informed_summary.json").write_text(json.dumps(summary, indent=2) + "\n")
 
@@ -114,8 +121,19 @@ def main():
     x = 1000 / temp
     y = np.log(ours * temp / 1000)
     sigma_reg = linregress(x, y)
-    ax.plot(x, y, "o", color="#31688e", label="NEP89")
+    nep_ea = -sigma_reg.slope * 1000 * KB
+    ax.plot(x, y, "o", color="#31688e",
+            label=fr"NEP89 ($E_a={nep_ea:.3f}$ eV)")
     ax.plot(x, sigma_reg.intercept + sigma_reg.slope * x, "-", color="#31688e")
+    x_exp = experiment[:, 0]
+    y_exp = experiment[:, 2]
+    xx_exp = np.linspace(x_exp.min(), x_exp.max(), 200)
+    exp_ea = -experimental_reg.slope * 1000 * KB
+    ax.plot(x_exp, y_exp, "s", ms=5.5, color="#555555",
+            label=fr"Experiment ($E_a={exp_ea:.3f}$ eV)")
+    ax.plot(xx_exp,
+            experimental_reg.intercept + experimental_reg.slope * xx_exp,
+            "--", lw=1.8, color="#555555")
     ax.set(title="Arrhenius comparison", xlabel="1000 / T (K⁻¹)",
            ylabel="ln[σT / (S cm⁻¹ K)]")
     ax.legend()

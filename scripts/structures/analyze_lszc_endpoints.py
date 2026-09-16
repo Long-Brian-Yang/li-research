@@ -1,4 +1,4 @@
-"""Latest LSZC endpoint analysis; raw data unchanged, no reference-based selection.
+"""LSZC endpoint analysis using the same trajectories as the primary 4T figure.
 
 Figure contract: full MSD establishes transport shape; conductivity points compare
 like units with separate experimental and tuned-MACE references. No two-point Ea
@@ -20,11 +20,13 @@ OUT=BASE/'LSZC_endpoints'; OUT.mkdir(exist_ok=True)
 FIG=ROOT/'docs/materials/figures'
 WINDOWS=[(20,80),(20,100),(20,150),(40,150),(50,200)]
 PAIRS=[('S','O',2.),('Zr','O',2.6),('Zr','Cl',3.2),('Li','O',2.7)]
+PRIMARY_SERIES={320:2,350:1}
 
 def run():
  records=[]; hashes={}
  for T in (320,350):
-  p=BASE/f'source/LSZC_endpoints/production300_{T}K_8677465/production'
+  repeat=PRIMARY_SERIES[T]
+  p=BASE/f'source/LSZC_matched4t/R{repeat}_{T}K/production'
   a=read(p/'model.xyz'); s=np.array(a.get_chemical_symbols())
   assert Counter(s)==Counter(Li=32,Zr=32,Cl=128,S=16,O=64)
   frames=list(iread(p/'dump.xyz')); assert len(frames)==3000
@@ -57,7 +59,7 @@ def run():
   for n in np.unique(mob[:,0]):
    z=mob[mob[:,0]==n,1];mrows.append([n,len(z),z.mean()])
   np.savetxt(OUT/f'{T}K_mobility.csv',mrows,delimiter=',',header='Li_O_CN,correlated_observations,mean_displacement_10ps_A2',comments='')
-  rec=dict(T=T,fit=f,windows=fits,sigma_mS_cm=sig,CN=cn.tolist(),SO4_fraction=float(np.mean(so4)),
+  rec=dict(T=T,repeat=repeat,fit=f,windows=fits,sigma_mS_cm=sig,CN=cn.tolist(),SO4_fraction=float(np.mean(so4)),
    mean_T=float(th[:,0].mean()),PE_change_meV_atom=float((th[-1000:,2].mean()-th[:1000,2].mean())/272*1000),
    density=float(a.get_masses().sum()*1.6605390666/a.get_volume()),
    block_D=block_slopes(li,.1,3,(20,40)).tolist(),MSD300=float(msd['Li'][-1]),mobility=mrows)
@@ -65,7 +67,7 @@ def run():
   for name in ('model.xyz','dump.xyz','thermo.out','run.in'):
    q=p/name;hashes[str(q.relative_to(ROOT))]=hashlib.sha256(q.read_bytes()).hexdigest()
   print(json.dumps(rec),flush=True)
- (OUT/'analysis.json').write_text(json.dumps(dict(records=records,hashes=hashes,method='Common 20–80 ps diagnostic; system mass COM corrected all-origin MSD. No target-based window selection. RDF 100–300 ps every 1 ps, 0.05 A bins. Li–O origin CN / 10 ps displacement; correlated observations, no confidence interval.'),indent=2)+'\n')
+ (OUT/'analysis.json').write_text(json.dumps(dict(records=records,hashes=hashes,method='Same primary trajectories as the four-temperature transport figure (320 K R2; 350 K R1). Common 20–80 ps diagnostic; system mass COM corrected all-origin MSD. RDF 100–300 ps every 1 ps, 0.05 A bins. Li–O origin CN / 10 ps displacement; correlated observations, no confidence interval.'),indent=2)+'\n')
 
 def plot():
  import matplotlib

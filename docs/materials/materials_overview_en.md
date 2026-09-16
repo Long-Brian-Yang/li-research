@@ -2,6 +2,20 @@
 
 Updated 16 September 2026. [日本語](materials_overview_ja.md)
 
+## Contents
+
+- [Overview: motivation, literature basis and study design](#overview)
+- [Part I: company-workflow reproduction and crystalline benchmarks](#crystalline)
+- [1. MACE versus NEP: why NEP was selected](#legacy)
+- [2. LZOC: the primary AIMD comparison](#lzoc)
+- [3. LSZC: extending the comparison to experiment](#lszc)
+- [4. Li₃PS₄: a sulfide transferability comparison](#lps)
+- [5. LiPON: limits of applicability](#lipon)
+- [6. Synthesis: reproduction, deviations and next steps](#remaining)
+- [Supporting methods: preparation and conditions](#status)
+- [Supporting methods: definitions and units](#methods)
+
+<a id="overview"></a>
 ## Overview: motivation, literature basis and study design
 
 ### Scientific background
@@ -52,14 +66,14 @@ All three Li₃YCl₆ models show increasing MSD with temperature, but their act
 
 ![Three-model, four-temperature LiNbOCl₄ MSD](figures/02_LiNbOCl4_three_model_MSD.png)
 
-|LiNbOCl₄|$E_a$ (eV)|Arrhenius $R^2$|$D(300\,\mathrm K)$ (cm²/s)|
-|---|---:|---:|---:|
-|MACE-MPA-0|0.313|0.9953|5.19×10⁻⁹|
-|SevenNet-nano|0.357|0.9953|2.18×10⁻⁹|
-|M3GNet GPU|0.397|0.8768|5.66×10⁻¹¹|
-|Experimental reference|0.240|—|room-temperature conductivity ≈10.4 mS/cm|
+|LiNbOCl₄|$E_a$ (eV)|Arrhenius $R^2$|$D(300\,\mathrm K)$ (cm²/s)|Conditional $\sigma_{\mathrm{NE}}(300\,\mathrm K)$ (mS/cm)|
+|---|---:|---:|---:|---:|
+|MACE-MPA-0|0.313|0.9953|5.19×10⁻⁹|0.201|
+|SevenNet-nano|0.357|0.9953|2.18×10⁻⁹|0.0842|
+|M3GNet GPU|0.397|0.8768|5.66×10⁻¹¹|0.00219|
+|Experimental reference|0.240|—|—|10.4|
 
-LiNbOCl₄ likewise shows substantial model dependence, and the M3GNet Arrhenius linearity is lower than for the other two models. Experimental conductivity is not a self-diffusion coefficient, so the comparison keeps $D$, activation energy and conditional Nernst–Einstein conversion distinct.
+LiNbOCl₄ likewise shows substantial model dependence, and the M3GNet Arrhenius linearity is lower than for the other two models. The Arrhenius panel now follows the Li₃YCl₆ construction: MD $D$ is converted to conditional Nernst–Einstein conductivity using the Li number density of the model cell, and $\ln(\sigma_{\mathrm{NE}}T)$ is displayed. The black dotted reference is anchored at the 10.4 mS cm⁻¹ room-temperature conductivity reported by Tanaka et al. and extended with the reported $E_a=0.240$ eV. It is a complete experimental conductivity reference, not an experimental Li self-diffusion curve; comparison with $D$ therefore retains the limitation of a correlation-free conversion.
 
 |Li₃YCl₆|LiNbOCl₄|
 |---|---|
@@ -110,18 +124,6 @@ The comparison follows a hierarchy. First, numerical completeness requires finit
 This is a benchmark of practical pretrained-potential workflows, not a new potential-training study and not an exact reproduction of every cited simulation. Development began from the company's existing **M3GNet–LAMMPS CPU** workflow. The first acceleration test was therefore **LAMMPS CPU versus GPU** within the MatGL route, not ASE versus LAMMPS. This was followed by the multi-model benchmark and the practical MACE–NEP comparison; subsequent material sections test the resulting choice against literature. Differences in starting structures, cell sizes, ensembles, thermostats and available trajectory lengths are stated where they affect interpretation. Deviations are retained as results rather than removed by tuning trajectories toward a target value.
 
 The report consequently proceeds from M3GNet–LAMMPS CPU-to-GPU acceleration, through the multi-potential benchmark and MACE-versus-NEP efficiency comparison, to increasingly demanding material tests: the LZOC AIMD comparison, the LSZC experimental extension, Li₃PS₄ sulfide transferability and finally the LiPON applicability limit.
-
-## Contents
-
-- [Part I: company-workflow reproduction and crystalline benchmarks](#crystalline)
-- [1. MACE versus NEP: why NEP was selected](#legacy)
-- [2. LZOC: the primary AIMD comparison](#lzoc)
-- [3. LSZC: extending the comparison to experiment](#lszc)
-- [4. Li₃PS₄: a sulfide transferability comparison](#lps)
-- [5. LiPON: limits of applicability](#lipon)
-- [6. Synthesis: reproduction, deviations and next steps](#remaining)
-- [Supporting methods: preparation and conditions](#status)
-- [Supporting methods: definitions and units](#methods)
 
 <a id="legacy"></a>
 ## 1. MACE versus NEP: why NEP was selected
@@ -347,7 +349,7 @@ Both productions use NEP89, **0.5 fs integration and 100 fs temperature coupling
 
 ![LSZC four-temperature transport and literature comparison](figures/18_LSZC_transport.png)
 
-The upper row and lower-left panel show the complete 0–300 ps Li MSD for the displayed trajectory at each temperature. The lower-centre panel compares conditional Nernst–Einstein conductivity with the published tuned-MACE calculation, and the lower-right panel shows the corresponding Arrhenius representation. Fit intervals are not drawn over the MSD curves.
+The upper row and lower-left panel show the complete 0–300 ps Li MSD for the displayed trajectory at each temperature. The lower-centre panel compares conditional Nernst–Einstein conductivity with the published tuned-MACE calculation, and the lower-right panel compares the NEP89 and experimental Arrhenius trends. The experimental squares are the 303–353 K source points from Supplementary Fig. 3, and their grey dashed regression gives $E_a=0.330$ eV. Fit intervals are not drawn over the MSD curves.
 
 |T (K)|Displayed series|D_app (cm²/s)|Conditional σ_NE (mS/cm)|Paper tuned-MACE σ (mS/cm)|R²|α|
 |---:|---:|---:|---:|---:|---:|---:|
@@ -377,22 +379,22 @@ These values are converted from the paper's Supplementary Fig. 3 source coordina
 |---|---:|---:|---|
 |Mean S–O CN (<2.0 Å)|4.000|4.000|Sulfate structural motif|
 |Sampled S sites with four O|100%|100%|Not a quantitative experimental fraction|
-|Mean Zr–O CN (<2.6 Å)|1.622|1.572|2.6, EXAFS fit|
-|Mean Zr–Cl CN (<3.2 Å)|4.233|4.264|3.0, EXAFS fit|
-|Mean Li–O CN (<2.7 Å)|0.752|0.867|No matched numerical benchmark used|
-|Density (g/cm³)|1.880|1.755|2.05|
+|Mean Zr–O CN (<2.6 Å)|1.657|1.649|2.6, EXAFS fit|
+|Mean Zr–Cl CN (<3.2 Å)|4.267|4.213|3.0, EXAFS fit|
+|Mean Li–O CN (<2.7 Å)|0.808|0.826|No matched numerical benchmark used|
+|Density (g/cm³)|1.880|1.880|2.05|
 
 The sulfate units remain intact in the sampled frames, but the Zr environment remains less O-coordinated and more Cl-coordinated than the EXAFS reference. Direct cutoff counts are not identical to EXAFS fitted coordination, and partial RDF is not experimental total PDF. These discrepancies can inform potential/preparation limitations; they do not identify a unique cause of the transport mismatch.
 
-![LSZC latest coordination and mobility](figures/20_LSZC_endpoint_mobility.png)
+![LSZC coordination and mobility](figures/20_LSZC_endpoint_mobility.png)
 
-At both temperatures, Li with zero or one O neighbour moves more over 10 ps than Li with two O neighbours: mean squared displacements for CN 0/1/2 are **0.735/0.763/0.575 Å² at 320 K** and **0.839/0.851/0.608 Å² at 350 K**. This partially supports the paper's low-O-coordination mobility picture, but the full CN dependence is not monotonic and does not establish a causal mechanism. Open, unconnected markers have fewer than 100 Li–origin observations; counts are correlated samples, not independent confidence estimates.
+This panel has been recalculated from the same 320 and 350 K trajectories used in the current four-temperature transport figure. The 10 ps mean squared displacements for CN 0/1/2 are **0.545/0.548/0.584 Å² at 320 K** and **1.111/1.265/0.870 Å² at 350 K**. Enhanced motion for low-O-coordinated Li is evident at 350 K but not reproduced at 320 K, so it is not a robust monotonic relation across the temperature series. The result is partially compatible with the paper's low-O-coordination picture but does not establish a causal mechanism. Open, unconnected markers have fewer than 100 Li–origin observations; the counts in the right panel are correlated samples, not independent confidence estimates.
 
 ### Physical interpretation: local mobility is not macroscopic conduction
 
 The low-coordination mobility result concerns movement over 10 ps, whereas conductivity requires sustained transport over longer distances and times. Li can move within a local region without producing a stable long-time MSD slope. The observed short-time association can therefore coexist with the poor conductivity temperature trend; these are different levels of the transport problem, not contradictory observations.
 
-Density is another unresolved contributor. The lower-density 350 K cell has a different Li number density, which enters σ_NE directly, but the apparent D itself also decreases. A density conversion alone therefore does not explain the mismatch. Changes in the prepared environment, slow relaxation and the potential's description of barriers remain possible contributors, without a controlled calculation here that isolates them.
+The 320 and 350 K trajectories compared here use the same fixed-cell density, so their difference cannot be assigned to Li number density alone. Local environments, slow relaxation and the potential's description of barriers remain possible contributors, without a controlled calculation here that isolates them.
 
 ### Analysis scope and conclusion
 
