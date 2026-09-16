@@ -25,4 +25,12 @@ Array **8679199.1–4**, group tgj-26ICP, tasks300/500/700/900 K, max2concurrent
 Input SHA256: `08f4c4f7a07fab822637dd936dc656b9886fdf238cedcbdae651dea68c325bf6`.
 Runner: `scripts/structures/submit_lps_r1_transport.sh`.
 Outputs below `/gs/fs/tgj-26ICP/uf03782/yang/li-research/runs/amorphous/Li3PS4/nep89/r1_transport_{T}K_8679199/`.
+
+## Remote analysis result
+
+All four production trajectories were analysed in place on TSUBAME; raw trajectories were not copied into the repository. Compact MSD, RDF, angle, fit-diagnostic and thermodynamic tables are stored in `Li3PS4_R1_transport/`.
+
+Using the common 20–80 ps diagnostic, apparent D is 5.401e-8, 4.209e-7, 7.925e-6 and 3.065e-5 cm2/s at 300, 500, 700 and 900 K. The corresponding log–log exponents are 0.269, 0.535, 0.916 and 0.926; therefore only 700 and 900 K show a clear diffusive regime. A 500–900 K diagnostic gives Ea=0.4189 eV but is not adopted as a definitive activation energy because 500 K remains subdiffusive.
+
+The 300 K late-production Li–S RDF maximum is 2.425 A and the mean S–P–S angle is 109.38 degrees. P remains fourfold coordinated at 300 and 500 K; the late-production fourfold fractions are 99.84% and 98.75% at 700 and 900 K. The current R1 figures replace the earlier preparation in the Material Review; the earlier result remains archived as a preparation-sensitivity control.
 New transport not yet analysed. Source structure and old trajectories unchanged.

@@ -1,0 +1,41 @@
+{
+  "figure_conclusion": "R1 retains local PS4 geometry, while high-temperature Li diffusion remains above the Chen 2025 glass reference and 300 K is unresolved.",
+  "archetype": "quantitative grid",
+  "exports": [
+    "05_LPS_MSD",
+    "06_LPS_reference",
+    "07_LPS_structure"
+  ],
+  "reference_comparison": [
+    [
+      300.0,
+      5.4009713794161074e-08,
+      1.18583296051821e-09,
+      45.54580248010544
+    ],
+    [
+      500.0,
+      4.2092730877889934e-07,
+      9.35033480925553e-08,
+      4.501735150299003
+    ],
+    [
+      700.0,
+      7.924743392086516e-06,
+      1.52370874371679e-06,
+      5.200956826404798
+    ],
+    [
+      900.0,
+      3.064674160909106e-05,
+      9.10638144850278e-06,
+      3.365413779600659
+    ]
+  ],
+  "sources_sha256": {
+    "results/amorphous_review_20260915/Li3PS4_R1_transport/summary.json": "727503794b563dc50d923917e7802f53402ced950c7a732b5dab2b4bd856b1c5",
+    "results/amorphous_review_20260915/final_comparisons/Chen2025_Fig._3a.csv": "6b50a4ff80b54bbcb8d35573b0095f62af92c02fcdb7e9934569c080217e3c91",
+    "results/amorphous_review_20260915/final_comparisons/Chen2025_Fig._1e.csv": "40b5b10a2f82633aa591b11ed227eeaa782dcc2e3aee89827528a8dfe125ce78",
+    "results/amorphous_review_20260915/final_comparisons/Chen2025_Fig._1f.csv": "de41a9ee0521a684540046ca119f6009cd2352b9ae88f182803aa5188aba0857"
+  }
+}

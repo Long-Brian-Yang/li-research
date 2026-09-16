@@ -1,0 +1,439 @@
+{
+  "definition": "time-origin averaged, whole-system COM-corrected species MSD",
+  "selected_common_window_ps": [
+    20,
+    80
+  ],
+  "results": {
+    "300": {
+      "temperature_K": 300,
+      "n_atoms": 512,
+      "n_production_frames": 2000,
+      "production_duration_ps": 200.0,
+      "fits": [
+        {
+          "lo_ps": 5,
+          "hi_ps": 20,
+          "D_cm2_s": 8.25171268060005e-08,
+          "R2": 0.9894962042757234,
+          "alpha": 0.13546803077878616,
+          "intercept_A2": 0.3556437041221544
+        },
+        {
+          "lo_ps": 10,
+          "hi_ps": 40,
+          "D_cm2_s": 5.5774375487417245e-08,
+          "R2": 0.990833511284233,
+          "alpha": 0.1637317518181771,
+          "intercept_A2": 0.38013110879550094
+        },
+        {
+          "lo_ps": 20,
+          "hi_ps": 80,
+          "D_cm2_s": 5.4009713794161074e-08,
+          "R2": 0.9981502721044754,
+          "alpha": 0.2690364579876932,
+          "intercept_A2": 0.38324797541989986
+        },
+        {
+          "lo_ps": 40,
+          "hi_ps": 100,
+          "D_cm2_s": 6.170145159149334e-08,
+          "R2": 0.9916345561319755,
+          "alpha": 0.3972270872234467,
+          "intercept_A2": 0.3573856859509338
+        },
+        {
+          "lo_ps": 50,
+          "hi_ps": 150,
+          "D_cm2_s": 6.125234795706331e-08,
+          "R2": 0.9946873619423812,
+          "alpha": 0.48389410262315374,
+          "intercept_A2": 0.35964894624253557
+        }
+      ],
+      "MSD80_A2": {
+        "Li": 0.6447586780312453,
+        "P": 0.08811371758838445,
+        "S": 0.1449810152587011
+      },
+      "MSD150_A2": {
+        "Li": 0.887458124677499,
+        "P": 0.09515172507795858,
+        "S": 0.15755781665581356
+      },
+      "structure": {
+        "early": {
+          "CN_Li_S": 5.315104166666667,
+          "CN_P_S": 4.0,
+          "P_four_S_fraction": 1.0,
+          "S_P_S_mean_deg": 109.3848541477388,
+          "minimum_pair_A": 1.905923051149821,
+          "sampled_frames": 20
+        },
+        "late": {
+          "CN_Li_S": 5.289583333333334,
+          "CN_P_S": 4.0,
+          "P_four_S_fraction": 1.0,
+          "S_P_S_mean_deg": 109.38381717168409,
+          "minimum_pair_A": 1.9104230527688728,
+          "sampled_frames": 20
+        }
+      },
+      "stages": {
+        "ramp": {
+          "mean_T_K": 299.53844264065003,
+          "mean_P_GPa": -0.00014062835227681786,
+          "mean_density_g_cm3": 2.2013330322677893,
+          "density_last_minus_first_percent": -0.1955786223249767,
+          "PE_last_minus_first_meV_atom": 0.4024632304684417
+        },
+        "equil": {
+          "mean_T_K": 299.78456306546,
+          "mean_P_GPa": 0.000808922583237807,
+          "mean_density_g_cm3": 2.2040198028347304,
+          "density_last_minus_first_percent": 0.11678226352573873,
+          "PE_last_minus_first_meV_atom": -0.6417413148431805
+        },
+        "production": {
+          "mean_T_K": 299.71561826317253,
+          "mean_P_GPa": -0.043733200516333066,
+          "mean_density_g_cm3": 2.2051051832171997,
+          "density_last_minus_first_percent": 0.0,
+          "PE_last_minus_first_meV_atom": 0.2990905275392919
+        }
+      },
+      "max_COM_displacement_A": 0.00011803363509863056,
+      "source_sha256": {
+        "model.xyz": "a3a746fee502f23d570a7eaa6d3856706d8bb7d409d0ecffdb6bd67f9d863c9f",
+        "dump.xyz": "a8d6117af5871b017ab4aa7d0132eee764596ba438f97d55836c65af4a200d4b",
+        "thermo.out": "3e60e4dd062cb5b4f610ed8fcf788bcc5179773f1cf0ecdf3f34062174ee2afd"
+      }
+    },
+    "500": {
+      "temperature_K": 500,
+      "n_atoms": 512,
+      "n_production_frames": 2000,
+      "production_duration_ps": 200.0,
+      "fits": [
+        {
+          "lo_ps": 5,
+          "hi_ps": 20,
+          "D_cm2_s": 5.454024915066999e-07,
+          "R2": 0.9968908631491241,
+          "alpha": 0.31431700676068774,
+          "intercept_A2": 0.7914873972142965
+        },
+        {
+          "lo_ps": 10,
+          "hi_ps": 40,
+          "D_cm2_s": 4.904399912425592e-07,
+          "R2": 0.9997507550739303,
+          "alpha": 0.42939875282925777,
+          "intercept_A2": 0.8415780239228132
+        },
+        {
+          "lo_ps": 20,
+          "hi_ps": 80,
+          "D_cm2_s": 4.2092730877889934e-07,
+          "R2": 0.9970322487416018,
+          "alpha": 0.5346900571296453,
+          "intercept_A2": 0.9769503537890429
+        },
+        {
+          "lo_ps": 40,
+          "hi_ps": 100,
+          "D_cm2_s": 4.072554307571429e-07,
+          "R2": 0.9988988794846176,
+          "alpha": 0.6018198979006723,
+          "intercept_A2": 1.0344316079893503
+        },
+        {
+          "lo_ps": 50,
+          "hi_ps": 150,
+          "D_cm2_s": 4.4512069625947916e-07,
+          "R2": 0.9983664953775792,
+          "alpha": 0.7246580329577057,
+          "intercept_A2": 0.8725765300706367
+        }
+      ],
+      "MSD80_A2": {
+        "Li": 2.964064305900637,
+        "P": 0.17393354224274485,
+        "S": 0.32355280339357684
+      },
+      "MSD150_A2": {
+        "Li": 4.898702206730647,
+        "P": 0.19875945283096683,
+        "S": 0.40860883458593733
+      },
+      "structure": {
+        "early": {
+          "CN_Li_S": 5.219531250000001,
+          "CN_P_S": 4.0,
+          "P_four_S_fraction": 1.0,
+          "S_P_S_mean_deg": 109.33659230760753,
+          "minimum_pair_A": 1.87907452153068,
+          "sampled_frames": 20
+        },
+        "late": {
+          "CN_Li_S": 5.276041666666667,
+          "CN_P_S": 4.0,
+          "P_four_S_fraction": 1.0,
+          "S_P_S_mean_deg": 109.33616729370164,
+          "minimum_pair_A": 1.8980878855721317,
+          "sampled_frames": 20
+        }
+      },
+      "stages": {
+        "ramp": {
+          "mean_T_K": 399.34998801815004,
+          "mean_P_GPa": -0.002426418250101785,
+          "mean_density_g_cm3": 2.179073525971827,
+          "density_last_minus_first_percent": -1.7603071152794691,
+          "PE_last_minus_first_meV_atom": 22.97730512499907
+        },
+        "equil": {
+          "mean_T_K": 499.72941493731,
+          "mean_P_GPa": 0.000258389102284562,
+          "mean_density_g_cm3": 2.158477841501742,
+          "density_last_minus_first_percent": -0.17383098545249442,
+          "PE_last_minus_first_meV_atom": 0.27145228750047323
+        },
+        "production": {
+          "mean_T_K": 499.9681248391975,
+          "mean_P_GPa": 0.13486385407218798,
+          "mean_density_g_cm3": 2.1704427600822638,
+          "density_last_minus_first_percent": 0.0,
+          "PE_last_minus_first_meV_atom": -0.07620602871227788
+        }
+      },
+      "max_COM_displacement_A": 0.00025135240430365977,
+      "source_sha256": {
+        "model.xyz": "f340402b23f5e5a4951435133e4f40e0fb18e07f046da7769ee6a51cb6ba3dc3",
+        "dump.xyz": "e5df0f6b3983f3fee35b654dea95470e3bdcc59e8af6ed19c77eefd76a38cf42",
+        "thermo.out": "7d368b551443ebadbeb56aa096154bb30a0f9656cb9bb683e78f1265696f345e"
+      }
+    },
+    "700": {
+      "temperature_K": 700,
+      "n_atoms": 512,
+      "n_production_frames": 2000,
+      "production_duration_ps": 200.0,
+      "fits": [
+        {
+          "lo_ps": 5,
+          "hi_ps": 20,
+          "D_cm2_s": 8.314861511063421e-06,
+          "R2": 0.9997710948325574,
+          "alpha": 0.7853434921317629,
+          "intercept_A2": 1.4575391816558199
+        },
+        {
+          "lo_ps": 10,
+          "hi_ps": 40,
+          "D_cm2_s": 7.841014388563271e-06,
+          "R2": 0.9999005338453596,
+          "alpha": 0.8405685606880156,
+          "intercept_A2": 1.9016779751634747
+        },
+        {
+          "lo_ps": 20,
+          "hi_ps": 80,
+          "D_cm2_s": 7.924743392086516e-06,
+          "R2": 0.9999570209482069,
+          "alpha": 0.9159729584193912,
+          "intercept_A2": 1.780187175430445
+        },
+        {
+          "lo_ps": 40,
+          "hi_ps": 100,
+          "D_cm2_s": 7.890607651849196e-06,
+          "R2": 0.9999521682397109,
+          "alpha": 0.9412584784948987,
+          "intercept_A2": 1.9077736623675037
+        },
+        {
+          "lo_ps": 50,
+          "hi_ps": 150,
+          "D_cm2_s": 7.950292059101223e-06,
+          "R2": 0.999864979357906,
+          "alpha": 0.9608689582734865,
+          "intercept_A2": 1.6903702543913113
+        }
+      ],
+      "MSD80_A2": {
+        "Li": 39.748321710965484,
+        "P": 0.5613549207763285,
+        "S": 1.3789229541943235
+      },
+      "MSD150_A2": {
+        "Li": 72.65962209640423,
+        "P": 0.7229273787210189,
+        "S": 1.7035590439501713
+      },
+      "structure": {
+        "early": {
+          "CN_Li_S": 5.009375,
+          "CN_P_S": 3.9984375,
+          "P_four_S_fraction": 0.9984375,
+          "S_P_S_mean_deg": 109.29293990742461,
+          "minimum_pair_A": 1.8350212408624438,
+          "sampled_frames": 20
+        },
+        "late": {
+          "CN_Li_S": 5.015104166666665,
+          "CN_P_S": 3.9984375,
+          "P_four_S_fraction": 0.9984375,
+          "S_P_S_mean_deg": 109.29462500578009,
+          "minimum_pair_A": 1.8480762022288928,
+          "sampled_frames": 20
+        }
+      },
+      "stages": {
+        "ramp": {
+          "mean_T_K": 500.78102898055,
+          "mean_P_GPa": -0.004351191626155749,
+          "mean_density_g_cm3": 2.1574831902494123,
+          "density_last_minus_first_percent": -3.4286810419467018,
+          "PE_last_minus_first_meV_atom": 47.80997999999936
+        },
+        "equil": {
+          "mean_T_K": 698.7555850632899,
+          "mean_P_GPa": 0.004118513815269234,
+          "mean_density_g_cm3": 2.1006576282085785,
+          "density_last_minus_first_percent": -0.021871630908021356,
+          "PE_last_minus_first_meV_atom": 1.0512756562501835
+        },
+        "production": {
+          "mean_T_K": 700.5951661564624,
+          "mean_P_GPa": -0.17414492753802324,
+          "mean_density_g_cm3": 2.0798849218733393,
+          "density_last_minus_first_percent": 0.0,
+          "PE_last_minus_first_meV_atom": 0.540625724022803
+        }
+      },
+      "max_COM_displacement_A": 0.0003892268632073814,
+      "source_sha256": {
+        "model.xyz": "de9aa26ecb5d56e580972b0481e8990126cd15574e208e67de0e3b3b378e101c",
+        "dump.xyz": "cfc857d22e45d1362d4d83294902bb338564e67eb41a287b21c205c5a3a73b87",
+        "thermo.out": "e364a035861c28a4b23172d5adb4bd1d70230470791919ad9d6a39f9ef98c1da"
+      }
+    },
+    "900": {
+      "temperature_K": 900,
+      "n_atoms": 512,
+      "n_production_frames": 2000,
+      "production_duration_ps": 200.0,
+      "fits": [
+        {
+          "lo_ps": 5,
+          "hi_ps": 20,
+          "D_cm2_s": 3.354963252961871e-05,
+          "R2": 0.9999904527757352,
+          "alpha": 0.9123485246219954,
+          "intercept_A2": 2.009746324464011
+        },
+        {
+          "lo_ps": 10,
+          "hi_ps": 40,
+          "D_cm2_s": 3.2098570381592465e-05,
+          "R2": 0.999580913329448,
+          "alpha": 0.9284052750038903,
+          "intercept_A2": 3.5072200428863454
+        },
+        {
+          "lo_ps": 20,
+          "hi_ps": 80,
+          "D_cm2_s": 3.064674160909106e-05,
+          "R2": 0.9999752154500597,
+          "alpha": 0.9257437770051902,
+          "intercept_A2": 6.169260318634926
+        },
+        {
+          "lo_ps": 40,
+          "hi_ps": 100,
+          "D_cm2_s": 3.0473059581293463e-05,
+          "R2": 0.9999767437550383,
+          "alpha": 0.946627700188984,
+          "intercept_A2": 6.725816163477347
+        },
+        {
+          "lo_ps": 50,
+          "hi_ps": 150,
+          "D_cm2_s": 3.1101287724454253e-05,
+          "R2": 0.9998497770180306,
+          "alpha": 0.9722087512682166,
+          "intercept_A2": 3.8980669336496874
+        }
+      ],
+      "MSD80_A2": {
+        "Li": 153.10831515614032,
+        "P": 5.134190087903382,
+        "S": 12.203335165450381
+      },
+      "MSD150_A2": {
+        "Li": 285.4984677691307,
+        "P": 8.988627273692028,
+        "S": 17.955590940913584
+      },
+      "structure": {
+        "early": {
+          "CN_Li_S": 4.834114583333333,
+          "CN_P_S": 3.98828125,
+          "P_four_S_fraction": 0.98828125,
+          "S_P_S_mean_deg": 109.22981243699903,
+          "minimum_pair_A": 1.82423789256314,
+          "sampled_frames": 20
+        },
+        "late": {
+          "CN_Li_S": 4.801302083333334,
+          "CN_P_S": 3.9875,
+          "P_four_S_fraction": 0.9875,
+          "S_P_S_mean_deg": 109.2714180766809,
+          "minimum_pair_A": 1.8344417794846806,
+          "sampled_frames": 20
+        }
+      },
+      "stages": {
+        "ramp": {
+          "mean_T_K": 599.1255172355,
+          "mean_P_GPa": 0.002516496615457551,
+          "mean_density_g_cm3": 2.129926723434936,
+          "density_last_minus_first_percent": -5.387797261551841,
+          "PE_last_minus_first_meV_atom": 79.38756556249959
+        },
+        "equil": {
+          "mean_T_K": 898.50382463908,
+          "mean_P_GPa": -0.0009362798204258791,
+          "mean_density_g_cm3": 2.0291177086687378,
+          "density_last_minus_first_percent": 0.023071154941001204,
+          "PE_last_minus_first_meV_atom": 3.6759624046860395
+        },
+        "production": {
+          "mean_T_K": 900.3333673153925,
+          "mean_P_GPa": -0.01074445565961273,
+          "mean_density_g_cm3": 2.021601489485452,
+          "density_last_minus_first_percent": 0.0,
+          "PE_last_minus_first_meV_atom": 0.9932381085944186
+        }
+      },
+      "max_COM_displacement_A": 0.00046234534321738774,
+      "source_sha256": {
+        "model.xyz": "9e82d415bfe391a5c354562b9157204bdfbcb6cc8ccbd26d72f2097310fa6fcb",
+        "dump.xyz": "e3f0072e74b69e7d913cf4fdd9501d9f222c6e93ee8b9715d375e464ded91fba",
+        "thermo.out": "1d381bd838333bf23912307c83df63f5fa14559cf7a69ac2f6a19ca936185448"
+      }
+    }
+  },
+  "high_temperature_diagnostic": {
+    "range_K": [
+      500,
+      700,
+      900
+    ],
+    "Ea_eV": 0.4188975678610315,
+    "R2": 0.9978403234853402,
+    "status": "diagnostic; 300 K excluded and no room-temperature extrapolation"
+  }
+}

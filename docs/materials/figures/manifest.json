@@ -1,5 +1,5 @@
 {
-  "operation": "Location consolidation only; image bytes preserved. Historical sources retained for earlier reports.",
+  "operation": "Current report figure inventory. Historical sources remain archived; current files may be regenerated from the listed scripts.",
   "figure_groups": 20,
   "assets": [
     {
@@ -169,48 +169,48 @@
     },
     {
       "file": "05_LPS_MSD.png",
-      "sha256": "b1a41b779b7ec4e1964acbf264623901fbe43abc332d9456636fd6593e084f3c",
-      "historical_source": "results/plots/amorphous/05_LPS_MSD.png"
+      "sha256": "5269d7201c1f4d26f3e407b78d8df172d1f0b97dba3d2a1c759c4d4e7eb07af1",
+      "source": "scripts/structures/plot_lips_r1_report.py"
     },
     {
       "file": "05_LPS_MSD.pdf",
-      "sha256": "084bd117755c4aad13a7a3d99f9a53bd00b0a74768584decf72a66874e358520",
-      "historical_source": "results/plots/amorphous/05_LPS_MSD.pdf"
+      "sha256": "d0e009abafb44a8fd82b10c6aa039288b7b3015a2ac6d83e986cb2ae20a1c39f",
+      "source": "scripts/structures/plot_lips_r1_report.py"
     },
     {
       "file": "05_LPS_MSD.svg",
-      "sha256": "3ad1d18667a38035bb04f33503c42d69b71db6e224b159dfbfa403da9f14b744",
-      "historical_source": "results/plots/amorphous/05_LPS_MSD.svg"
+      "sha256": "4d951134138f048f3dc3b98c8651217165fdbee2c7eba8a902529edb33ef756f",
+      "source": "scripts/structures/plot_lips_r1_report.py"
     },
     {
       "file": "06_LPS_reference.png",
-      "sha256": "13c8a17bbe28892ef24e736c8fdec0dfc8b1f4a984ab9843d4a7bab25ca4a202",
-      "historical_source": "results/plots/amorphous/06_LPS_reference.png"
+      "sha256": "26c4ffe8d977f94295643953b4ed11238bd337023a8f3ea8ae2781b3c1c1d64f",
+      "source": "scripts/structures/plot_lips_r1_report.py"
     },
     {
       "file": "06_LPS_reference.pdf",
-      "sha256": "f3d6443d9661a0e9ed67c78d5d614f557e5b7fef679a076b1e380abfab5aaa71",
-      "historical_source": "results/plots/amorphous/06_LPS_reference.pdf"
+      "sha256": "461bd28a59287f53b8f22ce19586f947597761c4fb904108a4e491d67a8a8e71",
+      "source": "scripts/structures/plot_lips_r1_report.py"
     },
     {
       "file": "06_LPS_reference.svg",
-      "sha256": "799ae2890860b24225e638e3681bce9ac62a4f4ed0fed80b76db9485a829dcaf",
-      "historical_source": "results/plots/amorphous/06_LPS_reference.svg"
+      "sha256": "ca221fcc21920adf22411c70eae0f56c98be84317f1f9aca31e9b79aa100f3e9",
+      "source": "scripts/structures/plot_lips_r1_report.py"
     },
     {
       "file": "07_LPS_structure.png",
-      "sha256": "0c27308b7dac1836f303afb19bb72672d538afc79a8a0091c42778e44ff04a56",
-      "historical_source": "results/plots/amorphous/07_LPS_structure.png"
+      "sha256": "21a6ca038a02086230974690a53f6e139273248bbd455dedbd214b0647b58191",
+      "source": "scripts/structures/plot_lips_r1_report.py"
     },
     {
       "file": "07_LPS_structure.pdf",
-      "sha256": "68e743079e9982bc0bb426229b4171c2377c6095d7838ba0a3e16fffc66fb354",
-      "historical_source": "results/plots/amorphous/07_LPS_structure.pdf"
+      "sha256": "2e4c3d716966ac00ee00984aa62dd1302af0af969160d0f38d22f6682888ee6e",
+      "source": "scripts/structures/plot_lips_r1_report.py"
     },
     {
       "file": "07_LPS_structure.svg",
-      "sha256": "76bf9fb873b3425e1a0e5fad2956831023070509f8ddb1a9c2c3616df727aa31",
-      "historical_source": "results/plots/amorphous/07_LPS_structure.svg"
+      "sha256": "0e212445df2eea0ed94a0373540ffc10804108e234bc249a1463c113fa51de1a",
+      "source": "scripts/structures/plot_lips_r1_report.py"
     },
     {
       "file": "08_LiPON_contacts.png",
