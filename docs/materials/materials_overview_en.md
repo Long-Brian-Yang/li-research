@@ -42,6 +42,23 @@ The environments were constructed in the following order:
 
 This order separates backend effects from potential-model effects. In the common short benchmark on 240-atom Li₃YCl₆, M3GNet–LAMMPS achieved 3.285 steps/s on CPU and 56.621 steps/s on one H100 GPU, an approximately 17.2-fold speedup. The result establishes throughput only; neither GPU execution nor a model change implies improved physical accuracy.
 
+#### Short MD benchmark
+
+The same 2×2×2 Li₃YCl₆ structure (240 atoms) was used throughout, and throughput was read consistently as `timesteps/s` from the LAMMPS log. The GPU series used one H100 and one MPI rank; the CPU row is the company's baseline native-LAMMPS route.
+
+|Model|Execution route|GPU / MPI|Speed (timesteps/s)|
+|---|---|---:|---:|
+|MACE-MPA-0-medium (ML-IAP/Kokkos)|ML-IAP–Kokkos GPU|1 GPU / 1 MPI|39.176|
+|MACE-MP-0b3-medium|ML-IAP–Kokkos GPU|1 GPU / 1 MPI|36.938|
+|MACE-MP-0b2-small|ML-IAP–Kokkos GPU|1 GPU / 1 MPI|53.124|
+|MACE-MPA-0-medium (legacy)|legacy GPU interface|1 GPU / 1 MPI|10.316|
+|SevenNet-nano|LAMMPS e3gnn|1 GPU / 1 MPI|69.261|
+|SevenNet-omni|e3gnn/parallel|1 GPU / 1 MPI|8.579|
+|M3GNet|LAMMPS `matgl/kk` GPU|1 GPU / 1 MPI|56.621|
+|M3GNet|LAMMPS native CPU|CPU|3.285|
+
+This table compares **implementation and inference throughput** on the common structure, not potential accuracy. Even for the fastest entry, SevenNet-nano, the reliability of material transport is assessed separately using MSD, Arrhenius behaviour, structural observables and literature benchmarks.
+
 #### Why these crystalline materials were selected
 
 Li₃YCl₆ is a representative chloride solid electrolyte reported to combine high-voltage-cathode compatibility with room-temperature conductivity above 1 mS cm⁻¹. [Asano et al., 2018; DOI: 10.1002/adma.201803075](https://doi.org/10.1002/adma.201803075) Rather than propagate a partially occupied average structure directly, we constructed an explicit full-occupancy Li/Y ordered model and used a 2×2×2, 240-atom supercell.

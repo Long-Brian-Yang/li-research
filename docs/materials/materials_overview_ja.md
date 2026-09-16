@@ -42,6 +42,23 @@
 
 この順序により、CPU／GPU backendの差とポテンシャルモデルの差を分けて扱う。240原子Li₃YCl₆の共通短時間benchmarkでは、M3GNet–LAMMPS CPUが3.285 steps/s、H100 GPUが56.621 steps/sであり、約17.2倍の高速化を得た。一方、この結果は速度だけを示し、GPU化やモデル変更による精度向上を意味しない。
 
+#### 短時間MDベンチマーク
+
+同一のLi₃YCl₆ 2×2×2構造（240原子）を用い、LAMMPS logの`timesteps/s`で実測スループットを統一した。GPU系列はH100を1基、MPI rankを1とした。CPU行は企業内基準のLAMMPS native CPU経路である。
+
+|モデル|実行方式|GPU／MPI|速度 (timesteps/s)|
+|---|---|---:|---:|
+|MACE-MPA-0-medium (ML-IAP/Kokkos)|ML-IAP–Kokkos GPU|1 GPU / 1 MPI|39.176|
+|MACE-MP-0b3-medium|ML-IAP–Kokkos GPU|1 GPU / 1 MPI|36.938|
+|MACE-MP-0b2-small|ML-IAP–Kokkos GPU|1 GPU / 1 MPI|53.124|
+|MACE-MPA-0-medium (legacy)|legacy GPU interface|1 GPU / 1 MPI|10.316|
+|SevenNet-nano|LAMMPS e3gnn|1 GPU / 1 MPI|69.261|
+|SevenNet-omni|e3gnn/parallel|1 GPU / 1 MPI|8.579|
+|M3GNet|LAMMPS `matgl/kk` GPU|1 GPU / 1 MPI|56.621|
+|M3GNet|LAMMPS native CPU|CPU|3.285|
+
+この表は共通構造に対する**実装・推論速度**の比較であり、ポテンシャル精度の順位ではない。最速のSevenNet-nanoを含め、材料輸送の信頼性は後続のMSD、Arrhenius解析、構造指標および文献比較によって別途評価する。
+
 #### 結晶材料を選んだ理由
 
 Li₃YCl₆は高電圧正極との適合性が報告された代表的塩化物固体電解質であり、室温伝導度は1 mS cm⁻¹超である。[Asanoら、2018；DOI: 10.1002/adma.201803075](https://doi.org/10.1002/adma.201803075) 文献の平均占有構造をそのままMDに用いず、Li／Y配置を明示したfull-occupancy有序モデルと2×2×2超胞（240原子）を用いた。
