@@ -544,9 +544,9 @@ All four panels show the full 0–200 ps production. Their vertical scales are i
 
 The 300 and 500 K curves are subdiffusive on this timescale; their slope-derived $D$ and conductivity are therefore conditional diagnostics, not validated transport coefficients. The 700 and 900 K trajectories show the clearest diffusive regimes.
 
-![Li3PS4 reference and framework](figures/06_LPS_reference.png)
+![Li3PS4 lithium diffusion and host-framework dynamics](figures/06_LPS_reference.png)
 
-Panel a compares NEP89 with Chen's **DeePMD glass MD**, not experimental or AIMD self-diffusion. The open 300 K marker explicitly denotes unresolved diffusion. Panel b shows that host motion increases strongly: at an 80 ps lag, P/S MSD rises from 0.088/0.145 Å² at 300 K to 5.13/12.20 Å² at 900 K.
+Panel a compares NEP89 with Chen's **DeePMD glass MD**, not experimental or AIMD self-diffusion. Open markers identify the subdiffusive 300 and 500 K estimates; the connected filled markers are the resolved 700 and 900 K results. Panel b shows that host motion increases strongly: at an 80 ps lag, P/S MSD rises from 0.088/0.145 Å² at 300 K to 5.13/12.20 Å² at 900 K.
 
 |T (K)|Chen glass $D$ (cm²/s)|NEP89 / Chen|Interpretation|
 |---:|---:|---:|---|

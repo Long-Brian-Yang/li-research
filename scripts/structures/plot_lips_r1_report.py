@@ -28,6 +28,12 @@ def reference_rows(temperatures, model_d, reference_d):
     return np.column_stack([temperatures, model_d, reference_d, model_d / reference_d])
 
 
+def normalize_angle_density(angle_values):
+    area = np.trapezoid(angle_values[:, 1], angle_values[:, 0])
+    assert np.isfinite(area) and area > 0
+    return angle_values[:, 1] / area
+
+
 def load_csv(path: Path) -> np.ndarray:
     values = np.loadtxt(path, delimiter=",", skiprows=1)
     assert values.ndim == 2 and np.isfinite(values).all(), path
@@ -64,6 +70,64 @@ def finish(fig, name):
         if extension == "svg":
             path.write_text("\n".join(line.rstrip() for line in path.read_text().splitlines()) + "\n")
     plt.close(fig)
+
+
+def build_reference_figure(temperatures, model_d, reference_d, framework):
+    """Build the report-width Li diffusion and host-framework comparison."""
+    fig, axes = plt.subplots(2, 1, figsize=(7.2, 8.0), layout="constrained")
+    axes[0].plot(
+        temperatures[2:],
+        model_d[2:],
+        "o-",
+        color=BLUE,
+        label="NEP89 (this work)",
+    )
+    axes[0].plot(
+        temperatures[:2],
+        model_d[:2],
+        marker="o",
+        markerfacecolor="white",
+        markeredgecolor=BLUE,
+        markeredgewidth=2,
+        linestyle="none",
+        label="NEP89 (subdiffusive)",
+    )
+    axes[0].plot(
+        temperatures,
+        reference_d,
+        "s--",
+        color=GRAY,
+        label="Chen et al. (2025), DeePMD",
+    )
+    axes[0].set(
+        title="Li-ion self-diffusion",
+        xlabel="Temperature (K)",
+        ylabel=r"$D_{\mathrm{Li}}$ (cm$^2$ s$^{-1}$)",
+        yscale="log",
+        xticks=temperatures,
+        xlim=(270, 930),
+    )
+    axes[0].legend(loc="best")
+
+    for index, (element, color, style) in enumerate((("P", BLUE, "--"), ("S", RED, "-"))):
+        axes[1].plot(
+            temperatures,
+            framework[:, index],
+            marker="o",
+            color=color,
+            linestyle=style,
+            label=element,
+        )
+    axes[1].set(
+        title="Host-framework displacement at 80 ps",
+        xlabel="Temperature (K)",
+        ylabel=r"MSD at 80 ps ($\mathrm{\AA^2}$)",
+        yscale="log",
+        xticks=temperatures,
+        xlim=(270, 930),
+    )
+    axes[1].legend(loc="best")
+    return fig
 
 
 def main():
@@ -125,63 +189,14 @@ def main():
         comments="",
     )
 
-    fig, axes = plt.subplots(1, 2, figsize=(12, 4.65), layout="constrained")
-    axes[0].plot(
-        TEMPERATURES[1:],
-        model_d[1:],
-        "o-",
-        color=BLUE,
-        label="NEP89",
-    )
-    axes[0].plot(
-        TEMPERATURES[0],
-        model_d[0],
-        marker="o",
-        markerfacecolor="white",
-        markeredgecolor=BLUE,
-        markeredgewidth=2,
-        linestyle="none",
-        label="NEP89: 300 K unresolved",
-    )
-    axes[0].plot(
-        TEMPERATURES,
-        reference_d,
-        "s--",
-        color=GRAY,
-        label="Chen 2025: glass DeePMD",
-    )
-    axes[0].set(
-        title="Same-temperature diffusion comparison",
-        xlabel="Temperature (K)",
-        ylabel="D (cm²/s)",
-        yscale="log",
-        xticks=TEMPERATURES,
-    )
-    axes[0].legend()
-    for index, (element, color, style) in enumerate((("P", BLUE, "--"), ("S", RED, "-"))):
-        axes[1].plot(
-            TEMPERATURES,
-            framework[:, index],
-            marker="o",
-            color=color,
-            linestyle=style,
-            label=element,
-        )
-    axes[1].set(
-        title="Framework motion at 80 ps lag",
-        xlabel="Temperature (K)",
-        ylabel="MSD (Å²)",
-        yscale="log",
-        xticks=TEMPERATURES,
-    )
-    axes[1].legend()
+    fig = build_reference_figure(TEMPERATURES, model_d, reference_d, framework)
     finish(fig, "06_LPS_reference")
 
     r1_rdf = load_csv(DATA / "300K_late_structure.csv")
     chen_rdf = load_reference_csv(REFERENCE / "Chen2025_Fig._1e.csv", (0, 2))
     r1_angle = load_csv(DATA / "300K_late_angles.csv")
     chen_angle = load_reference_csv(REFERENCE / "Chen2025_Fig._1f.csv", (0, 2))
-    chen_angle_density = chen_angle[:, 1] / np.trapz(chen_angle[:, 1], chen_angle[:, 0])
+    chen_angle_density = normalize_angle_density(chen_angle)
     fig, axes = plt.subplots(1, 2, figsize=(12, 4.65), layout="constrained")
     axes[0].plot(r1_rdf[:, 0], r1_rdf[:, 1], color=BLUE, label="NEP89 glass")
     axes[0].plot(
