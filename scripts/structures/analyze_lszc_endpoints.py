@@ -20,11 +20,12 @@ OUT=BASE/'LSZC_endpoints'; OUT.mkdir(exist_ok=True)
 FIG=ROOT/'docs/materials/figures'
 WINDOWS=[(20,80),(20,100),(20,150),(40,150),(50,200)]
 PAIRS=[('S','O',2.),('Zr','O',2.6),('Zr','Cl',3.2),('Li','O',2.7)]
-PRIMARY_SERIES={320:2,350:1}
+TEMPERATURES=(320,330,340,350)
+PRIMARY_SERIES={320:2,330:2,340:2,350:1}
 
 def run():
  records=[]; hashes={}
- for T in (320,350):
+ for T in TEMPERATURES:
   repeat=PRIMARY_SERIES[T]
   p=BASE/f'source/LSZC_matched4t/R{repeat}_{T}K/production'
   a=read(p/'model.xyz'); s=np.array(a.get_chemical_symbols())
@@ -67,7 +68,19 @@ def run():
   for name in ('model.xyz','dump.xyz','thermo.out','run.in'):
    q=p/name;hashes[str(q.relative_to(ROOT))]=hashlib.sha256(q.read_bytes()).hexdigest()
   print(json.dumps(rec),flush=True)
- (OUT/'analysis.json').write_text(json.dumps(dict(records=records,hashes=hashes,method='Same primary trajectories as the four-temperature transport figure (320 K R2; 350 K R1). Common 20–80 ps diagnostic; system mass COM corrected all-origin MSD. RDF 100–300 ps every 1 ps, 0.05 A bins. Li–O origin CN / 10 ps displacement; correlated observations, no confidence interval.'),indent=2)+'\n')
+ (OUT/'analysis.json').write_text(json.dumps(dict(records=records,hashes=hashes,method='Same representative trajectories as the four-temperature transport figure (320/330/340 K R2; 350 K R1). Common 20–80 ps diagnostic; system mass COM corrected all-origin MSD. RDF 100–300 ps every 1 ps, 0.05 A bins. Li–O origin CN / 10 ps displacement; correlated observations, no confidence interval. Mobility figure retains the 320/350 K endpoint comparison.'),indent=2)+'\n')
+
+def build_rdf_figure(rdf_by_temperature):
+ import matplotlib.pyplot as plt
+ colors={320:'#5e3c99',330:'#31688e',340:'#35b779',350:'#d73027'}
+ fig,axes=plt.subplots(2,2,figsize=(12,9.3),layout='constrained')
+ for T in TEMPERATURES:
+  data=rdf_by_temperature[T]
+  for j,ax in enumerate(axes.flat):
+   ax.plot(data[:,0],data[:,j+1],color=colors[T],label=f'{T} K')
+ for ax,(u,v,_) in zip(axes.flat,PAIRS):
+  ax.set(title=f'{u}–{v}',xlabel='r (Å)',ylabel='g(r)',xlim=(1,5));ax.legend()
+ return fig
 
 def plot():
  import matplotlib
@@ -78,32 +91,21 @@ def plot():
  FIG.mkdir(parents=True,exist_ok=True)
  def save(fig,name):
   apply_style(fig)
-  for ext in ('png','pdf','svg'):fig.savefig(FIG/f'{name}.{ext}',dpi=200,bbox_inches='tight')
+  for ext in ('png','pdf','svg'):
+   path=FIG/f'{name}.{ext}'
+   fig.savefig(path,dpi=200,bbox_inches='tight')
+   if ext=='svg':
+    path.write_text('\n'.join(line.rstrip() for line in path.read_text().splitlines())+'\n')
   plt.close(fig)
- colors=['#31688e','#d73027']; records=json.loads((OUT/'analysis.json').read_text())['records']
+ colors={320:'#5e3c99',330:'#31688e',340:'#35b779',350:'#d73027'}
+ records=json.loads((OUT/'analysis.json').read_text())['records']
  np.savetxt(OUT/'summary.csv',[[r['T'],r['fit']['D_cm2_s'],r['sigma_mS_cm'],r['fit']['R2'],r['fit']['alpha'],r['density'],*r['CN']] for r in records],delimiter=',',header='T_K,D_app_cm2_s,sigma_conditional_mS_cm,R2,alpha,density_g_cm3,CN_SO,CN_ZrO,CN_ZrCl,CN_LiO',comments='')
- fig,axes=plt.subplots(1,3,layout='constrained')
- for i,(rec,c) in enumerate(zip(records,colors)):
-  T=rec['T'];m=np.loadtxt(OUT/f'{T}K_MSD.csv',delimiter=',',skiprows=1)
-  axes[i].plot(m[:,0],m[:,1],color='#31688e',label='NEP89')
-  paper=np.loadtxt(BASE/f'completed_transport/Tang_S24_{T}K.csv',delimiter=',',skiprows=1)
-  axes[i].plot(paper[:,0],paper[:,1],color='#35b779',label='Tuned MACE (paper)')
-  axes[i].set(title=f'LSZC — {T} K',xlabel='Time / lag time (ps)',ylabel='Li MSD (Å²)',xlim=(0,300),ylim=(0,9));axes[i].legend()
- ref=np.loadtxt(BASE/'completed_transport/Tang_Fig3g.csv',delimiter=',',skiprows=1)[:4]
- exp=np.loadtxt(BASE/'completed_transport/Tang_S3_experiment.csv',delimiter=',',skiprows=1)
- axes[2].plot(exp[:,1],exp[:,3],'s-',color='#333333',label='Experiment')
- axes[2].errorbar(ref[:,1],ref[:,4],yerr=[ref[:,4]*(1-np.exp(-ref[:,3])),ref[:,4]*(np.exp(ref[:,3])-1)],fmt='^-',color='#35b779',label='Tuned MACE (paper)')
- axes[2].plot([r['T'] for r in records],[r['sigma_mS_cm'] for r in records],'o-',color=colors[0],label='NEP89 (apparent)')
- axes[2].set(title='LSZC — conductivity',xlabel='Temperature (K)',ylabel='Conductivity (mS/cm)',yscale='log');axes[2].legend()
- save(fig,'18_LSZC_endpoint_transport')
- fig,axes=plt.subplots(2,2,layout='constrained')
- for T,c in zip((320,350),colors):
-  a=np.loadtxt(OUT/f'{T}K_RDF.csv',delimiter=',',skiprows=1)
-  for j,ax in enumerate(axes.flat):ax.plot(a[:,0],a[:,j+1],color=c,label=f'{T} K')
- for ax,(u,v,_) in zip(axes.flat,PAIRS):ax.set(title=f'{u}–{v}',xlabel='r (Å)',ylabel='g(r)',xlim=(1,5));ax.legend()
- save(fig,'19_LSZC_endpoint_RDF')
+ rdf_by_temperature={T:np.loadtxt(OUT/f'{T}K_RDF.csv',delimiter=',',skiprows=1) for T in TEMPERATURES}
+ fig=build_rdf_figure(rdf_by_temperature)
+ save(fig,'19_LSZC_four_temperature_RDF')
  fig,axes=plt.subplots(1,2,layout='constrained')
- for T,c in zip((320,350),colors):
+ for T in (320,350):
+  c=colors[T]
   m=np.loadtxt(OUT/f'{T}K_mobility.csv',delimiter=',',skiprows=1)
   common=m[:,1]>=100
   axes[0].plot(m[common,0],m[common,2],'o-',color=c,label=f'{T} K')

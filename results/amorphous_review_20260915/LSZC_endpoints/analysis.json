@@ -99,6 +99,212 @@
       ]
     },
     {
+      "T": 330,
+      "repeat": 2,
+      "fit": {
+        "D_cm2_s": 6.766987120909734e-08,
+        "R2": 0.9816256778747141,
+        "intercept_A2": 0.8652342384591606,
+        "alpha": 0.17085089112698754,
+        "lo_ps": 20,
+        "hi_ps": 80
+      },
+      "windows": [
+        {
+          "D_cm2_s": 6.766987120909734e-08,
+          "R2": 0.9816256778747141,
+          "intercept_A2": 0.8652342384591606,
+          "alpha": 0.17085089112698754,
+          "lo_ps": 20,
+          "hi_ps": 80
+        },
+        {
+          "D_cm2_s": 5.7875487406520586e-08,
+          "R2": 0.9645696492994308,
+          "intercept_A2": 0.8908141289688998,
+          "alpha": 0.17048694083596536,
+          "lo_ps": 20,
+          "hi_ps": 100
+        },
+        {
+          "D_cm2_s": 3.7434545305265004e-08,
+          "R2": 0.8882911150822392,
+          "intercept_A2": 0.9568116087584634,
+          "alpha": 0.15031551064041587,
+          "lo_ps": 20,
+          "hi_ps": 150
+        },
+        {
+          "D_cm2_s": 2.9958733884224994e-08,
+          "R2": 0.8598433880868799,
+          "intercept_A2": 1.006278966499342,
+          "alpha": 0.14185196837305283,
+          "lo_ps": 40,
+          "hi_ps": 150
+        },
+        {
+          "D_cm2_s": 3.037154915057126e-08,
+          "R2": 0.8831064115567405,
+          "intercept_A2": 1.0084630251511602,
+          "alpha": 0.16267666067477918,
+          "lo_ps": 50,
+          "hi_ps": 200
+        }
+      ],
+      "sigma_mS_cm": 1.499069392069986,
+      "CN": [
+        4.0,
+        1.6066542288557213,
+        4.295087064676617,
+        0.8428171641791045
+      ],
+      "SO4_fraction": 1.0,
+      "mean_T": 330.48103717725337,
+      "PE_change_meV_atom": -2.253621558455667,
+      "density": 1.8803225020417738,
+      "block_D": [
+        1.829267084824548e-07,
+        8.380764626284772e-08,
+        -1.129869536107007e-07
+      ],
+      "MSD300": 1.4905572166242267,
+      "mobility": [
+        [
+          0.0,
+          2796,
+          0.8178664174976159
+        ],
+        [
+          1.0,
+          1798,
+          0.8162210402464098
+        ],
+        [
+          2.0,
+          1264,
+          0.6392272247076352
+        ],
+        [
+          3.0,
+          205,
+          1.0516476812659565
+        ],
+        [
+          4.0,
+          48,
+          1.1869674276002848
+        ],
+        [
+          5.0,
+          1,
+          0.9802154865364854
+        ]
+      ]
+    },
+    {
+      "T": 340,
+      "repeat": 2,
+      "fit": {
+        "D_cm2_s": 2.1623351057924904e-07,
+        "R2": 0.9980999146947281,
+        "intercept_A2": 0.7793344203162716,
+        "alpha": 0.42006138523210645,
+        "lo_ps": 20,
+        "hi_ps": 80
+      },
+      "windows": [
+        {
+          "D_cm2_s": 2.1623351057924904e-07,
+          "R2": 0.9980999146947281,
+          "intercept_A2": 0.7793344203162716,
+          "alpha": 0.42006138523210645,
+          "lo_ps": 20,
+          "hi_ps": 80
+        },
+        {
+          "D_cm2_s": 2.203729303113419e-07,
+          "R2": 0.9989034142505927,
+          "intercept_A2": 0.768798811100755,
+          "alpha": 0.45722766544052124,
+          "lo_ps": 20,
+          "hi_ps": 100
+        },
+        {
+          "D_cm2_s": 1.9201147016820255e-07,
+          "R2": 0.9882422542706469,
+          "intercept_A2": 0.8643739499662547,
+          "alpha": 0.4776323514568299,
+          "lo_ps": 20,
+          "hi_ps": 150
+        },
+        {
+          "D_cm2_s": 1.8346524968167336e-07,
+          "R2": 0.984600749033911,
+          "intercept_A2": 0.9207657321262828,
+          "alpha": 0.5133756683942997,
+          "lo_ps": 40,
+          "hi_ps": 150
+        },
+        {
+          "D_cm2_s": 1.8347137391671318e-07,
+          "R2": 0.9889712194560774,
+          "intercept_A2": 0.9224538564352502,
+          "alpha": 0.5603456112047466,
+          "lo_ps": 50,
+          "hi_ps": 200
+        }
+      ],
+      "sigma_mS_cm": 4.6492661566302225,
+      "CN": [
+        4.0,
+        1.6775497512437811,
+        4.21113184079602,
+        0.8280472636815921
+      ],
+      "SO4_fraction": 1.0,
+      "mean_T": 340.16044237169666,
+      "PE_change_meV_atom": -1.0057426143390558,
+      "density": 1.8803225020417738,
+      "block_D": [
+        3.588051376680828e-07,
+        1.1738078000322581e-07,
+        6.04905754381418e-08
+      ],
+      "MSD300": 3.167488663670212,
+      "mobility": [
+        [
+          0.0,
+          2702,
+          1.0402997520280486
+        ],
+        [
+          1.0,
+          2027,
+          0.8101439607997056
+        ],
+        [
+          2.0,
+          1167,
+          0.7929718928350927
+        ],
+        [
+          3.0,
+          166,
+          1.0641941715982424
+        ],
+        [
+          4.0,
+          49,
+          0.22784107579561466
+        ],
+        [
+          5.0,
+          1,
+          0.2022514832291769
+        ]
+      ]
+    },
+    {
       "T": 350,
       "repeat": 1,
       "fit": {
@@ -202,10 +408,18 @@
     "results/amorphous_review_20260915/source/LSZC_matched4t/R2_320K/production/dump.xyz": "ad79b37224761de9f6508e0aa3380532767a9b62d168e21091efd760a3598f6e",
     "results/amorphous_review_20260915/source/LSZC_matched4t/R2_320K/production/thermo.out": "c9a483bfd95296205fa6c22f3e908d90a0f8a5645838700239039755c4d11027",
     "results/amorphous_review_20260915/source/LSZC_matched4t/R2_320K/production/run.in": "627c25ead029da27bb6f455f9c8f5738b4e738e7e6f137478b63b616f3a50333",
+    "results/amorphous_review_20260915/source/LSZC_matched4t/R2_330K/production/model.xyz": "176b4517993ebffbe7e43a76e790f4536a2e30df942fae23f1e77a549261e390",
+    "results/amorphous_review_20260915/source/LSZC_matched4t/R2_330K/production/dump.xyz": "80d23b19b640ed06d2654bebf6a2d083861fcc75659c94b057e0d9227b37433b",
+    "results/amorphous_review_20260915/source/LSZC_matched4t/R2_330K/production/thermo.out": "fedaf323484485525b93606be334401924005ec8b083472ed2a73a6f9bacd9e4",
+    "results/amorphous_review_20260915/source/LSZC_matched4t/R2_330K/production/run.in": "eb1a1e8068e956ae15209e3f32a9e68ee3406861290951bdbd8f4e4bd2e2d2e1",
+    "results/amorphous_review_20260915/source/LSZC_matched4t/R2_340K/production/model.xyz": "9cfbbe760b42b3cdda5882b097e15b8c2164e58315e664f58a73b77a7b830a4e",
+    "results/amorphous_review_20260915/source/LSZC_matched4t/R2_340K/production/dump.xyz": "7ab092cb1a7aea0fba82d1ff00b63719a67615c3a115753d43c47e74915666a0",
+    "results/amorphous_review_20260915/source/LSZC_matched4t/R2_340K/production/thermo.out": "540d6b3c763da12dfac8114ff3425328e881541f7025e2f27d53e1f34dca94f1",
+    "results/amorphous_review_20260915/source/LSZC_matched4t/R2_340K/production/run.in": "17a116ff94cbb78203076afa4cd2d60ddfdcab39bf27623f62fec771d5eb99c3",
     "results/amorphous_review_20260915/source/LSZC_matched4t/R1_350K/production/model.xyz": "a6b42e0f205152d96b5ce222580b06065a1c82fc758ec1f8f50539fb5ea71150",
     "results/amorphous_review_20260915/source/LSZC_matched4t/R1_350K/production/dump.xyz": "203e3d40be897c7c52f5c677f3adbabcfb1e890f753fe26fc180e09a509d0c31",
     "results/amorphous_review_20260915/source/LSZC_matched4t/R1_350K/production/thermo.out": "7acc81e8514ff7e7800a641a06ef0eb5b2d9dbc4adf36857cca9914ab91fb036",
     "results/amorphous_review_20260915/source/LSZC_matched4t/R1_350K/production/run.in": "a8bf6dd230631b19691c153ce2e42359ac5d41f3d88c43dce83bc1a62ed0872d"
   },
-  "method": "Same primary trajectories as the four-temperature transport figure (320 K R2; 350 K R1). Common 20\u201380 ps diagnostic; system mass COM corrected all-origin MSD. RDF 100\u2013300 ps every 1 ps, 0.05 A bins. Li\u2013O origin CN / 10 ps displacement; correlated observations, no confidence interval."
+  "method": "Same representative trajectories as the four-temperature transport figure (320/330/340 K R2; 350 K R1). Common 20\u201380 ps diagnostic; system mass COM corrected all-origin MSD. RDF 100\u2013300 ps every 1 ps, 0.05 A bins. Li\u2013O origin CN / 10 ps displacement; correlated observations, no confidence interval. Mobility figure retains the 320/350 K endpoint comparison."
 }

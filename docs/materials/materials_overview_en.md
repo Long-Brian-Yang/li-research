@@ -458,18 +458,20 @@ These values are converted from the paper's Supplementary Fig. 3 source coordina
 
 ### Local structure and connection to mobility
 
-![LSZC latest partial RDF](figures/19_LSZC_endpoint_RDF.png)
+![LSZC four-temperature partial RDF](figures/19_LSZC_four_temperature_RDF.png)
 
-|Quantity|NEP 320 K|NEP 350 K|Experimental reference|
-|---|---:|---:|---|
-|Mean S–O CN (<2.0 Å)|4.000|4.000|Sulfate structural motif|
-|Sampled S sites with four O|100%|100%|Not a quantitative experimental fraction|
-|Mean Zr–O CN (<2.6 Å)|1.657|1.649|2.6, EXAFS fit|
-|Mean Zr–Cl CN (<3.2 Å)|4.267|4.213|3.0, EXAFS fit|
-|Mean Li–O CN (<2.7 Å)|0.808|0.826|No matched numerical benchmark used|
-|Density (g/cm³)|1.880|1.880|2.05|
+All four temperatures use the same representative trajectories as the final transport figure, averaged over 100–300 ps of production at 1 ps spacing. The 320/330/340 K curves use R2 and the 350 K curve uses R1; no separate trajectories were selected for the RDF analysis.
 
-The sulfate units remain intact in the sampled frames, but the Zr environment remains less O-coordinated and more Cl-coordinated than the EXAFS reference. Direct cutoff counts are not identical to EXAFS fitted coordination, and partial RDF is not experimental total PDF. These discrepancies can inform potential/preparation limitations; they do not identify a unique cause of the transport mismatch.
+|Quantity|NEP 320 K|NEP 330 K|NEP 340 K|NEP 350 K|Experimental reference|
+|---|---:|---:|---:|---:|---|
+|Mean S–O CN (<2.0 Å)|4.000|4.000|4.000|4.000|Sulfate structural motif|
+|Sampled S sites with four O|100%|100%|100%|100%|Not a quantitative experimental fraction|
+|Mean Zr–O CN (<2.6 Å)|1.657|1.607|1.678|1.649|2.6, EXAFS fit|
+|Mean Zr–Cl CN (<3.2 Å)|4.267|4.295|4.211|4.213|3.0, EXAFS fit|
+|Mean Li–O CN (<2.7 Å)|0.808|0.843|0.828|0.826|No matched numerical benchmark used|
+|Density (g/cm³)|1.880|1.880|1.880|1.880|2.05|
+
+The sulfate units remain intact at all four temperatures, with no local-structure discontinuity confined to an intermediate temperature. The Zr environment nevertheless remains less O-coordinated and more Cl-coordinated than the EXAFS reference throughout the series. Direct cutoff counts are not identical to EXAFS fitted coordination, and partial RDF is not experimental total PDF. The four-temperature result therefore does not explain the anomalous transport trend by a single local structural collapse, but it does inform potential and preparation limitations.
 
 ![LSZC coordination and mobility](figures/20_LSZC_endpoint_mobility.png)
 

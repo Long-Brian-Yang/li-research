@@ -153,34 +153,34 @@
       "historical_source": "results/plots/amorphous/18_LSZC_endpoint_transport.svg"
     },
     {
-      "file": "19_LSZC_endpoint_RDF.png",
-      "sha256": "5801bd740ae12eaa5b621fb3868b385f0d58749bd8d08385f491f9348c55feb1",
-      "historical_source": "results/plots/amorphous/19_LSZC_endpoint_RDF.png"
+      "file": "19_LSZC_four_temperature_RDF.png",
+      "sha256": "6814e3605b389dc3bc9e055f646033956d1ad545dddc0f10abc467b4fde4c37a",
+      "source": "scripts/structures/analyze_lszc_endpoints.py"
     },
     {
-      "file": "19_LSZC_endpoint_RDF.pdf",
-      "sha256": "c2cb8ddfbdf7cc9d76e856635dd291cfe49724db47c2196c190611cd1cecf264",
-      "historical_source": "results/plots/amorphous/19_LSZC_endpoint_RDF.pdf"
+      "file": "19_LSZC_four_temperature_RDF.pdf",
+      "sha256": "8b67b8f0961200b8cfd535aac5813dd00a0c576682de0d9940bb182195344405",
+      "source": "scripts/structures/analyze_lszc_endpoints.py"
     },
     {
-      "file": "19_LSZC_endpoint_RDF.svg",
-      "sha256": "71de30230e8757e89b8c6ac9f1577a11efbfa7ce2762f4ee912cf3fd1cba0637",
-      "historical_source": "results/plots/amorphous/19_LSZC_endpoint_RDF.svg"
+      "file": "19_LSZC_four_temperature_RDF.svg",
+      "sha256": "6843ac884769c8be75b6a6e5d26fb17a54c7943724a077d3560e392d723250d3",
+      "source": "scripts/structures/analyze_lszc_endpoints.py"
     },
     {
       "file": "20_LSZC_endpoint_mobility.png",
-      "sha256": "f46d89c08a3f20b3678ef76178293015df9ef46b0510e481c0bed37256bf093d",
-      "historical_source": "results/plots/amorphous/20_LSZC_endpoint_mobility.png"
+      "sha256": "1efee8947a8fea6f3026062789d0fe1f821cbb3f5862dc4e8fd9306c8ebea9e3",
+      "source": "scripts/structures/analyze_lszc_endpoints.py"
     },
     {
       "file": "20_LSZC_endpoint_mobility.pdf",
-      "sha256": "64a5e0831a6d7a1c9f95c68ae8fc12387ff6264bcfb3c3adf4b1558ba2bc755e",
-      "historical_source": "results/plots/amorphous/20_LSZC_endpoint_mobility.pdf"
+      "sha256": "922be0fdb56018d4c7130d911fa071a926565d4096d31a968d06b3347dfc5828",
+      "source": "scripts/structures/analyze_lszc_endpoints.py"
     },
     {
       "file": "20_LSZC_endpoint_mobility.svg",
-      "sha256": "22c39f926a43f2e3a8199b535a96ae16fbbb182da16c86d12a6ab2434ce50865",
-      "historical_source": "results/plots/amorphous/20_LSZC_endpoint_mobility.svg"
+      "sha256": "70af1e29baa2b61d2c6b582ca5c55b99f9ad05cacc05a8760b9075747adc5d78",
+      "source": "scripts/structures/analyze_lszc_endpoints.py"
     },
     {
       "file": "05_LPS_MSD.png",
