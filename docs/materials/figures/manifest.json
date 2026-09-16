@@ -1,6 +1,6 @@
 {
   "operation": "Location consolidation only; image bytes preserved. Historical sources retained for earlier reports.",
-  "figure_groups": 26,
+  "figure_groups": 20,
   "assets": [
     {
       "file": "09_legacy_cost_density.png",
@@ -301,96 +301,6 @@
       "file": "25_LiPON_transport_RDF.svg",
       "sha256": "dffaad5888e8df119f1c89e8cdf36b1e59962d912e9450fff1665d6b47cc7997",
       "source": "scripts/structures/analyze_lipon_transport.py"
-    },
-    {
-      "file": "material_workflow_Li3YCl6.png",
-      "sha256": "1ac185309bc7671e91fa2e55e91e75292bbd484ca5bb4dd1d6c662f49dfc4b8a",
-      "source": "scripts/structures/plot_material_workflows.py"
-    },
-    {
-      "file": "material_workflow_Li3YCl6.pdf",
-      "sha256": "03c3f7ac77526d92208bcdb8e7b7e7ba97bfeb87192d4fc4df05ad6533992b84",
-      "source": "scripts/structures/plot_material_workflows.py"
-    },
-    {
-      "file": "material_workflow_Li3YCl6.svg",
-      "sha256": "7eb819b88e2954df9901f0178edbdbec1760a51cdc5b3e97b0ca7e401cdfbc25",
-      "source": "scripts/structures/plot_material_workflows.py"
-    },
-    {
-      "file": "material_workflow_LiNbOCl4.png",
-      "sha256": "8be4f594aa793d3a76bdd1387618825301235a8ffaf8116dcddf3460d890a736",
-      "source": "scripts/structures/plot_material_workflows.py"
-    },
-    {
-      "file": "material_workflow_LiNbOCl4.pdf",
-      "sha256": "9aaff3a354ee3d5ace65bff7de1d416a3f5fab02cfca8d848957a794f46dc378",
-      "source": "scripts/structures/plot_material_workflows.py"
-    },
-    {
-      "file": "material_workflow_LiNbOCl4.svg",
-      "sha256": "a514524ca86edfc65c7379298e438aa797f0cf4a7a271112452158073f97381a",
-      "source": "scripts/structures/plot_material_workflows.py"
-    },
-    {
-      "file": "material_workflow_LZOC.png",
-      "sha256": "953ed0028a4c44c732e6fd36597dd495f83e36a571be91a0341002399c2896a7",
-      "source": "scripts/structures/plot_material_workflows.py"
-    },
-    {
-      "file": "material_workflow_LZOC.pdf",
-      "sha256": "8c74d106473a53122188504fbd463363f76de73953608381456db9a565ad1fe9",
-      "source": "scripts/structures/plot_material_workflows.py"
-    },
-    {
-      "file": "material_workflow_LZOC.svg",
-      "sha256": "1ebf8ff82992113de517a5cb1d6b065017f9f87b6b0bca8e5f32855283f4d9b3",
-      "source": "scripts/structures/plot_material_workflows.py"
-    },
-    {
-      "file": "material_workflow_LSZC.png",
-      "sha256": "111568a85b2f6578edbc00bae3ac0e9cb85cf907bbccb004a842d0823de2e28b",
-      "source": "scripts/structures/plot_material_workflows.py"
-    },
-    {
-      "file": "material_workflow_LSZC.pdf",
-      "sha256": "714b20721eec00663d9ca63bbde344f3ef3ef87e6d4a3f181297a4f6936da152",
-      "source": "scripts/structures/plot_material_workflows.py"
-    },
-    {
-      "file": "material_workflow_LSZC.svg",
-      "sha256": "c1821936b65a22ec4bfe97f7fefa7579cfbff209e4249cf6973bd0e3ad1c9bd1",
-      "source": "scripts/structures/plot_material_workflows.py"
-    },
-    {
-      "file": "material_workflow_Li3PS4.png",
-      "sha256": "bbe395735483daefa731a84e8997e89dc5197180a85ccf779abd6ece3b347ff6",
-      "source": "scripts/structures/plot_material_workflows.py"
-    },
-    {
-      "file": "material_workflow_Li3PS4.pdf",
-      "sha256": "00c1db4fa98479d2e450677b4a320764b2db5e708d027071163eabe7d9424bd9",
-      "source": "scripts/structures/plot_material_workflows.py"
-    },
-    {
-      "file": "material_workflow_Li3PS4.svg",
-      "sha256": "c857bdbdaaa83591600111227138d5ebfaa7974c4b89433b20d15389e1835aaa",
-      "source": "scripts/structures/plot_material_workflows.py"
-    },
-    {
-      "file": "material_workflow_LiPON.png",
-      "sha256": "fcb936a41b480fe854ee1bc754daefb134b415a090a7fed9cfc0a4530625881d",
-      "source": "scripts/structures/plot_material_workflows.py"
-    },
-    {
-      "file": "material_workflow_LiPON.pdf",
-      "sha256": "b2d5b2bc398306f8a3fd1a2b17a4827a24dac613144e2c5bd40147b234ccd4ab",
-      "source": "scripts/structures/plot_material_workflows.py"
-    },
-    {
-      "file": "material_workflow_LiPON.svg",
-      "sha256": "b5622c3db3eb0a3f3b1b0933319e8d8dbd15c51f4b30f00d4ec8988eb52acf37",
-      "source": "scripts/structures/plot_material_workflows.py"
     }
   ]
 }

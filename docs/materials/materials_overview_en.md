@@ -71,7 +71,13 @@ LiNbOCl₄ is a mixed O²⁻/Cl⁻ oxyhalide in which anion chemistry reshapes t
 |---|---|---|---|
 |T. Asano *et al.*, “Solid Halide Electrolytes with High Lithium-Ion Conductivity for Application in 4 V Class Bulk-Type All-Solid-State Batteries,” *Advanced Materials* **30**, 1803075 (2018). [DOI: 10.1002/adma.201803075](https://doi.org/10.1002/adma.201803075)|Experimental Li₃YCl₆/Li₃YBr₆ powders and bulk all-solid-state cells; electrochemical and transport characterization.|Established Li₃YCl₆ as a high-voltage-compatible chloride electrolyte with room-temperature conductivity above 1 mS cm⁻¹ and demonstrated operation with a 4 V-class cathode.|Defines the experimental motivation and macroscopic transport benchmark. It does not provide a self-diffusion curve directly comparable with MD $D(T)$.|
 
-![Li3YCl6 benchmark workflow](figures/material_workflow_Li3YCl6.png)
+```mermaid
+flowchart LR
+    A["1. Literature<br/>Asano et al. 2018<br/>Experimental chloride SSE<br/>RT conductivity &gt;1 mS cm⁻¹"] --> B["2. Model and software<br/>Explicit Li/Y ordering<br/>2×2×2; 240 atoms<br/>MACE / SevenNet / M3GNet<br/>LAMMPS; 1 GPU per run"]
+    B --> C["3. MD conditions<br/>400 / 600 / 800 / 1000 K<br/>Fixed-cell NVT; dt = 1 fs<br/>Equilibration: 50 ps<br/>Production: 500 ps"]
+    C --> D["4. Analysis<br/>Li MSD → D(T)<br/>Arrhenius fit → Eₐ<br/>300 K extrapolation<br/>Conditional σNE"]
+    D --> E["5. Conclusion<br/>Thermal trend reproduced<br/>Absolute transport is<br/>strongly model dependent"]
+```
 
 The workflow makes the comparison boundary explicit: the experimental paper motivates the material; the present ordered 240-atom model and three general potentials test model sensitivity; MSD, $D(T)$, $E_a$ and conditional conductivity are simulation observables rather than direct reproductions of the experimental impedance measurement.
 
@@ -81,7 +87,13 @@ The workflow makes the comparison boundary explicit: the experimental paper moti
 |---|---|---|---|
 |Y. Tanaka *et al.*, “New Oxyhalide Solid Electrolytes with High Lithium Ionic Conductivity >10 mS cm⁻¹ for All-Solid-State Batteries,” *Angewandte Chemie International Edition* **62**, e202217581 (2023). [DOI: 10.1002/anie.202217581](https://doi.org/10.1002/anie.202217581)|Experimental oxyhalide synthesis, impedance transport and all-solid-state-battery evaluation.|Reported approximately 10.4 mS cm⁻¹ at room temperature and $E_a=0.240$ eV for LiNbOCl₄, placing it above the conductivity scale of the chloride benchmark.|Supplies the experimental conductivity anchor and Arrhenius slope. The reconstructed line is a conductivity reference, not an experimental tracer-diffusion dataset.|
 
-![LiNbOCl4 benchmark workflow](figures/material_workflow_LiNbOCl4.png)
+```mermaid
+flowchart LR
+    A["1. Literature<br/>Tanaka et al. 2023<br/>RT σ = 10.4 mS cm⁻¹<br/>Experimental Eₐ = 0.240 eV"] --> B["2. Model and software<br/>Periodic oxyhalide model<br/>224 atoms; 32 Li<br/>MACE / SevenNet / M3GNet<br/>LAMMPS; 1 GPU per run"]
+    B --> C["3. MD conditions<br/>600 / 800 / 1000 / 1200 K<br/>Fixed-cell NVT; dt = 1 fs<br/>Equilibration: 50 ps<br/>Production: 500 ps"]
+    C --> D["4. Analysis<br/>Li MSD → D(T)<br/>ln(σNET) vs 1000/T<br/>Arrhenius fit → Eₐ<br/>300 K extrapolation"]
+    D --> E["5. Conclusion<br/>Experimental slope included<br/>Model ordering differs<br/>from Li₃YCl₆"]
+```
 
 The same MD design is retained so that the change from chloride to mixed-anion oxyhalide chemistry can be separated from changes in analysis. The principal scientific comparison is therefore not which curve looks highest, but whether model ordering and experimental slope remain consistent across chemistries.
 
@@ -262,7 +274,13 @@ The present question is narrower than reproducing the entire paper: at its low-t
 |L. Hu *et al.*, “A cost-effective, ionically conductive and compressible oxychloride solid-state electrolyte for stable all-solid-state lithium-based batteries,” *Nature Communications* **14**, 3807 (2023). [DOI: 10.1038/s41467-023-39522-1](https://doi.org/10.1038/s41467-023-39522-1)|Experimental Li₁.₇₅ZrCl₄.₇₅O₀.₅ synthesis, impedance, densification and battery tests.|Reported 2.42 mS cm⁻¹ at 25 °C, 94.2% relative density under 300 MPa and a low estimated raw-material cost.|Establishes experimental relevance and a macroscopic conductivity target; the partially amorphous specimen is not identical to one periodic glass model.|
 |F. Hussain *et al.*, “Exploring superionic conduction in lithium oxyhalide solid electrolytes considering composition and structural factors,” *npj Computational Materials* (2024). [DOI: 10.1038/s41524-024-01346-y](https://doi.org/10.1038/s41524-024-01346-y)|DFT/AIMD comparison of crystalline and amorphous oxychlorides; amorphous tracer diffusion at 340, 360 and 380 K.|Connected enhanced Li transport with structural disorder and distinguished Li migration from localized anion motion.|Provides the matched-temperature $D^*$ comparator and structural interpretation for the NEP89 trajectories.|
 
-![LZOC literature-to-analysis workflow](figures/material_workflow_LZOC.png)
+```mermaid
+flowchart LR
+    A["1. Literature<br/>Hu et al. 2023: experiment<br/>Hussain et al. 2024: AIMD<br/>Reference: 340 / 360 / 380 K"] --> B["2. Model and software<br/>Integer-occupancy glass<br/>192 atoms; periodic cell<br/>Pretrained NEP89 / GPUMD"]
+    B --> C["3. MD conditions<br/>340 / 360 / 380 K<br/>Fixed-cell NVT; NHC<br/>τT = 100 fs; dt = 2 fs<br/>Production: 300 ps"]
+    C --> D["4. Analysis<br/>Li / host MSD → D(T)<br/>RDF and coordination<br/>Radial displacement<br/>Direct AIMD D comparison"]
+    D --> E["5. Conclusion<br/>NEP89 D below AIMD<br/>Local geometry persists<br/>Mechanism not yet unique"]
+```
 
 This paired literature basis prevents a false one-to-one comparison: Hu provides experimental performance, whereas Hussain provides the directly comparable finite-temperature tracer-diffusion data. The workflow therefore compares $D$ to AIMD first and uses experiment as the material-level context.
 
@@ -353,7 +371,13 @@ The evidence does not yet distinguish stronger trapping, different pathway conne
 |---|---|---|---|
 |W. Tang *et al.*, “Polyanion-stabilized amorphous halide electrolytes with low lithium content for all-solid-state lithium batteries,” *Nature Communications* **17**, 3326 (2026). [DOI: 10.1038/s41467-026-69737-x](https://doi.org/10.1038/s41467-026-69737-x)|Experimental impedance, XRD/TEM/SAED, synchrotron/neutron total scattering, XAS/EXAFS, AIMD and a material-adapted MLFF/MACE workflow.|For 0.5Li₂SO₄–ZrCl₄, reported 1.5 mS cm⁻¹ at 30 °C, $E_a=0.33$ eV and an experimental density near 2.05 g cm⁻³; linked transport to sulfate-modified Zr–Cl/O environments.|Provides the most integrated benchmark in this review: experimental transport, local coordination/PDF and tuned-MACE MD can be compared separately with NEP89.|
 
-![LSZC literature-to-analysis workflow](figures/material_workflow_LSZC.png)
+```mermaid
+flowchart LR
+    A["1. Literature<br/>Tang et al. 2026<br/>Experiment + total scattering<br/>AIMD + tuned MACE<br/>σ30°C = 1.5 mS cm⁻¹"] --> B["2. Model and software<br/>Cluster-packed glass<br/>Li₃₂Zr₃₂Cl₁₂₈S₁₆O₆₄<br/>272 atoms; fixed cell<br/>NEP89 / GPUMD"]
+    B --> C["3. MD conditions<br/>320 / 330 / 340 / 350 K<br/>NVT MTTK; τT = 100 fs<br/>dt = 0.5 fs<br/>Equilibration: 50 ps<br/>Production: 300 ps"]
+    C --> D["4. Analysis<br/>MSD → D(T), σNE and Eₐ<br/>RDF and coordination<br/>Li–O environment / mobility<br/>Experiment / MACE comparison"]
+    D --> E["5. Conclusion<br/>Sulfate motif retained<br/>Fit can approach literature<br/>Long-range diffusion limited"]
+```
 
 Because one paper supplies several evidence layers, the workflow keeps them distinct. Experimental conductivity and $E_a$, EXAFS/PDF structure and tuned-MACE trajectories are not interchangeable; agreement is assessed observable by observable.
 
@@ -491,7 +515,13 @@ This material tests transfer beyond oxychlorides: the reference local motifs inv
 |Z. Chen *et al.*, “Disorder-induced enhancement of lithium-ion transport in solid-state electrolytes,” *Nature Communications* **16**, 1057 (2025). [DOI: 10.1038/s41467-025-56322-x](https://doi.org/10.1038/s41467-025-56322-x)|AIMD-trained deep potential applied to crystalline, glass and glass-ceramic Li₃PS₄ over 300–900 K, with structural and dynamical descriptors.|Showed enhanced Li dynamics with disorder and related mobile environments to van Hove, non-Gaussian and learned-softness analyses.|Supplies the same-temperature DeePMD glass $D(T)$ and a mechanistic reference; this study reproduces only the glass structure/transport subset.|
 |P. Mirmira *et al.*, “Importance of multimodal characterization and influence of residual Li₂S impurity in amorphous Li₃PS₄ inorganic electrolytes,” *Journal of Materials Chemistry A* **9**, 19637–19648 (2021). [DOI: 10.1039/D1TA02754A](https://doi.org/10.1039/D1TA02754A)|Experimental ball-milled amorphous Li₃PS₄ with structural characterization and impedance measurements.|Reported a room-temperature conductivity of about 3.5×10⁻⁴ S cm⁻¹ and showed that residual Li₂S and characterization method affect interpretation of the glass.|Provides an experimental scale and a warning that a single RDF or nominal composition does not fully define the experimental glass.|
 
-![Li3PS4 literature-to-analysis workflow](figures/material_workflow_Li3PS4.png)
+```mermaid
+flowchart LR
+    A["1. Literature<br/>Mirmira et al. 2021: experiment<br/>Chen et al. 2025: DeePMD<br/>Reference: 300–900 K"] --> B["2. Model and preparation<br/>Li₁₉₂P₆₄S₂₅₆; 512 atoms<br/>NEP89 / GPUMD<br/>1500 K NPT: 100 ps<br/>Cool 2.5 K ps⁻¹ → 300 K<br/>300 K hold: 20 ps"]
+    B --> C["3. Transport MD<br/>300 / 500 / 700 / 900 K<br/>Ramp: 10 ps<br/>NPT 1 bar: 50 ps<br/>NVT production: 200 ps<br/>dt = 0.5 fs"]
+    C --> D["4. Analysis<br/>Li MSD → D(T)<br/>Li–S / P–S RDF and CN<br/>S–P–S angle<br/>Framework motion"]
+    D --> E["5. Conclusion<br/>Local motifs partly retained<br/>Transport magnitude differs<br/>Dedicated work remains"]
+```
 
 The two references answer complementary questions: Chen supplies the atomistic transport comparator, whereas Mirmira supplies experimental context for a real amorphous sample. The NEP89 result is therefore evaluated against both local structure and $D(T)$ without converting computational agreement into an experimental reproduction claim.
 
@@ -589,7 +619,13 @@ Our composition, Li47P16O56N5 = Li2.9375PO3.5N0.3125, closely matches Seth's bul
 |A. Seth *et al.*, “Investigating Ionic Diffusivity in Amorphous LiPON using Machine-Learned Interatomic Potentials,” *ACS Materials Au* (2025). [DOI: 10.1021/acsmaterialsau.4c00117](https://doi.org/10.1021/acsmaterialsau.4c00117)|LiPON-specific NequIP trained on 13,454 DFT configurations; bulk melt–quench and Li/LiPON-interface transport calculations.|Generated material-specific amorphous structures and bulk diffusion at 600, 900, 1200 and 1500 K, with a public training dataset/model workflow.|Provides the matched composition and temperature-dependent computational comparator; NEP89 deliberately removes the material-specific training link.|
 |J. B. Bates *et al.*, “A Stable Thin-Film Lithium Electrolyte: Lithium Phosphorus Oxynitride,” *Journal of The Electrochemical Society* (1996). [DOI: 10.1149/1.1837443](https://doi.org/10.1149/1.1837443)|Experimental LiPON thin films measured by impedance over temperature.|Reported approximately 2.3±0.7×10⁻⁶ S cm⁻¹ at 25 °C and $E_a=0.55±0.02$ eV.|Supplies the experimental conductivity and activation-energy scale used separately from the self-diffusion comparison.|
 
-![LiPON literature-to-analysis workflow](figures/material_workflow_LiPON.png)
+```mermaid
+flowchart LR
+    A["1. Literature<br/>Lacivita et al. 2018<br/>Seth et al. 2025: NequIP<br/>Bates et al. 1996: experiment"] --> B["2. Model and preparation<br/>Li₄₇P₁₆O₅₆N₅; 124 atoms<br/>Preparation B; NEP89 / GPUMD<br/>2000 K hold: 10 ps<br/>Quench → 250 K: 7 ps<br/>250 K hold + release: 20 + 20 ps"]
+    B --> C["3. Transport MD<br/>600 / 900 / 1200 / 1500 K<br/>Ramp: 10 ps; NPT: 50 ps<br/>NVT: 300 ps<br/>600 K primary run: 600 ps<br/>dt = 0.5 fs"]
+    C --> D["4. Analysis<br/>MSD → D(T), σNE and Eₐ<br/>P–O / P–N / Li RDF<br/>N topology and contacts<br/>NequIP / experiment comparison"]
+    D --> E["5. Conclusion<br/>Thermal trend reproduced<br/>D strongly overestimated<br/>Transferability limit exposed"]
+```
 
 LiPON therefore has a three-level benchmark: experimentally constrained network topology, a material-specific MLIP diffusion series and thin-film macroscopic transport. The workflow explicitly checks structure before transport and treats the four-order diffusivity discrepancy as a transferability result rather than a fitting problem.
 

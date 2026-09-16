@@ -71,7 +71,13 @@ LiNbOCl₄はO²⁻／Cl⁻混合アニオンがLi移動環境を形成するオ
 |---|---|---|---|
 |T. Asano *et al.*, “Solid Halide Electrolytes with High Lithium-Ion Conductivity for Application in 4 V Class Bulk-Type All-Solid-State Batteries,” *Advanced Materials* **30**, 1803075 (2018). [DOI: 10.1002/adma.201803075](https://doi.org/10.1002/adma.201803075)|Li₃YCl₆／Li₃YBr₆粉末とバルク型全固体電池の実験、電気化学・輸送評価。|Li₃YCl₆が室温1 mS cm⁻¹超の伝導度と4 V級正極への適用性を持つ塩化物電解質であることを示した。|実験的な材料選定理由と巨視的輸送基準を与える。MDの$D(T)$と直接比較できる自己拡散曲線ではない。|
 
-![Li3YCl6 benchmark workflow](figures/material_workflow_Li3YCl6.png)
+```mermaid
+flowchart LR
+    A["1. 文献<br/>Asanoら 2018<br/>塩化物固体電解質の実験<br/>室温伝導度 &gt;1 mS cm⁻¹"] --> B["2. モデル・ソフトウェア<br/>Li/Y明示配置<br/>2×2×2；240原子<br/>MACE / SevenNet / M3GNet<br/>LAMMPS；各計算1 GPU"]
+    B --> C["3. MD条件<br/>400 / 600 / 800 / 1000 K<br/>固定セルNVT；dt = 1 fs<br/>平衡化：50 ps<br/>production：500 ps"]
+    C --> D["4. 解析<br/>Li MSD → D(T)<br/>Arrhenius回帰 → Eₐ<br/>300 K外挿<br/>条件付きσNE"]
+    D --> E["5. 結論<br/>温度依存傾向を再現<br/>輸送の絶対値は<br/>モデル依存性が大きい"]
+```
 
 このワークフローでは比較範囲を明確にする。実験論文は材料の意義を与え、本研究の240原子有序モデルと三つの汎用ポテンシャルはモデル依存性を検証する。MSD、$D(T)$、$E_a$、条件付き伝導度は計算量であり、実験インピーダンスの直接再現ではない。
 
@@ -81,7 +87,13 @@ LiNbOCl₄はO²⁻／Cl⁻混合アニオンがLi移動環境を形成するオ
 |---|---|---|---|
 |Y. Tanaka *et al.*, “New Oxyhalide Solid Electrolytes with High Lithium Ionic Conductivity >10 mS cm⁻¹ for All-Solid-State Batteries,” *Angewandte Chemie International Edition* **62**, e202217581 (2023). [DOI: 10.1002/anie.202217581](https://doi.org/10.1002/anie.202217581)|オキシハライドの合成、インピーダンス輸送、全固体電池評価。|LiNbOCl₄について室温約10.4 mS cm⁻¹、$E_a=0.240$ eVを報告し、塩化物基準を上回る伝導度を示した。|実験伝導度の基準点とArrhenius傾きを与える。再構成線は伝導度基準であり、実験トレーサー拡散データではない。|
 
-![LiNbOCl4 benchmark workflow](figures/material_workflow_LiNbOCl4.png)
+```mermaid
+flowchart LR
+    A["1. 文献<br/>Tanakaら 2023<br/>室温σ = 10.4 mS cm⁻¹<br/>実験Eₐ = 0.240 eV"] --> B["2. モデル・ソフトウェア<br/>周期オキシハライドモデル<br/>224原子；Li 32原子<br/>MACE / SevenNet / M3GNet<br/>LAMMPS；各計算1 GPU"]
+    B --> C["3. MD条件<br/>600 / 800 / 1000 / 1200 K<br/>固定セルNVT；dt = 1 fs<br/>平衡化：50 ps<br/>production：500 ps"]
+    C --> D["4. 解析<br/>Li MSD → D(T)<br/>ln(σNET)–1000/T<br/>Arrhenius回帰 → Eₐ<br/>300 K外挿"]
+    D --> E["5. 結論<br/>実験傾きを併記<br/>モデル順位はLi₃YCl₆と異なる"]
+```
 
 同一のMD設計を維持することで、解析変更ではなく塩化物から混合アニオン系への化学的変更を検討する。従って重要なのは曲線の高さだけでなく、モデル順位と実験傾きが材料をまたいで一貫するかである。
 
@@ -262,7 +274,13 @@ Dはすべて20–80 ps窓。平均Tは目標±1.1 K以内。最後−最初50 p
 |L. Hu *et al.*, “A cost-effective, ionically conductive and compressible oxychloride solid-state electrolyte for stable all-solid-state lithium-based batteries,” *Nature Communications* **14**, 3807 (2023). [DOI: 10.1038/s41467-023-39522-1](https://doi.org/10.1038/s41467-023-39522-1)|Li₁.₇₅ZrCl₄.₇₅O₀.₅の合成、インピーダンス、圧密、電池試験。|25 °Cで2.42 mS cm⁻¹、300 MPaで94.2%の相対密度、低い推定原料費を報告した。|実験的意義と巨視的伝導度を与える。部分非晶質試料を一つの周期ガラスモデルと同一視しない。|
 |F. Hussain *et al.*, “Exploring superionic conduction in lithium oxyhalide solid electrolytes considering composition and structural factors,” *npj Computational Materials* (2024). [DOI: 10.1038/s41524-024-01346-y](https://doi.org/10.1038/s41524-024-01346-y)|結晶・非晶酸塩化物のDFT／AIMD比較、340／360／380 Kの非晶質トレーサー拡散。|無秩序構造とLi輸送を関連付け、Li移動とアニオンの局所運動を区別した。|NEP89軌跡に対する同温度$D^*$基準と構造解釈を与える。|
 
-![LZOC literature-to-analysis workflow](figures/material_workflow_LZOC.png)
+```mermaid
+flowchart LR
+    A["1. 文献<br/>Huら 2023：実験<br/>Hussainら 2024：AIMD<br/>基準温度：340 / 360 / 380 K"] --> B["2. モデル・ソフトウェア<br/>整数占有ガラス<br/>192原子；周期セル<br/>事前学習NEP89 / GPUMD"]
+    B --> C["3. MD条件<br/>340 / 360 / 380 K<br/>固定セルNVT；NHC<br/>τT = 100 fs；dt = 2 fs<br/>production：300 ps"]
+    C --> D["4. 解析<br/>Li / ホストMSD → D(T)<br/>RDF・配位数<br/>動径変位分布<br/>AIMD Dとの直接比較"]
+    D --> E["5. 結論<br/>NEP89のDはAIMDより低い<br/>局所構造は保持<br/>機構は一意に確定しない"]
+```
 
 二つの文献は役割が異なる。Huは実験性能、Hussainは直接比較できる有限温度トレーサー拡散を与える。従って、まず$D$をAIMDと比較し、実験は材料レベルの背景として扱う。
 
@@ -353,7 +371,13 @@ a–cは各温度1軌跡の0–300 ps全域のLi MSD、dは対応する見かけ
 |---|---|---|---|
 |W. Tang *et al.*, “Polyanion-stabilized amorphous halide electrolytes with low lithium content for all-solid-state lithium batteries,” *Nature Communications* **17**, 3326 (2026). [DOI: 10.1038/s41467-026-69737-x](https://doi.org/10.1038/s41467-026-69737-x)|インピーダンス、XRD／TEM／SAED、放射光・中性子全散乱、XAS／EXAFS、AIMD、材料適応MLFF／MACE。|0.5Li₂SO₄–ZrCl₄で30 °C、1.5 mS cm⁻¹、$E_a=0.33$ eV、密度約2.05 g cm⁻³を報告し、輸送を硫酸根で修飾されたZr–Cl/O環境と関連付けた。|実験輸送、局所配位／PDF、調整済みMACEをNEP89と個別に比較できる、本書で最も統合的な基準である。|
 
-![LSZC literature-to-analysis workflow](figures/material_workflow_LSZC.png)
+```mermaid
+flowchart LR
+    A["1. 文献<br/>Tangら 2026<br/>実験＋全散乱<br/>AIMD＋調整済みMACE<br/>σ30°C = 1.5 mS cm⁻¹"] --> B["2. モデル・ソフトウェア<br/>クラスター充填ガラス<br/>Li₃₂Zr₃₂Cl₁₂₈S₁₆O₆₄<br/>272原子；固定セル<br/>NEP89 / GPUMD"]
+    B --> C["3. MD条件<br/>320 / 330 / 340 / 350 K<br/>NVT MTTK；τT = 100 fs<br/>dt = 0.5 fs<br/>平衡化：50 ps<br/>production：300 ps"]
+    C --> D["4. 解析<br/>MSD → D(T)、σNE、Eₐ<br/>RDF・配位数<br/>Li–O環境 / 移動度<br/>実験 / MACE比較"]
+    D --> E["5. 結論<br/>硫酸根モチーフを保持<br/>回帰は文献値へ接近可能<br/>長距離拡散は限定的"]
+```
 
 一つの論文に複数の証拠層があるため、ワークフローでは実験伝導度と$E_a$、EXAFS／PDF構造、調整済みMACE軌跡を区別し、観測量ごとに一致度を評価する。
 
@@ -491,7 +515,13 @@ Zr–O/ClではなくP–S局所構造をもつ系への転用を検討するた
 |Z. Chen *et al.*, “Disorder-induced enhancement of lithium-ion transport in solid-state electrolytes,” *Nature Communications* **16**, 1057 (2025). [DOI: 10.1038/s41467-025-56322-x](https://doi.org/10.1038/s41467-025-56322-x)|AIMDで学習した深層ポテンシャルにより、300–900 Kの結晶・ガラス・ガラスセラミックスLi₃PS₄を構造・動力学記述子とともに比較。|無秩序化によるLi動力学の増大を示し、van Hove、非Gaussian量、学習softnessと移動環境を関連付けた。|同温度DeePMDガラス$D(T)$と機構基準を与える。本研究はガラスの構造・輸送部分のみを対象とする。|
 |P. Mirmira *et al.*, “Importance of multimodal characterization and influence of residual Li₂S impurity in amorphous Li₃PS₄ inorganic electrolytes,” *Journal of Materials Chemistry A* **9**, 19637–19648 (2021). [DOI: 10.1039/D1TA02754A](https://doi.org/10.1039/D1TA02754A)|ボールミル非晶Li₃PS₄の構造解析とインピーダンス測定。|室温伝導度約3.5×10⁻⁴ S cm⁻¹を報告し、残留Li₂Sと測定法がガラス解釈に影響することを示した。|実験スケールを与え、一つのRDFや公称組成だけで実験ガラスを規定できないことを示す。|
 
-![Li3PS4 literature-to-analysis workflow](figures/material_workflow_Li3PS4.png)
+```mermaid
+flowchart LR
+    A["1. 文献<br/>Mirmiraら 2021：実験<br/>Chenら 2025：DeePMD<br/>基準温度：300–900 K"] --> B["2. モデル・作製<br/>Li₁₉₂P₆₄S₂₅₆；512原子<br/>NEP89 / GPUMD<br/>1500 K NPT：100 ps<br/>2.5 K ps⁻¹で300 Kへ冷却<br/>300 K保持：20 ps"]
+    B --> C["3. 輸送MD<br/>300 / 500 / 700 / 900 K<br/>昇温：10 ps<br/>NPT 1 bar：50 ps<br/>NVT production：200 ps<br/>dt = 0.5 fs"]
+    C --> D["4. 解析<br/>Li MSD → D(T)<br/>Li–S / P–S RDF・配位数<br/>S–P–S角度<br/>骨格運動"]
+    D --> E["5. 結論<br/>局所モチーフを部分保持<br/>輸送絶対値は文献と相違<br/>独立研究として継続可能"]
+```
 
 二つの文献は相補的である。Chenは原子論的輸送基準、Mirmiraは実試料の実験背景を与える。従って、NEP89を局所構造と$D(T)$の両方で評価し、計算上の一致を実験再現と読み替えない。
 
@@ -589,7 +619,13 @@ Sethらは13,454個のDFT構造からLiPON専用NequIPを学習し、非晶質Li
 |A. Seth *et al.*, “Investigating Ionic Diffusivity in Amorphous LiPON using Machine-Learned Interatomic Potentials,” *ACS Materials Au* (2025). [DOI: 10.1021/acsmaterialsau.4c00117](https://doi.org/10.1021/acsmaterialsau.4c00117)|13,454個のDFT構造で学習したLiPON専用NequIP、バルクmelt–quenchとLi/LiPON界面輸送。|材料専用非晶構造と600／900／1200／1500 Kのバルク拡散を計算し、学習データとモデル手順を公開した。|組成・温度を対応させた計算基準を与える。本研究は材料専用学習をNEP89へ置き換えた影響を検討する。|
 |J. B. Bates *et al.*, “A Stable Thin-Film Lithium Electrolyte: Lithium Phosphorus Oxynitride,” *Journal of The Electrochemical Society* (1996). [DOI: 10.1149/1.1837443](https://doi.org/10.1149/1.1837443)|LiPON薄膜の温度依存インピーダンス測定。|25 °Cで約2.3±0.7×10⁻⁶ S cm⁻¹、$E_a=0.55±0.02$ eVを報告した。|自己拡散比較とは分けて用いる実験伝導度・活性化エネルギー基準を与える。|
 
-![LiPON literature-to-analysis workflow](figures/material_workflow_LiPON.png)
+```mermaid
+flowchart LR
+    A["1. 文献<br/>Lacivitaら 2018<br/>Sethら 2025：NequIP<br/>Batesら 1996：実験"] --> B["2. モデル・作製<br/>Li₄₇P₁₆O₅₆N₅；124原子<br/>Preparation B；NEP89 / GPUMD<br/>2000 K保持：10 ps<br/>250 Kへ急冷：7 ps<br/>250 K保持＋除圧：20＋20 ps"]
+    B --> C["3. 輸送MD<br/>600 / 900 / 1200 / 1500 K<br/>昇温：10 ps；NPT：50 ps<br/>NVT：300 ps<br/>600 K主系列：600 ps<br/>dt = 0.5 fs"]
+    C --> D["4. 解析<br/>MSD → D(T)、σNE、Eₐ<br/>P–O / P–N / Li RDF<br/>Nトポロジー・接触<br/>NequIP / 実験比較"]
+    D --> E["5. 結論<br/>温度依存傾向を再現<br/>Dを大幅に過大評価<br/>転移可能性の限界"]
+```
 
 LiPONには三段階の基準がある。実験的に制約された網目トポロジー、材料専用MLIPの拡散系列、薄膜の巨視的輸送である。ワークフローでは構造を先に確認し、4桁規模の拡散差をフィット問題ではなく適用性の結果として扱う。
 
