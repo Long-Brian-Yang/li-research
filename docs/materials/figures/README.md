@@ -12,8 +12,6 @@ Japanese Markdown. Source data remain in results; no trajectories belong here.
 - 18–20: LSZC transport, partial RDF and coordination–mobility analysis.
 - 21–25: LiPON glass structure, lithium transport and temperature-dependent
   local structure.
-- 26: cross-material correspondence of matched transport observables and
-  activation energies.
 - 27: LSZC synchrotron-PDF correspondence and Zr coordination distributions.
 - 28: Li₃PS₄ non-Gaussian dynamics and self van Hove distribution.
 

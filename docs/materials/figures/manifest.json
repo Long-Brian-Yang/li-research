@@ -1,6 +1,6 @@
 {
   "operation": "Current report figure inventory. Historical sources remain archived; current files may be regenerated from the listed scripts.",
-  "figure_groups": 24,
+  "figure_groups": 23,
   "assets": [
     {
       "file": "18_LSZC_transport_comparison.png",
@@ -316,21 +316,6 @@
       "file": "25_LiPON_temperature_RDF.svg",
       "sha256": "3328382395337e419c6e6176a8c7f0a3602fb00bcbea32725a08c1aad3be9a91",
       "source": "scripts/structures/analyze_lipon_transport.py"
-    },
-    {
-      "file": "26_cross_material_literature_correspondence.png",
-      "sha256": "1b4853884da9cb839da6ba825f98ae156b965cfed057216eccce0bfbe8ea52d3",
-      "source": "scripts/structures/plot_literature_correspondence.py"
-    },
-    {
-      "file": "26_cross_material_literature_correspondence.pdf",
-      "sha256": "a340544f206ce45265700dca3d9d7c679dc071ba70f92f2c20d1aa42a74168ed",
-      "source": "scripts/structures/plot_literature_correspondence.py"
-    },
-    {
-      "file": "26_cross_material_literature_correspondence.svg",
-      "sha256": "4715585a6fb5137d1d3fe654f1e3340a94cbcac655a97473789fede34855602b",
-      "source": "scripts/structures/plot_literature_correspondence.py"
     },
     {
       "file": "27_LSZC_PDF_and_Zr_coordination.png",

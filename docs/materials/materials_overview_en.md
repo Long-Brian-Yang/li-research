@@ -696,10 +696,6 @@ Taken together, the preparation comparison and transport series show that Prepar
 
 The complete study forms a continuous progression from computational feasibility to material validation. The initial CPU–GPU benchmark made long ML-driven trajectories practical; the MACE–NEP comparison then identified NEP89 as the efficient engine for the amorphous survey. LZOC and LSZC test chemically related oxychlorides against AIMD and experiment, while Li₃PS₄ and LiPON extend the same workflow to sulfide and oxynitride glasses. Together they show which literature trends transfer across chemistries and where absolute transport remains model dependent.
 
-![Cross-material correspondence with literature transport benchmarks](figures/26_cross_material_literature_correspondence.png)
-
-Panel a reports $\log_{10}(\mathrm{NEP89}/\mathrm{literature})$ for the matched observable at each labelled temperature: tracer diffusion for LZOC, Li₃PS₄ and LiPON, and conditional conductivity versus tuned-MACE conductivity for LSZC. Zero denotes numerical agreement, negative values an underestimate and positive values an overestimate. Panel b compares activation energies where a defensible literature value and multi-temperature NEP89 fit are both available. LSZC lies close to the experiment-equality line; Li₃PS₄ retains a similar temperature sensitivity despite larger absolute diffusion; LiPON shows both a lower activation energy and a large diffusivity excess. The figure therefore condenses the report's central result: transferability is chemistry dependent and must be judged separately for absolute transport and temperature sensitivity.
-
 |Material|Matched transport ratio, NEP89/literature|NEP89 $E_a$ (eV)|Literature $E_a$ (eV)|Integrated interpretation|
 |---|---:|---:|---:|---|
 |LZOC|0.22–0.35|—|—|AIMD temperature-pattern correspondence with a lower diffusion scale|
@@ -707,7 +703,7 @@ Panel a reports $\log_{10}(\mathrm{NEP89}/\mathrm{literature})$ for the matched 
 |Li₃PS₄|3.37–45.5|0.419|0.470|Similar thermal sensitivity; heterogeneous Li motion and higher absolute diffusion|
 |LiPON|$6.84\times10^3$–$1.65\times10^4$|0.428|0.550|Temperature activation retained, but the general potential strongly overestimates transport|
 
-The ratio range uses only matched observables and shared temperatures shown in panel a; it is not averaged across different transport definitions. Reading this table together with the local-structure sections separates three outcomes: agreement in characteristic structure, agreement in temperature sensitivity, and agreement in absolute transport.
+The ratio range uses only matched observables and shared temperatures; it is not averaged across different transport definitions. The quantities remain identified separately because tracer diffusion and conditional conductivity should not be presented as one directly comparable visual scale. Reading this table together with the local-structure sections separates three outcomes: agreement in characteristic structure, agreement in temperature sensitivity, and agreement in absolute transport.
 
 |Material / stage|Literature correspondence|Main conclusion|
 |---|---|---|

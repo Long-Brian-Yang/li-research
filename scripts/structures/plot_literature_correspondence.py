@@ -1,8 +1,8 @@
-"""Create literature-correspondence figures for the amorphous-material review.
+"""Create literature-correspondence analyses for the amorphous-material review.
 
-The script keeps three distinct evidence levels explicit: matched transport
-observables, experimental/author PDF data, and trajectory-derived dynamics.
-It exports PNG/PDF/SVG plus compact CSV source tables.
+The script keeps transport source tables separate from the two mechanism
+figures: experimental/author PDF correspondence and trajectory-derived
+dynamics. It exports PNG/PDF/SVG plus compact CSV source tables.
 """
 from __future__ import annotations
 
@@ -49,7 +49,7 @@ def write_csv(path, header, rows):
         w.writerows(rows)
 
 
-def cross_material_figure():
+def cross_material_source_tables():
     lzoc = json.loads((BASE / "exploratory_closest_preview/selection.json").read_text())
     # This file stores the three displayed temperatures as a list in current reports.
     if isinstance(lzoc, dict):
@@ -91,36 +91,6 @@ def cross_material_figure():
     ]
     write_csv(OUT / "cross_material_activation_energies.csv",
               ["material", "NEP89_Ea_eV", "literature_Ea_eV", "reference_type"], ea_rows)
-
-    colors = {"LZOC": "#31688e", "LSZC": "#35b779", "Li3PS4": "#d73027", "LiPON": "#7b3294"}
-    labels = {"LZOC": "LZOC (D)", "LSZC": "LSZC (conductivity)", "Li3PS4": "Li3PS4 (D)", "LiPON": "LiPON (D)"}
-    fig, axes = plt.subplots(1, 2, layout="constrained")
-    ax = axes[0]
-    for i, mat in enumerate(colors):
-        rr = [r for r in rows if r[0] == mat]
-        y = np.log10([r[3] / r[4] for r in rr])
-        offsets = np.linspace(-0.14, 0.14, len(rr)) if len(rr) > 1 else [0]
-        marker = "s" if mat == "LSZC" else "o"
-        ax.scatter(i + np.asarray(offsets), y, s=75, marker=marker, color=colors[mat], label=labels[mat], zorder=3)
-        for x, yy, r in zip(i + np.asarray(offsets), y, rr):
-            ax.annotate(str(r[2]), (x, yy), xytext=(0, 7), textcoords="offset points",
-                        ha="center", fontsize=9, rotation=60)
-    ax.axhline(0, color="0.25", linestyle="--", linewidth=1.4)
-    ax.set(title="Matched transport observables", ylabel="log10(NEP89 / literature)", xticks=range(4),
-           xticklabels=["LZOC", "LSZC", "Li3PS4", "LiPON"])
-    ax.legend(loc="upper left", fontsize=11)
-
-    ax = axes[1]
-    lo, hi = 0.28, 0.59
-    ax.plot([lo, hi], [lo, hi], "--", color="0.35", label="Equal activation energy")
-    for mat, model, ref, _ in ea_rows:
-        ax.scatter(ref, model, s=95, color=colors[mat], label=mat, zorder=3)
-        ax.annotate(mat, (ref, model), xytext=(7, 4), textcoords="offset points", fontsize=11)
-    ax.set(title="Activation-energy correspondence", xlabel="Literature Ea (eV)", ylabel="NEP89 Ea (eV)",
-           xlim=(lo, hi), ylim=(lo, hi), aspect="equal")
-    ax.legend(loc="upper left", fontsize=11)
-    save(fig, "26_cross_material_literature_correspondence")
-
 
 def workbook_xy(ws, xcol, ycol, start=4):
     rows = []
@@ -233,13 +203,13 @@ def lips_dynamic_figure():
 def refresh_manifest():
     path = FIG / "manifest.json"
     data = json.loads(path.read_text())
-    stems = {
-        "26_cross_material_literature_correspondence",
+    active_stems = {
         "27_LSZC_PDF_and_Zr_coordination",
         "28_Li3PS4_dynamic_heterogeneity",
     }
-    data["assets"] = [a for a in data["assets"] if Path(a["file"]).stem not in stems]
-    for stem in sorted(stems):
+    retired_stems = {"26_cross_material_literature_correspondence"}
+    data["assets"] = [a for a in data["assets"] if Path(a["file"]).stem not in active_stems | retired_stems]
+    for stem in sorted(active_stems):
         for ext in ("png", "pdf", "svg"):
             p = FIG / f"{stem}.{ext}"
             data["assets"].append({
@@ -252,7 +222,7 @@ def refresh_manifest():
 
 
 if __name__ == "__main__":
-    cross_material_figure()
+    cross_material_source_tables()
     lszc_pdf_and_coordination()
     lips_dynamic_figure()
     refresh_manifest()
