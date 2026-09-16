@@ -48,6 +48,26 @@ Li₃YCl₆は高電圧正極との適合性が報告された代表的塩化物
 
 LiNbOCl₄はO²⁻／Cl⁻混合アニオンがLi移動環境を形成するオキシハライドであり、室温伝導度約10.4 mS cm⁻¹が報告されている。[Tanakaら、2023；DOI: 10.1002/anie.202217581](https://doi.org/10.1002/anie.202217581) これにより、塩化物骨格だけでなく異なる局所化学環境でも同じ計算ワークフローを検証できる。
 
+#### Li₃YCl₆：文献基盤とワークフロー
+
+|文献|証拠と材料条件|主要結果|本研究での役割|
+|---|---|---|---|
+|T. Asano *et al.*, “Solid Halide Electrolytes with High Lithium-Ion Conductivity for Application in 4 V Class Bulk-Type All-Solid-State Batteries,” *Advanced Materials* **30**, 1803075 (2018). [DOI: 10.1002/adma.201803075](https://doi.org/10.1002/adma.201803075)|Li₃YCl₆／Li₃YBr₆粉末とバルク型全固体電池の実験、電気化学・輸送評価。|Li₃YCl₆が室温1 mS cm⁻¹超の伝導度と4 V級正極への適用性を持つ塩化物電解質であることを示した。|実験的な材料選定理由と巨視的輸送基準を与える。MDの$D(T)$と直接比較できる自己拡散曲線ではない。|
+
+![Li3YCl6 benchmark workflow](figures/material_workflow_Li3YCl6.png)
+
+このワークフローでは比較範囲を明確にする。実験論文は材料の意義を与え、本研究の240原子有序モデルと三つの汎用ポテンシャルはモデル依存性を検証する。MSD、$D(T)$、$E_a$、条件付き伝導度は計算量であり、実験インピーダンスの直接再現ではない。
+
+#### LiNbOCl₄：文献基盤とワークフロー
+
+|文献|証拠と材料条件|主要結果|本研究での役割|
+|---|---|---|---|
+|Y. Tanaka *et al.*, “New Oxyhalide Solid Electrolytes with High Lithium Ionic Conductivity >10 mS cm⁻¹ for All-Solid-State Batteries,” *Angewandte Chemie International Edition* **62**, e202217581 (2023). [DOI: 10.1002/anie.202217581](https://doi.org/10.1002/anie.202217581)|オキシハライドの合成、インピーダンス輸送、全固体電池評価。|LiNbOCl₄について室温約10.4 mS cm⁻¹、$E_a=0.240$ eVを報告し、塩化物基準を上回る伝導度を示した。|実験伝導度の基準点とArrhenius傾きを与える。再構成線は伝導度基準であり、実験トレーサー拡散データではない。|
+
+![LiNbOCl4 benchmark workflow](figures/material_workflow_LiNbOCl4.png)
+
+同一のMD設計を維持することで、解析変更ではなく塩化物から混合アニオン系への化学的変更を検討する。従って重要なのは曲線の高さだけでなく、モデル順位と実験傾きが材料をまたいで一貫するかである。
+
 #### 三モデルMDの共通設計
 
 構造緩和後、Li₃YCl₆では400／600／800／1000 K、LiNbOCl₄では600／800／1000／1200 Kを用いた。中間発表の主系列はNVT、1 fs、50 ps平衡化＋500 ps productionであり、MACE-MPA-0、SevenNet-nano、M3GNet GPUを同じ温度系列と解析定義で比較した。MSDから$D_{\mathrm{Li}}$を求め、Arrhenius式で$E_a$と300 K外挿値を得た。これらは汎用モデル比較であり、各材料にfine-tuneしたポテンシャルの精度試験ではない。
@@ -216,6 +236,17 @@ Dはすべて20–80 ps窓。平均Tは目標±1.1 K以内。最後−最初50 p
 
 本研究の問いは論文全体の再現より限定的である。低温AIMDの温度点でLi拡散の大きさをNEP89が再現するか、構造指標が整合する解釈を支持するかを検討する。時間を長くし、セルを大きくしたこと自体を精度向上の証拠にはしない。
 
+### 主要文献と材料ワークフロー
+
+|文献|証拠と材料条件|主要結果|本研究での役割|
+|---|---|---|---|
+|L. Hu *et al.*, “A cost-effective, ionically conductive and compressible oxychloride solid-state electrolyte for stable all-solid-state lithium-based batteries,” *Nature Communications* **14**, 3807 (2023). [DOI: 10.1038/s41467-023-39522-1](https://doi.org/10.1038/s41467-023-39522-1)|Li₁.₇₅ZrCl₄.₇₅O₀.₅の合成、インピーダンス、圧密、電池試験。|25 °Cで2.42 mS cm⁻¹、300 MPaで94.2%の相対密度、低い推定原料費を報告した。|実験的意義と巨視的伝導度を与える。部分非晶質試料を一つの周期ガラスモデルと同一視しない。|
+|F. Hussain *et al.*, “Exploring superionic conduction in lithium oxyhalide solid electrolytes considering composition and structural factors,” *npj Computational Materials* (2024). [DOI: 10.1038/s41524-024-01346-y](https://doi.org/10.1038/s41524-024-01346-y)|結晶・非晶酸塩化物のDFT／AIMD比較、340／360／380 Kの非晶質トレーサー拡散。|無秩序構造とLi輸送を関連付け、Li移動とアニオンの局所運動を区別した。|NEP89軌跡に対する同温度$D^*$基準と構造解釈を与える。|
+
+![LZOC literature-to-analysis workflow](figures/material_workflow_LZOC.png)
+
+二つの文献は役割が異なる。Huは実験性能、Hussainは直接比較できる有限温度トレーサー拡散を与える。従って、まず$D$をAIMDと比較し、実験は材料レベルの背景として扱う。
+
 |比較条件|文献AIMD|本研究|
 |---|---|---|
 |輸送温度|340／360／380 K|340／360／380 K|
@@ -296,6 +327,16 @@ a–cは各温度1軌跡の0–300 ps全域のLi MSD、dは対応する見かけ
 ### 背景と文献基準
 
 [Tangら（2026）](https://doi.org/10.1038/s41467-026-69737-x)は非晶質硫酸塩–塩化物電解質0.5Li₂SO₄–ZrCl₄を研究した。本節では、材料専用の再学習を行わないNEPがLi輸送と硫酸根・Zr局所環境をどこまで再現するかを検討する。論文は**30 °Cで1.5 mS/cm、E_a = 0.33 eV**を報告する。調整済みMACEによるMDは別の計算基準であり、AIMDや実験値ではない。
+
+### 主要文献と材料ワークフロー
+
+|文献|証拠と材料条件|主要結果|本研究での役割|
+|---|---|---|---|
+|W. Tang *et al.*, “Polyanion-stabilized amorphous halide electrolytes with low lithium content for all-solid-state lithium batteries,” *Nature Communications* **17**, 3326 (2026). [DOI: 10.1038/s41467-026-69737-x](https://doi.org/10.1038/s41467-026-69737-x)|インピーダンス、XRD／TEM／SAED、放射光・中性子全散乱、XAS／EXAFS、AIMD、材料適応MLFF／MACE。|0.5Li₂SO₄–ZrCl₄で30 °C、1.5 mS cm⁻¹、$E_a=0.33$ eV、密度約2.05 g cm⁻³を報告し、輸送を硫酸根で修飾されたZr–Cl/O環境と関連付けた。|実験輸送、局所配位／PDF、調整済みMACEをNEP89と個別に比較できる、本書で最も統合的な基準である。|
+
+![LSZC literature-to-analysis workflow](figures/material_workflow_LSZC.png)
+
+一つの論文に複数の証拠層があるため、ワークフローでは実験伝導度と$E_a$、EXAFS／PDF構造、調整済みMACE軌跡を区別し、観測量ごとに一致度を評価する。
 
 |基準|文献結果|本研究での比較|
 |---|---|---|
@@ -424,6 +465,17 @@ Chenらの *Disorder-induced enhancement of lithium-ion transport in solid-state
 
 Zr–O/ClではなくP–S局所構造をもつ系への転用を検討するため、広く事前学習されたポテンシャルの適用性を評価する上で意味がある。公開DeePMDのDを同温度の計算基準とし、後述する実験伝導度は試料履歴・温度が異なる別の測定として扱う。
 
+### 主要文献と材料ワークフロー
+
+|文献|証拠と材料条件|主要結果|本研究での役割|
+|---|---|---|---|
+|Z. Chen *et al.*, “Disorder-induced enhancement of lithium-ion transport in solid-state electrolytes,” *Nature Communications* **16**, 1057 (2025). [DOI: 10.1038/s41467-025-56322-x](https://doi.org/10.1038/s41467-025-56322-x)|AIMDで学習した深層ポテンシャルにより、300–900 Kの結晶・ガラス・ガラスセラミックスLi₃PS₄を構造・動力学記述子とともに比較。|無秩序化によるLi動力学の増大を示し、van Hove、非Gaussian量、学習softnessと移動環境を関連付けた。|同温度DeePMDガラス$D(T)$と機構基準を与える。本研究はガラスの構造・輸送部分のみを対象とする。|
+|P. Mirmira *et al.*, “Importance of multimodal characterization and influence of residual Li₂S impurity in amorphous Li₃PS₄ inorganic electrolytes,” *Journal of Materials Chemistry A* **9**, 19637–19648 (2021). [DOI: 10.1039/D1TA02754A](https://doi.org/10.1039/D1TA02754A)|ボールミル非晶Li₃PS₄の構造解析とインピーダンス測定。|室温伝導度約3.5×10⁻⁴ S cm⁻¹を報告し、残留Li₂Sと測定法がガラス解釈に影響することを示した。|実験スケールを与え、一つのRDFや公称組成だけで実験ガラスを規定できないことを示す。|
+
+![Li3PS4 literature-to-analysis workflow](figures/material_workflow_Li3PS4.png)
+
+二つの文献は相補的である。Chenは原子論的輸送基準、Mirmiraは実試料の実験背景を与える。従って、NEP89を局所構造と$D(T)$の両方で評価し、計算上の一致を実験再現と読み替えない。
+
 ### 初期構造と熱処理
 
 著者の学習データから取得した最初の64原子Li24P8S32構型を2×2×2に拡張し、**Li192P64S256、計512原子**とした。元素対応・周期距離・組成を確認した。学習データ中の一構型は前駆体であり、それだけで平衡化したガラスとはいえないため、熱処理を構造作製の一部とする。
@@ -509,6 +561,19 @@ Sethらは13,454個のDFT構造からLiPON専用NequIPを学習し、非晶質Li
 
 本研究のLi47P16O56N5 = Li2.9375PO3.5N0.3125はSethのバルク組成に近い。一方、LiPON専用NequIPをNEP89に置き換え、置換配置も独立に生成している。従って、文献の局所モチーフがこの転移でどこまで保持されるかを問う。Li|LiPON界面は対象外である。
 
+### 主要文献と材料ワークフロー
+
+|文献|証拠と材料条件|主要結果|本研究での役割|
+|---|---|---|---|
+|V. Lacivita *et al.*, “Resolving the Amorphous Structure of Lithium Phosphorus Oxynitride (LiPON),” *Journal of the American Chemical Society* **140**, 11029–11038 (2018). [DOI: 10.1021/jacs.8b05192](https://doi.org/10.1021/jacs.8b05192)|AIMD構造を中性子全散乱／PDFと赤外分光とともに解釈。|非晶質リン酸塩網目中のapical Nとbridging Nを実験的に制約した。|Li輸送の前に満たすべき局所化学基準を定義する。|
+|V. Lacivita, N. Artrith and G. Ceder, “Structural and Compositional Factors That Control the Li-Ion Conductivity in LiPON Electrolytes,” *Chemistry of Materials* **30**, 7077–7090 (2018). [DOI: 10.1021/acs.chemmater.8b02812](https://doi.org/10.1021/acs.chemmater.8b02812)|非晶化、過剰Li、apical／bridging NがLiPON伝導へ与える影響を薄膜実験と対応させたAIMD研究。|伝導度をN量だけに帰属せず、複数の構造・組成要因を分離した。|NEP89のArrhenius結果を解釈する機構・実験伝導度背景を与える。|
+|A. Seth *et al.*, “Investigating Ionic Diffusivity in Amorphous LiPON using Machine-Learned Interatomic Potentials,” *ACS Materials Au* (2025). [DOI: 10.1021/acsmaterialsau.4c00117](https://doi.org/10.1021/acsmaterialsau.4c00117)|13,454個のDFT構造で学習したLiPON専用NequIP、バルクmelt–quenchとLi/LiPON界面輸送。|材料専用非晶構造と600／900／1200／1500 Kのバルク拡散を計算し、学習データとモデル手順を公開した。|組成・温度を対応させた計算基準を与える。本研究は材料専用学習をNEP89へ置き換えた影響を検討する。|
+|J. B. Bates *et al.*, “A Stable Thin-Film Lithium Electrolyte: Lithium Phosphorus Oxynitride,” *Journal of The Electrochemical Society* (1996). [DOI: 10.1149/1.1837443](https://doi.org/10.1149/1.1837443)|LiPON薄膜の温度依存インピーダンス測定。|25 °Cで約2.3±0.7×10⁻⁶ S cm⁻¹、$E_a=0.55±0.02$ eVを報告した。|自己拡散比較とは分けて用いる実験伝導度・活性化エネルギー基準を与える。|
+
+![LiPON literature-to-analysis workflow](figures/material_workflow_LiPON.png)
+
+LiPONには三段階の基準がある。実験的に制約された網目トポロジー、材料専用MLIPの拡散系列、薄膜の巨視的輸送である。ワークフローでは構造を先に確認し、4桁規模の拡散差をフィット問題ではなく適用性の結果として扱う。
+
 ### 前駆体の構築とMDの範囲
 
 16原子のLi₃PO₄セルを2×2×2に拡張し、Oを5個Nに置換、さらにOを3個、Liを1個除去して**124原子**とした。Li⁺/P⁵⁺/O²⁻/N³⁻の形式電荷で中性である。3組は同一前駆体トポロジーを用い、溶融前に速度を変えた。従って、独立な置換配置ではなく、熱履歴感度を比較する。
@@ -576,7 +641,7 @@ Preparation Bは拡散係数を見る前に選定した。各文献バルク温�
 |1200|6.93×10⁻⁵|0.9999|0.991|3.72×10³|419.03|8.91|
 |1500|1.43×10⁻⁴|0.9998|1.018|5.89×10³|849.24|27.07|
 
-4点のNEP89拡散係数から得たArrhenius活性化エネルギーは**0.395 eV**（R²=0.9977）であり、LiPON薄膜で一般に報告される実験値約0.55 eVより低い。600 KでSethのmelt-quench LiPONは1.25×10⁻¹⁰ cm²/sであるのに対し、NEP89は1.46×10⁻⁶ cm²/sで約1.17×10⁴倍高い。1500 Kでは約7.5×10⁻⁹に対して1.43×10⁻⁴ cm²/sで、約1.91×10⁴倍高い。NEP89直線の300 K外挿D=7.40×10⁻¹⁰ cm²/sはSethの1.08×10⁻¹¹ cm²/sの約69倍である。対応する条件付きNernst–Einstein値は0.172 mS/cmで、引用実験値0.0033 mS/cmの約52倍である。この伝導度はイオン相関を含まない換算値であり、測定値ではない。[Sethら、2025；DOI: 10.1021/acsmaterialsau.4c00117](https://doi.org/10.1021/acsmaterialsau.4c00117) [Marbellaら、2018；DOI: 10.1021/acs.chemmater.8b02812](https://doi.org/10.1021/acs.chemmater.8b02812)
+4点のNEP89拡散係数から得たArrhenius活性化エネルギーは**0.395 eV**（R²=0.9977）であり、LiPON薄膜の実験値約0.55 eVより低い。600 KでSethのmelt-quench LiPONは1.25×10⁻¹⁰ cm²/sであるのに対し、NEP89は1.46×10⁻⁶ cm²/sで約1.17×10⁴倍高い。1500 Kでは約7.5×10⁻⁹に対して1.43×10⁻⁴ cm²/sで、約1.91×10⁴倍高い。NEP89直線の300 K外挿D=7.40×10⁻¹⁰ cm²/sはSethの1.08×10⁻¹¹ cm²/sの約69倍である。対応する条件付きNernst–Einstein値は0.172 mS/cmで、LiPON文献の実験値0.0033 mS/cmの約52倍である。この伝導度はイオン相関を含まない換算値であり、測定値ではない。[Sethら、2025；DOI: 10.1021/acsmaterialsau.4c00117](https://doi.org/10.1021/acsmaterialsau.4c00117) [Batesら、1996；DOI: 10.1149/1.1837443](https://doi.org/10.1149/1.1837443)
 
 ![LiPONのArrhenius比較](figures/24_LiPON_Arrhenius.png)
 
@@ -726,14 +791,17 @@ $$
 
 |文献|本書での役割|DOI|
 |---|---|---|
+|Asano et al., 2018|Li₃YCl₆：塩化物電解質の実験輸送・高電圧電池基準|[10.1002/adma.201803075](https://doi.org/10.1002/adma.201803075)|
+|Tanaka et al., 2023|LiNbOCl₄：実験室温伝導度と活性化エネルギー|[10.1002/anie.202217581](https://doi.org/10.1002/anie.202217581)|
 |Hu et al., 2023|LZOC：室温イオン伝導度と材料背景の実験基準|[10.1038/s41467-023-39522-1](https://doi.org/10.1038/s41467-023-39522-1)|
 |Hussain et al., 2024|LZOC：占有情報と340/360/380 KのAIMD拡散基準|[10.1038/s41524-024-01346-y](https://doi.org/10.1038/s41524-024-01346-y)|
 |Tang et al., 2026|LSZC：実験伝導率・活性化エネルギー・局所構造。調整済みMACEのMDは別の計算基準|[10.1038/s41467-026-69737-x](https://doi.org/10.1038/s41467-026-69737-x)|
 |Chen et al., 2025|Li₃PS₄：ガラス構造とDeePMD輸送基準。実験のDではない|[10.1038/s41467-025-56322-x](https://doi.org/10.1038/s41467-025-56322-x)|
 |Mirmira et al., 2021|Li₃PS₄：293.15 Kの実験文献伝導率を別途参照|[10.1039/D1TA02754A](https://doi.org/10.1039/D1TA02754A)|
 |Seth et al., 2025|LiPON：組成・作製の背景と専用NequIP研究。本NEP試験とは区別|[10.1021/acsmaterialsau.4c00117](https://doi.org/10.1021/acsmaterialsau.4c00117)|
-|Lacivita et al., 2018|LiPON：中性子PDF・赤外分光で検証したAIMD構造、apical/bridging Nの基準|[10.1021/jacs.8b05192](https://doi.org/10.1021/jacs.8b05192)|
-|Marbella et al., 2018|LiPON：実験薄膜伝導度と約0.55 eVの活性化エネルギー基準|[10.1021/acs.chemmater.8b02812](https://doi.org/10.1021/acs.chemmater.8b02812)|
+|Lacivita et al., 2018 (JACS)|LiPON：中性子PDF・赤外分光で検証したAIMD構造、apical/bridging Nの基準|[10.1021/jacs.8b05192](https://doi.org/10.1021/jacs.8b05192)|
+|Lacivita, Artrith and Ceder, 2018 (Chem. Mater.)|LiPON：伝導度を支配する構造・組成要因のAIMD解析|[10.1021/acs.chemmater.8b02812](https://doi.org/10.1021/acs.chemmater.8b02812)|
+|Bates et al., 1996|LiPON：実験薄膜伝導度と$E_a=0.55\pm0.02$ eV|[10.1149/1.1837443](https://doi.org/10.1149/1.1837443)|
 
 MACE–NEPの実行時間と旧ルートの密度比較は本計算の結果であり、上記文献の数値ではない。出所は以下に保存する。
 
