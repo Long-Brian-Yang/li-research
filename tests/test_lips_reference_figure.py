@@ -47,3 +47,18 @@ def test_angle_density_is_normalized_with_current_numpy_api():
     density = module.normalize_angle_density(angles)
 
     assert np.isclose(np.trapezoid(density, angles[:, 0]), 1.0)
+
+
+def test_structure_figure_legends_use_unoccupied_upper_left_region():
+    module = load_module()
+    rdf = np.array([[0.0, 0.0], [2.5, 5.5], [5.0, 1.0]])
+    reference_rdf = np.array([[0.0, 0.0], [2.5, 5.8], [5.0, 1.0]])
+    angles = np.array([[60.0, 0.0], [110.0, 0.08], [160.0, 0.0]])
+    reference_angles = np.array([[60.0, 0.0], [110.0, 0.09], [160.0, 0.0]])
+
+    fig = module.build_structure_figure(rdf, reference_rdf, angles, reference_angles)
+    module.style_figure(fig)
+
+    assert len(fig.axes) == 2
+    assert all(axis.get_legend()._loc == 2 for axis in fig.axes)
+    plt.close(fig)

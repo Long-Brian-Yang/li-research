@@ -48,7 +48,7 @@ def load_reference_csv(path: Path, usecols) -> np.ndarray:
     return values
 
 
-def finish(fig, name):
+def style_figure(fig):
     for index, axis in enumerate(fig.axes):
         axis.text(
             -0.13,
@@ -60,8 +60,15 @@ def finish(fig, name):
         )
         axis.grid(alpha=0.16)
         axis.set_axisbelow(True)
-        if axis.get_legend():
-            axis.legend(frameon=False, fontsize=11.5)
+        legend = axis.get_legend()
+        if legend:
+            legend.get_frame().set_visible(False)
+            for label in legend.get_texts():
+                label.set_fontsize(11.5)
+
+
+def finish(fig, name):
+    style_figure(fig)
     OUTPUT.mkdir(parents=True, exist_ok=True)
     fig.canvas.draw()
     for extension in ("png", "pdf", "svg"):
@@ -127,6 +134,38 @@ def build_reference_figure(temperatures, model_d, reference_d, framework):
         xlim=(270, 930),
     )
     axes[1].legend(loc="best")
+    return fig
+
+
+def build_structure_figure(rdf, reference_rdf, angles, reference_angles):
+    """Build local-structure panels with legends in curve-free regions."""
+    reference_angle_density = normalize_angle_density(reference_angles)
+    fig, axes = plt.subplots(1, 2, figsize=(12, 4.65), layout="constrained")
+    axes[0].plot(rdf[:, 0], rdf[:, 1], color=BLUE, label="NEP89 (this work)")
+    axes[0].plot(
+        reference_rdf[:, 0],
+        reference_rdf[:, 1],
+        color=RED,
+        linestyle="--",
+        label="Chen et al. (2025), DeePMD",
+    )
+    axes[0].set(title="Li–S radial distribution", xlabel="r (Å)", ylabel="g(r)", xlim=(0, 5))
+    axes[0].legend(loc="upper left")
+    axes[1].plot(angles[:, 0], angles[:, 1], color=BLUE, label="NEP89 (this work)")
+    axes[1].plot(
+        reference_angles[:, 0],
+        reference_angle_density,
+        color=RED,
+        linestyle="--",
+        label="Chen et al. (2025), DeePMD",
+    )
+    axes[1].set(
+        title="S–P–S angle distribution",
+        xlabel="Angle (°)",
+        ylabel="Probability density (degree⁻¹)",
+        xlim=(60, 160),
+    )
+    axes[1].legend(loc="upper left")
     return fig
 
 
@@ -196,33 +235,7 @@ def main():
     chen_rdf = load_reference_csv(REFERENCE / "Chen2025_Fig._1e.csv", (0, 2))
     r1_angle = load_csv(DATA / "300K_late_angles.csv")
     chen_angle = load_reference_csv(REFERENCE / "Chen2025_Fig._1f.csv", (0, 2))
-    chen_angle_density = normalize_angle_density(chen_angle)
-    fig, axes = plt.subplots(1, 2, figsize=(12, 4.65), layout="constrained")
-    axes[0].plot(r1_rdf[:, 0], r1_rdf[:, 1], color=BLUE, label="NEP89 glass")
-    axes[0].plot(
-        chen_rdf[:, 0],
-        chen_rdf[:, 1],
-        color=RED,
-        linestyle="--",
-        label="Chen 2025: glass DeePMD",
-    )
-    axes[0].set(title="Li–S radial distribution", xlabel="r (Å)", ylabel="g(r)", xlim=(0, 5))
-    axes[0].legend()
-    axes[1].plot(r1_angle[:, 0], r1_angle[:, 1], color=BLUE, label="NEP89 glass")
-    axes[1].plot(
-        chen_angle[:, 0],
-        chen_angle_density,
-        color=RED,
-        linestyle="--",
-        label="Chen 2025: glass DeePMD",
-    )
-    axes[1].set(
-        title="S–P–S angle distribution",
-        xlabel="Angle (°)",
-        ylabel="Probability density (degree⁻¹)",
-        xlim=(60, 160),
-    )
-    axes[1].legend()
+    fig = build_structure_figure(r1_rdf, chen_rdf, r1_angle, chen_angle)
     finish(fig, "07_LPS_structure")
 
     plot_summary = {
