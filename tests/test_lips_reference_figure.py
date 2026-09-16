@@ -75,14 +75,18 @@ def test_structure_figure_uses_non_overlapping_legends_inside_axes():
 
     assert len(fig.axes) == 2
     assert all(axis.get_legend() is not None for axis in fig.axes)
-    assert all(axis.get_legend()._loc == 3 for axis in fig.axes)
+    assert all(axis.get_legend()._loc == 2 for axis in fig.axes)
     assert len(fig.legends) == 0
+    for axis in fig.axes:
+        labels = [text.get_text() for text in axis.get_legend().get_texts()]
+        assert "Chen et al., DeePMD" in labels
+        assert all("2025" not in label for label in labels)
     plt.close(fig)
 
 
 def test_structure_figure_has_cache_safe_report_name():
     script = SCRIPT.read_text()
-    assert 'finish(fig, "07_LPS_local_order")' in script
+    assert 'finish(fig, "07_LPS_structural_comparison")' in script
     for language in ("ja", "en"):
         review = (ROOT / f"docs/materials/materials_overview_{language}.md").read_text()
-        assert "figures/07_LPS_local_order.png" in review
+        assert "figures/07_LPS_structural_comparison.png" in review

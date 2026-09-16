@@ -559,7 +559,7 @@ A 500/700/900 K diagnostic gives $E_a=0.4189$ eV and $R^2=0.99784$, closer to Ch
 
 ### Local structure and preparation dependence
 
-![Li3PS4 literature structure](figures/07_LPS_local_order.png)
+![Li3PS4 literature structure](figures/07_LPS_structural_comparison.png)
 
 The late 300 K production has a Li–S RDF maximum at 2.425 Å, close to the published glass maximum near 2.459 Å. The mean S–P–S angle is 109.38°, and every sampled P remains fourfold coordinated within 2.6 Å at 300 and 500 K. The late-production fourfold fraction is 99.84% at 700 K and 98.75% at 900 K. Thus the local PS4 geometry is retained much better than the quantitative Li transport is reproduced.
 

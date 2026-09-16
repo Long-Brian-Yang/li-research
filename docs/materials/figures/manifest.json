@@ -213,18 +213,18 @@
       "source": "scripts/structures/plot_lips_r1_report.py"
     },
     {
-      "file": "07_LPS_local_order.png",
-      "sha256": "c6dd3126cfc9498c14ab7c1971e0ac8e2802680cb52b21f3a3e9c05e5df04320",
+      "file": "07_LPS_structural_comparison.png",
+      "sha256": "37991f9bd20b336b08448ad3c559ba2f2043bca052133a7b828ebfa8b80dfa13",
       "source": "scripts/structures/plot_lips_r1_report.py"
     },
     {
-      "file": "07_LPS_local_order.pdf",
-      "sha256": "6503bc496c362be520a849ca1675da5ae80610923c1121ad892549cd92f95f34",
+      "file": "07_LPS_structural_comparison.pdf",
+      "sha256": "170c77958f4acd6fad3be19f9df940a69824d158ccf7f067d66238e99f235c7e",
       "source": "scripts/structures/plot_lips_r1_report.py"
     },
     {
-      "file": "07_LPS_local_order.svg",
-      "sha256": "0774c849229bd837dcbef2bc7b5a187678c0ca7922ba722365f75c45768598dc",
+      "file": "07_LPS_structural_comparison.svg",
+      "sha256": "c4e0b45d2f27994a153914cc069e7772bfd3b327396109fb7396a0ea53d201f3",
       "source": "scripts/structures/plot_lips_r1_report.py"
     },
     {
