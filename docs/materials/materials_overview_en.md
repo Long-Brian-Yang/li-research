@@ -75,9 +75,10 @@ All three Li₃YCl₆ models show increasing MSD with temperature, but their act
 
 LiNbOCl₄ likewise shows substantial model dependence, and the M3GNet Arrhenius linearity is lower than for the other two models. The Arrhenius panel now follows the Li₃YCl₆ construction: MD $D$ is converted to conditional Nernst–Einstein conductivity using the Li number density of the model cell, and $\ln(\sigma_{\mathrm{NE}}T)$ is displayed. The black dotted reference is anchored at the 10.4 mS cm⁻¹ room-temperature conductivity reported by Tanaka et al. and extended with the reported $E_a=0.240$ eV. It is a complete experimental conductivity reference, not an experimental Li self-diffusion curve; comparison with $D$ therefore retains the limitation of a correlation-free conversion.
 
-|Li₃YCl₆|LiNbOCl₄|
-|---|---|
-|![Li₃YCl₆ Arrhenius analysis](figures/03_Li3YCl6_Arrhenius.png)|![LiNbOCl₄ Arrhenius analysis](figures/04_LiNbOCl4_Arrhenius.png)|
+<p align="center">
+  <img src="figures/03_Li3YCl6_Arrhenius.png" alt="Li3YCl6 Arrhenius analysis" width="49%">
+  <img src="figures/04_LiNbOCl4_Arrhenius.png" alt="LiNbOCl4 Arrhenius analysis" width="49%">
+</p>
 
 The first phase therefore establishes that GPU acceleration makes long MD practical, but speed alone cannot determine predictive reliability. Motivated by the model dependence observed for the two crystals, Part II moves to amorphous materials whose response is more sensitive to preparation history and evaluates not only $D$, but also density, RDF, coordination and host motion against experiment, AIMD and material-specific ML potentials.
 

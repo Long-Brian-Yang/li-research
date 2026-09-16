@@ -75,9 +75,10 @@ Li₃YCl₆では三モデルとも温度上昇に伴うMSD増加を示したが
 
 LiNbOCl₄でもモデル間差が残り、特にM3GNetのArrhenius直線性は他の二モデルより低かった。Arrhenius図はLi₃YCl₆図と同じ構成とし、MDの$D$をモデルセルのLi数密度による条件付きNernst–Einstein伝導度へ換算して$\ln(\sigma_{\mathrm{NE}}T)$を表示する。黒点線はTanakaらの室温伝導度10.4 mS cm⁻¹を300 Kに置き、報告$E_a=0.240$ eVで再構成した完全な実験参照線である。これは実験伝導度のArrhenius基準であり、実験Li自己拡散係数ではないため、$D$との比較には相関を無視した換算という制約が残る。
 
-|Li₃YCl₆|LiNbOCl₄|
-|---|---|
-|![Li₃YCl₆のArrhenius解析](figures/03_Li3YCl6_Arrhenius.png)|![LiNbOCl₄のArrhenius解析](figures/04_LiNbOCl4_Arrhenius.png)|
+<p align="center">
+  <img src="figures/03_Li3YCl6_Arrhenius.png" alt="Li3YCl6のArrhenius解析" width="49%">
+  <img src="figures/04_LiNbOCl4_Arrhenius.png" alt="LiNbOCl4のArrhenius解析" width="49%">
+</p>
 
 この前半から得た結論は、GPU化により長時間MDは現実的になったが、速度だけでは材料予測の信頼性を決められないということである。結晶二材料で確認したモデル依存性を受け、後半ではより構造履歴に敏感な非晶質材料へ対象を広げ、単なる$D$比較ではなく、密度、RDF、配位、骨格運動を実験・AIMD・材料専用MLIPと照合する。
 

@@ -7,6 +7,7 @@ ROOT = Path(__file__).resolve().parents[4]
 OUTS = [
     ROOT / "results/midterm_Li3YCl6_MACE_M3GNet/plots/Li3YCl6_Arrhenius_all_models.png",
     ROOT / "results/publication_all_materials/arrhenius/Li3YCl6_Arrhenius_all_models.png",
+    ROOT / "docs/materials/figures/03_Li3YCl6_Arrhenius.png",
 ]
 T = np.array([400., 600., 800., 1000.])
 x = 1000.0 / T
@@ -52,7 +53,7 @@ ax.legend(fontsize=13.0, loc="upper right", frameon=False,
           borderpad=0.35, labelspacing=0.45, handlelength=2.6)
 fig.tight_layout()
 for out in OUTS:
-    fig.savefig(out)
+    fig.savefig(out, dpi=300)
 
 # Keep the two-model midterm comparison used in the presentation README,
 # using exactly the same typography and axis style as the three-model figure.
