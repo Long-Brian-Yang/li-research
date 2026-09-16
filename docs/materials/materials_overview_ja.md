@@ -559,7 +559,7 @@ flowchart LR
 
 ### 局所構造と作製依存性
 
-![Li3PS4文献構造比較](figures/07_LPS_structure.png)
+![Li3PS4文献構造比較](figures/07_LPS_local_structure.png)
 
 300 K production末段のLi–S RDF最大は2.425 Åで、公開ガラスの約2.459 Åに近い。S–P–S平均角は109.38°であり、300と500 Kでは2.6 Å以内で全ての採取Pが四配位を保つ。production末段の四配位率は700 Kで99.84%、900 Kで98.75%である。従って、局所PS4幾何は定量的Li輸送より良好に保持される。
 

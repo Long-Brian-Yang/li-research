@@ -58,7 +58,7 @@ def test_angle_density_is_normalized_with_current_numpy_api():
     assert np.isclose(np.trapezoid(density, angles[:, 0]), 1.0)
 
 
-def test_structure_figure_legends_use_unoccupied_upper_left_region():
+def test_structure_figure_uses_one_shared_legend_outside_axes():
     module = load_module()
     rdf = np.array([[0.0, 0.0], [2.5, 5.5], [5.0, 1.0]])
     reference_rdf = np.array([[0.0, 0.0], [2.5, 5.8], [5.0, 1.0]])
@@ -69,5 +69,16 @@ def test_structure_figure_legends_use_unoccupied_upper_left_region():
     module.style_figure(fig)
 
     assert len(fig.axes) == 2
-    assert all(axis.get_legend()._loc == 2 for axis in fig.axes)
+    assert all(axis.get_legend() is None for axis in fig.axes)
+    assert len(fig.legends) == 1
+    assert fig.legends[0]._loc == 8
+    assert fig.legends[0]._ncols == 2
     plt.close(fig)
+
+
+def test_structure_figure_has_cache_safe_report_name():
+    script = SCRIPT.read_text()
+    assert 'finish(fig, "07_LPS_local_structure")' in script
+    for language in ("ja", "en"):
+        review = (ROOT / f"docs/materials/materials_overview_{language}.md").read_text()
+        assert "figures/07_LPS_local_structure.png" in review

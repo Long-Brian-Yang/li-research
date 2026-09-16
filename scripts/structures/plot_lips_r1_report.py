@@ -140,7 +140,6 @@ def build_structure_figure(rdf, reference_rdf, angles, reference_angles):
         label="Chen et al. (2025), DeePMD",
     )
     axes[0].set(title="Li–S radial distribution", xlabel="r (Å)", ylabel="g(r)", xlim=(0, 5))
-    axes[0].legend(loc="upper left")
     axes[1].plot(angles[:, 0], angles[:, 1], color=BLUE, label="NEP89 (this work)")
     axes[1].plot(
         reference_angles[:, 0],
@@ -155,7 +154,15 @@ def build_structure_figure(rdf, reference_rdf, angles, reference_angles):
         ylabel="Probability density (degree⁻¹)",
         xlim=(60, 160),
     )
-    axes[1].legend(loc="upper left")
+    handles, labels = axes[0].get_legend_handles_labels()
+    fig.legend(
+        handles,
+        labels,
+        loc="lower center",
+        bbox_to_anchor=(0.5, 1.015),
+        ncol=2,
+        frameon=False,
+    )
     return fig
 
 
@@ -226,12 +233,12 @@ def main():
     r1_angle = load_csv(DATA / "300K_late_angles.csv")
     chen_angle = load_reference_csv(REFERENCE / "Chen2025_Fig._1f.csv", (0, 2))
     fig = build_structure_figure(r1_rdf, chen_rdf, r1_angle, chen_angle)
-    finish(fig, "07_LPS_structure")
+    finish(fig, "07_LPS_local_structure")
 
     plot_summary = {
         "figure_conclusion": "R1 retains local PS4 geometry, while its finite-time apparent Li diffusion remains above the Chen 2025 glass reference across 300–900 K.",
         "archetype": "quantitative grid",
-        "exports": ["05_LPS_MSD", "06_LPS_temperature_dependence", "07_LPS_structure"],
+        "exports": ["05_LPS_MSD", "06_LPS_temperature_dependence", "07_LPS_local_structure"],
         "reference_comparison": comparison.tolist(),
         "sources_sha256": {
             str(path.relative_to(ROOT)): hashlib.sha256(path.read_bytes()).hexdigest()
