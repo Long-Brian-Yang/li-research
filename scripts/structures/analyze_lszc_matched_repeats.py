@@ -153,7 +153,11 @@ def main():
     ax.legend()
     apply_style(fig)
     for ext in ("png", "pdf", "svg"):
-        fig.savefig(ROOT / f"docs/materials/figures/18_LSZC_transport.{ext}", dpi=220)
+        fig.savefig(
+            ROOT
+            / f"docs/materials/figures/18_LSZC_four_temperature_transport.{ext}",
+            dpi=220,
+        )
     plt.close(fig)
     print(json.dumps(summary, indent=2))
 

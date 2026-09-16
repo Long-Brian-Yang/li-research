@@ -1,7 +1,22 @@
 {
   "operation": "Current report figure inventory. Historical sources remain archived; current files may be regenerated from the listed scripts.",
-  "figure_groups": 20,
+  "figure_groups": 21,
   "assets": [
+    {
+      "file": "18_LSZC_four_temperature_transport.png",
+      "sha256": "aeb6c373ec940366aa9f69cbee880098c1cbd2711416c6cde406f3a1bd2f44f5",
+      "source": "scripts/structures/analyze_lszc_matched_repeats.py"
+    },
+    {
+      "file": "18_LSZC_four_temperature_transport.pdf",
+      "sha256": "624f2107a037fe59839d078aa3ab1259e70b1639561e6950bcc1edccdb023468",
+      "source": "scripts/structures/analyze_lszc_matched_repeats.py"
+    },
+    {
+      "file": "18_LSZC_four_temperature_transport.svg",
+      "sha256": "8a34744d8637bdd9cacf07b79c9b784fc7da48905814eb9b792c540a0995b8da",
+      "source": "scripts/structures/analyze_lszc_matched_repeats.py"
+    },
     {
       "file": "09_legacy_cost_density.png",
       "sha256": "0d11d92c03123a224c1969173a7c4db712c32cc9c0aa3707de3e99e894beb39b",

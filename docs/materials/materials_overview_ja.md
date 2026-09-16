@@ -432,7 +432,7 @@ flowchart LR
 
 ### 四温度輸送と文献比較
 
-![LSZC四温度輸送と文献比較](figures/18_LSZC_transport.png)
+![LSZC四温度輸送と文献比較](figures/18_LSZC_four_temperature_transport.png)
 
 上段と左下は選定した各温度軌跡の0–300 ps Li MSD全体、中央下は条件付きNernst–Einstein伝導度と論文の調整済みMACEを示す。右下にはNEP89、論文の調整済みMACE元データ、実験の三つのArrhenius傾向を示す。調整済みMACEの4点を本研究で回帰すると$E_a=0.370$ eV（$R^2=0.9863$）となる。これは公開元データに対する本研究のフィットであり、独立した実験報告値ではない。実験の四角点は論文Supplementary Fig. 3の303–353 K元データ、灰色破線はその回帰であり、$E_a=0.330$ eVを与える。図中にMSDフィット区間は重ねない。
 
