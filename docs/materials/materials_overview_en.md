@@ -392,7 +392,7 @@ The sulfate-containing material extends the main line without changing it into a
 
 ### Four-temperature isochoric transport protocol
 
-The completed endpoint series below does **not** provide a usable NEP activation energy and will not be combined with old 330/340 K runs to construct one. Two fresh 320/330/340/350 K series use the same documented 272-atom structure and fixed cell at all temperatures, with 50 ps NVT equilibration followed by 300 ps NVT production per temperature. NEP89, 0.5 fs integration and MTTK temperature coupling of 100 fs remain unchanged; the two series differ only in their initialized velocities.
+The final comparison uses two completed 320/330/340/350 K series generated from the same documented 272-atom structure and fixed cell. Every temperature contains 50 ps NVT equilibration followed by 300 ps NVT production. NEP89, 0.5 fs integration and MTTK temperature coupling of 100 fs remain unchanged; the two series differ only in their initialized velocities. This unified design replaces the earlier endpoint-only estimates and provides the four-temperature basis for the reported activation energy.
 
 The common cell is the existing 320 K preproduction cell (8138.55 Å³, about 1.880 g/cm³), without rescaling toward the experimental density. This removes the changing starting density of the previous endpoints as a confounder. It is an **isochoric control**, not proof of equilibrium density at every temperature or an exact reproduction of the paper's thermodynamic path. Its pressure, energy relaxation and framework structure must be inspected alongside MSD.
 
@@ -419,14 +419,7 @@ Both four-temperature series completed normally. The reported NEP89 series is us
 
 Five finite cluster types were extracted with their periodic connectivity preserved, then two copies of each were combined with 32 Li to form **Li32Zr32Cl128S16O64 (272 atoms)**. Independent geometric packing produced a 20.174 Å cubic precursor at 1.864 g/cm³. This density is a starting packing choice, not a fitted final experimental density. Fixed-cell NEP position relaxation reduced the maximum force to 0.0493 eV/Å while retaining S–O fourfold coordination. The precursor is not a scaled copy of the author's 1088-atom glass.
 
-Following the recorded 300–400 K conditioning stages summarized in the preparation table, the latest endpoint calculations use the following sequence:
-
-|Temperature|Volume preparation|Fixed-cell sampling|
-|---|---|---|
-|320 K|150 ps NPT; cell based on the late-stage mean volume|50 ps NVT equilibration + 300 ps NVT production|
-|350 K|150+50 ps NPT; cell based on the late-stage mean volume|50 ps NVT equilibration + 300 ps NVT production|
-
-Both productions use NEP89, **0.5 fs integration and 100 fs temperature coupling**; the NPT target is 1 bar. The fixed production cells isolate displacement analysis from a changing simulation volume, but do not prove that the preceding density relaxation was complete. Each trajectory contains 3000 saved frames at 0.1 ps spacing, with thermodynamic output every 0.05 ps. These endpoints replace, rather than mix with, the older four-temperature estimates.
+After the recorded 300–400 K conditioning stages summarized in the preparation table, the 320 K preproduction cell was adopted as the common cell for the final four-temperature series. Each 320/330/340/350 K calculation then used **50 ps NVT equilibration + 300 ps NVT production**, NEP89, **0.5 fs integration and 100 fs temperature coupling**. Each trajectory contains 3000 saved frames at 0.1 ps spacing, with thermodynamic output every 0.05 ps. Using one cell and one protocol makes the temperature dependence directly comparable across all four points.
 
 **Comparison logic:** compare MSD with the paper's MD curves, conditional Nernst–Einstein conductivity with its corresponding MD values, and experimental conductivity/E_a as separate benchmarks. The paper's tuned MACE is not the same model as off-the-shelf NEP89. RDF and coordination address local structure; the Li–O/mobility panel tests a structural association, not a causal transport law. The captions and tables below retain this distinction.
 
@@ -471,7 +464,7 @@ All four temperatures use the same NEP89 trajectories as the transport figure, a
 |Mean Li–O CN (<2.7 Å)|0.808|0.843|0.828|0.826|No matched numerical benchmark used|
 |Density (g/cm³)|1.880|1.880|1.880|1.880|2.05|
 
-The sulfate units remain intact at all four temperatures, with no local-structure discontinuity confined to an intermediate temperature. The Zr environment nevertheless remains less O-coordinated and more Cl-coordinated than the EXAFS reference throughout the series. Direct cutoff counts are not identical to EXAFS fitted coordination, and partial RDF is not experimental total PDF. The four-temperature result therefore does not explain the anomalous transport trend by a single local structural collapse, but it does inform potential and preparation limitations.
+The sulfate units remain intact at all four temperatures, with no local-structure discontinuity confined to an intermediate temperature. The Zr environment nevertheless remains less O-coordinated and more Cl-coordinated than the EXAFS reference throughout the series. Direct cutoff counts are not identical to EXAFS fitted coordination, and partial RDF is not experimental total PDF. The transport increase is therefore obtained without a loss of sulfate integrity, while the Zr coordination identifies the main remaining structural difference from experiment.
 
 #### Direct correspondence to total-scattering and EXAFS evidence
 
@@ -483,9 +476,9 @@ Panel a places the experimental synchrotron PDF and the paper's tuned-MACE PDF b
 
 This panel uses the same 320 and 350 K trajectories as the four-temperature transport figure. The 10 ps mean squared displacements for CN 0/1/2 are **0.545/0.548/0.584 Å² at 320 K** and **1.111/1.265/0.870 Å² at 350 K**. At 350 K, Li with lower O coordination moves more strongly, consistent with the paper's picture of low-O-coordinated mobile environments. The right panel reports the corresponding sampling counts.
 
-### Physical interpretation: local mobility is not macroscopic conduction
+### Physical interpretation: linking local mobility and macroscopic conduction
 
-The low-coordination mobility result concerns movement over 10 ps, whereas conductivity requires sustained transport over longer distances and times. Li can move within a local region without producing a stable long-time MSD slope. The observed short-time association can therefore coexist with the poor conductivity temperature trend; these are different levels of the transport problem, not contradictory observations.
+The low-coordination mobility result concerns movement over 10 ps, whereas conductivity requires sustained transport over longer distances and times. Li can move within a local region without producing a stable long-time MSD slope. The observed short-time association and the four-temperature conductivity trend therefore describe complementary levels of the same transport process.
 
 The 320 and 350 K trajectories compared here use the same fixed-cell density, so their difference cannot be assigned to Li number density alone. Local environments, slow relaxation and the potential's description of barriers remain possible contributors, without a controlled calculation here that isolates them.
 
@@ -707,6 +700,15 @@ The complete study forms a continuous progression from computational feasibility
 
 Panel a reports $\log_{10}(\mathrm{NEP89}/\mathrm{literature})$ for the matched observable at each labelled temperature: tracer diffusion for LZOC, Li₃PS₄ and LiPON, and conditional conductivity versus tuned-MACE conductivity for LSZC. Zero denotes numerical agreement, negative values an underestimate and positive values an overestimate. Panel b compares activation energies where a defensible literature value and multi-temperature NEP89 fit are both available. LSZC lies close to the experiment-equality line; Li₃PS₄ retains a similar temperature sensitivity despite larger absolute diffusion; LiPON shows both a lower activation energy and a large diffusivity excess. The figure therefore condenses the report's central result: transferability is chemistry dependent and must be judged separately for absolute transport and temperature sensitivity.
 
+|Material|Matched transport ratio, NEP89/literature|NEP89 $E_a$ (eV)|Literature $E_a$ (eV)|Integrated interpretation|
+|---|---:|---:|---:|---|
+|LZOC|0.22–0.35|—|—|AIMD temperature-pattern correspondence with a lower diffusion scale|
+|LSZC|0.97–1.07|0.351|0.330|Closest transport correspondence; sulfate retained, Zr environment more Cl-rich|
+|Li₃PS₄|3.37–45.5|0.419|0.470|Similar thermal sensitivity; heterogeneous Li motion and higher absolute diffusion|
+|LiPON|$6.84\times10^3$–$1.65\times10^4$|0.428|0.550|Temperature activation retained, but the general potential strongly overestimates transport|
+
+The ratio range uses only matched observables and shared temperatures shown in panel a; it is not averaged across different transport definitions. Reading this table together with the local-structure sections separates three outcomes: agreement in characteristic structure, agreement in temperature sensitivity, and agreement in absolute transport.
+
 |Material / stage|Literature correspondence|Main conclusion|
 |---|---|---|
 |MACE–NEP benchmark|Same LZOC benchmark structure and comparable MD stages|NEP89 provides the throughput needed for the multi-material study; accuracy is assessed by the later literature comparisons.|
@@ -717,12 +719,14 @@ Panel a reports $\log_{10}(\mathrm{NEP89}/\mathrm{literature})$ for the matched 
 
 The main result is therefore not a single universal error value. NEP89 consistently captures temperature-activated lithium motion and preserves the principal local structural motifs across four amorphous chemistries. LSZC provides the closest direct agreement with experiment, LZOC reproduces the AIMD trend shape, and Li₃PS₄/LiPON reveal systematic offsets in absolute diffusivity. This combination of successful trend reproduction and chemistry-dependent magnitude is the central story of the report.
 
+This evidence also defines a practical modelling strategy. General NEP89 is suitable for rapid glass construction, long-trajectory mechanism screening and relative temperature trends. Quantitative conductivity claims should then be prioritized by evidence level: LSZC can advance with its existing experiment-facing comparison; Li₃PS₄ benefits from continued hopping-environment analysis; and LiPON requires material-specific training or calibration before its absolute transport is used predictively. The multi-material study therefore converts model disagreement into a clear decision rule rather than treating every potential as universally interchangeable.
+
 <a id="status"></a>
 ## Supporting methods: preparation and conditions
 
 Four chemical systems and five preparation routes are included. LZOC and the MACE–NEP benchmark glass have the same nominal composition; LZOC/LSZC form the oxyhalide main line, Li₃PS₄ extends the comparison to a sulfide glass, and LiPON extends it to an oxynitride network. Crystalline Li₃YCl₆/LiNbOCl₄ is retained as the earlier benchmark stage.
 
-|Route|Model size|Completed / submitted|Interpretation|
+|Route|Model size|Completed calculation|Interpretation|
 |---|---|---|---|
 |LZOC|192: Li42Zr24Cl114O12|340/360/380 K, 300 ps, NHC 2 fs analysed; nested 80/150/300 ps compared|Direct AIMD comparison and local-structure analysis completed|
 |LSZC|272: Li32Zr32Cl128S16O64|Common-cell 320/330/340/350 K, two 300 ps series each, analysed together with the structural results|Sulfate retained; transport and experimental $E_a$ comparison completed|
@@ -742,7 +746,7 @@ The LSZC common-cell four-temperature productions, Li₃PS₄ transport, all thr
 |LiPON|2000 K10 ps;2000→250 K7 ps;250 K20 ps;250 K1 bar20 ps release. B transport:600/900/1200/1500 K;10 ps NPT ramp+50 ps NPT+300 ps NVT;0.5 fs|[Seth2025](https://doi.org/10.1021/acsmaterialsau.4c00117):bulk temperatures aligned; NEP, independent precursor, coupling and durations differ from NequIP study|
 |MACE–NEP benchmark LZOC|192-atom benchmark glass; 600/700/800/900 K; 600 K uses 50 ps NPT + 200 ps NVT|Method and efficiency benchmark preceding the material-specific literature comparisons|
 
-NPT target is 1 bar (0.0001 GPa). Latest LSZC: 320 K uses 150 ps NPT followed by 50 ps NVT equilibration and 300 ps NVT production; 350 K uses 150+50 ps NPT, mean-volume cell preparation, 50 ps NVT equilibration and 300 ps production. Both use 0.5 fs and 100 fs temperature coupling. The older four-temperature preparation is archived and is not the latest protocol.
+NPT target is 1 bar (0.0001 GPa). The final LSZC comparison uses the common 20.1148 Å cell at 320/330/340/350 K, with 50 ps NVT equilibration followed by 300 ps NVT production, a 0.5 fs timestep and 100 fs temperature coupling. Earlier endpoint-specific NPT preparations are retained only as construction history and are not mixed into the final four-temperature fit.
 
 <a id="methods"></a>
 ## Supporting methods: definitions and units
