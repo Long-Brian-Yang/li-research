@@ -1,4 +1,4 @@
-# Material Review — 結晶ベンチマークから非晶質固体電解質へ
+# Liイオン輸送に対する事前学習原子間ポテンシャルの評価 — 結晶ベンチマークから非晶質電解質へ
 
 更新：2026年9月16日。[English](materials_overview_en.md)
 

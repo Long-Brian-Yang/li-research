@@ -35,8 +35,8 @@ mpl.rcParams.update(
 
 WORKFLOWS = {
     "Li3YCl6": {
-        "title": "Li₃YCl₆ — crystalline transport benchmark",
-        "subtitle": "From experimental reference to a controlled three-model MD comparison",
+        "title": "Li₃YCl₆  |  Crystalline Chloride",
+        "subtitle": "Experimental transport benchmark and comparison of three general ML potentials",
         "accent": "#2F6B9A",
         "nodes": [
             ("Literature", "Asano et al. (2018)\nExperiment: chloride SSE\nRT conductivity >1 mS cm⁻¹"),
@@ -47,8 +47,8 @@ WORKFLOWS = {
         ],
     },
     "LiNbOCl4": {
-        "title": "LiNbOCl₄ — crystalline oxyhalide benchmark",
-        "subtitle": "Testing transfer of the same workflow to mixed O²⁻/Cl⁻ chemistry",
+        "title": "LiNbOCl₄  |  Crystalline Oxyhalide",
+        "subtitle": "Transfer of the crystalline benchmark workflow to mixed O²⁻/Cl⁻ chemistry",
         "accent": "#3B7F78",
         "nodes": [
             ("Literature", "Tanaka et al. (2023)\nRT σ = 10.4 mS cm⁻¹\nExperimental Eₐ = 0.240 eV"),
@@ -59,8 +59,8 @@ WORKFLOWS = {
         ],
     },
     "LZOC": {
-        "title": "Li₁.₇₅ZrCl₄.₇₅O₀.₅ — amorphous AIMD comparison",
-        "subtitle": "The oxychloride main line links experimental relevance to matched-temperature AIMD",
+        "title": "Li₁.₇₅ZrCl₄.₇₅O₀.₅  |  Amorphous Oxychloride",
+        "subtitle": "Matched-temperature comparison of pretrained-potential MD with experiment and AIMD",
         "accent": "#4A6FA5",
         "nodes": [
             ("Literature", "Hu et al. (2023): experiment\nHussain et al. (2024): AIMD\nReference T: 340 / 360 / 380 K"),
@@ -71,8 +71,8 @@ WORKFLOWS = {
         ],
     },
     "LSZC": {
-        "title": "0.5Li₂SO₄–ZrCl₄ — experiment–structure–MLIP comparison",
-        "subtitle": "A sulfate-containing glass tests transport and local structure simultaneously",
+        "title": "0.5Li₂SO₄–ZrCl₄  |  Amorphous Sulfate–Chloride",
+        "subtitle": "Integrated comparison of transport, local structure and material-specific MLIP results",
         "accent": "#8A6A35",
         "nodes": [
             ("Literature", "Tang et al. (2026)\nExperiment + total scattering\nAIMD + tuned MACE\nσ30°C = 1.5 mS cm⁻¹"),
@@ -83,8 +83,8 @@ WORKFLOWS = {
         ],
     },
     "Li3PS4": {
-        "title": "Li₃PS₄ glass — sulfide transferability test",
-        "subtitle": "Moving beyond oxychlorides tests whether structural and transport agreement persist",
+        "title": "Li₃PS₄  |  Amorphous Sulfide",
+        "subtitle": "Transferability of pretrained-potential structure and transport beyond oxychlorides",
         "accent": "#7965A8",
         "nodes": [
             ("Literature", "Mirmira et al. (2021): experiment\nChen et al. (2025): DeePMD\nReference T: 300–900 K"),
@@ -95,8 +95,8 @@ WORKFLOWS = {
         ],
     },
     "LiPON": {
-        "title": "LiPON — phosphate–oxynitride applicability limit",
-        "subtitle": "A chemically constrained network provides the most stringent pretrained-potential test",
+        "title": "LiPON  |  Amorphous Oxynitride",
+        "subtitle": "A chemically constrained phosphate network as a stringent transferability test",
         "accent": "#9A5B63",
         "nodes": [
             ("Literature", "Lacivita et al. (2018)\nNeutron / IR + AIMD\nSeth et al. (2025): NequIP\nBates et al. (1996): experiment"),

@@ -1,4 +1,4 @@
-# Material Review — From Crystalline Benchmarks to Amorphous Solid Electrolytes
+# Pretrained Interatomic Potentials for Lithium-Ion Transport: Crystalline Benchmarks and Amorphous Electrolytes
 
 Updated 16 September 2026. [日本語](materials_overview_ja.md)
 
