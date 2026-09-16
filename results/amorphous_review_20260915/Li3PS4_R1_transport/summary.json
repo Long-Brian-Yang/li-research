@@ -62,6 +62,11 @@
         "P": 0.09515172507795858,
         "S": 0.15755781665581356
       },
+      "dynamic_heterogeneity": {
+        "alpha2_peak": 4.458567269596536,
+        "alpha2_peak_time_ps": 100.0,
+        "mobile_fraction_10ps_gt4A": 9.58925127126074e-05
+      },
       "structure": {
         "early": {
           "CN_Li_S": 5.315104166666667,
@@ -166,6 +171,11 @@
         "Li": 4.898702206730647,
         "P": 0.19875945283096683,
         "S": 0.40860883458593733
+      },
+      "dynamic_heterogeneity": {
+        "alpha2_peak": 3.1175149330982306,
+        "alpha2_peak_time_ps": 100.0,
+        "mobile_fraction_10ps_gt4A": 0.004419274943012449
       },
       "structure": {
         "early": {
@@ -272,6 +282,11 @@
         "P": 0.7229273787210189,
         "S": 1.7035590439501713
       },
+      "dynamic_heterogeneity": {
+        "alpha2_peak": 1.2249583343551516,
+        "alpha2_peak_time_ps": 2.9000000000000004,
+        "mobile_fraction_10ps_gt4A": 0.12210952568823426
+      },
       "structure": {
         "early": {
           "CN_Li_S": 5.009375,
@@ -376,6 +391,11 @@
         "Li": 285.4984677691307,
         "P": 8.988627273692028,
         "S": 17.955590940913584
+      },
+      "dynamic_heterogeneity": {
+        "alpha2_peak": 0.5991988160390342,
+        "alpha2_peak_time_ps": 1.3,
+        "mobile_fraction_10ps_gt4A": 0.4811749298614764
       },
       "structure": {
         "early": {

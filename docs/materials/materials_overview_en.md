@@ -473,6 +473,12 @@ All four temperatures use the same NEP89 trajectories as the transport figure, a
 
 The sulfate units remain intact at all four temperatures, with no local-structure discontinuity confined to an intermediate temperature. The Zr environment nevertheless remains less O-coordinated and more Cl-coordinated than the EXAFS reference throughout the series. Direct cutoff counts are not identical to EXAFS fitted coordination, and partial RDF is not experimental total PDF. The four-temperature result therefore does not explain the anomalous transport trend by a single local structural collapse, but it does inform potential and preparation limitations.
 
+#### Direct correspondence to total-scattering and EXAFS evidence
+
+![LSZC synchrotron PDF and zirconium coordination](figures/27_LSZC_PDF_and_Zr_coordination.png)
+
+Panel a places the experimental synchrotron PDF and the paper's tuned-MACE PDF beside an X-ray-weighted proxy calculated from the 320 K NEP89 trajectory. The published experimental and tuned-MACE curves reproduce the same principal peaks, whereas the NEP89 proxy retains the dominant first-shell feature but differs beyond it. The proxy uses constant atomic-number weights and is normalized for shape comparison; it is not labelled as a full Q-dependent synchrotron PDF. Panels b and c make the EXAFS comparison distributional rather than relying only on mean values. Across 320–350 K, NEP89 gives mean Zr–O coordination of **1.61–1.68** and Zr–Cl coordination of **4.21–4.30**, compared with the EXAFS means of **2.6 O** and **3.0 Cl**. Thus sulfate integrity and transport activation can be reproduced while the detailed zirconium environment remains more chloride-rich than the experimental glass. [Tang et al., 2026; DOI: 10.1038/s41467-026-69737-x](https://doi.org/10.1038/s41467-026-69737-x)
+
 ![LSZC lithium coordination and mobility](figures/20_LSZC_coordination_mobility.png)
 
 This panel uses the same 320 and 350 K trajectories as the four-temperature transport figure. The 10 ps mean squared displacements for CN 0/1/2 are **0.545/0.548/0.584 Å² at 320 K** and **1.111/1.265/0.870 Å² at 350 K**. At 350 K, Li with lower O coordination moves more strongly, consistent with the paper's picture of low-O-coordinated mobile environments. The right panel reports the corresponding sampling counts.
@@ -568,6 +574,10 @@ The late 300 K production has a Li–S RDF maximum at 2.425 Å, close to the pub
 The independently prepared glass changes the 300 and 500 K response more strongly than the 700 and 900 K response; the latter are respectively 0.98 and 0.85 times the earlier preparation. This shows that low-temperature transport is more sensitive to glass preparation, whereas the high-temperature comparison is reproducible. Fixed-cell production densities are 2.205/2.170/2.080/2.022 g cm⁻³, with mean pressures −0.044/+0.135/−0.174/−0.011 GPa.
 
 ### Physical interpretation and conclusion
+
+![Li3PS4 dynamic heterogeneity and self van Hove distribution](figures/28_Li3PS4_dynamic_heterogeneity.png)
+
+The non-Gaussian parameter, $\alpha_2=3\langle r^4\rangle/(5\langle r^2\rangle^2)-1$, measures the departure of Li displacements from a single Gaussian population. At 700 and 900 K it peaks at **1.22 near 2.9 ps** and **0.60 near 1.3 ps**, respectively, then decays as the displacement population mixes. At 900 K the radial self van Hove distribution broadens continuously from 1 to 50 ps and develops substantial long-distance weight; **48.1%** of Li/time-origin observations move farther than 4 Å over 10 ps. At 300 and 500 K the long-lag rise in $\alpha_2$ reflects rare-event dominated finite sampling, consistent with the stronger preparation sensitivity of low-temperature transport. This extends the comparison from average MSD to the heterogeneous hopping picture emphasized by Chen et al. [DOI: 10.1038/s41467-025-56322-x](https://doi.org/10.1038/s41467-025-56322-x).
 
 RDF and angle distributions describe frequently sampled local configurations, whereas diffusion also depends on transitions among them. Close Li–S and S–P–S geometry can therefore coexist with a factor-of-3–5 error in high-temperature $D$. At 900 K, increased P/S motion further means that the host participates in the observed dynamics.
 
@@ -692,6 +702,10 @@ Taken together, the preparation comparison and transport series show that Prepar
 ## 6. Synthesis: literature reproduction across materials
 
 The complete study forms a continuous progression from computational feasibility to material validation. The initial CPU–GPU benchmark made long ML-driven trajectories practical; the MACE–NEP comparison then identified NEP89 as the efficient engine for the amorphous survey. LZOC and LSZC test chemically related oxychlorides against AIMD and experiment, while Li₃PS₄ and LiPON extend the same workflow to sulfide and oxynitride glasses. Together they show which literature trends transfer across chemistries and where absolute transport remains model dependent.
+
+![Cross-material correspondence with literature transport benchmarks](figures/26_cross_material_literature_correspondence.png)
+
+Panel a reports $\log_{10}(\mathrm{NEP89}/\mathrm{literature})$ for the matched observable at each labelled temperature: tracer diffusion for LZOC, Li₃PS₄ and LiPON, and conditional conductivity versus tuned-MACE conductivity for LSZC. Zero denotes numerical agreement, negative values an underestimate and positive values an overestimate. Panel b compares activation energies where a defensible literature value and multi-temperature NEP89 fit are both available. LSZC lies close to the experiment-equality line; Li₃PS₄ retains a similar temperature sensitivity despite larger absolute diffusion; LiPON shows both a lower activation energy and a large diffusivity excess. The figure therefore condenses the report's central result: transferability is chemistry dependent and must be judged separately for absolute transport and temperature sensitivity.
 
 |Material / stage|Literature correspondence|Main conclusion|
 |---|---|---|

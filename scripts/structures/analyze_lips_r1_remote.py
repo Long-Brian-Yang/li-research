@@ -62,6 +62,38 @@ def fit_msd(time_ps: np.ndarray, msd_a2: np.ndarray, lo: float, hi: float) -> di
     }
 
 
+def dynamic_heterogeneity(positions: np.ndarray, timestep_ps: float) -> tuple[np.ndarray, np.ndarray]:
+    """Return lag times and the three-dimensional non-Gaussian parameter."""
+    maximum_lag = min(len(positions) - 1, int(round(100.0 / timestep_ps)))
+    lag_steps = np.unique(
+        np.rint(np.geomspace(1, maximum_lag, 120)).astype(int)
+    )
+    values = []
+    for lag in lag_steps:
+        displacement = positions[lag:] - positions[:-lag]
+        squared = np.sum(displacement * displacement, axis=2)
+        mean_second = float(np.mean(squared))
+        mean_fourth = float(np.mean(squared * squared))
+        alpha2 = 3.0 * mean_fourth / (5.0 * mean_second**2) - 1.0
+        values.append(alpha2)
+    return lag_steps * timestep_ps, np.asarray(values)
+
+
+def radial_van_hove(
+    positions: np.ndarray,
+    lag_steps: tuple[int, ...],
+    edges: np.ndarray,
+) -> np.ndarray:
+    """Return normalized 4*pi*r^2*G_s(r,t), i.e. displacement probability density."""
+    curves = []
+    for lag in lag_steps:
+        displacement = positions[lag:] - positions[:-lag]
+        radius = np.linalg.norm(displacement, axis=2).ravel()
+        histogram, _ = np.histogram(radius, bins=edges, density=True)
+        curves.append(histogram)
+    return np.asarray(curves)
+
+
 def p_centered_angles(vectors: np.ndarray) -> np.ndarray:
     """Return all unique angles between P-to-S neighbour vectors in degrees."""
     vectors = np.asarray(vectors, dtype=float)
@@ -133,6 +165,30 @@ def analyse_temperature(run_dir: Path, output: Path, temperature: int) -> dict:
     corrected = unwrapped - com[:, None, :]
     time_ps = np.arange(2001) * 0.1
     msd = {element: window_msd(corrected[:, symbols == element]) for element in ("Li", "P", "S")}
+    heterogeneity_time, non_gaussian = dynamic_heterogeneity(
+        corrected[:, symbols == "Li"], 0.1
+    )
+    np.savetxt(
+        output / f"{temperature}K_non_gaussian.csv",
+        np.column_stack([heterogeneity_time, non_gaussian]),
+        delimiter=",",
+        header="lag_ps,alpha2",
+        comments="",
+    )
+    van_hove_lag_ps = (1, 5, 10, 50)
+    van_hove_lag_steps = tuple(int(round(value / 0.1)) for value in van_hove_lag_ps)
+    van_hove_edges = np.arange(0.0, 20.0001, 0.05)
+    van_hove_radius = (van_hove_edges[:-1] + van_hove_edges[1:]) / 2.0
+    van_hove = radial_van_hove(
+        corrected[:, symbols == "Li"], van_hove_lag_steps, van_hove_edges
+    )
+    np.savetxt(
+        output / f"{temperature}K_self_van_hove.csv",
+        np.column_stack([van_hove_radius, van_hove.T]),
+        delimiter=",",
+        header="r_A," + ",".join(f"lag_{value}ps_A-1" for value in van_hove_lag_ps),
+        comments="",
+    )
     for lag in (10, 200, 800):
         direct = np.mean(
             np.sum(
@@ -230,6 +286,22 @@ def analyse_temperature(run_dir: Path, output: Path, temperature: int) -> dict:
         "fits": fits,
         "MSD80_A2": {element: float(values[800]) for element, values in msd.items()},
         "MSD150_A2": {element: float(values[1500]) for element, values in msd.items()},
+        "dynamic_heterogeneity": {
+            "alpha2_peak": float(np.max(non_gaussian)),
+            "alpha2_peak_time_ps": float(
+                heterogeneity_time[int(np.argmax(non_gaussian))]
+            ),
+            "mobile_fraction_10ps_gt4A": float(
+                np.mean(
+                    np.linalg.norm(
+                        corrected[100:, symbols == "Li"]
+                        - corrected[:-100, symbols == "Li"],
+                        axis=2,
+                    )
+                    > 4.0
+                )
+            ),
+        },
         "structure": structure,
         "stages": stages,
         "max_COM_displacement_A": float(np.max(np.linalg.norm(com - com[0], axis=1))),

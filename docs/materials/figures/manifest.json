@@ -1,6 +1,6 @@
 {
   "operation": "Current report figure inventory. Historical sources remain archived; current files may be regenerated from the listed scripts.",
-  "figure_groups": 21,
+  "figure_groups": 24,
   "assets": [
     {
       "file": "18_LSZC_transport_comparison.png",
@@ -316,6 +316,51 @@
       "file": "25_LiPON_temperature_RDF.svg",
       "sha256": "3328382395337e419c6e6176a8c7f0a3602fb00bcbea32725a08c1aad3be9a91",
       "source": "scripts/structures/analyze_lipon_transport.py"
+    },
+    {
+      "file": "26_cross_material_literature_correspondence.png",
+      "sha256": "1b4853884da9cb839da6ba825f98ae156b965cfed057216eccce0bfbe8ea52d3",
+      "source": "scripts/structures/plot_literature_correspondence.py"
+    },
+    {
+      "file": "26_cross_material_literature_correspondence.pdf",
+      "sha256": "a340544f206ce45265700dca3d9d7c679dc071ba70f92f2c20d1aa42a74168ed",
+      "source": "scripts/structures/plot_literature_correspondence.py"
+    },
+    {
+      "file": "26_cross_material_literature_correspondence.svg",
+      "sha256": "4715585a6fb5137d1d3fe654f1e3340a94cbcac655a97473789fede34855602b",
+      "source": "scripts/structures/plot_literature_correspondence.py"
+    },
+    {
+      "file": "27_LSZC_PDF_and_Zr_coordination.png",
+      "sha256": "79e0b2b2c0b43c69a29153822b7672be8b86fc425db94777082809d43365b5c7",
+      "source": "scripts/structures/plot_literature_correspondence.py"
+    },
+    {
+      "file": "27_LSZC_PDF_and_Zr_coordination.pdf",
+      "sha256": "acb1e53600ce8393f607500428eee0170e42965f7603cbf2200c04aea52bf413",
+      "source": "scripts/structures/plot_literature_correspondence.py"
+    },
+    {
+      "file": "27_LSZC_PDF_and_Zr_coordination.svg",
+      "sha256": "3e0e0c35abe3b7838922ecfb66b2c94791d267422a34cb5e7c815084afca7ab1",
+      "source": "scripts/structures/plot_literature_correspondence.py"
+    },
+    {
+      "file": "28_Li3PS4_dynamic_heterogeneity.png",
+      "sha256": "618c6e5d81c1bd938f92a82bb583e28e93d57ead6981d0d1c010f0086a78624c",
+      "source": "scripts/structures/plot_literature_correspondence.py"
+    },
+    {
+      "file": "28_Li3PS4_dynamic_heterogeneity.pdf",
+      "sha256": "0cc840cab87a076da6dd63942440a40531f0cafdc599d515d94ebc28dfacdd4e",
+      "source": "scripts/structures/plot_literature_correspondence.py"
+    },
+    {
+      "file": "28_Li3PS4_dynamic_heterogeneity.svg",
+      "sha256": "5c819488679e600cc01a841f03f98177c0bdd492921045363a2d974c896bd5f9",
+      "source": "scripts/structures/plot_literature_correspondence.py"
     }
   ]
 }
