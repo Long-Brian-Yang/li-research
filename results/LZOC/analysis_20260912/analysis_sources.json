@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "items": [
+    {
+      "id": "transport-structure",
+      "title": "Production transport and structure checks",
+      "queries": [
+        {
+          "id": "production-summary",
+          "source": {
+            "label": "TSUBAME production trajectories and thermodynamic logs",
+            "files": [
+              {
+                "label": "MACE jobs 8635176.1\u20134"
+              },
+              {
+                "label": "NEP89 job 8635527"
+              },
+              {
+                "label": "analyze_lzoc_production.py"
+              },
+              {
+                "label": "results.json / arrhenius.json"
+              }
+            ],
+            "caveats": [
+              "Single structure, single run per condition; no independent-replica uncertainty.",
+              "20\u201380 ps lag fit is provisional, not a percentage of production.",
+              "MACE density expansion and framework motion limit the interpretation as solid-state Li diffusion.",
+              "NEP89 includes extra minimization and uses a different integrator.",
+              "NEP89 has one temperature only: activation energy cannot be fitted."
+            ],
+            "filters": [
+              "Only the 200 ps NVT production stage",
+              "Li diffusion uses all 42 Li atoms",
+              "System mass-weighted COM motion removed"
+            ],
+            "evidenceFlow": [
+              {
+                "kind": "validation",
+                "title": "Source and algorithm checks",
+                "detail": "Five downloaded production trajectory SHA256 hashes match TSUBAME. Each has 192 atoms and 2001 analysis frames, including the GPUMD t=0 input frame. FFT MSD matches direct calculation at five real trajectory lags; three algorithm tests passed."
+              },
+              {
+                "kind": "calculation",
+                "title": "MSD and activation energy",
+                "detail": "Time-origin averaged MSD, affine slope on 20\u201380 ps lag. D = slope/6 \u00d7 1e\u22124 cm\u00b2/s. MACE ln(D) versus 1/T: Ea=0.20543958 eV, R\u00b2=0.97725156. Across six lag windows Ea=0.17621635\u20130.20543958 eV; descriptive, not a validated solid-state migration barrier."
+              }
+            ]
+          },
+          "columns": [
+            "run",
+            "T_mean_K",
+            "T_sd_K",
+            "D_cm2_s",
+            "MSD_fit_R2",
+            "Zr_MSD_200ps_A2",
+            "Cl_MSD_200ps_A2"
+          ],
+          "rows": [
+            {
+              "run": "MACE_600K",
+              "T_mean_K": 598.893306655836,
+              "T_sd_K": 35.033855909907615,
+              "D_cm2_s": 1.7196988654028893e-05,
+              "MSD_fit_R2": 0.9965065706401943,
+              "Zr_MSD_200ps_A2": 58.318996776489826,
+              "Cl_MSD_200ps_A2": 92.7405472400303
+            },
+            {
+              "run": "MACE_700K",
+              "T_mean_K": 699.3086839190202,
+              "T_sd_K": 42.42276594793848,
+              "D_cm2_s": 3.4289135060287894e-05,
+              "MSD_fit_R2": 0.9998170174994129,
+              "Zr_MSD_200ps_A2": 90.9921241853197,
+              "Cl_MSD_200ps_A2": 163.24799518595626
+            },
+            {
+              "run": "MACE_800K",
+              "T_mean_K": 800.0590873406649,
+              "T_sd_K": 47.38855790000665,
+              "D_cm2_s": 5.352708488187539e-05,
+              "MSD_fit_R2": 0.999557787248656,
+              "Zr_MSD_200ps_A2": 136.80526340993654,
+              "Cl_MSD_200ps_A2": 263.7260789889828
+            },
+            {
+              "run": "MACE_900K",
+              "T_mean_K": 900.7297537340665,
+              "T_sd_K": 53.48703110638779,
+              "D_cm2_s": 6.257232882056092e-05,
+              "MSD_fit_R2": 0.999878513646516,
+              "Zr_MSD_200ps_A2": 299.81713301940266,
+              "Cl_MSD_200ps_A2": 446.5628064751038
+            },
+            {
+              "run": "NEP89_600K",
+              "T_mean_K": 599.9550585524374,
+              "T_sd_K": 34.80736716933092,
+              "D_cm2_s": 1.0757157225584555e-05,
+              "MSD_fit_R2": 0.9997824383552791,
+              "Zr_MSD_200ps_A2": 9.87303531014952,
+              "Cl_MSD_200ps_A2": 20.997852246373363
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
