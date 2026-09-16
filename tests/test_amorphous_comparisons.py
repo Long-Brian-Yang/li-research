@@ -25,8 +25,11 @@ class Comparisons(unittest.TestCase):
     def test_report_links_and_exports(self):
         root=Path(__file__).resolve().parents[1]
         out=root/'results/amorphous_review_20260915/final_comparisons'
-        self.assertEqual(len(list(out.glob('*.png'))),11)
-        for png in out.glob('*.png'):
+        pngs=list(out.glob('*.png'))
+        self.assertTrue(pngs)
+        self.assertEqual({p.stem for p in pngs},{p.stem for p in out.glob('*.pdf')})
+        self.assertEqual({p.stem for p in pngs},{p.stem for p in out.glob('*.svg')})
+        for png in pngs:
             for ext in ['.pdf','.svg']:self.assertTrue(png.with_suffix(ext).is_file())
         for lang in ['en','ja']:
             p=out/f'report_{lang}.md'

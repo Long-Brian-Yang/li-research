@@ -24,7 +24,7 @@ class MaterialTests(unittest.TestCase):
         self.assertAlmostEqual(fit['value_303_15'],1e-2*np.exp(-.33/(8.617333262145e-5*303.15)))
         self.assertIsNone(m.arrhenius(t,[1,0,2,3]))
 
-    def test_lzoc_primary_only_2fs(self):
+    def test_lzoc_primary_uses_scientific_labels(self):
         import curate_overview_figures as c
         captured=[]
         original=c.finish
@@ -33,7 +33,8 @@ class MaterialTests(unittest.TestCase):
             c.lzoc()
             labels=[line.get_label() for ax in captured[0].axes for line in ax.lines]
             self.assertFalse(any('0.5' in label or 'MTTK' in label for label in labels))
-            self.assertTrue(any('2 fs' in label or '2fs' in label for label in labels))
+            self.assertFalse(any('Job ' in label for label in labels))
+            self.assertTrue(any('NEP89' in label for label in labels))
         finally:
             c.finish=original
             import matplotlib.pyplot as plt

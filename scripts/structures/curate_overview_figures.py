@@ -58,7 +58,7 @@ def lzoc():
     ymax=0
     for ax,r,c in zip(axes,selected,[BLUE,GREEN,RED]):
         T=r['T_K'];a=load(BASE/r['source'])
-        ax.plot(a[:,0],a[:,1],color=c,label=f"Job {r['job']}")
+        ax.plot(a[:,0],a[:,1],color=c,label="NEP89")
         ymax=max(ymax,float(a[:,1].max()))
         ax.set(title=f'{T} K',xlabel='Lag time (ps)',ylabel='Li MSD (Å²)',xlim=(0,300));ax.legend()
     for ax in axes[:3]:ax.set_ylim(0,ymax*1.06)
