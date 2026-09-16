@@ -14,7 +14,7 @@ from pathlib import Path
 
 import matplotlib as mpl
 import matplotlib.pyplot as plt
-from matplotlib.patches import FancyArrowPatch, FancyBboxPatch
+from matplotlib.patches import FancyBboxPatch
 
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -39,11 +39,11 @@ WORKFLOWS = {
         "subtitle": "From experimental reference to a controlled three-model MD comparison",
         "accent": "#2F6B9A",
         "nodes": [
-            ("Literature benchmark", "Asano et al. (2018)\nExperimental chloride SSE\nRoom-temperature transport"),
-            ("Structure and models", "Explicit Li/Y ordering\n2 × 2 × 2 supercell\n240 atoms; three NNPs"),
-            ("MD protocol", "400–1000 K; NVT\n1 fs; 50 ps equilibration\n500 ps production"),
-            ("Analysis", "Li MSD and D(T)\nArrhenius Eₐ\nConditional σNE"),
-            ("Bounded conclusion", "Thermal trend reproduced\nAbsolute transport is\nstrongly model dependent"),
+            ("Literature", "Asano et al. (2018)\nExperiment: chloride SSE\nRT conductivity >1 mS cm⁻¹"),
+            ("Model & software", "Explicit Li/Y ordering\n2 × 2 × 2; 240 atoms\nMACE / SevenNet / M3GNet\nLAMMPS; 1 GPU per run"),
+            ("MD conditions", "T: 400 / 600 / 800 / 1000 K\nEnsemble: fixed-cell NVT\ndt: 1 fs\nEquil.: 50 ps\nProduction: 500 ps"),
+            ("Analysis", "Li MSD → D(T)\nArrhenius fit → Eₐ\n300 K extrapolation\nConditional σNE"),
+            ("Conclusion", "Thermal trend reproduced\nAbsolute transport is\nstrongly model dependent"),
         ],
     },
     "LiNbOCl4": {
@@ -51,11 +51,11 @@ WORKFLOWS = {
         "subtitle": "Testing transfer of the same workflow to mixed O²⁻/Cl⁻ chemistry",
         "accent": "#3B7F78",
         "nodes": [
-            ("Literature benchmark", "Tanaka et al. (2023)\n10.4 mS cm⁻¹ at room T\nExperimental Eₐ = 0.240 eV"),
-            ("Structure and models", "Periodic oxyhalide model\n224 atoms; 32 Li\nMACE / SevenNet / M3GNet"),
-            ("MD protocol", "600–1200 K; NVT\n1 fs; 50 ps equilibration\n500 ps production"),
-            ("Analysis", "Li MSD and D(T)\nln(σNET) Arrhenius plot\n300 K extrapolation"),
-            ("Bounded conclusion", "Experimental slope included\nModel ordering differs\nfrom Li₃YCl₆"),
+            ("Literature", "Tanaka et al. (2023)\nRT σ = 10.4 mS cm⁻¹\nExperimental Eₐ = 0.240 eV"),
+            ("Model & software", "Periodic oxyhalide model\n224 atoms; 32 Li\nMACE / SevenNet / M3GNet\nLAMMPS; 1 GPU per run"),
+            ("MD conditions", "T: 600 / 800 / 1000 / 1200 K\nEnsemble: fixed-cell NVT\ndt: 1 fs\nEquil.: 50 ps\nProduction: 500 ps"),
+            ("Analysis", "Li MSD → D(T)\nln(σNET) vs 1000/T\nArrhenius fit → Eₐ\n300 K extrapolation"),
+            ("Conclusion", "Experimental slope included\nModel ordering differs\nfrom Li₃YCl₆"),
         ],
     },
     "LZOC": {
@@ -63,11 +63,11 @@ WORKFLOWS = {
         "subtitle": "The oxychloride main line links experimental relevance to matched-temperature AIMD",
         "accent": "#4A6FA5",
         "nodes": [
-            ("Literature benchmark", "Hu et al. (2023): experiment\nHussain et al. (2024): AIMD\n340 / 360 / 380 K"),
-            ("Structure and model", "Integer occupancy model\n192 atoms; periodic glass\nPretrained NEP89"),
-            ("MD protocol", "340 / 360 / 380 K\nNVT Nosé–Hoover chain\n2 fs; 300 ps production"),
-            ("Analysis", "Li and framework MSD\nD(T), RDF and CN\nDisplacement distributions"),
-            ("Bounded conclusion", "NEP89 D below AIMD\nLocal geometry persists\nMechanism not yet unique"),
+            ("Literature", "Hu et al. (2023): experiment\nHussain et al. (2024): AIMD\nReference T: 340 / 360 / 380 K"),
+            ("Model & software", "Integer-occupancy glass\n192 atoms; periodic cell\nPretrained NEP89\nGPUMD"),
+            ("MD conditions", "T: 340 / 360 / 380 K\nEnsemble: fixed-cell NVT\nThermostat: NHC; τT = 100 fs\ndt: 2 fs\nProduction: 300 ps"),
+            ("Analysis", "Li / host MSD → D(T)\nRDF and coordination\nRadial displacement\nDirect AIMD D comparison"),
+            ("Conclusion", "NEP89 D below AIMD\nLocal geometry persists\nMechanism not yet unique"),
         ],
     },
     "LSZC": {
@@ -75,11 +75,11 @@ WORKFLOWS = {
         "subtitle": "A sulfate-containing glass tests transport and local structure simultaneously",
         "accent": "#8A6A35",
         "nodes": [
-            ("Literature benchmark", "Tang et al. (2026)\nExperiment + scattering\nAIMD and tuned MACE"),
-            ("Structure and model", "Cluster-based packing\nLi₃₂Zr₃₂Cl₁₂₈S₁₆O₆₄\n272 atoms; NEP89"),
-            ("MD protocol", "320 / 330 / 340 / 350 K\n50 ps NVT equilibration\n300 ps NVT production"),
-            ("Analysis", "MSD, D(T), σNE and Eₐ\nRDF and coordination\nLi–O environment / mobility"),
-            ("Bounded conclusion", "Sulfate motif retained\nTransport fit is literature-close\nLong-range diffusion limited"),
+            ("Literature", "Tang et al. (2026)\nExperiment + total scattering\nAIMD + tuned MACE\nσ30°C = 1.5 mS cm⁻¹"),
+            ("Model & software", "Cluster-packed glass\nLi₃₂Zr₃₂Cl₁₂₈S₁₆O₆₄\n272 atoms; fixed cell\nNEP89 / GPUMD"),
+            ("MD conditions", "T: 320 / 330 / 340 / 350 K\nEnsemble: NVT (MTTK)\nτT = 100 fs; dt = 0.5 fs\nEquil.: 50 ps\nProduction: 300 ps"),
+            ("Analysis", "MSD → D(T), σNE and Eₐ\nRDF and coordination\nLi–O environment / mobility\nExperiment / tuned-MACE comparison"),
+            ("Conclusion", "Sulfate motif retained\nFit can approach literature\nLong-range diffusion limited"),
         ],
     },
     "Li3PS4": {
@@ -87,11 +87,11 @@ WORKFLOWS = {
         "subtitle": "Moving beyond oxychlorides tests whether structural and transport agreement persist",
         "accent": "#7965A8",
         "nodes": [
-            ("Literature benchmark", "Mirmira et al. (2021)\nExperimental glass\nChen et al. (2025): DeePMD"),
-            ("Structure and model", "Author-data precursor\nLi₁₉₂P₆₄S₂₅₆; 512 atoms\nMelt–quench with NEP89"),
-            ("MD protocol", "300 / 500 / 700 / 900 K\n50 ps NPT equilibration\n200 ps NVT production"),
-            ("Analysis", "Li MSD and D(T)\nLi–S / P–S RDF and CN\nFramework motion"),
-            ("Bounded conclusion", "Local motifs partly retained\nTransport magnitude differs\nDedicated work remains"),
+            ("Literature", "Mirmira et al. (2021): experiment\nChen et al. (2025): DeePMD\nReference T: 300–900 K"),
+            ("Model & preparation", "Li₁₉₂P₆₄S₂₅₆; 512 atoms\nNEP89 / GPUMD\n1500 K NPT: 100 ps\nCool 2.5 K ps⁻¹ → 300 K\n300 K hold: 20 ps"),
+            ("Transport MD", "T: 300 / 500 / 700 / 900 K\nRamp: 10 ps\nNPT (1 bar): 50 ps\nNVT production: 200 ps\ndt: 0.5 fs"),
+            ("Analysis", "Li MSD → D(T)\nLi–S / P–S RDF and CN\nS–P–S angle\nFramework motion"),
+            ("Conclusion", "Local motifs partly retained\nTransport magnitude differs\nDedicated work remains"),
         ],
     },
     "LiPON": {
@@ -99,22 +99,19 @@ WORKFLOWS = {
         "subtitle": "A chemically constrained network provides the most stringent pretrained-potential test",
         "accent": "#9A5B63",
         "nodes": [
-            ("Literature benchmark", "Lacivita et al. (2018)\nNeutron / IR + AIMD\nSeth et al. (2025): NequIP"),
-            ("Structure and model", "Li₄₇P₁₆O₅₆N₅\n124 atoms; Preparation B\nApical + bridging N"),
-            ("MD protocol", "600 / 900 / 1200 / 1500 K\n50 ps equilibration\n300–600 ps production"),
-            ("Analysis", "MSD, D(T), σNE and Eₐ\nP–O / P–N / Li RDF\nNetwork-topology checks"),
-            ("Bounded conclusion", "Thermal trend reproduced\nD strongly overestimated\nTransferability limit exposed"),
+            ("Literature", "Lacivita et al. (2018)\nNeutron / IR + AIMD\nSeth et al. (2025): NequIP\nBates et al. (1996): experiment"),
+            ("Model & preparation", "Li₄₇P₁₆O₅₆N₅; 124 atoms\nPreparation B; NEP89 / GPUMD\n2000 K hold: 10 ps\nQuench → 250 K: 7 ps\n250 K hold + release: 20 + 20 ps"),
+            ("Transport MD", "T: 600 / 900 / 1200 / 1500 K\nRamp: 10 ps; NPT: 50 ps\nNVT: 300 ps\n600 K primary run: 600 ps\ndt: 0.5 fs"),
+            ("Analysis", "MSD → D(T), σNE and Eₐ\nP–O / P–N / Li RDF\nN topology and contacts\nNequIP / experiment comparison"),
+            ("Conclusion", "Thermal trend reproduced\nD strongly overestimated\nTransferability limit exposed"),
         ],
     },
 }
 
 
 BOX_FILLS = ["#EAF2F8", "#EEF3F4", "#F5F5F3", "#EEF4EE", "#F6F0EA"]
-STAGE_LABELS = ["Literature", "Structure", "MD protocol", "Analysis", "Conclusion"]
-
-
 def draw_workflow(key: str, spec: dict[str, object]) -> None:
-    fig, ax = plt.subplots(figsize=(11.8, 3.55), constrained_layout=False)
+    fig, ax = plt.subplots(figsize=(13.2, 4.25), constrained_layout=False)
     ax.set_xlim(0, 1)
     ax.set_ylim(0, 1)
     ax.axis("off")
@@ -137,10 +134,10 @@ def draw_workflow(key: str, spec: dict[str, object]) -> None:
     left = 0.025
     gap = 0.018
     width = (0.95 - 4 * gap) / 5
-    bottom = 0.13
-    height = 0.55
+    bottom = 0.095
+    height = 0.61
 
-    for idx, (_, body) in enumerate(spec["nodes"], start=1):
+    for idx, (stage, body) in enumerate(spec["nodes"], start=1):
         x = left + (idx - 1) * (width + gap)
         ax.add_patch(
             FancyBboxPatch(
@@ -166,28 +163,26 @@ def draw_workflow(key: str, spec: dict[str, object]) -> None:
         )
         ax.text(x + 0.0295, bottom + height - 0.063, str(idx), color="white", fontsize=8.2,
                 fontweight="bold", ha="center", va="center")
-        ax.text(x + 0.057, bottom + height - 0.063, STAGE_LABELS[idx - 1], color="#1E2A31", fontsize=8.4,
+        ax.text(x + 0.057, bottom + height - 0.063, stage, color="#1E2A31", fontsize=8.15,
                 fontweight="bold", va="center")
         ax.plot([x + 0.015, x + width - 0.015], [bottom + height - 0.118] * 2,
                 color="#C8D0D4", linewidth=0.7)
-        ax.text(x + width / 2, bottom + 0.245, body, color="#2D3940", fontsize=7.75,
-                ha="center", va="center", linespacing=1.45)
+        ax.text(x + 0.018, bottom + 0.255, body, color="#2D3940", fontsize=7.35,
+                ha="left", va="center", linespacing=1.40)
 
-        if idx < 5:
-            start = (x + width + 0.002, bottom + height / 2)
-            end = (x + width + gap - 0.002, bottom + height / 2)
-            ax.add_patch(
-                FancyArrowPatch(
-                    start,
-                    end,
-                    arrowstyle="-|>",
-                    mutation_scale=10,
-                    linewidth=1.25,
-                    color=accent,
-                    shrinkA=0,
-                    shrinkB=0,
-                )
-            )
+    for idx in range(4):
+        x = left + idx * (width + gap)
+        ax.text(
+            x + width + gap / 2,
+            bottom + height / 2,
+            "›",
+            color=accent,
+            fontsize=19,
+            fontweight="bold",
+            ha="center",
+            va="center",
+            zorder=20,
+        )
 
     stem = OUT / f"material_workflow_{key}"
     for suffix, kwargs in {

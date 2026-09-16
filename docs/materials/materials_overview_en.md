@@ -155,6 +155,8 @@ The study asks four connected questions:
 
 The evidence is organized in the same order for every material: literature benchmark, corresponding model construction and MD conditions, direct numerical comparison, structural interpretation and bounded conclusion. Agreement in one metric is not used to certify the whole model. A good Arrhenius fit, for example, is interpreted together with the absolute diffusion scale and host-network motion.
 
+For direct auditability, every material workflow diagram states the composition and cell size used here, potential and MD engine, temperature points, ensemble, timestep, documented thermostat information, equilibration duration and production duration. Literature conditions are labelled separately and are not silently transferred to the present calculation.
+
 The comparison follows a hierarchy. First, numerical completeness requires finite trajectories, controlled temperature and a documented cell. Second, preparation readiness requires plausible density and retention of the material-defining motifs. Third, transport analysis requires an approximately diffusive MSD interval whose slope is stable to reasonable window changes. Fourth, literature agreement requires matching temperature, unit and observable. Only after these checks is an apparent activation energy discussed. This order prevents an attractive Arrhenius line from concealing framework reconstruction or a large absolute error in $D$.
 
 ### Scope of the conclusions
