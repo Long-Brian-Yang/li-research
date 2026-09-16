@@ -154,15 +154,8 @@ def build_structure_figure(rdf, reference_rdf, angles, reference_angles):
         ylabel="Probability density (degree⁻¹)",
         xlim=(60, 160),
     )
-    handles, labels = axes[0].get_legend_handles_labels()
-    fig.legend(
-        handles,
-        labels,
-        loc="lower center",
-        bbox_to_anchor=(0.5, 1.015),
-        ncol=2,
-        frameon=False,
-    )
+    for axis in axes:
+        axis.legend(loc="lower left")
     return fig
 
 
@@ -233,12 +226,12 @@ def main():
     r1_angle = load_csv(DATA / "300K_late_angles.csv")
     chen_angle = load_reference_csv(REFERENCE / "Chen2025_Fig._1f.csv", (0, 2))
     fig = build_structure_figure(r1_rdf, chen_rdf, r1_angle, chen_angle)
-    finish(fig, "07_LPS_local_structure")
+    finish(fig, "07_LPS_local_order")
 
     plot_summary = {
         "figure_conclusion": "R1 retains local PS4 geometry, while its finite-time apparent Li diffusion remains above the Chen 2025 glass reference across 300–900 K.",
         "archetype": "quantitative grid",
-        "exports": ["05_LPS_MSD", "06_LPS_transport_framework", "07_LPS_local_structure"],
+        "exports": ["05_LPS_MSD", "06_LPS_transport_framework", "07_LPS_local_order"],
         "reference_comparison": comparison.tolist(),
         "sources_sha256": {
             str(path.relative_to(ROOT)): hashlib.sha256(path.read_bytes()).hexdigest()
