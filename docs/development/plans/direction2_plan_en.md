@@ -99,9 +99,9 @@ relaxation remains a higher-confidence follow-up before publication-quality
 claims.
 
 Structure files are organised under
-[`structures/ordered/`](../../structures/ordered/). The generated 2×2×4 CIF,
+[`structures/ordered/`](../../../structures/ordered/). The generated 2×2×4 CIF,
 XYZ, LAMMPS data, and validation files are in
-[`structures/ordered/Li3YCl6/2x2x4/`](../../structures/ordered/Li3YCl6/2x2x4/).
+[`structures/ordered/Li3YCl6/2x2x4/`](../../../structures/ordered/Li3YCl6/2x2x4/).
 
 ## 5. Workflow and decision gates
 
@@ -222,7 +222,7 @@ The first near-room-temperature production protocol is fixed as follows:
 | Independent replicas | Li₃YCl₆: 3; LiNbOCl₄: initially 1, then add replicas if needed |
 
 The current TSUBAME entry point is
-[`gpumd_nep89_300K_2x2x4.sh`](../../hpc/tsubame_26icp/gpumd_nep89_300K_2x2x4.sh).
+[`gpumd_nep89_300K_2x2x4.sh`](../../../hpc/tsubame_26icp/benchmark/gpumd_nep89_300K_2x2x4.sh).
 The production run uses Li₃YCl₆ 2×2×4 models and the LiNbOCl₄ 2×2×2
 benchmark. The same protocol should be used when comparing another potential.
 
@@ -382,13 +382,13 @@ Every reported value must be tagged as `experimental`, `calculated`, or
 
 ## 13. Repository entry points
 
-- [`structures/`](../../structures/) — ordered CIF/XYZ/LAMMPS inputs and
+- [`structures/`](../../../structures/) — ordered CIF/XYZ/LAMMPS inputs and
   validation metadata;
 - [GPUMD/NEP89 300 K result record](../results/gpumd_nep89_300K.md) — protocol,
   analysis notes, and figures;
 - [`hpc/tsubame_26icp/inputs/mace_mliap/`](../../../hpc/tsubame_26icp/inputs/mace_mliap/)
   — maintained MACE ML-IAP input templates;
-- [`hpc/tsubame_26icp/`](../../hpc/tsubame_26icp/) — TSUBAME job scripts;
-- [`docs/literature/papers_zh.md`](../literature/papers_zh.md) and
-  [`docs/literature/papers_ja.md`](../literature/papers_ja.md) — bilingual
+- [`hpc/tsubame_26icp/`](../../../hpc/tsubame_26icp/) — TSUBAME job scripts;
+- [`docs/literature/papers_zh.md`](../../literature/papers_zh.md) and
+  [`docs/literature/papers_ja.md`](../../literature/papers_ja.md) — bilingual
   literature notes and DOI-linked experimental context.

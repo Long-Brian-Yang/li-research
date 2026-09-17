@@ -43,18 +43,14 @@ materials/candidates/Li3PS4_glass/source/
 materials/candidates/LiPON/source/
 
 # Superseded visual previews retained locally for comparison only.
-results/analysis/Li3YCl6/*candidate.png
 results/midterm_Li3YCl6_MACE_M3GNet/plots/*preview*.png
 results/midterm_Li3YCl6_MACE_M3GNet/plots/*same_y.png
 results/midterm_Li3YCl6_MACE_M3GNet/plots/*reference_scales.png
 docs/materials/figures/03_crystalline_transport_summary.png
 
-# Deprecated local diagnostic retained only for historical inspection; this
-# project does not include a DFT validation workflow for the amorphous study.
-scripts/structures/check_nep_dft.py
-
 # Python cache and local environments
 __pycache__/
+.pytest_cache/
 *.py[cod]
 .venv/
 venv/

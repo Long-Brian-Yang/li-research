@@ -52,7 +52,7 @@ def lszc():
         np.testing.assert_allclose(brute,msd['Li'][lag],atol=1e-8)
     fits=[fit_msd(t,msd['Li'],*w) for w in [(5,20),(10,40),(20,80),(40,100)]]
     blocks=block_slopes(xu[:,s=='Li'],.1,4,(5,20))
-    np.savetxt(OUT/'LSZC400_MSD.csv',np.c_[t,*[msd[e] for e in els]],delimiter=',',header='lag_ps,'+','.join(e+'_A2' for e in els),comments='')
+    np.savetxt(OUT/'LSZC400_MSD.csv',np.column_stack([t, *[msd[e] for e in els]]),delimiter=',',header='lag_ps,'+','.join(e+'_A2' for e in els),comments='')
     np.savetxt(OUT/'LSZC400_fit_windows.csv',[[f[k] for k in ['lo_ps','hi_ps','D_cm2_s','R2','alpha','intercept_A2']] for f in fits],delimiter=',',header='lo_ps,hi_ps,D_cm2_s,R2,alpha,intercept_A2',comments='')
     np.savetxt(OUT/'LSZC400_blocks.csv',np.c_[[25,75,125,175],blocks],delimiter=',',header='block_centre_ps,D_5to20_cm2_s',comments='')
     f,ax=plt.subplots(1,2,layout='constrained');fit=fits[2]

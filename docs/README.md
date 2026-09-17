@@ -21,7 +21,7 @@
 
 - 后续更新必须直接替换、修订或补入 Material Review 的对应材料章节，并同步英语与日语版本。正文完整内嵌图、数值表、必要公式及符号、计算条件、文献基准、比较解释、局限与下一步；不得以“详见另一报告”代替内容。按“文献问题与结果 → 对应计算 → 定量比较 → 结构解释 → 结论”组织。源数据、脚本和 DOI 可作为可选溯源入口，但理解正文不依赖跳转。未完成项目注明状态，不能用计划代替结果。
 
-- [早期 Arrhenius 组合筛选](best_arrhenius_combinations.md) 与 [SevenNet 81 组枚举](development/results/sevennet_700_800_900_1000_all_81.md) 是历史探索，不应自动作为当前最终结果。
+- [早期 Arrhenius 组合筛选](development/results/best_arrhenius_combinations_legacy.md) 与 [SevenNet 81 组枚举](development/results/sevennet_700_800_900_1000_all_81.md) 是历史探索，不应自动作为当前最终结果。
 - 图表和结构的 README 保持与对应文件同目录，不为分类而拆散依赖关系。
 - 仅在用户明确要求独立日报时，才另外保存至 `daily_reports/YYYY-MM-DD/`；其中新增研究结果仍须同步进入 Material Review。
 - 建模和分析记录写明材料、日期、job ID、数据来源和限制；不通过整理文档改变数值、模型标签或轨迹选择。

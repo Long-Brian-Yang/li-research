@@ -28,7 +28,7 @@ def run():
    a=Atoms(s,positions=x[0],cell=c[0],pbc=True)
    xc=x-np.average(x,axis=1,weights=a.get_masses())[:,None,:]
    els=['Li','Zr','O','Cl'];y={e:window_msd(xc[:,s==e]) for e in els};fit=fit_msd(t,y['Li'],20,80)
-   np.savetxt(OUT/f'legacy_{model}_{T}K_MSD.csv',np.c_[t,*[y[e] for e in els]],delimiter=',',header='lag_ps,'+','.join(e+'_A2' for e in els),comments='')
+   np.savetxt(OUT/f'legacy_{model}_{T}K_MSD.csv',np.column_stack([t, *[y[e] for e in els]]),delimiter=',',header='lag_ps,'+','.join(e+'_A2' for e in els),comments='')
    am[j].plot(t[:1001],y['Li'][:1001],color=color,ls=ls,label=model)
    for e in ['Zr','O','Cl']:af[j].plot(t[:1001],y[e][:1001],ls=ls,label=f'{model}: {e}')
    gs=[];cs=[]

@@ -39,7 +39,7 @@ def run():
   msd={el:window_msd(xu[:,s==el]) for el in els}
   for k in (1,200,800,1500,2999):
    np.testing.assert_allclose(msd['Li'][k],np.mean(np.sum((li[k:]-li[:-k])**2,2)),atol=1e-8)
-  np.savetxt(OUT/f'{T}K_MSD.csv',np.c_[t,*[msd[e] for e in els]],delimiter=',',header='lag_ps,'+','.join(els),comments='')
+  np.savetxt(OUT/f'{T}K_MSD.csv',np.column_stack([t, *[msd[e] for e in els]]),delimiter=',',header='lag_ps,'+','.join(els),comments='')
   fits=[fit_msd(t,msd['Li'],*w) for w in WINDOWS]
   # Retain common 20–80 ps diagnostic for continuity, not an optimized Ea.
   f=fits[0]; sig=sigma_mscm(f['D_cm2_s'],32,a.get_volume(),T) if f['D_cm2_s']>0 else None

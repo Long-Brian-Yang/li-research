@@ -2,7 +2,24 @@
 
 Current amorphous-material record (settings, all figures, results and limits): **[日本語](docs/materials/materials_overview_ja.md) · [English](docs/materials/materials_overview_en.md)**. These are the two maintained reports; earlier short reports are historical snapshots. The crystalline-project introduction below is retained as background, not the current amorphous status.
 
-Documentation: [分类导航](docs/README.md) · [日常汇报](docs/daily_reports/README.md) · [LZOC 建模与运行](docs/materials/LZOC/README.md)。以下 Direction 2 介绍保留原有晶态研究背景；后续 LZOC 探索见独立材料记录。
+Repository navigation: [documentation](docs/README.md) · [materials](materials/README.md) · [results](results/README.md) · [analysis scripts](scripts/README.md) · [TSUBAME workflows](hpc/tsubame_26icp/README.md).
+
+## Canonical repository layout
+
+| Path | Maintained role |
+|---|---|
+| `docs/materials/materials_overview_{ja,en}.md` | Company-facing technical report |
+| `docs/materials/figures/` | Single canonical location for report figures |
+| `materials/candidates/` | Material construction and relaxed structures |
+| `materials/evidence/` | Named structures and representative trajectories mapped to report figures |
+| `results/` | Derived numerical tables and historical publication packages |
+| `scripts/` and `src/` | Analysis, conversion and figure-generation code |
+| `hpc/` and `simulation/` | Reproducible TSUBAME and simulation inputs |
+| `structures/` | Crystalline reference and ordered structures |
+
+Full raw trajectories, restart files and scheduler output are local/TSUBAME
+archives and are excluded from Git. The repository retains derived tables,
+reproducible inputs, canonical figures and compact representative trajectories.
 
 This repository contains the working materials for **Direction 2**: reproducing
 and comparing fast-ion-conducting halide and oxyhalide solid electrolytes with
@@ -56,6 +73,9 @@ Li MSD / diffusion screening and structural sanity checks
 The main entry points are:
 
 - [`structures/`](structures/) — explicit ordered CIF and LAMMPS data files;
+- [`materials/`](materials/) — amorphous candidates, reference data and report evidence;
+- [`results/`](results/) — organized derived results and publication snapshots;
+- [`scripts/`](scripts/) — maintained analysis and figure-generation utilities;
 - [`src/li_research/`](src/li_research/) — maintained structure, conversion and
   analysis utilities;
 - [`hpc/tsubame_26icp/`](hpc/tsubame_26icp/) — active build and benchmark
@@ -106,5 +126,6 @@ experimental structure/transport data, and an independent potential.
 The canonical TSUBAME directory and script naming rules are in
 [project_layout.md](docs/development/protocols/project_layout.md). Superseded
 short-lived artifacts are removed after their unique information has been
-merged into the current documentation; reproducible raw calculation outputs
-remain in timestamped `runs/` and `results/` directories.
+merged into the current documentation. Complete raw calculation outputs remain
+in the local/TSUBAME archive; Git contains the derived tables, inputs, manifests
+and representative evidence required to inspect the reported results.

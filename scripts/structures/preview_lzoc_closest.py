@@ -13,15 +13,16 @@ from analyze_followup300 import BASE
 from analyze_lzoc_production import fit_msd
 
 def main():
-    out=BASE/'exploratory_closest_preview';out.mkdir(exist_ok=True)
     figures=BASE.parents[1]/'docs/materials/figures';figures.mkdir(parents=True,exist_ok=True)
     audit=BASE/'seed_repeats/representatives.json'
+    selection=BASE/'seed_repeats/lzoc_report_selection.json'
     ref=BASE/'paper_alignment/LZOC_Table4_comparison.csv'
     candidates=json.loads(audit.read_text())['candidates']
     paper=np.loadtxt(ref,delimiter=',',skiprows=1)
     chosen=[];hashes={}
     plt.rcParams.update({'font.family':'DejaVu Sans','font.size':12,'axes.titlesize':16,
-        'axes.labelsize':14,'axes.linewidth':1.5,'lines.linewidth':2.5,'svg.fonttype':'none','pdf.fonttype':42})
+        'axes.labelsize':14,'axes.linewidth':1.5,'lines.linewidth':2.5,
+        'svg.fonttype':'none','svg.hashsalt':'li-research','pdf.fonttype':42})
     fig,aa=plt.subplots(2,2,figsize=(12,9.5),layout='constrained');axes=aa.ravel()
     fig.suptitle('LZOC — lithium-ion transport',fontsize=17)
     ymax=0
@@ -49,9 +50,14 @@ def main():
     for i,ax in enumerate(axes):
         ax.grid(alpha=.16);ax.set_axisbelow(True)
         ax.text(-.12,1.03,chr(97+i),transform=ax.transAxes,fontweight='bold',fontsize=16)
-    for ext in ['png','pdf','svg']:fig.savefig(figures/f'01_LZOC_transport.{ext}',dpi=220)
+    for ext in ['png','pdf','svg']:
+        path=figures/f'01_LZOC_transport.{ext}'
+        metadata={'CreationDate':None,'ModDate':None} if ext=='pdf' else ({'Date':None} if ext=='svg' else None)
+        fig.savefig(path,dpi=220,metadata=metadata)
+        if ext=='svg':
+            path.write_text('\n'.join(line.rstrip() for line in path.read_text().splitlines())+'\n')
     plt.close(fig)
-    (out/'selection.json').write_text(json.dumps({'rule':'Exploratory, post-hoc minimum absolute relative error versus AIMD among existing five-window candidates with positive D, R2>=0.99 and +/-10 ps translated-window slope variation <=10%. No independent validation, no formal replacement, no Ea inference.',
+    selection.write_text(json.dumps({'rule':'Exploratory, post-hoc minimum absolute relative error versus AIMD among existing five-window candidates with positive D, R2>=0.99 and +/-10 ps translated-window slope variation <=10%. No independent validation, no formal replacement, no Ea inference.',
        'selected':chosen,'source_hashes':hashes,'reference_sha256':hashlib.sha256(ref.read_bytes()).hexdigest()},indent=2)+'\n')
     print(json.dumps(chosen,indent=2))
 

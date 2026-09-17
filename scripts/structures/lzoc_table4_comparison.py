@@ -17,7 +17,7 @@ def main():
         selected=selected[np.argsort(selected[:,1])]
         np.testing.assert_array_equal(selected[:,1],temperatures)
         series.append(selected[:,4])
-    np.savetxt(OUT/'LZOC_Table4_comparison.csv',np.c_[temperatures,tracer,error,charge,*series,series[0]/tracer,series[1]/tracer],delimiter=',',header='T_K,paper_tracer_D_cm2_s,paper_tracer_reported_plusminus,paper_charge_D_cm2_s,NEP_MTTK_D_app_cm2_s,NEP_NHC_D_app_cm2_s,MTTK_over_tracer,NHC_over_tracer',comments='')
+    np.savetxt(OUT/'LZOC_Table4_comparison.csv',np.column_stack([temperatures,tracer,error,charge,*series,series[0]/tracer,series[1]/tracer]),delimiter=',',header='T_K,paper_tracer_D_cm2_s,paper_tracer_reported_plusminus,paper_charge_D_cm2_s,NEP_MTTK_D_app_cm2_s,NEP_NHC_D_app_cm2_s,MTTK_over_tracer,NHC_over_tracer',comments='')
     f,ax=plt.subplots(layout='constrained')
     ax.errorbar(temperatures,tracer,yerr=error,fmt='ko-',label='AIMD tracer D*: SI Table 4')
     for y,label,c in zip(series,['NEP: MTTK, 0.5 fs','NEP: NHC, 2 fs'],['#31688e','#d73027']):

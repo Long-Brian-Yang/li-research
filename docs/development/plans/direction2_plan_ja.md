@@ -91,9 +91,9 @@ Li₃YCl₆ 2×2×4 候補の組成は Li₁₄₄Y₄₈Cl₂₈₈ であり�
 緩和済みセルを繰り返しただけであり、独立した 2×2×4 full relaxation と同じ
 ではない。論文レベルの主張には、追加の full relaxation が必要である。
 
-構造ファイルは [`structures/ordered/`](../../structures/ordered/) に整理して
+構造ファイルは [`structures/ordered/`](../../../structures/ordered/) に整理して
 いる。生成した CIF、XYZ、LAMMPS data、validation file は
-[`structures/ordered/Li3YCl6/2x2x4/`](../../structures/ordered/Li3YCl6/2x2x4/)
+[`structures/ordered/Li3YCl6/2x2x4/`](../../../structures/ordered/Li3YCl6/2x2x4/)
 に保存されている。
 
 ## 5. ワークフローと判定ゲート
@@ -208,7 +208,7 @@ go/no-go 境界を記載し、「予測モデルを作れなかった」だけ�
 | 独立 replica | Li₃YCl₆: 3；LiNbOCl₄: 初期 1、必要なら追加 |
 
 TSUBAME の入口は
-[`gpumd_nep89_300K_2x2x4.sh`](../../hpc/tsubame_26icp/gpumd_nep89_300K_2x2x4.sh)
+[`gpumd_nep89_300K_2x2x4.sh`](../../../hpc/tsubame_26icp/benchmark/gpumd_nep89_300K_2x2x4.sh)
 である。production では Li₃YCl₆ 2×2×4 と LiNbOCl₄ 2×2×2 を使用する。
 別の potential と比較する場合も、まず同じ protocol を使う。
 
@@ -360,11 +360,11 @@ sigma_collective_mS_cm | block_std | structure_status | confidence | source
 
 ## 13. リポジトリの入口
 
-- [`structures/`](../../structures/) — ordered CIF/XYZ/LAMMPS input と validation metadata
+- [`structures/`](../../../structures/) — ordered CIF/XYZ/LAMMPS input と validation metadata
 - [GPUMD/NEP89 300 K 結果記録](../results/gpumd_nep89_300K.md) — protocol、解析、図
 - [`hpc/tsubame_26icp/inputs/mace_mliap/`](../../../hpc/tsubame_26icp/inputs/mace_mliap/)
   — 維持対象の MACE ML-IAP input template
-- [`hpc/tsubame_26icp/`](../../hpc/tsubame_26icp/) — TSUBAME job script
-- [`docs/literature/papers_zh.md`](../literature/papers_zh.md) と
-  [`docs/literature/papers_ja.md`](../literature/papers_ja.md) — 二言語の文献ノートと
+- [`hpc/tsubame_26icp/`](../../../hpc/tsubame_26icp/) — TSUBAME job script
+- [`docs/literature/papers_zh.md`](../../literature/papers_zh.md) と
+  [`docs/literature/papers_ja.md`](../../literature/papers_ja.md) — 二言語の文献ノートと
   DOI 付き実験 context

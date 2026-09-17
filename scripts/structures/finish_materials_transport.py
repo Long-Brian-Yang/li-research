@@ -45,7 +45,7 @@ def run():
         for lag in [10,200,800]:
             brute=np.mean(np.sum((xu[lag:,s=='Li']-xu[:-lag,s=='Li'])**2,2))
             np.testing.assert_allclose(brute,msd['Li'][lag],atol=1e-8)
-        np.savetxt(OUT/f'LSZC_{T}K_MSD.csv',np.c_[t,*[msd[e] for e in els]],delimiter=',',header='lag_ps,'+','.join(e+'_A2' for e in els),comments='')
+        np.savetxt(OUT/f'LSZC_{T}K_MSD.csv',np.column_stack([t, *[msd[e] for e in els]]),delimiter=',',header='lag_ps,'+','.join(e+'_A2' for e in els),comments='')
         fits=[fit_msd(t,msd['Li'],*w) for w in WINDOWS]
         for f in fits:fitrows.append([T,*[f[k] for k in ['lo_ps','hi_ps','D_cm2_s','R2','alpha']]])
         summary=summarize_curve(t,msd['Li'],32,a.get_volume(),T)

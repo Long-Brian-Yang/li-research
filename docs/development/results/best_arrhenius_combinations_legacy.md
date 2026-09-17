@@ -1,6 +1,6 @@
 # Best Arrhenius Temperature/Replica Combinations
 
-> Historical exploratory record. This differs from the development/results copy and is retained for provenance, not merged by overwriting values. It is not the current final-result authority; see the [documentation index](README.md).
+> Historical exploratory record. This differs from the later development-results copy and is retained for provenance, not merged by overwriting values. It is not the current final-result authority; see the [documentation index](../../README.md).
 
 These records preserve the best replica combinations selected against the
 experimental activation energy.  MSD values were fitted over the 10--90%

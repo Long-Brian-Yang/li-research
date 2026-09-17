@@ -1,10 +1,12 @@
 # Material Review figures
 
-Canonical PNG/PDF/SVG exports used by both Material Review language versions.
+Canonical figure exports used by both Material Review language versions.
 Update figures here and keep the matching relative links in the English and
-Japanese Markdown. Source data remain in results; no trajectories belong here.
+Japanese Markdown. PNG is the report-rendering format; PDF/SVG are retained
+when an editable/vector export exists. Source tables remain under `results/`;
+trajectories belong under `materials/evidence/` or the ignored raw archive.
 
-- 01: LZOC lithium transport and AIMD comparison.
+- 01–04: LZOC and crystalline Li₃YCl₆/LiNbOCl₄ transport comparisons.
 - 05–07: Li₃PS₄ lithium MSD, framework dynamics and local structure.
 - 08: LiPON nitrogen-distance stability during thermal processing.
 - 09–11: MACE–NEP89 performance, species MSD and partial RDF benchmark.
@@ -15,9 +17,10 @@ Japanese Markdown. Source data remain in results; no trajectories belong here.
 - 27: LSZC synchrotron-PDF correspondence and Zr coordination distributions.
 - 28: Li₃PS₄ non-Gaussian dynamics and self van Hove distribution.
 
-Historical 02–04 and 12–13 exports and the older 01 dataset remain outside this
-folder. Historical reports keep their existing links. Migration changes locations,
-not numerical values or image pixels. The source records retain analysis provenance.
+Only figures used by the maintained English/Japanese reports are kept here.
+Superseded alternative names and preview figures were removed; historical
+reports keep their own assets in their result directories. Consolidation changes
+locations, not numerical values. Source records retain analysis provenance.
 
 Refresh manifest.json hashes when an active export is regenerated; the current
 manifest records the consolidation snapshot, not an automatic integrity service.

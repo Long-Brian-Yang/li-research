@@ -1,8 +1,8 @@
-"""Recompose existing source tables for the EN/JA overview; no new MD/refits.
+"""Generate the maintained legacy-benchmark/LiPON figures for the EN/JA review.
 
-Contract: seventeen evidence-bearing figures, at most two columns, fixed document
-width. Keep model/reference mismatches and sparse data visible. PNG/PDF/SVG
-with editable text; source SHA256 and export inventory accompany the figures.
+No new MD or refitting is performed. All exports are written directly to the
+single canonical figure directory; superseded preview and staging directories
+are intentionally not recreated.
 """
 from pathlib import Path
 import hashlib
@@ -15,8 +15,6 @@ import matplotlib.pyplot as plt
 ROOT=Path(__file__).resolve().parents[2]
 BASE=ROOT/'results/amorphous_review_20260915'
 OUT=ROOT/'docs/materials/figures'
-ARCHIVE=ROOT/'results/plots/amorphous'
-ARCHIVED_FIGURES={'01_LZOC_transport','02_LSZC_transport','03_LSZC_mobility','04_LSZC_structure','12_LSZC_4T_MSD','13_LSZC_literature_transport'}
 P=BASE/'paper_alignment';F=BASE/'final_comparisons';L=BASE/'Li3PS4_transport'
 C=BASE/'completed_transport'
 OLD=ROOT/'results/LZOC/legacy_comparison_20260915'
@@ -45,9 +43,8 @@ def finish(fig,name):
             ax.legend(frameon=False,fontsize=10,loc='upper center',bbox_to_anchor=(.5,-.22),ncol=2)
     fig.canvas.draw()
     for ext in ('png','pdf','svg'):
-        directory=ARCHIVE if name in ARCHIVED_FIGURES else OUT
-        directory.mkdir(parents=True,exist_ok=True)
-        path=directory/f'{name}.{ext}';fig.savefig(path,dpi=220)
+        OUT.mkdir(parents=True,exist_ok=True)
+        path=OUT/f'{name}.{ext}';fig.savefig(path,dpi=220)
         if ext=='svg':path.write_text('\n'.join(s.rstrip() for s in path.read_text().splitlines())+'\n')
     EXPORTS.append(name);plt.close(fig)
 
@@ -198,8 +195,8 @@ def configure_style():
 def main():
     OUT.mkdir(parents=True,exist_ok=True)
     configure_style()
-    lzoc();lszc();lips();lipon();legacy();lszc_four_temperatures();lzoc_structure_motion()
-    assert len(EXPORTS)==17
+    lipon();legacy();lzoc_structure_motion()
+    assert len(EXPORTS)==8
     (OUT/'provenance.json').write_text(json.dumps({'sources_sha256':HASHES,'figures':EXPORTS,'operation':'Presentation only: original CSV ordinates retained; no refits. Angle PDFs normalized to unit area; 5 ps energy means and framework80 endpoints as labelled.','size_inches':[12,4.65],'rows':'1 or 2','font_pt':{'title':16,'axis':14,'ticks':12,'legend':11.5}},indent=2)+'\n')
     print('Created',len(EXPORTS),'figure families from',len(HASHES),'sources')
 

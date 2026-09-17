@@ -26,7 +26,7 @@ def main():
         for c in counts:
             assert max(c)<len(bins)
             v=np.bincount(c,minlength=len(bins))/len(c);assert np.isclose(v.sum(),1);probs.append(v)
-        np.savetxt(OUT/f'LZOC_{T}K_CN.csv',np.c_[bins,*probs],delimiter=',',header='CN,LiO,LiCl,ZrO,ZrCl',comments='')
+        np.savetxt(OUT/f'LZOC_{T}K_CN.csv',np.column_stack([bins, *probs]),delimiter=',',header='CN,LiO,LiCl,ZrO,ZrCl',comments='')
         xu=unwrap(np.array([a.positions]+[f.positions for f in fs]),a.cell.array)
         xu-=np.average(xu,axis=1,weights=a.get_masses())[:,None,:]
         disp=[];de=np.linspace(0,30,301);tail=[]
@@ -36,7 +36,7 @@ def main():
             prob=np.histogram(radii,de)[0]/len(radii)/np.diff(de)
             assert np.isclose(np.sum(prob*np.diff(de)),1)
             disp.append(prob);tail.append(dict(lag_ps=lag*.1,rms_A=float(np.sqrt(np.mean(radii**2))),fraction_over3A=float(np.mean(radii>3))))
-        np.savetxt(OUT/f'LZOC_{T}K_radial_displacement.csv',np.c_[(de[:-1]+de[1:])/2,*disp],delimiter=',',header='r_A,P10_Ainv,P40_Ainv,P80_Ainv',comments='')
+        np.savetxt(OUT/f'LZOC_{T}K_radial_displacement.csv',np.column_stack([(de[:-1]+de[1:])/2, *disp]),delimiter=',',header='r_A,P10_Ainv,P40_Ainv,P80_Ainv',comments='')
         results.append(dict(T_K=T,mean_CN=[float(np.mean(c)) for c in counts],RDF_peak_r_A=[float(((edges[:-1]+edges[1:])/2)[np.argmax(g)]) for g in np.mean(gs,0)],displacements=tail))
         hashes[str((p/'dump.xyz').relative_to(ROOT))]=hashlib.sha256((p/'dump.xyz').read_bytes()).hexdigest()
     data=dict(records=results,pairs=PAIRS,method='RDF/CN: 101 frames,100–300 ps every2 ps, 0.05 A bins, no smoothing; fixed project cutoffs, not experimental CN. Radial displacement P(r,t)=4*pi*r^2*Gs(r,t); all origins,COM corrected,0.1 A bins. 3 A is descriptive threshold, not a site-defined jump.',source_hashes=hashes)

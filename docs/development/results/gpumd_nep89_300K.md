@@ -127,18 +127,18 @@ gpumdkit.sh -plt thermo save
 ```
 
 The input trajectory is the GPUMD dump converted to an unwrapped extXYZ by
-[`prepare_gpumdkit_unwrapped.py`](../../src/li_research/analysis/gpumd/prepare_gpumdkit_unwrapped.py). The 1 ps
+[`prepare_gpumdkit_unwrapped.py`](../../../src/li_research/analysis/gpumd/prepare_gpumdkit_unwrapped.py). The 1 ps
 sampling interval and 500 ps maximum lag are explicit in the command.
 
-- [Li₃YCl₆ replica 1 MSD](figures/300K_2x2x4_gpumdkit/Li3YCl6_01/msd.png) · [thermo](figures/300K_2x2x4_gpumdkit/Li3YCl6_01/thermo.png)
-- [Li₃YCl₆ replica 2 MSD](figures/300K_2x2x4_gpumdkit/Li3YCl6_02/msd.png) · [thermo](figures/300K_2x2x4_gpumdkit/Li3YCl6_02/thermo.png)
-- [Li₃YCl₆ replica 3 MSD](figures/300K_2x2x4_gpumdkit/Li3YCl6_03/msd.png) · [thermo](figures/300K_2x2x4_gpumdkit/Li3YCl6_03/thermo.png)
-- [LiNbOCl₄ MSD](figures/300K_2x2x4_gpumdkit/LiNbOCl4/msd.png) · [thermo](figures/300K_2x2x4_gpumdkit/LiNbOCl4/thermo.png)
+- [Li₃YCl₆ replica 1 MSD](../../../results/gpumd_nep89/300K_2x2x4_gpumdkit/Li3YCl6_01/msd.png) · [thermo](../../../results/gpumd_nep89/300K_2x2x4_gpumdkit/Li3YCl6_01/thermo.png)
+- [Li₃YCl₆ replica 2 MSD](../../../results/gpumd_nep89/300K_2x2x4_gpumdkit/Li3YCl6_02/msd.png) · [thermo](../../../results/gpumd_nep89/300K_2x2x4_gpumdkit/Li3YCl6_02/thermo.png)
+- [Li₃YCl₆ replica 3 MSD](../../../results/gpumd_nep89/300K_2x2x4_gpumdkit/Li3YCl6_03/msd.png) · [thermo](../../../results/gpumd_nep89/300K_2x2x4_gpumdkit/Li3YCl6_03/thermo.png)
+- [LiNbOCl₄ MSD](../../../results/gpumd_nep89/300K_2x2x4_gpumdkit/LiNbOCl4/msd.png) · [thermo](../../../results/gpumd_nep89/300K_2x2x4_gpumdkit/LiNbOCl4/thermo.png)
 
 The corresponding GPUMDkit `msd.out` and `average_results.txt` files are kept
 under [`results/gpumd_nep89/300K_2x2x4_gpumdkit/`](../../../results/gpumd_nep89/300K_2x2x4_gpumdkit/). The
 previous custom diagnostic figures are retained separately under
-[`figures/300K_2x2x4_custom_diagnostic/`](figures/300K_2x2x4_custom_diagnostic/)
+[`figures/300K_2x2x4_custom_diagnostic/`](../../../results/gpumd_nep89/figures/300K_2x2x4_custom_diagnostic/)
 and are not used as the primary GPUMDkit result.
 
 GPUMDkit's `sdc` and `msd_sdc` commands were intentionally not run: they require
@@ -148,7 +148,7 @@ MSD cannot be relabeled as an SDC, so no SDC figure is reported here.
 ### Original 400 K baseline figures
 
 The original plots are preserved without overwriting them in
-[`figures/400K_baseline/`](figures/400K_baseline/). They correspond to the
+[`figures/400K_baseline/`](../../../results/gpumd_nep89/figures/400K_baseline/). They correspond to the
 short 400 K job `8439066` (10 ps equilibration + 100 ps production), not the
 new 300 K 2×2×4 run.
 
@@ -183,6 +183,6 @@ relaxed 2×2×4 cell.
    available trajectory workflow.
 
 The official-output window analysis is
-[`analyze_gpumdkit_windows.py`](../../src/li_research/analysis/gpumd/analyze_gpumdkit_windows.py).
+[`analyze_gpumdkit_windows.py`](../../../src/li_research/analysis/gpumd/analyze_gpumdkit_windows.py).
 The coordinate conversion helper is
-[`prepare_gpumdkit_unwrapped.py`](../../src/li_research/analysis/gpumd/prepare_gpumdkit_unwrapped.py).
+[`prepare_gpumdkit_unwrapped.py`](../../../src/li_research/analysis/gpumd/prepare_gpumdkit_unwrapped.py).

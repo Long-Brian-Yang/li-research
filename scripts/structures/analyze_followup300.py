@@ -29,7 +29,7 @@ def main():
             for lag in [100,400]:
                 direct=np.mean(np.sum((xu[lag:n,s=='Li']-xu[:n-lag,s=='Li'])**2,2))
                 np.testing.assert_allclose(curves[0][lag],direct,atol=1e-8)
-            np.savetxt(OUT/f'LZOC_{T}K_{duration}ps_MSD.csv',np.c_[t,*curves],delimiter=',',header='lag_ps,Li_A2,Zr_A2,Cl_A2,O_A2',comments='')
+            np.savetxt(OUT/f'LZOC_{T}K_{duration}ps_MSD.csv',np.column_stack([t, *curves]),delimiter=',',header='lag_ps,Li_A2,Zr_A2,Cl_A2,O_A2',comments='')
             fit=fit_msd(t,curves[0],10,40)
             records.append(dict(T_K=T,duration_ps=duration,**fit))
         blocks=[]

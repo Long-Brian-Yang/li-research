@@ -50,7 +50,7 @@ def write_csv(path, header, rows):
 
 
 def cross_material_source_tables():
-    lzoc = json.loads((BASE / "exploratory_closest_preview/selection.json").read_text())
+    lzoc = json.loads((BASE / "seed_repeats/lzoc_report_selection.json").read_text())
     # This file stores the three displayed temperatures as a list in current reports.
     if isinstance(lzoc, dict):
         candidates = lzoc.get("selected", lzoc.get("selection", lzoc.get("records", [])))

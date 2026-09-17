@@ -27,7 +27,7 @@ def main():
             for lag in [100,400,800]:
                 direct=np.mean(np.sum((x[lag:,s=='Li']-x[:-lag,s=='Li'])**2,2))
                 np.testing.assert_allclose(curves[0][lag],direct,atol=1e-8)
-            np.savetxt(OUT/f'LZOC_{T}K_R{rep}_MSD.csv',np.c_[t,*curves],delimiter=',',
+            np.savetxt(OUT/f'LZOC_{T}K_R{rep}_MSD.csv',np.column_stack([t, *curves]),delimiter=',',
                        header='lag_ps,Li_A2,Zr_A2,Cl_A2,O_A2',comments='')
             fit=fit_msd(t,curves[0],20,80)
             near=[fit_msd(t,curves[0],lo,hi)['D_cm2_s'] for lo,hi in [(20,60),(30,90)]]
