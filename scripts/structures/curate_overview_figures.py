@@ -141,16 +141,37 @@ def lipon():
     for a in ax:a.axhline(1.6,color=GRAY,ls=':',label='Screening cutoff');a.set_ylim(1.15,1.75);a.legend()
     finish(fig,'08_LiPON_nitrogen_distance')
 
-def legacy():
+def plot_runtime_bars(ax, timing):
+    """Plot paired whole-job runtimes; lower values indicate lower cost."""
+    temperatures=timing[:,0].astype(int)
+    y=np.arange(len(temperatures),dtype=float)
+    height=.34
+    mace=timing[:,1]/60
+    nep=timing[:,2]/60
+    bars=[]
+    bars.extend(ax.barh(y-height/2,mace,height,color=BLUE,label='MACE / LAMMPS'))
+    bars.extend(ax.barh(y+height/2,nep,height,color=RED,label='NEP89 / GPUMD'))
+    for bar,value in zip(bars,np.r_[mace,nep]):
+        ax.text(value*1.045,bar.get_y()+bar.get_height()/2,f'{value:.1f}',
+                va='center',ha='left',fontsize=10.5)
+    ax.set(title='Whole-job runtime by temperature',xlabel='Whole-job runtime (min)',
+           ylabel='Temperature (K)',xscale='log',yticks=y,yticklabels=temperatures,
+           xlim=(5,450))
+    ax.set_ylim(4.15,-.55)
+    ax.legend(loc='lower center',ncol=2)
+
+def legacy_runtime_density():
     fig,aa=grid();ax=aa[0];a=load(OLD/'timing.csv')
+    plot_runtime_bars(ax[0],a)
     for j,m,c,ls in [(1,'MACE / LAMMPS',BLUE,'-'),(2,'NEP89 / GPUMD',RED,'--')]:
-        ax[0].plot(a[:,0],a[:,j]/60,'o',color=c,ls=ls,label=m)
         d=load(OLD/f'{"MACE" if j==1 else "NEP89"}_600K_equilibration_thermo.csv')
         ax[1].plot(d[:,0],d[:,6],color=c,ls=ls,lw=1.4,label=m)
-    ax[0].set(title='Computational cost across temperature',xlabel='Temperature (K)',ylabel='Runtime (min)',yscale='log');ax[0].legend()
     ax[1].axhline(1.913855,color=GRAY,ls=':',label='Common 300 K input')
     ax[1].set(title='600 K: NPT density',xlabel='Time (ps)',ylabel='Density (g/cm³)');ax[1].legend()
     finish(fig,'09_MACE_NEP_runtime_density')
+
+def legacy():
+    legacy_runtime_density()
     fig,aa=grid(2)
     for ax,T in zip(aa.ravel(),[700,800,900]):
         for m,c,ls in [('MACE',BLUE,'-'),('NEP89',RED,'--')]:
@@ -170,9 +191,12 @@ def legacy():
         ax.set(title=f'{title} partial RDF at 900 K',xlabel='r (Å)',ylabel='g(r)',xlim=(0,5));ax.legend(loc='upper left')
     finish(fig,'11_MACE_NEP_partial_RDF')
 
+def configure_style():
+    plt.rcParams.update({'font.family':'DejaVu Sans','font.size':13,'axes.titlesize':16,'axes.labelsize':14,'xtick.labelsize':12,'ytick.labelsize':12,'axes.linewidth':1.5,'lines.linewidth':2.5,'legend.frameon':False,'svg.fonttype':'none','pdf.fonttype':42})
+
 def main():
     OUT.mkdir(parents=True,exist_ok=True)
-    plt.rcParams.update({'font.family':'DejaVu Sans','font.size':13,'axes.titlesize':16,'axes.labelsize':14,'xtick.labelsize':12,'ytick.labelsize':12,'axes.linewidth':1.5,'lines.linewidth':2.5,'legend.frameon':False,'svg.fonttype':'none','pdf.fonttype':42})
+    configure_style()
     lzoc();lszc();lips();lipon();legacy();lszc_four_temperatures();lzoc_structure_motion()
     assert len(EXPORTS)==17
     (OUT/'provenance.json').write_text(json.dumps({'sources_sha256':HASHES,'figures':EXPORTS,'operation':'Presentation only: original CSV ordinates retained; no refits. Angle PDFs normalized to unit area; 5 ps energy means and framework80 endpoints as labelled.','size_inches':[12,4.65],'rows':'1 or 2','font_pt':{'title':16,'axis':14,'ticks':12,'legend':11.5}},indent=2)+'\n')

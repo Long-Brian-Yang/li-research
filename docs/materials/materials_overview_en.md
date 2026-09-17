@@ -218,7 +218,7 @@ This is a **workflow-level NNP comparison**, not a same-configuration force-erro
 
 ![MACE and NEP89 computational cost and density response](figures/09_MACE_NEP_runtime_density.png)
 
-(a) actual job runtimes, excluding queue time, use a logarithmic y axis so both workflows remain visible. (b) 600 K NPT density uses the same y axis for both models; dotted line is the common300 K input, not experiment. NEP is faster and expands less in this workflow, but these facts alone do not establish experimental accuracy.
+(a) paired horizontal bars show actual whole-job runtimes, excluding queue time; the logarithmic x axis keeps both workflows visible and the bar-end labels give minutes. (b) 600 K NPT density is plotted on one common y axis; the dotted line is the common 300 K input, not experiment. NEP is faster and expands less in this workflow, but these facts alone do not establish experimental accuracy.
 
 |600 K quantity|MACE / LAMMPS|NEP89 / GPUMD|
 |---|---:|---:|
