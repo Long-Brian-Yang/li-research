@@ -1,5 +1,5 @@
 272
-Lattice="20.174194627239018 0.0 0.0 0.0 20.174194627239018 0.0 0.0 0.0 20.174194627239018" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 role="relaxed 272-atom cluster-packed structure" pbc="T T T"
+Lattice="20.174194627239018 0.0 0.0 0.0 20.174194627239018 0.0 0.0 0.0 20.174194627239018" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 role="relaxed 272-atom cluster-packed structure" display_name="LSZC — relaxed 272-atom cluster-packed structure" report_figures="18_LSZC_transport_comparison; 19_LSZC_partial_RDF; 27_LSZC_PDF_and_Zr_coordination" pbc="T T T"
 Cl       8.30200517      11.87769352       6.68735256
 Cl       5.71655511      10.57770228       4.83911802
 Cl       7.33405393       8.51136824       7.12933454

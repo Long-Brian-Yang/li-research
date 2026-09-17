@@ -69,6 +69,8 @@ class MaterialEvidencePackageTests(unittest.TestCase):
             "trajectories": [{
                 "id": "example",
                 "directory": "amorphous/example",
+                "display_name": "LiX — NEP89 — 600 K NVT production",
+                "report_figures": ["09_runtime_density"],
                 "purpose": "NVT production",
                 "metadata": {"material": "LiX", "model": "NEP89", "temperature_K": 600},
                 "chunks": [{"file": "trajectory_part01.xyz"}],
@@ -76,6 +78,22 @@ class MaterialEvidencePackageTests(unittest.TestCase):
         }
         text = render_readme(manifest)
         self.assertIn("(amorphous/example/trajectory_part01.xyz)", text)
+        self.assertIn("LiX — NEP89 — 600 K NVT production", text)
+        self.assertIn("09_runtime_density", text)
+
+    def test_all_evidence_specs_have_display_names_and_report_mapping(self):
+        from build_material_evidence_package import STRUCTURES, trajectory_specs
+
+        for _, _, _, metadata in STRUCTURES:
+            self.assertTrue(metadata["display_name"])
+            self.assertIsInstance(metadata["report_figures"], list)
+            self.assertTrue(metadata["report_figures"])
+        for spec in trajectory_specs():
+            self.assertTrue(spec["display_name"])
+            self.assertIsInstance(spec["report_figures"], list)
+            self.assertTrue(spec["report_figures"])
+        lips = next(spec for spec in trajectory_specs() if spec["id"] == "Li3PS4_700K")
+        self.assertIn("Li₃PS₄", lips["display_name"])
 
     def test_lammps_type_numbers_can_be_restored_to_elements(self):
         from build_material_evidence_package import apply_type_symbols

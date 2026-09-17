@@ -1,5 +1,5 @@
 512
-Lattice="24.1948 0.0 0.0 0.0 15.5145 0.0 0.0 0.0 23.115" Properties=species:S:1:pos:R:3 material=Li3PS4 role="R1 transport-series start" pbc="T T T"
+Lattice="24.1948 0.0 0.0 0.0 15.5145 0.0 0.0 0.0 23.115" Properties=species:S:1:pos:R:3 material=Li3PS4 role="R1 transport-series start" display_name="Li₃PS₄ — R1 NEP89 transport starting structure" report_figures="05_Li3PS4_lithium_MSD; 06_Li3PS4_diffusion_framework_MSD; 07_Li3PS4_local_structure; 28_Li3PS4_dynamic_heterogeneity" pbc="T T T"
 Li       9.68575000       1.34272000      12.21980000
 Li      14.73680000      11.71740000       9.96885000
 Li       9.38223000       9.66741000       8.12429000

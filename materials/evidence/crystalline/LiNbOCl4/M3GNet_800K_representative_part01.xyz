@@ -1,5 +1,5 @@
 336
-Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production source_frame_index=0 relative_time_ps=0.0 pbc="T T T"
+Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production display_name="LiNbOCl₄ — M3GNet GPU — 800 K — production" report_figures="02_LiNbOCl4_three_model_MSD; 04_LiNbOCl4_Arrhenius" source_frame_index=0 relative_time_ps=0.0 pbc="T T T"
 Li      -0.78953400       6.70813000       7.35877000
 Li      -3.29107000      15.48830000       5.30971000
 Li       1.60281000       8.15657000       4.64741000
@@ -337,7 +337,7 @@ O        1.99068000      17.28730000      25.28950000
 O        4.38694000      18.75910000      28.90050000
 O        5.65468000      17.08440000      25.47870000
 336
-Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production source_frame_index=5 relative_time_ps=0.5 pbc="T T T"
+Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production display_name="LiNbOCl₄ — M3GNet GPU — 800 K — production" report_figures="02_LiNbOCl4_three_model_MSD; 04_LiNbOCl4_Arrhenius" source_frame_index=5 relative_time_ps=0.5 pbc="T T T"
 Li      -1.38645000       6.23802000       6.37535000
 Li      -3.02378000      15.74990000       5.48551000
 Li       1.26051000       8.29199000       4.11580000
@@ -675,7 +675,7 @@ O        2.61632000      17.76660000      26.21900000
 O        5.13859000      18.80310000      28.92880000
 O        6.19652000      16.92120000      26.23290000
 336
-Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production source_frame_index=10 relative_time_ps=1.0 pbc="T T T"
+Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production display_name="LiNbOCl₄ — M3GNet GPU — 800 K — production" report_figures="02_LiNbOCl4_three_model_MSD; 04_LiNbOCl4_Arrhenius" source_frame_index=10 relative_time_ps=1.0 pbc="T T T"
 Li      -0.86333600       6.57461000       7.15178000
 Li      -2.34716000      16.73570000       5.27590000
 Li       1.15263000       8.85011000       4.30499000
@@ -1013,7 +1013,7 @@ O        2.09435000      16.41540000      25.51850000
 O        4.52299000      18.69640000      28.77800000
 O        5.69217000      16.44580000      26.22080000
 336
-Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production source_frame_index=15 relative_time_ps=1.5 pbc="T T T"
+Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production display_name="LiNbOCl₄ — M3GNet GPU — 800 K — production" report_figures="02_LiNbOCl4_three_model_MSD; 04_LiNbOCl4_Arrhenius" source_frame_index=15 relative_time_ps=1.5 pbc="T T T"
 Li      -0.55040900       6.54159000       7.53012000
 Li      -3.18085000      15.89600000       5.36156000
 Li       1.46426000       7.39446000       5.10770000
@@ -1351,7 +1351,7 @@ O       -0.65608600      15.36590000      23.37510000
 O        3.81047000      19.33810000      27.68230000
 O        4.88043000      17.11480000      26.69780000
 336
-Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production source_frame_index=20 relative_time_ps=2.0 pbc="T T T"
+Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production display_name="LiNbOCl₄ — M3GNet GPU — 800 K — production" report_figures="02_LiNbOCl4_three_model_MSD; 04_LiNbOCl4_Arrhenius" source_frame_index=20 relative_time_ps=2.0 pbc="T T T"
 Li      -0.55431100       7.71922000       7.92682000
 Li      -2.88930000      15.86160000       5.23704000
 Li       1.44814000       8.26987000       5.26106000
@@ -1689,7 +1689,7 @@ O        2.41882000      16.15270000      24.85010000
 O        6.22032000      20.67510000      28.22080000
 O        5.73483000      17.13240000      26.52600000
 336
-Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production source_frame_index=25 relative_time_ps=2.5 pbc="T T T"
+Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production display_name="LiNbOCl₄ — M3GNet GPU — 800 K — production" report_figures="02_LiNbOCl4_three_model_MSD; 04_LiNbOCl4_Arrhenius" source_frame_index=25 relative_time_ps=2.5 pbc="T T T"
 Li      -1.21400000       6.45592000       8.68895000
 Li      -2.85031000      15.91180000       6.35225000
 Li       0.71623900       8.55094000       5.31459000
@@ -2027,7 +2027,7 @@ O        1.84706000      17.44050000      23.48650000
 O        4.58700000      18.56330000      27.65350000
 O        6.28288000      17.20180000      24.21040000
 336
-Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production source_frame_index=30 relative_time_ps=3.0 pbc="T T T"
+Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production display_name="LiNbOCl₄ — M3GNet GPU — 800 K — production" report_figures="02_LiNbOCl4_three_model_MSD; 04_LiNbOCl4_Arrhenius" source_frame_index=30 relative_time_ps=3.0 pbc="T T T"
 Li      -0.84414100       7.51971000       8.00904000
 Li      -3.13696000      15.64950000       6.56435000
 Li       0.46883800       8.09765000       4.97612000
@@ -2365,7 +2365,7 @@ O        1.69169000      16.65480000      22.15620000
 O        6.00987000      18.06360000      28.79350000
 O        3.94022000      16.38930000      23.70950000
 336
-Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production source_frame_index=35 relative_time_ps=3.5 pbc="T T T"
+Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production display_name="LiNbOCl₄ — M3GNet GPU — 800 K — production" report_figures="02_LiNbOCl4_three_model_MSD; 04_LiNbOCl4_Arrhenius" source_frame_index=35 relative_time_ps=3.5 pbc="T T T"
 Li       0.00243030       6.76826000       8.91548000
 Li      -3.11418000      15.51880000       5.77247000
 Li       0.84681400       7.17314000       5.23460000
@@ -2703,7 +2703,7 @@ O        3.26340000      15.86050000      23.91380000
 O        4.68653000      18.09680000      28.11110000
 O        0.07198770      15.78060000      21.65890000
 336
-Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production source_frame_index=40 relative_time_ps=4.0 pbc="T T T"
+Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production display_name="LiNbOCl₄ — M3GNet GPU — 800 K — production" report_figures="02_LiNbOCl4_three_model_MSD; 04_LiNbOCl4_Arrhenius" source_frame_index=40 relative_time_ps=4.0 pbc="T T T"
 Li      -1.79963000       6.99710000       8.61907000
 Li      -3.40162000      14.88110000       5.72568000
 Li       1.06405000       6.29043000       5.27896000
@@ -3041,7 +3041,7 @@ O        2.90617000      15.58680000      22.18720000
 O        5.93080000      18.67440000      27.77830000
 O        1.78664000      17.89690000      23.29710000
 336
-Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production source_frame_index=45 relative_time_ps=4.5 pbc="T T T"
+Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production display_name="LiNbOCl₄ — M3GNet GPU — 800 K — production" report_figures="02_LiNbOCl4_three_model_MSD; 04_LiNbOCl4_Arrhenius" source_frame_index=45 relative_time_ps=4.5 pbc="T T T"
 Li      -2.06794000       6.99154000       8.58861000
 Li      -2.54892000      14.97070000       5.64519000
 Li       1.12601000       6.50170000       4.91314000
@@ -3379,7 +3379,7 @@ O        1.72899000      18.07380000      24.89220000
 O        6.50121000      18.73090000      29.52930000
 O        1.27512000      16.11840000      22.80920000
 336
-Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production source_frame_index=50 relative_time_ps=5.0 pbc="T T T"
+Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production display_name="LiNbOCl₄ — M3GNet GPU — 800 K — production" report_figures="02_LiNbOCl4_three_model_MSD; 04_LiNbOCl4_Arrhenius" source_frame_index=50 relative_time_ps=5.0 pbc="T T T"
 Li      -2.09166000       6.76649000       9.10878000
 Li      -2.99568000      14.31430000       5.66345000
 Li       0.24743200       5.83361000       4.97342000
@@ -3717,7 +3717,7 @@ O        3.31761000      17.03510000      24.47530000
 O        5.60732000      19.44750000      28.42610000
 O        1.27137000      16.94580000      22.73690000
 336
-Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production source_frame_index=55 relative_time_ps=5.5 pbc="T T T"
+Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production display_name="LiNbOCl₄ — M3GNet GPU — 800 K — production" report_figures="02_LiNbOCl4_three_model_MSD; 04_LiNbOCl4_Arrhenius" source_frame_index=55 relative_time_ps=5.5 pbc="T T T"
 Li      -1.07030000       6.58644000       9.29819000
 Li      -2.68944000      14.67990000       5.68095000
 Li       1.04344000       5.77668000       5.64251000
@@ -4055,7 +4055,7 @@ O        3.31686000      16.74330000      23.35360000
 O        6.39225000      18.85890000      28.73150000
 O        1.02435000      15.62890000      22.29980000
 336
-Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production source_frame_index=60 relative_time_ps=6.0 pbc="T T T"
+Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production display_name="LiNbOCl₄ — M3GNet GPU — 800 K — production" report_figures="02_LiNbOCl4_three_model_MSD; 04_LiNbOCl4_Arrhenius" source_frame_index=60 relative_time_ps=6.0 pbc="T T T"
 Li      -0.81120000       6.52372000       8.25549000
 Li      -3.32118000      15.00760000       6.44281000
 Li       0.57453000       6.20271000       5.60199000
@@ -4393,7 +4393,7 @@ O        2.40463000      15.83100000      22.26770000
 O        5.23133000      18.55170000      29.82790000
 O       -1.19715000      16.35470000      23.58690000
 336
-Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production source_frame_index=65 relative_time_ps=6.5 pbc="T T T"
+Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production display_name="LiNbOCl₄ — M3GNet GPU — 800 K — production" report_figures="02_LiNbOCl4_three_model_MSD; 04_LiNbOCl4_Arrhenius" source_frame_index=65 relative_time_ps=6.5 pbc="T T T"
 Li      -1.52752000       5.69418000       7.69242000
 Li      -2.96992000      14.34540000       6.08671000
 Li       1.00094000       7.26655000       5.97240000
@@ -4731,7 +4731,7 @@ O        2.15682000      16.02990000      22.31280000
 O        5.31452000      18.85380000      29.88070000
 O        0.34553400      17.17250000      24.00400000
 336
-Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production source_frame_index=70 relative_time_ps=7.0 pbc="T T T"
+Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production display_name="LiNbOCl₄ — M3GNet GPU — 800 K — production" report_figures="02_LiNbOCl4_three_model_MSD; 04_LiNbOCl4_Arrhenius" source_frame_index=70 relative_time_ps=7.0 pbc="T T T"
 Li      -1.30094000       4.69667000       7.35261000
 Li      -2.63657000      14.22760000       6.21433000
 Li       0.72583400       6.58876000       5.22894000
@@ -5069,7 +5069,7 @@ O        2.43727000      15.73980000      22.31200000
 O        5.85134000      19.49050000      28.86110000
 O        0.22864800      17.58620000      24.37210000
 336
-Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production source_frame_index=75 relative_time_ps=7.5 pbc="T T T"
+Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production display_name="LiNbOCl₄ — M3GNet GPU — 800 K — production" report_figures="02_LiNbOCl4_three_model_MSD; 04_LiNbOCl4_Arrhenius" source_frame_index=75 relative_time_ps=7.5 pbc="T T T"
 Li      -1.05930000       5.30655000       7.46372000
 Li      -2.97126000      14.24640000       6.05298000
 Li       1.33360000       7.45526000       5.87025000
@@ -5407,7 +5407,7 @@ O        1.83218000      14.72810000      21.87970000
 O        5.66547000      18.73260000      30.04970000
 O       -0.86372500      16.10240000      24.72890000
 336
-Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production source_frame_index=80 relative_time_ps=8.0 pbc="T T T"
+Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production display_name="LiNbOCl₄ — M3GNet GPU — 800 K — production" report_figures="02_LiNbOCl4_three_model_MSD; 04_LiNbOCl4_Arrhenius" source_frame_index=80 relative_time_ps=8.0 pbc="T T T"
 Li       0.09985460       5.50516000       7.59145000
 Li      -2.30535000      14.44830000       6.38205000
 Li       2.33837000       7.39443000       5.71344000
@@ -5745,7 +5745,7 @@ O        0.06030610      15.42260000      22.57640000
 O        4.30464000      18.20610000      29.03390000
 O       -1.29369000      16.65670000      25.93800000
 336
-Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production source_frame_index=85 relative_time_ps=8.5 pbc="T T T"
+Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production display_name="LiNbOCl₄ — M3GNet GPU — 800 K — production" report_figures="02_LiNbOCl4_three_model_MSD; 04_LiNbOCl4_Arrhenius" source_frame_index=85 relative_time_ps=8.5 pbc="T T T"
 Li      -0.51238600       7.02362000       7.75982000
 Li      -2.33202000      14.98010000       6.61130000
 Li       1.75024000       7.84234000       5.35509000
@@ -6083,7 +6083,7 @@ O        0.57085500      14.83850000      23.95010000
 O        4.38602000      17.82500000      28.79420000
 O        0.48061400      17.35740000      25.25810000
 336
-Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production source_frame_index=90 relative_time_ps=9.0 pbc="T T T"
+Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production display_name="LiNbOCl₄ — M3GNet GPU — 800 K — production" report_figures="02_LiNbOCl4_three_model_MSD; 04_LiNbOCl4_Arrhenius" source_frame_index=90 relative_time_ps=9.0 pbc="T T T"
 Li       0.41658600       6.13352000       7.33401000
 Li      -1.13978000      14.78960000       6.12979000
 Li       2.57541000       7.84630000       5.27951000
@@ -6421,7 +6421,7 @@ O        1.21448000      14.98480000      22.92930000
 O        5.19324000      18.44750000      27.82010000
 O       -3.05043000      15.74120000      25.68510000
 336
-Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production source_frame_index=95 relative_time_ps=9.5 pbc="T T T"
+Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production display_name="LiNbOCl₄ — M3GNet GPU — 800 K — production" report_figures="02_LiNbOCl4_three_model_MSD; 04_LiNbOCl4_Arrhenius" source_frame_index=95 relative_time_ps=9.5 pbc="T T T"
 Li       0.23321600       6.19626000       7.17410000
 Li      -0.93704200      14.98720000       7.01680000
 Li       2.78154000       7.68364000       4.97760000
@@ -6759,7 +6759,7 @@ O        1.09510000      15.94660000      23.02790000
 O        4.84305000      18.38920000      29.03690000
 O       -3.87653000      15.64000000      25.29190000
 336
-Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production source_frame_index=100 relative_time_ps=10.0 pbc="T T T"
+Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production display_name="LiNbOCl₄ — M3GNet GPU — 800 K — production" report_figures="02_LiNbOCl4_three_model_MSD; 04_LiNbOCl4_Arrhenius" source_frame_index=100 relative_time_ps=10.0 pbc="T T T"
 Li       0.25599500       6.59765000       7.56619000
 Li      -1.17122000      14.88750000       6.55674000
 Li       2.90305000       7.38665000       5.45884000
@@ -7097,7 +7097,7 @@ O        0.03082110      16.31530000      22.74690000
 O        4.13443000      18.33630000      28.24190000
 O       -5.42972000      17.26120000      24.49080000
 336
-Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production source_frame_index=105 relative_time_ps=10.5 pbc="T T T"
+Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production display_name="LiNbOCl₄ — M3GNet GPU — 800 K — production" report_figures="02_LiNbOCl4_three_model_MSD; 04_LiNbOCl4_Arrhenius" source_frame_index=105 relative_time_ps=10.5 pbc="T T T"
 Li       0.66804800       6.34459000       7.35535000
 Li      -1.66274000      14.35960000       6.09603000
 Li       2.73490000       7.81890000       4.78173000
@@ -7435,7 +7435,7 @@ O        0.20491500      15.47410000      23.17150000
 O        5.36642000      18.90080000      29.66890000
 O       -4.55988000      16.14240000      25.98150000
 336
-Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production source_frame_index=110 relative_time_ps=11.0 pbc="T T T"
+Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production display_name="LiNbOCl₄ — M3GNet GPU — 800 K — production" report_figures="02_LiNbOCl4_three_model_MSD; 04_LiNbOCl4_Arrhenius" source_frame_index=110 relative_time_ps=11.0 pbc="T T T"
 Li       0.57856900       6.49691000       7.50495000
 Li      -1.38089000      14.52230000       6.40214000
 Li       2.79625000       7.95451000       4.84274000
@@ -7773,7 +7773,7 @@ O        1.69711000      15.58630000      23.13110000
 O        4.21096000      19.16690000      28.90110000
 O       -3.93339000      16.43760000      25.98050000
 336
-Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production source_frame_index=115 relative_time_ps=11.5 pbc="T T T"
+Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production display_name="LiNbOCl₄ — M3GNet GPU — 800 K — production" report_figures="02_LiNbOCl4_three_model_MSD; 04_LiNbOCl4_Arrhenius" source_frame_index=115 relative_time_ps=11.5 pbc="T T T"
 Li       1.04044000       6.99326000       7.49445000
 Li      -1.74107000      14.11870000       6.61744000
 Li       3.47978000       7.28153000       4.74291000
@@ -8111,7 +8111,7 @@ O        1.44966000      15.29930000      22.87220000
 O        4.99995000      18.88790000      28.69850000
 O       -3.59467000      16.17900000      25.64990000
 336
-Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production source_frame_index=120 relative_time_ps=12.0 pbc="T T T"
+Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production display_name="LiNbOCl₄ — M3GNet GPU — 800 K — production" report_figures="02_LiNbOCl4_three_model_MSD; 04_LiNbOCl4_Arrhenius" source_frame_index=120 relative_time_ps=12.0 pbc="T T T"
 Li       0.94864600       6.56902000       6.98942000
 Li      -1.34018000      14.22410000       6.04446000
 Li       3.76717000       7.39149000       4.77893000
@@ -8449,7 +8449,7 @@ O        1.39529000      16.35040000      23.71860000
 O        4.87373000      18.66300000      28.84480000
 O       -3.26625000      16.78810000      25.94660000
 336
-Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production source_frame_index=125 relative_time_ps=12.5 pbc="T T T"
+Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production display_name="LiNbOCl₄ — M3GNet GPU — 800 K — production" report_figures="02_LiNbOCl4_three_model_MSD; 04_LiNbOCl4_Arrhenius" source_frame_index=125 relative_time_ps=12.5 pbc="T T T"
 Li       1.38459000       7.08793000       6.84833000
 Li      -1.22471000      14.16840000       6.22306000
 Li       3.92849000       7.97275000       4.51147000
@@ -8787,7 +8787,7 @@ O        2.92675000      15.80660000      25.47640000
 O        4.24220000      18.90500000      29.45620000
 O       -4.76226000      18.25540000      26.73860000
 336
-Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production source_frame_index=130 relative_time_ps=13.0 pbc="T T T"
+Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production display_name="LiNbOCl₄ — M3GNet GPU — 800 K — production" report_figures="02_LiNbOCl4_three_model_MSD; 04_LiNbOCl4_Arrhenius" source_frame_index=130 relative_time_ps=13.0 pbc="T T T"
 Li       2.08475000       6.62694000       6.82958000
 Li      -0.35977800      13.80020000       6.41083000
 Li       5.20995000       7.07284000       4.77717000
@@ -9125,7 +9125,7 @@ O        0.13716100      15.62640000      23.42320000
 O        3.15650000      19.86910000      28.49990000
 O       -4.03761000      16.10260000      25.72640000
 336
-Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production source_frame_index=135 relative_time_ps=13.5 pbc="T T T"
+Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production display_name="LiNbOCl₄ — M3GNet GPU — 800 K — production" report_figures="02_LiNbOCl4_three_model_MSD; 04_LiNbOCl4_Arrhenius" source_frame_index=135 relative_time_ps=13.5 pbc="T T T"
 Li       1.45125000       6.97527000       7.30421000
 Li      -1.44715000      14.01580000       6.33255000
 Li       3.77161000       7.26833000       4.45034000
@@ -9463,7 +9463,7 @@ O        1.86245000      16.67910000      23.33250000
 O        4.60227000      18.39510000      28.71810000
 O       -4.27253000      17.71050000      27.00070000
 336
-Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production source_frame_index=140 relative_time_ps=14.0 pbc="T T T"
+Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production display_name="LiNbOCl₄ — M3GNet GPU — 800 K — production" report_figures="02_LiNbOCl4_three_model_MSD; 04_LiNbOCl4_Arrhenius" source_frame_index=140 relative_time_ps=14.0 pbc="T T T"
 Li       1.71278000       7.09741000       7.70387000
 Li      -0.86902300      14.32280000       6.07034000
 Li       4.70984000       7.00865000       5.61782000
@@ -9801,7 +9801,7 @@ O        1.58311000      15.69400000      24.04360000
 O        3.80528000      19.23520000      26.69340000
 O       -4.44693000      16.72910000      27.33370000
 336
-Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production source_frame_index=145 relative_time_ps=14.5 pbc="T T T"
+Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production display_name="LiNbOCl₄ — M3GNet GPU — 800 K — production" report_figures="02_LiNbOCl4_three_model_MSD; 04_LiNbOCl4_Arrhenius" source_frame_index=145 relative_time_ps=14.5 pbc="T T T"
 Li       2.16725000       6.90335000       7.48638000
 Li      -0.96073900      14.32680000       5.59989000
 Li       5.12388000       6.71874000       5.28381000
@@ -10139,7 +10139,7 @@ O       -0.27206000      16.44940000      23.85460000
 O        4.59733000      18.59520000      29.50710000
 O       -5.27458000      17.39220000      26.79860000
 336
-Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production source_frame_index=150 relative_time_ps=15.0 pbc="T T T"
+Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production display_name="LiNbOCl₄ — M3GNet GPU — 800 K — production" report_figures="02_LiNbOCl4_three_model_MSD; 04_LiNbOCl4_Arrhenius" source_frame_index=150 relative_time_ps=15.0 pbc="T T T"
 Li       1.91951000       6.81357000       7.27431000
 Li      -1.37585000      13.88860000       6.08840000
 Li       4.77086000       6.65482000       4.97499000
@@ -10477,7 +10477,7 @@ O       -1.26637000      16.51450000      23.48650000
 O        3.71228000      18.49410000      28.55800000
 O       -5.64728000      17.36690000      25.14520000
 336
-Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production source_frame_index=155 relative_time_ps=15.5 pbc="T T T"
+Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production display_name="LiNbOCl₄ — M3GNet GPU — 800 K — production" report_figures="02_LiNbOCl4_three_model_MSD; 04_LiNbOCl4_Arrhenius" source_frame_index=155 relative_time_ps=15.5 pbc="T T T"
 Li       2.05115000       6.47385000       7.57102000
 Li      -0.98180200      13.95540000       6.47180000
 Li       4.90465000       6.09862000       5.23773000
@@ -10815,7 +10815,7 @@ O       -0.90789500      17.10410000      25.80890000
 O        3.62196000      18.33560000      27.49300000
 O       -6.19688000      15.48000000      22.85180000
 336
-Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production source_frame_index=160 relative_time_ps=16.0 pbc="T T T"
+Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production display_name="LiNbOCl₄ — M3GNet GPU — 800 K — production" report_figures="02_LiNbOCl4_three_model_MSD; 04_LiNbOCl4_Arrhenius" source_frame_index=160 relative_time_ps=16.0 pbc="T T T"
 Li       2.07996000       6.46508000       7.24295000
 Li      -1.22289000      13.60450000       6.62974000
 Li       4.58378000       6.50025000       4.89362000
@@ -11153,7 +11153,7 @@ O        2.45205000      17.77900000      25.28360000
 O        4.81828000      18.94640000      29.17870000
 O       -4.97740000      16.10540000      23.24640000
 336
-Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production source_frame_index=165 relative_time_ps=16.5 pbc="T T T"
+Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production display_name="LiNbOCl₄ — M3GNet GPU — 800 K — production" report_figures="02_LiNbOCl4_three_model_MSD; 04_LiNbOCl4_Arrhenius" source_frame_index=165 relative_time_ps=16.5 pbc="T T T"
 Li       2.07067000       6.86020000       7.33776000
 Li      -1.34288000      14.17940000       6.09211000
 Li       4.81431000       7.23098000       4.81916000
@@ -11491,7 +11491,7 @@ O       -0.81619200      16.50790000      23.05590000
 O        4.76705000      18.47410000      28.39040000
 O       -4.98817000      17.74960000      24.73290000
 336
-Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production source_frame_index=170 relative_time_ps=17.0 pbc="T T T"
+Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production display_name="LiNbOCl₄ — M3GNet GPU — 800 K — production" report_figures="02_LiNbOCl4_three_model_MSD; 04_LiNbOCl4_Arrhenius" source_frame_index=170 relative_time_ps=17.0 pbc="T T T"
 Li       2.77695000       7.16207000       7.45881000
 Li      -0.89343700      14.44700000       6.14241000
 Li       5.50619000       7.67754000       5.22493000
@@ -11829,7 +11829,7 @@ O       -1.44095000      15.70670000      22.99590000
 O        4.75536000      18.32390000      28.82780000
 O       -5.76747000      16.91180000      24.51910000
 336
-Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production source_frame_index=175 relative_time_ps=17.5 pbc="T T T"
+Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production display_name="LiNbOCl₄ — M3GNet GPU — 800 K — production" report_figures="02_LiNbOCl4_three_model_MSD; 04_LiNbOCl4_Arrhenius" source_frame_index=175 relative_time_ps=17.5 pbc="T T T"
 Li       2.09133000       7.16168000       7.46963000
 Li      -0.82187000      14.36570000       5.93297000
 Li       4.75781000       7.01251000       5.10386000
@@ -12167,7 +12167,7 @@ O       -1.17541000      17.40390000      24.98180000
 O        6.00135000      17.33180000      29.86230000
 O       -5.57730000      17.72900000      23.93070000
 336
-Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production source_frame_index=180 relative_time_ps=18.0 pbc="T T T"
+Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production display_name="LiNbOCl₄ — M3GNet GPU — 800 K — production" report_figures="02_LiNbOCl4_three_model_MSD; 04_LiNbOCl4_Arrhenius" source_frame_index=180 relative_time_ps=18.0 pbc="T T T"
 Li       3.41312000       6.70234000       7.59928000
 Li      -1.01648000      14.21510000       6.47904000
 Li       6.30353000       7.25591000       5.52953000
@@ -12505,7 +12505,7 @@ O       -1.74931000      16.84070000      25.73030000
 O        5.28997000      17.85280000      29.53090000
 O       -6.63835000      17.50270000      22.96850000
 336
-Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production source_frame_index=185 relative_time_ps=18.5 pbc="T T T"
+Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production display_name="LiNbOCl₄ — M3GNet GPU — 800 K — production" report_figures="02_LiNbOCl4_three_model_MSD; 04_LiNbOCl4_Arrhenius" source_frame_index=185 relative_time_ps=18.5 pbc="T T T"
 Li       2.35862000       6.97111000       7.20259000
 Li      -0.62857200      14.35630000       6.53236000
 Li       4.90747000       6.93747000       4.74403000
@@ -12843,7 +12843,7 @@ O       -2.53592000      16.31140000      25.22650000
 O        4.50278000      17.96750000      28.51130000
 O       -8.26800000      16.52670000      22.62330000
 336
-Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production source_frame_index=190 relative_time_ps=19.0 pbc="T T T"
+Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production display_name="LiNbOCl₄ — M3GNet GPU — 800 K — production" report_figures="02_LiNbOCl4_three_model_MSD; 04_LiNbOCl4_Arrhenius" source_frame_index=190 relative_time_ps=19.0 pbc="T T T"
 Li       1.72382000       6.64031000       7.59041000
 Li      -0.36833900      14.08470000       6.54401000
 Li       4.12565000       6.81916000       4.78358000
@@ -13181,7 +13181,7 @@ O       -3.41517000      17.74730000      27.98290000
 O        5.66269000      19.47490000      30.55890000
 O       -6.44505000      15.62220000      22.39900000
 336
-Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production source_frame_index=195 relative_time_ps=19.5 pbc="T T T"
+Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production display_name="LiNbOCl₄ — M3GNet GPU — 800 K — production" report_figures="02_LiNbOCl4_three_model_MSD; 04_LiNbOCl4_Arrhenius" source_frame_index=195 relative_time_ps=19.5 pbc="T T T"
 Li       2.17577000       6.68605000       7.04447000
 Li      -0.76886200      14.16470000       6.15752000
 Li       4.58850000       6.63721000       4.11104000
@@ -13519,7 +13519,7 @@ O       -2.09981000      16.59650000      25.93590000
 O        6.11459000      19.25560000      30.61640000
 O       -3.64472000      16.04790000      23.05060000
 336
-Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production source_frame_index=200 relative_time_ps=20.0 pbc="T T T"
+Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production display_name="LiNbOCl₄ — M3GNet GPU — 800 K — production" report_figures="02_LiNbOCl4_three_model_MSD; 04_LiNbOCl4_Arrhenius" source_frame_index=200 relative_time_ps=20.0 pbc="T T T"
 Li       1.36765000       6.82491000       7.25257000
 Li      -1.03954000      13.93340000       7.19509000
 Li       3.92595000       7.17539000       4.60870000
@@ -13857,7 +13857,7 @@ O       -1.96782000      16.85970000      26.61350000
 O        6.62147000      17.47840000      29.57160000
 O       -3.04761000      17.44290000      24.29640000
 336
-Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production source_frame_index=205 relative_time_ps=20.5 pbc="T T T"
+Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production display_name="LiNbOCl₄ — M3GNet GPU — 800 K — production" report_figures="02_LiNbOCl4_three_model_MSD; 04_LiNbOCl4_Arrhenius" source_frame_index=205 relative_time_ps=20.5 pbc="T T T"
 Li       2.30572000       6.85864000       7.38819000
 Li      -0.49715400      14.05200000       6.80754000
 Li       4.74758000       7.24229000       4.52435000
@@ -14195,7 +14195,7 @@ O       -4.30251000      15.99530000      25.28110000
 O        5.84140000      19.01320000      29.22490000
 O       -7.91502000      17.04320000      24.38630000
 336
-Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production source_frame_index=210 relative_time_ps=21.0 pbc="T T T"
+Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production display_name="LiNbOCl₄ — M3GNet GPU — 800 K — production" report_figures="02_LiNbOCl4_three_model_MSD; 04_LiNbOCl4_Arrhenius" source_frame_index=210 relative_time_ps=21.0 pbc="T T T"
 Li       2.91080000       6.88187000       7.16964000
 Li      -0.47337700      14.83580000       6.59525000
 Li       5.29589000       7.21759000       4.43590000
@@ -14533,7 +14533,7 @@ O       -5.10784000      15.66260000      24.78160000
 O        5.07819000      19.21190000      29.97730000
 O       -7.96910000      17.13560000      24.07020000
 336
-Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production source_frame_index=215 relative_time_ps=21.5 pbc="T T T"
+Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production display_name="LiNbOCl₄ — M3GNet GPU — 800 K — production" report_figures="02_LiNbOCl4_three_model_MSD; 04_LiNbOCl4_Arrhenius" source_frame_index=215 relative_time_ps=21.5 pbc="T T T"
 Li       2.53424000       7.05867000       7.15044000
 Li      -0.80106600      14.91200000       7.31117000
 Li       5.11633000       7.49690000       4.50236000
@@ -14871,7 +14871,7 @@ O       -5.63003000      16.46890000      24.92400000
 O        3.46998000      16.98530000      29.15530000
 O       -5.43387000      14.67640000      22.71620000
 336
-Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production source_frame_index=220 relative_time_ps=22.0 pbc="T T T"
+Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production display_name="LiNbOCl₄ — M3GNet GPU — 800 K — production" report_figures="02_LiNbOCl4_three_model_MSD; 04_LiNbOCl4_Arrhenius" source_frame_index=220 relative_time_ps=22.0 pbc="T T T"
 Li       2.51358000       6.85735000       7.10820000
 Li      -0.24938500      14.22700000       6.31421000
 Li       5.13391000       7.19381000       4.33385000
@@ -15209,7 +15209,7 @@ O       -8.00291000      16.15120000      23.22000000
 O        5.68291000      18.64620000      30.07330000
 O      -11.42730000      16.60060000      25.15200000
 336
-Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production source_frame_index=225 relative_time_ps=22.5 pbc="T T T"
+Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production display_name="LiNbOCl₄ — M3GNet GPU — 800 K — production" report_figures="02_LiNbOCl4_three_model_MSD; 04_LiNbOCl4_Arrhenius" source_frame_index=225 relative_time_ps=22.5 pbc="T T T"
 Li       2.23621000       6.99122000       7.16922000
 Li      -0.67273900      15.11270000       7.31085000
 Li       4.84374000       7.44550000       4.69072000
@@ -15547,7 +15547,7 @@ O       -6.29465000      14.59510000      23.92740000
 O        6.26379000      17.81510000      29.55770000
 O       -9.31115000      16.80720000      26.77940000
 336
-Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production source_frame_index=230 relative_time_ps=23.0 pbc="T T T"
+Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production display_name="LiNbOCl₄ — M3GNet GPU — 800 K — production" report_figures="02_LiNbOCl4_three_model_MSD; 04_LiNbOCl4_Arrhenius" source_frame_index=230 relative_time_ps=23.0 pbc="T T T"
 Li       2.07608000       6.87658000       7.36424000
 Li      -0.39689000      14.08220000       6.42708000
 Li       4.76855000       7.18401000       4.77839000
@@ -15885,7 +15885,7 @@ O       -5.02756000      15.43790000      23.33970000
 O        4.43935000      17.60580000      28.45610000
 O       -8.35469000      15.83600000      22.55100000
 336
-Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production source_frame_index=235 relative_time_ps=23.5 pbc="T T T"
+Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production display_name="LiNbOCl₄ — M3GNet GPU — 800 K — production" report_figures="02_LiNbOCl4_three_model_MSD; 04_LiNbOCl4_Arrhenius" source_frame_index=235 relative_time_ps=23.5 pbc="T T T"
 Li       2.47151000       6.88843000       7.09585000
 Li      -0.82945500      14.15410000       6.77467000
 Li       5.06988000       7.04704000       4.26106000
@@ -16223,7 +16223,7 @@ O       -5.37591000      15.87630000      23.53270000
 O        5.91694000      19.50450000      29.81920000
 O       -6.60532000      16.91540000      25.11850000
 336
-Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production source_frame_index=240 relative_time_ps=24.0 pbc="T T T"
+Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production display_name="LiNbOCl₄ — M3GNet GPU — 800 K — production" report_figures="02_LiNbOCl4_three_model_MSD; 04_LiNbOCl4_Arrhenius" source_frame_index=240 relative_time_ps=24.0 pbc="T T T"
 Li       2.47507000       7.15276000       7.09819000
 Li      -0.47352900      14.66370000       6.92244000
 Li       4.81315000       6.96927000       4.23576000
@@ -16561,7 +16561,7 @@ O       -6.01874000      16.83220000      24.42190000
 O        5.73146000      18.85150000      30.34240000
 O       -6.72987000      15.32020000      22.85830000
 336
-Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production source_frame_index=245 relative_time_ps=24.5 pbc="T T T"
+Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production display_name="LiNbOCl₄ — M3GNet GPU — 800 K — production" report_figures="02_LiNbOCl4_three_model_MSD; 04_LiNbOCl4_Arrhenius" source_frame_index=245 relative_time_ps=24.5 pbc="T T T"
 Li       2.49045000       7.28577000       7.13797000
 Li      -0.62481500      14.76370000       7.16138000
 Li       4.61963000       7.44960000       4.52479000
@@ -16899,7 +16899,7 @@ O       -4.64730000      16.26530000      25.93390000
 O        5.00699000      19.53960000      30.21800000
 O       -7.01504000      15.42510000      23.05970000
 336
-Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production source_frame_index=250 relative_time_ps=25.0 pbc="T T T"
+Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production display_name="LiNbOCl₄ — M3GNet GPU — 800 K — production" report_figures="02_LiNbOCl4_three_model_MSD; 04_LiNbOCl4_Arrhenius" source_frame_index=250 relative_time_ps=25.0 pbc="T T T"
 Li       2.91235000       6.60709000       7.34393000
 Li      -0.88843000      14.31390000       6.57368000
 Li       5.39068000       7.03878000       4.62710000
@@ -17237,7 +17237,7 @@ O       -5.01695000      16.00880000      25.94640000
 O        6.59728000      18.43400000      29.77570000
 O       -6.53986000      14.98500000      22.92170000
 336
-Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production source_frame_index=255 relative_time_ps=25.5 pbc="T T T"
+Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production display_name="LiNbOCl₄ — M3GNet GPU — 800 K — production" report_figures="02_LiNbOCl4_three_model_MSD; 04_LiNbOCl4_Arrhenius" source_frame_index=255 relative_time_ps=25.5 pbc="T T T"
 Li       3.06287000       6.32005000       7.08046000
 Li      -0.80735800      14.20580000       6.90061000
 Li       5.74275000       6.49959000       4.37111000
@@ -17575,7 +17575,7 @@ O       -5.59581000      16.17360000      25.63630000
 O        5.41475000      19.96860000      30.40490000
 O       -7.05889000      15.55090000      23.61320000
 336
-Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production source_frame_index=260 relative_time_ps=26.0 pbc="T T T"
+Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production display_name="LiNbOCl₄ — M3GNet GPU — 800 K — production" report_figures="02_LiNbOCl4_three_model_MSD; 04_LiNbOCl4_Arrhenius" source_frame_index=260 relative_time_ps=26.0 pbc="T T T"
 Li       2.66063000       6.57275000       7.34142000
 Li      -0.68023900      14.22880000       6.80405000
 Li       4.98395000       7.10309000       4.42184000
@@ -17913,7 +17913,7 @@ O       -4.90001000      16.47090000      26.29560000
 O        5.55377000      20.55190000      30.31240000
 O       -7.14084000      16.68340000      24.63980000
 336
-Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production source_frame_index=265 relative_time_ps=26.5 pbc="T T T"
+Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production display_name="LiNbOCl₄ — M3GNet GPU — 800 K — production" report_figures="02_LiNbOCl4_three_model_MSD; 04_LiNbOCl4_Arrhenius" source_frame_index=265 relative_time_ps=26.5 pbc="T T T"
 Li       3.10126000       7.06676000       7.40735000
 Li      -0.57278000      14.59230000       6.72711000
 Li       5.43215000       7.23257000       4.27488000
@@ -18251,7 +18251,7 @@ O       -5.55170000      15.63110000      25.90410000
 O        5.14582000      20.01700000      30.76300000
 O       -7.70955000      15.00500000      22.79140000
 336
-Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production source_frame_index=270 relative_time_ps=27.0 pbc="T T T"
+Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production display_name="LiNbOCl₄ — M3GNet GPU — 800 K — production" report_figures="02_LiNbOCl4_three_model_MSD; 04_LiNbOCl4_Arrhenius" source_frame_index=270 relative_time_ps=27.0 pbc="T T T"
 Li       3.43743000       6.75029000       7.53437000
 Li      -0.36326000      15.17760000       6.75827000
 Li       5.42348000       6.99136000       4.56365000
@@ -18589,7 +18589,7 @@ O       -5.82672000      15.37850000      25.99110000
 O        4.99432000      19.41130000      30.59010000
 O       -7.58019000      15.00990000      23.53330000
 336
-Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production source_frame_index=275 relative_time_ps=27.5 pbc="T T T"
+Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production display_name="LiNbOCl₄ — M3GNet GPU — 800 K — production" report_figures="02_LiNbOCl4_three_model_MSD; 04_LiNbOCl4_Arrhenius" source_frame_index=275 relative_time_ps=27.5 pbc="T T T"
 Li       2.69109000       6.29680000       7.27334000
 Li      -0.17512400      14.40430000       6.92180000
 Li       5.16112000       6.97687000       4.56906000
@@ -18927,7 +18927,7 @@ O       -5.85997000      16.10030000      26.17650000
 O        5.83603000      18.32520000      31.00500000
 O       -7.12792000      16.32440000      23.44320000
 336
-Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production source_frame_index=280 relative_time_ps=28.0 pbc="T T T"
+Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production display_name="LiNbOCl₄ — M3GNet GPU — 800 K — production" report_figures="02_LiNbOCl4_three_model_MSD; 04_LiNbOCl4_Arrhenius" source_frame_index=280 relative_time_ps=28.0 pbc="T T T"
 Li       3.53348000       7.36244000       7.58688000
 Li      -0.28955100      15.16410000       6.98063000
 Li       6.00694000       7.76822000       4.76199000
@@ -19265,7 +19265,7 @@ O       -6.28538000      15.51600000      25.62320000
 O        4.49472000      19.51680000      29.76660000
 O       -7.89070000      14.55610000      22.50200000
 336
-Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production source_frame_index=285 relative_time_ps=28.5 pbc="T T T"
+Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production display_name="LiNbOCl₄ — M3GNet GPU — 800 K — production" report_figures="02_LiNbOCl4_three_model_MSD; 04_LiNbOCl4_Arrhenius" source_frame_index=285 relative_time_ps=28.5 pbc="T T T"
 Li       3.90121000       6.78977000       7.18628000
 Li      -0.53344800      14.49440000       6.26042000
 Li       6.35862000       7.48176000       4.74667000
@@ -19603,7 +19603,7 @@ O       -6.25766000      15.57060000      26.18860000
 O        5.26818000      18.85430000      29.62970000
 O       -7.92144000      15.33220000      23.48040000
 336
-Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production source_frame_index=290 relative_time_ps=29.0 pbc="T T T"
+Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production display_name="LiNbOCl₄ — M3GNet GPU — 800 K — production" report_figures="02_LiNbOCl4_three_model_MSD; 04_LiNbOCl4_Arrhenius" source_frame_index=290 relative_time_ps=29.0 pbc="T T T"
 Li       3.94393000       6.88627000       7.46709000
 Li      -0.85824800      14.42450000       6.86064000
 Li       6.40193000       7.29515000       4.93156000
@@ -19941,7 +19941,7 @@ O       -5.94238000      15.88260000      25.38510000
 O        5.05835000      19.11830000      29.87600000
 O       -7.62025000      15.79900000      23.30340000
 336
-Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production source_frame_index=295 relative_time_ps=29.5 pbc="T T T"
+Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production display_name="LiNbOCl₄ — M3GNet GPU — 800 K — production" report_figures="02_LiNbOCl4_three_model_MSD; 04_LiNbOCl4_Arrhenius" source_frame_index=295 relative_time_ps=29.5 pbc="T T T"
 Li       4.02187000       6.67782000       7.37804000
 Li      -0.45122700      14.41510000       6.48664000
 Li       6.47909000       7.03642000       4.51343000
@@ -20279,7 +20279,7 @@ O       -5.70429000      16.23620000      26.07090000
 O        4.78568000      19.45870000      30.82580000
 O       -8.31953000      16.11540000      23.06420000
 336
-Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production source_frame_index=300 relative_time_ps=30.0 pbc="T T T"
+Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production display_name="LiNbOCl₄ — M3GNet GPU — 800 K — production" report_figures="02_LiNbOCl4_three_model_MSD; 04_LiNbOCl4_Arrhenius" source_frame_index=300 relative_time_ps=30.0 pbc="T T T"
 Li       3.25306000       6.86269000       7.17127000
 Li      -0.61992500      13.96320000       7.08114000
 Li       5.80610000       6.93597000       4.68836000
@@ -20617,7 +20617,7 @@ O       -5.54109000      15.94760000      25.59470000
 O        5.98906000      18.74670000      29.56930000
 O       -8.30252000      15.16250000      23.02240000
 336
-Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production source_frame_index=305 relative_time_ps=30.5 pbc="T T T"
+Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production display_name="LiNbOCl₄ — M3GNet GPU — 800 K — production" report_figures="02_LiNbOCl4_three_model_MSD; 04_LiNbOCl4_Arrhenius" source_frame_index=305 relative_time_ps=30.5 pbc="T T T"
 Li       3.28052000       7.06514000       7.41860000
 Li      -1.29517000      14.00990000       6.81247000
 Li       5.89229000       7.35484000       4.92819000
@@ -20955,7 +20955,7 @@ O       -5.38288000      16.00530000      26.22770000
 O        6.36519000      19.20680000      29.54800000
 O       -6.60752000      15.83840000      24.07550000
 336
-Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production source_frame_index=310 relative_time_ps=31.0 pbc="T T T"
+Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production display_name="LiNbOCl₄ — M3GNet GPU — 800 K — production" report_figures="02_LiNbOCl4_three_model_MSD; 04_LiNbOCl4_Arrhenius" source_frame_index=310 relative_time_ps=31.0 pbc="T T T"
 Li       2.70225000       6.80925000       7.60162000
 Li      -0.77799700      14.16510000       7.10627000
 Li       5.30241000       7.47721000       4.89931000
@@ -21293,7 +21293,7 @@ O       -5.47867000      16.29230000      26.40730000
 O        5.42965000      19.52460000      30.00990000
 O       -6.97639000      15.41970000      23.62540000
 336
-Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production source_frame_index=315 relative_time_ps=31.5 pbc="T T T"
+Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production display_name="LiNbOCl₄ — M3GNet GPU — 800 K — production" report_figures="02_LiNbOCl4_three_model_MSD; 04_LiNbOCl4_Arrhenius" source_frame_index=315 relative_time_ps=31.5 pbc="T T T"
 Li       3.04328000       6.89283000       7.34420000
 Li      -1.17811000      14.34190000       7.31842000
 Li       5.74693000       7.03947000       4.75656000
@@ -21631,7 +21631,7 @@ O       -8.00296000      16.24930000      24.61360000
 O        5.97552000      18.24540000      29.95550000
 O       -4.91062000      16.58210000      25.86870000
 336
-Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production source_frame_index=320 relative_time_ps=32.0 pbc="T T T"
+Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production display_name="LiNbOCl₄ — M3GNet GPU — 800 K — production" report_figures="02_LiNbOCl4_three_model_MSD; 04_LiNbOCl4_Arrhenius" source_frame_index=320 relative_time_ps=32.0 pbc="T T T"
 Li       3.03711000       6.71553000       7.43066000
 Li      -0.90903800      13.73360000       6.67998000
 Li       5.46724000       6.86271000       4.74794000
@@ -21969,7 +21969,7 @@ O       -7.23251000      15.82520000      23.46840000
 O        4.82479000      19.50810000      30.03150000
 O       -4.63428000      16.48370000      26.03430000
 336
-Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production source_frame_index=325 relative_time_ps=32.5 pbc="T T T"
+Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production display_name="LiNbOCl₄ — M3GNet GPU — 800 K — production" report_figures="02_LiNbOCl4_three_model_MSD; 04_LiNbOCl4_Arrhenius" source_frame_index=325 relative_time_ps=32.5 pbc="T T T"
 Li       2.81078000       7.43663000       7.39411000
 Li      -1.00828000      14.24510000       7.46814000
 Li       5.27549000       7.64074000       4.46348000
@@ -22307,7 +22307,7 @@ O       -7.58092000      15.00100000      22.97090000
 O        6.01818000      18.21390000      29.43730000
 O       -5.03299000      15.31950000      26.08950000
 336
-Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production source_frame_index=330 relative_time_ps=33.0 pbc="T T T"
+Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production display_name="LiNbOCl₄ — M3GNet GPU — 800 K — production" report_figures="02_LiNbOCl4_three_model_MSD; 04_LiNbOCl4_Arrhenius" source_frame_index=330 relative_time_ps=33.0 pbc="T T T"
 Li       2.99605000       7.08232000       7.69308000
 Li      -1.46016000      14.39640000       7.35343000
 Li       5.74028000       7.75991000       5.29539000
@@ -22645,7 +22645,7 @@ O       -6.92085000      15.72240000      23.77050000
 O        4.83134000      19.46620000      29.60090000
 O       -4.94992000      15.61210000      25.98090000
 336
-Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production source_frame_index=335 relative_time_ps=33.5 pbc="T T T"
+Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production display_name="LiNbOCl₄ — M3GNet GPU — 800 K — production" report_figures="02_LiNbOCl4_three_model_MSD; 04_LiNbOCl4_Arrhenius" source_frame_index=335 relative_time_ps=33.5 pbc="T T T"
 Li       3.07581000       6.59294000       7.60046000
 Li      -1.41626000      13.53920000       7.12439000
 Li       5.62467000       6.69516000       4.90808000
@@ -22983,7 +22983,7 @@ O       -7.82680000      15.55920000      22.74900000
 O        5.52743000      19.30900000      29.68920000
 O       -5.94228000      16.42000000      26.02620000
 336
-Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production source_frame_index=340 relative_time_ps=34.0 pbc="T T T"
+Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production display_name="LiNbOCl₄ — M3GNet GPU — 800 K — production" report_figures="02_LiNbOCl4_three_model_MSD; 04_LiNbOCl4_Arrhenius" source_frame_index=340 relative_time_ps=34.0 pbc="T T T"
 Li       2.49771000       6.93240000       7.48516000
 Li      -1.67866000      13.67650000       6.90728000
 Li       5.03712000       6.60529000       4.96242000
@@ -23321,7 +23321,7 @@ O       -6.92048000      15.46090000      23.31650000
 O        6.01860000      19.40100000      29.85190000
 O       -4.10466000      16.69170000      26.26590000
 336
-Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production source_frame_index=345 relative_time_ps=34.5 pbc="T T T"
+Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production display_name="LiNbOCl₄ — M3GNet GPU — 800 K — production" report_figures="02_LiNbOCl4_three_model_MSD; 04_LiNbOCl4_Arrhenius" source_frame_index=345 relative_time_ps=34.5 pbc="T T T"
 Li       2.44969000       6.59688000       7.48246000
 Li      -1.47129000      13.56790000       7.04827000
 Li       5.03962000       7.04406000       5.10202000
@@ -23659,7 +23659,7 @@ O       -6.80359000      15.80960000      23.66090000
 O        4.68933000      19.65190000      30.06100000
 O       -5.91183000      16.32480000      26.61570000
 336
-Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production source_frame_index=350 relative_time_ps=35.0 pbc="T T T"
+Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production display_name="LiNbOCl₄ — M3GNet GPU — 800 K — production" report_figures="02_LiNbOCl4_three_model_MSD; 04_LiNbOCl4_Arrhenius" source_frame_index=350 relative_time_ps=35.0 pbc="T T T"
 Li       2.72435000       6.86462000       7.41039000
 Li      -0.94723900      13.70190000       6.92049000
 Li       5.32922000       7.20081000       4.96434000
@@ -23997,7 +23997,7 @@ O       -6.90197000      14.63040000      22.82090000
 O        5.65655000      19.10240000      30.17910000
 O       -6.61293000      16.44560000      24.68200000
 336
-Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production source_frame_index=355 relative_time_ps=35.5 pbc="T T T"
+Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production display_name="LiNbOCl₄ — M3GNet GPU — 800 K — production" report_figures="02_LiNbOCl4_three_model_MSD; 04_LiNbOCl4_Arrhenius" source_frame_index=355 relative_time_ps=35.5 pbc="T T T"
 Li       3.31098000       7.05387000       7.21219000
 Li      -1.02468000      13.91310000       7.18806000
 Li       5.90036000       7.20377000       4.91383000
@@ -24335,7 +24335,7 @@ O       -7.31822000      16.14990000      23.82430000
 O        5.51232000      18.96760000      29.89100000
 O       -5.93178000      15.83390000      25.99930000
 336
-Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production source_frame_index=360 relative_time_ps=36.0 pbc="T T T"
+Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production display_name="LiNbOCl₄ — M3GNet GPU — 800 K — production" report_figures="02_LiNbOCl4_three_model_MSD; 04_LiNbOCl4_Arrhenius" source_frame_index=360 relative_time_ps=36.0 pbc="T T T"
 Li       3.10797000       7.31373000       7.59251000
 Li      -1.09079000      13.78530000       7.15046000
 Li       5.40317000       7.27934000       5.04010000
@@ -24673,7 +24673,7 @@ O       -6.98441000      15.65140000      23.34340000
 O        5.12000000      19.33090000      30.58980000
 O       -6.08350000      16.12510000      25.47300000
 336
-Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production source_frame_index=365 relative_time_ps=36.5 pbc="T T T"
+Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production display_name="LiNbOCl₄ — M3GNet GPU — 800 K — production" report_figures="02_LiNbOCl4_three_model_MSD; 04_LiNbOCl4_Arrhenius" source_frame_index=365 relative_time_ps=36.5 pbc="T T T"
 Li       2.61706000       7.10652000       7.59213000
 Li      -1.34598000      13.44280000       7.27939000
 Li       5.14874000       7.28495000       5.13430000
@@ -25011,7 +25011,7 @@ O       -7.07448000      16.34320000      23.17350000
 O        5.65929000      19.29960000      30.17180000
 O       -5.62288000      16.94890000      25.60010000
 336
-Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production source_frame_index=370 relative_time_ps=37.0 pbc="T T T"
+Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production display_name="LiNbOCl₄ — M3GNet GPU — 800 K — production" report_figures="02_LiNbOCl4_three_model_MSD; 04_LiNbOCl4_Arrhenius" source_frame_index=370 relative_time_ps=37.0 pbc="T T T"
 Li       3.41557000       7.01712000       7.35157000
 Li      -1.47053000      13.99920000       7.13921000
 Li       5.91119000       7.68522000       4.84200000
@@ -25349,7 +25349,7 @@ O       -6.64100000      16.01980000      24.18030000
 O        4.08731000      19.58670000      30.43250000
 O       -4.95722000      15.98470000      26.17010000
 336
-Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production source_frame_index=375 relative_time_ps=37.5 pbc="T T T"
+Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production display_name="LiNbOCl₄ — M3GNet GPU — 800 K — production" report_figures="02_LiNbOCl4_three_model_MSD; 04_LiNbOCl4_Arrhenius" source_frame_index=375 relative_time_ps=37.5 pbc="T T T"
 Li       2.89111000       7.33234000       7.68468000
 Li      -1.62196000      14.04680000       7.42662000
 Li       5.49949000       8.13013000       5.36402000
@@ -25687,7 +25687,7 @@ O       -7.41452000      15.04370000      23.42020000
 O        5.53759000      19.23880000      29.60900000
 O       -5.79547000      15.58740000      26.39540000
 336
-Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production source_frame_index=380 relative_time_ps=38.0 pbc="T T T"
+Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production display_name="LiNbOCl₄ — M3GNet GPU — 800 K — production" report_figures="02_LiNbOCl4_three_model_MSD; 04_LiNbOCl4_Arrhenius" source_frame_index=380 relative_time_ps=38.0 pbc="T T T"
 Li       2.21799000       7.18967000       7.97577000
 Li      -1.81774000      13.98000000       7.17576000
 Li       4.94727000       7.56825000       5.17962000
@@ -26025,7 +26025,7 @@ O       -6.93126000      15.67430000      23.79750000
 O        6.15852000      18.60260000      29.91500000
 O       -5.03303000      15.84280000      25.83410000
 336
-Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production source_frame_index=385 relative_time_ps=38.5 pbc="T T T"
+Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production display_name="LiNbOCl₄ — M3GNet GPU — 800 K — production" report_figures="02_LiNbOCl4_three_model_MSD; 04_LiNbOCl4_Arrhenius" source_frame_index=385 relative_time_ps=38.5 pbc="T T T"
 Li       2.61834000       7.21867000       8.32687000
 Li      -0.75448300      13.76960000       7.40877000
 Li       5.10669000       7.60734000       5.50600000
@@ -26363,7 +26363,7 @@ O      -10.34850000      15.35020000      22.81020000
 O        5.20388000      18.31330000      28.82360000
 O       -5.91756000      15.60950000      26.78080000
 336
-Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production source_frame_index=390 relative_time_ps=39.0 pbc="T T T"
+Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production display_name="LiNbOCl₄ — M3GNet GPU — 800 K — production" report_figures="02_LiNbOCl4_three_model_MSD; 04_LiNbOCl4_Arrhenius" source_frame_index=390 relative_time_ps=39.0 pbc="T T T"
 Li       2.52304000       7.31856000       8.11108000
 Li      -1.29167000      14.24620000       7.33837000
 Li       4.82988000       7.88660000       5.34302000
@@ -26701,7 +26701,7 @@ O       -7.45423000      16.47120000      22.44370000
 O        4.19476000      18.27630000      30.19060000
 O       -4.73622000      15.91820000      27.08540000
 336
-Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production source_frame_index=395 relative_time_ps=39.5 pbc="T T T"
+Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production display_name="LiNbOCl₄ — M3GNet GPU — 800 K — production" report_figures="02_LiNbOCl4_three_model_MSD; 04_LiNbOCl4_Arrhenius" source_frame_index=395 relative_time_ps=39.5 pbc="T T T"
 Li       2.58959000       7.37112000       8.30280000
 Li      -1.13153000      14.25990000       7.29862000
 Li       5.20406000       7.89144000       5.79533000
@@ -27039,7 +27039,7 @@ O       -5.91207000      15.80540000      23.45170000
 O        5.97749000      18.28670000      30.11760000
 O       -6.24776000      15.41290000      26.31570000
 336
-Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production source_frame_index=400 relative_time_ps=40.0 pbc="T T T"
+Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production display_name="LiNbOCl₄ — M3GNet GPU — 800 K — production" report_figures="02_LiNbOCl4_three_model_MSD; 04_LiNbOCl4_Arrhenius" source_frame_index=400 relative_time_ps=40.0 pbc="T T T"
 Li       2.65750000       7.46200000       8.24624000
 Li      -1.20475000      14.29880000       7.24780000
 Li       5.21749000       7.74285000       5.50090000
@@ -27377,7 +27377,7 @@ O      -10.24680000      14.94000000      21.86030000
 O        3.64785000      17.79600000      29.05390000
 O       -6.40146000      16.09300000      24.23130000
 336
-Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production source_frame_index=405 relative_time_ps=40.5 pbc="T T T"
+Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production display_name="LiNbOCl₄ — M3GNet GPU — 800 K — production" report_figures="02_LiNbOCl4_three_model_MSD; 04_LiNbOCl4_Arrhenius" source_frame_index=405 relative_time_ps=40.5 pbc="T T T"
 Li       2.53327000       7.37407000       8.35112000
 Li      -1.53955000      14.02890000       7.35950000
 Li       5.09396000       7.77133000       5.40337000
@@ -27715,7 +27715,7 @@ O       -7.62513000      16.11430000      24.61190000
 O        5.32816000      18.54830000      29.36220000
 O       -4.73035000      15.99750000      26.07780000
 336
-Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production source_frame_index=410 relative_time_ps=41.0 pbc="T T T"
+Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production display_name="LiNbOCl₄ — M3GNet GPU — 800 K — production" report_figures="02_LiNbOCl4_three_model_MSD; 04_LiNbOCl4_Arrhenius" source_frame_index=410 relative_time_ps=41.0 pbc="T T T"
 Li       2.55503000       7.00733000       8.08510000
 Li      -0.89318200      13.72670000       7.49705000
 Li       5.07816000       7.69167000       5.49791000
@@ -28053,7 +28053,7 @@ O       -8.11378000      15.74390000      23.90230000
 O        4.86960000      18.80880000      29.48170000
 O       -6.06258000      15.74870000      26.34340000
 336
-Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production source_frame_index=415 relative_time_ps=41.5 pbc="T T T"
+Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production display_name="LiNbOCl₄ — M3GNet GPU — 800 K — production" report_figures="02_LiNbOCl4_three_model_MSD; 04_LiNbOCl4_Arrhenius" source_frame_index=415 relative_time_ps=41.5 pbc="T T T"
 Li       2.89263000       7.40634000       7.65753000
 Li      -1.33123000      13.83460000       7.44054000
 Li       5.70083000       8.09377000       5.48103000
@@ -28391,7 +28391,7 @@ O       -9.13919000      16.15830000      23.94400000
 O        4.71876000      18.82540000      30.82790000
 O       -5.71347000      15.57920000      25.38780000
 336
-Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production source_frame_index=420 relative_time_ps=42.0 pbc="T T T"
+Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production display_name="LiNbOCl₄ — M3GNet GPU — 800 K — production" report_figures="02_LiNbOCl4_three_model_MSD; 04_LiNbOCl4_Arrhenius" source_frame_index=420 relative_time_ps=42.0 pbc="T T T"
 Li       2.82452000       7.21574000       7.73445000
 Li      -1.31545000      13.79110000       7.54427000
 Li       5.31498000       7.99139000       5.32582000
@@ -28729,7 +28729,7 @@ O       -6.60782000      15.83280000      24.39320000
 O        5.36822000      19.06830000      30.46940000
 O       -8.47907000      16.33510000      25.50610000
 336
-Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production source_frame_index=425 relative_time_ps=42.5 pbc="T T T"
+Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production display_name="LiNbOCl₄ — M3GNet GPU — 800 K — production" report_figures="02_LiNbOCl4_three_model_MSD; 04_LiNbOCl4_Arrhenius" source_frame_index=425 relative_time_ps=42.5 pbc="T T T"
 Li       2.65337000       7.31756000       7.64908000
 Li      -1.35625000      14.13820000       7.59397000
 Li       5.41955000       8.01090000       5.51011000
@@ -29067,7 +29067,7 @@ O       -4.63984000      16.18210000      27.20240000
 O        3.15286000      18.64120000      29.42400000
 O       -7.41299000      16.42530000      25.28500000
 336
-Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production source_frame_index=430 relative_time_ps=43.0 pbc="T T T"
+Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production display_name="LiNbOCl₄ — M3GNet GPU — 800 K — production" report_figures="02_LiNbOCl4_three_model_MSD; 04_LiNbOCl4_Arrhenius" source_frame_index=430 relative_time_ps=43.0 pbc="T T T"
 Li       2.54870000       7.48080000       8.31723000
 Li      -1.14139000      14.16460000       7.52608000
 Li       5.11299000       8.38984000       5.77604000
@@ -29405,7 +29405,7 @@ O       -5.63198000      16.10180000      26.40750000
 O        4.78173000      18.66200000      30.72800000
 O       -8.94798000      16.82440000      25.33950000
 336
-Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production source_frame_index=435 relative_time_ps=43.5 pbc="T T T"
+Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production display_name="LiNbOCl₄ — M3GNet GPU — 800 K — production" report_figures="02_LiNbOCl4_three_model_MSD; 04_LiNbOCl4_Arrhenius" source_frame_index=435 relative_time_ps=43.5 pbc="T T T"
 Li       2.46462000       7.41306000       7.90935000
 Li      -1.33971000      14.29450000       7.42392000
 Li       5.28263000       7.94678000       5.39907000
@@ -29743,7 +29743,7 @@ O       -6.58917000      15.22790000      23.75970000
 O        5.64055000      18.38130000      29.81910000
 O       -9.30661000      16.36630000      25.31260000
 336
-Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production source_frame_index=440 relative_time_ps=44.0 pbc="T T T"
+Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production display_name="LiNbOCl₄ — M3GNet GPU — 800 K — production" report_figures="02_LiNbOCl4_three_model_MSD; 04_LiNbOCl4_Arrhenius" source_frame_index=440 relative_time_ps=44.0 pbc="T T T"
 Li       3.24218000       7.36801000       8.21684000
 Li      -0.95687800      14.26950000       6.91303000
 Li       5.78146000       7.48129000       5.43154000
@@ -30081,7 +30081,7 @@ O       -7.75241000      15.51080000      23.99820000
 O        3.12163000      18.57160000      29.19390000
 O       -8.19425000      17.29650000      27.72030000
 336
-Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production source_frame_index=445 relative_time_ps=44.5 pbc="T T T"
+Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production display_name="LiNbOCl₄ — M3GNet GPU — 800 K — production" report_figures="02_LiNbOCl4_three_model_MSD; 04_LiNbOCl4_Arrhenius" source_frame_index=445 relative_time_ps=44.5 pbc="T T T"
 Li       3.06960000       7.35420000       8.00266000
 Li      -0.95889900      14.03720000       7.33324000
 Li       5.51201000       7.74112000       5.37415000
@@ -30419,7 +30419,7 @@ O       -8.33709000      15.05410000      23.52450000
 O        4.24611000      18.15970000      29.35910000
 O      -10.45240000      16.45120000      26.21630000
 336
-Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production source_frame_index=450 relative_time_ps=45.0 pbc="T T T"
+Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production display_name="LiNbOCl₄ — M3GNet GPU — 800 K — production" report_figures="02_LiNbOCl4_three_model_MSD; 04_LiNbOCl4_Arrhenius" source_frame_index=450 relative_time_ps=45.0 pbc="T T T"
 Li       2.68232000       7.38925000       8.11876000
 Li      -1.40852000      14.04230000       7.13047000
 Li       5.13755000       7.82024000       5.33775000
@@ -30757,7 +30757,7 @@ O       -6.48081000      13.91190000      24.91220000
 O        4.36407000      18.08010000      30.16310000
 O       -8.61452000      16.30980000      26.11190000
 336
-Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production source_frame_index=455 relative_time_ps=45.5 pbc="T T T"
+Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production display_name="LiNbOCl₄ — M3GNet GPU — 800 K — production" report_figures="02_LiNbOCl4_three_model_MSD; 04_LiNbOCl4_Arrhenius" source_frame_index=455 relative_time_ps=45.5 pbc="T T T"
 Li       3.00575000       7.65223000       7.58781000
 Li      -1.30721000      14.26110000       6.93356000
 Li       5.47259000       8.20137000       5.32334000
@@ -31095,7 +31095,7 @@ O       -6.21125000      16.13400000      24.67980000
 O        4.78661000      18.15190000      28.60030000
 O       -9.86126000      16.74520000      25.60030000
 336
-Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production source_frame_index=460 relative_time_ps=46.0 pbc="T T T"
+Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production display_name="LiNbOCl₄ — M3GNet GPU — 800 K — production" report_figures="02_LiNbOCl4_three_model_MSD; 04_LiNbOCl4_Arrhenius" source_frame_index=460 relative_time_ps=46.0 pbc="T T T"
 Li       3.39702000       7.87489000       7.77609000
 Li      -0.94325000      14.20570000       7.02286000
 Li       5.80812000       8.71203000       5.30512000
@@ -31433,7 +31433,7 @@ O       -6.57723000      15.38430000      24.02910000
 O        4.89566000      17.64700000      28.87510000
 O      -10.14650000      15.25160000      23.61740000
 336
-Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production source_frame_index=465 relative_time_ps=46.5 pbc="T T T"
+Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production display_name="LiNbOCl₄ — M3GNet GPU — 800 K — production" report_figures="02_LiNbOCl4_three_model_MSD; 04_LiNbOCl4_Arrhenius" source_frame_index=465 relative_time_ps=46.5 pbc="T T T"
 Li       2.89172000       7.52404000       7.37466000
 Li      -1.27340000      14.12200000       6.58302000
 Li       5.49062000       8.11978000       4.66490000
@@ -31771,7 +31771,7 @@ O       -6.44773000      15.41730000      24.28400000
 O        5.08573000      18.11240000      28.66090000
 O       -9.07947000      17.06910000      25.41340000
 336
-Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production source_frame_index=470 relative_time_ps=47.0 pbc="T T T"
+Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production display_name="LiNbOCl₄ — M3GNet GPU — 800 K — production" report_figures="02_LiNbOCl4_three_model_MSD; 04_LiNbOCl4_Arrhenius" source_frame_index=470 relative_time_ps=47.0 pbc="T T T"
 Li       3.58346000       8.07181000       7.86298000
 Li      -0.86337000      14.44650000       7.02828000
 Li       6.23480000       8.72409000       5.71045000
@@ -32109,7 +32109,7 @@ O       -8.58767000      15.18530000      24.19340000
 O        5.53027000      17.47030000      29.47800000
 O      -10.61170000      17.04480000      26.71680000
 336
-Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production source_frame_index=475 relative_time_ps=47.5 pbc="T T T"
+Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production display_name="LiNbOCl₄ — M3GNet GPU — 800 K — production" report_figures="02_LiNbOCl4_three_model_MSD; 04_LiNbOCl4_Arrhenius" source_frame_index=475 relative_time_ps=47.5 pbc="T T T"
 Li       3.63562000       7.96425000       7.20443000
 Li      -1.59878000      14.37380000       6.97063000
 Li       6.18850000       9.18433000       5.06702000
@@ -32447,7 +32447,7 @@ O       -7.23499000      14.76390000      24.38830000
 O        4.84649000      17.73160000      29.33430000
 O       -8.60030000      16.95200000      26.38970000
 336
-Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production source_frame_index=480 relative_time_ps=48.0 pbc="T T T"
+Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production display_name="LiNbOCl₄ — M3GNet GPU — 800 K — production" report_figures="02_LiNbOCl4_three_model_MSD; 04_LiNbOCl4_Arrhenius" source_frame_index=480 relative_time_ps=48.0 pbc="T T T"
 Li       3.16904000       8.14412000       7.82832000
 Li      -1.54779000      14.72650000       7.26130000
 Li       5.67683000       8.92666000       5.35868000
@@ -32785,7 +32785,7 @@ O       -7.30529000      14.45010000      23.57080000
 O        3.92041000      16.82290000      28.86980000
 O       -8.72583000      15.96890000      26.69680000
 336
-Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production source_frame_index=485 relative_time_ps=48.5 pbc="T T T"
+Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production display_name="LiNbOCl₄ — M3GNet GPU — 800 K — production" report_figures="02_LiNbOCl4_three_model_MSD; 04_LiNbOCl4_Arrhenius" source_frame_index=485 relative_time_ps=48.5 pbc="T T T"
 Li       2.58921000       7.45420000       8.07923000
 Li      -1.18992000      13.95560000       6.83215000
 Li       5.27398000       8.25955000       5.68248000
@@ -33123,7 +33123,7 @@ O       -7.32622000      16.15960000      25.61130000
 O        4.99725000      18.24050000      28.59830000
 O      -10.37400000      15.28220000      21.67270000
 336
-Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production source_frame_index=490 relative_time_ps=49.0 pbc="T T T"
+Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production display_name="LiNbOCl₄ — M3GNet GPU — 800 K — production" report_figures="02_LiNbOCl4_three_model_MSD; 04_LiNbOCl4_Arrhenius" source_frame_index=490 relative_time_ps=49.0 pbc="T T T"
 Li       2.86127000       7.67165000       7.64345000
 Li      -1.35142000      14.05150000       6.82598000
 Li       5.66503000       8.68133000       5.57882000
@@ -33461,7 +33461,7 @@ O       -6.15315000      15.41400000      24.66170000
 O        5.07945000      18.06510000      29.59940000
 O       -8.30966000      16.78970000      26.68010000
 336
-Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production source_frame_index=495 relative_time_ps=49.5 pbc="T T T"
+Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production display_name="LiNbOCl₄ — M3GNet GPU — 800 K — production" report_figures="02_LiNbOCl4_three_model_MSD; 04_LiNbOCl4_Arrhenius" source_frame_index=495 relative_time_ps=49.5 pbc="T T T"
 Li       3.62274000       7.49473000       7.51435000
 Li      -1.46365000      14.00710000       6.92661000
 Li       5.86298000       8.35642000       5.09165000
@@ -33799,7 +33799,7 @@ O       -7.97678000      15.08420000      24.52670000
 O        5.19477000      18.04650000      29.81920000
 O       -8.89551000      16.98600000      26.93940000
 336
-Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production source_frame_index=500 relative_time_ps=50.0 pbc="T T T"
+Lattice="7.178837850000881 0.0 0.0 0.0 22.57309749380918 0.0 0.0 0.0 34.39859803125394" Properties=species:S:1:pos:R:3 material=LiNbOCl4 model="M3GNet GPU" temperature_K=800 phase=production display_name="LiNbOCl₄ — M3GNet GPU — 800 K — production" report_figures="02_LiNbOCl4_three_model_MSD; 04_LiNbOCl4_Arrhenius" source_frame_index=500 relative_time_ps=50.0 pbc="T T T"
 Li       3.20719000       7.90450000       7.54235000
 Li      -1.29853000      14.17820000       7.04815000
 Li       5.87703000       8.94014000       5.32263000

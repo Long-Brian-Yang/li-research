@@ -1,5 +1,5 @@
 240
-Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production source_frame_index=0 relative_time_ps=0.0 pbc="T T T"
+Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production display_name="Li₃YCl₆ — SevenNet-nano — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=0 relative_time_ps=0.0 pbc="T T T"
 Li       1.53076000       2.75504000       2.91079000
 Li       7.41679000      -0.46107700      -6.27648000
 Li      -2.06154000       3.21052000       3.03474000
@@ -241,7 +241,7 @@ Cl      11.50280000      10.79050000       7.41656000
 Cl       3.60053000      15.56340000      10.80160000
 Cl      13.07760000      14.49650000       7.57498000
 240
-Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production source_frame_index=5 relative_time_ps=0.5 pbc="T T T"
+Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production display_name="Li₃YCl₆ — SevenNet-nano — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=5 relative_time_ps=0.5 pbc="T T T"
 Li       1.72875000       3.22259000       2.62662000
 Li       7.10065000       0.03765480      -6.77595000
 Li      -1.85217000       3.39152000       2.54629000
@@ -483,7 +483,7 @@ Cl      11.39140000      10.75160000       7.78853000
 Cl       3.55208000      15.04300000      10.85770000
 Cl      13.30400000      13.97420000       7.96857000
 240
-Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production source_frame_index=10 relative_time_ps=1.0 pbc="T T T"
+Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production display_name="Li₃YCl₆ — SevenNet-nano — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=10 relative_time_ps=1.0 pbc="T T T"
 Li       1.91931000       3.39251000       2.12365000
 Li       7.11262000      -0.35315000      -6.47337000
 Li      -1.55038000       3.50420000       3.02507000
@@ -725,7 +725,7 @@ Cl      11.11950000      11.00810000       7.36419000
 Cl       3.58951000      15.18450000      11.02350000
 Cl      13.32380000      14.09600000       7.77861000
 240
-Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production source_frame_index=15 relative_time_ps=1.5 pbc="T T T"
+Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production display_name="Li₃YCl₆ — SevenNet-nano — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=15 relative_time_ps=1.5 pbc="T T T"
 Li       1.53757000       3.75777000       2.63321000
 Li       7.34498000      -0.10565400      -6.14529000
 Li      -1.93793000       3.33724000       3.54927000
@@ -967,7 +967,7 @@ Cl      11.49220000      10.76090000       8.03384000
 Cl       3.40309000      15.27770000      10.89380000
 Cl      12.92820000      14.13750000       7.57846000
 240
-Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production source_frame_index=20 relative_time_ps=2.0 pbc="T T T"
+Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production display_name="Li₃YCl₆ — SevenNet-nano — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=20 relative_time_ps=2.0 pbc="T T T"
 Li       2.89301000       3.47592000      -0.45150400
 Li       7.06825000      -0.57992900      -6.11110000
 Li      -1.82509000       3.08173000       3.31719000
@@ -1209,7 +1209,7 @@ Cl      11.04850000      10.78720000       7.83584000
 Cl       3.46105000      15.09090000      10.36690000
 Cl      13.14070000      14.34370000       7.82473000
 240
-Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production source_frame_index=25 relative_time_ps=2.5 pbc="T T T"
+Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production display_name="Li₃YCl₆ — SevenNet-nano — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=25 relative_time_ps=2.5 pbc="T T T"
 Li       1.98202000       3.18769000      -0.74613700
 Li       7.27940000      -0.01373700      -6.54249000
 Li      -2.75578000       2.83504000       2.55847000
@@ -1451,7 +1451,7 @@ Cl      11.31690000      10.76240000       7.48621000
 Cl       3.97866000      15.16540000      10.72030000
 Cl      13.44190000      13.89490000       7.45186000
 240
-Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production source_frame_index=30 relative_time_ps=3.0 pbc="T T T"
+Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production display_name="Li₃YCl₆ — SevenNet-nano — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=30 relative_time_ps=3.0 pbc="T T T"
 Li       2.23508000       3.27353000       0.16446500
 Li       7.51538000      -0.45695400      -3.00127000
 Li      -2.83699000       3.01510000      -0.01401300
@@ -1693,7 +1693,7 @@ Cl      11.18140000      10.86290000       7.55111000
 Cl       3.85185000      15.13470000      10.58980000
 Cl      13.10110000      14.04940000       7.69101000
 240
-Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production source_frame_index=35 relative_time_ps=3.5 pbc="T T T"
+Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production display_name="Li₃YCl₆ — SevenNet-nano — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=35 relative_time_ps=3.5 pbc="T T T"
 Li       1.88194000       4.98665000       0.66926200
 Li       7.83854000      -0.12786000      -3.07520000
 Li      -2.18037000       3.07516000      -0.30996300
@@ -1935,7 +1935,7 @@ Cl      11.75190000      10.61750000       8.23091000
 Cl       3.57587000      15.13370000      10.44030000
 Cl      13.13410000      14.29730000       7.69579000
 240
-Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production source_frame_index=40 relative_time_ps=4.0 pbc="T T T"
+Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production display_name="Li₃YCl₆ — SevenNet-nano — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=40 relative_time_ps=4.0 pbc="T T T"
 Li       1.29683000       3.31555000       0.31955500
 Li       7.58570000      -0.29547900      -3.37630000
 Li      -2.53554000       3.10164000      -0.41309800
@@ -2177,7 +2177,7 @@ Cl      10.90820000      11.25580000       7.10224000
 Cl       4.07789000      14.93460000      10.60360000
 Cl      13.12100000      13.96150000       7.57000000
 240
-Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production source_frame_index=45 relative_time_ps=4.5 pbc="T T T"
+Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production display_name="Li₃YCl₆ — SevenNet-nano — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=45 relative_time_ps=4.5 pbc="T T T"
 Li       1.86042000       2.98693000      -0.73016000
 Li       7.23564000       0.25590900      -6.86707000
 Li      -3.45261000       4.78961000      -0.34694800
@@ -2419,7 +2419,7 @@ Cl      11.29040000      11.13110000       7.37332000
 Cl       3.64069000      15.24030000      10.65890000
 Cl      13.36520000      13.98800000       7.71616000
 240
-Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production source_frame_index=50 relative_time_ps=5.0 pbc="T T T"
+Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production display_name="Li₃YCl₆ — SevenNet-nano — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=50 relative_time_ps=5.0 pbc="T T T"
 Li       1.76093000       3.33369000      -0.01767240
 Li       7.35941000       0.07702150      -3.54562000
 Li      -3.79013000       6.62516000      -3.15792000
@@ -2661,7 +2661,7 @@ Cl      11.14060000      10.80610000       7.65688000
 Cl       3.55595000      14.72700000      10.54930000
 Cl      13.20820000      13.86890000       7.57394000
 240
-Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production source_frame_index=55 relative_time_ps=5.5 pbc="T T T"
+Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production display_name="Li₃YCl₆ — SevenNet-nano — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=55 relative_time_ps=5.5 pbc="T T T"
 Li       1.88916000       3.38362000      -0.08889890
 Li       6.98453000      -0.17632600      -3.04214000
 Li      -3.20640000       6.87974000      -2.26234000
@@ -2903,7 +2903,7 @@ Cl      11.32590000      10.34440000       7.42904000
 Cl       3.78617000      15.23740000      10.76010000
 Cl      13.06090000      13.96160000       7.34137000
 240
-Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production source_frame_index=60 relative_time_ps=6.0 pbc="T T T"
+Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production display_name="Li₃YCl₆ — SevenNet-nano — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=60 relative_time_ps=6.0 pbc="T T T"
 Li       2.60041000       3.88779000      -0.54217400
 Li       7.14750000      -0.17117200       0.02292840
 Li      -4.06059000       6.34468000      -0.33957100
@@ -3145,7 +3145,7 @@ Cl      10.86080000      10.97360000       7.30438000
 Cl       3.61464000      15.66000000      10.39160000
 Cl      12.97540000      14.22210000       7.26201000
 240
-Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production source_frame_index=65 relative_time_ps=6.5 pbc="T T T"
+Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production display_name="Li₃YCl₆ — SevenNet-nano — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=65 relative_time_ps=6.5 pbc="T T T"
 Li       2.02519000       3.38473000       1.89083000
 Li       7.75654000       0.07447780       0.83184800
 Li      -3.75291000       6.39203000      -0.41963300
@@ -3387,7 +3387,7 @@ Cl      10.75240000      10.91460000       7.08652000
 Cl       3.46204000      14.99300000      10.50010000
 Cl      12.72360000      13.78120000       7.18108000
 240
-Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production source_frame_index=70 relative_time_ps=7.0 pbc="T T T"
+Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production display_name="Li₃YCl₆ — SevenNet-nano — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=70 relative_time_ps=7.0 pbc="T T T"
 Li       0.98124500       3.44000000       0.86838300
 Li       7.18443000       0.27391900       2.56091000
 Li      -3.51659000       6.22491000      -3.73372000
@@ -3629,7 +3629,7 @@ Cl      11.18330000      10.83110000       7.40464000
 Cl       3.66460000      15.13420000      10.60260000
 Cl      13.24940000      13.68550000       7.32196000
 240
-Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production source_frame_index=75 relative_time_ps=7.5 pbc="T T T"
+Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production display_name="Li₃YCl₆ — SevenNet-nano — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=75 relative_time_ps=7.5 pbc="T T T"
 Li       2.12256000       2.99238000       0.12511500
 Li       7.45486000      -0.00402389       3.04192000
 Li      -4.42174000       6.37527000      -3.23070000
@@ -3871,7 +3871,7 @@ Cl      11.24890000      10.85200000       7.43290000
 Cl       3.47376000      15.23040000      10.51040000
 Cl      12.75220000      14.32260000       7.00066000
 240
-Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production source_frame_index=80 relative_time_ps=8.0 pbc="T T T"
+Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production display_name="Li₃YCl₆ — SevenNet-nano — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=80 relative_time_ps=8.0 pbc="T T T"
 Li       1.74464000       3.53324000      -0.44418400
 Li       7.64092000       0.35762400       5.11675000
 Li      -4.47788000       6.87968000      -3.10667000
@@ -4113,7 +4113,7 @@ Cl      11.36490000      10.52350000       7.67602000
 Cl       3.89532000      14.70460000      10.59760000
 Cl      13.15040000      13.96980000       7.43660000
 240
-Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production source_frame_index=85 relative_time_ps=8.5 pbc="T T T"
+Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production display_name="Li₃YCl₆ — SevenNet-nano — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=85 relative_time_ps=8.5 pbc="T T T"
 Li       1.95357000       2.98469000      -3.50533000
 Li       7.85553000      -0.01794660       3.00222000
 Li      -4.00405000       6.74588000      -3.44172000
@@ -4355,7 +4355,7 @@ Cl      11.29800000      10.81430000       7.28771000
 Cl       3.74066000      15.02400000      10.46580000
 Cl      12.84030000      14.44030000       7.77402000
 240
-Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production source_frame_index=90 relative_time_ps=9.0 pbc="T T T"
+Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production display_name="Li₃YCl₆ — SevenNet-nano — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=90 relative_time_ps=9.0 pbc="T T T"
 Li       1.57740000       2.56960000      -3.61870000
 Li       7.47647000      -0.29489700       2.93056000
 Li      -3.43610000       6.44120000      -0.60302800
@@ -4597,7 +4597,7 @@ Cl      11.24970000      10.53630000       7.66994000
 Cl       3.31040000      15.18570000      10.25120000
 Cl      13.21510000      13.62130000       7.32869000
 240
-Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production source_frame_index=95 relative_time_ps=9.5 pbc="T T T"
+Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production display_name="Li₃YCl₆ — SevenNet-nano — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=95 relative_time_ps=9.5 pbc="T T T"
 Li       2.33614000       2.99244000      -3.88786000
 Li       7.60675000      -0.07462730       2.82590000
 Li      -3.60829000       6.29027000       0.26778500
@@ -4839,7 +4839,7 @@ Cl      11.19920000      10.90860000       7.45181000
 Cl       3.63017000      15.07910000      10.29000000
 Cl      13.45430000      14.09460000       7.88786000
 240
-Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production source_frame_index=100 relative_time_ps=10.0 pbc="T T T"
+Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production display_name="Li₃YCl₆ — SevenNet-nano — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=100 relative_time_ps=10.0 pbc="T T T"
 Li       1.71297000       3.16494000      -3.36130000
 Li       8.33258000      -0.14630900       2.68299000
 Li      -3.29578000       6.09457000       0.25127900
@@ -5081,7 +5081,7 @@ Cl      11.28680000      10.55380000       7.34986000
 Cl       3.33997000      15.50700000      10.48710000
 Cl      13.01010000      13.88650000       7.59048000
 240
-Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production source_frame_index=105 relative_time_ps=10.5 pbc="T T T"
+Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production display_name="Li₃YCl₆ — SevenNet-nano — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=105 relative_time_ps=10.5 pbc="T T T"
 Li       1.90765000       3.24659000      -4.89022000
 Li       7.83978000      -0.01533780       2.81378000
 Li      -3.81575000       6.98575000       0.10530300
@@ -5323,7 +5323,7 @@ Cl      10.90790000      10.84990000       7.52873000
 Cl       3.19035000      14.83840000      10.22860000
 Cl      13.05970000      14.02640000       7.56065000
 240
-Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production source_frame_index=110 relative_time_ps=11.0 pbc="T T T"
+Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production display_name="Li₃YCl₆ — SevenNet-nano — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=110 relative_time_ps=11.0 pbc="T T T"
 Li       1.85909000       3.31145000      -3.16105000
 Li       7.58944000      -0.01472260       2.61817000
 Li      -3.25821000       6.14532000      -0.02116410
@@ -5565,7 +5565,7 @@ Cl      11.07440000      10.57980000       7.50000000
 Cl       3.89782000      14.94730000      10.73680000
 Cl      13.06550000      14.01780000       7.74211000
 240
-Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production source_frame_index=115 relative_time_ps=11.5 pbc="T T T"
+Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production display_name="Li₃YCl₆ — SevenNet-nano — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=115 relative_time_ps=11.5 pbc="T T T"
 Li       2.07752000       3.39592000      -3.63574000
 Li       7.53117000      -0.42964200       5.05271000
 Li      -3.61637000       6.37934000       2.38738000
@@ -5807,7 +5807,7 @@ Cl      11.56850000      10.72420000       7.53441000
 Cl       3.91272000      15.13750000      10.38490000
 Cl      13.65460000      14.13960000       7.41734000
 240
-Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production source_frame_index=120 relative_time_ps=12.0 pbc="T T T"
+Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production display_name="Li₃YCl₆ — SevenNet-nano — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=120 relative_time_ps=12.0 pbc="T T T"
 Li       1.98833000       2.97459000      -6.64216000
 Li       7.62324000       0.20409600       2.98047000
 Li      -4.36909000       6.44761000       2.39447000
@@ -6049,7 +6049,7 @@ Cl      11.47680000      10.35250000       7.68789000
 Cl       3.63357000      14.95570000      10.36300000
 Cl      13.47660000      13.63070000       7.19790000
 240
-Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production source_frame_index=125 relative_time_ps=12.5 pbc="T T T"
+Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production display_name="Li₃YCl₆ — SevenNet-nano — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=125 relative_time_ps=12.5 pbc="T T T"
 Li       1.53375000       3.08373000      -3.05954000
 Li       7.68279000       0.05376680       5.51360000
 Li      -4.26170000       6.03020000       2.45407000
@@ -6291,7 +6291,7 @@ Cl      11.04290000      10.80880000       7.52271000
 Cl       4.19839000      15.48300000      11.04930000
 Cl      13.26130000      13.77310000       7.67078000
 240
-Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production source_frame_index=130 relative_time_ps=13.0 pbc="T T T"
+Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production display_name="Li₃YCl₆ — SevenNet-nano — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=130 relative_time_ps=13.0 pbc="T T T"
 Li       1.92229000       3.65124000       0.26430300
 Li       6.12498000      -0.82426900       6.01122000
 Li      -3.78156000       6.37169000       3.05882000
@@ -6533,7 +6533,7 @@ Cl      11.06910000      10.68460000       7.58590000
 Cl       3.82972000      15.03060000      10.42990000
 Cl      13.13700000      14.17760000       7.61786000
 240
-Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production source_frame_index=135 relative_time_ps=13.5 pbc="T T T"
+Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production display_name="Li₃YCl₆ — SevenNet-nano — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=135 relative_time_ps=13.5 pbc="T T T"
 Li       1.54256000       3.12079000       0.43884600
 Li       7.36505000      -0.05416130       6.04504000
 Li      -3.72205000       6.57344000       4.75911000
@@ -6775,7 +6775,7 @@ Cl      10.93220000      10.89080000       7.92874000
 Cl       3.42134000      14.99890000      10.35320000
 Cl      12.98700000      14.27770000       7.41933000
 240
-Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production source_frame_index=140 relative_time_ps=14.0 pbc="T T T"
+Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production display_name="Li₃YCl₆ — SevenNet-nano — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=140 relative_time_ps=14.0 pbc="T T T"
 Li       1.73582000       3.67443000       0.32706600
 Li       7.95548000       0.38517000       2.78100000
 Li      -4.41124000       6.86611000       3.45333000
@@ -7017,7 +7017,7 @@ Cl      11.23860000      10.75980000       7.54752000
 Cl       3.78538000      15.04450000      10.38000000
 Cl      12.92560000      14.14300000       7.07483000
 240
-Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production source_frame_index=145 relative_time_ps=14.5 pbc="T T T"
+Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production display_name="Li₃YCl₆ — SevenNet-nano — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=145 relative_time_ps=14.5 pbc="T T T"
 Li       1.24876000       3.58634000       0.29414200
 Li       6.91597000       0.47905200       5.81952000
 Li      -3.93261000       6.68094000       2.91571000
@@ -7259,7 +7259,7 @@ Cl      11.79490000      10.92280000       7.70965000
 Cl       3.37720000      14.97930000       9.94994000
 Cl      12.99460000      14.27610000       7.38169000
 240
-Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production source_frame_index=150 relative_time_ps=15.0 pbc="T T T"
+Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production display_name="Li₃YCl₆ — SevenNet-nano — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=150 relative_time_ps=15.0 pbc="T T T"
 Li       1.83148000       3.28375000      -1.13836000
 Li       7.57720000      -0.36121700       5.90169000
 Li      -4.15779000       6.17767000       2.54623000
@@ -7501,7 +7501,7 @@ Cl      11.19100000      11.00950000       7.36460000
 Cl       3.40834000      14.61640000      10.25660000
 Cl      13.22190000      14.16240000       7.80640000
 240
-Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production source_frame_index=155 relative_time_ps=15.5 pbc="T T T"
+Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production display_name="Li₃YCl₆ — SevenNet-nano — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=155 relative_time_ps=15.5 pbc="T T T"
 Li       2.16981000       3.38067000      -0.09140720
 Li       6.84293000      -0.34491500       3.47312000
 Li      -3.83222000       8.02480000       2.29207000
@@ -7743,7 +7743,7 @@ Cl      11.20460000      10.83870000       7.79330000
 Cl       3.47756000      15.25410000      10.58480000
 Cl      13.08420000      13.84500000       7.18384000
 240
-Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production source_frame_index=160 relative_time_ps=16.0 pbc="T T T"
+Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production display_name="Li₃YCl₆ — SevenNet-nano — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=160 relative_time_ps=16.0 pbc="T T T"
 Li       2.10130000       2.85755000       2.77424000
 Li       7.58290000       0.19695400       2.93252000
 Li      -3.49146000       7.02444000       5.41231000
@@ -7985,7 +7985,7 @@ Cl      11.49240000      10.77270000       7.18545000
 Cl       3.89599000      15.24860000      10.76050000
 Cl      13.19370000      14.02030000       7.28632000
 240
-Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production source_frame_index=165 relative_time_ps=16.5 pbc="T T T"
+Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production display_name="Li₃YCl₆ — SevenNet-nano — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=165 relative_time_ps=16.5 pbc="T T T"
 Li       1.74297000       3.24678000       3.20460000
 Li       7.78869000      -0.19730400       2.66543000
 Li      -3.68122000       6.14385000       5.74414000
@@ -8227,7 +8227,7 @@ Cl      11.57730000      10.83330000       7.49441000
 Cl       3.81293000      15.15290000      10.40740000
 Cl      13.39610000      13.98230000       7.24209000
 240
-Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production source_frame_index=170 relative_time_ps=17.0 pbc="T T T"
+Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production display_name="Li₃YCl₆ — SevenNet-nano — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=170 relative_time_ps=17.0 pbc="T T T"
 Li       1.84252000       3.62176000       2.68610000
 Li       7.84142000       0.27435900       3.11347000
 Li      -3.55820000       6.82408000       6.37902000
@@ -8469,7 +8469,7 @@ Cl      11.48720000      10.78630000       7.67946000
 Cl       3.83180000      15.38450000      10.83670000
 Cl      13.20540000      13.86950000       7.84855000
 240
-Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production source_frame_index=175 relative_time_ps=17.5 pbc="T T T"
+Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production display_name="Li₃YCl₆ — SevenNet-nano — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=175 relative_time_ps=17.5 pbc="T T T"
 Li       1.37774000       2.79753000       2.73035000
 Li       8.00637000      -0.17591500       2.68127000
 Li      -3.98353000       6.82246000       9.37768000
@@ -8711,7 +8711,7 @@ Cl      11.68770000      10.73650000       7.61709000
 Cl       3.58799000      15.21430000      10.80950000
 Cl      13.03340000      14.27680000       7.49598000
 240
-Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production source_frame_index=180 relative_time_ps=18.0 pbc="T T T"
+Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production display_name="Li₃YCl₆ — SevenNet-nano — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=180 relative_time_ps=18.0 pbc="T T T"
 Li       1.72496000       3.25880000       5.81962000
 Li       7.86072000       0.03274850       3.04226000
 Li      -3.47175000       6.45279000      12.17550000
@@ -8953,7 +8953,7 @@ Cl      11.24710000      10.92010000       7.40044000
 Cl       3.32174000      15.32000000      10.17250000
 Cl      13.05930000      14.23920000       7.64414000
 240
-Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production source_frame_index=185 relative_time_ps=18.5 pbc="T T T"
+Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production display_name="Li₃YCl₆ — SevenNet-nano — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=185 relative_time_ps=18.5 pbc="T T T"
 Li       1.76583000       3.66306000       6.02062000
 Li       7.42302000       0.34597300       2.55894000
 Li      -4.11359000       6.52648000      11.70550000
@@ -9195,7 +9195,7 @@ Cl      10.95840000      10.39810000       7.55896000
 Cl       3.57607000      15.34830000      10.43680000
 Cl      13.36950000      13.86040000       7.48237000
 240
-Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production source_frame_index=190 relative_time_ps=19.0 pbc="T T T"
+Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production display_name="Li₃YCl₆ — SevenNet-nano — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=190 relative_time_ps=19.0 pbc="T T T"
 Li       1.98980000       3.67405000       7.09769000
 Li       7.88422000       0.03376130       2.97935000
 Li      -4.57493000       5.82574000      11.87110000
@@ -9437,7 +9437,7 @@ Cl      11.54900000      10.82050000       7.31200000
 Cl       3.36592000      15.04700000      10.53770000
 Cl      13.16740000      14.17280000       7.51354000
 240
-Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production source_frame_index=195 relative_time_ps=19.5 pbc="T T T"
+Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production display_name="Li₃YCl₆ — SevenNet-nano — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=195 relative_time_ps=19.5 pbc="T T T"
 Li       1.86341000       3.34446000       9.27840000
 Li       7.03357000      -0.10202200       2.94167000
 Li      -3.75373000       6.35408000      11.41970000
@@ -9679,7 +9679,7 @@ Cl      10.88360000      10.74300000       7.28819000
 Cl       4.10292000      15.14040000      11.01610000
 Cl      13.33350000      14.07720000       7.65037000
 240
-Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production source_frame_index=200 relative_time_ps=20.0 pbc="T T T"
+Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production display_name="Li₃YCl₆ — SevenNet-nano — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=200 relative_time_ps=20.0 pbc="T T T"
 Li       2.59264000       4.10561000       9.21209000
 Li       7.26093000      -0.10376100       1.68016000
 Li      -3.65656000       6.73212000      11.99710000
@@ -9921,7 +9921,7 @@ Cl      10.67850000      10.64920000       7.00221000
 Cl       3.72790000      15.52080000      10.28480000
 Cl      13.42560000      14.04480000       7.25851000
 240
-Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production source_frame_index=205 relative_time_ps=20.5 pbc="T T T"
+Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production display_name="Li₃YCl₆ — SevenNet-nano — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=205 relative_time_ps=20.5 pbc="T T T"
 Li       1.82763000       3.42599000       9.62080000
 Li       7.62151000      -0.32879300       3.23218000
 Li      -3.66324000       6.87342000      11.82400000
@@ -10163,7 +10163,7 @@ Cl      11.26030000      10.86340000       7.48565000
 Cl       3.73491000      15.33850000      10.32550000
 Cl      13.27750000      14.40080000       7.36194000
 240
-Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production source_frame_index=210 relative_time_ps=21.0 pbc="T T T"
+Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production display_name="Li₃YCl₆ — SevenNet-nano — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=210 relative_time_ps=21.0 pbc="T T T"
 Li       1.54185000       3.05448000       9.75081000
 Li       7.54316000      -0.00497242       2.89022000
 Li      -4.50847000       6.28128000      14.99760000
@@ -10405,7 +10405,7 @@ Cl      11.40710000      10.65830000       7.40367000
 Cl       3.73049000      15.06280000      10.37460000
 Cl      12.91150000      13.91240000       7.32911000
 240
-Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production source_frame_index=215 relative_time_ps=21.5 pbc="T T T"
+Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production display_name="Li₃YCl₆ — SevenNet-nano — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=215 relative_time_ps=21.5 pbc="T T T"
 Li       2.10361000       3.21814000       9.09714000
 Li       7.39021000      -0.35974800       5.88922000
 Li      -3.46744000       6.67648000      12.20630000
@@ -10647,7 +10647,7 @@ Cl      11.49900000      10.65120000       7.51523000
 Cl       3.64959000      15.11280000      10.37590000
 Cl      12.93170000      14.03840000       7.83733000
 240
-Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production source_frame_index=220 relative_time_ps=22.0 pbc="T T T"
+Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production display_name="Li₃YCl₆ — SevenNet-nano — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=220 relative_time_ps=22.0 pbc="T T T"
 Li       1.66572000       2.92908000       6.88934000
 Li       7.28134000      -0.23119000       6.17559000
 Li      -3.77165000       6.44530000      10.15550000
@@ -10889,7 +10889,7 @@ Cl      11.28680000      10.80290000       7.50108000
 Cl       3.54904000      15.20790000      10.30590000
 Cl      13.44590000      14.01130000       8.21808000
 240
-Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production source_frame_index=225 relative_time_ps=22.5 pbc="T T T"
+Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production display_name="Li₃YCl₆ — SevenNet-nano — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=225 relative_time_ps=22.5 pbc="T T T"
 Li       2.09278000       3.13259000       9.14310000
 Li       7.19367000      -0.17478900       5.98472000
 Li      -3.67999000       6.12246000      12.90370000
@@ -11131,7 +11131,7 @@ Cl      10.97690000      10.83790000       7.41279000
 Cl       3.51041000      15.54890000      10.14900000
 Cl      12.84880000      14.41640000       7.45520000
 240
-Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production source_frame_index=230 relative_time_ps=23.0 pbc="T T T"
+Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production display_name="Li₃YCl₆ — SevenNet-nano — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=230 relative_time_ps=23.0 pbc="T T T"
 Li       2.00380000       3.80214000      11.47620000
 Li       7.53175000      -0.50486500       5.94318000
 Li      -3.88080000       6.42399000      14.73310000
@@ -11373,7 +11373,7 @@ Cl      11.55430000      10.62180000       7.40458000
 Cl       3.56430000      15.12070000      10.24590000
 Cl      13.03740000      14.15270000       7.42506000
 240
-Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production source_frame_index=235 relative_time_ps=23.5 pbc="T T T"
+Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production display_name="Li₃YCl₆ — SevenNet-nano — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=235 relative_time_ps=23.5 pbc="T T T"
 Li       1.74231000       3.24255000      14.50670000
 Li       5.27783000      -1.40337000       6.15132000
 Li      -4.16877000       6.23105000      14.89660000
@@ -11615,7 +11615,7 @@ Cl      11.30920000      10.85580000       7.20544000
 Cl       4.16316000      15.35110000      10.87640000
 Cl      13.51900000      13.72800000       7.59452000
 240
-Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production source_frame_index=240 relative_time_ps=24.0 pbc="T T T"
+Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production display_name="Li₃YCl₆ — SevenNet-nano — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=240 relative_time_ps=24.0 pbc="T T T"
 Li       1.97384000       3.24944000       9.00400000
 Li       7.26341000      -0.41528600       5.96009000
 Li      -7.11320000       6.43482000      15.41110000
@@ -11857,7 +11857,7 @@ Cl      11.19810000      10.59060000       7.25514000
 Cl       3.41261000      15.33870000      10.16270000
 Cl      13.22110000      14.21490000       6.98789000
 240
-Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production source_frame_index=245 relative_time_ps=24.5 pbc="T T T"
+Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production display_name="Li₃YCl₆ — SevenNet-nano — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=245 relative_time_ps=24.5 pbc="T T T"
 Li       2.14605000       3.08182000      11.64840000
 Li       7.48778000      -0.02658400       5.95130000
 Li      -4.09039000       7.37110000      15.10800000
@@ -12099,7 +12099,7 @@ Cl      11.32810000      10.80070000       6.96356000
 Cl       3.59950000      15.02030000      10.34900000
 Cl      13.00200000      14.05230000       7.15365000
 240
-Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production source_frame_index=250 relative_time_ps=25.0 pbc="T T T"
+Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production display_name="Li₃YCl₆ — SevenNet-nano — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=250 relative_time_ps=25.0 pbc="T T T"
 Li       1.92802000       3.29582000       9.08754000
 Li       7.49489000      -0.43934700       6.10610000
 Li      -4.42933000       6.20556000      14.32250000
@@ -12341,7 +12341,7 @@ Cl      11.35870000      10.59680000       7.47064000
 Cl       4.10802000      15.26950000      10.87250000
 Cl      13.21820000      13.73970000       7.32944000
 240
-Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production source_frame_index=255 relative_time_ps=25.5 pbc="T T T"
+Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production display_name="Li₃YCl₆ — SevenNet-nano — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=255 relative_time_ps=25.5 pbc="T T T"
 Li       1.64509000       3.44452000      12.01470000
 Li       7.57602000      -0.47378300       5.96602000
 Li      -3.58635000       6.35570000      12.91600000
@@ -12583,7 +12583,7 @@ Cl      11.14880000      10.45090000       7.71464000
 Cl       3.88204000      14.90820000      10.62310000
 Cl      12.80710000      13.91020000       7.04641000
 240
-Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production source_frame_index=260 relative_time_ps=26.0 pbc="T T T"
+Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production display_name="Li₃YCl₆ — SevenNet-nano — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=260 relative_time_ps=26.0 pbc="T T T"
 Li       2.05515000       2.95244000      11.67090000
 Li       7.37605000      -0.15975400       4.44385000
 Li      -3.41512000       6.46349000      11.93340000
@@ -12825,7 +12825,7 @@ Cl      11.44660000      10.72090000       7.81028000
 Cl       3.68810000      15.10180000      10.20630000
 Cl      13.23550000      14.62030000       7.13075000
 240
-Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production source_frame_index=265 relative_time_ps=26.5 pbc="T T T"
+Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production display_name="Li₃YCl₆ — SevenNet-nano — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=265 relative_time_ps=26.5 pbc="T T T"
 Li       1.47293000       2.75856000       8.89597000
 Li       7.97521000      -0.21053200       3.37730000
 Li      -3.74634000       5.87941000       9.10703000
@@ -13067,7 +13067,7 @@ Cl      11.23840000      10.89140000       7.10880000
 Cl       3.63151000      14.96740000      10.25770000
 Cl      13.20970000      14.28340000       7.28273000
 240
-Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production source_frame_index=270 relative_time_ps=27.0 pbc="T T T"
+Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production display_name="Li₃YCl₆ — SevenNet-nano — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=270 relative_time_ps=27.0 pbc="T T T"
 Li       1.21748000       2.85295000       9.02806000
 Li       7.33987000      -0.37790400       2.94679000
 Li      -3.68079000       6.69095000       9.92633000
@@ -13309,7 +13309,7 @@ Cl      11.22610000      10.86870000       7.29334000
 Cl       3.45314000      15.07320000       9.84648000
 Cl      13.14850000      14.00180000       7.63332000
 240
-Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production source_frame_index=275 relative_time_ps=27.5 pbc="T T T"
+Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production display_name="Li₃YCl₆ — SevenNet-nano — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=275 relative_time_ps=27.5 pbc="T T T"
 Li       1.72450000       3.86258000       5.87469000
 Li       9.36514000      -0.75462200       2.47065000
 Li      -3.70422000       6.43919000      12.23100000
@@ -13551,7 +13551,7 @@ Cl      11.27800000      10.88980000       7.22235000
 Cl       3.88999000      14.78330000      10.58900000
 Cl      13.39900000      13.99360000       7.34904000
 240
-Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production source_frame_index=280 relative_time_ps=28.0 pbc="T T T"
+Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production display_name="Li₃YCl₆ — SevenNet-nano — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=280 relative_time_ps=28.0 pbc="T T T"
 Li       2.39103000       3.05576000       5.45065000
 Li       8.00213000      -0.33367300       3.28305000
 Li      -3.89658000       6.48001000       9.70660000
@@ -13793,7 +13793,7 @@ Cl      11.53490000      10.88270000       7.04246000
 Cl       3.33082000      15.24680000      10.36780000
 Cl      13.39540000      14.18750000       7.30018000
 240
-Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production source_frame_index=285 relative_time_ps=28.5 pbc="T T T"
+Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production display_name="Li₃YCl₆ — SevenNet-nano — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=285 relative_time_ps=28.5 pbc="T T T"
 Li       1.82930000       3.60689000       6.90438000
 Li       7.96146000       0.14342300       3.00424000
 Li      -3.50726000       7.06457000       9.06380000
@@ -14035,7 +14035,7 @@ Cl      11.44970000      10.76530000       7.35736000
 Cl       3.67914000      14.96840000      10.40650000
 Cl      13.07040000      14.00390000       7.48195000
 240
-Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production source_frame_index=290 relative_time_ps=29.0 pbc="T T T"
+Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production display_name="Li₃YCl₆ — SevenNet-nano — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=290 relative_time_ps=29.0 pbc="T T T"
 Li       1.81691000       3.24491000       8.75986000
 Li       7.83596000      -0.31862200       1.44484000
 Li      -4.03834000       6.39466000       9.00779000
@@ -14277,7 +14277,7 @@ Cl      11.22260000      10.47810000       7.65011000
 Cl       3.78777000      15.52730000      10.75530000
 Cl      13.47530000      13.42190000       7.41284000
 240
-Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production source_frame_index=295 relative_time_ps=29.5 pbc="T T T"
+Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production display_name="Li₃YCl₆ — SevenNet-nano — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=295 relative_time_ps=29.5 pbc="T T T"
 Li       1.49363000       2.89311000       5.71292000
 Li       7.24659000      -0.36310700       0.22000400
 Li      -3.83901000       6.68262000       8.73767000
@@ -14519,7 +14519,7 @@ Cl      11.60130000      11.26980000       7.02035000
 Cl       3.67813000      15.21580000      10.69660000
 Cl      13.39160000      14.38320000       7.42452000
 240
-Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production source_frame_index=300 relative_time_ps=30.0 pbc="T T T"
+Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production display_name="Li₃YCl₆ — SevenNet-nano — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=300 relative_time_ps=30.0 pbc="T T T"
 Li       1.84115000       3.65523000       6.53236000
 Li       7.43897000       0.19250200      -1.07199000
 Li      -4.03674000       5.89996000      11.87610000
@@ -14761,7 +14761,7 @@ Cl      11.61890000      10.44320000       7.89673000
 Cl       3.58992000      15.09700000      10.18720000
 Cl      13.35480000      14.00880000       7.60878000
 240
-Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production source_frame_index=305 relative_time_ps=30.5 pbc="T T T"
+Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production display_name="Li₃YCl₆ — SevenNet-nano — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=305 relative_time_ps=30.5 pbc="T T T"
 Li       1.90297000       2.52268000       9.17934000
 Li       7.23847000       0.43430300      -0.84062600
 Li      -4.06977000       6.15148000      11.39170000
@@ -15003,7 +15003,7 @@ Cl      11.13720000      10.78500000       7.34992000
 Cl       3.63735000      15.18950000      10.27900000
 Cl      13.26060000      13.92230000       7.69067000
 240
-Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production source_frame_index=310 relative_time_ps=31.0 pbc="T T T"
+Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production display_name="Li₃YCl₆ — SevenNet-nano — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=310 relative_time_ps=31.0 pbc="T T T"
 Li       1.77236000       3.18975000       6.55422000
 Li       7.29760000      -0.59221200      -0.27088000
 Li      -1.44779000       2.65656000      12.96220000
@@ -15245,7 +15245,7 @@ Cl      10.96570000      10.47950000       7.30302000
 Cl       3.93476000      15.24590000      10.11480000
 Cl      13.27150000      13.70670000       7.49829000
 240
-Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production source_frame_index=315 relative_time_ps=31.5 pbc="T T T"
+Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production display_name="Li₃YCl₆ — SevenNet-nano — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=315 relative_time_ps=31.5 pbc="T T T"
 Li       1.65927000       3.62063000       6.39310000
 Li       7.17764000       0.07703160      -0.30954000
 Li      -4.47271000       6.13727000      11.96000000
@@ -15487,7 +15487,7 @@ Cl      11.09380000      10.84720000       7.11739000
 Cl       3.46024000      15.09600000      10.25330000
 Cl      13.33800000      14.18750000       7.14432000
 240
-Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production source_frame_index=320 relative_time_ps=32.0 pbc="T T T"
+Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production display_name="Li₃YCl₆ — SevenNet-nano — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=320 relative_time_ps=32.0 pbc="T T T"
 Li       2.04768000       3.11933000       5.91639000
 Li       7.90106000      -0.44732800      -0.14235600
 Li      -3.90272000       6.41025000      11.35170000
@@ -15729,7 +15729,7 @@ Cl      11.20130000      10.81020000       7.33163000
 Cl       3.58783000      15.06710000      10.35240000
 Cl      12.89530000      14.16180000       7.52074000
 240
-Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production source_frame_index=325 relative_time_ps=32.5 pbc="T T T"
+Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production display_name="Li₃YCl₆ — SevenNet-nano — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=325 relative_time_ps=32.5 pbc="T T T"
 Li       0.07899300       3.89757000       5.26714000
 Li       7.36301000      -0.02773890       2.33562000
 Li      -3.82749000       6.59910000       9.50479000
@@ -15971,7 +15971,7 @@ Cl      11.48820000      10.49360000       7.30021000
 Cl       3.97328000      15.12820000      10.61940000
 Cl      13.10450000      14.15790000       7.05892000
 240
-Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production source_frame_index=330 relative_time_ps=33.0 pbc="T T T"
+Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production display_name="Li₃YCl₆ — SevenNet-nano — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=330 relative_time_ps=33.0 pbc="T T T"
 Li       2.11451000       3.06138000       5.52048000
 Li       7.36037000       0.52461100       2.31516000
 Li      -4.06637000       7.16255000       8.62541000
@@ -16213,7 +16213,7 @@ Cl      11.10700000      10.70430000       7.57845000
 Cl       3.76009000      15.20950000      10.43800000
 Cl      13.46050000      13.84500000       7.41860000
 240
-Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production source_frame_index=335 relative_time_ps=33.5 pbc="T T T"
+Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production display_name="Li₃YCl₆ — SevenNet-nano — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=335 relative_time_ps=33.5 pbc="T T T"
 Li       1.82405000       2.75672000       3.24505000
 Li       7.33373000      -0.27022400       0.13789500
 Li      -4.21141000       6.73556000       8.59982000
@@ -16455,7 +16455,7 @@ Cl      11.41340000      11.15030000       7.26370000
 Cl       3.86907000      15.00500000      10.17020000
 Cl      13.46820000      14.21200000       7.76685000
 240
-Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production source_frame_index=340 relative_time_ps=34.0 pbc="T T T"
+Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production display_name="Li₃YCl₆ — SevenNet-nano — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=340 relative_time_ps=34.0 pbc="T T T"
 Li       2.06506000       3.48877000       6.15491000
 Li       7.41612000      -0.20747600       0.62331500
 Li      -3.38167000       6.23296000       5.97729000
@@ -16697,7 +16697,7 @@ Cl      11.22930000      11.10280000       7.46416000
 Cl       3.83627000      14.93890000      10.15970000
 Cl      13.55220000      13.85540000       7.43845000
 240
-Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production source_frame_index=345 relative_time_ps=34.5 pbc="T T T"
+Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production display_name="Li₃YCl₆ — SevenNet-nano — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=345 relative_time_ps=34.5 pbc="T T T"
 Li       2.45361000       3.32449000       6.13912000
 Li       7.09839000      -0.01503630       2.37356000
 Li      -3.69364000       6.39675000       6.18057000
@@ -16939,7 +16939,7 @@ Cl      10.88110000      11.20910000       7.14774000
 Cl       3.46332000      15.02750000      10.63390000
 Cl      12.98480000      14.22790000       7.63621000
 240
-Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production source_frame_index=350 relative_time_ps=35.0 pbc="T T T"
+Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production display_name="Li₃YCl₆ — SevenNet-nano — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=350 relative_time_ps=35.0 pbc="T T T"
 Li       2.15327000       3.01164000       5.67522000
 Li       7.69015000       0.01519780       2.27430000
 Li      -2.60526000       5.70619000       6.11545000
@@ -17181,7 +17181,7 @@ Cl      11.25240000      10.84800000       7.41649000
 Cl       3.96215000      14.81870000      10.02800000
 Cl      13.01260000      14.15810000       7.36042000
 240
-Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production source_frame_index=355 relative_time_ps=35.5 pbc="T T T"
+Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production display_name="Li₃YCl₆ — SevenNet-nano — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=355 relative_time_ps=35.5 pbc="T T T"
 Li       1.81881000       3.30751000       5.97810000
 Li       7.42696000       0.04932020       0.40581900
 Li      -3.96981000       5.46837000       5.45983000
@@ -17423,7 +17423,7 @@ Cl      11.50730000      10.92930000       7.04303000
 Cl       3.45875000      15.02730000      10.60230000
 Cl      12.80480000      14.34180000       7.16212000
 240
-Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production source_frame_index=360 relative_time_ps=36.0 pbc="T T T"
+Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production display_name="Li₃YCl₆ — SevenNet-nano — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=360 relative_time_ps=36.0 pbc="T T T"
 Li       1.52261000       2.72973000       5.05219000
 Li       5.83016000      -1.17171000      -0.09478900
 Li      -4.00261000       5.99635000       5.84864000
@@ -17665,7 +17665,7 @@ Cl      11.14390000      10.53770000       7.14191000
 Cl       3.79553000      15.29070000      10.16540000
 Cl      12.70850000      14.04480000       7.02124000
 240
-Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production source_frame_index=365 relative_time_ps=36.5 pbc="T T T"
+Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production display_name="Li₃YCl₆ — SevenNet-nano — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=365 relative_time_ps=36.5 pbc="T T T"
 Li       1.96823000       3.15670000       5.98003000
 Li       7.38987000       0.18832500       2.82984000
 Li      -4.22842000       7.00599000       8.38160000
@@ -17907,7 +17907,7 @@ Cl      11.05730000      10.50820000       7.59376000
 Cl       3.94157000      14.87020000      10.02000000
 Cl      13.36600000      13.84230000       7.63783000
 240
-Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production source_frame_index=370 relative_time_ps=37.0 pbc="T T T"
+Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production display_name="Li₃YCl₆ — SevenNet-nano — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=370 relative_time_ps=37.0 pbc="T T T"
 Li       2.24753000       2.79826000       5.71941000
 Li       7.68287000       0.65456300      -0.01176720
 Li      -3.97601000       6.58565000       8.35609000
@@ -18149,7 +18149,7 @@ Cl      11.25770000      10.71910000       7.21162000
 Cl       3.26758000      14.96700000      10.49930000
 Cl      12.94350000      14.18790000       7.34033000
 240
-Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production source_frame_index=375 relative_time_ps=37.5 pbc="T T T"
+Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production display_name="Li₃YCl₆ — SevenNet-nano — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=375 relative_time_ps=37.5 pbc="T T T"
 Li       2.39832000       2.74522000       5.79988000
 Li       7.71348000       0.05195180      -0.08898060
 Li      -5.46019000       7.30587000       9.34836000
@@ -18391,7 +18391,7 @@ Cl      11.14010000      11.12360000       6.76636000
 Cl       3.57109000      15.31410000      10.61420000
 Cl      12.91370000      14.02580000       6.96463000
 240
-Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production source_frame_index=380 relative_time_ps=38.0 pbc="T T T"
+Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production display_name="Li₃YCl₆ — SevenNet-nano — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=380 relative_time_ps=38.0 pbc="T T T"
 Li       1.81059000       3.25576000       5.01294000
 Li       7.55428000      -0.10432700      -0.21749100
 Li      -3.98098000       6.94275000       8.52721000
@@ -18633,7 +18633,7 @@ Cl      11.29340000      10.90880000       7.04276000
 Cl       3.77176000      14.94020000      10.52020000
 Cl      13.27780000      14.19110000       7.10388000
 240
-Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production source_frame_index=385 relative_time_ps=38.5 pbc="T T T"
+Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production display_name="Li₃YCl₆ — SevenNet-nano — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=385 relative_time_ps=38.5 pbc="T T T"
 Li       2.10823000       3.18778000       5.12807000
 Li       7.83953000      -0.28594600       0.03552780
 Li      -3.20636000       6.14122000       6.01897000
@@ -18875,7 +18875,7 @@ Cl      11.06810000      11.02360000       7.02619000
 Cl       3.83974000      15.12500000      10.43420000
 Cl      13.38760000      14.34370000       7.36058000
 240
-Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production source_frame_index=390 relative_time_ps=39.0 pbc="T T T"
+Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production display_name="Li₃YCl₆ — SevenNet-nano — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=390 relative_time_ps=39.0 pbc="T T T"
 Li       2.35251000       3.07368000       2.95416000
 Li       7.56965000      -0.42313700       0.01915960
 Li      -4.18207000       6.36138000       8.72694000
@@ -19117,7 +19117,7 @@ Cl      10.77740000      10.85260000       7.20339000
 Cl       4.22093000      15.30310000      10.48060000
 Cl      12.88900000      14.20090000       7.24878000
 240
-Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production source_frame_index=395 relative_time_ps=39.5 pbc="T T T"
+Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production display_name="Li₃YCl₆ — SevenNet-nano — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=395 relative_time_ps=39.5 pbc="T T T"
 Li       1.96722000       3.44409000       3.40361000
 Li       7.73358000      -0.49454400      -0.75149800
 Li      -4.02017000       6.14573000      11.30710000
@@ -19359,7 +19359,7 @@ Cl      11.33780000      10.93670000       7.21049000
 Cl       3.98297000      15.24830000      10.52860000
 Cl      13.19260000      14.25950000       7.58585000
 240
-Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production source_frame_index=400 relative_time_ps=40.0 pbc="T T T"
+Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production display_name="Li₃YCl₆ — SevenNet-nano — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=400 relative_time_ps=40.0 pbc="T T T"
 Li      -0.14895200       4.42861000       5.26118000
 Li       7.45123000       0.12475700      -0.86268600
 Li      -4.25105000       6.48839000      11.23420000
@@ -19601,7 +19601,7 @@ Cl      11.70220000      10.76830000       7.73976000
 Cl       3.43098000      15.21220000      10.32930000
 Cl      13.60770000      14.19080000       7.63988000
 240
-Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production source_frame_index=405 relative_time_ps=40.5 pbc="T T T"
+Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production display_name="Li₃YCl₆ — SevenNet-nano — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=405 relative_time_ps=40.5 pbc="T T T"
 Li       2.53658000       3.46790000       5.48801000
 Li       7.79470000      -0.41812800       2.90022000
 Li      -4.10190000       6.78916000       9.45333000
@@ -19843,7 +19843,7 @@ Cl      11.14540000      10.89630000       7.36617000
 Cl       3.81990000      15.35950000      10.61880000
 Cl      12.89540000      14.32850000       7.55364000
 240
-Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production source_frame_index=410 relative_time_ps=41.0 pbc="T T T"
+Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production display_name="Li₃YCl₆ — SevenNet-nano — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=410 relative_time_ps=41.0 pbc="T T T"
 Li       1.63700000       3.30644000       2.99939000
 Li       7.44841000      -0.08042720       2.14100000
 Li      -4.02812000       6.52745000       8.71996000
@@ -20085,7 +20085,7 @@ Cl      10.98970000      10.83050000       7.29324000
 Cl       3.70226000      15.04780000      10.54150000
 Cl      12.99930000      14.69550000       7.49323000
 240
-Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production source_frame_index=415 relative_time_ps=41.5 pbc="T T T"
+Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production display_name="Li₃YCl₆ — SevenNet-nano — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=415 relative_time_ps=41.5 pbc="T T T"
 Li       1.14301000       2.35874000       2.73504000
 Li       7.71091000      -0.22183800       2.63794000
 Li      -3.68138000       6.72181000       9.31815000
@@ -20327,7 +20327,7 @@ Cl      11.47570000      10.97960000       7.19991000
 Cl       3.56841000      14.98590000      10.62890000
 Cl      13.28410000      13.97650000       7.16315000
 240
-Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production source_frame_index=420 relative_time_ps=42.0 pbc="T T T"
+Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production display_name="Li₃YCl₆ — SevenNet-nano — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=420 relative_time_ps=42.0 pbc="T T T"
 Li       1.65081000       3.43810000       0.13384500
 Li       7.58199000       0.12210200       2.70522000
 Li      -3.78967000       6.45008000       8.31640000
@@ -20569,7 +20569,7 @@ Cl      11.12550000      10.98900000       6.78694000
 Cl       3.62651000      15.43670000      10.51590000
 Cl      13.28290000      13.89040000       7.15264000
 240
-Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production source_frame_index=425 relative_time_ps=42.5 pbc="T T T"
+Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production display_name="Li₃YCl₆ — SevenNet-nano — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=425 relative_time_ps=42.5 pbc="T T T"
 Li       1.87331000       3.40790000       2.88828000
 Li       7.52980000       0.03251160       2.59214000
 Li      -3.69450000       6.34122000      12.50610000
@@ -20811,7 +20811,7 @@ Cl      11.22140000      10.75890000       7.40525000
 Cl       3.91325000      15.28180000      10.48760000
 Cl      13.00810000      13.94630000       6.99670000
 240
-Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production source_frame_index=430 relative_time_ps=43.0 pbc="T T T"
+Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production display_name="Li₃YCl₆ — SevenNet-nano — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=430 relative_time_ps=43.0 pbc="T T T"
 Li       1.64572000       3.27735000       2.83247000
 Li       8.05746000       0.03225270       2.57969000
 Li      -3.58121000       6.49700000      11.89390000
@@ -21053,7 +21053,7 @@ Cl      10.91030000      10.69580000       7.04747000
 Cl       3.51328000      15.28390000      10.47330000
 Cl      12.90530000      14.04740000       7.06255000
 240
-Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production source_frame_index=435 relative_time_ps=43.5 pbc="T T T"
+Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production display_name="Li₃YCl₆ — SevenNet-nano — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=435 relative_time_ps=43.5 pbc="T T T"
 Li       2.03384000       3.24156000       5.89539000
 Li       7.87314000       0.14049300       2.78589000
 Li      -3.59368000       6.62836000      11.59200000
@@ -21295,7 +21295,7 @@ Cl      11.43280000      10.50350000       7.24109000
 Cl       3.69845000      15.38230000      10.32610000
 Cl      12.98510000      13.74250000       6.83486000
 240
-Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production source_frame_index=440 relative_time_ps=44.0 pbc="T T T"
+Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production display_name="Li₃YCl₆ — SevenNet-nano — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=440 relative_time_ps=44.0 pbc="T T T"
 Li       1.08756000       3.69323000       5.04198000
 Li       7.00985000       0.10336400       1.99108000
 Li      -3.87501000       6.60202000      15.33560000
@@ -21537,7 +21537,7 @@ Cl      11.32290000      10.76010000       7.82729000
 Cl       3.67133000      15.46480000      10.47770000
 Cl      12.99570000      13.93230000       7.14450000
 240
-Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production source_frame_index=445 relative_time_ps=44.5 pbc="T T T"
+Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production display_name="Li₃YCl₆ — SevenNet-nano — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=445 relative_time_ps=44.5 pbc="T T T"
 Li       1.73028000       3.00334000       5.78066000
 Li       7.67395000       0.19918900       2.29726000
 Li      -5.54444000       7.52432000      15.28740000
@@ -21779,7 +21779,7 @@ Cl      11.11470000      10.66420000       7.44364000
 Cl       3.69360000      15.15930000      10.36640000
 Cl      13.05710000      14.10180000       7.05666000
 240
-Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production source_frame_index=450 relative_time_ps=45.0 pbc="T T T"
+Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production display_name="Li₃YCl₆ — SevenNet-nano — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=450 relative_time_ps=45.0 pbc="T T T"
 Li       2.00110000       2.37845000       2.64045000
 Li       7.91274000      -0.01759580       2.28820000
 Li      -3.40080000       6.65040000      15.73660000
@@ -22021,7 +22021,7 @@ Cl      10.94160000      11.11480000       7.09430000
 Cl       3.59584000      15.12560000      10.44190000
 Cl      12.77110000      14.63440000       6.96109000
 240
-Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production source_frame_index=455 relative_time_ps=45.5 pbc="T T T"
+Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production display_name="Li₃YCl₆ — SevenNet-nano — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=455 relative_time_ps=45.5 pbc="T T T"
 Li       1.49741000       3.29748000       3.06986000
 Li       7.99071000      -0.28923200       2.86452000
 Li      -4.07920000       6.52966000      14.90130000
@@ -22263,7 +22263,7 @@ Cl      11.07570000      10.77160000       7.12624000
 Cl       3.70297000      15.26700000      10.44430000
 Cl      12.93610000      14.23640000       7.33831000
 240
-Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production source_frame_index=460 relative_time_ps=46.0 pbc="T T T"
+Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production display_name="Li₃YCl₆ — SevenNet-nano — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=460 relative_time_ps=46.0 pbc="T T T"
 Li       0.46473100       1.45964000       2.37680000
 Li       9.44064000      -2.70481000       2.44764000
 Li      -3.73129000       6.55042000      15.26880000
@@ -22505,7 +22505,7 @@ Cl      10.81490000      10.76450000       7.35558000
 Cl       3.67923000      15.42210000      10.44240000
 Cl      12.90800000      14.02880000       7.07464000
 240
-Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production source_frame_index=465 relative_time_ps=46.5 pbc="T T T"
+Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production display_name="Li₃YCl₆ — SevenNet-nano — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=465 relative_time_ps=46.5 pbc="T T T"
 Li      -2.20287000       2.84499000       2.29780000
 Li       8.60174000      -3.33701000      -0.26230200
 Li      -3.49297000       6.05127000      11.77760000
@@ -22747,7 +22747,7 @@ Cl      10.58400000      11.00570000       7.15231000
 Cl       3.36758000      15.20550000      10.27700000
 Cl      13.30840000      13.82110000       7.13523000
 240
-Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production source_frame_index=470 relative_time_ps=47.0 pbc="T T T"
+Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production display_name="Li₃YCl₆ — SevenNet-nano — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=470 relative_time_ps=47.0 pbc="T T T"
 Li      -2.04857000       2.87383000       2.31103000
 Li       9.35612000      -3.09828000      -0.12501400
 Li      -3.54680000       6.14453000      14.25800000
@@ -22989,7 +22989,7 @@ Cl      11.45320000      10.56830000       7.62655000
 Cl       3.51129000      15.18620000      10.66350000
 Cl      13.57830000      14.09540000       7.22260000
 240
-Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production source_frame_index=475 relative_time_ps=47.5 pbc="T T T"
+Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production display_name="Li₃YCl₆ — SevenNet-nano — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=475 relative_time_ps=47.5 pbc="T T T"
 Li      -2.10391000       2.46244000      -0.10345100
 Li       9.16257000      -3.50938000      -0.59540000
 Li      -4.01862000       6.33556000      14.54830000
@@ -23231,7 +23231,7 @@ Cl      11.58710000      10.84610000       7.23103000
 Cl       3.74770000      15.02770000      10.24480000
 Cl      13.64440000      14.30630000       7.41133000
 240
-Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production source_frame_index=480 relative_time_ps=48.0 pbc="T T T"
+Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production display_name="Li₃YCl₆ — SevenNet-nano — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=480 relative_time_ps=48.0 pbc="T T T"
 Li      -1.59114000       3.50886000       0.29644000
 Li       9.20175000      -3.24162000      -3.03023000
 Li      -3.91177000       7.01784000      15.02290000
@@ -23473,7 +23473,7 @@ Cl      11.01200000      11.09490000       6.80383000
 Cl       4.10008000      15.36030000      10.90150000
 Cl      13.47550000      14.05030000       7.54879000
 240
-Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production source_frame_index=485 relative_time_ps=48.5 pbc="T T T"
+Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production display_name="Li₃YCl₆ — SevenNet-nano — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=485 relative_time_ps=48.5 pbc="T T T"
 Li      -2.20561000       2.80374000       1.57981000
 Li       9.29177000      -3.41820000      -3.57607000
 Li      -3.96865000       6.72018000      15.08540000
@@ -23715,7 +23715,7 @@ Cl      11.38240000      11.03040000       7.33789000
 Cl       3.54262000      15.67250000      10.15730000
 Cl      13.30830000      14.73430000       7.08612000
 240
-Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production source_frame_index=490 relative_time_ps=49.0 pbc="T T T"
+Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production display_name="Li₃YCl₆ — SevenNet-nano — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=490 relative_time_ps=49.0 pbc="T T T"
 Li      -1.68676000       3.49079000       2.73060000
 Li       9.26287000      -3.70708000      -3.26637000
 Li      -3.99903000       6.60308000      14.62810000
@@ -23957,7 +23957,7 @@ Cl      11.44510000      10.78360000       6.98707000
 Cl       3.55070000      15.40140000      10.28170000
 Cl      13.42600000      13.97120000       7.27080000
 240
-Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production source_frame_index=495 relative_time_ps=49.5 pbc="T T T"
+Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production display_name="Li₃YCl₆ — SevenNet-nano — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=495 relative_time_ps=49.5 pbc="T T T"
 Li      -1.56758000       3.48821000       0.41969300
 Li       9.05379000      -3.53101000      -3.63926000
 Li      -3.87728000       6.61693000      14.77570000
@@ -24199,7 +24199,7 @@ Cl      11.41620000      11.02530000       7.12463000
 Cl       3.62147000      15.29280000      10.34690000
 Cl      13.07600000      14.38570000       7.04537000
 240
-Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production source_frame_index=500 relative_time_ps=50.0 pbc="T T T"
+Lattice="22.663657289024485 0.0 0.0 -11.331828644512262 19.62730295495961 0.0 0.0 0.0 12.229189668836467" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=SevenNet-nano temperature_K=600 phase=production display_name="Li₃YCl₆ — SevenNet-nano — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=500 relative_time_ps=50.0 pbc="T T T"
 Li      -1.83484000       3.33904000       0.41345900
 Li       9.26917000      -3.38636000      -6.31197000
 Li      -4.33048000       6.40789000      14.98660000

@@ -1,5 +1,5 @@
 192
-Lattice="25.825594235694478 0.0 0.0 0.4243154453683024 22.6177310940101 0.0 0.01991401577008881 5.914322802939086 9.97312849267931" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 role="common 300 K benchmark structure" pbc="T T T"
+Lattice="25.825594235694478 0.0 0.0 0.4243154453683024 22.6177310940101 0.0 0.01991401577008881 5.914322802939086 9.97312849267931" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 role="common 300 K benchmark structure" display_name="MACE–NEP LZOC benchmark — common 300 K initial structure" report_figures=09_MACE_NEP_runtime_density pbc="T T T"
 Li       1.01585458      14.60487755       7.63717669
 Li       9.58601459       9.87670152       1.99354175
 Li      23.05461487      14.10983060       7.02666395

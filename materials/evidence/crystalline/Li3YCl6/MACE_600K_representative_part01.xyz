@@ -1,5 +1,5 @@
 240
-Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production source_frame_index=0 relative_time_ps=0.0 pbc="T T T"
+Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production display_name="Li₃YCl₆ — MACE-MPA-0 — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=0 relative_time_ps=0.0 pbc="T T T"
 Li       2.58829000       0.20049600       5.73496000
 Li       7.47471000      -0.57092900      -1.20772000
 Li       1.38537000       7.75104000       1.45707000
@@ -241,7 +241,7 @@ Cl      10.97750000      10.84000000       7.69838000
 Cl       3.68942000      15.68750000       8.66214000
 Cl      12.14750000      14.67420000       6.07967000
 240
-Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production source_frame_index=5 relative_time_ps=0.5 pbc="T T T"
+Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production display_name="Li₃YCl₆ — MACE-MPA-0 — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=5 relative_time_ps=0.5 pbc="T T T"
 Li       3.04166000      -0.16785200       5.66480000
 Li       8.05748000      -0.70748600      -1.94255000
 Li       2.00989000       8.54730000       1.89115000
@@ -483,7 +483,7 @@ Cl      10.81160000      11.08160000       6.92592000
 Cl       4.75262000      16.13900000       8.97071000
 Cl      12.54270000      14.52790000       6.91443000
 240
-Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production source_frame_index=10 relative_time_ps=1.0 pbc="T T T"
+Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production display_name="Li₃YCl₆ — MACE-MPA-0 — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=10 relative_time_ps=1.0 pbc="T T T"
 Li       3.75022000      -1.57893000       7.42647000
 Li       7.63068000      -0.50575600      -0.97230300
 Li       1.11653000       8.08534000       1.40272000
@@ -725,7 +725,7 @@ Cl      11.11430000      10.96800000       7.02790000
 Cl       4.80511000      16.63590000       9.64313000
 Cl      11.82690000      14.41700000       6.72708000
 240
-Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production source_frame_index=15 relative_time_ps=1.5 pbc="T T T"
+Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production display_name="Li₃YCl₆ — MACE-MPA-0 — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=15 relative_time_ps=1.5 pbc="T T T"
 Li       4.38541000      -0.94695600       6.59593000
 Li       7.50308000      -0.58806100      -1.30008000
 Li       1.03854000       8.19579000       2.54385000
@@ -967,7 +967,7 @@ Cl      10.76690000      11.04400000       7.54576000
 Cl       3.59973000      16.83570000      10.08200000
 Cl      11.30840000      14.02680000       6.17657000
 240
-Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production source_frame_index=20 relative_time_ps=2.0 pbc="T T T"
+Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production display_name="Li₃YCl₆ — MACE-MPA-0 — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=20 relative_time_ps=2.0 pbc="T T T"
 Li       3.36128000      -2.09948000       7.07612000
 Li       7.95164000      -0.38587900      -1.21748000
 Li       1.77513000       9.51583000       2.38257000
@@ -1209,7 +1209,7 @@ Cl      10.71650000      11.02670000       7.46396000
 Cl       4.31504000      16.56370000       9.84085000
 Cl      11.70370000      14.23490000       6.20914000
 240
-Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production source_frame_index=25 relative_time_ps=2.5 pbc="T T T"
+Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production display_name="Li₃YCl₆ — MACE-MPA-0 — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=25 relative_time_ps=2.5 pbc="T T T"
 Li       3.71092000      -1.29051000       7.60441000
 Li       7.59116000      -0.31465500      -0.72145500
 Li       0.52908000       9.44920000       3.35079000
@@ -1451,7 +1451,7 @@ Cl       9.77145000      10.94750000       8.33779000
 Cl       4.39609000      16.51920000       9.58117000
 Cl      12.20560000      13.89400000       8.56234000
 240
-Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production source_frame_index=30 relative_time_ps=3.0 pbc="T T T"
+Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production display_name="Li₃YCl₆ — MACE-MPA-0 — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=30 relative_time_ps=3.0 pbc="T T T"
 Li       3.54044000      -2.37948000       7.57319000
 Li       7.67128000      -0.55198500      -0.64321100
 Li       0.44241400       9.95987000       1.85689000
@@ -1693,7 +1693,7 @@ Cl      10.29120000      11.15080000       7.73194000
 Cl       4.37584000      16.54590000       9.85058000
 Cl      11.98190000      13.62240000       6.69671000
 240
-Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production source_frame_index=35 relative_time_ps=3.5 pbc="T T T"
+Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production display_name="Li₃YCl₆ — MACE-MPA-0 — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=35 relative_time_ps=3.5 pbc="T T T"
 Li       4.26021000      -2.94604000       6.06718000
 Li       7.62269000      -0.74116000      -0.84154600
 Li       0.88260300       9.29910000       1.60542000
@@ -1935,7 +1935,7 @@ Cl       8.42397000      14.77680000       6.58544000
 Cl       4.56269000      16.84730000      10.04720000
 Cl      11.58290000      13.75330000       6.29458000
 240
-Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production source_frame_index=40 relative_time_ps=4.0 pbc="T T T"
+Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production display_name="Li₃YCl₆ — MACE-MPA-0 — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=40 relative_time_ps=4.0 pbc="T T T"
 Li       4.20525000      -2.50610000       7.55283000
 Li       7.07853000      -0.86634500       0.59059200
 Li       0.20148500       9.46747000       2.33486000
@@ -2177,7 +2177,7 @@ Cl       9.36883000      11.73570000       6.28722000
 Cl       4.00342000      16.79910000       9.33468000
 Cl      11.79790000      14.00910000       6.15617000
 240
-Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production source_frame_index=45 relative_time_ps=4.5 pbc="T T T"
+Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production display_name="Li₃YCl₆ — MACE-MPA-0 — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=45 relative_time_ps=4.5 pbc="T T T"
 Li       3.96494000      -2.25869000       7.06918000
 Li       7.71125000      -0.28159300       0.11949400
 Li       0.58517500       9.50347000       2.13076000
@@ -2419,7 +2419,7 @@ Cl       9.64371000      11.60780000       6.94370000
 Cl       3.61319000      16.62060000       9.50778000
 Cl      11.44630000      14.64770000       6.68146000
 240
-Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production source_frame_index=50 relative_time_ps=5.0 pbc="T T T"
+Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production display_name="Li₃YCl₆ — MACE-MPA-0 — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=50 relative_time_ps=5.0 pbc="T T T"
 Li       4.45366000      -1.97828000       6.45404000
 Li       6.67434000      -1.14168000       0.05529700
 Li       2.38981000      10.73920000       1.56231000
@@ -2661,7 +2661,7 @@ Cl       9.81699000      11.47350000       7.22079000
 Cl       3.87919000      16.54480000       9.47753000
 Cl      10.55760000      14.54800000       6.37748000
 240
-Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production source_frame_index=55 relative_time_ps=5.5 pbc="T T T"
+Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production display_name="Li₃YCl₆ — MACE-MPA-0 — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=55 relative_time_ps=5.5 pbc="T T T"
 Li       3.76147000      -2.41411000       6.43269000
 Li       7.37208000      -0.18341100       0.63331900
 Li       2.74393000      11.11830000       1.69532000
@@ -2903,7 +2903,7 @@ Cl       9.07398000      11.88800000       6.54137000
 Cl       4.46165000      16.44610000       9.67659000
 Cl      10.43940000      15.25680000       6.28873000
 240
-Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production source_frame_index=60 relative_time_ps=6.0 pbc="T T T"
+Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production display_name="Li₃YCl₆ — MACE-MPA-0 — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=60 relative_time_ps=6.0 pbc="T T T"
 Li       3.94277000      -1.93060000       7.48483000
 Li       7.46626000      -0.17631000       0.64181800
 Li       3.28096000      10.84560000       1.51975000
@@ -3145,7 +3145,7 @@ Cl       9.44265000      11.41020000       7.26695000
 Cl       4.02631000      16.39000000       9.12540000
 Cl      10.50470000      14.40020000       5.98632000
 240
-Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production source_frame_index=65 relative_time_ps=6.5 pbc="T T T"
+Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production display_name="Li₃YCl₆ — MACE-MPA-0 — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=65 relative_time_ps=6.5 pbc="T T T"
 Li       3.73696000      -2.49531000       5.77873000
 Li       7.81556000      -0.70688000      -0.98609100
 Li       2.78049000      10.65080000       2.13571000
@@ -3387,7 +3387,7 @@ Cl       8.68151000      11.80310000       6.68035000
 Cl       3.88997000      16.62890000       9.80364000
 Cl      10.00990000      14.79130000       5.82070000
 240
-Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production source_frame_index=70 relative_time_ps=7.0 pbc="T T T"
+Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production display_name="Li₃YCl₆ — MACE-MPA-0 — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=70 relative_time_ps=7.0 pbc="T T T"
 Li       4.33534000      -2.04169000       6.37505000
 Li       6.76133000      -1.11943000       0.48857200
 Li       6.26227000      11.39220000       0.76357500
@@ -3629,7 +3629,7 @@ Cl       8.59702000      11.39840000       7.29497000
 Cl       3.95167000      16.41230000      10.10370000
 Cl      10.78130000      13.73400000       6.09541000
 240
-Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production source_frame_index=75 relative_time_ps=7.5 pbc="T T T"
+Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production display_name="Li₃YCl₆ — MACE-MPA-0 — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=75 relative_time_ps=7.5 pbc="T T T"
 Li       4.41236000      -2.87378000       6.90393000
 Li       7.18067000      -0.72121800      -0.00981234
 Li       5.81754000      10.77380000       0.76719000
@@ -3871,7 +3871,7 @@ Cl       9.21115000      11.46260000       6.58363000
 Cl       3.58684000      16.53420000       9.64197000
 Cl       9.76396000      14.50150000       5.45211000
 240
-Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production source_frame_index=80 relative_time_ps=8.0 pbc="T T T"
+Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production display_name="Li₃YCl₆ — MACE-MPA-0 — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=80 relative_time_ps=8.0 pbc="T T T"
 Li       3.34149000      -2.05151000       6.15749000
 Li       8.16458000      -0.60914800      -0.53932400
 Li       3.45527000      11.72930000      -0.81429100
@@ -4113,7 +4113,7 @@ Cl       9.47475000      12.14310000       6.84955000
 Cl       3.76997000      16.64620000       9.55049000
 Cl      11.66410000      14.62020000       6.71413000
 240
-Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production source_frame_index=85 relative_time_ps=8.5 pbc="T T T"
+Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production display_name="Li₃YCl₆ — MACE-MPA-0 — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=85 relative_time_ps=8.5 pbc="T T T"
 Li       4.36995000      -3.32766000       6.34829000
 Li       7.81150000      -0.47681900      -0.82484700
 Li       4.79214000      11.93960000      -0.14780500
@@ -4355,7 +4355,7 @@ Cl       9.02600000      12.00440000       7.13254000
 Cl       4.18358000      16.67710000       9.69212000
 Cl      11.42400000      14.45970000       6.32080000
 240
-Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production source_frame_index=90 relative_time_ps=9.0 pbc="T T T"
+Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production display_name="Li₃YCl₆ — MACE-MPA-0 — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=90 relative_time_ps=9.0 pbc="T T T"
 Li       3.47922000      -2.14738000       6.25827000
 Li       8.16236000      -0.83004800      -1.03390000
 Li       4.07630000      12.39740000      -0.19332200
@@ -4597,7 +4597,7 @@ Cl       9.29517000      11.62250000       6.52670000
 Cl       3.96867000      16.71830000       9.30580000
 Cl      10.82910000      14.31730000       5.71775000
 240
-Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production source_frame_index=95 relative_time_ps=9.5 pbc="T T T"
+Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production display_name="Li₃YCl₆ — MACE-MPA-0 — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=95 relative_time_ps=9.5 pbc="T T T"
 Li       3.77584000      -1.37514000       7.55949000
 Li       7.46260000      -0.18547200      -1.24449000
 Li       3.33092000      11.90670000      -0.38120600
@@ -4839,7 +4839,7 @@ Cl       9.46602000      10.72960000       7.11199000
 Cl       3.93346000      16.65160000       9.22465000
 Cl      10.30300000      13.59220000       5.33877000
 240
-Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production source_frame_index=100 relative_time_ps=10.0 pbc="T T T"
+Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production display_name="Li₃YCl₆ — MACE-MPA-0 — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=100 relative_time_ps=10.0 pbc="T T T"
 Li       4.28948000      -2.47531000       6.37620000
 Li       7.70947000      -0.92951400      -1.05990000
 Li       3.98931000      12.09220000      -0.12866200
@@ -5081,7 +5081,7 @@ Cl       9.60642000      11.32560000       6.80275000
 Cl       4.32756000      16.37720000       9.54444000
 Cl      10.05440000      14.47940000       5.45757000
 240
-Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production source_frame_index=105 relative_time_ps=10.5 pbc="T T T"
+Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production display_name="Li₃YCl₆ — MACE-MPA-0 — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=105 relative_time_ps=10.5 pbc="T T T"
 Li       3.58371000      -2.11142000       6.12616000
 Li       8.30979000      -1.12789000      -0.68120300
 Li       4.91522000      11.83690000      -0.67902800
@@ -5323,7 +5323,7 @@ Cl       9.17140000      11.39000000       7.07708000
 Cl       4.32118000      16.53640000       9.73506000
 Cl      10.04900000      14.26430000       5.33059000
 240
-Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production source_frame_index=110 relative_time_ps=11.0 pbc="T T T"
+Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production display_name="Li₃YCl₆ — MACE-MPA-0 — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=110 relative_time_ps=11.0 pbc="T T T"
 Li       3.65573000      -1.80765000       6.36991000
 Li       8.14185000      -0.26923900      -0.64691300
 Li       3.43664000      12.25360000       0.32293500
@@ -5565,7 +5565,7 @@ Cl       8.85211000      12.02460000       6.92519000
 Cl       4.21062000      16.47810000       9.45325000
 Cl       9.70715000      14.63960000       5.57889000
 240
-Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production source_frame_index=115 relative_time_ps=11.5 pbc="T T T"
+Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production display_name="Li₃YCl₆ — MACE-MPA-0 — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=115 relative_time_ps=11.5 pbc="T T T"
 Li       4.17559000      -3.63998000       6.23056000
 Li       8.06682000      -0.04729480      -0.85973400
 Li       6.50634000      11.86050000       0.81221500
@@ -5807,7 +5807,7 @@ Cl       9.61707000      11.24980000       7.18758000
 Cl       3.75359000      16.18600000       9.03770000
 Cl      10.07080000      14.48700000       5.93338000
 240
-Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production source_frame_index=120 relative_time_ps=12.0 pbc="T T T"
+Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production display_name="Li₃YCl₆ — MACE-MPA-0 — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=120 relative_time_ps=12.0 pbc="T T T"
 Li       3.26901000      -2.38362000       6.23611000
 Li       7.61016000      -0.03342440      -0.84486700
 Li       7.31015000      11.39050000       1.13325000
@@ -6049,7 +6049,7 @@ Cl      10.72570000      11.47860000       6.36390000
 Cl       3.75624000      16.43830000       9.44471000
 Cl      10.53400000      14.59680000       5.50554000
 240
-Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production source_frame_index=125 relative_time_ps=12.5 pbc="T T T"
+Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production display_name="Li₃YCl₆ — MACE-MPA-0 — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=125 relative_time_ps=12.5 pbc="T T T"
 Li       4.08646000      -2.34611000       6.29709000
 Li       8.18720000      -0.03090110      -0.98692200
 Li       6.39962000      11.65990000       0.15104500
@@ -6291,7 +6291,7 @@ Cl       9.37336000      11.30480000       7.60374000
 Cl       3.76683000      16.46710000       9.98860000
 Cl      10.19410000      13.91940000       5.99388000
 240
-Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production source_frame_index=130 relative_time_ps=13.0 pbc="T T T"
+Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production display_name="Li₃YCl₆ — MACE-MPA-0 — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=130 relative_time_ps=13.0 pbc="T T T"
 Li       3.84433000      -2.36892000       6.09301000
 Li       8.10959000      -0.37571100      -0.79227700
 Li       7.58576000      10.98320000       0.63019500
@@ -6533,7 +6533,7 @@ Cl       8.26468000      12.46140000       6.03527000
 Cl       3.83168000      16.57910000       9.74922000
 Cl      10.01250000      15.28680000       5.27458000
 240
-Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production source_frame_index=135 relative_time_ps=13.5 pbc="T T T"
+Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production display_name="Li₃YCl₆ — MACE-MPA-0 — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=135 relative_time_ps=13.5 pbc="T T T"
 Li       4.73503000      -1.48222000       6.63533000
 Li       6.45530000      -0.45343300      -1.67803000
 Li       6.46928000      11.43400000       1.05135000
@@ -6775,7 +6775,7 @@ Cl       7.80602000      12.87210000       6.63924000
 Cl       4.06447000      16.40570000       9.69784000
 Cl      10.15530000      14.86150000       5.58162000
 240
-Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production source_frame_index=140 relative_time_ps=14.0 pbc="T T T"
+Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production display_name="Li₃YCl₆ — MACE-MPA-0 — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=140 relative_time_ps=14.0 pbc="T T T"
 Li       4.13052000      -3.26678000       5.86989000
 Li       5.45433000       0.82564800      -3.32874000
 Li       7.16964000      11.10520000       1.39328000
@@ -7017,7 +7017,7 @@ Cl       7.37847000      13.84610000       6.93768000
 Cl       3.54357000      16.53080000       9.87812000
 Cl       9.99388000      15.53510000       5.64415000
 240
-Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production source_frame_index=145 relative_time_ps=14.5 pbc="T T T"
+Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production display_name="Li₃YCl₆ — MACE-MPA-0 — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=145 relative_time_ps=14.5 pbc="T T T"
 Li       4.25076000      -3.95571000       5.39670000
 Li       5.88055000       2.01761000      -2.62286000
 Li       7.48915000      13.49220000       4.63494000
@@ -7259,7 +7259,7 @@ Cl       7.08598000      13.97310000       7.29814000
 Cl       3.35891000      16.39620000       9.84701000
 Cl      10.26560000      15.18470000       6.11275000
 240
-Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production source_frame_index=150 relative_time_ps=15.0 pbc="T T T"
+Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production display_name="Li₃YCl₆ — MACE-MPA-0 — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=150 relative_time_ps=15.0 pbc="T T T"
 Li       3.41797000      -3.57940000       5.24616000
 Li       6.04744000       0.32231500      -2.24369000
 Li       7.41233000      12.74660000       4.58002000
@@ -7501,7 +7501,7 @@ Cl       6.85098000      13.40870000       7.86866000
 Cl       3.94619000      16.46860000       9.89646000
 Cl       9.89615000      15.01030000       5.98825000
 240
-Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production source_frame_index=155 relative_time_ps=15.5 pbc="T T T"
+Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production display_name="Li₃YCl₆ — MACE-MPA-0 — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=155 relative_time_ps=15.5 pbc="T T T"
 Li       4.12251000      -4.58188000       5.40100000
 Li       6.27235000       0.40153400      -2.36990000
 Li       7.18270000      12.93000000       3.72325000
@@ -7743,7 +7743,7 @@ Cl       6.86805000      13.67990000       7.99170000
 Cl       3.77344000      16.56580000       9.40594000
 Cl       9.74502000      14.89060000       6.07628000
 240
-Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production source_frame_index=160 relative_time_ps=16.0 pbc="T T T"
+Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production display_name="Li₃YCl₆ — MACE-MPA-0 — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=160 relative_time_ps=16.0 pbc="T T T"
 Li       4.04857000      -4.61801000       5.70200000
 Li       5.65295000       0.96349000      -2.42471000
 Li       5.73152000      15.03140000       5.24056000
@@ -7985,7 +7985,7 @@ Cl       7.10667000      13.87200000       8.29868000
 Cl       3.93219000      16.19060000       9.49424000
 Cl       9.83994000      14.64210000       6.24591000
 240
-Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production source_frame_index=165 relative_time_ps=16.5 pbc="T T T"
+Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production display_name="Li₃YCl₆ — MACE-MPA-0 — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=165 relative_time_ps=16.5 pbc="T T T"
 Li       3.86615000      -4.34739000       5.74279000
 Li       6.57587000       1.77169000      -2.27774000
 Li       7.42640000      13.98410000       4.34204000
@@ -8227,7 +8227,7 @@ Cl       6.59186000      14.01100000       8.65790000
 Cl       3.86745000      16.42030000       9.42352000
 Cl       9.95186000      14.74090000       5.98874000
 240
-Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production source_frame_index=170 relative_time_ps=17.0 pbc="T T T"
+Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production display_name="Li₃YCl₆ — MACE-MPA-0 — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=170 relative_time_ps=17.0 pbc="T T T"
 Li       4.33018000      -4.27861000       5.71683000
 Li       7.77770000      -1.53571000      -1.72667000
 Li       7.39539000      13.61590000       4.80290000
@@ -8469,7 +8469,7 @@ Cl       7.48001000      14.47580000       8.86192000
 Cl       3.66708000      17.01610000       9.54032000
 Cl       9.90846000      15.22070000       5.83714000
 240
-Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production source_frame_index=175 relative_time_ps=17.5 pbc="T T T"
+Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production display_name="Li₃YCl₆ — MACE-MPA-0 — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=175 relative_time_ps=17.5 pbc="T T T"
 Li       4.60311000      -2.54232000       6.33811000
 Li       7.83825000      -0.30423300      -1.10762000
 Li       7.24435000      13.24830000       4.36077000
@@ -8711,7 +8711,7 @@ Cl       8.22537000      14.22650000       9.74971000
 Cl       4.19168000      16.66640000       9.94526000
 Cl       9.96779000      15.95800000       5.51259000
 240
-Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production source_frame_index=180 relative_time_ps=18.0 pbc="T T T"
+Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production display_name="Li₃YCl₆ — MACE-MPA-0 — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=180 relative_time_ps=18.0 pbc="T T T"
 Li       3.94032000      -2.51667000       6.76799000
 Li       8.00149000      -0.51144300      -1.02219000
 Li       8.07173000      14.25870000       5.09903000
@@ -8953,7 +8953,7 @@ Cl       7.69797000      14.27110000       8.25825000
 Cl       4.32646000      16.56660000       9.63244000
 Cl       9.73717000      15.68350000       5.36524000
 240
-Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production source_frame_index=185 relative_time_ps=18.5 pbc="T T T"
+Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production display_name="Li₃YCl₆ — MACE-MPA-0 — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=185 relative_time_ps=18.5 pbc="T T T"
 Li       4.60692000      -2.51877000       6.42938000
 Li       8.08064000      -0.08686910      -0.86205600
 Li       8.08371000      17.07730000       5.16465000
@@ -9195,7 +9195,7 @@ Cl       7.61228000      13.32580000       7.14315000
 Cl       3.65564000      16.57520000       9.86836000
 Cl      10.04230000      15.65960000       5.50190000
 240
-Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production source_frame_index=190 relative_time_ps=19.0 pbc="T T T"
+Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production display_name="Li₃YCl₆ — MACE-MPA-0 — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=190 relative_time_ps=19.0 pbc="T T T"
 Li       3.75127000      -2.18311000       5.91528000
 Li       7.91753000      -0.40550700      -0.98943300
 Li       8.88498000      17.09320000       4.87811000
@@ -9437,7 +9437,7 @@ Cl       9.49907000      11.43280000       5.91672000
 Cl       3.26568000      16.70490000      10.10280000
 Cl       9.46567000      14.31680000       4.61753000
 240
-Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production source_frame_index=195 relative_time_ps=19.5 pbc="T T T"
+Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production display_name="Li₃YCl₆ — MACE-MPA-0 — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=195 relative_time_ps=19.5 pbc="T T T"
 Li       3.96209000      -3.05178000       5.72385000
 Li       7.64304000      -0.82979000      -0.76687500
 Li       9.13281000      17.51030000       5.22204000
@@ -9679,7 +9679,7 @@ Cl       9.08166000      12.06070000       6.02739000
 Cl       3.67544000      16.52570000       9.20259000
 Cl       9.87815000      15.16860000       5.08473000
 240
-Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production source_frame_index=200 relative_time_ps=20.0 pbc="T T T"
+Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production display_name="Li₃YCl₆ — MACE-MPA-0 — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=200 relative_time_ps=20.0 pbc="T T T"
 Li       3.90349000      -2.67823000       5.42510000
 Li       7.89067000      -0.62601400      -1.25051000
 Li       8.31136000      17.17910000       5.29284000
@@ -9921,7 +9921,7 @@ Cl       9.29066000      12.21840000       6.07194000
 Cl       3.92173000      16.48850000      10.07230000
 Cl      10.02910000      15.52160000       5.65788000
 240
-Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production source_frame_index=205 relative_time_ps=20.5 pbc="T T T"
+Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production display_name="Li₃YCl₆ — MACE-MPA-0 — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=205 relative_time_ps=20.5 pbc="T T T"
 Li       4.22799000      -2.72087000       5.76671000
 Li       8.27163000      -0.66830100      -0.84114200
 Li       7.52348000      16.37570000       5.22517000
@@ -10163,7 +10163,7 @@ Cl       9.11755000      12.86830000       5.35010000
 Cl       3.71319000      16.42310000       9.32435000
 Cl       9.94745000      15.82390000       5.23082000
 240
-Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production source_frame_index=210 relative_time_ps=21.0 pbc="T T T"
+Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production display_name="Li₃YCl₆ — MACE-MPA-0 — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=210 relative_time_ps=21.0 pbc="T T T"
 Li       4.05163000      -2.80282000       5.79878000
 Li       8.13691000      -0.42646800      -1.45701000
 Li       8.39088000      16.90450000       7.07121000
@@ -10405,7 +10405,7 @@ Cl       8.38938000      13.08950000       5.92501000
 Cl       3.54414000      16.72700000       9.71050000
 Cl      10.01800000      15.73520000       5.68287000
 240
-Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production source_frame_index=215 relative_time_ps=21.5 pbc="T T T"
+Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production display_name="Li₃YCl₆ — MACE-MPA-0 — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=215 relative_time_ps=21.5 pbc="T T T"
 Li       4.10928000      -2.49347000       5.80768000
 Li       7.65160000      -0.79898900      -1.60437000
 Li       7.76215000      16.21780000       5.21093000
@@ -10647,7 +10647,7 @@ Cl       8.43054000      12.78510000       6.27870000
 Cl       4.11075000      16.48390000       9.81384000
 Cl       9.94568000      15.74130000       5.70808000
 240
-Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production source_frame_index=220 relative_time_ps=22.0 pbc="T T T"
+Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production display_name="Li₃YCl₆ — MACE-MPA-0 — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=220 relative_time_ps=22.0 pbc="T T T"
 Li       4.45763000      -1.14489000       4.32007000
 Li       8.28400000      -0.51854800      -1.30796000
 Li       7.82944000      16.66260000       5.25123000
@@ -10889,7 +10889,7 @@ Cl       8.63786000      12.56920000       5.94356000
 Cl       3.91423000      16.48850000       9.68609000
 Cl       9.93133000      15.25830000       5.40400000
 240
-Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production source_frame_index=225 relative_time_ps=22.5 pbc="T T T"
+Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production display_name="Li₃YCl₆ — MACE-MPA-0 — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=225 relative_time_ps=22.5 pbc="T T T"
 Li       3.71491000      -3.00995000       5.48070000
 Li       7.88920000      -0.83180000      -1.11487000
 Li       8.15451000      16.69070000       5.55841000
@@ -11131,7 +11131,7 @@ Cl       8.42509000      11.95020000       6.67037000
 Cl       4.25513000      16.93430000       9.87856000
 Cl       9.72272000      15.04710000       5.69292000
 240
-Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production source_frame_index=230 relative_time_ps=23.0 pbc="T T T"
+Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production display_name="Li₃YCl₆ — MACE-MPA-0 — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=230 relative_time_ps=23.0 pbc="T T T"
 Li       4.44317000      -2.28251000       5.73497000
 Li       7.96698000      -0.60176300      -1.13784000
 Li       7.67784000      16.19060000       5.36276000
@@ -11373,7 +11373,7 @@ Cl       7.90440000      12.48940000       6.33552000
 Cl       3.91251000      16.81000000       9.99280000
 Cl      10.01000000      15.33440000       5.46053000
 240
-Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production source_frame_index=235 relative_time_ps=23.5 pbc="T T T"
+Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production display_name="Li₃YCl₆ — MACE-MPA-0 — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=235 relative_time_ps=23.5 pbc="T T T"
 Li       3.45188000      -3.34343000       6.11127000
 Li       8.16932000      -0.42110700      -1.09786000
 Li       7.57755000      16.31060000       6.21374000
@@ -11615,7 +11615,7 @@ Cl       8.36030000      12.16610000       5.38540000
 Cl       3.51464000      17.20130000      10.13450000
 Cl       9.62475000      15.55190000       5.44526000
 240
-Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production source_frame_index=240 relative_time_ps=24.0 pbc="T T T"
+Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production display_name="Li₃YCl₆ — MACE-MPA-0 — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=240 relative_time_ps=24.0 pbc="T T T"
 Li       4.10623000      -2.31910000       5.65491000
 Li       8.27375000      -0.21479000      -1.01312000
 Li       7.42057000      16.28480000       5.55232000
@@ -11857,7 +11857,7 @@ Cl       9.00761000      12.44250000       5.85456000
 Cl       3.81647000      16.02060000       9.51757000
 Cl       9.75985000      15.59920000       5.57145000
 240
-Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production source_frame_index=245 relative_time_ps=24.5 pbc="T T T"
+Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production display_name="Li₃YCl₆ — MACE-MPA-0 — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=245 relative_time_ps=24.5 pbc="T T T"
 Li       4.33873000      -3.03819000       6.09551000
 Li       7.87116000      -0.43740000      -1.21040000
 Li       6.69402000      14.71780000       5.73318000
@@ -12099,7 +12099,7 @@ Cl       7.98392000      13.14960000       5.53056000
 Cl       3.23759000      16.66500000       9.90183000
 Cl       9.87290000      15.76520000       5.98098000
 240
-Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production source_frame_index=250 relative_time_ps=25.0 pbc="T T T"
+Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production display_name="Li₃YCl₆ — MACE-MPA-0 — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=250 relative_time_ps=25.0 pbc="T T T"
 Li       4.11664000      -2.74978000       5.87622000
 Li       8.13521000      -1.27385000      -1.20674000
 Li       7.68427000      13.77430000       5.65989000
@@ -12341,7 +12341,7 @@ Cl       7.49745000      12.66230000       7.42308000
 Cl       2.99913000      16.35310000       9.61600000
 Cl       9.33673000      15.18570000       5.83586000
 240
-Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production source_frame_index=255 relative_time_ps=25.5 pbc="T T T"
+Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production display_name="Li₃YCl₆ — MACE-MPA-0 — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=255 relative_time_ps=25.5 pbc="T T T"
 Li       3.91904000      -3.98397000       5.89854000
 Li       8.02505000      -0.50991800      -1.29347000
 Li       7.03083000      14.12780000       5.92301000
@@ -12583,7 +12583,7 @@ Cl       6.09520000      13.82550000       8.27813000
 Cl       4.17617000      16.70910000       9.92529000
 Cl       9.20524000      14.63320000       5.94846000
 240
-Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production source_frame_index=260 relative_time_ps=26.0 pbc="T T T"
+Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production display_name="Li₃YCl₆ — MACE-MPA-0 — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=260 relative_time_ps=26.0 pbc="T T T"
 Li       4.52111000      -3.41391000       6.20281000
 Li       8.00257000      -0.24396200      -0.77838300
 Li       6.79891000      14.31150000       6.37661000
@@ -12825,7 +12825,7 @@ Cl       7.17277000      13.48980000       8.56746000
 Cl       3.95193000      17.48830000      10.67840000
 Cl       9.00303000      14.14160000       5.61032000
 240
-Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production source_frame_index=265 relative_time_ps=26.5 pbc="T T T"
+Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production display_name="Li₃YCl₆ — MACE-MPA-0 — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=265 relative_time_ps=26.5 pbc="T T T"
 Li       4.13981000      -2.56103000       6.10052000
 Li       8.30602000      -0.62227100      -1.29182000
 Li       6.56562000      14.53030000       5.58076000
@@ -13067,7 +13067,7 @@ Cl       8.04155000      13.08150000       9.28697000
 Cl       3.50536000      15.79050000       9.32475000
 Cl       9.14653000      14.04040000       6.39602000
 240
-Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production source_frame_index=270 relative_time_ps=27.0 pbc="T T T"
+Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production display_name="Li₃YCl₆ — MACE-MPA-0 — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=270 relative_time_ps=27.0 pbc="T T T"
 Li       3.74423000      -2.87913000       5.80998000
 Li       8.04418000      -0.79959200      -1.07397000
 Li       5.64545000      13.87070000       7.44170000
@@ -13309,7 +13309,7 @@ Cl       7.45580000      13.18860000       8.79151000
 Cl       3.78114000      16.32390000       9.57497000
 Cl       9.37462000      14.74060000       5.66714000
 240
-Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production source_frame_index=275 relative_time_ps=27.5 pbc="T T T"
+Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production display_name="Li₃YCl₆ — MACE-MPA-0 — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=275 relative_time_ps=27.5 pbc="T T T"
 Li       3.98425000      -2.26164000       5.46620000
 Li       7.98919000      -0.57933600      -1.36120000
 Li       6.55139000      14.40460000       5.22687000
@@ -13551,7 +13551,7 @@ Cl       7.89156000      13.44400000       8.61247000
 Cl       3.85262000      15.96180000       9.49172000
 Cl       9.09009000      13.68270000       5.72900000
 240
-Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production source_frame_index=280 relative_time_ps=28.0 pbc="T T T"
+Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production display_name="Li₃YCl₆ — MACE-MPA-0 — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=280 relative_time_ps=28.0 pbc="T T T"
 Li       4.96087000      -2.20880000       5.83350000
 Li       8.22151000      -0.51640300      -0.77980900
 Li       6.27813000      14.94360000       5.18309000
@@ -13793,7 +13793,7 @@ Cl       8.20463000      14.03070000       8.33077000
 Cl       3.82032000      16.19080000       8.57701000
 Cl       9.40485000      13.12450000       5.37423000
 240
-Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production source_frame_index=285 relative_time_ps=28.5 pbc="T T T"
+Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production display_name="Li₃YCl₆ — MACE-MPA-0 — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=285 relative_time_ps=28.5 pbc="T T T"
 Li       4.72065000      -1.30638000       5.38992000
 Li       7.95206000      -1.19013000      -0.18903900
 Li       6.94914000      14.80890000       5.36665000
@@ -14035,7 +14035,7 @@ Cl       7.81125000      14.00070000       7.77563000
 Cl       5.00720000      16.09390000       9.14711000
 Cl       9.86952000      12.43410000       4.76733000
 240
-Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production source_frame_index=290 relative_time_ps=29.0 pbc="T T T"
+Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production display_name="Li₃YCl₆ — MACE-MPA-0 — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=290 relative_time_ps=29.0 pbc="T T T"
 Li       4.92139000      -1.34736000       5.65495000
 Li       8.73334000      -1.25101000      -0.92073300
 Li       6.86846000      15.09650000       5.42749000
@@ -14277,7 +14277,7 @@ Cl       8.41377000      14.76180000       8.02215000
 Cl       4.94898000      16.08560000       8.75668000
 Cl      10.05500000      12.73080000       4.99311000
 240
-Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production source_frame_index=295 relative_time_ps=29.5 pbc="T T T"
+Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production display_name="Li₃YCl₆ — MACE-MPA-0 — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=295 relative_time_ps=29.5 pbc="T T T"
 Li       5.63155000      -1.57606000       5.33482000
 Li       8.29766000      -1.89877000      -0.63156100
 Li       6.81914000      14.43170000       4.80539000
@@ -14519,7 +14519,7 @@ Cl       7.98800000      14.10200000       7.31474000
 Cl       5.08269000      15.58490000       9.31464000
 Cl      10.64990000      12.89080000       3.87518000
 240
-Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production source_frame_index=300 relative_time_ps=30.0 pbc="T T T"
+Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production display_name="Li₃YCl₆ — MACE-MPA-0 — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=300 relative_time_ps=30.0 pbc="T T T"
 Li       5.34895000      -1.55707000       5.35289000
 Li       8.57206000      -1.97931000      -0.90746700
 Li       6.71923000      14.78210000       5.82450000
@@ -14761,7 +14761,7 @@ Cl       7.63413000      14.14710000       9.07891000
 Cl       4.38315000      15.55730000       9.03474000
 Cl      10.43340000      12.81030000       5.18087000
 240
-Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production source_frame_index=305 relative_time_ps=30.5 pbc="T T T"
+Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production display_name="Li₃YCl₆ — MACE-MPA-0 — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=305 relative_time_ps=30.5 pbc="T T T"
 Li       5.05851000      -1.21122000       5.80727000
 Li       8.77195000      -2.00918000      -0.51689000
 Li       6.74493000      15.09740000       5.72548000
@@ -15003,7 +15003,7 @@ Cl       8.10943000      14.01730000       8.22381000
 Cl       5.13580000      15.92580000       9.02277000
 Cl       9.34056000      13.30640000       5.21735000
 240
-Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production source_frame_index=310 relative_time_ps=31.0 pbc="T T T"
+Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production display_name="Li₃YCl₆ — MACE-MPA-0 — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=310 relative_time_ps=31.0 pbc="T T T"
 Li       5.41365000      -1.26457000       5.82158000
 Li       8.61994000      -1.87300000      -0.09624330
 Li       6.79969000      14.51000000       5.59699000
@@ -15245,7 +15245,7 @@ Cl       8.03495000      14.05110000       7.86160000
 Cl       5.26832000      15.82870000       9.33665000
 Cl      10.11820000      12.62770000       4.74404000
 240
-Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production source_frame_index=315 relative_time_ps=31.5 pbc="T T T"
+Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production display_name="Li₃YCl₆ — MACE-MPA-0 — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=315 relative_time_ps=31.5 pbc="T T T"
 Li       4.72613000      -2.05052000       5.35724000
 Li       7.37628000      -1.17461000       0.24900800
 Li       7.92796000      14.20010000       4.85427000
@@ -15487,7 +15487,7 @@ Cl       7.76667000      14.30930000       7.73419000
 Cl       5.10966000      16.44970000      10.00050000
 Cl      11.14040000      12.48540000       4.26995000
 240
-Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production source_frame_index=320 relative_time_ps=32.0 pbc="T T T"
+Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production display_name="Li₃YCl₆ — MACE-MPA-0 — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=320 relative_time_ps=32.0 pbc="T T T"
 Li       5.14419000      -1.21581000       5.44619000
 Li       8.60507000      -1.12047000       0.31198400
 Li       6.52534000      14.87700000       5.30198000
@@ -15729,7 +15729,7 @@ Cl       7.54514000      14.26610000       7.50038000
 Cl       4.50794000      15.90270000       9.14803000
 Cl      11.36680000      12.10160000       4.89067000
 240
-Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production source_frame_index=325 relative_time_ps=32.5 pbc="T T T"
+Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production display_name="Li₃YCl₆ — MACE-MPA-0 — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=325 relative_time_ps=32.5 pbc="T T T"
 Li       4.42894000      -2.45223000       5.81712000
 Li       7.04774000      -0.75697900       0.38198500
 Li       6.86368000      14.07620000       5.68255000
@@ -15971,7 +15971,7 @@ Cl       7.62735000      13.93150000       8.23434000
 Cl       4.80350000      15.84580000       9.11230000
 Cl      11.15660000      12.50730000       5.02733000
 240
-Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production source_frame_index=330 relative_time_ps=33.0 pbc="T T T"
+Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production display_name="Li₃YCl₆ — MACE-MPA-0 — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=330 relative_time_ps=33.0 pbc="T T T"
 Li       4.88839000      -2.85663000       5.85388000
 Li       8.13503000      -0.42591400       0.22961100
 Li       6.12835000      15.14160000       4.67650000
@@ -16213,7 +16213,7 @@ Cl       7.73443000      14.14090000       7.58666000
 Cl       3.72375000      15.83970000       9.46541000
 Cl      11.47360000      11.89120000       4.70782000
 240
-Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production source_frame_index=335 relative_time_ps=33.5 pbc="T T T"
+Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production display_name="Li₃YCl₆ — MACE-MPA-0 — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=335 relative_time_ps=33.5 pbc="T T T"
 Li       4.67084000      -2.33764000       5.71897000
 Li       7.12986000      -0.50020000       0.09874630
 Li       8.02460000      14.56960000       5.18426000
@@ -16455,7 +16455,7 @@ Cl       7.94823000      13.80210000       7.44124000
 Cl       4.58540000      15.38900000       9.54473000
 Cl      10.87770000      12.46130000       4.02928000
 240
-Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production source_frame_index=340 relative_time_ps=34.0 pbc="T T T"
+Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production display_name="Li₃YCl₆ — MACE-MPA-0 — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=340 relative_time_ps=34.0 pbc="T T T"
 Li       4.66861000      -2.14533000       5.43053000
 Li       7.16862000      -0.87011700       0.28476700
 Li       6.46281000      15.62370000       5.03615000
@@ -16697,7 +16697,7 @@ Cl       7.58774000      14.08060000       7.99699000
 Cl       3.97100000      15.74410000       8.82866000
 Cl      10.98070000      12.31730000       4.65826000
 240
-Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production source_frame_index=345 relative_time_ps=34.5 pbc="T T T"
+Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production display_name="Li₃YCl₆ — MACE-MPA-0 — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=345 relative_time_ps=34.5 pbc="T T T"
 Li       4.70081000      -2.57762000       5.46254000
 Li       7.80134000      -0.86349400      -0.64442100
 Li       6.06031000      14.76490000       5.15355000
@@ -16939,7 +16939,7 @@ Cl       7.54165000      13.98390000       8.37498000
 Cl       4.10327000      15.56950000       8.41873000
 Cl      11.81210000      12.08780000       4.31813000
 240
-Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production source_frame_index=350 relative_time_ps=35.0 pbc="T T T"
+Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production display_name="Li₃YCl₆ — MACE-MPA-0 — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=350 relative_time_ps=35.0 pbc="T T T"
 Li       3.88866000      -3.06578000       5.36051000
 Li       8.65943000      -0.75292600       0.19635300
 Li       7.60316000      16.56130000       5.54097000
@@ -17181,7 +17181,7 @@ Cl       7.94783000      14.49830000       8.80044000
 Cl       4.77095000      15.79540000       9.77760000
 Cl      11.48460000      12.07340000       3.50298000
 240
-Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production source_frame_index=355 relative_time_ps=35.5 pbc="T T T"
+Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production display_name="Li₃YCl₆ — MACE-MPA-0 — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=355 relative_time_ps=35.5 pbc="T T T"
 Li       4.73523000      -1.79364000       4.74041000
 Li       7.31029000      -0.51002600       0.80000300
 Li       7.66510000      15.90460000       4.87668000
@@ -17423,7 +17423,7 @@ Cl       8.67595000      14.30410000       7.76653000
 Cl       5.74356000      16.39420000       9.66195000
 Cl      11.54790000      12.15440000       2.57910000
 240
-Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production source_frame_index=360 relative_time_ps=36.0 pbc="T T T"
+Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production display_name="Li₃YCl₆ — MACE-MPA-0 — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=360 relative_time_ps=36.0 pbc="T T T"
 Li       4.80254000      -2.31201000       5.57379000
 Li       7.67721000      -0.55396300      -0.07231090
 Li       8.40924000      16.26340000       4.87997000
@@ -17665,7 +17665,7 @@ Cl       7.64160000      13.92460000       7.98017000
 Cl       4.22575000      15.84690000       9.46744000
 Cl      12.17280000      12.33280000       4.44942000
 240
-Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production source_frame_index=365 relative_time_ps=36.5 pbc="T T T"
+Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production display_name="Li₃YCl₆ — MACE-MPA-0 — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=365 relative_time_ps=36.5 pbc="T T T"
 Li       4.34736000      -2.40737000       5.29555000
 Li       7.67851000      -1.03437000      -0.79884300
 Li       7.74679000      16.01150000       5.39224000
@@ -17907,7 +17907,7 @@ Cl       7.75217000      13.96550000       8.34481000
 Cl       4.16235000      16.57370000      10.07310000
 Cl      11.66760000      11.90210000       3.19341000
 240
-Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production source_frame_index=370 relative_time_ps=37.0 pbc="T T T"
+Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production display_name="Li₃YCl₆ — MACE-MPA-0 — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=370 relative_time_ps=37.0 pbc="T T T"
 Li       4.48062000      -2.18503000       5.78325000
 Li       8.21382000      -0.76407600      -0.02940450
 Li       7.83971000      15.95780000       5.66044000
@@ -18149,7 +18149,7 @@ Cl       7.95099000      13.65230000       8.46312000
 Cl       4.24465000      16.08890000       9.45541000
 Cl      11.55900000      12.31900000       2.59743000
 240
-Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production source_frame_index=375 relative_time_ps=37.5 pbc="T T T"
+Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production display_name="Li₃YCl₆ — MACE-MPA-0 — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=375 relative_time_ps=37.5 pbc="T T T"
 Li       4.44356000      -2.03262000       5.61997000
 Li       8.19855000      -0.66031000      -0.05242830
 Li       8.10290000      16.87480000       5.14255000
@@ -18391,7 +18391,7 @@ Cl       8.35013000      13.85550000       8.48674000
 Cl       4.82327000      15.07800000       9.21139000
 Cl      10.96050000      12.44880000       2.62194000
 240
-Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production source_frame_index=380 relative_time_ps=38.0 pbc="T T T"
+Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production display_name="Li₃YCl₆ — MACE-MPA-0 — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=380 relative_time_ps=38.0 pbc="T T T"
 Li       4.87785000      -2.01971000       6.07504000
 Li       8.18627000      -0.27653000      -0.33040100
 Li       7.73209000      16.18070000       5.35674000
@@ -18633,7 +18633,7 @@ Cl       7.95912000      13.93700000       8.60751000
 Cl       4.73062000      15.87100000       9.88654000
 Cl      11.34450000      12.02750000       2.69501000
 240
-Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production source_frame_index=385 relative_time_ps=38.5 pbc="T T T"
+Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production display_name="Li₃YCl₆ — MACE-MPA-0 — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=385 relative_time_ps=38.5 pbc="T T T"
 Li       4.96971000      -2.24216000       5.67392000
 Li       7.38980000      -0.67148000      -0.64048800
 Li       8.32881000      17.21030000       5.73284000
@@ -18875,7 +18875,7 @@ Cl       8.23151000      13.85320000       8.62480000
 Cl       5.09595000      16.02730000       9.90989000
 Cl      11.49140000      12.18280000       2.66981000
 240
-Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production source_frame_index=390 relative_time_ps=39.0 pbc="T T T"
+Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production display_name="Li₃YCl₆ — MACE-MPA-0 — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=390 relative_time_ps=39.0 pbc="T T T"
 Li       4.76281000      -1.75001000       5.70061000
 Li       6.86079000      -0.35680700       0.58667300
 Li       8.63572000      17.27250000       6.04502000
@@ -19117,7 +19117,7 @@ Cl       8.03163000      13.59550000       8.24762000
 Cl       5.24202000      15.64370000       9.61795000
 Cl      11.39250000      12.44440000       2.41248000
 240
-Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production source_frame_index=395 relative_time_ps=39.5 pbc="T T T"
+Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production display_name="Li₃YCl₆ — MACE-MPA-0 — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=395 relative_time_ps=39.5 pbc="T T T"
 Li       4.92258000      -2.53587000       5.23363000
 Li       8.30995000      -1.26764000      -0.49129600
 Li       8.21041000      16.72890000       5.73500000
@@ -19359,7 +19359,7 @@ Cl       7.61765000      13.95490000       8.30705000
 Cl       4.96881000      16.46300000       9.78715000
 Cl      11.63080000      12.36960000       2.40213000
 240
-Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production source_frame_index=400 relative_time_ps=40.0 pbc="T T T"
+Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production display_name="Li₃YCl₆ — MACE-MPA-0 — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=400 relative_time_ps=40.0 pbc="T T T"
 Li       4.23105000      -2.39115000       5.60252000
 Li       8.48879000      -0.97168200      -0.26615600
 Li       8.13559000      16.80620000       5.77294000
@@ -19601,7 +19601,7 @@ Cl       8.47140000      14.38310000       7.94313000
 Cl       4.32598000      16.02350000      10.33220000
 Cl      11.40770000      12.63940000       2.43287000
 240
-Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production source_frame_index=405 relative_time_ps=40.5 pbc="T T T"
+Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production display_name="Li₃YCl₆ — MACE-MPA-0 — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=405 relative_time_ps=40.5 pbc="T T T"
 Li       4.33769000      -2.32069000       5.25979000
 Li       9.04030000      -1.18499000      -0.32127800
 Li       8.25391000      16.64550000       5.53569000
@@ -19843,7 +19843,7 @@ Cl       8.63115000      13.95960000       8.87085000
 Cl       5.41889000      15.75730000      10.05010000
 Cl      11.62480000      12.10270000       2.91957000
 240
-Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production source_frame_index=410 relative_time_ps=41.0 pbc="T T T"
+Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production display_name="Li₃YCl₆ — MACE-MPA-0 — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=410 relative_time_ps=41.0 pbc="T T T"
 Li       4.71091000      -2.71752000       5.10758000
 Li       7.43791000      -1.54303000      -0.38317900
 Li       8.67448000      17.26860000       6.56215000
@@ -20085,7 +20085,7 @@ Cl       8.07975000      13.91360000       8.76696000
 Cl       4.39872000      15.51340000       9.71776000
 Cl      11.84740000      12.31600000       3.26157000
 240
-Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production source_frame_index=415 relative_time_ps=41.5 pbc="T T T"
+Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production display_name="Li₃YCl₆ — MACE-MPA-0 — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=415 relative_time_ps=41.5 pbc="T T T"
 Li       3.99244000      -2.30771000       5.42276000
 Li       8.34769000      -1.70301000      -0.70944600
 Li       8.16741000      16.20640000       6.00332000
@@ -20327,7 +20327,7 @@ Cl       8.03278000      14.42400000       7.57150000
 Cl       5.09448000      16.49780000       9.73550000
 Cl      12.21150000      11.66550000       3.98380000
 240
-Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production source_frame_index=420 relative_time_ps=42.0 pbc="T T T"
+Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production display_name="Li₃YCl₆ — MACE-MPA-0 — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=420 relative_time_ps=42.0 pbc="T T T"
 Li       4.40538000      -3.00717000       5.23295000
 Li       7.79159000      -0.85068900      -0.30861800
 Li       8.15341000      16.51910000       5.02465000
@@ -20569,7 +20569,7 @@ Cl       7.63156000      14.26780000       8.31607000
 Cl       4.01362000      16.38320000      10.06230000
 Cl      12.25250000      11.90940000       4.07330000
 240
-Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production source_frame_index=425 relative_time_ps=42.5 pbc="T T T"
+Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production display_name="Li₃YCl₆ — MACE-MPA-0 — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=425 relative_time_ps=42.5 pbc="T T T"
 Li       4.09511000      -2.62580000       5.27555000
 Li       8.11393000      -0.35090600      -0.18595600
 Li       7.07120000      15.90380000       5.67240000
@@ -20811,7 +20811,7 @@ Cl       7.85638000      14.20320000       8.33559000
 Cl       5.52331000      16.23680000       9.98283000
 Cl      11.71090000      11.80960000       3.66209000
 240
-Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production source_frame_index=430 relative_time_ps=43.0 pbc="T T T"
+Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production display_name="Li₃YCl₆ — MACE-MPA-0 — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=430 relative_time_ps=43.0 pbc="T T T"
 Li       4.92875000      -1.23731000       5.39880000
 Li       8.58264000      -0.77744400       0.51134300
 Li       6.62119000      15.34920000       4.98687000
@@ -21053,7 +21053,7 @@ Cl       8.07047000      13.62950000      10.21310000
 Cl       5.14041000      15.86580000       9.30327000
 Cl      10.76890000      12.09530000       4.37345000
 240
-Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production source_frame_index=435 relative_time_ps=43.5 pbc="T T T"
+Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production display_name="Li₃YCl₆ — MACE-MPA-0 — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=435 relative_time_ps=43.5 pbc="T T T"
 Li       4.64267000      -0.89693500       5.65820000
 Li       7.67163000      -2.05444000      -0.23423700
 Li       6.35279000      15.41870000       5.43510000
@@ -21295,7 +21295,7 @@ Cl       7.49123000      13.74970000       8.50242000
 Cl       4.39778000      15.83110000       9.73022000
 Cl      10.66890000      12.18840000       4.52520000
 240
-Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production source_frame_index=440 relative_time_ps=44.0 pbc="T T T"
+Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production display_name="Li₃YCl₆ — MACE-MPA-0 — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=440 relative_time_ps=44.0 pbc="T T T"
 Li       4.63281000      -1.58091000       5.62439000
 Li       8.25404000      -1.51864000      -0.55772700
 Li       6.74601000      15.61300000       5.62259000
@@ -21537,7 +21537,7 @@ Cl       7.29720000      14.28900000       7.97234000
 Cl       4.92444000      16.06170000       9.74799000
 Cl      11.13480000      12.05220000       2.77455000
 240
-Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production source_frame_index=445 relative_time_ps=44.5 pbc="T T T"
+Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production display_name="Li₃YCl₆ — MACE-MPA-0 — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=445 relative_time_ps=44.5 pbc="T T T"
 Li       5.05533000      -2.28004000       5.83714000
 Li       8.37780000      -1.29861000      -0.10550600
 Li       8.31328000      16.78580000       6.83184000
@@ -21779,7 +21779,7 @@ Cl       6.95246000      13.67710000       7.42959000
 Cl       3.59317000      16.25570000       9.62074000
 Cl      11.50870000      11.76400000       3.16534000
 240
-Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production source_frame_index=450 relative_time_ps=45.0 pbc="T T T"
+Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production display_name="Li₃YCl₆ — MACE-MPA-0 — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=450 relative_time_ps=45.0 pbc="T T T"
 Li       4.56796000      -2.17818000       5.41122000
 Li       8.06432000      -0.18505900       0.17283300
 Li       7.80241000      16.64140000       8.94848000
@@ -22021,7 +22021,7 @@ Cl       7.65450000      14.62280000       8.32470000
 Cl       3.70958000      16.08160000       8.98900000
 Cl      11.32840000      11.83890000       3.27999000
 240
-Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production source_frame_index=455 relative_time_ps=45.5 pbc="T T T"
+Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production display_name="Li₃YCl₆ — MACE-MPA-0 — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=455 relative_time_ps=45.5 pbc="T T T"
 Li       4.25911000      -2.51641000       5.46751000
 Li       7.85370000      -0.81597000      -0.42297600
 Li       7.85548000      17.39990000       8.14854000
@@ -22263,7 +22263,7 @@ Cl       7.25519000      14.11200000       7.21731000
 Cl       4.10642000      15.76490000       9.39489000
 Cl      11.19080000      11.96440000       2.75677000
 240
-Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production source_frame_index=460 relative_time_ps=46.0 pbc="T T T"
+Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production display_name="Li₃YCl₆ — MACE-MPA-0 — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=460 relative_time_ps=46.0 pbc="T T T"
 Li       4.08930000      -1.06973000       6.44393000
 Li       7.99493000      -0.64044100       0.24811100
 Li       9.13882000      17.86240000       9.98056000
@@ -22505,7 +22505,7 @@ Cl       7.30272000      14.64150000       7.91056000
 Cl       4.03409000      16.16300000       9.42870000
 Cl      11.05620000      11.75460000       3.81774000
 240
-Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production source_frame_index=465 relative_time_ps=46.5 pbc="T T T"
+Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production display_name="Li₃YCl₆ — MACE-MPA-0 — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=465 relative_time_ps=46.5 pbc="T T T"
 Li       5.02796000      -1.33157000       5.63977000
 Li       8.26221000      -0.99902500      -0.19716400
 Li       7.72948000      16.51220000       8.91518000
@@ -22747,7 +22747,7 @@ Cl       7.42781000      14.04470000       8.38761000
 Cl       4.22934000      16.17420000       9.58589000
 Cl      11.52470000      11.88210000       2.77108000
 240
-Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production source_frame_index=470 relative_time_ps=47.0 pbc="T T T"
+Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production display_name="Li₃YCl₆ — MACE-MPA-0 — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=470 relative_time_ps=47.0 pbc="T T T"
 Li       4.45099000      -0.97396900       6.17974000
 Li       8.45782000      -1.75119000       0.01738480
 Li       7.77956000      16.52170000       9.51173000
@@ -22989,7 +22989,7 @@ Cl       7.84443000      14.53830000       8.18022000
 Cl       4.37134000      16.01260000       9.71119000
 Cl      11.62100000      11.56230000       3.79893000
 240
-Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production source_frame_index=475 relative_time_ps=47.5 pbc="T T T"
+Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production display_name="Li₃YCl₆ — MACE-MPA-0 — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=475 relative_time_ps=47.5 pbc="T T T"
 Li       4.59754000      -2.22742000       6.06006000
 Li       8.42694000      -0.36871500       0.30665900
 Li       7.61018000      16.52230000       9.43371000
@@ -23231,7 +23231,7 @@ Cl       7.33949000      14.34210000       8.40778000
 Cl       4.27519000      16.21920000       9.23686000
 Cl      11.61700000      11.85250000       2.85111000
 240
-Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production source_frame_index=480 relative_time_ps=48.0 pbc="T T T"
+Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production display_name="Li₃YCl₆ — MACE-MPA-0 — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=480 relative_time_ps=48.0 pbc="T T T"
 Li       3.84877000      -2.32201000       6.62245000
 Li       8.07821000      -0.38267800      -0.20360000
 Li       7.57250000      16.46340000       9.74267000
@@ -23473,7 +23473,7 @@ Cl       7.66978000      14.11920000       7.49548000
 Cl       4.34461000      15.89930000       9.74181000
 Cl      11.35720000      12.19160000       2.77176000
 240
-Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production source_frame_index=485 relative_time_ps=48.5 pbc="T T T"
+Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production display_name="Li₃YCl₆ — MACE-MPA-0 — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=485 relative_time_ps=48.5 pbc="T T T"
 Li       4.33327000      -1.53756000       6.82931000
 Li       7.93076000      -0.69252700       0.03411930
 Li       6.58337000      15.45790000      10.35250000
@@ -23715,7 +23715,7 @@ Cl       7.01357000      13.82240000       8.65064000
 Cl       4.22925000      16.03620000       9.78693000
 Cl      11.72010000      11.75780000       4.18741000
 240
-Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production source_frame_index=490 relative_time_ps=49.0 pbc="T T T"
+Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production display_name="Li₃YCl₆ — MACE-MPA-0 — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=490 relative_time_ps=49.0 pbc="T T T"
 Li       4.11818000      -1.20853000       6.95750000
 Li       7.97568000      -0.52973100      -0.09408710
 Li       7.42458000      16.00510000       9.74357000
@@ -23957,7 +23957,7 @@ Cl       7.39023000      13.22370000       8.30105000
 Cl       4.17710000      16.03050000       9.42100000
 Cl      11.22440000      11.80690000       3.37083000
 240
-Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production source_frame_index=495 relative_time_ps=49.5 pbc="T T T"
+Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production display_name="Li₃YCl₆ — MACE-MPA-0 — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=495 relative_time_ps=49.5 pbc="T T T"
 Li       3.98083000      -1.09206000       6.33130000
 Li       7.40653000      -0.96649800      -0.56267600
 Li       7.88865000      17.20950000       9.59126000
@@ -24199,7 +24199,7 @@ Cl       6.88006000      13.88910000       7.55655000
 Cl       5.36073000      16.58660000       9.37939000
 Cl      10.97780000      11.98190000       2.26391000
 240
-Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production source_frame_index=500 relative_time_ps=50.0 pbc="T T T"
+Lattice="23.481753107065572 0.0 0.0 -11.740876553532795 20.33579471611299 0.0 0.0 0.0 12.670629847644307" Properties=species:S:1:pos:R:3 material=Li3YCl6 model=MACE-MPA-0 temperature_K=600 phase=production display_name="Li₃YCl₆ — MACE-MPA-0 — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=500 relative_time_ps=50.0 pbc="T T T"
 Li       4.28995000      -1.58677000       6.70063000
 Li       8.40691000      -0.78517200      -0.09291190
 Li       7.46249000      16.38860000       9.67813000

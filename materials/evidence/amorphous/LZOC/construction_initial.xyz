@@ -1,5 +1,5 @@
 192
-Lattice="21.874 0.0 0.0 -10.936999999999996 18.943439682380813 0.0 0.0 0.0 12.044" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 role="literature-aligned construction input" pbc="T T T"
+Lattice="21.874 0.0 0.0 -10.936999999999996 18.943439682380813 0.0 0.0 0.0 12.044" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 role="literature-aligned construction input" display_name="LZOC — 192-atom literature-aligned construction structure" report_figures="01_LZOC_transport; 15_LZOC_RDF; 16_LZOC_coordination" pbc="T T T"
 Li       3.40140700       0.00000000       0.00000000
 Li      -1.70070350       2.94570487       6.02200000
 Li       3.76779650       6.52601497       6.02200000

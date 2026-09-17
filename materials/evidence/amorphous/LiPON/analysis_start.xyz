@@ -1,5 +1,5 @@
 124
-Lattice="9.63908 0.0 0.0 0.0 10.3723 0.0 0.0 0.0 12.0957" Properties=species:S:1:pos:R:3 material=LiPON role="transport-series start" pbc="T T T"
+Lattice="9.63908 0.0 0.0 0.0 10.3723 0.0 0.0 0.0 12.0957" Properties=species:S:1:pos:R:3 material=LiPON role="transport-series start" display_name="LiPON — NEP89 transport-series starting structure" report_figures="23_LiPON_lithium_MSD; 24_LiPON_transport_comparison; 25_LiPON_temperature_RDF" pbc="T T T"
 Li       3.22218000       1.55452000       2.18581000
 Li       5.67641000       2.56266000       1.88364000
 Li       8.18396000       2.80103000      11.63970000

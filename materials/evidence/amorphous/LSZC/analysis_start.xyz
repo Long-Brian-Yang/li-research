@@ -1,5 +1,5 @@
 272
-Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 role="common-cell transport-series start" pbc="T T T"
+Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 role="common-cell transport-series start" display_name="LSZC — common-cell NEP89 transport starting structure" report_figures="18_LSZC_transport_comparison; 19_LSZC_partial_RDF; 20_LSZC_coordination_mobility; 27_LSZC_PDF_and_Zr_coordination" pbc="T T T"
 Cl       9.75091000      11.85350000       6.30560000
 Cl       6.26625000      11.86920000       3.77392000
 Cl       7.21558000       9.69880000       5.61987000

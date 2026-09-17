@@ -1,5 +1,5 @@
 192
-Lattice="21.874 0.0 0.0 -10.937 18.9434 0.0 0.0 0.0 12.044" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 role="300 ps transport-series start" pbc="T T T"
+Lattice="21.874 0.0 0.0 -10.937 18.9434 0.0 0.0 0.0 12.044" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 role="300 ps transport-series start" display_name="LZOC — NEP89 transport-series starting structure" report_figures="01_LZOC_transport; 14_LZOC_species_MSD; 15_LZOC_RDF; 16_LZOC_coordination; 17_LZOC_radial_displacement" pbc="T T T"
 Li       6.13000000      15.36760000       0.93371500
 Li       8.16134000      16.36530000       3.80763000
 Li      20.62470000       2.07612000       8.34909000

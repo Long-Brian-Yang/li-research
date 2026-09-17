@@ -1,5 +1,5 @@
 192
-Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" source_frame_index=0 relative_time_ps=0.0 pbc="T T T"
+Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" display_name="Li₁.₇₅ZrCl₄.₇₅O₀.₅ — NEP89 — 600 K — NVT production" report_figures=09_MACE_NEP_runtime_density source_frame_index=0 relative_time_ps=0.0 pbc="T T T"
 Li      11.12981473      13.99009005       2.17695525
 Li       8.29952966      17.44997463       3.94794438
 Li      23.74043219      19.52353011       7.20327008
@@ -193,7 +193,7 @@ O        3.40438310      18.58626883       3.14485715
 O       13.22108894      17.51296914       1.29674348
 O       15.43902004      19.11914326       0.29145588
 192
-Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" source_frame_index=20 relative_time_ps=2.0 pbc="T T T"
+Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" display_name="Li₁.₇₅ZrCl₄.₇₅O₀.₅ — NEP89 — 600 K — NVT production" report_figures=09_MACE_NEP_runtime_density source_frame_index=20 relative_time_ps=2.0 pbc="T T T"
 Li      11.87514399      13.80564237       1.49795773
 Li      10.29748071      17.79491063       5.02231982
 Li      22.77274195      18.33740139       6.96515492
@@ -387,7 +387,7 @@ O        3.47826332      18.94313655       3.82925747
 O       13.20551393      17.84941672       1.16498305
 O       15.52611708      19.70945658       0.27222284
 192
-Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" source_frame_index=40 relative_time_ps=4.0 pbc="T T T"
+Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" display_name="Li₁.₇₅ZrCl₄.₇₅O₀.₅ — NEP89 — 600 K — NVT production" report_figures=09_MACE_NEP_runtime_density source_frame_index=40 relative_time_ps=4.0 pbc="T T T"
 Li      10.42312879      14.80023729       2.61861366
 Li      10.74504675      19.37503337       6.45231137
 Li      22.65453126      18.63785561       7.06387247
@@ -581,7 +581,7 @@ O        3.80126082      18.56014584       4.22630167
 O       12.95660117      18.10826816       1.05001077
 O       15.42980476      19.98882779       0.09784110
 192
-Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" source_frame_index=60 relative_time_ps=6.0 pbc="T T T"
+Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" display_name="Li₁.₇₅ZrCl₄.₇₅O₀.₅ — NEP89 — 600 K — NVT production" report_figures=09_MACE_NEP_runtime_density source_frame_index=60 relative_time_ps=6.0 pbc="T T T"
 Li      12.23617885      14.99016164       3.79297834
 Li      11.73328151      19.20680441       6.28462655
 Li      23.09082502      18.24913508       6.19176685
@@ -775,7 +775,7 @@ O        3.70004660      18.95179642       3.88929523
 O       13.16097991      18.10193737       0.98627074
 O       15.12277157      25.60660042       9.81709757
 192
-Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" source_frame_index=80 relative_time_ps=8.0 pbc="T T T"
+Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" display_name="Li₁.₇₅ZrCl₄.₇₅O₀.₅ — NEP89 — 600 K — NVT production" report_figures=09_MACE_NEP_runtime_density source_frame_index=80 relative_time_ps=8.0 pbc="T T T"
 Li      14.12276040      13.27231201       4.30472998
 Li      10.69016718      19.36378795       5.87566221
 Li      23.44256910      16.78051247       5.83982129
@@ -969,7 +969,7 @@ O        3.76925725      19.07787154       3.41685196
 O       13.22498570      18.06251302       1.54692142
 O       15.16090183      19.57729157       0.16147623
 192
-Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" source_frame_index=100 relative_time_ps=10.0 pbc="T T T"
+Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" display_name="Li₁.₇₅ZrCl₄.₇₅O₀.₅ — NEP89 — 600 K — NVT production" report_figures=09_MACE_NEP_runtime_density source_frame_index=100 relative_time_ps=10.0 pbc="T T T"
 Li      14.28259347      12.78779343       3.21153456
 Li      10.02379561      17.57155886       5.33570520
 Li      21.37457836      18.44633874       7.46046291
@@ -1163,7 +1163,7 @@ O        3.56328888      19.08262463       3.87064097
 O       13.68725324      17.34284603       1.31330859
 O       15.65631128      25.46454488       9.97632932
 192
-Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" source_frame_index=120 relative_time_ps=12.0 pbc="T T T"
+Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" display_name="Li₁.₇₅ZrCl₄.₇₅O₀.₅ — NEP89 — 600 K — NVT production" report_figures=09_MACE_NEP_runtime_density source_frame_index=120 relative_time_ps=12.0 pbc="T T T"
 Li      15.77544031      12.23707205       3.17729240
 Li       9.87211721      17.45720558       5.44061835
 Li      22.92948480      18.70656492       6.71954398
@@ -1357,7 +1357,7 @@ O        3.70793939      18.88880480       3.66730919
 O       13.64344005      17.64987613       1.61735116
 O       15.41811917      25.20443321       9.93592450
 192
-Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" source_frame_index=140 relative_time_ps=14.0 pbc="T T T"
+Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" display_name="Li₁.₇₅ZrCl₄.₇₅O₀.₅ — NEP89 — 600 K — NVT production" report_figures=09_MACE_NEP_runtime_density source_frame_index=140 relative_time_ps=14.0 pbc="T T T"
 Li      15.59130445      12.84695477       2.97709197
 Li      10.01617576      17.31997550       5.00847098
 Li      22.35018628      18.50831776       6.46089390
@@ -1551,7 +1551,7 @@ O        3.39686032      19.03951421       3.71772119
 O       13.88385103      17.66517275       1.39323965
 O       15.76525839      25.25834540       9.94612616
 192
-Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" source_frame_index=160 relative_time_ps=16.0 pbc="T T T"
+Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" display_name="Li₁.₇₅ZrCl₄.₇₅O₀.₅ — NEP89 — 600 K — NVT production" report_figures=09_MACE_NEP_runtime_density source_frame_index=160 relative_time_ps=16.0 pbc="T T T"
 Li      15.77270202      12.44504378       1.48454566
 Li      10.47430515      20.47454185       7.47609011
 Li      21.91056101      18.43338150       6.87153831
@@ -1745,7 +1745,7 @@ O        3.55308470      18.69709690       4.06411611
 O       13.63669154      17.50349982       1.23007805
 O       15.21869123      25.18130345       9.53391867
 192
-Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" source_frame_index=180 relative_time_ps=18.0 pbc="T T T"
+Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" display_name="Li₁.₇₅ZrCl₄.₇₅O₀.₅ — NEP89 — 600 K — NVT production" report_figures=09_MACE_NEP_runtime_density source_frame_index=180 relative_time_ps=18.0 pbc="T T T"
 Li      15.24675322      11.58822338       2.84290634
 Li       9.43380119      19.41252398       6.45475982
 Li      23.51969028      18.58344913       7.77003647
@@ -1939,7 +1939,7 @@ O        3.52655935      18.75875732       3.41365930
 O       13.62357667      17.27031178       0.79888535
 O       15.15438161      25.21877337       9.74267457
 192
-Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" source_frame_index=200 relative_time_ps=20.0 pbc="T T T"
+Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" display_name="Li₁.₇₅ZrCl₄.₇₅O₀.₅ — NEP89 — 600 K — NVT production" report_figures=09_MACE_NEP_runtime_density source_frame_index=200 relative_time_ps=20.0 pbc="T T T"
 Li      15.83708472      12.11195272       2.00318361
 Li       7.37888855      19.09376540       5.45801078
 Li      22.38689143      17.93302648       6.80024234
@@ -2133,7 +2133,7 @@ O        3.77788978      19.02074154       4.11827653
 O       13.61312548      17.42657282       0.92308238
 O       15.05229806      25.62836542       9.86910994
 192
-Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" source_frame_index=220 relative_time_ps=22.0 pbc="T T T"
+Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" display_name="Li₁.₇₅ZrCl₄.₇₅O₀.₅ — NEP89 — 600 K — NVT production" report_figures=09_MACE_NEP_runtime_density source_frame_index=220 relative_time_ps=22.0 pbc="T T T"
 Li      16.60921078      13.75401784       3.93894211
 Li       7.27398176      20.25829250       3.24570293
 Li      24.62035856      18.02692689       7.42288546
@@ -2327,7 +2327,7 @@ O        3.69338041      18.23211617       3.55336792
 O       14.12744286      17.62939356       0.55795107
 O       14.94655753      26.24120162       9.71572296
 192
-Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" source_frame_index=240 relative_time_ps=24.0 pbc="T T T"
+Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" display_name="Li₁.₇₅ZrCl₄.₇₅O₀.₅ — NEP89 — 600 K — NVT production" report_figures=09_MACE_NEP_runtime_density source_frame_index=240 relative_time_ps=24.0 pbc="T T T"
 Li      15.36145210      12.25862697       3.04032020
 Li       7.40857378      20.74092923       2.85013695
 Li      23.07996500      18.89057229       6.93807521
@@ -2521,7 +2521,7 @@ O        3.75851047      19.23945359       3.13218389
 O       13.63973241      17.05783987       1.30215925
 O       15.02180020      19.54222966       0.17590893
 192
-Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" source_frame_index=260 relative_time_ps=26.0 pbc="T T T"
+Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" display_name="Li₁.₇₅ZrCl₄.₇₅O₀.₅ — NEP89 — 600 K — NVT production" report_figures=09_MACE_NEP_runtime_density source_frame_index=260 relative_time_ps=26.0 pbc="T T T"
 Li      15.59649715      13.76489812       4.82309899
 Li       7.18943516      19.92455474       3.81543981
 Li      23.51813181      18.54548470       7.34323998
@@ -2715,7 +2715,7 @@ O        3.75946856      18.47364931       3.51158050
 O       14.11465110      17.25968602       0.92861334
 O       15.01327101      19.89088313       0.01938360
 192
-Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" source_frame_index=280 relative_time_ps=28.0 pbc="T T T"
+Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" display_name="Li₁.₇₅ZrCl₄.₇₅O₀.₅ — NEP89 — 600 K — NVT production" report_figures=09_MACE_NEP_runtime_density source_frame_index=280 relative_time_ps=28.0 pbc="T T T"
 Li      15.56694798      12.47208431       3.46589778
 Li       6.51478533      20.89358871       3.15417043
 Li      23.97994250      16.29278555       9.44930385
@@ -2909,7 +2909,7 @@ O        3.49608728      19.10536133       3.08706870
 O       13.79981727      17.24246083       0.74208759
 O       15.03451489      25.64613767       9.63131666
 192
-Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" source_frame_index=300 relative_time_ps=30.0 pbc="T T T"
+Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" display_name="Li₁.₇₅ZrCl₄.₇₅O₀.₅ — NEP89 — 600 K — NVT production" report_figures=09_MACE_NEP_runtime_density source_frame_index=300 relative_time_ps=30.0 pbc="T T T"
 Li      16.90844044      12.72312487       1.30775207
 Li       6.94954810      20.88639876       3.66478132
 Li      23.89577301      16.29886253       9.99297744
@@ -3103,7 +3103,7 @@ O        3.70846381      19.30427850       3.08965374
 O       13.68685218      17.26209330       0.92049940
 O       14.83597503      25.75096813       9.73297228
 192
-Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" source_frame_index=320 relative_time_ps=32.0 pbc="T T T"
+Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" display_name="Li₁.₇₅ZrCl₄.₇₅O₀.₅ — NEP89 — 600 K — NVT production" report_figures=09_MACE_NEP_runtime_density source_frame_index=320 relative_time_ps=32.0 pbc="T T T"
 Li      16.42770717      12.78609645       4.21828659
 Li       6.89131918      20.65099077       3.39901437
 Li      24.02199373      16.63428437       9.19236861
@@ -3297,7 +3297,7 @@ O        3.50802416      19.39941833       3.06146454
 O       13.62119484      17.27659121       0.84967327
 O       14.96611742      25.55545615       9.98280105
 192
-Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" source_frame_index=340 relative_time_ps=34.0 pbc="T T T"
+Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" display_name="Li₁.₇₅ZrCl₄.₇₅O₀.₅ — NEP89 — 600 K — NVT production" report_figures=09_MACE_NEP_runtime_density source_frame_index=340 relative_time_ps=34.0 pbc="T T T"
 Li      15.44581000      13.10771724       4.42701234
 Li       6.88895951      20.19208127       4.25314997
 Li      23.66369749      18.42769397       7.39468904
@@ -3491,7 +3491,7 @@ O        3.72274007      19.41620675       2.83058656
 O       13.59489982      17.27473015       1.30550758
 O       15.03462064      25.26889154       9.86077960
 192
-Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" source_frame_index=360 relative_time_ps=36.0 pbc="T T T"
+Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" display_name="Li₁.₇₅ZrCl₄.₇₅O₀.₅ — NEP89 — 600 K — NVT production" report_figures=09_MACE_NEP_runtime_density source_frame_index=360 relative_time_ps=36.0 pbc="T T T"
 Li      12.31278964      14.71444497       2.52853625
 Li       7.24475387      19.30120869       5.55585705
 Li      23.03153828      17.68802768       7.21600572
@@ -3685,7 +3685,7 @@ O        3.50798099      19.40472455       4.14021213
 O       13.73465443      17.76118881       0.92405669
 O       15.11248505      25.77644758       9.47641615
 192
-Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" source_frame_index=380 relative_time_ps=38.0 pbc="T T T"
+Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" display_name="Li₁.₇₅ZrCl₄.₇₅O₀.₅ — NEP89 — 600 K — NVT production" report_figures=09_MACE_NEP_runtime_density source_frame_index=380 relative_time_ps=38.0 pbc="T T T"
 Li      11.68414243      14.51990770       2.39617704
 Li       5.81922442      18.66237323       5.20875579
 Li      23.61116697      17.82795993       7.14301028
@@ -3879,7 +3879,7 @@ O        2.71249510      19.68667746       3.74757617
 O       13.40532345      17.85218563       0.84874862
 O       14.76351203      26.15810747       9.70611600
 192
-Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" source_frame_index=400 relative_time_ps=40.0 pbc="T T T"
+Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" display_name="Li₁.₇₅ZrCl₄.₇₅O₀.₅ — NEP89 — 600 K — NVT production" report_figures=09_MACE_NEP_runtime_density source_frame_index=400 relative_time_ps=40.0 pbc="T T T"
 Li      12.82602093      14.51157206       2.30171321
 Li       6.45889620      18.59836723       5.23380078
 Li      22.90416061      17.70343790       7.68240523
@@ -4073,7 +4073,7 @@ O        3.65441067      18.92214713       3.46249154
 O       13.66488892      18.59765728       0.98670299
 O       13.91912050      26.93693498       9.43564153
 192
-Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" source_frame_index=420 relative_time_ps=42.0 pbc="T T T"
+Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" display_name="Li₁.₇₅ZrCl₄.₇₅O₀.₅ — NEP89 — 600 K — NVT production" report_figures=09_MACE_NEP_runtime_density source_frame_index=420 relative_time_ps=42.0 pbc="T T T"
 Li      12.21394039      15.21454143       2.19967819
 Li       6.92707267      18.15737358       5.23487536
 Li      23.21077854      17.24687055       6.09301151
@@ -4267,7 +4267,7 @@ O        3.28719400      19.07827143       3.74265668
 O       13.69984775      18.50070457       0.12327320
 O       14.32839733      26.84438255       8.99568238
 192
-Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" source_frame_index=440 relative_time_ps=44.0 pbc="T T T"
+Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" display_name="Li₁.₇₅ZrCl₄.₇₅O₀.₅ — NEP89 — 600 K — NVT production" report_figures=09_MACE_NEP_runtime_density source_frame_index=440 relative_time_ps=44.0 pbc="T T T"
 Li      11.73910533      14.82457914       1.96481216
 Li       6.86831519      18.32149240       4.92416559
 Li      23.15251055      17.82099233       8.68819271
@@ -4461,7 +4461,7 @@ O        3.34668192      19.37439199       4.28097300
 O       13.48469051      18.28476708       0.35955461
 O       14.08064850      26.72978636       9.10935928
 192
-Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" source_frame_index=460 relative_time_ps=46.0 pbc="T T T"
+Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" display_name="Li₁.₇₅ZrCl₄.₇₅O₀.₅ — NEP89 — 600 K — NVT production" report_figures=09_MACE_NEP_runtime_density source_frame_index=460 relative_time_ps=46.0 pbc="T T T"
 Li      12.79869211      15.53532694       2.98525713
 Li       6.52500763      18.59040499       4.94386742
 Li      22.90975590      17.52408243       8.02824794
@@ -4655,7 +4655,7 @@ O        3.46831930      19.23648279       3.76762807
 O       13.64159506      18.69131444       0.63114849
 O       13.73620022      27.27680319       9.46561353
 192
-Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" source_frame_index=480 relative_time_ps=48.0 pbc="T T T"
+Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" display_name="Li₁.₇₅ZrCl₄.₇₅O₀.₅ — NEP89 — 600 K — NVT production" report_figures=09_MACE_NEP_runtime_density source_frame_index=480 relative_time_ps=48.0 pbc="T T T"
 Li      11.54868751      15.37459332       1.79332725
 Li       6.74140668      19.36558721       4.73069249
 Li      25.24158244      15.61484528       7.54401912
@@ -4849,7 +4849,7 @@ O        3.48254217      19.30363543       3.81051881
 O       13.91273607      18.34629093       0.78599832
 O       14.60290682      27.24505475       9.59486286
 192
-Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" source_frame_index=500 relative_time_ps=50.0 pbc="T T T"
+Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" display_name="Li₁.₇₅ZrCl₄.₇₅O₀.₅ — NEP89 — 600 K — NVT production" report_figures=09_MACE_NEP_runtime_density source_frame_index=500 relative_time_ps=50.0 pbc="T T T"
 Li      11.36729593      14.92991885       1.96357588
 Li       6.71714227      18.37268516       4.95721909
 Li      23.50003314      17.52506193       7.84207580
@@ -5043,7 +5043,7 @@ O        3.22977867      19.28032637       3.72220670
 O       13.64762825      18.00452114       1.04233975
 O       14.47618380      26.62535017       9.63444020
 192
-Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" source_frame_index=520 relative_time_ps=52.0 pbc="T T T"
+Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" display_name="Li₁.₇₅ZrCl₄.₇₅O₀.₅ — NEP89 — 600 K — NVT production" report_figures=09_MACE_NEP_runtime_density source_frame_index=520 relative_time_ps=52.0 pbc="T T T"
 Li      10.49945420      15.69039103       2.04700480
 Li       6.45773346      18.01608756       4.86069691
 Li      23.03636504      17.37121304       6.61259467
@@ -5237,7 +5237,7 @@ O        3.29238718      18.94932421       3.79388328
 O       13.60385296      18.07518478       0.80552754
 O       14.25484819      26.46388124       9.47091415
 192
-Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" source_frame_index=540 relative_time_ps=54.0 pbc="T T T"
+Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" display_name="Li₁.₇₅ZrCl₄.₇₅O₀.₅ — NEP89 — 600 K — NVT production" report_figures=09_MACE_NEP_runtime_density source_frame_index=540 relative_time_ps=54.0 pbc="T T T"
 Li      11.50915829      15.28002165       2.06910734
 Li       6.45118477      18.69152230       4.95408885
 Li      22.99882479      18.43714641       7.40872465
@@ -5431,7 +5431,7 @@ O        3.24199418      19.04510709       3.95634715
 O       13.78516506      18.28571872       0.33078865
 O       14.29858127      26.36827741       8.69355458
 192
-Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" source_frame_index=560 relative_time_ps=56.0 pbc="T T T"
+Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" display_name="Li₁.₇₅ZrCl₄.₇₅O₀.₅ — NEP89 — 600 K — NVT production" report_figures=09_MACE_NEP_runtime_density source_frame_index=560 relative_time_ps=56.0 pbc="T T T"
 Li      10.33440771      15.43253505       2.79388810
 Li       6.06170597      19.18740311       5.15056296
 Li      21.94916653      18.53665099       7.91006921
@@ -5625,7 +5625,7 @@ O        3.35421441      19.23450251       3.72438990
 O       13.85990769      17.96542172       1.13636981
 O       14.57538501      26.48820629       9.56886989
 192
-Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" source_frame_index=580 relative_time_ps=58.0 pbc="T T T"
+Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" display_name="Li₁.₇₅ZrCl₄.₇₅O₀.₅ — NEP89 — 600 K — NVT production" report_figures=09_MACE_NEP_runtime_density source_frame_index=580 relative_time_ps=58.0 pbc="T T T"
 Li      10.04468537      15.40497412       3.37804087
 Li       6.06313438      18.54715568       5.05186442
 Li      22.26560063      18.36651945       6.98401379
@@ -5819,7 +5819,7 @@ O        3.47135351      19.13049351       3.89514279
 O       13.33095351      18.00154378       1.10124833
 O       14.48526766      26.30919437       9.72046402
 192
-Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" source_frame_index=600 relative_time_ps=60.0 pbc="T T T"
+Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" display_name="Li₁.₇₅ZrCl₄.₇₅O₀.₅ — NEP89 — 600 K — NVT production" report_figures=09_MACE_NEP_runtime_density source_frame_index=600 relative_time_ps=60.0 pbc="T T T"
 Li      10.99208570      15.21755847       2.48972944
 Li       6.87742902      18.57822427       5.03583022
 Li      22.33470515      17.99983671       8.16350543
@@ -6013,7 +6013,7 @@ O        3.62151499      18.71733075       4.48009421
 O       13.45933528      17.59649004       0.33267956
 O       14.01806984      26.06895100       8.84870724
 192
-Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" source_frame_index=620 relative_time_ps=62.0 pbc="T T T"
+Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" display_name="Li₁.₇₅ZrCl₄.₇₅O₀.₅ — NEP89 — 600 K — NVT production" report_figures=09_MACE_NEP_runtime_density source_frame_index=620 relative_time_ps=62.0 pbc="T T T"
 Li      10.33000456      15.12474375       3.24192920
 Li       6.42766623      18.41516826       5.43340119
 Li      22.98677559      17.90540318       7.55254836
@@ -6207,7 +6207,7 @@ O        3.44829787      19.47923950       4.00230091
 O       13.17907158      17.58219626       1.23240623
 O       14.13222798      25.87010647       9.49333566
 192
-Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" source_frame_index=640 relative_time_ps=64.0 pbc="T T T"
+Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" display_name="Li₁.₇₅ZrCl₄.₇₅O₀.₅ — NEP89 — 600 K — NVT production" report_figures=09_MACE_NEP_runtime_density source_frame_index=640 relative_time_ps=64.0 pbc="T T T"
 Li      10.71862413      15.65579509       2.65916681
 Li       7.01646925      19.00175387       5.47833485
 Li      22.52369454      17.80648953       6.88022035
@@ -6401,7 +6401,7 @@ O        3.24407574      18.95734923       3.91817415
 O       13.39843927      17.63832733       0.34006855
 O       14.23394534      26.04923695       8.96115888
 192
-Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" source_frame_index=660 relative_time_ps=66.0 pbc="T T T"
+Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" display_name="Li₁.₇₅ZrCl₄.₇₅O₀.₅ — NEP89 — 600 K — NVT production" report_figures=09_MACE_NEP_runtime_density source_frame_index=660 relative_time_ps=66.0 pbc="T T T"
 Li      10.50379736      15.73440235       2.89024966
 Li       6.28704855      19.05632018       5.83256926
 Li      22.37690144      17.84220222       7.00912299
@@ -6595,7 +6595,7 @@ O        3.23739472      19.02625517       4.01236457
 O       13.63838060      17.86660387       0.99264376
 O       14.27221922      26.32973613       9.51960903
 192
-Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" source_frame_index=680 relative_time_ps=68.0 pbc="T T T"
+Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" display_name="Li₁.₇₅ZrCl₄.₇₅O₀.₅ — NEP89 — 600 K — NVT production" report_figures=09_MACE_NEP_runtime_density source_frame_index=680 relative_time_ps=68.0 pbc="T T T"
 Li      10.41634177      15.38794692       3.25282972
 Li       6.31407662      18.18310689       5.17798913
 Li      22.64689361      18.18821088       7.25344298
@@ -6789,7 +6789,7 @@ O        3.23015102      19.07025301       3.82146853
 O       13.64487912      17.74699923       1.05956931
 O       14.72579779      26.19886258       9.86367358
 192
-Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" source_frame_index=700 relative_time_ps=70.0 pbc="T T T"
+Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" display_name="Li₁.₇₅ZrCl₄.₇₅O₀.₅ — NEP89 — 600 K — NVT production" report_figures=09_MACE_NEP_runtime_density source_frame_index=700 relative_time_ps=70.0 pbc="T T T"
 Li       9.73624415      15.60027326       2.48273626
 Li       6.74455912      18.37472209       5.41280477
 Li      22.53796041      18.30316373       7.58995179
@@ -6983,7 +6983,7 @@ O        3.23053902      19.07861058       4.19726077
 O       13.71845144      18.26177945       1.43842093
 O       13.80785705      26.31098002       9.22710784
 192
-Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" source_frame_index=720 relative_time_ps=72.0 pbc="T T T"
+Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" display_name="Li₁.₇₅ZrCl₄.₇₅O₀.₅ — NEP89 — 600 K — NVT production" report_figures=09_MACE_NEP_runtime_density source_frame_index=720 relative_time_ps=72.0 pbc="T T T"
 Li      10.83073447      15.71056300       2.55983496
 Li       6.03251770      18.46260302       5.13826412
 Li      22.97310486      18.38579241       7.41856064
@@ -7177,7 +7177,7 @@ O        3.54916052      18.93387995       3.99854651
 O       13.92340733      18.22022895       0.82201984
 O       14.49060065      26.65384620       9.57215819
 192
-Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" source_frame_index=740 relative_time_ps=74.0 pbc="T T T"
+Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" display_name="Li₁.₇₅ZrCl₄.₇₅O₀.₅ — NEP89 — 600 K — NVT production" report_figures=09_MACE_NEP_runtime_density source_frame_index=740 relative_time_ps=74.0 pbc="T T T"
 Li      11.22818736      15.28753983       3.91129306
 Li       6.40202836      19.20878564       5.65693783
 Li      22.65468788      17.63394313       6.75641368
@@ -7371,7 +7371,7 @@ O        3.53646298      19.22026588       3.73077006
 O       13.67748731      18.19714887       1.27192758
 O       14.15178342      26.78726808       9.81331622
 192
-Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" source_frame_index=760 relative_time_ps=76.0 pbc="T T T"
+Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" display_name="Li₁.₇₅ZrCl₄.₇₅O₀.₅ — NEP89 — 600 K — NVT production" report_figures=09_MACE_NEP_runtime_density source_frame_index=760 relative_time_ps=76.0 pbc="T T T"
 Li      10.05406543      15.46742544       2.12249709
 Li       6.71098726      19.84506310       5.23974491
 Li      22.70901680      18.02715798       8.21890636
@@ -7565,7 +7565,7 @@ O        3.61958657      19.65741875       4.06388739
 O       13.44865387      17.79203975       0.41569688
 O       14.60395588      25.94595899       9.41574818
 192
-Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" source_frame_index=780 relative_time_ps=78.0 pbc="T T T"
+Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" display_name="Li₁.₇₅ZrCl₄.₇₅O₀.₅ — NEP89 — 600 K — NVT production" report_figures=09_MACE_NEP_runtime_density source_frame_index=780 relative_time_ps=78.0 pbc="T T T"
 Li      11.21259573      15.19115392       2.83098644
 Li       6.53430688      19.62315611       5.58790138
 Li      22.51165221      16.75648427       9.50186044
@@ -7759,7 +7759,7 @@ O        3.38997603      20.00738279       4.09401189
 O       13.85616430      17.70556430       0.86678480
 O       14.75410959      26.17721419       9.67944082
 192
-Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" source_frame_index=800 relative_time_ps=80.0 pbc="T T T"
+Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" display_name="Li₁.₇₅ZrCl₄.₇₅O₀.₅ — NEP89 — 600 K — NVT production" report_figures=09_MACE_NEP_runtime_density source_frame_index=800 relative_time_ps=80.0 pbc="T T T"
 Li      10.38981146      15.85834884       2.39557876
 Li       7.17990615      19.69663362       5.06743086
 Li      22.75699233      17.45686121       8.89061921
@@ -7953,7 +7953,7 @@ O        3.23278333      19.51449417       3.74152494
 O       13.39989457      17.69919716       0.53102505
 O       14.37925204      26.10037993       9.38261139
 192
-Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" source_frame_index=820 relative_time_ps=82.0 pbc="T T T"
+Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" display_name="Li₁.₇₅ZrCl₄.₇₅O₀.₅ — NEP89 — 600 K — NVT production" report_figures=09_MACE_NEP_runtime_density source_frame_index=820 relative_time_ps=82.0 pbc="T T T"
 Li      10.68803375      15.13031460       2.41651610
 Li       6.43001822      19.23388688       6.01128555
 Li      21.57658900      18.00860374       7.23489155
@@ -8147,7 +8147,7 @@ O        3.51474612      19.27626502       3.87053368
 O       13.49307806      17.75315432       0.82577651
 O       14.41617271      25.76810277       9.28403730
 192
-Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" source_frame_index=840 relative_time_ps=84.0 pbc="T T T"
+Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" display_name="Li₁.₇₅ZrCl₄.₇₅O₀.₅ — NEP89 — 600 K — NVT production" report_figures=09_MACE_NEP_runtime_density source_frame_index=840 relative_time_ps=84.0 pbc="T T T"
 Li      10.64199756      15.22714012       2.42232702
 Li       7.16007896      18.70746333       5.61349966
 Li      22.48326298      17.92844197       7.36452059
@@ -8341,7 +8341,7 @@ O        3.74147881      19.35830981       3.84759437
 O       13.97379295      18.00709173       0.98892813
 O       14.53589709      26.18533852       9.54505283
 192
-Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" source_frame_index=860 relative_time_ps=86.0 pbc="T T T"
+Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" display_name="Li₁.₇₅ZrCl₄.₇₅O₀.₅ — NEP89 — 600 K — NVT production" report_figures=09_MACE_NEP_runtime_density source_frame_index=860 relative_time_ps=86.0 pbc="T T T"
 Li      10.76468270      15.20630136       1.62406924
 Li       6.59796014      18.89234946       5.27521976
 Li      22.62111348      16.15018910       9.55722614
@@ -8535,7 +8535,7 @@ O        3.36127882      19.21885654       3.64007113
 O       13.90630269      18.22683381       1.31763482
 O       14.64560671      26.63205834       9.88842299
 192
-Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" source_frame_index=880 relative_time_ps=88.0 pbc="T T T"
+Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" display_name="Li₁.₇₅ZrCl₄.₇₅O₀.₅ — NEP89 — 600 K — NVT production" report_figures=09_MACE_NEP_runtime_density source_frame_index=880 relative_time_ps=88.0 pbc="T T T"
 Li      10.56581289      15.27488027       1.89725432
 Li       6.25344234      19.37327525       5.01982212
 Li      20.61575456      16.45007802       9.73261307
@@ -8729,7 +8729,7 @@ O        3.40892843      19.22420292       3.56108111
 O       13.93886745      18.36584908       1.46959621
 O       14.68288166      26.67635134       9.76604037
 192
-Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" source_frame_index=900 relative_time_ps=90.0 pbc="T T T"
+Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" display_name="Li₁.₇₅ZrCl₄.₇₅O₀.₅ — NEP89 — 600 K — NVT production" report_figures=09_MACE_NEP_runtime_density source_frame_index=900 relative_time_ps=90.0 pbc="T T T"
 Li      12.21864336      14.85575369       1.91453872
 Li       6.20934826      21.03739866       3.63935190
 Li      20.63382758      10.26481130       0.94253762
@@ -8923,7 +8923,7 @@ O        3.64661097      18.55376762       3.33086678
 O       13.98678738      18.74388763       1.95554252
 O       14.66202304      26.50083142       9.51946051
 192
-Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" source_frame_index=920 relative_time_ps=92.0 pbc="T T T"
+Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" display_name="Li₁.₇₅ZrCl₄.₇₅O₀.₅ — NEP89 — 600 K — NVT production" report_figures=09_MACE_NEP_runtime_density source_frame_index=920 relative_time_ps=92.0 pbc="T T T"
 Li      10.97199222      14.79985977       1.40688214
 Li       6.29326043      18.61349524       4.72429687
 Li      20.28529590       9.79672688       1.56695854
@@ -9117,7 +9117,7 @@ O        3.55700936      18.92722640       3.73918970
 O       13.97272665      17.94417599       1.46906564
 O       14.77094012      20.56274566       0.42372086
 192
-Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" source_frame_index=940 relative_time_ps=94.0 pbc="T T T"
+Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" display_name="Li₁.₇₅ZrCl₄.₇₅O₀.₅ — NEP89 — 600 K — NVT production" report_figures=09_MACE_NEP_runtime_density source_frame_index=940 relative_time_ps=94.0 pbc="T T T"
 Li      11.18057443      14.69606622       1.57814399
 Li       6.67719480      18.64983438       5.18010019
 Li      21.83967694      11.12850508       0.05037690
@@ -9311,7 +9311,7 @@ O        3.52488655      18.33852624       3.57968212
 O       14.10284834      18.26120805       1.73815936
 O       14.70954643      20.60794738       0.23369904
 192
-Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" source_frame_index=960 relative_time_ps=96.0 pbc="T T T"
+Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" display_name="Li₁.₇₅ZrCl₄.₇₅O₀.₅ — NEP89 — 600 K — NVT production" report_figures=09_MACE_NEP_runtime_density source_frame_index=960 relative_time_ps=96.0 pbc="T T T"
 Li      11.08064147      14.44514869       1.64799516
 Li       6.81249641      19.03872123       4.74757064
 Li      21.34621677      10.74382687       0.47232814
@@ -9505,7 +9505,7 @@ O        3.34765998      18.61455568       3.53200318
 O       14.03644896      17.80214849       1.16211241
 O       14.18009615      26.23260731       9.73964998
 192
-Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" source_frame_index=980 relative_time_ps=98.0 pbc="T T T"
+Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" display_name="Li₁.₇₅ZrCl₄.₇₅O₀.₅ — NEP89 — 600 K — NVT production" report_figures=09_MACE_NEP_runtime_density source_frame_index=980 relative_time_ps=98.0 pbc="T T T"
 Li      11.56517734      14.42233649       1.47527191
 Li       6.63443248      18.54233246       5.22633384
 Li      24.19606742      16.42127005       8.50882340
@@ -9699,7 +9699,7 @@ O        3.27395889      18.33598034       3.91738382
 O       14.12126324      17.70322585       1.65754133
 O       14.08127470      26.01170631       9.83817803
 192
-Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" source_frame_index=999 relative_time_ps=99.9 pbc="T T T"
+Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" display_name="Li₁.₇₅ZrCl₄.₇₅O₀.₅ — NEP89 — 600 K — NVT production" report_figures=09_MACE_NEP_runtime_density source_frame_index=999 relative_time_ps=99.9 pbc="T T T"
 Li      10.81269567      14.17654652       1.46972495
 Li       7.15955456      17.45849839       6.09633937
 Li      24.46351934      15.49767724       9.38384381
@@ -9893,7 +9893,7 @@ O        3.08645701      18.26101182       4.37731440
 O       13.92110784      17.66060792       1.54207332
 O       14.15727399      20.78018596       0.19056862
 192
-Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" source_frame_index=1019 relative_time_ps=101.9 pbc="T T T"
+Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" display_name="Li₁.₇₅ZrCl₄.₇₅O₀.₅ — NEP89 — 600 K — NVT production" report_figures=09_MACE_NEP_runtime_density source_frame_index=1019 relative_time_ps=101.9 pbc="T T T"
 Li      11.53221240      14.50592406       0.88488713
 Li       6.45760386      17.97185697       5.58496203
 Li      24.05459068      16.82978511       9.72321856
@@ -10087,7 +10087,7 @@ O        3.48566765      18.14462482       4.36452180
 O       14.07191215      17.88124513       1.70835506
 O       14.40291954      25.84144434       9.59853686
 192
-Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" source_frame_index=1039 relative_time_ps=103.9 pbc="T T T"
+Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" display_name="Li₁.₇₅ZrCl₄.₇₅O₀.₅ — NEP89 — 600 K — NVT production" report_figures=09_MACE_NEP_runtime_density source_frame_index=1039 relative_time_ps=103.9 pbc="T T T"
 Li      11.10180248      14.05710029       1.68290602
 Li       6.53229017      18.56231722       5.02995763
 Li      22.19856116      11.12385541       0.39486002
@@ -10281,7 +10281,7 @@ O        3.32797204      18.01776585       3.95250656
 O       13.87400766      17.77457808       1.54662684
 O       14.24844951      26.44086649       9.88649737
 192
-Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" source_frame_index=1059 relative_time_ps=105.9 pbc="T T T"
+Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" display_name="Li₁.₇₅ZrCl₄.₇₅O₀.₅ — NEP89 — 600 K — NVT production" report_figures=09_MACE_NEP_runtime_density source_frame_index=1059 relative_time_ps=105.9 pbc="T T T"
 Li      11.78125331      14.33066672       1.28662601
 Li       7.04286926      17.57426954       5.77889999
 Li      23.32418332      10.54239947       0.66964360
@@ -10475,7 +10475,7 @@ O        3.74860242      18.13381463       4.74432192
 O       13.88716728      18.00442257       1.37775287
 O       13.78985325      25.97864595       9.41016746
 192
-Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" source_frame_index=1079 relative_time_ps=107.9 pbc="T T T"
+Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" display_name="Li₁.₇₅ZrCl₄.₇₅O₀.₅ — NEP89 — 600 K — NVT production" report_figures=09_MACE_NEP_runtime_density source_frame_index=1079 relative_time_ps=107.9 pbc="T T T"
 Li      12.41065727      14.59125718       0.84277504
 Li       6.96678078      19.56030958       4.80057284
 Li      22.94508448      16.87229679       9.83330458
@@ -10669,7 +10669,7 @@ O        4.48120673      17.72383331       4.73783435
 O       14.32064364      18.09328718       1.04271347
 O       14.13443675      26.39666852       9.64750763
 192
-Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" source_frame_index=1099 relative_time_ps=109.9 pbc="T T T"
+Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" display_name="Li₁.₇₅ZrCl₄.₇₅O₀.₅ — NEP89 — 600 K — NVT production" report_figures=09_MACE_NEP_runtime_density source_frame_index=1099 relative_time_ps=109.9 pbc="T T T"
 Li      11.67766117      14.21578248       0.70342239
 Li       6.52437059      19.56753746       5.16889044
 Li      24.68399192      16.39363946       9.58519080
@@ -10863,7 +10863,7 @@ O        3.88227189      17.70739693       5.02928336
 O       13.69933364      18.03146900       0.53849944
 O       13.19752925      26.37902617       9.05934607
 192
-Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" source_frame_index=1119 relative_time_ps=111.9 pbc="T T T"
+Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" display_name="Li₁.₇₅ZrCl₄.₇₅O₀.₅ — NEP89 — 600 K — NVT production" report_figures=09_MACE_NEP_runtime_density source_frame_index=1119 relative_time_ps=111.9 pbc="T T T"
 Li      12.35511181      14.15774536       0.98063265
 Li       6.33156850      20.07003011       4.02639213
 Li      22.74428732      17.14339436       9.20942528
@@ -11057,7 +11057,7 @@ O        3.93291730      17.72186154       4.09829089
 O       14.41236391      18.32730056       0.84235555
 O       14.09804846      26.96505498       9.85342140
 192
-Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" source_frame_index=1139 relative_time_ps=113.9 pbc="T T T"
+Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" display_name="Li₁.₇₅ZrCl₄.₇₅O₀.₅ — NEP89 — 600 K — NVT production" report_figures=09_MACE_NEP_runtime_density source_frame_index=1139 relative_time_ps=113.9 pbc="T T T"
 Li      11.85113698      13.72893052       0.85854500
 Li       6.68393693      19.46024928       3.88180248
 Li      23.68892610      16.25366959       9.44290744
@@ -11251,7 +11251,7 @@ O        3.72330080      17.46191955       4.41119102
 O       13.97608628      18.11946445       0.67181566
 O       13.54852697      26.58008670       9.46923764
 192
-Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" source_frame_index=1159 relative_time_ps=115.9 pbc="T T T"
+Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" display_name="Li₁.₇₅ZrCl₄.₇₅O₀.₅ — NEP89 — 600 K — NVT production" report_figures=09_MACE_NEP_runtime_density source_frame_index=1159 relative_time_ps=115.9 pbc="T T T"
 Li      11.25054810      14.10576302       0.26133023
 Li       6.22435464      19.05786505       5.78914490
 Li      24.52513381      10.00088150       2.27045002
@@ -11445,7 +11445,7 @@ O        3.71634436      17.59375242       4.72597052
 O       13.79698015      17.87860254       1.05518139
 O       13.94754344      26.20789020       9.21227519
 192
-Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" source_frame_index=1179 relative_time_ps=117.9 pbc="T T T"
+Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" display_name="Li₁.₇₅ZrCl₄.₇₅O₀.₅ — NEP89 — 600 K — NVT production" report_figures=09_MACE_NEP_runtime_density source_frame_index=1179 relative_time_ps=117.9 pbc="T T T"
 Li      12.01836354      14.42856578       0.80671468
 Li       5.26071915      19.80695830       8.02101596
 Li      23.55873109      17.03886555       9.95456766
@@ -11639,7 +11639,7 @@ O        4.10448996      18.01087175       4.27827519
 O       14.01754569      17.84038189       0.99613339
 O       14.04455142      26.34097156       9.55853623
 192
-Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" source_frame_index=1199 relative_time_ps=119.9 pbc="T T T"
+Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" display_name="Li₁.₇₅ZrCl₄.₇₅O₀.₅ — NEP89 — 600 K — NVT production" report_figures=09_MACE_NEP_runtime_density source_frame_index=1199 relative_time_ps=119.9 pbc="T T T"
 Li      11.55577502      15.00427898       1.47346181
 Li       4.52360690      18.59756422       8.17935165
 Li      23.82901664      10.25664987       0.02906520
@@ -11833,7 +11833,7 @@ O        3.63923375      17.45152992       4.36632775
 O       13.87058467      18.65843168       1.38941283
 O       13.74958879      27.00175523       9.83153846
 192
-Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" source_frame_index=1219 relative_time_ps=121.9 pbc="T T T"
+Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" display_name="Li₁.₇₅ZrCl₄.₇₅O₀.₅ — NEP89 — 600 K — NVT production" report_figures=09_MACE_NEP_runtime_density source_frame_index=1219 relative_time_ps=121.9 pbc="T T T"
 Li      11.01569952      14.60374606       1.16066685
 Li       3.61125135      17.54559571       8.64094078
 Li      22.42586947       8.52245510       2.68849638
@@ -12027,7 +12027,7 @@ O        3.61904340      18.00637320       4.18009608
 O       13.91581499      18.24059789       1.02345908
 O       13.51723398      27.02740515       9.55996138
 192
-Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" source_frame_index=1239 relative_time_ps=123.9 pbc="T T T"
+Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" display_name="Li₁.₇₅ZrCl₄.₇₅O₀.₅ — NEP89 — 600 K — NVT production" report_figures=09_MACE_NEP_runtime_density source_frame_index=1239 relative_time_ps=123.9 pbc="T T T"
 Li      11.88069140      14.15893014       1.77328609
 Li       0.49664899      18.65190456       9.21164137
 Li      22.72832468       9.57294628       2.68384248
@@ -12221,7 +12221,7 @@ O        3.55628693      18.28179749       3.43511073
 O       14.19287935      18.09030923       1.66241666
 O       13.41511269      26.72277395      10.00107036
 192
-Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" source_frame_index=1259 relative_time_ps=125.9 pbc="T T T"
+Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" display_name="Li₁.₇₅ZrCl₄.₇₅O₀.₅ — NEP89 — 600 K — NVT production" report_figures=09_MACE_NEP_runtime_density source_frame_index=1259 relative_time_ps=125.9 pbc="T T T"
 Li      11.88011511      14.43515760       1.29217860
 Li       1.53525011      11.81551882       0.30778647
 Li      23.60537330      10.42934246       0.00264145
@@ -12415,7 +12415,7 @@ O        3.51406809      18.59966188       4.35926187
 O       13.97311392      18.67424626       0.92840592
 O       13.54636459      26.85550814       9.35120599
 192
-Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" source_frame_index=1279 relative_time_ps=127.9 pbc="T T T"
+Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" display_name="Li₁.₇₅ZrCl₄.₇₅O₀.₅ — NEP89 — 600 K — NVT production" report_figures=09_MACE_NEP_runtime_density source_frame_index=1279 relative_time_ps=127.9 pbc="T T T"
 Li      11.75966578      14.33109761       1.72616371
 Li       0.92685187      17.46863302       9.29337636
 Li      23.33432234      11.03066959       0.11006415
@@ -12609,7 +12609,7 @@ O        3.45133157      18.58482514       4.37291739
 O       13.84469483      18.19737833       1.01335947
 O       13.39923481      26.44818398       9.48262709
 192
-Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" source_frame_index=1299 relative_time_ps=129.9 pbc="T T T"
+Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" display_name="Li₁.₇₅ZrCl₄.₇₅O₀.₅ — NEP89 — 600 K — NVT production" report_figures=09_MACE_NEP_runtime_density source_frame_index=1299 relative_time_ps=129.9 pbc="T T T"
 Li      11.38508873      14.33653677       2.19453530
 Li       0.37950457      18.11272630       8.71330531
 Li      23.43833756      16.95924768       8.89323051
@@ -12803,7 +12803,7 @@ O        3.53079502      18.84806092       3.82143043
 O       13.32525052      18.18391660       1.82388944
 O       12.29200308      20.56994614       0.27675554
 192
-Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" source_frame_index=1319 relative_time_ps=131.9 pbc="T T T"
+Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" display_name="Li₁.₇₅ZrCl₄.₇₅O₀.₅ — NEP89 — 600 K — NVT production" report_figures=09_MACE_NEP_runtime_density source_frame_index=1319 relative_time_ps=131.9 pbc="T T T"
 Li      11.40734939      14.75816909       1.54161233
 Li       0.69276108      17.65222247       8.89051961
 Li      23.34649111      16.96118936       9.27078717
@@ -12997,7 +12997,7 @@ O        3.16024466      18.69852234       4.19595236
 O       13.86681039      18.39597077       0.95365095
 O       13.20914022      26.53104679       9.30987087
 192
-Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" source_frame_index=1339 relative_time_ps=133.9 pbc="T T T"
+Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" display_name="Li₁.₇₅ZrCl₄.₇₅O₀.₅ — NEP89 — 600 K — NVT production" report_figures=09_MACE_NEP_runtime_density source_frame_index=1339 relative_time_ps=133.9 pbc="T T T"
 Li      11.35943647      14.55645586       1.61117673
 Li      25.30475026      16.64470264       8.41347131
 Li      22.09190619      19.31995760       7.45757123
@@ -13191,7 +13191,7 @@ O        3.76054155      18.93567122       3.76558278
 O       13.50778653      18.23903612       1.49179990
 O       12.48527130      26.64939840       9.83766518
 192
-Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" source_frame_index=1359 relative_time_ps=135.9 pbc="T T T"
+Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" display_name="Li₁.₇₅ZrCl₄.₇₅O₀.₅ — NEP89 — 600 K — NVT production" report_figures=09_MACE_NEP_runtime_density source_frame_index=1359 relative_time_ps=135.9 pbc="T T T"
 Li      11.05549060      15.03496384       2.96703121
 Li      25.38337885      14.51692319       6.63191273
 Li      21.99416987      19.74298554       9.51240453
@@ -13385,7 +13385,7 @@ O        3.11765170      18.57405029       3.73447400
 O       13.65269062      18.24413640       1.08610640
 O       13.56366781      26.64719484       9.60012629
 192
-Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" source_frame_index=1379 relative_time_ps=137.9 pbc="T T T"
+Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" display_name="Li₁.₇₅ZrCl₄.₇₅O₀.₅ — NEP89 — 600 K — NVT production" report_figures=09_MACE_NEP_runtime_density source_frame_index=1379 relative_time_ps=137.9 pbc="T T T"
 Li      11.44694327      14.47043373       2.72265007
 Li       1.29384590      18.08772306       9.50017060
 Li      22.40825701      18.81340220       7.74774050
@@ -13579,7 +13579,7 @@ O        3.05284537      18.64184163       3.64982221
 O       13.41010610      18.04370605       1.24253559
 O       12.75182674      26.33959390       9.72752285
 192
-Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" source_frame_index=1399 relative_time_ps=139.9 pbc="T T T"
+Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" display_name="Li₁.₇₅ZrCl₄.₇₅O₀.₅ — NEP89 — 600 K — NVT production" report_figures=09_MACE_NEP_runtime_density source_frame_index=1399 relative_time_ps=139.9 pbc="T T T"
 Li      11.50841522      14.72375170       1.88487646
 Li       0.26545383      16.97003548       9.25847026
 Li      23.04261240      19.03685910       7.89075419
@@ -13773,7 +13773,7 @@ O        3.16967673      18.68516808       4.05088728
 O       13.32864457      18.64790662       1.18084161
 O       12.69933042      27.06596674       9.68544471
 192
-Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" source_frame_index=1419 relative_time_ps=141.9 pbc="T T T"
+Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" display_name="Li₁.₇₅ZrCl₄.₇₅O₀.₅ — NEP89 — 600 K — NVT production" report_figures=09_MACE_NEP_runtime_density source_frame_index=1419 relative_time_ps=141.9 pbc="T T T"
 Li      11.13392351      14.29468208       2.73763580
 Li      26.17801409      16.65595831       8.27209248
 Li      23.21491562      19.42485910       8.79678141
@@ -13967,7 +13967,7 @@ O        3.33367548      18.71985990       4.22436572
 O       13.55975478      17.92876064       1.90552404
 O       13.18639034      26.65363409      10.02531345
 192
-Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" source_frame_index=1439 relative_time_ps=143.9 pbc="T T T"
+Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" display_name="Li₁.₇₅ZrCl₄.₇₅O₀.₅ — NEP89 — 600 K — NVT production" report_figures=09_MACE_NEP_runtime_density source_frame_index=1439 relative_time_ps=143.9 pbc="T T T"
 Li      11.47531438      14.40557873       1.41114065
 Li       1.26452920      16.45321484       9.88081886
 Li      22.99568582      19.29614229       7.26864933
@@ -14161,7 +14161,7 @@ O        3.09785509      18.30334550       3.71146232
 O       13.97923991      18.29726509       0.98221948
 O       13.74429519      26.71362405       9.53225992
 192
-Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" source_frame_index=1459 relative_time_ps=145.9 pbc="T T T"
+Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" display_name="Li₁.₇₅ZrCl₄.₇₅O₀.₅ — NEP89 — 600 K — NVT production" report_figures=09_MACE_NEP_runtime_density source_frame_index=1459 relative_time_ps=145.9 pbc="T T T"
 Li      11.64568074      14.87959585       1.92002481
 Li       0.62406934      17.07413088       9.56926528
 Li      23.03083402      18.32579596       7.75616146
@@ -14355,7 +14355,7 @@ O        3.83556871      18.76000779       4.45548805
 O       13.85344035      18.69360741       0.82127289
 O       13.89044526      27.04697247       9.47496145
 192
-Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" source_frame_index=1479 relative_time_ps=147.9 pbc="T T T"
+Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" display_name="Li₁.₇₅ZrCl₄.₇₅O₀.₅ — NEP89 — 600 K — NVT production" report_figures=09_MACE_NEP_runtime_density source_frame_index=1479 relative_time_ps=147.9 pbc="T T T"
 Li      11.69616201      14.20864183       1.50813669
 Li       1.14231628      17.22216838       9.50499182
 Li      22.79992549      19.41459086       8.68880369
@@ -14549,7 +14549,7 @@ O        3.12359541      18.93733025       3.95254241
 O       13.51401755      18.21288679       1.14150655
 O       13.05962583      27.00348715       9.95766226
 192
-Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" source_frame_index=1499 relative_time_ps=149.9 pbc="T T T"
+Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" display_name="Li₁.₇₅ZrCl₄.₇₅O₀.₅ — NEP89 — 600 K — NVT production" report_figures=09_MACE_NEP_runtime_density source_frame_index=1499 relative_time_ps=149.9 pbc="T T T"
 Li      10.75010266      15.21833487       0.54845344
 Li       0.89764000      17.05804535       9.86149782
 Li      22.95806308      18.51269171       8.65682308
@@ -14743,7 +14743,7 @@ O        2.62443959      18.27685516       3.86941124
 O       13.61640498      18.64733615       1.58368122
 O       13.01203330      26.99582950       9.69645171
 192
-Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" source_frame_index=1519 relative_time_ps=151.9 pbc="T T T"
+Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" display_name="Li₁.₇₅ZrCl₄.₇₅O₀.₅ — NEP89 — 600 K — NVT production" report_figures=09_MACE_NEP_runtime_density source_frame_index=1519 relative_time_ps=151.9 pbc="T T T"
 Li      10.63978413      14.39397390       0.36923821
 Li       0.88176864      17.30894344       9.88521188
 Li      22.55541547      19.77833799       9.70211287
@@ -14937,7 +14937,7 @@ O        3.10355115      18.53796011       4.31068858
 O       13.63990433      18.02912715       0.58175527
 O       13.02752746      26.34077050       9.36053583
 192
-Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" source_frame_index=1539 relative_time_ps=153.9 pbc="T T T"
+Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" display_name="Li₁.₇₅ZrCl₄.₇₅O₀.₅ — NEP89 — 600 K — NVT production" report_figures=09_MACE_NEP_runtime_density source_frame_index=1539 relative_time_ps=153.9 pbc="T T T"
 Li      10.69792769      15.38391342       0.48080281
 Li       1.29098298      17.53116159       9.53541646
 Li      22.81851726      19.01031490       8.91697041
@@ -15131,7 +15131,7 @@ O        3.12091583      18.71354550       4.05298560
 O       13.55352372      18.49547097       1.13093127
 O       12.61327206      26.87623365       9.59808642
 192
-Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" source_frame_index=1559 relative_time_ps=155.9 pbc="T T T"
+Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" display_name="Li₁.₇₅ZrCl₄.₇₅O₀.₅ — NEP89 — 600 K — NVT production" report_figures=09_MACE_NEP_runtime_density source_frame_index=1559 relative_time_ps=155.9 pbc="T T T"
 Li      10.06425384      15.06174351       0.76709982
 Li       0.88944231      17.99588691       8.63854518
 Li      22.35934891      19.38360983       8.07037019
@@ -15325,7 +15325,7 @@ O        3.37749706      18.88617242       4.24636051
 O       13.19085887      18.16554655       1.28067270
 O       12.23807081      26.69779899       9.80171742
 192
-Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" source_frame_index=1579 relative_time_ps=157.9 pbc="T T T"
+Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" display_name="Li₁.₇₅ZrCl₄.₇₅O₀.₅ — NEP89 — 600 K — NVT production" report_figures=09_MACE_NEP_runtime_density source_frame_index=1579 relative_time_ps=157.9 pbc="T T T"
 Li       9.47569555      15.01619950       0.11370998
 Li      25.47688736      17.55653065       3.86658262
 Li      21.83071933      20.13207982       9.21520441
@@ -15519,7 +15519,7 @@ O        3.26799370      18.79218798       3.90850835
 O       13.11609367      17.71015334       1.32344788
 O       12.69684155      20.34855815       0.13373355
 192
-Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" source_frame_index=1599 relative_time_ps=159.9 pbc="T T T"
+Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" display_name="Li₁.₇₅ZrCl₄.₇₅O₀.₅ — NEP89 — 600 K — NVT production" report_figures=09_MACE_NEP_runtime_density source_frame_index=1599 relative_time_ps=159.9 pbc="T T T"
 Li      10.65712772      15.85485474       1.13092052
 Li      25.73371068      17.45964914       5.04301778
 Li      23.26503698      20.41529234       7.14758708
@@ -15713,7 +15713,7 @@ O        3.25507665      18.86053160       4.56489358
 O       13.52300552      18.56727010       1.52538736
 O       12.98356100      21.24203611       0.10093144
 192
-Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" source_frame_index=1619 relative_time_ps=161.9 pbc="T T T"
+Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" display_name="Li₁.₇₅ZrCl₄.₇₅O₀.₅ — NEP89 — 600 K — NVT production" report_figures=09_MACE_NEP_runtime_density source_frame_index=1619 relative_time_ps=161.9 pbc="T T T"
 Li      10.28305487      15.16727911       0.61482089
 Li      26.07378263      17.08057298       4.69378096
 Li      21.50030409      19.14892034       8.28393707
@@ -15907,7 +15907,7 @@ O        3.06663549      19.24134240       4.33380322
 O       13.07025549      17.91427532       1.16887105
 O       12.64650461      26.34772634       9.68157512
 192
-Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" source_frame_index=1639 relative_time_ps=163.9 pbc="T T T"
+Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" display_name="Li₁.₇₅ZrCl₄.₇₅O₀.₅ — NEP89 — 600 K — NVT production" report_figures=09_MACE_NEP_runtime_density source_frame_index=1639 relative_time_ps=163.9 pbc="T T T"
 Li      10.23600532      15.10680847       1.03985347
 Li       0.28359973      16.66583472       3.19329511
 Li      21.57437952      19.97685439       9.55616581
@@ -16101,7 +16101,7 @@ O        3.42432870      18.88247913       4.30413455
 O       13.25314316      17.69794074       1.23509911
 O       12.07428410      26.03964382      10.01299593
 192
-Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" source_frame_index=1659 relative_time_ps=165.9 pbc="T T T"
+Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" display_name="Li₁.₇₅ZrCl₄.₇₅O₀.₅ — NEP89 — 600 K — NVT production" report_figures=09_MACE_NEP_runtime_density source_frame_index=1659 relative_time_ps=165.9 pbc="T T T"
 Li      10.40779729      15.17519216       0.07597360
 Li       0.94047889      16.96587519       2.73066662
 Li      21.99711627      19.72699040       8.27370886
@@ -16295,7 +16295,7 @@ O        2.83888505      18.40074994       3.75165404
 O       13.13178132      17.90710529       1.21784262
 O       12.26839172      20.53491625       0.16412791
 192
-Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" source_frame_index=1679 relative_time_ps=167.9 pbc="T T T"
+Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" display_name="Li₁.₇₅ZrCl₄.₇₅O₀.₅ — NEP89 — 600 K — NVT production" report_figures=09_MACE_NEP_runtime_density source_frame_index=1679 relative_time_ps=167.9 pbc="T T T"
 Li      10.83789099      13.97056798       0.60441249
 Li       0.39302036      17.11500093       3.18613339
 Li      22.85968823      19.25145209       8.03043688
@@ -16489,7 +16489,7 @@ O        3.24382398      19.02660560       4.12563326
 O       13.21998734      17.13480324       1.56172482
 O       12.49615141      20.39501080       0.26471355
 192
-Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" source_frame_index=1699 relative_time_ps=169.9 pbc="T T T"
+Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" display_name="Li₁.₇₅ZrCl₄.₇₅O₀.₅ — NEP89 — 600 K — NVT production" report_figures=09_MACE_NEP_runtime_density source_frame_index=1699 relative_time_ps=169.9 pbc="T T T"
 Li      10.48941440      14.61831747       0.17676892
 Li       0.52341897      16.35098577       2.86226527
 Li      21.28938712      20.31226060       9.69867573
@@ -16683,7 +16683,7 @@ O        3.41661237      18.53784982       4.01847154
 O       12.89684216      18.09837937       1.30805283
 O       12.38282898      20.98154370       0.15453762
 192
-Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" source_frame_index=1719 relative_time_ps=171.9 pbc="T T T"
+Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" display_name="Li₁.₇₅ZrCl₄.₇₅O₀.₅ — NEP89 — 600 K — NVT production" report_figures=09_MACE_NEP_runtime_density source_frame_index=1719 relative_time_ps=171.9 pbc="T T T"
 Li      10.04478588      14.55313718       1.10245961
 Li      25.84336713      16.72606448       3.14147229
 Li      20.55612867      17.15442516       8.02504009
@@ -16877,7 +16877,7 @@ O        3.91004151      19.22383970       3.48268537
 O       12.46817354      17.45392197       1.32247663
 O       12.27847626      19.97725149       0.06960457
 192
-Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" source_frame_index=1739 relative_time_ps=173.9 pbc="T T T"
+Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" display_name="Li₁.₇₅ZrCl₄.₇₅O₀.₅ — NEP89 — 600 K — NVT production" report_figures=09_MACE_NEP_runtime_density source_frame_index=1739 relative_time_ps=173.9 pbc="T T T"
 Li      11.62871218      13.03660447       2.36255466
 Li      25.32529435      18.42560605       6.03022820
 Li      19.39916450      16.97717284       6.88922593
@@ -17071,7 +17071,7 @@ O        3.33269506      18.52642822       5.06262071
 O       12.85175067      17.76391814       0.84048412
 O       12.18425133      26.38089790       9.69070141
 192
-Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" source_frame_index=1759 relative_time_ps=175.9 pbc="T T T"
+Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" display_name="Li₁.₇₅ZrCl₄.₇₅O₀.₅ — NEP89 — 600 K — NVT production" report_figures=09_MACE_NEP_runtime_density source_frame_index=1759 relative_time_ps=175.9 pbc="T T T"
 Li      11.45597779      13.44071562       1.79194177
 Li      25.53269842      19.22142522       4.80033479
 Li      19.38057866      17.02999810       6.59385065
@@ -17265,7 +17265,7 @@ O        3.47300964      18.74388811       4.57721696
 O       13.12778614      17.89721815       1.55993323
 O       12.49698903      26.44116150       9.82832045
 192
-Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" source_frame_index=1779 relative_time_ps=177.9 pbc="T T T"
+Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" display_name="Li₁.₇₅ZrCl₄.₇₅O₀.₅ — NEP89 — 600 K — NVT production" report_figures=09_MACE_NEP_runtime_density source_frame_index=1779 relative_time_ps=177.9 pbc="T T T"
 Li      11.15404499      13.65438542       2.09184199
 Li      25.41906660      19.91795031       3.80223346
 Li      19.75111094      16.90563993       7.58761606
@@ -17459,7 +17459,7 @@ O        3.40477563      19.23926307       3.89593426
 O       13.06769702      17.38453515       1.53608963
 O       12.33913266      20.00246557       0.14824131
 192
-Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" source_frame_index=1799 relative_time_ps=179.9 pbc="T T T"
+Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" display_name="Li₁.₇₅ZrCl₄.₇₅O₀.₅ — NEP89 — 600 K — NVT production" report_figures=09_MACE_NEP_runtime_density source_frame_index=1799 relative_time_ps=179.9 pbc="T T T"
 Li      11.82284655      13.43470695       1.97251229
 Li       1.14607051      17.12646283       3.39064724
 Li      19.79435010      16.93890484       6.45648840
@@ -17653,7 +17653,7 @@ O        3.05113525      18.64941524       4.04664960
 O       13.39347996      17.36377047       1.33861917
 O       12.41603655      25.94554368       9.90798101
 192
-Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" source_frame_index=1819 relative_time_ps=181.9 pbc="T T T"
+Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" display_name="Li₁.₇₅ZrCl₄.₇₅O₀.₅ — NEP89 — 600 K — NVT production" report_figures=09_MACE_NEP_runtime_density source_frame_index=1819 relative_time_ps=181.9 pbc="T T T"
 Li      11.27813538      14.46119380       1.71748827
 Li      26.20435757      16.75134012       2.31274360
 Li      19.48285826      16.65750725       6.37477460
@@ -17847,7 +17847,7 @@ O        3.17423323      18.54084945       3.85738128
 O       13.26335486      18.01929232       0.86943083
 O       12.86142681      26.57056972       9.86960299
 192
-Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" source_frame_index=1839 relative_time_ps=183.9 pbc="T T T"
+Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" display_name="Li₁.₇₅ZrCl₄.₇₅O₀.₅ — NEP89 — 600 K — NVT production" report_figures=09_MACE_NEP_runtime_density source_frame_index=1839 relative_time_ps=183.9 pbc="T T T"
 Li      11.03880778      14.18958789       1.70195642
 Li      25.78081729      17.54859504       3.03857567
 Li      19.49863971      16.79620631       6.70116849
@@ -18041,7 +18041,7 @@ O        3.26486179      18.84399818       4.10435709
 O       13.12785345      18.14864487       1.10592860
 O       12.37644993      26.65977312       9.70960413
 192
-Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" source_frame_index=1859 relative_time_ps=185.9 pbc="T T T"
+Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" display_name="Li₁.₇₅ZrCl₄.₇₅O₀.₅ — NEP89 — 600 K — NVT production" report_figures=09_MACE_NEP_runtime_density source_frame_index=1859 relative_time_ps=185.9 pbc="T T T"
 Li      11.08122348      14.83033443       0.50916644
 Li       1.03885029      17.67891902       2.05257847
 Li      21.35789154      16.21834016       6.14390540
@@ -18235,7 +18235,7 @@ O        3.75586069      19.13007728       3.90152734
 O       13.39796253      17.92716353       1.44328547
 O       12.71554616      26.06152309       9.66617488
 192
-Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" source_frame_index=1879 relative_time_ps=187.9 pbc="T T T"
+Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" display_name="Li₁.₇₅ZrCl₄.₇₅O₀.₅ — NEP89 — 600 K — NVT production" report_figures=09_MACE_NEP_runtime_density source_frame_index=1879 relative_time_ps=187.9 pbc="T T T"
 Li      10.89119179      20.70857997       8.63161105
 Li      24.45276246      17.93525510       4.37196042
 Li      20.22813792      15.88456742       5.54529344
@@ -18429,7 +18429,7 @@ O        3.26664864      19.22556934       4.10251008
 O       13.48971796      17.78471358       0.35895562
 O       12.39665344      26.30785092       9.51848237
 192
-Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" source_frame_index=1899 relative_time_ps=189.9 pbc="T T T"
+Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" display_name="Li₁.₇₅ZrCl₄.₇₅O₀.₅ — NEP89 — 600 K — NVT production" report_figures=09_MACE_NEP_runtime_density source_frame_index=1899 relative_time_ps=189.9 pbc="T T T"
 Li      10.52607586      14.45814638       0.19459485
 Li      21.83930620      19.85318014       5.82012221
 Li      19.91383190      16.25382690       6.31056198
@@ -18623,7 +18623,7 @@ O        3.56099944      20.08458189       4.10934907
 O       13.01692460      17.23600405       0.94064975
 O       12.99043536      25.65744707       9.50510122
 192
-Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" source_frame_index=1919 relative_time_ps=191.9 pbc="T T T"
+Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" display_name="Li₁.₇₅ZrCl₄.₇₅O₀.₅ — NEP89 — 600 K — NVT production" report_figures=09_MACE_NEP_runtime_density source_frame_index=1919 relative_time_ps=191.9 pbc="T T T"
 Li      11.44904269      14.29594237       2.13804543
 Li      24.53255070      15.04452434       4.23869794
 Li      20.62475656      15.77328117       5.48774558
@@ -18817,7 +18817,7 @@ O        3.72659850      20.23505285       4.66060158
 O       13.39406572      17.96992098       0.79037018
 O       12.75105690      26.35488702       9.08324751
 192
-Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" source_frame_index=1939 relative_time_ps=193.9 pbc="T T T"
+Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" display_name="Li₁.₇₅ZrCl₄.₇₅O₀.₅ — NEP89 — 600 K — NVT production" report_figures=09_MACE_NEP_runtime_density source_frame_index=1939 relative_time_ps=193.9 pbc="T T T"
 Li      10.63717604      14.17110715       2.77122917
 Li      22.81862650      14.69703321       4.06131039
 Li      19.78218404      16.03412848       5.27624302
@@ -19011,7 +19011,7 @@ O        4.22950864      20.16468577       4.95177216
 O       12.60164031      17.43302324       1.21547517
 O       12.04192550      25.90603378       9.38041974
 192
-Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" source_frame_index=1959 relative_time_ps=195.9 pbc="T T T"
+Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" display_name="Li₁.₇₅ZrCl₄.₇₅O₀.₅ — NEP89 — 600 K — NVT production" report_figures=09_MACE_NEP_runtime_density source_frame_index=1959 relative_time_ps=195.9 pbc="T T T"
 Li       9.57889367      14.82246697       2.53624876
 Li      23.61838735      14.13099260       4.44556881
 Li      19.71968028      16.26893811       6.15179716
@@ -19205,7 +19205,7 @@ O        3.85672032      19.85160060       4.07535825
 O       13.31973214      17.67158716       1.10113063
 O       12.87018268      26.11643680       9.24169020
 192
-Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" source_frame_index=1979 relative_time_ps=197.9 pbc="T T T"
+Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" display_name="Li₁.₇₅ZrCl₄.₇₅O₀.₅ — NEP89 — 600 K — NVT production" report_figures=09_MACE_NEP_runtime_density source_frame_index=1979 relative_time_ps=197.9 pbc="T T T"
 Li      10.21319174      14.77023770       1.19815307
 Li      23.12105602      13.89683335       4.63258329
 Li      20.07206457      15.98335047       5.72975935
@@ -19399,7 +19399,7 @@ O        3.83414880      19.85482790       5.19382508
 O       13.23644447      17.56186020       0.66079510
 O       12.68571813      25.87780419       8.84690666
 192
-Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" source_frame_index=1999 relative_time_ps=199.9 pbc="T T T"
+Lattice="26.0008 0.0 0.0 0.425752 22.7711 0.0 0.0199814 5.93435 10.0408" Properties=species:S:1:pos:R:3 material=Li1.75ZrCl4.75O0.5 model=NEP89 temperature_K=600 phase="NVT production" display_name="Li₁.₇₅ZrCl₄.₇₅O₀.₅ — NEP89 — 600 K — NVT production" report_figures=09_MACE_NEP_runtime_density source_frame_index=1999 relative_time_ps=199.9 pbc="T T T"
 Li       9.89807727      14.72595706       2.31649548
 Li      23.83463593      14.69480681       4.15747616
 Li      20.09367299      16.02811237       5.94679740

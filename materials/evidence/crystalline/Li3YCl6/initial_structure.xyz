@@ -1,5 +1,5 @@
 240
-Lattice="22.4434 0.0 0.0 -11.221699999999997 19.43655454729567 0.0 0.0 0.0 12.11034" Properties=species:S:1:pos:R:3 material=Li3YCl6 role="ordered 2x2x2 simulation input" pbc="T T T"
+Lattice="22.4434 0.0 0.0 -11.221699999999997 19.43655454729567 0.0 0.0 0.0 12.11034" Properties=species:S:1:pos:R:3 material=Li3YCl6 role="ordered 2x2x2 simulation input" display_name="Li₃YCl₆ — 240-atom ordered 2×2×2 initial structure" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" pbc="T T T"
 Li       3.65827420       0.00000000       0.00000000
 Li       7.56342580       0.00000000       0.00000000
 Li      -1.82913710       3.16815839       0.00000000

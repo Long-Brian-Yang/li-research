@@ -1,5 +1,5 @@
 124
-Lattice="9.797106593837665 0.0 0.0 0.0 10.542271282437742 0.0 0.0 0.0 12.29388340926147" Properties=species:S:1:pos:R:3 material=LiPON role="Preparation-B construction input" pbc="T T T"
+Lattice="9.797106593837665 0.0 0.0 0.0 10.542271282437742 0.0 0.0 0.0 12.29388340926147" Properties=species:S:1:pos:R:3 material=LiPON role="Preparation-B construction input" display_name="LiPON — 124-atom Preparation-B construction structure" report_figures="21_LiPON_glass_structure; 22_LiPON_preparation_RDF; 08_LiPON_nitrogen_distance" pbc="T T T"
 Li       2.49536478       4.45443378       0.00000000
 Li       0.04608813       0.81670186       3.07347085
 Li       2.49116144       1.71993602       1.55311150

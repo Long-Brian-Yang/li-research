@@ -1,5 +1,5 @@
 512
-Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" source_frame_index=0 relative_time_ps=0.0 pbc="T T T"
+Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" display_name="Li₃PS₄ — NEP89 — 700 K — NVT production" report_figures="05_Li3PS4_lithium_MSD; 06_Li3PS4_diffusion_framework_MSD; 07_Li3PS4_local_structure; 28_Li3PS4_dynamic_heterogeneity" source_frame_index=0 relative_time_ps=0.0 pbc="T T T"
 Li       9.76103399       1.34727439      13.10325255
 Li      13.96369604      15.37816800       7.54188236
 Li       9.18707766       9.69045955       8.33024420
@@ -513,7 +513,7 @@ S       22.88907973       7.07457142       8.87346407
 S       14.64653651      14.22037026      14.25973012
 S       15.53672627      15.54302399       1.97819802
 512
-Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" source_frame_index=20 relative_time_ps=2.0 pbc="T T T"
+Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" display_name="Li₃PS₄ — NEP89 — 700 K — NVT production" report_figures="05_Li3PS4_lithium_MSD; 06_Li3PS4_diffusion_framework_MSD; 07_Li3PS4_local_structure; 28_Li3PS4_dynamic_heterogeneity" source_frame_index=20 relative_time_ps=2.0 pbc="T T T"
 Li      10.20503952       1.15026386      12.66586947
 Li      14.08515149       0.08227407       7.26076186
 Li       9.64113899       9.37987981       8.15061046
@@ -1027,7 +1027,7 @@ S       22.52363850       6.71001747       8.63949178
 S       14.71670766      14.79486334      14.10076743
 S       15.53732640      15.71745370       0.88471762
 512
-Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" source_frame_index=40 relative_time_ps=4.0 pbc="T T T"
+Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" display_name="Li₃PS₄ — NEP89 — 700 K — NVT production" report_figures="05_Li3PS4_lithium_MSD; 06_Li3PS4_diffusion_framework_MSD; 07_Li3PS4_local_structure; 28_Li3PS4_dynamic_heterogeneity" source_frame_index=40 relative_time_ps=4.0 pbc="T T T"
 Li      10.13191168       1.64813290      12.33848604
 Li      14.21221840      14.88492947       7.35499503
 Li       9.85994283      10.14379493       8.30193755
@@ -1541,7 +1541,7 @@ S       22.69987386       6.09308940       8.36343440
 S       14.11072032      14.75840400      14.32511279
 S       15.63391933      15.54431990       1.46619678
 512
-Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" source_frame_index=60 relative_time_ps=6.0 pbc="T T T"
+Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" display_name="Li₃PS₄ — NEP89 — 700 K — NVT production" report_figures="05_Li3PS4_lithium_MSD; 06_Li3PS4_diffusion_framework_MSD; 07_Li3PS4_local_structure; 28_Li3PS4_dynamic_heterogeneity" source_frame_index=60 relative_time_ps=6.0 pbc="T T T"
 Li       9.65924346       0.98581400      12.68483221
 Li      14.34263247      15.37271093       6.83706413
 Li       9.10075236       9.68753881       8.24461675
@@ -2055,7 +2055,7 @@ S       22.78183524       6.64831796       8.07669667
 S       14.65255230      14.68417915      14.91297650
 S       15.51938075      15.58621961       0.77986145
 512
-Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" source_frame_index=80 relative_time_ps=8.0 pbc="T T T"
+Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" display_name="Li₃PS₄ — NEP89 — 700 K — NVT production" report_figures="05_Li3PS4_lithium_MSD; 06_Li3PS4_diffusion_framework_MSD; 07_Li3PS4_local_structure; 28_Li3PS4_dynamic_heterogeneity" source_frame_index=80 relative_time_ps=8.0 pbc="T T T"
 Li      10.56784929       1.14937402      12.79532711
 Li      14.30928385      15.19357420       7.46679709
 Li       9.61642902       9.66420434       8.56938422
@@ -2569,7 +2569,7 @@ S       22.51800855       6.13557129       8.89262958
 S       14.01688257      14.90339206      14.19958487
 S       15.28752769      15.81055763       0.55643082
 512
-Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" source_frame_index=100 relative_time_ps=10.0 pbc="T T T"
+Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" display_name="Li₃PS₄ — NEP89 — 700 K — NVT production" report_figures="05_Li3PS4_lithium_MSD; 06_Li3PS4_diffusion_framework_MSD; 07_Li3PS4_local_structure; 28_Li3PS4_dynamic_heterogeneity" source_frame_index=100 relative_time_ps=10.0 pbc="T T T"
 Li      10.20127721       1.40413528      12.76778492
 Li      14.13384895      15.43743846       7.63743851
 Li       9.45135117       9.64960320       8.23496679
@@ -3083,7 +3083,7 @@ S       22.01756474       6.47034583       9.23221480
 S       14.57935247      15.15011397      14.45590319
 S       15.32078766      15.61058032       1.02706009
 512
-Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" source_frame_index=120 relative_time_ps=12.0 pbc="T T T"
+Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" display_name="Li₃PS₄ — NEP89 — 700 K — NVT production" report_figures="05_Li3PS4_lithium_MSD; 06_Li3PS4_diffusion_framework_MSD; 07_Li3PS4_local_structure; 28_Li3PS4_dynamic_heterogeneity" source_frame_index=120 relative_time_ps=12.0 pbc="T T T"
 Li      10.25729545       1.19477947      12.99656848
 Li      14.00909056      15.23966532       8.07416733
 Li       9.53454383       9.55593647       8.88537556
@@ -3597,7 +3597,7 @@ S       22.76080602       6.30540893       8.30562731
 S       14.52301275      14.74731488      14.39691905
 S       15.24254871      15.39836903       1.64880571
 512
-Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" source_frame_index=140 relative_time_ps=14.0 pbc="T T T"
+Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" display_name="Li₃PS₄ — NEP89 — 700 K — NVT production" report_figures="05_Li3PS4_lithium_MSD; 06_Li3PS4_diffusion_framework_MSD; 07_Li3PS4_local_structure; 28_Li3PS4_dynamic_heterogeneity" source_frame_index=140 relative_time_ps=14.0 pbc="T T T"
 Li      10.19483405       0.99901437      12.41408935
 Li      14.43670033      15.24581522       7.15904877
 Li       9.42172741       9.55210717       8.53648041
@@ -4111,7 +4111,7 @@ S       21.85241389       6.49506159       8.45719664
 S       14.25962802      14.66318743      14.17300000
 S       15.39175255      15.77602424       0.80921511
 512
-Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" source_frame_index=160 relative_time_ps=16.0 pbc="T T T"
+Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" display_name="Li₃PS₄ — NEP89 — 700 K — NVT production" report_figures="05_Li3PS4_lithium_MSD; 06_Li3PS4_diffusion_framework_MSD; 07_Li3PS4_local_structure; 28_Li3PS4_dynamic_heterogeneity" source_frame_index=160 relative_time_ps=16.0 pbc="T T T"
 Li       9.98610343       1.04041873      12.43786158
 Li      13.91817678      14.91570229       7.73666253
 Li       9.69326122      10.01338005       8.40836878
@@ -4625,7 +4625,7 @@ S       22.54371591       5.96947644       8.20702205
 S       14.47086738      14.74366644      14.45040973
 S       15.52239528      15.70723920       0.76706593
 512
-Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" source_frame_index=180 relative_time_ps=18.0 pbc="T T T"
+Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" display_name="Li₃PS₄ — NEP89 — 700 K — NVT production" report_figures="05_Li3PS4_lithium_MSD; 06_Li3PS4_diffusion_framework_MSD; 07_Li3PS4_local_structure; 28_Li3PS4_dynamic_heterogeneity" source_frame_index=180 relative_time_ps=18.0 pbc="T T T"
 Li      10.23148469       1.70028929      12.12494555
 Li      14.10999421      15.52958218       7.62355019
 Li       9.24415525       9.66004163       8.94172073
@@ -5139,7 +5139,7 @@ S       22.53108300       6.58674764       8.77367319
 S       14.70667300      15.07064379      14.36131432
 S       15.43235821      15.67592953       1.08030251
 512
-Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" source_frame_index=200 relative_time_ps=20.0 pbc="T T T"
+Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" display_name="Li₃PS₄ — NEP89 — 700 K — NVT production" report_figures="05_Li3PS4_lithium_MSD; 06_Li3PS4_diffusion_framework_MSD; 07_Li3PS4_local_structure; 28_Li3PS4_dynamic_heterogeneity" source_frame_index=200 relative_time_ps=20.0 pbc="T T T"
 Li       9.59962648       1.18357116      12.48586240
 Li      13.83888588      15.28873920       7.91500005
 Li       9.67325661      10.10031794       8.45943563
@@ -5653,7 +5653,7 @@ S       22.26349516       6.21348268       8.55945603
 S       14.31427482      14.84345905      14.68360176
 S       15.50242116      15.60960612       1.19459907
 512
-Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" source_frame_index=220 relative_time_ps=22.0 pbc="T T T"
+Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" display_name="Li₃PS₄ — NEP89 — 700 K — NVT production" report_figures="05_Li3PS4_lithium_MSD; 06_Li3PS4_diffusion_framework_MSD; 07_Li3PS4_local_structure; 28_Li3PS4_dynamic_heterogeneity" source_frame_index=220 relative_time_ps=22.0 pbc="T T T"
 Li      10.04313204       0.83594747      12.11909423
 Li      14.05438496      15.35153339       7.84408609
 Li       9.48938853       9.15196982       7.88578538
@@ -6167,7 +6167,7 @@ S       22.29693682       6.52371971       8.20791698
 S       14.36068062      14.69463729      14.10745496
 S       15.49875772      15.78195004       1.78364638
 512
-Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" source_frame_index=240 relative_time_ps=24.0 pbc="T T T"
+Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" display_name="Li₃PS₄ — NEP89 — 700 K — NVT production" report_figures="05_Li3PS4_lithium_MSD; 06_Li3PS4_diffusion_framework_MSD; 07_Li3PS4_local_structure; 28_Li3PS4_dynamic_heterogeneity" source_frame_index=240 relative_time_ps=24.0 pbc="T T T"
 Li      10.51823064       1.39190659      12.07758283
 Li      14.11389934      15.16309412       8.09136688
 Li       9.38013622       9.98306660       8.98806145
@@ -6681,7 +6681,7 @@ S       22.24774310       6.70506534       8.34766428
 S       14.34419620      15.08035044      14.26033765
 S       15.09461080      15.66436760       0.70181358
 512
-Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" source_frame_index=260 relative_time_ps=26.0 pbc="T T T"
+Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" display_name="Li₃PS₄ — NEP89 — 700 K — NVT production" report_figures="05_Li3PS4_lithium_MSD; 06_Li3PS4_diffusion_framework_MSD; 07_Li3PS4_local_structure; 28_Li3PS4_dynamic_heterogeneity" source_frame_index=260 relative_time_ps=26.0 pbc="T T T"
 Li      10.31295258       0.99563755      12.00111769
 Li      14.03426783      15.76870278       7.89737760
 Li       9.32211500       9.25208249       8.64608239
@@ -7195,7 +7195,7 @@ S       22.53733443       6.82657372       8.08530444
 S       14.90525140      14.65363426      14.15271977
 S       15.30696755      15.65230662       0.42834878
 512
-Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" source_frame_index=280 relative_time_ps=28.0 pbc="T T T"
+Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" display_name="Li₃PS₄ — NEP89 — 700 K — NVT production" report_figures="05_Li3PS4_lithium_MSD; 06_Li3PS4_diffusion_framework_MSD; 07_Li3PS4_local_structure; 28_Li3PS4_dynamic_heterogeneity" source_frame_index=280 relative_time_ps=28.0 pbc="T T T"
 Li       9.82872974       1.49874733      12.17325729
 Li      14.27800971      15.36842499       7.03092122
 Li       9.52405968       9.38112143       8.20654463
@@ -7709,7 +7709,7 @@ S       22.33177317       6.33448014       8.59155702
 S       14.07544821      14.46027960      14.16077804
 S       15.30612625       0.21549862       0.56193878
 512
-Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" source_frame_index=300 relative_time_ps=30.0 pbc="T T T"
+Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" display_name="Li₃PS₄ — NEP89 — 700 K — NVT production" report_figures="05_Li3PS4_lithium_MSD; 06_Li3PS4_diffusion_framework_MSD; 07_Li3PS4_local_structure; 28_Li3PS4_dynamic_heterogeneity" source_frame_index=300 relative_time_ps=30.0 pbc="T T T"
 Li      10.01628020       1.20371402      12.40653434
 Li      13.59140727      14.86111591       8.25897319
 Li       9.49801797       9.89226949       8.38143740
@@ -8223,7 +8223,7 @@ S       22.05384004       6.24853545       8.33592644
 S       14.27072159      14.54825328      14.30553218
 S       15.31161739       0.06717240       1.19240164
 512
-Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" source_frame_index=320 relative_time_ps=32.0 pbc="T T T"
+Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" display_name="Li₃PS₄ — NEP89 — 700 K — NVT production" report_figures="05_Li3PS4_lithium_MSD; 06_Li3PS4_diffusion_framework_MSD; 07_Li3PS4_local_structure; 28_Li3PS4_dynamic_heterogeneity" source_frame_index=320 relative_time_ps=32.0 pbc="T T T"
 Li       9.48824801       1.16694927      13.16093455
 Li      13.68780848      14.88966877       8.28376590
 Li       9.25473962      10.15399901       8.93667832
@@ -8737,7 +8737,7 @@ S       21.97166793       6.46735847       8.62237636
 S       14.38847308      14.61982219      14.49161693
 S       15.13014984      15.80692522       0.81345122
 512
-Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" source_frame_index=340 relative_time_ps=34.0 pbc="T T T"
+Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" display_name="Li₃PS₄ — NEP89 — 700 K — NVT production" report_figures="05_Li3PS4_lithium_MSD; 06_Li3PS4_diffusion_framework_MSD; 07_Li3PS4_local_structure; 28_Li3PS4_dynamic_heterogeneity" source_frame_index=340 relative_time_ps=34.0 pbc="T T T"
 Li       9.98253663       1.42986725      12.01077420
 Li      13.63035466       0.14278665       7.69547436
 Li       9.42061043       9.27233788       8.48757609
@@ -9251,7 +9251,7 @@ S       22.43773324       6.41372112       8.78421928
 S       14.13667711      14.84141448      14.21853449
 S       15.39054728      15.78186899       0.64542112
 512
-Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" source_frame_index=360 relative_time_ps=36.0 pbc="T T T"
+Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" display_name="Li₃PS₄ — NEP89 — 700 K — NVT production" report_figures="05_Li3PS4_lithium_MSD; 06_Li3PS4_diffusion_framework_MSD; 07_Li3PS4_local_structure; 28_Li3PS4_dynamic_heterogeneity" source_frame_index=360 relative_time_ps=36.0 pbc="T T T"
 Li       9.81926406       1.64511517      12.38073017
 Li      14.28887200      14.87470338       7.80348491
 Li       9.74384756      10.05107359       8.12457235
@@ -9765,7 +9765,7 @@ S       22.06835340       6.33147505       8.48508556
 S       14.25766264      15.01688122      14.44174064
 S       15.42746210      15.79391441       0.68978747
 512
-Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" source_frame_index=380 relative_time_ps=38.0 pbc="T T T"
+Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" display_name="Li₃PS₄ — NEP89 — 700 K — NVT production" report_figures="05_Li3PS4_lithium_MSD; 06_Li3PS4_diffusion_framework_MSD; 07_Li3PS4_local_structure; 28_Li3PS4_dynamic_heterogeneity" source_frame_index=380 relative_time_ps=38.0 pbc="T T T"
 Li      10.02848310       1.43022935      12.08031395
 Li      13.68479871      15.48109622       7.49494798
 Li       9.26693146       9.65119293       7.33282236
@@ -10279,7 +10279,7 @@ S       21.93760797       6.58399541       8.95555350
 S       14.36505323      14.83272554      14.35201737
 S       15.49419789      15.54254549       0.87342751
 512
-Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" source_frame_index=400 relative_time_ps=40.0 pbc="T T T"
+Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" display_name="Li₃PS₄ — NEP89 — 700 K — NVT production" report_figures="05_Li3PS4_lithium_MSD; 06_Li3PS4_diffusion_framework_MSD; 07_Li3PS4_local_structure; 28_Li3PS4_dynamic_heterogeneity" source_frame_index=400 relative_time_ps=40.0 pbc="T T T"
 Li       9.35643046       1.08343614      12.82240984
 Li      13.44035759      15.48086166       7.40182510
 Li       9.58566711       9.60258235       8.32841708
@@ -10793,7 +10793,7 @@ S       22.19253520       6.51616055       8.77952982
 S       14.70372422      14.78056413      14.13743815
 S       15.07374172       0.38623754       0.66029120
 512
-Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" source_frame_index=420 relative_time_ps=42.0 pbc="T T T"
+Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" display_name="Li₃PS₄ — NEP89 — 700 K — NVT production" report_figures="05_Li3PS4_lithium_MSD; 06_Li3PS4_diffusion_framework_MSD; 07_Li3PS4_local_structure; 28_Li3PS4_dynamic_heterogeneity" source_frame_index=420 relative_time_ps=42.0 pbc="T T T"
 Li       9.78654469       1.21319608      12.17114788
 Li      13.81318672      14.75321780       8.42704462
 Li       9.81336023       9.13833835       8.37854512
@@ -11307,7 +11307,7 @@ S       22.60653038       6.63809407       8.97542919
 S       14.50489045      14.94623170      14.57800975
 S       15.15656934       0.19711813       0.89896428
 512
-Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" source_frame_index=440 relative_time_ps=44.0 pbc="T T T"
+Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" display_name="Li₃PS₄ — NEP89 — 700 K — NVT production" report_figures="05_Li3PS4_lithium_MSD; 06_Li3PS4_diffusion_framework_MSD; 07_Li3PS4_local_structure; 28_Li3PS4_dynamic_heterogeneity" source_frame_index=440 relative_time_ps=44.0 pbc="T T T"
 Li       9.68901580       1.54790773      12.38741210
 Li      13.94791501       0.38534116       7.25709168
 Li       9.81407749       9.44841190       7.64124932
@@ -11821,7 +11821,7 @@ S       22.63942988       6.25707135       8.34174321
 S       14.34867910      14.68602385      14.68908451
 S       15.21687613      15.52753105       0.72909161
 512
-Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" source_frame_index=460 relative_time_ps=46.0 pbc="T T T"
+Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" display_name="Li₃PS₄ — NEP89 — 700 K — NVT production" report_figures="05_Li3PS4_lithium_MSD; 06_Li3PS4_diffusion_framework_MSD; 07_Li3PS4_local_structure; 28_Li3PS4_dynamic_heterogeneity" source_frame_index=460 relative_time_ps=46.0 pbc="T T T"
 Li       9.92358068       1.87476569      12.93644595
 Li      13.45048905      15.49088566       8.14833268
 Li       9.86847674       9.90501971       8.93731578
@@ -12335,7 +12335,7 @@ S       22.12874767       6.86084693       8.20224641
 S       14.73462987      15.02677656      14.41776193
 S       15.39721767      15.70426560       0.55109416
 512
-Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" source_frame_index=480 relative_time_ps=48.0 pbc="T T T"
+Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" display_name="Li₃PS₄ — NEP89 — 700 K — NVT production" report_figures="05_Li3PS4_lithium_MSD; 06_Li3PS4_diffusion_framework_MSD; 07_Li3PS4_local_structure; 28_Li3PS4_dynamic_heterogeneity" source_frame_index=480 relative_time_ps=48.0 pbc="T T T"
 Li      10.32956459       1.93406690      12.73728672
 Li      14.26099646      15.16686828       8.46835431
 Li       9.33215192       9.54351039       8.21047226
@@ -12849,7 +12849,7 @@ S       22.56880239       6.23884887       8.88740525
 S       14.27026928      14.63855509      14.35609703
 S       15.29757253      15.41241122       0.65632979
 512
-Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" source_frame_index=500 relative_time_ps=50.0 pbc="T T T"
+Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" display_name="Li₃PS₄ — NEP89 — 700 K — NVT production" report_figures="05_Li3PS4_lithium_MSD; 06_Li3PS4_diffusion_framework_MSD; 07_Li3PS4_local_structure; 28_Li3PS4_dynamic_heterogeneity" source_frame_index=500 relative_time_ps=50.0 pbc="T T T"
 Li       9.62472239       2.20177687      12.57060846
 Li      14.10092729      15.11255004       7.41549274
 Li       9.78807341       9.52322473       8.02440470
@@ -13363,7 +13363,7 @@ S       22.48857019       6.30068262       8.71274367
 S       14.39558333      14.60033484      14.20025117
 S       15.40189846       0.03726294       0.49383766
 512
-Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" source_frame_index=520 relative_time_ps=52.0 pbc="T T T"
+Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" display_name="Li₃PS₄ — NEP89 — 700 K — NVT production" report_figures="05_Li3PS4_lithium_MSD; 06_Li3PS4_diffusion_framework_MSD; 07_Li3PS4_local_structure; 28_Li3PS4_dynamic_heterogeneity" source_frame_index=520 relative_time_ps=52.0 pbc="T T T"
 Li       9.94606037       1.70326963      12.76521293
 Li      13.99893029      15.07665066       8.37167962
 Li       9.89213052       9.65008765       8.45955804
@@ -13877,7 +13877,7 @@ S       21.59630039       6.81993147       8.57982288
 S       14.60389837      14.84762651      14.57011727
 S       15.60158068       0.17081387       0.75689250
 512
-Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" source_frame_index=540 relative_time_ps=54.0 pbc="T T T"
+Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" display_name="Li₃PS₄ — NEP89 — 700 K — NVT production" report_figures="05_Li3PS4_lithium_MSD; 06_Li3PS4_diffusion_framework_MSD; 07_Li3PS4_local_structure; 28_Li3PS4_dynamic_heterogeneity" source_frame_index=540 relative_time_ps=54.0 pbc="T T T"
 Li       9.91489373       1.55139134      13.18688890
 Li      13.80392054       0.33727963       8.41648228
 Li       9.72523437       9.95998805       7.90651945
@@ -14391,7 +14391,7 @@ S       21.68363813       6.34763353       9.06292123
 S       14.70732004      14.74807058      14.26722840
 S       15.45800439       0.22044249       0.90855188
 512
-Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" source_frame_index=560 relative_time_ps=56.0 pbc="T T T"
+Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" display_name="Li₃PS₄ — NEP89 — 700 K — NVT production" report_figures="05_Li3PS4_lithium_MSD; 06_Li3PS4_diffusion_framework_MSD; 07_Li3PS4_local_structure; 28_Li3PS4_dynamic_heterogeneity" source_frame_index=560 relative_time_ps=56.0 pbc="T T T"
 Li       9.84840528       2.39069547      13.35336987
 Li      13.53182649      15.41241582       8.53914818
 Li       9.30274896       9.65939656       8.40126361
@@ -14905,7 +14905,7 @@ S       22.43731835       6.44887239       8.40914642
 S       14.60358910      15.16516434      14.18515101
 S       15.42755884       0.13915557       0.37242502
 512
-Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" source_frame_index=580 relative_time_ps=58.0 pbc="T T T"
+Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" display_name="Li₃PS₄ — NEP89 — 700 K — NVT production" report_figures="05_Li3PS4_lithium_MSD; 06_Li3PS4_diffusion_framework_MSD; 07_Li3PS4_local_structure; 28_Li3PS4_dynamic_heterogeneity" source_frame_index=580 relative_time_ps=58.0 pbc="T T T"
 Li       9.56347088       1.54719809      12.82517991
 Li      13.37791743       0.01174644       8.16502228
 Li       9.81706384      10.04820112       8.60791114
@@ -15419,7 +15419,7 @@ S       22.36755609       6.35300961       8.07010233
 S       14.90842197      14.97271617      14.37162912
 S       15.48288626       0.04393144       0.92108805
 512
-Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" source_frame_index=600 relative_time_ps=60.0 pbc="T T T"
+Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" display_name="Li₃PS₄ — NEP89 — 700 K — NVT production" report_figures="05_Li3PS4_lithium_MSD; 06_Li3PS4_diffusion_framework_MSD; 07_Li3PS4_local_structure; 28_Li3PS4_dynamic_heterogeneity" source_frame_index=600 relative_time_ps=60.0 pbc="T T T"
 Li       9.43225720       1.20733224      12.93105442
 Li      14.23794705      15.10390035       8.01016228
 Li       9.36104040       8.92245818       8.74870094
@@ -15933,7 +15933,7 @@ S       22.76881742       6.48478090       8.83106451
 S       14.48121352      14.51765768      14.14128279
 S       15.38376847       0.39550885       0.33764708
 512
-Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" source_frame_index=620 relative_time_ps=62.0 pbc="T T T"
+Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" display_name="Li₃PS₄ — NEP89 — 700 K — NVT production" report_figures="05_Li3PS4_lithium_MSD; 06_Li3PS4_diffusion_framework_MSD; 07_Li3PS4_local_structure; 28_Li3PS4_dynamic_heterogeneity" source_frame_index=620 relative_time_ps=62.0 pbc="T T T"
 Li       9.36956146       1.45873887      12.46028692
 Li      14.37474616      14.91897891       7.50421689
 Li       9.73580275       9.56304869       7.96347450
@@ -16447,7 +16447,7 @@ S       22.79993125       6.47673120       8.84486261
 S       14.20487714      14.64425607      13.92805251
 S       15.44397420      15.31442336       0.54749796
 512
-Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" source_frame_index=640 relative_time_ps=64.0 pbc="T T T"
+Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" display_name="Li₃PS₄ — NEP89 — 700 K — NVT production" report_figures="05_Li3PS4_lithium_MSD; 06_Li3PS4_diffusion_framework_MSD; 07_Li3PS4_local_structure; 28_Li3PS4_dynamic_heterogeneity" source_frame_index=640 relative_time_ps=64.0 pbc="T T T"
 Li       9.03159158       0.53261101      12.02653085
 Li      14.05332414      14.93186374       7.72641414
 Li       9.25289197      10.00294128       8.38721720
@@ -16961,7 +16961,7 @@ S       22.84406747       6.73019627       8.72475670
 S       14.76488902      15.04524651      14.79418234
 S       15.49115290      15.70224394       0.96836717
 512
-Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" source_frame_index=660 relative_time_ps=66.0 pbc="T T T"
+Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" display_name="Li₃PS₄ — NEP89 — 700 K — NVT production" report_figures="05_Li3PS4_lithium_MSD; 06_Li3PS4_diffusion_framework_MSD; 07_Li3PS4_local_structure; 28_Li3PS4_dynamic_heterogeneity" source_frame_index=660 relative_time_ps=66.0 pbc="T T T"
 Li       7.54922929      14.13908589      11.41413619
 Li      13.89620590      15.22013170       7.03445561
 Li       9.76519630       9.86696305       8.09376242
@@ -17475,7 +17475,7 @@ S       22.30980386       6.49533674       9.06109710
 S       14.22461721      15.18571501      14.35809796
 S       15.51953003      15.14076741       1.06412409
 512
-Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" source_frame_index=680 relative_time_ps=68.0 pbc="T T T"
+Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" display_name="Li₃PS₄ — NEP89 — 700 K — NVT production" report_figures="05_Li3PS4_lithium_MSD; 06_Li3PS4_diffusion_framework_MSD; 07_Li3PS4_local_structure; 28_Li3PS4_dynamic_heterogeneity" source_frame_index=680 relative_time_ps=68.0 pbc="T T T"
 Li       8.21775731      13.41667251      11.39727546
 Li      13.83288094       0.03223349       7.67101400
 Li       9.64655171       9.47712974       8.09827988
@@ -17989,7 +17989,7 @@ S       21.65887749       6.28429469       8.30334499
 S       14.71946421      14.91549518      14.25916194
 S       15.20478967       0.04840446       1.22798681
 512
-Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" source_frame_index=700 relative_time_ps=70.0 pbc="T T T"
+Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" display_name="Li₃PS₄ — NEP89 — 700 K — NVT production" report_figures="05_Li3PS4_lithium_MSD; 06_Li3PS4_diffusion_framework_MSD; 07_Li3PS4_local_structure; 28_Li3PS4_dynamic_heterogeneity" source_frame_index=700 relative_time_ps=70.0 pbc="T T T"
 Li       8.30676788      13.83646393      11.05506459
 Li      13.46847745      15.39774469       8.23357891
 Li      10.19140514       9.75027331       8.21717358
@@ -18503,7 +18503,7 @@ S       21.92737069       6.60927665       8.30358543
 S       14.21575107      15.26586816      14.36284918
 S       15.56515346      15.53357447       0.77281757
 512
-Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" source_frame_index=720 relative_time_ps=72.0 pbc="T T T"
+Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" display_name="Li₃PS₄ — NEP89 — 700 K — NVT production" report_figures="05_Li3PS4_lithium_MSD; 06_Li3PS4_diffusion_framework_MSD; 07_Li3PS4_local_structure; 28_Li3PS4_dynamic_heterogeneity" source_frame_index=720 relative_time_ps=72.0 pbc="T T T"
 Li       8.97603475      13.62798046      11.22987210
 Li      13.63506047      14.92811499       7.87142032
 Li       9.46842305       9.40588208       8.07418965
@@ -19017,7 +19017,7 @@ S       22.02820700       6.30753393       8.64102952
 S       14.37812193      14.92161641      14.12974862
 S       15.34350891      15.32770396       0.77764871
 512
-Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" source_frame_index=740 relative_time_ps=74.0 pbc="T T T"
+Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" display_name="Li₃PS₄ — NEP89 — 700 K — NVT production" report_figures="05_Li3PS4_lithium_MSD; 06_Li3PS4_diffusion_framework_MSD; 07_Li3PS4_local_structure; 28_Li3PS4_dynamic_heterogeneity" source_frame_index=740 relative_time_ps=74.0 pbc="T T T"
 Li       8.44539120      13.89692197      11.11125692
 Li      14.36764713      14.89998945       6.76056417
 Li       9.86231129       9.22623181       8.33929232
@@ -19531,7 +19531,7 @@ S       21.99770697       6.12839110       8.48073900
 S       14.07175348      15.01920354      14.27755440
 S       15.52332961      15.78548534       0.44141689
 512
-Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" source_frame_index=760 relative_time_ps=76.0 pbc="T T T"
+Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" display_name="Li₃PS₄ — NEP89 — 700 K — NVT production" report_figures="05_Li3PS4_lithium_MSD; 06_Li3PS4_diffusion_framework_MSD; 07_Li3PS4_local_structure; 28_Li3PS4_dynamic_heterogeneity" source_frame_index=760 relative_time_ps=76.0 pbc="T T T"
 Li       8.27535360      13.89314144      11.02471675
 Li      14.23588511      15.61460888       7.88074999
 Li       9.87898681      10.27195869       8.36389473
@@ -20045,7 +20045,7 @@ S       22.04746314       5.92645836       8.36324283
 S       14.32478827      14.86072792      14.16967856
 S       15.50480780       0.14162158       0.83015857
 512
-Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" source_frame_index=780 relative_time_ps=78.0 pbc="T T T"
+Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" display_name="Li₃PS₄ — NEP89 — 700 K — NVT production" report_figures="05_Li3PS4_lithium_MSD; 06_Li3PS4_diffusion_framework_MSD; 07_Li3PS4_local_structure; 28_Li3PS4_dynamic_heterogeneity" source_frame_index=780 relative_time_ps=78.0 pbc="T T T"
 Li       7.70840684      13.47510228      10.90103029
 Li      13.94573397      15.58415060       8.61602682
 Li       9.40862954       9.78897182       8.06843985
@@ -20559,7 +20559,7 @@ S       21.99408036       5.97235217       8.68904639
 S       14.50546745      15.34656669      14.42151094
 S       15.33655524      15.44100103       0.56979977
 512
-Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" source_frame_index=800 relative_time_ps=80.0 pbc="T T T"
+Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" display_name="Li₃PS₄ — NEP89 — 700 K — NVT production" report_figures="05_Li3PS4_lithium_MSD; 06_Li3PS4_diffusion_framework_MSD; 07_Li3PS4_local_structure; 28_Li3PS4_dynamic_heterogeneity" source_frame_index=800 relative_time_ps=80.0 pbc="T T T"
 Li       8.03552836      13.32809206      11.01559143
 Li      13.64826783      15.02029524       7.97220217
 Li       9.10591569       9.82387388       8.16504182
@@ -21073,7 +21073,7 @@ S       22.88105352       6.50129800       9.01588312
 S       14.39209197      14.78943523      14.29945758
 S       15.47003253      15.52915051       0.52496011
 512
-Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" source_frame_index=820 relative_time_ps=82.0 pbc="T T T"
+Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" display_name="Li₃PS₄ — NEP89 — 700 K — NVT production" report_figures="05_Li3PS4_lithium_MSD; 06_Li3PS4_diffusion_framework_MSD; 07_Li3PS4_local_structure; 28_Li3PS4_dynamic_heterogeneity" source_frame_index=820 relative_time_ps=82.0 pbc="T T T"
 Li       7.44367838      13.28430016      10.62512826
 Li      13.63448735      15.17403394       8.78596366
 Li       9.41055026      10.38093355       8.81177148
@@ -21587,7 +21587,7 @@ S       21.47598325       5.92366572       8.66874831
 S       13.70344044      14.43655351      15.24563947
 S       15.55698182      15.49894925       0.79800886
 512
-Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" source_frame_index=840 relative_time_ps=84.0 pbc="T T T"
+Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" display_name="Li₃PS₄ — NEP89 — 700 K — NVT production" report_figures="05_Li3PS4_lithium_MSD; 06_Li3PS4_diffusion_framework_MSD; 07_Li3PS4_local_structure; 28_Li3PS4_dynamic_heterogeneity" source_frame_index=840 relative_time_ps=84.0 pbc="T T T"
 Li       8.56567137      13.45761157      11.00640249
 Li      13.82347635      15.06790500       7.94341544
 Li       9.60932107       9.76658821       8.28497185
@@ -22101,7 +22101,7 @@ S       22.40579673       6.16060283       8.37549477
 S       14.29869636      15.02173740      14.58162420
 S       15.14727924      15.61173626       0.11474412
 512
-Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" source_frame_index=860 relative_time_ps=86.0 pbc="T T T"
+Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" display_name="Li₃PS₄ — NEP89 — 700 K — NVT production" report_figures="05_Li3PS4_lithium_MSD; 06_Li3PS4_diffusion_framework_MSD; 07_Li3PS4_local_structure; 28_Li3PS4_dynamic_heterogeneity" source_frame_index=860 relative_time_ps=86.0 pbc="T T T"
 Li       7.46454534      14.78825180      11.95054386
 Li      13.88772474      14.75932929       8.12263537
 Li       9.25836117       9.67776491       8.39102245
@@ -22615,7 +22615,7 @@ S       22.03343313       6.54446688       8.65764419
 S       14.58265635      14.65883519      14.31282169
 S       14.93272239      15.62707478       0.42793726
 512
-Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" source_frame_index=880 relative_time_ps=88.0 pbc="T T T"
+Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" display_name="Li₃PS₄ — NEP89 — 700 K — NVT production" report_figures="05_Li3PS4_lithium_MSD; 06_Li3PS4_diffusion_framework_MSD; 07_Li3PS4_local_structure; 28_Li3PS4_dynamic_heterogeneity" source_frame_index=880 relative_time_ps=88.0 pbc="T T T"
 Li       7.04507575       1.85040725      10.30756740
 Li      14.35948849      15.48093211       7.43439337
 Li       9.46629531       9.18668970       7.07852378
@@ -23129,7 +23129,7 @@ S       22.74818900       6.60156401       8.10612500
 S       14.24472602      14.85137549      14.37616616
 S       15.04937337      15.75157453       0.07748149
 512
-Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" source_frame_index=900 relative_time_ps=90.0 pbc="T T T"
+Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" display_name="Li₃PS₄ — NEP89 — 700 K — NVT production" report_figures="05_Li3PS4_lithium_MSD; 06_Li3PS4_diffusion_framework_MSD; 07_Li3PS4_local_structure; 28_Li3PS4_dynamic_heterogeneity" source_frame_index=900 relative_time_ps=90.0 pbc="T T T"
 Li       6.26392193       0.79567286      13.91119624
 Li      13.74237114      14.58616215       8.75814992
 Li       9.62017978       9.88248177       8.71530621
@@ -23643,7 +23643,7 @@ S       22.74506477       6.28376676       7.74844583
 S       14.11976521      14.16375952      14.29609666
 S       15.26199714      15.42578395       0.55054547
 512
-Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" source_frame_index=920 relative_time_ps=92.0 pbc="T T T"
+Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" display_name="Li₃PS₄ — NEP89 — 700 K — NVT production" report_figures="05_Li3PS4_lithium_MSD; 06_Li3PS4_diffusion_framework_MSD; 07_Li3PS4_local_structure; 28_Li3PS4_dynamic_heterogeneity" source_frame_index=920 relative_time_ps=92.0 pbc="T T T"
 Li       5.10683561       1.20070433      12.43312800
 Li      13.85259852      14.80413867       7.66953139
 Li       9.91120340       9.97548110       8.21885958
@@ -24157,7 +24157,7 @@ S       22.63054128       6.65799348       8.45470739
 S       14.48221960      14.76232853      15.02942668
 S       15.08505975      15.57332705       0.39076484
 512
-Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" source_frame_index=940 relative_time_ps=94.0 pbc="T T T"
+Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" display_name="Li₃PS₄ — NEP89 — 700 K — NVT production" report_figures="05_Li3PS4_lithium_MSD; 06_Li3PS4_diffusion_framework_MSD; 07_Li3PS4_local_structure; 28_Li3PS4_dynamic_heterogeneity" source_frame_index=940 relative_time_ps=94.0 pbc="T T T"
 Li       5.34925911       1.11304430      13.04556062
 Li      13.48922865      15.30392338       8.08470032
 Li       9.78917922       9.38793207       7.85422222
@@ -24671,7 +24671,7 @@ S       22.11359760       6.31659421       8.79889915
 S       13.71865954      15.15813549      14.47881924
 S       15.05476084      15.07263162       0.51266786
 512
-Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" source_frame_index=960 relative_time_ps=96.0 pbc="T T T"
+Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" display_name="Li₃PS₄ — NEP89 — 700 K — NVT production" report_figures="05_Li3PS4_lithium_MSD; 06_Li3PS4_diffusion_framework_MSD; 07_Li3PS4_local_structure; 28_Li3PS4_dynamic_heterogeneity" source_frame_index=960 relative_time_ps=96.0 pbc="T T T"
 Li       5.38382349       1.20597333      12.54672039
 Li      13.91693321      15.18040476       7.78914769
 Li       9.77562833       9.55842482       8.33793926
@@ -25185,7 +25185,7 @@ S       22.63709798       6.38629633       8.72529735
 S       14.29749923      15.14038666      14.24013752
 S       15.19826556      15.05378177       0.76109601
 512
-Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" source_frame_index=980 relative_time_ps=98.0 pbc="T T T"
+Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" display_name="Li₃PS₄ — NEP89 — 700 K — NVT production" report_figures="05_Li3PS4_lithium_MSD; 06_Li3PS4_diffusion_framework_MSD; 07_Li3PS4_local_structure; 28_Li3PS4_dynamic_heterogeneity" source_frame_index=980 relative_time_ps=98.0 pbc="T T T"
 Li       5.19205997       1.76391129      13.47682909
 Li      14.14165924      15.38565785       7.41802138
 Li       9.35489468      10.21587292       8.47386646
@@ -25699,7 +25699,7 @@ S       22.49881034       6.61400836       8.55762601
 S       14.65019737      15.00674506      14.17876082
 S       15.65047313      15.19788494       0.93260928
 512
-Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" source_frame_index=999 relative_time_ps=99.9 pbc="T T T"
+Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" display_name="Li₃PS₄ — NEP89 — 700 K — NVT production" report_figures="05_Li3PS4_lithium_MSD; 06_Li3PS4_diffusion_framework_MSD; 07_Li3PS4_local_structure; 28_Li3PS4_dynamic_heterogeneity" source_frame_index=999 relative_time_ps=99.9 pbc="T T T"
 Li       4.19392840       1.61656345      14.10572925
 Li      13.82624790      15.44792905       8.16150137
 Li       9.72317856      10.19028427       8.06922283
@@ -26213,7 +26213,7 @@ S       22.42325374       6.48026311       8.78072917
 S       14.30291333      15.16885611      14.63781131
 S       15.27440546      15.34450919       0.80128459
 512
-Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" source_frame_index=1019 relative_time_ps=101.9 pbc="T T T"
+Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" display_name="Li₃PS₄ — NEP89 — 700 K — NVT production" report_figures="05_Li3PS4_lithium_MSD; 06_Li3PS4_diffusion_framework_MSD; 07_Li3PS4_local_structure; 28_Li3PS4_dynamic_heterogeneity" source_frame_index=1019 relative_time_ps=101.9 pbc="T T T"
 Li       5.80604746       1.99031563      11.66444555
 Li      13.64356816      15.34998759       7.70315124
 Li       9.71158137       9.64429300       8.48779691
@@ -26727,7 +26727,7 @@ S       22.83349388       6.51186405       7.98404569
 S       14.50030051      14.91487723      14.41250522
 S       14.98994126      15.36092942       0.56338793
 512
-Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" source_frame_index=1039 relative_time_ps=103.9 pbc="T T T"
+Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" display_name="Li₃PS₄ — NEP89 — 700 K — NVT production" report_figures="05_Li3PS4_lithium_MSD; 06_Li3PS4_diffusion_framework_MSD; 07_Li3PS4_local_structure; 28_Li3PS4_dynamic_heterogeneity" source_frame_index=1039 relative_time_ps=103.9 pbc="T T T"
 Li       5.79335033       1.36631925      12.30992889
 Li      13.71131130       0.85836097       6.21799550
 Li       9.15840250       9.28335605       7.87926121
@@ -27241,7 +27241,7 @@ S       22.78645787       6.57019224       7.88990480
 S       15.24742694       0.03820968      14.37042561
 S       15.18432074      15.72906059       0.93672130
 512
-Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" source_frame_index=1059 relative_time_ps=105.9 pbc="T T T"
+Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" display_name="Li₃PS₄ — NEP89 — 700 K — NVT production" report_figures="05_Li3PS4_lithium_MSD; 06_Li3PS4_diffusion_framework_MSD; 07_Li3PS4_local_structure; 28_Li3PS4_dynamic_heterogeneity" source_frame_index=1059 relative_time_ps=105.9 pbc="T T T"
 Li       5.07303903       1.13253850      12.68248794
 Li      14.38023994      15.06727616       7.19097701
 Li       9.50018310       9.93050248       8.37803057
@@ -27755,7 +27755,7 @@ S       21.96687027       6.57661814       9.17528178
 S       14.36938322      14.72189855      14.23033338
 S       15.38090322      15.51456666       0.64092003
 512
-Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" source_frame_index=1079 relative_time_ps=107.9 pbc="T T T"
+Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" display_name="Li₃PS₄ — NEP89 — 700 K — NVT production" report_figures="05_Li3PS4_lithium_MSD; 06_Li3PS4_diffusion_framework_MSD; 07_Li3PS4_local_structure; 28_Li3PS4_dynamic_heterogeneity" source_frame_index=1079 relative_time_ps=107.9 pbc="T T T"
 Li       4.66152065       0.72724471      12.60298572
 Li      14.00312829      15.71207141       7.82827520
 Li       9.18100972      10.10854533       8.20402874
@@ -28269,7 +28269,7 @@ S       23.22974564       6.82850861       9.42484482
 S       14.51566115      15.56659802      14.62912536
 S       15.21155020      15.31658777       0.87091719
 512
-Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" source_frame_index=1099 relative_time_ps=109.9 pbc="T T T"
+Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" display_name="Li₃PS₄ — NEP89 — 700 K — NVT production" report_figures="05_Li3PS4_lithium_MSD; 06_Li3PS4_diffusion_framework_MSD; 07_Li3PS4_local_structure; 28_Li3PS4_dynamic_heterogeneity" source_frame_index=1099 relative_time_ps=109.9 pbc="T T T"
 Li       5.23739917       1.07438735      12.80307947
 Li      14.41972059      14.92049058       7.24518127
 Li       9.78560907       9.48099399       8.44794056
@@ -28783,7 +28783,7 @@ S       22.84687887       6.54094746       8.70993589
 S       14.51699498      14.68579127      14.88969770
 S       15.34048307      15.60969155       0.71998480
 512
-Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" source_frame_index=1119 relative_time_ps=111.9 pbc="T T T"
+Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" display_name="Li₃PS₄ — NEP89 — 700 K — NVT production" report_figures="05_Li3PS4_lithium_MSD; 06_Li3PS4_diffusion_framework_MSD; 07_Li3PS4_local_structure; 28_Li3PS4_dynamic_heterogeneity" source_frame_index=1119 relative_time_ps=111.9 pbc="T T T"
 Li       4.98101476       1.59419144      12.07208903
 Li      13.82437331       0.04363946       7.86378650
 Li       9.38989157       9.48904682       8.46839963
@@ -29297,7 +29297,7 @@ S       22.66552542       6.52452250       8.94581124
 S       14.11135111      14.64567109      14.67708618
 S       15.46549298      15.64817612       1.01213641
 512
-Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" source_frame_index=1139 relative_time_ps=113.9 pbc="T T T"
+Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" display_name="Li₃PS₄ — NEP89 — 700 K — NVT production" report_figures="05_Li3PS4_lithium_MSD; 06_Li3PS4_diffusion_framework_MSD; 07_Li3PS4_local_structure; 28_Li3PS4_dynamic_heterogeneity" source_frame_index=1139 relative_time_ps=113.9 pbc="T T T"
 Li       5.55129448       1.33342499      11.78613689
 Li      13.93944226      15.72144277       8.34038804
 Li       9.78036985       9.86253140       7.98784015
@@ -29811,7 +29811,7 @@ S       22.21175798       6.33698915       8.70891951
 S       14.32464234      15.00348100      14.50882843
 S       15.15210905      15.41349568       0.87799499
 512
-Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" source_frame_index=1159 relative_time_ps=115.9 pbc="T T T"
+Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" display_name="Li₃PS₄ — NEP89 — 700 K — NVT production" report_figures="05_Li3PS4_lithium_MSD; 06_Li3PS4_diffusion_framework_MSD; 07_Li3PS4_local_structure; 28_Li3PS4_dynamic_heterogeneity" source_frame_index=1159 relative_time_ps=115.9 pbc="T T T"
 Li       4.66160035       2.20236082       9.64875944
 Li      14.03074623      15.69986707       7.67582681
 Li       9.73115029       9.49679866       8.06099644
@@ -30325,7 +30325,7 @@ S       21.73826801       6.08572589       8.38755920
 S       14.64405043      15.31001029      14.42085479
 S       15.29618692      15.42471459       1.44142122
 512
-Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" source_frame_index=1179 relative_time_ps=117.9 pbc="T T T"
+Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" display_name="Li₃PS₄ — NEP89 — 700 K — NVT production" report_figures="05_Li3PS4_lithium_MSD; 06_Li3PS4_diffusion_framework_MSD; 07_Li3PS4_local_structure; 28_Li3PS4_dynamic_heterogeneity" source_frame_index=1179 relative_time_ps=117.9 pbc="T T T"
 Li       1.90432667       4.49799313       9.57427804
 Li      14.01714786      15.17608492       7.92808968
 Li       9.43653207       9.84945781       8.37029475
@@ -30839,7 +30839,7 @@ S       22.82374999       6.49284077       8.27034567
 S       14.62805030      15.15891338      14.44081997
 S       15.23266795       0.05108532       0.80586828
 512
-Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" source_frame_index=1199 relative_time_ps=119.9 pbc="T T T"
+Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" display_name="Li₃PS₄ — NEP89 — 700 K — NVT production" report_figures="05_Li3PS4_lithium_MSD; 06_Li3PS4_diffusion_framework_MSD; 07_Li3PS4_local_structure; 28_Li3PS4_dynamic_heterogeneity" source_frame_index=1199 relative_time_ps=119.9 pbc="T T T"
 Li       4.51423122       2.80420888      10.63183830
 Li      14.67029852      15.50371057       7.52940920
 Li       9.10674724       9.64506388       8.78922137
@@ -31353,7 +31353,7 @@ S       22.70537786       6.71141181       9.11633373
 S       14.66912111      15.36687006      14.31993661
 S       15.32566437      15.23267254       0.84462402
 512
-Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" source_frame_index=1219 relative_time_ps=121.9 pbc="T T T"
+Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" display_name="Li₃PS₄ — NEP89 — 700 K — NVT production" report_figures="05_Li3PS4_lithium_MSD; 06_Li3PS4_diffusion_framework_MSD; 07_Li3PS4_local_structure; 28_Li3PS4_dynamic_heterogeneity" source_frame_index=1219 relative_time_ps=121.9 pbc="T T T"
 Li       4.38554915       2.63707202      10.72447761
 Li      14.66185335      15.29019125       7.70537131
 Li       9.40674030       9.96484135       8.38238313
@@ -31867,7 +31867,7 @@ S       22.62974657       6.51192475       8.53150912
 S       14.28340858      15.17381021      14.46674759
 S       15.69682410      15.37144587       1.10194882
 512
-Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" source_frame_index=1239 relative_time_ps=123.9 pbc="T T T"
+Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" display_name="Li₃PS₄ — NEP89 — 700 K — NVT production" report_figures="05_Li3PS4_lithium_MSD; 06_Li3PS4_diffusion_framework_MSD; 07_Li3PS4_local_structure; 28_Li3PS4_dynamic_heterogeneity" source_frame_index=1239 relative_time_ps=123.9 pbc="T T T"
 Li       4.03585406       1.19518627       9.26222757
 Li      14.15621370      15.13702730       7.30679683
 Li       9.65062845       9.93849968       8.41419912
@@ -32381,7 +32381,7 @@ S       22.41257002       7.01640297       8.93143522
 S       14.49202344      15.06740698      14.91055124
 S       15.21391579      15.35023911       1.37602767
 512
-Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" source_frame_index=1259 relative_time_ps=125.9 pbc="T T T"
+Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" display_name="Li₃PS₄ — NEP89 — 700 K — NVT production" report_figures="05_Li3PS4_lithium_MSD; 06_Li3PS4_diffusion_framework_MSD; 07_Li3PS4_local_structure; 28_Li3PS4_dynamic_heterogeneity" source_frame_index=1259 relative_time_ps=125.9 pbc="T T T"
 Li       4.60118862       2.06838733       8.81454033
 Li      14.15333460      15.66826249       7.10439801
 Li       9.12579294       9.64921447       8.92740988
@@ -32895,7 +32895,7 @@ S       21.28395632       6.64695838       8.70838580
 S       14.43025748      15.12834402      14.23422202
 S       15.40953937      15.01060068       0.79730264
 512
-Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" source_frame_index=1279 relative_time_ps=127.9 pbc="T T T"
+Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" display_name="Li₃PS₄ — NEP89 — 700 K — NVT production" report_figures="05_Li3PS4_lithium_MSD; 06_Li3PS4_diffusion_framework_MSD; 07_Li3PS4_local_structure; 28_Li3PS4_dynamic_heterogeneity" source_frame_index=1279 relative_time_ps=127.9 pbc="T T T"
 Li       3.51218393       4.47707664       9.50080924
 Li      14.29035889      15.23164442       8.14836834
 Li       9.73894809       9.70980446       8.05892686
@@ -33409,7 +33409,7 @@ S       22.61292177       6.43650359       8.36498249
 S       14.77629778      15.02949646      14.69640796
 S       15.36808840      15.67833262       0.59833003
 512
-Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" source_frame_index=1299 relative_time_ps=129.9 pbc="T T T"
+Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" display_name="Li₃PS₄ — NEP89 — 700 K — NVT production" report_figures="05_Li3PS4_lithium_MSD; 06_Li3PS4_diffusion_framework_MSD; 07_Li3PS4_local_structure; 28_Li3PS4_dynamic_heterogeneity" source_frame_index=1299 relative_time_ps=129.9 pbc="T T T"
 Li       2.59036852       5.67178680       9.78916373
 Li      13.79179153      15.74697249       8.13275659
 Li       9.86494326       9.85034070       8.37634573
@@ -33923,7 +33923,7 @@ S       21.92554364       6.37089617       8.49075462
 S       14.61510261      15.06481358      14.25976786
 S       15.00849668      15.38783174       1.06739264
 512
-Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" source_frame_index=1319 relative_time_ps=131.9 pbc="T T T"
+Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" display_name="Li₃PS₄ — NEP89 — 700 K — NVT production" report_figures="05_Li3PS4_lithium_MSD; 06_Li3PS4_diffusion_framework_MSD; 07_Li3PS4_local_structure; 28_Li3PS4_dynamic_heterogeneity" source_frame_index=1319 relative_time_ps=131.9 pbc="T T T"
 Li       4.23250348       5.94238393      10.37652694
 Li      13.98704458       0.00330538       7.20018984
 Li       9.37548393       9.58381127       8.25761913
@@ -34437,7 +34437,7 @@ S       22.22045732       6.30309847       8.54492540
 S       13.96220390      14.23043566      13.75464520
 S       15.39543022      15.25590245       0.79371231
 512
-Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" source_frame_index=1339 relative_time_ps=133.9 pbc="T T T"
+Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" display_name="Li₃PS₄ — NEP89 — 700 K — NVT production" report_figures="05_Li3PS4_lithium_MSD; 06_Li3PS4_diffusion_framework_MSD; 07_Li3PS4_local_structure; 28_Li3PS4_dynamic_heterogeneity" source_frame_index=1339 relative_time_ps=133.9 pbc="T T T"
 Li       4.16826370       4.74534353       8.70700204
 Li      14.03883323       0.17613707       7.36693447
 Li       9.38596542      10.18008341       8.31997897
@@ -34951,7 +34951,7 @@ S       22.66083983       6.13828729       8.35364390
 S       13.87920765      15.18449556      14.59466728
 S       15.18794121      15.48672198       1.18566856
 512
-Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" source_frame_index=1359 relative_time_ps=135.9 pbc="T T T"
+Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" display_name="Li₃PS₄ — NEP89 — 700 K — NVT production" report_figures="05_Li3PS4_lithium_MSD; 06_Li3PS4_diffusion_framework_MSD; 07_Li3PS4_local_structure; 28_Li3PS4_dynamic_heterogeneity" source_frame_index=1359 relative_time_ps=135.9 pbc="T T T"
 Li       7.25631241       3.70328154       8.84918249
 Li      13.85819988       2.25235051       9.31524188
 Li       9.23165518       9.62521102       8.18161221
@@ -35465,7 +35465,7 @@ S       22.13896580       6.38487162       8.47057444
 S       14.10873722      14.86459811      14.57158265
 S       14.95688608      15.13937434       0.98853851
 512
-Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" source_frame_index=1379 relative_time_ps=137.9 pbc="T T T"
+Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" display_name="Li₃PS₄ — NEP89 — 700 K — NVT production" report_figures="05_Li3PS4_lithium_MSD; 06_Li3PS4_diffusion_framework_MSD; 07_Li3PS4_local_structure; 28_Li3PS4_dynamic_heterogeneity" source_frame_index=1379 relative_time_ps=137.9 pbc="T T T"
 Li       6.76884358       3.89958400       7.62143261
 Li      14.41781288       4.63149792       6.95272354
 Li       9.13578645       9.54323764       8.43929764
@@ -35979,7 +35979,7 @@ S       21.97676564       6.62644359       8.60740864
 S       14.39206811      14.75965019      14.37962574
 S       15.25417737      15.57309277       0.44120688
 512
-Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" source_frame_index=1399 relative_time_ps=139.9 pbc="T T T"
+Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" display_name="Li₃PS₄ — NEP89 — 700 K — NVT production" report_figures="05_Li3PS4_lithium_MSD; 06_Li3PS4_diffusion_framework_MSD; 07_Li3PS4_local_structure; 28_Li3PS4_dynamic_heterogeneity" source_frame_index=1399 relative_time_ps=139.9 pbc="T T T"
 Li       7.06014979       4.29378237       6.95950014
 Li      13.94000700       5.98603884       5.29014843
 Li       8.95057873      10.05216994       8.11110478
@@ -36493,7 +36493,7 @@ S       22.20907165       5.99807360       8.69351599
 S       13.91627204      14.82550983      14.32376188
 S       15.26671530      15.23639861       1.31867632
 512
-Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" source_frame_index=1419 relative_time_ps=141.9 pbc="T T T"
+Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" display_name="Li₃PS₄ — NEP89 — 700 K — NVT production" report_figures="05_Li3PS4_lithium_MSD; 06_Li3PS4_diffusion_framework_MSD; 07_Li3PS4_local_structure; 28_Li3PS4_dynamic_heterogeneity" source_frame_index=1419 relative_time_ps=141.9 pbc="T T T"
 Li       2.07338279       3.43150308      10.03029964
 Li      14.66306252       5.50798352       4.81761459
 Li       8.88019604      10.05007816       8.42216150
@@ -37007,7 +37007,7 @@ S       22.10228234       6.47554540       8.56906180
 S       14.20976761      15.01177501      14.46895274
 S       14.95068600      15.27059246       0.77905587
 512
-Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" source_frame_index=1439 relative_time_ps=143.9 pbc="T T T"
+Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" display_name="Li₃PS₄ — NEP89 — 700 K — NVT production" report_figures="05_Li3PS4_lithium_MSD; 06_Li3PS4_diffusion_framework_MSD; 07_Li3PS4_local_structure; 28_Li3PS4_dynamic_heterogeneity" source_frame_index=1439 relative_time_ps=143.9 pbc="T T T"
 Li       3.31713608       3.98778865       9.71230545
 Li      15.08995802       4.30079636       3.58143474
 Li       9.78652671      10.03278596       8.09084207
@@ -37521,7 +37521,7 @@ S       22.16755366       6.01262010       8.52939663
 S       14.41635841      14.65513785      14.59895087
 S       15.15977647      15.55246018       0.59424537
 512
-Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" source_frame_index=1459 relative_time_ps=145.9 pbc="T T T"
+Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" display_name="Li₃PS₄ — NEP89 — 700 K — NVT production" report_figures="05_Li3PS4_lithium_MSD; 06_Li3PS4_diffusion_framework_MSD; 07_Li3PS4_local_structure; 28_Li3PS4_dynamic_heterogeneity" source_frame_index=1459 relative_time_ps=145.9 pbc="T T T"
 Li       3.60976954       3.61192024      10.63778112
 Li      14.67486719       5.08403067       3.97517848
 Li       9.10099746       9.95337088       8.42829454
@@ -38035,7 +38035,7 @@ S       22.70646409       6.38387489       8.56058114
 S       14.16267691      14.36634341      14.88000195
 S       15.21459452      15.36960479       1.22105088
 512
-Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" source_frame_index=1479 relative_time_ps=147.9 pbc="T T T"
+Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" display_name="Li₃PS₄ — NEP89 — 700 K — NVT production" report_figures="05_Li3PS4_lithium_MSD; 06_Li3PS4_diffusion_framework_MSD; 07_Li3PS4_local_structure; 28_Li3PS4_dynamic_heterogeneity" source_frame_index=1479 relative_time_ps=147.9 pbc="T T T"
 Li       2.98805212       4.80336310       8.91646304
 Li      14.68030122       5.20194866       4.50566812
 Li       9.86180115      10.31453210       8.42287598
@@ -38549,7 +38549,7 @@ S       22.13955868       6.57546280       8.38773065
 S       14.34700631      15.21889722      14.77790465
 S       15.21716609      15.80473375       0.10321724
 512
-Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" source_frame_index=1499 relative_time_ps=149.9 pbc="T T T"
+Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" display_name="Li₃PS₄ — NEP89 — 700 K — NVT production" report_figures="05_Li3PS4_lithium_MSD; 06_Li3PS4_diffusion_framework_MSD; 07_Li3PS4_local_structure; 28_Li3PS4_dynamic_heterogeneity" source_frame_index=1499 relative_time_ps=149.9 pbc="T T T"
 Li       3.53579392       5.15328589       5.57353714
 Li      14.31828765       4.79074417       3.14625412
 Li       9.86760607      10.26756660       8.43460189
@@ -39063,7 +39063,7 @@ S       22.52947908       5.94110450       8.13131035
 S       14.25563811      14.92696073      14.03850411
 S       15.10374656      15.49214880       0.36331563
 512
-Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" source_frame_index=1519 relative_time_ps=151.9 pbc="T T T"
+Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" display_name="Li₃PS₄ — NEP89 — 700 K — NVT production" report_figures="05_Li3PS4_lithium_MSD; 06_Li3PS4_diffusion_framework_MSD; 07_Li3PS4_local_structure; 28_Li3PS4_dynamic_heterogeneity" source_frame_index=1519 relative_time_ps=151.9 pbc="T T T"
 Li       4.34636628       5.62281537       5.45655591
 Li      13.43780153       5.57374898       3.09842097
 Li       9.42185952       9.54812916       8.05423515
@@ -39577,7 +39577,7 @@ S       21.86253687       6.21476359       8.96350725
 S       14.53961756      14.86946334      14.69611186
 S       15.37233771      15.62243734       1.04242818
 512
-Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" source_frame_index=1539 relative_time_ps=153.9 pbc="T T T"
+Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" display_name="Li₃PS₄ — NEP89 — 700 K — NVT production" report_figures="05_Li3PS4_lithium_MSD; 06_Li3PS4_diffusion_framework_MSD; 07_Li3PS4_local_structure; 28_Li3PS4_dynamic_heterogeneity" source_frame_index=1539 relative_time_ps=153.9 pbc="T T T"
 Li       4.15597959       5.52685226       4.98142478
 Li      13.41498968       4.39044813       2.87641675
 Li       9.62815905      10.12966077       8.61102712
@@ -40091,7 +40091,7 @@ S       22.73960271       6.65713528       9.38533492
 S       14.52308071      15.17741020      15.29932111
 S       15.09695595       0.03869500       0.93073623
 512
-Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" source_frame_index=1559 relative_time_ps=155.9 pbc="T T T"
+Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" display_name="Li₃PS₄ — NEP89 — 700 K — NVT production" report_figures="05_Li3PS4_lithium_MSD; 06_Li3PS4_diffusion_framework_MSD; 07_Li3PS4_local_structure; 28_Li3PS4_dynamic_heterogeneity" source_frame_index=1559 relative_time_ps=155.9 pbc="T T T"
 Li       3.57870743       5.78835275       2.66959526
 Li      13.62759063       5.19579720       3.28522887
 Li       9.59965429       9.61426873       8.07452624
@@ -40605,7 +40605,7 @@ S       22.76794408       6.40148825       9.51127762
 S       14.86612977      15.27300289      14.40206606
 S       14.92949126      15.33651833       0.63206123
 512
-Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" source_frame_index=1579 relative_time_ps=157.9 pbc="T T T"
+Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" display_name="Li₃PS₄ — NEP89 — 700 K — NVT production" report_figures="05_Li3PS4_lithium_MSD; 06_Li3PS4_diffusion_framework_MSD; 07_Li3PS4_local_structure; 28_Li3PS4_dynamic_heterogeneity" source_frame_index=1579 relative_time_ps=157.9 pbc="T T T"
 Li       3.98304477       6.20239258       2.50993082
 Li      14.47603541       6.00482542       3.70697517
 Li       9.07643295      10.18935235       8.23936286
@@ -41119,7 +41119,7 @@ S       23.42494673       6.17514350       9.18621805
 S       14.90641645      15.18259723      14.19705869
 S       15.22935756      15.65298182       0.64378602
 512
-Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" source_frame_index=1599 relative_time_ps=159.9 pbc="T T T"
+Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" display_name="Li₃PS₄ — NEP89 — 700 K — NVT production" report_figures="05_Li3PS4_lithium_MSD; 06_Li3PS4_diffusion_framework_MSD; 07_Li3PS4_local_structure; 28_Li3PS4_dynamic_heterogeneity" source_frame_index=1599 relative_time_ps=159.9 pbc="T T T"
 Li       4.36484102       5.89856973       2.33164901
 Li      14.50415479       5.92631544       3.97696074
 Li       9.40553857       9.89020153       8.49815079
@@ -41633,7 +41633,7 @@ S       22.62376179       6.53437817       9.07643639
 S       14.50579550      15.04662268      14.97463628
 S       15.04337269      15.67777682       0.84029816
 512
-Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" source_frame_index=1619 relative_time_ps=161.9 pbc="T T T"
+Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" display_name="Li₃PS₄ — NEP89 — 700 K — NVT production" report_figures="05_Li3PS4_lithium_MSD; 06_Li3PS4_diffusion_framework_MSD; 07_Li3PS4_local_structure; 28_Li3PS4_dynamic_heterogeneity" source_frame_index=1619 relative_time_ps=161.9 pbc="T T T"
 Li       2.71495177       5.05397285       1.60560514
 Li      14.17021364       5.31669515       4.95622644
 Li       9.72213171       9.35047028       8.42012206
@@ -42147,7 +42147,7 @@ S       22.81705995       7.23273025       9.05157035
 S       14.14665688      14.91751308      15.35677377
 S       15.11852265      15.45692031       0.59692343
 512
-Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" source_frame_index=1639 relative_time_ps=163.9 pbc="T T T"
+Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" display_name="Li₃PS₄ — NEP89 — 700 K — NVT production" report_figures="05_Li3PS4_lithium_MSD; 06_Li3PS4_diffusion_framework_MSD; 07_Li3PS4_local_structure; 28_Li3PS4_dynamic_heterogeneity" source_frame_index=1639 relative_time_ps=163.9 pbc="T T T"
 Li       1.01555482       3.63971751       0.65273357
 Li      12.73198183       5.69793721       2.24830541
 Li       9.62363263       9.90170433       8.26453992
@@ -42661,7 +42661,7 @@ S       22.27505852       6.22543530       8.69649701
 S       14.41854066      14.83343423      15.03788856
 S       15.38326943      15.29798529       0.99438485
 512
-Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" source_frame_index=1659 relative_time_ps=165.9 pbc="T T T"
+Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" display_name="Li₃PS₄ — NEP89 — 700 K — NVT production" report_figures="05_Li3PS4_lithium_MSD; 06_Li3PS4_diffusion_framework_MSD; 07_Li3PS4_local_structure; 28_Li3PS4_dynamic_heterogeneity" source_frame_index=1659 relative_time_ps=165.9 pbc="T T T"
 Li       2.33697448       3.77605630       0.82621603
 Li      13.62560677       5.05755128       3.25769410
 Li       9.41342762       9.67034091       8.17702142
@@ -43175,7 +43175,7 @@ S       22.75830534       6.37911475       9.04878703
 S       14.12265143      15.00117793      14.28782334
 S       15.23902380      15.08083529       1.63329771
 512
-Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" source_frame_index=1679 relative_time_ps=167.9 pbc="T T T"
+Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" display_name="Li₃PS₄ — NEP89 — 700 K — NVT production" report_figures="05_Li3PS4_lithium_MSD; 06_Li3PS4_diffusion_framework_MSD; 07_Li3PS4_local_structure; 28_Li3PS4_dynamic_heterogeneity" source_frame_index=1679 relative_time_ps=167.9 pbc="T T T"
 Li       2.43031478       3.83231512       0.52666144
 Li      13.54720193       5.79948121       3.38211012
 Li       9.47474425      10.39991930       8.24784399
@@ -43689,7 +43689,7 @@ S       22.79884792       6.52653845       8.99645323
 S       14.26760351      14.81106686      14.61267821
 S       15.25268146      15.23374561       0.85391784
 512
-Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" source_frame_index=1699 relative_time_ps=169.9 pbc="T T T"
+Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" display_name="Li₃PS₄ — NEP89 — 700 K — NVT production" report_figures="05_Li3PS4_lithium_MSD; 06_Li3PS4_diffusion_framework_MSD; 07_Li3PS4_local_structure; 28_Li3PS4_dynamic_heterogeneity" source_frame_index=1699 relative_time_ps=169.9 pbc="T T T"
 Li       2.72439841       3.81972112       0.78783561
 Li      13.41685526       5.63389680       2.71437918
 Li       9.38846710       9.54957683       8.23678975
@@ -44203,7 +44203,7 @@ S       22.65480153       6.53422075       9.22649545
 S       14.04534323      14.51749719      14.87695209
 S       15.34133938      15.14496867       0.62851842
 512
-Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" source_frame_index=1719 relative_time_ps=171.9 pbc="T T T"
+Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" display_name="Li₃PS₄ — NEP89 — 700 K — NVT production" report_figures="05_Li3PS4_lithium_MSD; 06_Li3PS4_diffusion_framework_MSD; 07_Li3PS4_local_structure; 28_Li3PS4_dynamic_heterogeneity" source_frame_index=1719 relative_time_ps=171.9 pbc="T T T"
 Li       2.08732531       4.08631037       0.63112739
 Li      13.25852093       5.11817111       2.88610415
 Li       9.40406345       9.56585509       7.87787295
@@ -44717,7 +44717,7 @@ S       22.50943102       6.07922829       9.14974074
 S       13.98077895      15.07169327      14.46638427
 S       15.29850416      15.44466443       0.64064101
 512
-Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" source_frame_index=1739 relative_time_ps=173.9 pbc="T T T"
+Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" display_name="Li₃PS₄ — NEP89 — 700 K — NVT production" report_figures="05_Li3PS4_lithium_MSD; 06_Li3PS4_diffusion_framework_MSD; 07_Li3PS4_local_structure; 28_Li3PS4_dynamic_heterogeneity" source_frame_index=1739 relative_time_ps=173.9 pbc="T T T"
 Li       1.25265643       3.71313696      23.44614860
 Li      12.98321992       5.51507294       2.76842062
 Li       9.63082389       9.90409145       8.43748524
@@ -45231,7 +45231,7 @@ S       22.67592528       6.44527501       8.81009854
 S       14.17627170      14.84802200      14.32969840
 S       15.37538020      15.50893909       1.29271764
 512
-Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" source_frame_index=1759 relative_time_ps=175.9 pbc="T T T"
+Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" display_name="Li₃PS₄ — NEP89 — 700 K — NVT production" report_figures="05_Li3PS4_lithium_MSD; 06_Li3PS4_diffusion_framework_MSD; 07_Li3PS4_local_structure; 28_Li3PS4_dynamic_heterogeneity" source_frame_index=1759 relative_time_ps=175.9 pbc="T T T"
 Li       2.69036610       3.81787736       0.67188791
 Li      11.46224358       6.24942789       2.81488912
 Li       9.18743675       9.93487815       8.28038360
@@ -45745,7 +45745,7 @@ S       22.47584497       6.45241945       9.10606716
 S       14.16008004      15.08856882      14.80791643
 S       15.24209877      15.66086403       0.89788063
 512
-Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" source_frame_index=1779 relative_time_ps=177.9 pbc="T T T"
+Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" display_name="Li₃PS₄ — NEP89 — 700 K — NVT production" report_figures="05_Li3PS4_lithium_MSD; 06_Li3PS4_diffusion_framework_MSD; 07_Li3PS4_local_structure; 28_Li3PS4_dynamic_heterogeneity" source_frame_index=1779 relative_time_ps=177.9 pbc="T T T"
 Li       1.09994832       4.22031815      23.33428886
 Li       9.25464000       5.52103975       2.89815288
 Li       9.22837433      10.23248164       8.45890119
@@ -46259,7 +46259,7 @@ S       22.86710830       6.78688557       9.60040251
 S       14.26534822      15.06479960      15.54656868
 S       15.19964660      15.46795122       0.91528069
 512
-Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" source_frame_index=1799 relative_time_ps=179.9 pbc="T T T"
+Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" display_name="Li₃PS₄ — NEP89 — 700 K — NVT production" report_figures="05_Li3PS4_lithium_MSD; 06_Li3PS4_diffusion_framework_MSD; 07_Li3PS4_local_structure; 28_Li3PS4_dynamic_heterogeneity" source_frame_index=1799 relative_time_ps=179.9 pbc="T T T"
 Li      24.12424233       3.74420177       0.49947082
 Li       9.77435022       5.69508330       2.87228955
 Li       9.18468670      10.04399140       8.29479493
@@ -46773,7 +46773,7 @@ S       22.87070442       6.43398557       9.01192791
 S       14.87594077      15.19660549      14.79445614
 S       15.02610144      15.50680574       0.43915304
 512
-Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" source_frame_index=1819 relative_time_ps=181.9 pbc="T T T"
+Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" display_name="Li₃PS₄ — NEP89 — 700 K — NVT production" report_figures="05_Li3PS4_lithium_MSD; 06_Li3PS4_diffusion_framework_MSD; 07_Li3PS4_local_structure; 28_Li3PS4_dynamic_heterogeneity" source_frame_index=1819 relative_time_ps=181.9 pbc="T T T"
 Li       1.09531666       3.84428148      23.32644884
 Li       9.78224831       5.66441886       3.37939699
 Li       9.29692035      10.57929006       8.44115042
@@ -47287,7 +47287,7 @@ S       22.87577044       5.75464375       8.34255758
 S       13.75354571      14.81338134      14.55392730
 S       15.12900424      15.45631083       1.05689763
 512
-Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" source_frame_index=1839 relative_time_ps=183.9 pbc="T T T"
+Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" display_name="Li₃PS₄ — NEP89 — 700 K — NVT production" report_figures="05_Li3PS4_lithium_MSD; 06_Li3PS4_diffusion_framework_MSD; 07_Li3PS4_local_structure; 28_Li3PS4_dynamic_heterogeneity" source_frame_index=1839 relative_time_ps=183.9 pbc="T T T"
 Li      24.51541212       3.82677602      23.50734926
 Li      10.50411548       5.60826677       3.49531142
 Li       9.59406093      10.26775825       8.43692167
@@ -47801,7 +47801,7 @@ S       22.62141197       6.43250985       8.41347578
 S       14.40649486      15.04203860      14.77890686
 S       15.51619519      15.38504924       1.82433190
 512
-Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" source_frame_index=1859 relative_time_ps=185.9 pbc="T T T"
+Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" display_name="Li₃PS₄ — NEP89 — 700 K — NVT production" report_figures="05_Li3PS4_lithium_MSD; 06_Li3PS4_diffusion_framework_MSD; 07_Li3PS4_local_structure; 28_Li3PS4_dynamic_heterogeneity" source_frame_index=1859 relative_time_ps=185.9 pbc="T T T"
 Li       0.20122397       3.98709319       0.90668951
 Li      12.45173056       5.37021637       2.80600862
 Li       9.69021269      10.16098323       8.12519418
@@ -48315,7 +48315,7 @@ S       22.18911915       5.98481451       8.67720221
 S       13.91691603      15.14909825      15.01965925
 S       15.42813079      15.49016194       1.16685311
 512
-Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" source_frame_index=1879 relative_time_ps=187.9 pbc="T T T"
+Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" display_name="Li₃PS₄ — NEP89 — 700 K — NVT production" report_figures="05_Li3PS4_lithium_MSD; 06_Li3PS4_diffusion_framework_MSD; 07_Li3PS4_local_structure; 28_Li3PS4_dynamic_heterogeneity" source_frame_index=1879 relative_time_ps=187.9 pbc="T T T"
 Li       1.59089312       3.65904083       0.68228116
 Li      13.18469377       5.23784293       2.39072605
 Li       9.25270896       9.43098809       7.46076314
@@ -48829,7 +48829,7 @@ S       22.50336986       6.16957375       8.38596041
 S       13.99480905      14.68861315      14.52043959
 S       15.48705651      15.40354286       0.99022511
 512
-Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" source_frame_index=1899 relative_time_ps=189.9 pbc="T T T"
+Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" display_name="Li₃PS₄ — NEP89 — 700 K — NVT production" report_figures="05_Li3PS4_lithium_MSD; 06_Li3PS4_diffusion_framework_MSD; 07_Li3PS4_local_structure; 28_Li3PS4_dynamic_heterogeneity" source_frame_index=1899 relative_time_ps=189.9 pbc="T T T"
 Li       1.52063871       3.80826448       0.28991138
 Li      11.76473832       6.02608274       2.18908736
 Li       9.58539295      10.11169844       8.02921544
@@ -49343,7 +49343,7 @@ S       22.33225100       6.17127754       8.81015049
 S       14.24290996      15.24883450      15.35810135
 S       15.82820476      15.53690265       1.01612562
 512
-Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" source_frame_index=1919 relative_time_ps=191.9 pbc="T T T"
+Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" display_name="Li₃PS₄ — NEP89 — 700 K — NVT production" report_figures="05_Li3PS4_lithium_MSD; 06_Li3PS4_diffusion_framework_MSD; 07_Li3PS4_local_structure; 28_Li3PS4_dynamic_heterogeneity" source_frame_index=1919 relative_time_ps=191.9 pbc="T T T"
 Li       1.63647016       3.63312303       0.23075773
 Li      13.04836883       5.73372783       2.87033997
 Li       9.39468360       9.91193868       8.31075005
@@ -49857,7 +49857,7 @@ S       22.65699516       6.41938451       8.86513152
 S       14.64090650      15.08953438      14.87439235
 S       15.25887909      15.15995560       1.07581122
 512
-Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" source_frame_index=1939 relative_time_ps=193.9 pbc="T T T"
+Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" display_name="Li₃PS₄ — NEP89 — 700 K — NVT production" report_figures="05_Li3PS4_lithium_MSD; 06_Li3PS4_diffusion_framework_MSD; 07_Li3PS4_local_structure; 28_Li3PS4_dynamic_heterogeneity" source_frame_index=1939 relative_time_ps=193.9 pbc="T T T"
 Li       2.15278308       3.54198280       0.58090474
 Li      13.71055914       5.11236412       3.57858355
 Li       9.41268268      10.90552605       8.22939245
@@ -50371,7 +50371,7 @@ S       21.99085450       6.13586339       8.69105678
 S       13.62846612      14.75217045      15.66791571
 S       15.70487040      15.54042074       1.07735652
 512
-Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" source_frame_index=1959 relative_time_ps=195.9 pbc="T T T"
+Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" display_name="Li₃PS₄ — NEP89 — 700 K — NVT production" report_figures="05_Li3PS4_lithium_MSD; 06_Li3PS4_diffusion_framework_MSD; 07_Li3PS4_local_structure; 28_Li3PS4_dynamic_heterogeneity" source_frame_index=1959 relative_time_ps=195.9 pbc="T T T"
 Li       2.57345026       3.48502155       0.73639863
 Li      12.87649391       5.48896076       2.63343032
 Li       9.21256676       9.79571759       7.91937881
@@ -50885,7 +50885,7 @@ S       22.60949948       6.84405252       9.53806770
 S       14.22382650      15.10032791      14.88887180
 S       15.26946485      15.35558558       0.66565568
 512
-Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" source_frame_index=1979 relative_time_ps=197.9 pbc="T T T"
+Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" display_name="Li₃PS₄ — NEP89 — 700 K — NVT production" report_figures="05_Li3PS4_lithium_MSD; 06_Li3PS4_diffusion_framework_MSD; 07_Li3PS4_local_structure; 28_Li3PS4_dynamic_heterogeneity" source_frame_index=1979 relative_time_ps=197.9 pbc="T T T"
 Li       2.61150720       3.61165663       0.55878146
 Li      13.22747341       5.38871943       2.80363075
 Li       9.24893967      10.41387604       8.00760476
@@ -51399,7 +51399,7 @@ S       22.63093636       6.44919473       8.65964122
 S       14.15067380      15.20588222      15.78141912
 S       15.23728108      15.24439262       0.76167233
 512
-Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" source_frame_index=1999 relative_time_ps=199.9 pbc="T T T"
+Lattice="24.6709 0.0 0.0 0.0 15.8198 0.0 0.0 0.0 23.5699" Properties=species:S:1:pos:R:3 material=Li3PS4 model=NEP89 temperature_K=700 phase="NVT production" display_name="Li₃PS₄ — NEP89 — 700 K — NVT production" report_figures="05_Li3PS4_lithium_MSD; 06_Li3PS4_diffusion_framework_MSD; 07_Li3PS4_local_structure; 28_Li3PS4_dynamic_heterogeneity" source_frame_index=1999 relative_time_ps=199.9 pbc="T T T"
 Li       2.88802192       4.19082676       0.80616182
 Li      13.75046566       5.34817472       3.15137614
 Li       9.19645046       9.82409544       8.65695719

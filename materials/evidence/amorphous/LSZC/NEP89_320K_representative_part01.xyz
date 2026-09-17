@@ -1,5 +1,5 @@
 272
-Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" source_frame_index=0 relative_time_ps=0.0 pbc="T T T"
+Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" display_name="0.5Li₂SO₄–ZrCl₄ — NEP89 — 320 K — NVT production" report_figures="18_LSZC_transport_comparison; 19_LSZC_partial_RDF; 20_LSZC_coordination_mobility; 27_LSZC_PDF_and_Zr_coordination" source_frame_index=0 relative_time_ps=0.0 pbc="T T T"
 Cl       9.55362668      11.81055258       6.29957330
 Cl       5.92896639      12.02660103       3.89177923
 Cl       7.29225722       9.58489781       5.63795240
@@ -273,7 +273,7 @@ Li       2.98537724       9.66926636       3.14207687
 Li      17.64525858       8.93571455      18.61083952
 Li       9.68931758       3.31406735       6.31111984
 272
-Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" source_frame_index=30 relative_time_ps=3.0 pbc="T T T"
+Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" display_name="0.5Li₂SO₄–ZrCl₄ — NEP89 — 320 K — NVT production" report_figures="18_LSZC_transport_comparison; 19_LSZC_partial_RDF; 20_LSZC_coordination_mobility; 27_LSZC_PDF_and_Zr_coordination" source_frame_index=30 relative_time_ps=3.0 pbc="T T T"
 Cl       9.90474602      11.81598666       6.14964420
 Cl       6.11258817      12.00739358       3.36980720
 Cl       7.24276350       9.91450888       5.47630879
@@ -547,7 +547,7 @@ Li       3.08709162       9.75588572       2.83753654
 Li      17.99358543      10.13614480      18.29833094
 Li       8.99788929       2.85254827       6.12557692
 272
-Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" source_frame_index=60 relative_time_ps=6.0 pbc="T T T"
+Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" display_name="0.5Li₂SO₄–ZrCl₄ — NEP89 — 320 K — NVT production" report_figures="18_LSZC_transport_comparison; 19_LSZC_partial_RDF; 20_LSZC_coordination_mobility; 27_LSZC_PDF_and_Zr_coordination" source_frame_index=60 relative_time_ps=6.0 pbc="T T T"
 Cl       9.34071227      12.41222594       6.26771916
 Cl       5.61371726      11.95548426       3.82547200
 Cl       7.05353198       9.73594782       5.82646451
@@ -821,7 +821,7 @@ Li       3.02809004      10.35719324       3.36074511
 Li      18.09532468       9.76394256      18.36111566
 Li       9.40167178       2.56394576       5.53498842
 272
-Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" source_frame_index=90 relative_time_ps=9.0 pbc="T T T"
+Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" display_name="0.5Li₂SO₄–ZrCl₄ — NEP89 — 320 K — NVT production" report_figures="18_LSZC_transport_comparison; 19_LSZC_partial_RDF; 20_LSZC_coordination_mobility; 27_LSZC_PDF_and_Zr_coordination" source_frame_index=90 relative_time_ps=9.0 pbc="T T T"
 Cl       9.29198764      11.70539947       6.30186460
 Cl       5.91639416      12.07609343       3.64735726
 Cl       6.52944267      10.12898902       5.82606295
@@ -1095,7 +1095,7 @@ Li       2.72011828      10.01560254       3.18989253
 Li      17.73891908       9.78207063      18.19831167
 Li       9.34925697       2.83370800       5.69124502
 272
-Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" source_frame_index=120 relative_time_ps=12.0 pbc="T T T"
+Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" display_name="0.5Li₂SO₄–ZrCl₄ — NEP89 — 320 K — NVT production" report_figures="18_LSZC_transport_comparison; 19_LSZC_partial_RDF; 20_LSZC_coordination_mobility; 27_LSZC_PDF_and_Zr_coordination" source_frame_index=120 relative_time_ps=12.0 pbc="T T T"
 Cl       9.55814282      12.00368646       6.02660186
 Cl       6.11150486      12.31748369       3.76732059
 Cl       7.17549643       9.98304454       5.52243180
@@ -1369,7 +1369,7 @@ Li       2.80672197       9.95868612       2.96926688
 Li      18.08696673       9.57119249      18.09119473
 Li       9.39782292       2.83548244       5.90070624
 272
-Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" source_frame_index=150 relative_time_ps=15.0 pbc="T T T"
+Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" display_name="0.5Li₂SO₄–ZrCl₄ — NEP89 — 320 K — NVT production" report_figures="18_LSZC_transport_comparison; 19_LSZC_partial_RDF; 20_LSZC_coordination_mobility; 27_LSZC_PDF_and_Zr_coordination" source_frame_index=150 relative_time_ps=15.0 pbc="T T T"
 Cl       9.42419822      11.88839731       6.24156883
 Cl       6.23071303      12.14972061       3.90165262
 Cl       7.04802877       9.78874383       5.72977918
@@ -1643,7 +1643,7 @@ Li       3.12221413       9.68124918       3.32034248
 Li      18.03294946       9.44640667      18.43798661
 Li       9.31841889       3.12423617       6.94687943
 272
-Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" source_frame_index=180 relative_time_ps=18.0 pbc="T T T"
+Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" display_name="0.5Li₂SO₄–ZrCl₄ — NEP89 — 320 K — NVT production" report_figures="18_LSZC_transport_comparison; 19_LSZC_partial_RDF; 20_LSZC_coordination_mobility; 27_LSZC_PDF_and_Zr_coordination" source_frame_index=180 relative_time_ps=18.0 pbc="T T T"
 Cl       9.85704410      12.17596399       5.86621143
 Cl       6.09109664      12.15710819       3.39407834
 Cl       7.48451231       9.85679388       5.27438519
@@ -1917,7 +1917,7 @@ Li       2.77424950       9.82851367       2.92309832
 Li      17.78021063       9.93051065      18.38320207
 Li       9.85261244       3.31382375       5.64652207
 272
-Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" source_frame_index=210 relative_time_ps=21.0 pbc="T T T"
+Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" display_name="0.5Li₂SO₄–ZrCl₄ — NEP89 — 320 K — NVT production" report_figures="18_LSZC_transport_comparison; 19_LSZC_partial_RDF; 20_LSZC_coordination_mobility; 27_LSZC_PDF_and_Zr_coordination" source_frame_index=210 relative_time_ps=21.0 pbc="T T T"
 Cl       9.68515179      11.80691422       6.33676530
 Cl       6.00099117      12.11703809       3.78746982
 Cl       7.22967640       9.84870564       5.62133474
@@ -2191,7 +2191,7 @@ Li       2.72007578       9.71960218       3.15613168
 Li      18.09435281       9.51088014      18.10624611
 Li       9.37273126       3.20078932       6.29290348
 272
-Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" source_frame_index=240 relative_time_ps=24.0 pbc="T T T"
+Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" display_name="0.5Li₂SO₄–ZrCl₄ — NEP89 — 320 K — NVT production" report_figures="18_LSZC_transport_comparison; 19_LSZC_partial_RDF; 20_LSZC_coordination_mobility; 27_LSZC_PDF_and_Zr_coordination" source_frame_index=240 relative_time_ps=24.0 pbc="T T T"
 Cl       9.76564877      11.95919054       5.85043043
 Cl       5.52843316      12.15742271       3.86325484
 Cl       7.31291070       9.89944034       5.14480682
@@ -2465,7 +2465,7 @@ Li       3.14113590      10.32765518       2.91750905
 Li      18.24937852       9.80002878      18.82440309
 Li       9.64905433       3.12741614       6.35990647
 272
-Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" source_frame_index=270 relative_time_ps=27.0 pbc="T T T"
+Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" display_name="0.5Li₂SO₄–ZrCl₄ — NEP89 — 320 K — NVT production" report_figures="18_LSZC_transport_comparison; 19_LSZC_partial_RDF; 20_LSZC_coordination_mobility; 27_LSZC_PDF_and_Zr_coordination" source_frame_index=270 relative_time_ps=27.0 pbc="T T T"
 Cl      10.12871941      11.90352850       6.12122034
 Cl       5.71407331      11.88678126       3.95873629
 Cl       7.76992899       9.92699881       5.09999014
@@ -2739,7 +2739,7 @@ Li       2.94444913       9.65379133       3.24132707
 Li      17.69991821       9.27446630      18.87982159
 Li       9.45405536       3.25693180       6.13414161
 272
-Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" source_frame_index=300 relative_time_ps=30.0 pbc="T T T"
+Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" display_name="0.5Li₂SO₄–ZrCl₄ — NEP89 — 320 K — NVT production" report_figures="18_LSZC_transport_comparison; 19_LSZC_partial_RDF; 20_LSZC_coordination_mobility; 27_LSZC_PDF_and_Zr_coordination" source_frame_index=300 relative_time_ps=30.0 pbc="T T T"
 Cl       9.79931207      12.32649429       5.86633112
 Cl       5.37201755      11.87550710       3.67087846
 Cl       7.55213153      10.10939309       4.95761570
@@ -3013,7 +3013,7 @@ Li       3.28727101       9.92670926       3.18150120
 Li      17.96658893      10.00985284      18.51530533
 Li       9.28727882       3.06684770       6.41764874
 272
-Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" source_frame_index=330 relative_time_ps=33.0 pbc="T T T"
+Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" display_name="0.5Li₂SO₄–ZrCl₄ — NEP89 — 320 K — NVT production" report_figures="18_LSZC_transport_comparison; 19_LSZC_partial_RDF; 20_LSZC_coordination_mobility; 27_LSZC_PDF_and_Zr_coordination" source_frame_index=330 relative_time_ps=33.0 pbc="T T T"
 Cl       9.92296327      11.78385217       6.23317086
 Cl       5.50729504      12.00231809       3.66947808
 Cl       7.40073223      10.02937536       5.23847661
@@ -3287,7 +3287,7 @@ Li       3.19562718      10.33596862       3.13298403
 Li      17.79600717       9.30494695      18.77803355
 Li       9.67335601       3.19667744       6.34826425
 272
-Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" source_frame_index=360 relative_time_ps=36.0 pbc="T T T"
+Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" display_name="0.5Li₂SO₄–ZrCl₄ — NEP89 — 320 K — NVT production" report_figures="18_LSZC_transport_comparison; 19_LSZC_partial_RDF; 20_LSZC_coordination_mobility; 27_LSZC_PDF_and_Zr_coordination" source_frame_index=360 relative_time_ps=36.0 pbc="T T T"
 Cl       9.98953589      12.12851341       6.00839420
 Cl       5.91564390      11.81483607       3.94402990
 Cl       7.65610875       9.59390531       5.33247827
@@ -3561,7 +3561,7 @@ Li       3.12804413       9.92799054       3.38027688
 Li      17.55631800       9.19798942      18.99362283
 Li       9.45668286       3.15043844       6.35838348
 272
-Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" source_frame_index=390 relative_time_ps=39.0 pbc="T T T"
+Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" display_name="0.5Li₂SO₄–ZrCl₄ — NEP89 — 320 K — NVT production" report_figures="18_LSZC_transport_comparison; 19_LSZC_partial_RDF; 20_LSZC_coordination_mobility; 27_LSZC_PDF_and_Zr_coordination" source_frame_index=390 relative_time_ps=39.0 pbc="T T T"
 Cl       9.60889064      12.09259371       5.48248263
 Cl       5.22981218      12.10298313       3.29723258
 Cl       7.14965845       9.89637057       4.77606933
@@ -3835,7 +3835,7 @@ Li       2.57915383      10.66573538       2.49554564
 Li      18.19593395      10.05232960      18.99664714
 Li       8.79705804       2.54759168       6.30090195
 272
-Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" source_frame_index=420 relative_time_ps=42.0 pbc="T T T"
+Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" display_name="0.5Li₂SO₄–ZrCl₄ — NEP89 — 320 K — NVT production" report_figures="18_LSZC_transport_comparison; 19_LSZC_partial_RDF; 20_LSZC_coordination_mobility; 27_LSZC_PDF_and_Zr_coordination" source_frame_index=420 relative_time_ps=42.0 pbc="T T T"
 Cl       9.93957711      12.52253542       5.92380407
 Cl       5.63212321      12.31376138       3.82753763
 Cl       7.58569667      10.19875781       4.85397438
@@ -4109,7 +4109,7 @@ Li       2.88427986      10.04304563       3.05862419
 Li      17.51944914       9.27506876      19.73109371
 Li       9.19224289       3.08131359       6.00867943
 272
-Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" source_frame_index=450 relative_time_ps=45.0 pbc="T T T"
+Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" display_name="0.5Li₂SO₄–ZrCl₄ — NEP89 — 320 K — NVT production" report_figures="18_LSZC_transport_comparison; 19_LSZC_partial_RDF; 20_LSZC_coordination_mobility; 27_LSZC_PDF_and_Zr_coordination" source_frame_index=450 relative_time_ps=45.0 pbc="T T T"
 Cl       9.70264784      12.39719903       6.25983008
 Cl       5.10704673      12.18435110       3.73937018
 Cl       7.14780138      10.37302157       5.02304364
@@ -4383,7 +4383,7 @@ Li       2.68862081      10.86996019       2.59203740
 Li      18.16804652      10.25981059      18.28681257
 Li       9.43146842       3.06321921       6.46658825
 272
-Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" source_frame_index=480 relative_time_ps=48.0 pbc="T T T"
+Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" display_name="0.5Li₂SO₄–ZrCl₄ — NEP89 — 320 K — NVT production" report_figures="18_LSZC_transport_comparison; 19_LSZC_partial_RDF; 20_LSZC_coordination_mobility; 27_LSZC_PDF_and_Zr_coordination" source_frame_index=480 relative_time_ps=48.0 pbc="T T T"
 Cl       9.81807475      12.23824307       5.91423648
 Cl       5.07547465      12.12859634       3.55342453
 Cl       7.48754877      10.06847703       4.66187855
@@ -4657,7 +4657,7 @@ Li       3.18460217      10.80720030       2.61137741
 Li      18.29909537      10.35590069      18.71657060
 Li       9.65201056       3.09045611       6.21095099
 272
-Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" source_frame_index=510 relative_time_ps=51.0 pbc="T T T"
+Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" display_name="0.5Li₂SO₄–ZrCl₄ — NEP89 — 320 K — NVT production" report_figures="18_LSZC_transport_comparison; 19_LSZC_partial_RDF; 20_LSZC_coordination_mobility; 27_LSZC_PDF_and_Zr_coordination" source_frame_index=510 relative_time_ps=51.0 pbc="T T T"
 Cl       9.55227504      12.04665165       6.14982092
 Cl       5.47198424      12.07001005       3.63032751
 Cl       7.63691426      10.21737747       5.10526669
@@ -4931,7 +4931,7 @@ Li       3.11474969      10.17038003       2.79602303
 Li      18.30976793      10.20533336      18.57036559
 Li       9.61239061       2.57697523       6.59134511
 272
-Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" source_frame_index=540 relative_time_ps=54.0 pbc="T T T"
+Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" display_name="0.5Li₂SO₄–ZrCl₄ — NEP89 — 320 K — NVT production" report_figures="18_LSZC_transport_comparison; 19_LSZC_partial_RDF; 20_LSZC_coordination_mobility; 27_LSZC_PDF_and_Zr_coordination" source_frame_index=540 relative_time_ps=54.0 pbc="T T T"
 Cl       9.54668694      12.34288815       5.73826074
 Cl       4.92539827      12.20078258       3.36209311
 Cl       7.36463390      10.38871140       4.72780305
@@ -5205,7 +5205,7 @@ Li       3.11985684      10.97296329       2.44954087
 Li      18.06468622       9.86953575      18.91576161
 Li       9.66090590       3.21745617       6.35084118
 272
-Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" source_frame_index=570 relative_time_ps=57.0 pbc="T T T"
+Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" display_name="0.5Li₂SO₄–ZrCl₄ — NEP89 — 320 K — NVT production" report_figures="18_LSZC_transport_comparison; 19_LSZC_partial_RDF; 20_LSZC_coordination_mobility; 27_LSZC_PDF_and_Zr_coordination" source_frame_index=570 relative_time_ps=57.0 pbc="T T T"
 Cl       9.73751294      12.60027690       5.65919067
 Cl       4.87662202      11.93326876       3.35438725
 Cl       7.46898649      10.36167337       4.69943915
@@ -5479,7 +5479,7 @@ Li       3.01157210      10.42502304       2.94404585
 Li      18.26878319      10.87068776      18.42317159
 Li       9.67168529       3.21045840       6.61014328
 272
-Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" source_frame_index=600 relative_time_ps=60.0 pbc="T T T"
+Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" display_name="0.5Li₂SO₄–ZrCl₄ — NEP89 — 320 K — NVT production" report_figures="18_LSZC_transport_comparison; 19_LSZC_partial_RDF; 20_LSZC_coordination_mobility; 27_LSZC_PDF_and_Zr_coordination" source_frame_index=600 relative_time_ps=60.0 pbc="T T T"
 Cl      10.03457928      11.82303582       5.96336966
 Cl       5.50708273      12.24091161       3.56016855
 Cl       7.69252410      10.23052751       4.77143888
@@ -5753,7 +5753,7 @@ Li       2.99221735       9.97958853       2.52920676
 Li      18.06463446      10.09375388      18.73757777
 Li       9.34409004       2.60556711       6.43779023
 272
-Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" source_frame_index=630 relative_time_ps=63.0 pbc="T T T"
+Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" display_name="0.5Li₂SO₄–ZrCl₄ — NEP89 — 320 K — NVT production" report_figures="18_LSZC_transport_comparison; 19_LSZC_partial_RDF; 20_LSZC_coordination_mobility; 27_LSZC_PDF_and_Zr_coordination" source_frame_index=630 relative_time_ps=63.0 pbc="T T T"
 Cl       9.08401190      12.27147788       6.03571567
 Cl       4.94603021      12.17407891       3.73856189
 Cl       7.04535476       9.98949231       5.08134380
@@ -6027,7 +6027,7 @@ Li       2.75828152      10.60170623       2.59094820
 Li      18.10223155      10.34822349      18.10670152
 Li       9.87711908       2.36860413       6.41548483
 272
-Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" source_frame_index=660 relative_time_ps=66.0 pbc="T T T"
+Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" display_name="0.5Li₂SO₄–ZrCl₄ — NEP89 — 320 K — NVT production" report_figures="18_LSZC_transport_comparison; 19_LSZC_partial_RDF; 20_LSZC_coordination_mobility; 27_LSZC_PDF_and_Zr_coordination" source_frame_index=660 relative_time_ps=66.0 pbc="T T T"
 Cl       9.89972309      12.26952674       6.14895857
 Cl       5.15421748      12.40988322       3.28522908
 Cl       7.47825354      10.26794035       4.90481831
@@ -6301,7 +6301,7 @@ Li       2.99799673      10.99405058       2.28577423
 Li      18.01121237       9.98363857      18.47572098
 Li       9.78139005       2.71455079       6.47575023
 272
-Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" source_frame_index=690 relative_time_ps=69.0 pbc="T T T"
+Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" display_name="0.5Li₂SO₄–ZrCl₄ — NEP89 — 320 K — NVT production" report_figures="18_LSZC_transport_comparison; 19_LSZC_partial_RDF; 20_LSZC_coordination_mobility; 27_LSZC_PDF_and_Zr_coordination" source_frame_index=690 relative_time_ps=69.0 pbc="T T T"
 Cl       9.87893567      11.82794815       5.80713631
 Cl       5.24353999      12.05464018       3.57063938
 Cl       7.67935576      10.04371660       4.66330842
@@ -6575,7 +6575,7 @@ Li       2.58398132      10.65391954       2.74101712
 Li      18.13984009      10.32388966      18.40265926
 Li       9.24925017       2.78780197       6.26961216
 272
-Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" source_frame_index=720 relative_time_ps=72.0 pbc="T T T"
+Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" display_name="0.5Li₂SO₄–ZrCl₄ — NEP89 — 320 K — NVT production" report_figures="18_LSZC_transport_comparison; 19_LSZC_partial_RDF; 20_LSZC_coordination_mobility; 27_LSZC_PDF_and_Zr_coordination" source_frame_index=720 relative_time_ps=72.0 pbc="T T T"
 Cl       9.70176191      12.07990968       5.94287744
 Cl       5.14711635      12.24037449       3.62023171
 Cl       7.24164663      10.27840942       4.87497854
@@ -6849,7 +6849,7 @@ Li       2.80671298      10.88434582       2.67899971
 Li      18.16891841      10.45466834      18.44192616
 Li       9.45699325       2.70064483       6.65832981
 272
-Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" source_frame_index=750 relative_time_ps=75.0 pbc="T T T"
+Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" display_name="0.5Li₂SO₄–ZrCl₄ — NEP89 — 320 K — NVT production" report_figures="18_LSZC_transport_comparison; 19_LSZC_partial_RDF; 20_LSZC_coordination_mobility; 27_LSZC_PDF_and_Zr_coordination" source_frame_index=750 relative_time_ps=75.0 pbc="T T T"
 Cl       9.25790165      12.13730739       5.77417398
 Cl       4.81809311      12.21414641       3.86054905
 Cl       7.16292534      10.22873225       4.70875874
@@ -7123,7 +7123,7 @@ Li       2.81616744      10.52946138       2.84461361
 Li      17.97227373      10.80371273      18.73499749
 Li      10.00012368       2.75137669       5.95947856
 272
-Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" source_frame_index=780 relative_time_ps=78.0 pbc="T T T"
+Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" display_name="0.5Li₂SO₄–ZrCl₄ — NEP89 — 320 K — NVT production" report_figures="18_LSZC_transport_comparison; 19_LSZC_partial_RDF; 20_LSZC_coordination_mobility; 27_LSZC_PDF_and_Zr_coordination" source_frame_index=780 relative_time_ps=78.0 pbc="T T T"
 Cl       9.59117106      12.30964322       6.01633613
 Cl       5.10575070      12.23534426       3.57083885
 Cl       7.40375811      10.18454221       4.80660500
@@ -7397,7 +7397,7 @@ Li       3.22317460      10.76946522       2.67840397
 Li      18.19733247      10.39920956      18.33801869
 Li       9.43059201       2.92607488       6.63745913
 272
-Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" source_frame_index=810 relative_time_ps=81.0 pbc="T T T"
+Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" display_name="0.5Li₂SO₄–ZrCl₄ — NEP89 — 320 K — NVT production" report_figures="18_LSZC_transport_comparison; 19_LSZC_partial_RDF; 20_LSZC_coordination_mobility; 27_LSZC_PDF_and_Zr_coordination" source_frame_index=810 relative_time_ps=81.0 pbc="T T T"
 Cl       9.69826706      12.19628050       5.82673628
 Cl       5.25293491      12.26252015       3.50720457
 Cl       7.47272662      10.28200666       4.75623533
@@ -7671,7 +7671,7 @@ Li       3.13436064      10.79824195       2.89368311
 Li      18.17876686      10.07763059      18.72745013
 Li       9.89106980       3.15145437       6.27040822
 272
-Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" source_frame_index=840 relative_time_ps=84.0 pbc="T T T"
+Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" display_name="0.5Li₂SO₄–ZrCl₄ — NEP89 — 320 K — NVT production" report_figures="18_LSZC_transport_comparison; 19_LSZC_partial_RDF; 20_LSZC_coordination_mobility; 27_LSZC_PDF_and_Zr_coordination" source_frame_index=840 relative_time_ps=84.0 pbc="T T T"
 Cl       9.46627959      12.21022755       5.88031476
 Cl       5.14749607      12.16786188       3.73618173
 Cl       7.42482873      10.10195537       4.64785713
@@ -7945,7 +7945,7 @@ Li       2.88095704      10.21806697       2.64864232
 Li      18.20742507      10.37402077      18.71479283
 Li      11.15488306       3.41481088       8.27982959
 272
-Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" source_frame_index=870 relative_time_ps=87.0 pbc="T T T"
+Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" display_name="0.5Li₂SO₄–ZrCl₄ — NEP89 — 320 K — NVT production" report_figures="18_LSZC_transport_comparison; 19_LSZC_partial_RDF; 20_LSZC_coordination_mobility; 27_LSZC_PDF_and_Zr_coordination" source_frame_index=870 relative_time_ps=87.0 pbc="T T T"
 Cl       9.85177064      11.71661566       5.52930927
 Cl       5.30692510      12.04371559       3.53050932
 Cl       7.44150171       9.75842841       4.87653845
@@ -8219,7 +8219,7 @@ Li       3.02384124      10.69526875       2.51322530
 Li      17.85800066      10.35137268      18.69194726
 Li      11.68490181       3.19129890       8.03109377
 272
-Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" source_frame_index=900 relative_time_ps=90.0 pbc="T T T"
+Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" display_name="0.5Li₂SO₄–ZrCl₄ — NEP89 — 320 K — NVT production" report_figures="18_LSZC_transport_comparison; 19_LSZC_partial_RDF; 20_LSZC_coordination_mobility; 27_LSZC_PDF_and_Zr_coordination" source_frame_index=900 relative_time_ps=90.0 pbc="T T T"
 Cl       9.57102727      12.38682556       5.90310668
 Cl       5.13074244      12.04254097       3.65271591
 Cl       7.54596474       9.97103005       4.47489861
@@ -8493,7 +8493,7 @@ Li       2.81192310      10.63339595       2.65734987
 Li      18.19349492      10.12861753      18.38760122
 Li      11.29060913       2.80444603       8.07469326
 272
-Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" source_frame_index=930 relative_time_ps=93.0 pbc="T T T"
+Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" display_name="0.5Li₂SO₄–ZrCl₄ — NEP89 — 320 K — NVT production" report_figures="18_LSZC_transport_comparison; 19_LSZC_partial_RDF; 20_LSZC_coordination_mobility; 27_LSZC_PDF_and_Zr_coordination" source_frame_index=930 relative_time_ps=93.0 pbc="T T T"
 Cl       9.96747895      12.15795816       6.17620142
 Cl       5.47780564      12.20167915       3.72253635
 Cl       7.76065581      10.20991456       4.81966619
@@ -8767,7 +8767,7 @@ Li       2.97676657      10.27309887       2.76269057
 Li      17.97075264      10.16129995      18.76272470
 Li      11.33214361       3.00994199       8.37642423
 272
-Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" source_frame_index=960 relative_time_ps=96.0 pbc="T T T"
+Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" display_name="0.5Li₂SO₄–ZrCl₄ — NEP89 — 320 K — NVT production" report_figures="18_LSZC_transport_comparison; 19_LSZC_partial_RDF; 20_LSZC_coordination_mobility; 27_LSZC_PDF_and_Zr_coordination" source_frame_index=960 relative_time_ps=96.0 pbc="T T T"
 Cl       9.90663075      11.78138296       5.66980365
 Cl       5.47847690      12.12304231       3.68617944
 Cl       7.44710369       9.62387191       4.85435323
@@ -9041,7 +9041,7 @@ Li       2.66865579      10.72056910       2.80010711
 Li      17.91941214      10.17530226      19.15343473
 Li      11.73177738       2.77337249       8.09580852
 272
-Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" source_frame_index=990 relative_time_ps=99.0 pbc="T T T"
+Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" display_name="0.5Li₂SO₄–ZrCl₄ — NEP89 — 320 K — NVT production" report_figures="18_LSZC_transport_comparison; 19_LSZC_partial_RDF; 20_LSZC_coordination_mobility; 27_LSZC_PDF_and_Zr_coordination" source_frame_index=990 relative_time_ps=99.0 pbc="T T T"
 Cl      10.20143041      11.91870178       5.69188471
 Cl       5.44764002      11.82437608       3.77631226
 Cl       7.64859303       9.98043286       4.66220584
@@ -9315,7 +9315,7 @@ Li       3.09553086       9.92313121       3.06270198
 Li      17.99709515      11.04791492      18.26318871
 Li      11.70953170       2.52469940       8.48007742
 272
-Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" source_frame_index=1020 relative_time_ps=102.0 pbc="T T T"
+Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" display_name="0.5Li₂SO₄–ZrCl₄ — NEP89 — 320 K — NVT production" report_figures="18_LSZC_transport_comparison; 19_LSZC_partial_RDF; 20_LSZC_coordination_mobility; 27_LSZC_PDF_and_Zr_coordination" source_frame_index=1020 relative_time_ps=102.0 pbc="T T T"
 Cl       9.90802202      12.19221574       6.19688962
 Cl       5.19724610      12.13497271       3.45138689
 Cl       7.53244516      10.06053344       4.78024523
@@ -9589,7 +9589,7 @@ Li       3.21816473      10.97736917       2.14855667
 Li      17.98690558      10.22662900      18.79101665
 Li       9.61111527       3.20558395       6.46867163
 272
-Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" source_frame_index=1050 relative_time_ps=105.0 pbc="T T T"
+Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" display_name="0.5Li₂SO₄–ZrCl₄ — NEP89 — 320 K — NVT production" report_figures="18_LSZC_transport_comparison; 19_LSZC_partial_RDF; 20_LSZC_coordination_mobility; 27_LSZC_PDF_and_Zr_coordination" source_frame_index=1050 relative_time_ps=105.0 pbc="T T T"
 Cl       9.75038240      12.11615917       6.17980040
 Cl       5.44576321      12.18677392       3.65051941
 Cl       7.52829885       9.94347014       4.78118686
@@ -9863,7 +9863,7 @@ Li       2.66917231      10.41587375       2.77660864
 Li      18.17689064      10.07937985      18.33226434
 Li       9.16169375       2.92301226       6.36225699
 272
-Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" source_frame_index=1080 relative_time_ps=108.0 pbc="T T T"
+Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" display_name="0.5Li₂SO₄–ZrCl₄ — NEP89 — 320 K — NVT production" report_figures="18_LSZC_transport_comparison; 19_LSZC_partial_RDF; 20_LSZC_coordination_mobility; 27_LSZC_PDF_and_Zr_coordination" source_frame_index=1080 relative_time_ps=108.0 pbc="T T T"
 Cl       9.93848101      11.96177453       6.14097327
 Cl       5.50351507      12.16061171       3.81941345
 Cl       7.81849050      10.10005607       4.69492667
@@ -10137,7 +10137,7 @@ Li       2.83219576      10.20389186       2.71047310
 Li      17.90866179      10.17937688      19.12052121
 Li       9.45982932       3.41749106       6.22601252
 272
-Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" source_frame_index=1110 relative_time_ps=111.0 pbc="T T T"
+Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" display_name="0.5Li₂SO₄–ZrCl₄ — NEP89 — 320 K — NVT production" report_figures="18_LSZC_transport_comparison; 19_LSZC_partial_RDF; 20_LSZC_coordination_mobility; 27_LSZC_PDF_and_Zr_coordination" source_frame_index=1110 relative_time_ps=111.0 pbc="T T T"
 Cl       9.40621704      12.02348207       5.29906337
 Cl       5.13913076      12.03055224       3.64415357
 Cl       7.31649463       9.60552221       4.49129395
@@ -10411,7 +10411,7 @@ Li       2.74234615      10.44560457       2.77427693
 Li      18.09113781      10.08092496      18.19850063
 Li       9.76666882       2.41466081       7.26138916
 272
-Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" source_frame_index=1140 relative_time_ps=114.0 pbc="T T T"
+Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" display_name="0.5Li₂SO₄–ZrCl₄ — NEP89 — 320 K — NVT production" report_figures="18_LSZC_transport_comparison; 19_LSZC_partial_RDF; 20_LSZC_coordination_mobility; 27_LSZC_PDF_and_Zr_coordination" source_frame_index=1140 relative_time_ps=114.0 pbc="T T T"
 Cl       9.64277763      12.08147639       5.73464940
 Cl       5.31638486      12.34335228       3.62835310
 Cl       7.38983902       9.94306357       4.66397722
@@ -10685,7 +10685,7 @@ Li       2.82015791      10.65704629       3.07978420
 Li      18.54769716      10.19193150      18.65307106
 Li       9.36240189       3.18030241       6.34269413
 272
-Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" source_frame_index=1170 relative_time_ps=117.0 pbc="T T T"
+Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" display_name="0.5Li₂SO₄–ZrCl₄ — NEP89 — 320 K — NVT production" report_figures="18_LSZC_transport_comparison; 19_LSZC_partial_RDF; 20_LSZC_coordination_mobility; 27_LSZC_PDF_and_Zr_coordination" source_frame_index=1170 relative_time_ps=117.0 pbc="T T T"
 Cl       9.49249449      12.26700715       5.90834111
 Cl       5.14130245      12.10764602       3.75372447
 Cl       7.16693003       9.94066324       4.84785766
@@ -10959,7 +10959,7 @@ Li       2.99402406      10.89553966       2.04741336
 Li      18.11328065       9.99105061      18.36626070
 Li       9.85555210       3.17364361       6.25593478
 272
-Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" source_frame_index=1200 relative_time_ps=120.0 pbc="T T T"
+Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" display_name="0.5Li₂SO₄–ZrCl₄ — NEP89 — 320 K — NVT production" report_figures="18_LSZC_transport_comparison; 19_LSZC_partial_RDF; 20_LSZC_coordination_mobility; 27_LSZC_PDF_and_Zr_coordination" source_frame_index=1200 relative_time_ps=120.0 pbc="T T T"
 Cl      10.10184845      11.92780291       6.09271439
 Cl       5.49554107      12.11282237       3.94719781
 Cl       7.68547662      10.02533690       4.99508790
@@ -11233,7 +11233,7 @@ Li       2.79130711      10.16848241       2.94893517
 Li      18.05627491      10.17309603      17.98902116
 Li      10.43634515       3.80430254       6.25322199
 272
-Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" source_frame_index=1230 relative_time_ps=123.0 pbc="T T T"
+Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" display_name="0.5Li₂SO₄–ZrCl₄ — NEP89 — 320 K — NVT production" report_figures="18_LSZC_transport_comparison; 19_LSZC_partial_RDF; 20_LSZC_coordination_mobility; 27_LSZC_PDF_and_Zr_coordination" source_frame_index=1230 relative_time_ps=123.0 pbc="T T T"
 Cl       9.92621405      12.48804406       6.17494838
 Cl       4.96272423      12.09278925       3.39276647
 Cl       7.36295027      10.37985512       4.73509428
@@ -11507,7 +11507,7 @@ Li       3.09263439      10.85423927       2.46443881
 Li      17.08272955       9.18621585      19.61640248
 Li       9.88532279       3.09341585       6.45984327
 272
-Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" source_frame_index=1260 relative_time_ps=126.0 pbc="T T T"
+Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" display_name="0.5Li₂SO₄–ZrCl₄ — NEP89 — 320 K — NVT production" report_figures="18_LSZC_transport_comparison; 19_LSZC_partial_RDF; 20_LSZC_coordination_mobility; 27_LSZC_PDF_and_Zr_coordination" source_frame_index=1260 relative_time_ps=126.0 pbc="T T T"
 Cl       9.66842629      12.38840435       5.86398997
 Cl       5.37219196      12.22370493       4.14780133
 Cl       7.49631689       9.90604050       4.91651688
@@ -11781,7 +11781,7 @@ Li       2.57252492      10.45012465       2.87599653
 Li      18.05935703      10.37275537      18.14286585
 Li       9.67230968       3.09812022       6.22171392
 272
-Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" source_frame_index=1290 relative_time_ps=129.0 pbc="T T T"
+Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" display_name="0.5Li₂SO₄–ZrCl₄ — NEP89 — 320 K — NVT production" report_figures="18_LSZC_transport_comparison; 19_LSZC_partial_RDF; 20_LSZC_coordination_mobility; 27_LSZC_PDF_and_Zr_coordination" source_frame_index=1290 relative_time_ps=129.0 pbc="T T T"
 Cl       9.94669716      12.47637388       6.04633258
 Cl       5.92891836      12.26261767       3.89828651
 Cl       7.91629175      10.08376878       4.73935277
@@ -12055,7 +12055,7 @@ Li       3.03540638       9.90702254       2.87844379
 Li      17.41844459       9.07190745      19.63395654
 Li       9.71488330       3.43541927       6.24357998
 272
-Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" source_frame_index=1320 relative_time_ps=132.0 pbc="T T T"
+Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" display_name="0.5Li₂SO₄–ZrCl₄ — NEP89 — 320 K — NVT production" report_figures="18_LSZC_transport_comparison; 19_LSZC_partial_RDF; 20_LSZC_coordination_mobility; 27_LSZC_PDF_and_Zr_coordination" source_frame_index=1320 relative_time_ps=132.0 pbc="T T T"
 Cl      10.06530276      12.26197170       5.98940267
 Cl       5.52641195      12.04189509       3.75975235
 Cl       7.79871645      10.01109319       4.91456951
@@ -12329,7 +12329,7 @@ Li       2.93562175      10.04920272       3.09776925
 Li      17.41684286       9.08068418      19.23306134
 Li      10.05957879       3.78709556       5.78342229
 272
-Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" source_frame_index=1350 relative_time_ps=135.0 pbc="T T T"
+Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" display_name="0.5Li₂SO₄–ZrCl₄ — NEP89 — 320 K — NVT production" report_figures="18_LSZC_transport_comparison; 19_LSZC_partial_RDF; 20_LSZC_coordination_mobility; 27_LSZC_PDF_and_Zr_coordination" source_frame_index=1350 relative_time_ps=135.0 pbc="T T T"
 Cl       9.40168394      12.14529509       5.68468900
 Cl       5.41357957      12.05800694       3.77547086
 Cl       7.34628633       9.85640920       4.94686375
@@ -12603,7 +12603,7 @@ Li       3.26665965      10.48876329       2.80904918
 Li      18.27141910       9.77159454      18.64752948
 Li       9.75749179       3.11633991       6.66890786
 272
-Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" source_frame_index=1380 relative_time_ps=138.0 pbc="T T T"
+Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" display_name="0.5Li₂SO₄–ZrCl₄ — NEP89 — 320 K — NVT production" report_figures="18_LSZC_transport_comparison; 19_LSZC_partial_RDF; 20_LSZC_coordination_mobility; 27_LSZC_PDF_and_Zr_coordination" source_frame_index=1380 relative_time_ps=138.0 pbc="T T T"
 Cl       9.87569925      11.43443435       6.30295007
 Cl       5.28592274      11.94663424       3.62896158
 Cl       7.40066288       9.72785487       4.76439179
@@ -12877,7 +12877,7 @@ Li       2.88258759      10.65699606       2.24207938
 Li      18.79435674      10.28160069      18.74669231
 Li       9.58313444       2.73797203       6.25942751
 272
-Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" source_frame_index=1410 relative_time_ps=141.0 pbc="T T T"
+Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" display_name="0.5Li₂SO₄–ZrCl₄ — NEP89 — 320 K — NVT production" report_figures="18_LSZC_transport_comparison; 19_LSZC_partial_RDF; 20_LSZC_coordination_mobility; 27_LSZC_PDF_and_Zr_coordination" source_frame_index=1410 relative_time_ps=141.0 pbc="T T T"
 Cl      10.05591683      12.33864096       5.81422120
 Cl       5.14516529      11.84100280       3.35201135
 Cl       7.85507447      10.24789530       4.56529208
@@ -13151,7 +13151,7 @@ Li       3.21392500      10.42996402       2.58180002
 Li      17.99464755      10.22178668      18.25374020
 Li      10.04477722       3.40574197       6.20232899
 272
-Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" source_frame_index=1440 relative_time_ps=144.0 pbc="T T T"
+Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" display_name="0.5Li₂SO₄–ZrCl₄ — NEP89 — 320 K — NVT production" report_figures="18_LSZC_transport_comparison; 19_LSZC_partial_RDF; 20_LSZC_coordination_mobility; 27_LSZC_PDF_and_Zr_coordination" source_frame_index=1440 relative_time_ps=144.0 pbc="T T T"
 Cl       9.69065143      11.97992152       6.04201212
 Cl       5.41514222      12.23417888       3.95653915
 Cl       7.45879180       9.76131708       4.68000837
@@ -13425,7 +13425,7 @@ Li       2.72358327      10.74686933       2.57510339
 Li      17.75877557       9.19128047      18.60623494
 Li       9.20687242       2.95634518       6.20661139
 272
-Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" source_frame_index=1470 relative_time_ps=147.0 pbc="T T T"
+Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" display_name="0.5Li₂SO₄–ZrCl₄ — NEP89 — 320 K — NVT production" report_figures="18_LSZC_transport_comparison; 19_LSZC_partial_RDF; 20_LSZC_coordination_mobility; 27_LSZC_PDF_and_Zr_coordination" source_frame_index=1470 relative_time_ps=147.0 pbc="T T T"
 Cl       9.83017291      12.01560766       5.98716038
 Cl       5.32060185      12.27009069       3.57715840
 Cl       7.48003311      10.12132746       4.63664343
@@ -13699,7 +13699,7 @@ Li       3.08139984      10.64153344       3.00095474
 Li      17.84423789       9.95613560      19.01117576
 Li       9.56911334       2.89059011       6.45158510
 272
-Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" source_frame_index=1500 relative_time_ps=150.0 pbc="T T T"
+Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" display_name="0.5Li₂SO₄–ZrCl₄ — NEP89 — 320 K — NVT production" report_figures="18_LSZC_transport_comparison; 19_LSZC_partial_RDF; 20_LSZC_coordination_mobility; 27_LSZC_PDF_and_Zr_coordination" source_frame_index=1500 relative_time_ps=150.0 pbc="T T T"
 Cl      10.02150845      12.18667721       5.90596914
 Cl       5.22275844      12.17791078       3.42993445
 Cl       7.37587261      10.32107914       4.90163126
@@ -13973,7 +13973,7 @@ Li       2.70476437      10.62577963       2.64022295
 Li      18.14916043      10.44693450      18.62086814
 Li       9.87423765       3.53147215       6.46952765
 272
-Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" source_frame_index=1529 relative_time_ps=152.9 pbc="T T T"
+Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" display_name="0.5Li₂SO₄–ZrCl₄ — NEP89 — 320 K — NVT production" report_figures="18_LSZC_transport_comparison; 19_LSZC_partial_RDF; 20_LSZC_coordination_mobility; 27_LSZC_PDF_and_Zr_coordination" source_frame_index=1529 relative_time_ps=152.9 pbc="T T T"
 Cl       9.78302366      11.79033981       5.95931434
 Cl       5.26122177      11.94061672       3.46748846
 Cl       7.14090526       9.89767002       4.85723476
@@ -14247,7 +14247,7 @@ Li       3.17063564      10.82248068       2.31325081
 Li      18.49288386      10.19732449      18.36694760
 Li      10.66134477       3.48462134       6.31967788
 272
-Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" source_frame_index=1559 relative_time_ps=155.9 pbc="T T T"
+Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" display_name="0.5Li₂SO₄–ZrCl₄ — NEP89 — 320 K — NVT production" report_figures="18_LSZC_transport_comparison; 19_LSZC_partial_RDF; 20_LSZC_coordination_mobility; 27_LSZC_PDF_and_Zr_coordination" source_frame_index=1559 relative_time_ps=155.9 pbc="T T T"
 Cl      10.00535910      12.13078531       5.84282187
 Cl       5.15325896      12.31908957       3.47554095
 Cl       7.34412564      10.32066977       4.70214406
@@ -14521,7 +14521,7 @@ Li       2.78658545      10.44252839       2.46399780
 Li      17.79548703      10.25452870      18.68444771
 Li       9.46754982       2.67527365       6.58264688
 272
-Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" source_frame_index=1589 relative_time_ps=158.9 pbc="T T T"
+Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" display_name="0.5Li₂SO₄–ZrCl₄ — NEP89 — 320 K — NVT production" report_figures="18_LSZC_transport_comparison; 19_LSZC_partial_RDF; 20_LSZC_coordination_mobility; 27_LSZC_PDF_and_Zr_coordination" source_frame_index=1589 relative_time_ps=158.9 pbc="T T T"
 Cl      10.13021739      11.77812804       6.11457528
 Cl       5.42821211      12.15982343       3.59585093
 Cl       7.77822107      10.04690149       4.64084041
@@ -14795,7 +14795,7 @@ Li       3.06183274      10.35495441       2.86068188
 Li      17.80648615       9.71725580      19.14357841
 Li       9.64146855       2.75688480       6.52476940
 272
-Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" source_frame_index=1619 relative_time_ps=161.9 pbc="T T T"
+Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" display_name="0.5Li₂SO₄–ZrCl₄ — NEP89 — 320 K — NVT production" report_figures="18_LSZC_transport_comparison; 19_LSZC_partial_RDF; 20_LSZC_coordination_mobility; 27_LSZC_PDF_and_Zr_coordination" source_frame_index=1619 relative_time_ps=161.9 pbc="T T T"
 Cl       9.60767293      12.37773853       6.34348821
 Cl       5.21921466      12.30198395       3.89302205
 Cl       7.30934248      10.29156953       4.86235281
@@ -15069,7 +15069,7 @@ Li       2.65296907      10.84032559       2.84949211
 Li      18.13626062      10.03576261      18.24590812
 Li      10.12162352       3.33603334       6.70700171
 272
-Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" source_frame_index=1649 relative_time_ps=164.9 pbc="T T T"
+Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" display_name="0.5Li₂SO₄–ZrCl₄ — NEP89 — 320 K — NVT production" report_figures="18_LSZC_transport_comparison; 19_LSZC_partial_RDF; 20_LSZC_coordination_mobility; 27_LSZC_PDF_and_Zr_coordination" source_frame_index=1649 relative_time_ps=164.9 pbc="T T T"
 Cl       9.69333395      12.38449940       5.62672381
 Cl       5.06895715      12.15353565       3.57562449
 Cl       7.65352923      10.05359993       4.79876609
@@ -15343,7 +15343,7 @@ Li       2.98019749      10.30727462       2.78138421
 Li      18.18284728       9.82188200      18.73243734
 Li       9.41932281       3.42534777       6.46878539
 272
-Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" source_frame_index=1679 relative_time_ps=167.9 pbc="T T T"
+Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" display_name="0.5Li₂SO₄–ZrCl₄ — NEP89 — 320 K — NVT production" report_figures="18_LSZC_transport_comparison; 19_LSZC_partial_RDF; 20_LSZC_coordination_mobility; 27_LSZC_PDF_and_Zr_coordination" source_frame_index=1679 relative_time_ps=167.9 pbc="T T T"
 Cl      10.05760596      11.52044980       6.04308740
 Cl       5.45017434      11.91586500       3.64339472
 Cl       7.53194220       9.85221562       4.87623546
@@ -15617,7 +15617,7 @@ Li       2.99696364       9.51686645       3.26891289
 Li      17.42255006       9.18708494      19.55402335
 Li      10.26096291       3.43112981       5.52199738
 272
-Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" source_frame_index=1709 relative_time_ps=170.9 pbc="T T T"
+Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" display_name="0.5Li₂SO₄–ZrCl₄ — NEP89 — 320 K — NVT production" report_figures="18_LSZC_transport_comparison; 19_LSZC_partial_RDF; 20_LSZC_coordination_mobility; 27_LSZC_PDF_and_Zr_coordination" source_frame_index=1709 relative_time_ps=170.9 pbc="T T T"
 Cl       9.46572381      11.70024697       6.12281086
 Cl       5.17488926      12.15788887       3.59777053
 Cl       7.01435343       9.86503656       5.25886840
@@ -15891,7 +15891,7 @@ Li       3.27589206      10.85431737       2.36034389
 Li      18.26413768       9.84090348      18.77711591
 Li       9.47071442       2.98290942       6.63786630
 272
-Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" source_frame_index=1739 relative_time_ps=173.9 pbc="T T T"
+Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" display_name="0.5Li₂SO₄–ZrCl₄ — NEP89 — 320 K — NVT production" report_figures="18_LSZC_transport_comparison; 19_LSZC_partial_RDF; 20_LSZC_coordination_mobility; 27_LSZC_PDF_and_Zr_coordination" source_frame_index=1739 relative_time_ps=173.9 pbc="T T T"
 Cl       9.86287178      12.16255414       5.96741868
 Cl       5.48259500      12.28857700       3.27460052
 Cl       7.41307237      10.00064682       4.89210871
@@ -16165,7 +16165,7 @@ Li       3.38011075      10.81069643       2.31453541
 Li      18.07848018      10.16186296      19.05905183
 Li       9.71871523       3.04988593       6.11208536
 272
-Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" source_frame_index=1769 relative_time_ps=176.9 pbc="T T T"
+Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" display_name="0.5Li₂SO₄–ZrCl₄ — NEP89 — 320 K — NVT production" report_figures="18_LSZC_transport_comparison; 19_LSZC_partial_RDF; 20_LSZC_coordination_mobility; 27_LSZC_PDF_and_Zr_coordination" source_frame_index=1769 relative_time_ps=176.9 pbc="T T T"
 Cl       9.87741181      12.20327364       6.16131816
 Cl       5.40637148      11.89941710       4.00649523
 Cl       7.66152966       9.96950815       4.80814377
@@ -16439,7 +16439,7 @@ Li       3.04195038       9.86432692       2.97254918
 Li      17.85714836       9.40309808      18.81457626
 Li      10.19019863       3.60757164       6.09109357
 272
-Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" source_frame_index=1799 relative_time_ps=179.9 pbc="T T T"
+Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" display_name="0.5Li₂SO₄–ZrCl₄ — NEP89 — 320 K — NVT production" report_figures="18_LSZC_transport_comparison; 19_LSZC_partial_RDF; 20_LSZC_coordination_mobility; 27_LSZC_PDF_and_Zr_coordination" source_frame_index=1799 relative_time_ps=179.9 pbc="T T T"
 Cl       9.96240838      12.08746409       6.48298877
 Cl       5.67995647      11.92221605       3.85546773
 Cl       7.73494092      10.01545692       4.98551855
@@ -16713,7 +16713,7 @@ Li       3.07116216      10.33029860       3.13906391
 Li      18.28580634      10.21928121      18.68340915
 Li       9.81479538       2.27125849       5.37392315
 272
-Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" source_frame_index=1829 relative_time_ps=182.9 pbc="T T T"
+Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" display_name="0.5Li₂SO₄–ZrCl₄ — NEP89 — 320 K — NVT production" report_figures="18_LSZC_transport_comparison; 19_LSZC_partial_RDF; 20_LSZC_coordination_mobility; 27_LSZC_PDF_and_Zr_coordination" source_frame_index=1829 relative_time_ps=182.9 pbc="T T T"
 Cl       9.58795150      12.37504971       5.83892744
 Cl       5.41673868      12.10035856       3.69022052
 Cl       7.26418251       9.92326504       5.05650724
@@ -16987,7 +16987,7 @@ Li       2.35722728      10.54299596       3.13330167
 Li      17.89467003       9.58668062      18.96786621
 Li       9.32581188       2.72056626       6.56639725
 272
-Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" source_frame_index=1859 relative_time_ps=185.9 pbc="T T T"
+Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" display_name="0.5Li₂SO₄–ZrCl₄ — NEP89 — 320 K — NVT production" report_figures="18_LSZC_transport_comparison; 19_LSZC_partial_RDF; 20_LSZC_coordination_mobility; 27_LSZC_PDF_and_Zr_coordination" source_frame_index=1859 relative_time_ps=185.9 pbc="T T T"
 Cl       9.88475259      12.20609773       6.01334520
 Cl       4.91637376      12.07371180       3.48267221
 Cl       7.47554569      10.39625287       4.85334772
@@ -17261,7 +17261,7 @@ Li       2.69773779      10.78063703       2.89095976
 Li      17.71129838       9.67973290      19.00652068
 Li       9.21696349       3.16608768       6.34326580
 272
-Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" source_frame_index=1889 relative_time_ps=188.9 pbc="T T T"
+Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" display_name="0.5Li₂SO₄–ZrCl₄ — NEP89 — 320 K — NVT production" report_figures="18_LSZC_transport_comparison; 19_LSZC_partial_RDF; 20_LSZC_coordination_mobility; 27_LSZC_PDF_and_Zr_coordination" source_frame_index=1889 relative_time_ps=188.9 pbc="T T T"
 Cl       9.60076347      12.38380974       5.82908422
 Cl       5.08030537      12.38170395       3.46858673
 Cl       7.43058395      10.26205567       4.77223700
@@ -17535,7 +17535,7 @@ Li       3.01164602      10.65816837       2.79706599
 Li      17.57496048       9.81854376      18.76466743
 Li       9.45634238       2.71414476       6.28775055
 272
-Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" source_frame_index=1919 relative_time_ps=191.9 pbc="T T T"
+Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" display_name="0.5Li₂SO₄–ZrCl₄ — NEP89 — 320 K — NVT production" report_figures="18_LSZC_transport_comparison; 19_LSZC_partial_RDF; 20_LSZC_coordination_mobility; 27_LSZC_PDF_and_Zr_coordination" source_frame_index=1919 relative_time_ps=191.9 pbc="T T T"
 Cl       9.59844768      12.49822024       6.07727651
 Cl       5.24418200      12.50865804       3.65339531
 Cl       7.30068811      10.47305830       4.83138452
@@ -17809,7 +17809,7 @@ Li       3.13443459      10.28270955       2.85695135
 Li      18.26198705      10.11999502      18.42713606
 Li       9.96931979       3.41647265       6.62830789
 272
-Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" source_frame_index=1949 relative_time_ps=194.9 pbc="T T T"
+Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" display_name="0.5Li₂SO₄–ZrCl₄ — NEP89 — 320 K — NVT production" report_figures="18_LSZC_transport_comparison; 19_LSZC_partial_RDF; 20_LSZC_coordination_mobility; 27_LSZC_PDF_and_Zr_coordination" source_frame_index=1949 relative_time_ps=194.9 pbc="T T T"
 Cl       9.91843190      12.19986084       5.92786317
 Cl       5.24083180      12.15781502       3.44733117
 Cl       7.39559519      10.20837906       4.56402105
@@ -18083,7 +18083,7 @@ Li       2.73436237      10.56872166       2.62591470
 Li      17.95969247      10.42957958      18.87637521
 Li       9.69089424       2.87868062       6.98789295
 272
-Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" source_frame_index=1979 relative_time_ps=197.9 pbc="T T T"
+Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" display_name="0.5Li₂SO₄–ZrCl₄ — NEP89 — 320 K — NVT production" report_figures="18_LSZC_transport_comparison; 19_LSZC_partial_RDF; 20_LSZC_coordination_mobility; 27_LSZC_PDF_and_Zr_coordination" source_frame_index=1979 relative_time_ps=197.9 pbc="T T T"
 Cl       9.38304985      12.32418882       6.05531326
 Cl       5.28874269      12.28625579       3.47517683
 Cl       7.14977709      10.40760943       5.02687390
@@ -18357,7 +18357,7 @@ Li       3.41290331      11.03855074       2.29177397
 Li      18.33500256       9.92463698      18.55489616
 Li       9.52118535       3.08285140       6.40529379
 272
-Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" source_frame_index=2009 relative_time_ps=200.9 pbc="T T T"
+Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" display_name="0.5Li₂SO₄–ZrCl₄ — NEP89 — 320 K — NVT production" report_figures="18_LSZC_transport_comparison; 19_LSZC_partial_RDF; 20_LSZC_coordination_mobility; 27_LSZC_PDF_and_Zr_coordination" source_frame_index=2009 relative_time_ps=200.9 pbc="T T T"
 Cl       9.96344444      12.18508500       6.14096029
 Cl       5.65883746      11.89784872       3.56886376
 Cl       7.79145052      10.11155610       4.93889526
@@ -18631,7 +18631,7 @@ Li       3.16669421      10.26508876       2.59917744
 Li      17.76509289       9.44151839      18.89978529
 Li       9.79922507       3.04023348       6.45355778
 272
-Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" source_frame_index=2039 relative_time_ps=203.9 pbc="T T T"
+Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" display_name="0.5Li₂SO₄–ZrCl₄ — NEP89 — 320 K — NVT production" report_figures="18_LSZC_transport_comparison; 19_LSZC_partial_RDF; 20_LSZC_coordination_mobility; 27_LSZC_PDF_and_Zr_coordination" source_frame_index=2039 relative_time_ps=203.9 pbc="T T T"
 Cl       9.93804361      12.09886965       5.67221892
 Cl       5.16856057      12.15059983       3.73313184
 Cl       7.50266343       9.96587825       4.71334219
@@ -18905,7 +18905,7 @@ Li       3.19959984      10.50233406       2.81338872
 Li      18.38914551       9.77873992      18.59044420
 Li       9.71541354       3.17869320       6.67649270
 272
-Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" source_frame_index=2069 relative_time_ps=206.9 pbc="T T T"
+Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" display_name="0.5Li₂SO₄–ZrCl₄ — NEP89 — 320 K — NVT production" report_figures="18_LSZC_transport_comparison; 19_LSZC_partial_RDF; 20_LSZC_coordination_mobility; 27_LSZC_PDF_and_Zr_coordination" source_frame_index=2069 relative_time_ps=206.9 pbc="T T T"
 Cl       9.84475141      12.33754519       5.92298827
 Cl       5.19382766      12.07478679       3.99256193
 Cl       7.76713559      10.21103366       4.63663690
@@ -19179,7 +19179,7 @@ Li       2.65275647      10.26833808       2.84533066
 Li      17.72336699      10.09671380      18.71600468
 Li       9.48588977       2.90669625       6.18310415
 272
-Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" source_frame_index=2099 relative_time_ps=209.9 pbc="T T T"
+Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" display_name="0.5Li₂SO₄–ZrCl₄ — NEP89 — 320 K — NVT production" report_figures="18_LSZC_transport_comparison; 19_LSZC_partial_RDF; 20_LSZC_coordination_mobility; 27_LSZC_PDF_and_Zr_coordination" source_frame_index=2099 relative_time_ps=209.9 pbc="T T T"
 Cl      10.02187357      11.96258708       5.99525960
 Cl       5.40857647      12.14285792       3.59007838
 Cl       7.49590332      10.07963205       4.66898955
@@ -19453,7 +19453,7 @@ Li       3.01325413      10.51113566       2.74457569
 Li      17.82458344       9.72922060      18.85345132
 Li       9.81983479       3.05453520       6.49164072
 272
-Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" source_frame_index=2129 relative_time_ps=212.9 pbc="T T T"
+Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" display_name="0.5Li₂SO₄–ZrCl₄ — NEP89 — 320 K — NVT production" report_figures="18_LSZC_transport_comparison; 19_LSZC_partial_RDF; 20_LSZC_coordination_mobility; 27_LSZC_PDF_and_Zr_coordination" source_frame_index=2129 relative_time_ps=212.9 pbc="T T T"
 Cl       9.94459994      11.62478573       5.75278666
 Cl       5.46553848      12.23892723       3.49746727
 Cl       7.52143348       9.90542017       4.73123283
@@ -19727,7 +19727,7 @@ Li       2.93385343      10.28638931       2.66925195
 Li      18.14710751       9.93159169      18.50957371
 Li       9.49866595       3.01482234       6.47764715
 272
-Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" source_frame_index=2159 relative_time_ps=215.9 pbc="T T T"
+Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" display_name="0.5Li₂SO₄–ZrCl₄ — NEP89 — 320 K — NVT production" report_figures="18_LSZC_transport_comparison; 19_LSZC_partial_RDF; 20_LSZC_coordination_mobility; 27_LSZC_PDF_and_Zr_coordination" source_frame_index=2159 relative_time_ps=215.9 pbc="T T T"
 Cl       9.84946025      12.19949386       6.04784710
 Cl       5.09975266      12.09122306       3.84135616
 Cl       7.51710330      10.28022645       4.92190636
@@ -20001,7 +20001,7 @@ Li       3.00137864      10.34334924       2.77719502
 Li      18.66129738      10.96675568      18.52995391
 Li       9.67301996       2.77207169       6.44931939
 272
-Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" source_frame_index=2189 relative_time_ps=218.9 pbc="T T T"
+Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" display_name="0.5Li₂SO₄–ZrCl₄ — NEP89 — 320 K — NVT production" report_figures="18_LSZC_transport_comparison; 19_LSZC_partial_RDF; 20_LSZC_coordination_mobility; 27_LSZC_PDF_and_Zr_coordination" source_frame_index=2189 relative_time_ps=218.9 pbc="T T T"
 Cl       9.85910627      12.13609005       5.71030848
 Cl       5.09557749      12.30385731       3.60094290
 Cl       7.77048579      10.14842041       4.61541912
@@ -20275,7 +20275,7 @@ Li       3.03261782      10.93071113       2.38900514
 Li      18.21708368      10.55444417      18.28079643
 Li      10.73992830       4.06176058       6.38030187
 272
-Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" source_frame_index=2219 relative_time_ps=221.9 pbc="T T T"
+Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" display_name="0.5Li₂SO₄–ZrCl₄ — NEP89 — 320 K — NVT production" report_figures="18_LSZC_transport_comparison; 19_LSZC_partial_RDF; 20_LSZC_coordination_mobility; 27_LSZC_PDF_and_Zr_coordination" source_frame_index=2219 relative_time_ps=221.9 pbc="T T T"
 Cl       9.68812393      12.54012814       6.16100430
 Cl       5.42787530      12.51132618       3.52044442
 Cl       7.53710877      10.42685269       4.87476298
@@ -20549,7 +20549,7 @@ Li       2.98563536      10.48529301       2.19973896
 Li      18.00111649       9.41566246      18.95226466
 Li       9.90279866       2.96047120       6.93242849
 272
-Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" source_frame_index=2249 relative_time_ps=224.9 pbc="T T T"
+Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" display_name="0.5Li₂SO₄–ZrCl₄ — NEP89 — 320 K — NVT production" report_figures="18_LSZC_transport_comparison; 19_LSZC_partial_RDF; 20_LSZC_coordination_mobility; 27_LSZC_PDF_and_Zr_coordination" source_frame_index=2249 relative_time_ps=224.9 pbc="T T T"
 Cl       9.64539725      12.16702165       5.88084322
 Cl       5.15838330      12.27859131       3.84485769
 Cl       7.47905372      10.11084758       4.77670741
@@ -20823,7 +20823,7 @@ Li       3.21440289      10.65555907       3.01919290
 Li      17.96497906      10.11500310      18.85922531
 Li       9.53618059       3.11586033       6.65971284
 272
-Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" source_frame_index=2279 relative_time_ps=227.9 pbc="T T T"
+Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" display_name="0.5Li₂SO₄–ZrCl₄ — NEP89 — 320 K — NVT production" report_figures="18_LSZC_transport_comparison; 19_LSZC_partial_RDF; 20_LSZC_coordination_mobility; 27_LSZC_PDF_and_Zr_coordination" source_frame_index=2279 relative_time_ps=227.9 pbc="T T T"
 Cl       9.44895726      11.89367067       5.65068176
 Cl       5.15678509      11.94582318       3.71560735
 Cl       7.33824395       9.84146543       4.94082481
@@ -21097,7 +21097,7 @@ Li       3.16220571      11.01202100       2.48056146
 Li      18.64206642      11.04650141      17.95894054
 Li       9.92316881       1.88452326       7.48037789
 272
-Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" source_frame_index=2309 relative_time_ps=230.9 pbc="T T T"
+Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" display_name="0.5Li₂SO₄–ZrCl₄ — NEP89 — 320 K — NVT production" report_figures="18_LSZC_transport_comparison; 19_LSZC_partial_RDF; 20_LSZC_coordination_mobility; 27_LSZC_PDF_and_Zr_coordination" source_frame_index=2309 relative_time_ps=230.9 pbc="T T T"
 Cl       9.89358219      12.14422036       6.14554045
 Cl       4.94786469      12.29502686       3.69365187
 Cl       7.47323041      10.45177917       4.79305505
@@ -21371,7 +21371,7 @@ Li       2.79108792      10.68688990       3.01278179
 Li      18.35374109       9.74320867      18.82474505
 Li       9.40680122       3.04460653       6.59913709
 272
-Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" source_frame_index=2339 relative_time_ps=233.9 pbc="T T T"
+Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" display_name="0.5Li₂SO₄–ZrCl₄ — NEP89 — 320 K — NVT production" report_figures="18_LSZC_transport_comparison; 19_LSZC_partial_RDF; 20_LSZC_coordination_mobility; 27_LSZC_PDF_and_Zr_coordination" source_frame_index=2339 relative_time_ps=233.9 pbc="T T T"
 Cl       9.65741395      12.36446639       5.74973301
 Cl       5.23728159      12.43255483       3.67982890
 Cl       7.50732613      10.00957527       4.58509704
@@ -21645,7 +21645,7 @@ Li       2.75200823      11.04346988       2.82943132
 Li      17.89557595      10.08035682      18.83590488
 Li       9.79318822       2.83995375       6.50784007
 272
-Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" source_frame_index=2369 relative_time_ps=236.9 pbc="T T T"
+Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" display_name="0.5Li₂SO₄–ZrCl₄ — NEP89 — 320 K — NVT production" report_figures="18_LSZC_transport_comparison; 19_LSZC_partial_RDF; 20_LSZC_coordination_mobility; 27_LSZC_PDF_and_Zr_coordination" source_frame_index=2369 relative_time_ps=236.9 pbc="T T T"
 Cl       9.45729249      12.30187262       5.86028756
 Cl       5.15659029      12.20955180       3.62081452
 Cl       7.46379560       9.96071878       4.95847889
@@ -21919,7 +21919,7 @@ Li       2.98050876      11.05490030       2.37126018
 Li      18.40959443      10.12482291      18.54806840
 Li       9.97012006       2.86061953       6.73309369
 272
-Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" source_frame_index=2399 relative_time_ps=239.9 pbc="T T T"
+Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" display_name="0.5Li₂SO₄–ZrCl₄ — NEP89 — 320 K — NVT production" report_figures="18_LSZC_transport_comparison; 19_LSZC_partial_RDF; 20_LSZC_coordination_mobility; 27_LSZC_PDF_and_Zr_coordination" source_frame_index=2399 relative_time_ps=239.9 pbc="T T T"
 Cl       9.92600773      12.17382261       6.26823058
 Cl       5.29644707      12.18076030       3.37897349
 Cl       7.54521131       9.86353561       5.14896048
@@ -22193,7 +22193,7 @@ Li       3.10241549      10.58598342       2.66027984
 Li      18.55497444      10.42654879      18.31050858
 Li       9.58512714       2.85653699       6.73244826
 272
-Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" source_frame_index=2429 relative_time_ps=242.9 pbc="T T T"
+Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" display_name="0.5Li₂SO₄–ZrCl₄ — NEP89 — 320 K — NVT production" report_figures="18_LSZC_transport_comparison; 19_LSZC_partial_RDF; 20_LSZC_coordination_mobility; 27_LSZC_PDF_and_Zr_coordination" source_frame_index=2429 relative_time_ps=242.9 pbc="T T T"
 Cl       9.69048259      12.47943030       5.97243091
 Cl       5.04959366      12.22859366       3.40771698
 Cl       7.57894836      10.15635263       4.75767097
@@ -22467,7 +22467,7 @@ Li       2.76161414      10.69099658       2.79146875
 Li      17.94873082       9.84969422      18.56127670
 Li       9.86975536       2.02042496       7.45908685
 272
-Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" source_frame_index=2459 relative_time_ps=245.9 pbc="T T T"
+Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" display_name="0.5Li₂SO₄–ZrCl₄ — NEP89 — 320 K — NVT production" report_figures="18_LSZC_transport_comparison; 19_LSZC_partial_RDF; 20_LSZC_coordination_mobility; 27_LSZC_PDF_and_Zr_coordination" source_frame_index=2459 relative_time_ps=245.9 pbc="T T T"
 Cl       9.49094995      12.02941432       5.92480452
 Cl       5.37728462      11.96912573       3.74984346
 Cl       7.55262601       9.79166116       5.11911522
@@ -22741,7 +22741,7 @@ Li       2.84131084      10.36007935       3.09262763
 Li      17.88445662      10.10528048      18.44189690
 Li      10.38591298       1.77620995       7.93111129
 272
-Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" source_frame_index=2489 relative_time_ps=248.9 pbc="T T T"
+Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" display_name="0.5Li₂SO₄–ZrCl₄ — NEP89 — 320 K — NVT production" report_figures="18_LSZC_transport_comparison; 19_LSZC_partial_RDF; 20_LSZC_coordination_mobility; 27_LSZC_PDF_and_Zr_coordination" source_frame_index=2489 relative_time_ps=248.9 pbc="T T T"
 Cl       9.39095091      12.36683226       5.72537332
 Cl       5.19718631      12.43583786       3.74768654
 Cl       7.32824414      10.22492911       4.81320744
@@ -23015,7 +23015,7 @@ Li       2.77062721      10.73525244       2.89627808
 Li      17.98163290      10.20472021      19.14195908
 Li       9.49932182       2.86523751       6.53088212
 272
-Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" source_frame_index=2519 relative_time_ps=251.9 pbc="T T T"
+Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" display_name="0.5Li₂SO₄–ZrCl₄ — NEP89 — 320 K — NVT production" report_figures="18_LSZC_transport_comparison; 19_LSZC_partial_RDF; 20_LSZC_coordination_mobility; 27_LSZC_PDF_and_Zr_coordination" source_frame_index=2519 relative_time_ps=251.9 pbc="T T T"
 Cl       9.66565992      12.12021869       6.38179877
 Cl       4.99405777      11.92857556       3.37482090
 Cl       7.11419220      10.15574028       4.97695175
@@ -23289,7 +23289,7 @@ Li       3.28340648      10.70428223       2.55753932
 Li      18.33681688      10.05009635      18.67867184
 Li       9.72234119       3.04323921       6.63345205
 272
-Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" source_frame_index=2549 relative_time_ps=254.9 pbc="T T T"
+Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" display_name="0.5Li₂SO₄–ZrCl₄ — NEP89 — 320 K — NVT production" report_figures="18_LSZC_transport_comparison; 19_LSZC_partial_RDF; 20_LSZC_coordination_mobility; 27_LSZC_PDF_and_Zr_coordination" source_frame_index=2549 relative_time_ps=254.9 pbc="T T T"
 Cl       9.72652222      12.05265550       5.86585576
 Cl       5.44287180      12.26073675       3.35809364
 Cl       7.27515838       9.94826288       4.82543229
@@ -23563,7 +23563,7 @@ Li       3.55783278      11.10263901       2.32897066
 Li      18.44502513       9.98187439      19.02335821
 Li       9.66136271       3.17019841       6.48753824
 272
-Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" source_frame_index=2579 relative_time_ps=257.9 pbc="T T T"
+Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" display_name="0.5Li₂SO₄–ZrCl₄ — NEP89 — 320 K — NVT production" report_figures="18_LSZC_transport_comparison; 19_LSZC_partial_RDF; 20_LSZC_coordination_mobility; 27_LSZC_PDF_and_Zr_coordination" source_frame_index=2579 relative_time_ps=257.9 pbc="T T T"
 Cl       9.70549351      12.54813827       5.91793194
 Cl       5.08218597      12.24217828       3.64632536
 Cl       7.51757033      10.51150165       4.66286689
@@ -23837,7 +23837,7 @@ Li       3.12446897      11.15637183       2.37741092
 Li      17.95125290      10.24700151      18.85137524
 Li       9.86440636       2.65791157       6.27860216
 272
-Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" source_frame_index=2609 relative_time_ps=260.9 pbc="T T T"
+Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" display_name="0.5Li₂SO₄–ZrCl₄ — NEP89 — 320 K — NVT production" report_figures="18_LSZC_transport_comparison; 19_LSZC_partial_RDF; 20_LSZC_coordination_mobility; 27_LSZC_PDF_and_Zr_coordination" source_frame_index=2609 relative_time_ps=260.9 pbc="T T T"
 Cl       9.72713323      11.96449161       5.85312806
 Cl       5.03265835      12.17636411       3.84162938
 Cl       7.51246121      10.13350273       4.74459917
@@ -24111,7 +24111,7 @@ Li       2.68069429      10.78584524       2.77107248
 Li      18.09514980      10.74754214      18.69067380
 Li       9.74952616       3.19038326       6.40455544
 272
-Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" source_frame_index=2639 relative_time_ps=263.9 pbc="T T T"
+Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" display_name="0.5Li₂SO₄–ZrCl₄ — NEP89 — 320 K — NVT production" report_figures="18_LSZC_transport_comparison; 19_LSZC_partial_RDF; 20_LSZC_coordination_mobility; 27_LSZC_PDF_and_Zr_coordination" source_frame_index=2639 relative_time_ps=263.9 pbc="T T T"
 Cl      10.18747051      12.00982703       6.25849830
 Cl       5.35288944      12.36813511       3.44455564
 Cl       7.62963217      10.33364617       4.74562291
@@ -24385,7 +24385,7 @@ Li       2.74622464      10.93845027       2.68154019
 Li      18.09542047      10.36494335      18.69748602
 Li       9.42944533       2.81803045       6.35597500
 272
-Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" source_frame_index=2669 relative_time_ps=266.9 pbc="T T T"
+Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" display_name="0.5Li₂SO₄–ZrCl₄ — NEP89 — 320 K — NVT production" report_figures="18_LSZC_transport_comparison; 19_LSZC_partial_RDF; 20_LSZC_coordination_mobility; 27_LSZC_PDF_and_Zr_coordination" source_frame_index=2669 relative_time_ps=266.9 pbc="T T T"
 Cl       9.90219700      11.66212825       5.93904459
 Cl       5.29963186      12.03769097       3.50322846
 Cl       7.31086629      10.10121615       4.86572255
@@ -24659,7 +24659,7 @@ Li       3.00092944      10.40764541       2.91925888
 Li      18.42271912      10.60303228      18.83373517
 Li      10.09111630       2.45095690       7.72381542
 272
-Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" source_frame_index=2699 relative_time_ps=269.9 pbc="T T T"
+Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" display_name="0.5Li₂SO₄–ZrCl₄ — NEP89 — 320 K — NVT production" report_figures="18_LSZC_transport_comparison; 19_LSZC_partial_RDF; 20_LSZC_coordination_mobility; 27_LSZC_PDF_and_Zr_coordination" source_frame_index=2699 relative_time_ps=269.9 pbc="T T T"
 Cl       9.56945402      12.32826768       5.80236484
 Cl       5.06288263      12.31470093       3.48665717
 Cl       7.27263543      10.14642303       4.82595266
@@ -24933,7 +24933,7 @@ Li       3.09122490      10.72908544       2.67014749
 Li      17.78089883       9.52791099      18.90295045
 Li       9.34250312       2.83639403       6.14846042
 272
-Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" source_frame_index=2729 relative_time_ps=272.9 pbc="T T T"
+Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" display_name="0.5Li₂SO₄–ZrCl₄ — NEP89 — 320 K — NVT production" report_figures="18_LSZC_transport_comparison; 19_LSZC_partial_RDF; 20_LSZC_coordination_mobility; 27_LSZC_PDF_and_Zr_coordination" source_frame_index=2729 relative_time_ps=272.9 pbc="T T T"
 Cl       9.76655134      12.40403831       5.61286795
 Cl       5.27180577      12.31711025       3.47291412
 Cl       7.74250136      10.10145372       4.85867003
@@ -25207,7 +25207,7 @@ Li       3.24833853      10.54680568       2.62311789
 Li      18.21777415      10.13668372      18.44046004
 Li       9.58755867       3.05472506       6.49821159
 272
-Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" source_frame_index=2759 relative_time_ps=275.9 pbc="T T T"
+Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" display_name="0.5Li₂SO₄–ZrCl₄ — NEP89 — 320 K — NVT production" report_figures="18_LSZC_transport_comparison; 19_LSZC_partial_RDF; 20_LSZC_coordination_mobility; 27_LSZC_PDF_and_Zr_coordination" source_frame_index=2759 relative_time_ps=275.9 pbc="T T T"
 Cl       9.94706444      12.67052343       5.84672367
 Cl       5.55361872      12.15129214       4.01946381
 Cl       7.94206559      10.19434382       4.67155584
@@ -25481,7 +25481,7 @@ Li       3.06024082      10.30826617       2.85366023
 Li      17.75684540      10.10902008      18.32789246
 Li       9.76734645       3.09325310       6.33645961
 272
-Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" source_frame_index=2789 relative_time_ps=278.9 pbc="T T T"
+Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" display_name="0.5Li₂SO₄–ZrCl₄ — NEP89 — 320 K — NVT production" report_figures="18_LSZC_transport_comparison; 19_LSZC_partial_RDF; 20_LSZC_coordination_mobility; 27_LSZC_PDF_and_Zr_coordination" source_frame_index=2789 relative_time_ps=278.9 pbc="T T T"
 Cl       9.73976385      12.21676673       5.96897732
 Cl       5.01483844      12.16663479       3.49704975
 Cl       7.13885969      10.12184980       4.88291498
@@ -25755,7 +25755,7 @@ Li       2.72238470      10.59258162       2.73896305
 Li      17.93470969      10.10032078      18.14361810
 Li       9.74561789       3.02002228       6.20993340
 272
-Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" source_frame_index=2819 relative_time_ps=281.9 pbc="T T T"
+Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" display_name="0.5Li₂SO₄–ZrCl₄ — NEP89 — 320 K — NVT production" report_figures="18_LSZC_transport_comparison; 19_LSZC_partial_RDF; 20_LSZC_coordination_mobility; 27_LSZC_PDF_and_Zr_coordination" source_frame_index=2819 relative_time_ps=281.9 pbc="T T T"
 Cl       9.71928995      12.33564242       6.06432422
 Cl       5.26332892      12.32805275       3.40708817
 Cl       7.40499250      10.28353318       4.53915840
@@ -26029,7 +26029,7 @@ Li       2.75911927      10.75711383       2.52004165
 Li      18.07828972       9.87865287      18.67695447
 Li       9.42677534       3.13423309       6.81200482
 272
-Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" source_frame_index=2849 relative_time_ps=284.9 pbc="T T T"
+Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" display_name="0.5Li₂SO₄–ZrCl₄ — NEP89 — 320 K — NVT production" report_figures="18_LSZC_transport_comparison; 19_LSZC_partial_RDF; 20_LSZC_coordination_mobility; 27_LSZC_PDF_and_Zr_coordination" source_frame_index=2849 relative_time_ps=284.9 pbc="T T T"
 Cl       9.69925162      12.29238441       6.18619431
 Cl       5.12747155      12.29546057       3.65307054
 Cl       7.44875312      10.38996407       4.83996036
@@ -26303,7 +26303,7 @@ Li       3.40966042      10.79144140       2.71011450
 Li      18.24929988      10.39449565      19.11828713
 Li       9.46525260       2.81143533       6.58649968
 272
-Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" source_frame_index=2879 relative_time_ps=287.9 pbc="T T T"
+Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" display_name="0.5Li₂SO₄–ZrCl₄ — NEP89 — 320 K — NVT production" report_figures="18_LSZC_transport_comparison; 19_LSZC_partial_RDF; 20_LSZC_coordination_mobility; 27_LSZC_PDF_and_Zr_coordination" source_frame_index=2879 relative_time_ps=287.9 pbc="T T T"
 Cl       9.74320631      11.80662797       6.15592475
 Cl       5.45822095      12.03640216       3.85648894
 Cl       7.69447040       9.79640501       4.82663491
@@ -26577,7 +26577,7 @@ Li       2.90621373      10.03183020       3.10225641
 Li      18.11277627      10.41294680      18.83124192
 Li       9.78442895       2.57348489       6.51218916
 272
-Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" source_frame_index=2909 relative_time_ps=290.9 pbc="T T T"
+Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" display_name="0.5Li₂SO₄–ZrCl₄ — NEP89 — 320 K — NVT production" report_figures="18_LSZC_transport_comparison; 19_LSZC_partial_RDF; 20_LSZC_coordination_mobility; 27_LSZC_PDF_and_Zr_coordination" source_frame_index=2909 relative_time_ps=290.9 pbc="T T T"
 Cl      10.01710695      11.87981255       5.67968199
 Cl       5.22639067      12.36426658       3.41253169
 Cl       7.41540409      10.10607967       4.74923385
@@ -26851,7 +26851,7 @@ Li       3.05415489      10.69304177       2.43432956
 Li      17.73137942       9.97496373      18.85821829
 Li       9.39488495       2.46875119       6.21717858
 272
-Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" source_frame_index=2939 relative_time_ps=293.9 pbc="T T T"
+Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" display_name="0.5Li₂SO₄–ZrCl₄ — NEP89 — 320 K — NVT production" report_figures="18_LSZC_transport_comparison; 19_LSZC_partial_RDF; 20_LSZC_coordination_mobility; 27_LSZC_PDF_and_Zr_coordination" source_frame_index=2939 relative_time_ps=293.9 pbc="T T T"
 Cl      10.05671552      11.88356423       5.89829752
 Cl       5.19950998      12.14986222       3.68865111
 Cl       7.48155397      10.09856548       4.62039810
@@ -27125,7 +27125,7 @@ Li       3.05621150      10.61021218       2.50092415
 Li      17.75840215      10.50164339      18.40665128
 Li       9.30132826       2.66372561       6.53656196
 272
-Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" source_frame_index=2969 relative_time_ps=296.9 pbc="T T T"
+Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" display_name="0.5Li₂SO₄–ZrCl₄ — NEP89 — 320 K — NVT production" report_figures="18_LSZC_transport_comparison; 19_LSZC_partial_RDF; 20_LSZC_coordination_mobility; 27_LSZC_PDF_and_Zr_coordination" source_frame_index=2969 relative_time_ps=296.9 pbc="T T T"
 Cl       9.72674372      12.00769642       6.04640120
 Cl       4.87165916      12.26092558       3.88208565
 Cl       7.12589240      10.33478314       4.81645941
@@ -27399,7 +27399,7 @@ Li       2.85710146      10.85130339       2.92513657
 Li      18.14143130      10.40044510      18.36449481
 Li       9.63382083       2.50866481       6.33347071
 272
-Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" source_frame_index=2999 relative_time_ps=299.9 pbc="T T T"
+Lattice="20.1148 0.0 0.0 0.0 20.1148 0.0 0.0 0.0 20.1148" Properties=species:S:1:pos:R:3 material=0.5Li2SO4-ZrCl4 model=NEP89 temperature_K=320 phase="NVT production" display_name="0.5Li₂SO₄–ZrCl₄ — NEP89 — 320 K — NVT production" report_figures="18_LSZC_transport_comparison; 19_LSZC_partial_RDF; 20_LSZC_coordination_mobility; 27_LSZC_PDF_and_Zr_coordination" source_frame_index=2999 relative_time_ps=299.9 pbc="T T T"
 Cl       9.75339262      12.10981996       6.42735172
 Cl       5.23177159      12.00532913       3.73110754
 Cl       7.30736734      10.23557421       5.13111697

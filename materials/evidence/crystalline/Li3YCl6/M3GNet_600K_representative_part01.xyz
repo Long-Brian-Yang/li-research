@@ -1,5 +1,5 @@
 240
-Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production source_frame_index=0 relative_time_ps=0.0 pbc="T T T"
+Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production display_name="Li₃YCl₆ — M3GNet GPU — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=0 relative_time_ps=0.0 pbc="T T T"
 Li       3.75087000      -0.45449600       0.31483200
 Li       7.68286000       0.04535440       3.31790000
 Li      -1.77023000       3.03116000       8.24728000
@@ -241,7 +241,7 @@ Cl      11.03970000      10.93690000       7.48377000
 Cl       3.49350000      15.22260000      10.45820000
 Cl      12.94530000      14.07460000       7.69656000
 240
-Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production source_frame_index=5 relative_time_ps=0.5 pbc="T T T"
+Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production display_name="Li₃YCl₆ — M3GNet GPU — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=5 relative_time_ps=0.5 pbc="T T T"
 Li       3.77036000      -0.36036000      -3.08778000
 Li       7.71887000       0.02960210       6.19403000
 Li      -2.26071000       2.99648000       8.86242000
@@ -483,7 +483,7 @@ Cl      11.01310000      10.81910000       7.14604000
 Cl       3.93401000      15.15960000      10.59090000
 Cl      12.87960000      13.91430000       7.29023000
 240
-Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production source_frame_index=10 relative_time_ps=1.0 pbc="T T T"
+Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production display_name="Li₃YCl₆ — M3GNet GPU — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=10 relative_time_ps=1.0 pbc="T T T"
 Li       3.45530000       0.10104400      -2.87766000
 Li       7.10115000       0.45836000       6.03758000
 Li      -2.17831000       3.13870000       5.91069000
@@ -725,7 +725,7 @@ Cl      11.53650000      10.83130000       7.65905000
 Cl       3.73666000      15.57570000      10.97640000
 Cl      13.46480000      14.07860000       7.50820000
 240
-Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production source_frame_index=15 relative_time_ps=1.5 pbc="T T T"
+Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production display_name="Li₃YCl₆ — M3GNet GPU — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=15 relative_time_ps=1.5 pbc="T T T"
 Li       3.93520000       0.58335800      -5.89311000
 Li       7.64441000       0.06716390       7.01400000
 Li      -1.70298000       2.78889000       6.50010000
@@ -967,7 +967,7 @@ Cl      11.14560000      10.79760000       7.63704000
 Cl       3.70828000      15.26180000      10.68590000
 Cl      13.17320000      14.23250000       7.42653000
 240
-Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production source_frame_index=20 relative_time_ps=2.0 pbc="T T T"
+Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production display_name="Li₃YCl₆ — M3GNet GPU — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=20 relative_time_ps=2.0 pbc="T T T"
 Li       4.07272000      -0.44911300      -6.08336000
 Li       7.41385000       1.78695000       6.23741000
 Li      -1.91678000       3.54505000       6.75620000
@@ -1209,7 +1209,7 @@ Cl      11.09710000      11.10470000       7.25520000
 Cl       3.59026000      15.24800000      10.66790000
 Cl      13.04990000      14.08730000       7.73764000
 240
-Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production source_frame_index=25 relative_time_ps=2.5 pbc="T T T"
+Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production display_name="Li₃YCl₆ — M3GNet GPU — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=25 relative_time_ps=2.5 pbc="T T T"
 Li       3.59688000      -0.16480100      -7.67074000
 Li       7.21687000       0.29303900       5.79632000
 Li      -1.91721000       3.83345000       6.37150000
@@ -1451,7 +1451,7 @@ Cl      11.38440000      11.27620000       7.24344000
 Cl       3.43647000      15.07610000      10.24990000
 Cl      13.29470000      14.71740000       7.71076000
 240
-Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production source_frame_index=30 relative_time_ps=3.0 pbc="T T T"
+Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production display_name="Li₃YCl₆ — M3GNet GPU — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=30 relative_time_ps=3.0 pbc="T T T"
 Li       3.23078000      -0.35264000      -9.24583000
 Li       7.48146000      -0.04543020       5.58290000
 Li      -1.97344000       3.10939000       8.33496000
@@ -1693,7 +1693,7 @@ Cl      11.20180000      11.03360000       7.65582000
 Cl       3.58219000      15.22040000      10.60310000
 Cl      12.92280000      14.39290000       7.47543000
 240
-Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production source_frame_index=35 relative_time_ps=3.5 pbc="T T T"
+Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production display_name="Li₃YCl₆ — M3GNet GPU — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=35 relative_time_ps=3.5 pbc="T T T"
 Li       2.86078000       0.10893700      -9.07614000
 Li       7.68804000      -0.36281600       6.50042000
 Li      -2.19241000       3.19998000       5.41859000
@@ -1935,7 +1935,7 @@ Cl      11.22320000      10.58790000       7.42128000
 Cl       3.63437000      15.14180000      10.98450000
 Cl      12.93230000      14.20790000       7.33103000
 240
-Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production source_frame_index=40 relative_time_ps=4.0 pbc="T T T"
+Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production display_name="Li₃YCl₆ — M3GNet GPU — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=40 relative_time_ps=4.0 pbc="T T T"
 Li       3.46027000      -0.12544800      -9.03657000
 Li       7.27712000      -0.04722450       5.79474000
 Li      -2.03613000       3.58214000       6.24657000
@@ -2177,7 +2177,7 @@ Cl      10.81820000      10.99920000       7.47878000
 Cl       3.52335000      15.16930000      10.32580000
 Cl      13.20850000      14.03780000       7.51289000
 240
-Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production source_frame_index=45 relative_time_ps=4.5 pbc="T T T"
+Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production display_name="Li₃YCl₆ — M3GNet GPU — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=45 relative_time_ps=4.5 pbc="T T T"
 Li       3.99212000       0.38042300     -12.75060000
 Li       7.48483000       0.20013600       6.08391000
 Li      -1.77662000       3.16912000       5.93637000
@@ -2419,7 +2419,7 @@ Cl      11.17100000      10.66670000       7.88459000
 Cl       3.67847000      15.63690000      10.41080000
 Cl      13.11540000      14.14690000       7.82341000
 240
-Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production source_frame_index=50 relative_time_ps=5.0 pbc="T T T"
+Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production display_name="Li₃YCl₆ — M3GNet GPU — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=50 relative_time_ps=5.0 pbc="T T T"
 Li       3.60551000      -0.23579800      -9.54188000
 Li       7.70477000       0.14853400       8.57677000
 Li      -1.66116000       3.02634000       5.98696000
@@ -2661,7 +2661,7 @@ Cl      11.36940000      10.89110000       7.44915000
 Cl       3.51807000      15.40810000      10.69590000
 Cl      13.14870000      14.10040000       7.37442000
 240
-Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production source_frame_index=55 relative_time_ps=5.5 pbc="T T T"
+Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production display_name="Li₃YCl₆ — M3GNet GPU — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=55 relative_time_ps=5.5 pbc="T T T"
 Li       3.59445000      -0.39344100     -11.49310000
 Li       9.35252000      -1.28845000       8.53579000
 Li      -1.72957000       3.34709000       6.22845000
@@ -2903,7 +2903,7 @@ Cl      11.57140000      10.69080000       7.78950000
 Cl       3.41794000      15.20530000      10.35730000
 Cl      13.35120000      14.34240000       7.51285000
 240
-Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production source_frame_index=60 relative_time_ps=6.0 pbc="T T T"
+Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production display_name="Li₃YCl₆ — M3GNet GPU — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=60 relative_time_ps=6.0 pbc="T T T"
 Li       3.49051000      -0.10974800     -10.07680000
 Li       7.04681000       0.03357170       8.29488000
 Li      -2.88858000       3.60413000       5.81834000
@@ -3145,7 +3145,7 @@ Cl      11.49490000      10.90040000       7.41051000
 Cl       3.28376000      15.12100000      10.44260000
 Cl      13.51740000      14.21740000       7.50535000
 240
-Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production source_frame_index=65 relative_time_ps=6.5 pbc="T T T"
+Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production display_name="Li₃YCl₆ — M3GNet GPU — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=65 relative_time_ps=6.5 pbc="T T T"
 Li       3.62878000      -0.12215400      -9.91839000
 Li       7.36759000       0.10801100       6.50988000
 Li      -2.06681000       3.24895000       5.42241000
@@ -3387,7 +3387,7 @@ Cl      11.32980000      10.67460000       7.30496000
 Cl       3.48719000      15.68530000      10.77300000
 Cl      13.27140000      13.88020000       7.49890000
 240
-Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production source_frame_index=70 relative_time_ps=7.0 pbc="T T T"
+Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production display_name="Li₃YCl₆ — M3GNet GPU — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=70 relative_time_ps=7.0 pbc="T T T"
 Li       2.04393000       0.10272500      -9.12147000
 Li       7.91248000       0.02706190       5.68005000
 Li      -1.79536000       2.98510000       5.63556000
@@ -3629,7 +3629,7 @@ Cl      11.31580000      10.94970000       7.34579000
 Cl       3.40935000      14.81620000      10.48650000
 Cl      13.02150000      14.39030000       7.42658000
 240
-Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production source_frame_index=75 relative_time_ps=7.5 pbc="T T T"
+Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production display_name="Li₃YCl₆ — M3GNet GPU — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=75 relative_time_ps=7.5 pbc="T T T"
 Li       4.08053000       0.37651900     -11.84020000
 Li       7.24971000      -0.23957500       6.12885000
 Li      -1.67364000       3.60647000       6.09644000
@@ -3871,7 +3871,7 @@ Cl      11.41670000      11.09200000       7.16738000
 Cl       3.44429000      14.83740000      10.26040000
 Cl      13.27890000      14.19270000       7.26219000
 240
-Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production source_frame_index=80 relative_time_ps=8.0 pbc="T T T"
+Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production display_name="Li₃YCl₆ — M3GNet GPU — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=80 relative_time_ps=8.0 pbc="T T T"
 Li       3.85993000       0.33499200     -12.88500000
 Li       7.25504000      -0.15073100       9.20529000
 Li      -1.92401000       2.76821000       5.45329000
@@ -4113,7 +4113,7 @@ Cl      11.15850000      10.68400000       7.18145000
 Cl       3.46388000      15.76990000      10.57130000
 Cl      12.83340000      13.73470000       7.23513000
 240
-Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production source_frame_index=85 relative_time_ps=8.5 pbc="T T T"
+Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production display_name="Li₃YCl₆ — M3GNet GPU — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=85 relative_time_ps=8.5 pbc="T T T"
 Li       3.92807000      -0.00636356     -12.29910000
 Li       7.47417000       0.34439000       8.98995000
 Li      -4.05347000       1.52518000       6.23615000
@@ -4355,7 +4355,7 @@ Cl      11.33250000      10.99000000       7.43770000
 Cl       3.96974000      15.21000000      10.72550000
 Cl      13.00890000      14.13310000       7.43813000
 240
-Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production source_frame_index=90 relative_time_ps=9.0 pbc="T T T"
+Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production display_name="Li₃YCl₆ — M3GNet GPU — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=90 relative_time_ps=9.0 pbc="T T T"
 Li       3.46609000      -0.04690530     -12.01850000
 Li       6.87896000      -0.26639500       9.21452000
 Li      -2.08094000       3.42052000       5.58090000
@@ -4597,7 +4597,7 @@ Cl      10.95500000      10.38410000       7.73013000
 Cl       3.73036000      14.96800000      10.07930000
 Cl      12.99200000      14.22700000       7.52119000
 240
-Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production source_frame_index=95 relative_time_ps=9.5 pbc="T T T"
+Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production display_name="Li₃YCl₆ — M3GNet GPU — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=95 relative_time_ps=9.5 pbc="T T T"
 Li       3.74978000      -1.21587000     -12.44920000
 Li       7.28575000      -0.06878490       9.08851000
 Li      -1.73901000       3.89098000       5.79725000
@@ -4839,7 +4839,7 @@ Cl      11.24520000      10.78190000       7.52331000
 Cl       3.63763000      15.45830000      10.62050000
 Cl      12.97660000      14.08790000       7.05791000
 240
-Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production source_frame_index=100 relative_time_ps=10.0 pbc="T T T"
+Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production display_name="Li₃YCl₆ — M3GNet GPU — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=100 relative_time_ps=10.0 pbc="T T T"
 Li       3.41319000       0.39706200     -12.62290000
 Li       7.52600000      -0.20500200       8.44537000
 Li      -2.62634000       3.20635000       5.74795000
@@ -5081,7 +5081,7 @@ Cl      11.40980000      10.94090000       7.28607000
 Cl       3.68587000      15.01780000      10.64310000
 Cl      13.37380000      14.19510000       7.23801000
 240
-Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production source_frame_index=105 relative_time_ps=10.5 pbc="T T T"
+Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production display_name="Li₃YCl₆ — M3GNet GPU — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=105 relative_time_ps=10.5 pbc="T T T"
 Li       3.72739000      -0.01190400     -12.30810000
 Li       7.63207000       0.17668300       6.66234000
 Li      -2.20862000       3.45050000       5.37338000
@@ -5323,7 +5323,7 @@ Cl      11.55630000      10.99310000       7.54770000
 Cl       3.74173000      15.13530000      10.42160000
 Cl      12.90480000      14.27360000       7.47685000
 240
-Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production source_frame_index=110 relative_time_ps=11.0 pbc="T T T"
+Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production display_name="Li₃YCl₆ — M3GNet GPU — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=110 relative_time_ps=11.0 pbc="T T T"
 Li       3.91243000      -0.29127700     -13.07090000
 Li       7.43327000      -0.16122100       6.54268000
 Li      -1.88463000       3.54608000       6.19624000
@@ -5565,7 +5565,7 @@ Cl      11.37640000      10.81250000       7.50319000
 Cl       3.67997000      15.43800000      10.68080000
 Cl      12.95890000      13.97590000       7.29322000
 240
-Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production source_frame_index=115 relative_time_ps=11.5 pbc="T T T"
+Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production display_name="Li₃YCl₆ — M3GNet GPU — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=115 relative_time_ps=11.5 pbc="T T T"
 Li       3.42147000       0.29082600     -15.18470000
 Li       7.66617000      -0.10929800       8.81086000
 Li      -2.08169000       3.09365000       5.89170000
@@ -5807,7 +5807,7 @@ Cl      10.87120000      11.17660000       7.04965000
 Cl       3.42855000      15.45830000      10.47150000
 Cl      12.91050000      14.10830000       7.22762000
 240
-Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production source_frame_index=120 relative_time_ps=12.0 pbc="T T T"
+Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production display_name="Li₃YCl₆ — M3GNet GPU — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=120 relative_time_ps=12.0 pbc="T T T"
 Li       3.61068000       0.05722850     -15.26310000
 Li       7.71453000      -0.03801830       8.75321000
 Li      -2.50233000       2.82806000       5.71270000
@@ -6049,7 +6049,7 @@ Cl      11.28190000      10.61490000       7.25145000
 Cl       3.65378000      15.29360000      10.60250000
 Cl      12.91670000      14.14640000       7.07713000
 240
-Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production source_frame_index=125 relative_time_ps=12.5 pbc="T T T"
+Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production display_name="Li₃YCl₆ — M3GNet GPU — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=125 relative_time_ps=12.5 pbc="T T T"
 Li       1.56426000      -0.87712600     -15.58810000
 Li       7.56932000       0.51626000       8.63401000
 Li      -2.09916000       3.38223000       5.92460000
@@ -6291,7 +6291,7 @@ Cl      11.39030000      10.86220000       7.20546000
 Cl       3.43917000      15.38770000      10.40520000
 Cl      13.17860000      13.88910000       7.67488000
 240
-Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production source_frame_index=130 relative_time_ps=13.0 pbc="T T T"
+Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production display_name="Li₃YCl₆ — M3GNet GPU — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=130 relative_time_ps=13.0 pbc="T T T"
 Li       3.18972000      -0.13071400     -15.20860000
 Li       7.22802000       0.07883650       9.09530000
 Li      -2.21479000       3.36675000       8.69452000
@@ -6533,7 +6533,7 @@ Cl      11.04610000      10.72880000       7.86934000
 Cl       3.44042000      15.12220000      10.51940000
 Cl      12.98080000      13.91460000       7.41916000
 240
-Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production source_frame_index=135 relative_time_ps=13.5 pbc="T T T"
+Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production display_name="Li₃YCl₆ — M3GNet GPU — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=135 relative_time_ps=13.5 pbc="T T T"
 Li       3.28441000      -0.04943590     -14.92060000
 Li       7.32696000      -0.31401400       8.98600000
 Li      -1.84736000       3.40300000       9.47292000
@@ -6775,7 +6775,7 @@ Cl      11.43720000      11.06790000       7.47641000
 Cl       3.80786000      15.25590000      10.10460000
 Cl      13.20420000      14.32140000       7.34000000
 240
-Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production source_frame_index=140 relative_time_ps=14.0 pbc="T T T"
+Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production display_name="Li₃YCl₆ — M3GNet GPU — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=140 relative_time_ps=14.0 pbc="T T T"
 Li       3.70429000      -0.27536400     -15.02730000
 Li       7.43253000       0.08285530       9.19165000
 Li      -2.67074000       3.21164000      12.24350000
@@ -7017,7 +7017,7 @@ Cl      11.22370000      10.79850000       7.39970000
 Cl       3.95489000      15.01010000      10.20260000
 Cl      13.28360000      14.27670000       7.46364000
 240
-Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production source_frame_index=145 relative_time_ps=14.5 pbc="T T T"
+Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production display_name="Li₃YCl₆ — M3GNet GPU — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=145 relative_time_ps=14.5 pbc="T T T"
 Li       2.72119000       0.13858100     -15.35810000
 Li       7.31443000       0.34693800       8.87273000
 Li      -1.94044000       3.13886000      12.30150000
@@ -7259,7 +7259,7 @@ Cl      10.86600000      11.06110000       7.08093000
 Cl       3.87019000      14.98730000       9.83157000
 Cl      13.41990000      13.97110000       7.59061000
 240
-Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production source_frame_index=150 relative_time_ps=15.0 pbc="T T T"
+Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production display_name="Li₃YCl₆ — M3GNet GPU — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=150 relative_time_ps=15.0 pbc="T T T"
 Li       3.81327000       0.15267600     -12.71260000
 Li       7.24310000      -0.11277400       8.56311000
 Li      -1.74542000       3.33129000      12.48260000
@@ -7501,7 +7501,7 @@ Cl      10.88730000      10.72680000       7.78148000
 Cl       3.55352000      15.07500000      10.24620000
 Cl      12.72920000      13.71910000       7.50498000
 240
-Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production source_frame_index=155 relative_time_ps=15.5 pbc="T T T"
+Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production display_name="Li₃YCl₆ — M3GNet GPU — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=155 relative_time_ps=15.5 pbc="T T T"
 Li       3.62058000       0.21861600     -12.39230000
 Li       7.12498000       0.16909900       9.12287000
 Li      -2.19670000       3.34371000      12.74410000
@@ -7743,7 +7743,7 @@ Cl      11.17040000      11.23410000       7.38941000
 Cl       3.62752000      14.93860000      10.43990000
 Cl      13.32100000      14.16710000       7.37302000
 240
-Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production source_frame_index=160 relative_time_ps=16.0 pbc="T T T"
+Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production display_name="Li₃YCl₆ — M3GNet GPU — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=160 relative_time_ps=16.0 pbc="T T T"
 Li       4.76580000      -1.16616000     -11.85540000
 Li       7.81423000      -0.15526300       9.32348000
 Li      -1.98079000       3.49971000      12.65390000
@@ -7985,7 +7985,7 @@ Cl      11.15440000      10.32780000       7.54946000
 Cl       3.88068000      15.14760000      10.66040000
 Cl      13.16250000      14.07360000       7.32366000
 240
-Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production source_frame_index=165 relative_time_ps=16.5 pbc="T T T"
+Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production display_name="Li₃YCl₆ — M3GNet GPU — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=165 relative_time_ps=16.5 pbc="T T T"
 Li       3.53257000       0.37386800     -12.88410000
 Li       7.73067000      -0.24803400       8.77381000
 Li      -2.05635000       3.41701000      12.72960000
@@ -8227,7 +8227,7 @@ Cl      11.08810000      10.72410000       7.27967000
 Cl       3.77990000      15.15560000      10.42660000
 Cl      12.95460000      14.12490000       7.04159000
 240
-Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production source_frame_index=170 relative_time_ps=17.0 pbc="T T T"
+Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production display_name="Li₃YCl₆ — M3GNet GPU — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=170 relative_time_ps=17.0 pbc="T T T"
 Li       3.85659000       0.72739400     -12.50190000
 Li       7.58434000      -0.03020840       9.10463000
 Li      -2.19946000       3.40617000      11.96990000
@@ -8469,7 +8469,7 @@ Cl      11.47860000      10.92850000       7.37295000
 Cl       3.50290000      14.98210000      10.61530000
 Cl      13.25120000      13.99160000       7.31606000
 240
-Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production source_frame_index=175 relative_time_ps=17.5 pbc="T T T"
+Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production display_name="Li₃YCl₆ — M3GNet GPU — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=175 relative_time_ps=17.5 pbc="T T T"
 Li       3.88354000      -0.03486900     -15.69930000
 Li       7.34720000      -0.33552200       6.14265000
 Li       2.17254000       3.56584000       8.36066000
@@ -8711,7 +8711,7 @@ Cl      10.99200000      11.28850000       7.23210000
 Cl       3.74906000      15.24770000      10.41410000
 Cl      13.05590000      14.10190000       7.56832000
 240
-Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production source_frame_index=180 relative_time_ps=18.0 pbc="T T T"
+Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production display_name="Li₃YCl₆ — M3GNet GPU — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=180 relative_time_ps=18.0 pbc="T T T"
 Li       3.40008000      -0.17769400     -15.29760000
 Li       7.31322000      -0.83484300       5.99764000
 Li       1.68407000       3.85302000       5.17672000
@@ -8953,7 +8953,7 @@ Cl      11.31670000      10.71840000       7.64174000
 Cl       3.26952000      15.13050000      10.23150000
 Cl      13.05010000      14.29590000       8.09694000
 240
-Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production source_frame_index=185 relative_time_ps=18.5 pbc="T T T"
+Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production display_name="Li₃YCl₆ — M3GNet GPU — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=185 relative_time_ps=18.5 pbc="T T T"
 Li       1.50986000       3.10153000     -15.09850000
 Li       7.41153000       0.22373900       2.49168000
 Li       1.64259000       3.20579000       5.94777000
@@ -9195,7 +9195,7 @@ Cl      11.62420000      10.93380000       7.87859000
 Cl       3.72494000      15.28610000      10.60460000
 Cl      13.47690000      13.86210000       7.38481000
 240
-Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production source_frame_index=190 relative_time_ps=19.0 pbc="T T T"
+Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production display_name="Li₃YCl₆ — M3GNet GPU — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=190 relative_time_ps=19.0 pbc="T T T"
 Li       2.15152000       3.53524000     -12.52270000
 Li       7.33239000       0.25503700      -0.02518360
 Li       1.29777000       4.37873000       6.31237000
@@ -9437,7 +9437,7 @@ Cl      10.89640000      10.36940000       7.87305000
 Cl       3.98600000      14.78190000      10.50750000
 Cl      12.92590000      14.28830000       7.51204000
 240
-Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production source_frame_index=195 relative_time_ps=19.5 pbc="T T T"
+Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production display_name="Li₃YCl₆ — M3GNet GPU — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=195 relative_time_ps=19.5 pbc="T T T"
 Li       1.38485000       3.20685000     -12.00410000
 Li       7.40514000      -0.26657200      -0.24796100
 Li       1.69856000       3.31239000       9.02611000
@@ -9679,7 +9679,7 @@ Cl      11.05050000      11.03380000       7.74145000
 Cl       3.46417000      15.30910000      10.52590000
 Cl      13.13710000      14.28120000       7.75292000
 240
-Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production source_frame_index=200 relative_time_ps=20.0 pbc="T T T"
+Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production display_name="Li₃YCl₆ — M3GNet GPU — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=200 relative_time_ps=20.0 pbc="T T T"
 Li       1.75599000       3.13608000     -12.36880000
 Li       7.59263000      -0.52741900      -0.03299570
 Li       1.64780000       2.72099000       8.95114000
@@ -9921,7 +9921,7 @@ Cl      11.13170000      10.92920000       7.38718000
 Cl       4.03252000      15.19970000      10.49960000
 Cl      12.87060000      14.45490000       7.46016000
 240
-Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production source_frame_index=205 relative_time_ps=20.5 pbc="T T T"
+Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production display_name="Li₃YCl₆ — M3GNet GPU — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=205 relative_time_ps=20.5 pbc="T T T"
 Li       1.66075000       3.51331000     -12.45440000
 Li       7.29466000      -0.24300000      -0.27123800
 Li       1.84693000       3.12676000       8.14482000
@@ -10163,7 +10163,7 @@ Cl      10.86120000      10.89550000       7.56133000
 Cl       3.74199000      14.97420000      10.58520000
 Cl      12.96620000      14.43630000       7.69120000
 240
-Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production source_frame_index=210 relative_time_ps=21.0 pbc="T T T"
+Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production display_name="Li₃YCl₆ — M3GNet GPU — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=210 relative_time_ps=21.0 pbc="T T T"
 Li       1.75531000       3.40578000     -12.62380000
 Li       7.39753000      -0.46098300       0.14961800
 Li       2.08103000       3.25880000       8.21524000
@@ -10405,7 +10405,7 @@ Cl      11.02030000      10.87400000       7.63864000
 Cl       3.53355000      15.12850000      10.50580000
 Cl      12.99670000      14.33420000       7.44709000
 240
-Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production source_frame_index=215 relative_time_ps=21.5 pbc="T T T"
+Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production display_name="Li₃YCl₆ — M3GNet GPU — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=215 relative_time_ps=21.5 pbc="T T T"
 Li       2.03273000       3.45156000     -12.69440000
 Li       7.28428000       0.08621570       2.57647000
 Li       1.60361000       3.73555000       6.16436000
@@ -10647,7 +10647,7 @@ Cl      11.64770000      10.90350000       7.05280000
 Cl       3.73896000      15.12830000      10.61160000
 Cl      13.10490000      14.16150000       7.47898000
 240
-Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production source_frame_index=220 relative_time_ps=22.0 pbc="T T T"
+Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production display_name="Li₃YCl₆ — M3GNet GPU — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=220 relative_time_ps=22.0 pbc="T T T"
 Li       1.64968000       3.26392000     -12.68430000
 Li       7.23184000      -0.19713100       0.18231700
 Li       2.20154000       3.40928000       6.40585000
@@ -10889,7 +10889,7 @@ Cl      10.85550000      10.89520000       7.33055000
 Cl       3.94294000      15.41630000      10.69040000
 Cl      13.14090000      14.40840000       7.47654000
 240
-Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production source_frame_index=225 relative_time_ps=22.5 pbc="T T T"
+Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production display_name="Li₃YCl₆ — M3GNet GPU — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=225 relative_time_ps=22.5 pbc="T T T"
 Li       1.19590000       3.46758000     -12.07220000
 Li       7.34593000      -0.06823050       0.26557800
 Li       1.45132000       3.38105000       8.81760000
@@ -11131,7 +11131,7 @@ Cl      11.53300000      10.94160000       7.37226000
 Cl       3.52131000      15.81990000      10.87450000
 Cl      13.22300000      14.17660000       7.31101000
 240
-Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production source_frame_index=230 relative_time_ps=23.0 pbc="T T T"
+Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production display_name="Li₃YCl₆ — M3GNet GPU — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=230 relative_time_ps=23.0 pbc="T T T"
 Li       1.88293000       3.10313000      -9.66447000
 Li       7.08961000       0.22624000      -0.15340200
 Li       1.34718000       3.03189000       9.33703000
@@ -11373,7 +11373,7 @@ Cl      11.19730000      10.54020000       7.49017000
 Cl       3.79455000      15.21390000      11.11700000
 Cl      12.89210000      14.28850000       6.88847000
 240
-Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production source_frame_index=235 relative_time_ps=23.5 pbc="T T T"
+Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production display_name="Li₃YCl₆ — M3GNet GPU — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=235 relative_time_ps=23.5 pbc="T T T"
 Li       1.89985000       3.55453000      -9.01837000
 Li       7.33959000      -0.19819900       2.93392000
 Li       2.03637000       3.24652000      11.71640000
@@ -11615,7 +11615,7 @@ Cl      11.17630000      10.73810000       7.68840000
 Cl       3.70107000      15.02490000      10.46620000
 Cl      13.12880000      14.01130000       7.50655000
 240
-Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production source_frame_index=240 relative_time_ps=24.0 pbc="T T T"
+Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production display_name="Li₃YCl₆ — M3GNet GPU — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=240 relative_time_ps=24.0 pbc="T T T"
 Li       0.96298500       2.85550000      -9.20340000
 Li       7.59504000       0.27831300       2.86857000
 Li       1.48960000       3.38287000      11.92410000
@@ -11857,7 +11857,7 @@ Cl      10.98740000      10.69490000       7.42414000
 Cl       3.98521000      14.72620000      10.49310000
 Cl      13.07920000      14.53230000       6.91892000
 240
-Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production source_frame_index=245 relative_time_ps=24.5 pbc="T T T"
+Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production display_name="Li₃YCl₆ — M3GNet GPU — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=245 relative_time_ps=24.5 pbc="T T T"
 Li       2.28198000       3.19367000      -9.09441000
 Li       7.97650000      -0.11160000       3.09315000
 Li       1.49330000       3.57174000      12.21820000
@@ -12099,7 +12099,7 @@ Cl      10.95500000      10.77130000       7.52333000
 Cl       3.31283000      15.27580000      10.54830000
 Cl      13.24160000      14.14970000       7.35515000
 240
-Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production source_frame_index=250 relative_time_ps=25.0 pbc="T T T"
+Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production display_name="Li₃YCl₆ — M3GNet GPU — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=250 relative_time_ps=25.0 pbc="T T T"
 Li       1.53210000       1.50559000      -8.74768000
 Li       7.22120000       0.25599800       3.12013000
 Li       1.51456000       3.53949000      12.43630000
@@ -12341,7 +12341,7 @@ Cl      11.16980000      10.54250000       7.31623000
 Cl       3.52406000      15.22770000      10.62660000
 Cl      13.30170000      14.23510000       7.31172000
 240
-Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production source_frame_index=255 relative_time_ps=25.5 pbc="T T T"
+Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production display_name="Li₃YCl₆ — M3GNet GPU — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=255 relative_time_ps=25.5 pbc="T T T"
 Li       1.63731000       3.69155000      -6.56555000
 Li       7.67768000       0.07415210       2.35217000
 Li       1.86441000       3.58653000      12.19090000
@@ -12583,7 +12583,7 @@ Cl      11.20110000      10.88670000       7.44743000
 Cl       3.23703000      15.11430000      10.35650000
 Cl      13.40480000      14.10930000       7.60495000
 240
-Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production source_frame_index=260 relative_time_ps=26.0 pbc="T T T"
+Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production display_name="Li₃YCl₆ — M3GNet GPU — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=260 relative_time_ps=26.0 pbc="T T T"
 Li       1.84602000       2.78795000      -9.02473000
 Li       7.20332000      -0.32838700       3.17654000
 Li       1.58371000       3.39425000      11.92480000
@@ -12825,7 +12825,7 @@ Cl      11.07380000      10.97720000       7.46802000
 Cl       3.94880000      15.34700000      10.39150000
 Cl      12.94240000      14.11870000       7.28507000
 240
-Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production source_frame_index=265 relative_time_ps=26.5 pbc="T T T"
+Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production display_name="Li₃YCl₆ — M3GNet GPU — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=265 relative_time_ps=26.5 pbc="T T T"
 Li       1.62310000       3.41572000      -9.43748000
 Li       9.52431000      -0.77402800       2.51104000
 Li       1.76172000       3.15659000      11.66960000
@@ -13067,7 +13067,7 @@ Cl      11.15820000      10.85380000       7.17142000
 Cl       3.42263000      15.12240000      10.61620000
 Cl      13.29140000      14.46640000       7.37612000
 240
-Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production source_frame_index=270 relative_time_ps=27.0 pbc="T T T"
+Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production display_name="Li₃YCl₆ — M3GNet GPU — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=270 relative_time_ps=27.0 pbc="T T T"
 Li       1.82493000       3.52552000      -8.99526000
 Li       7.00487000      -0.21292700       3.42220000
 Li       2.05979000       3.28299000      11.96460000
@@ -13309,7 +13309,7 @@ Cl      11.12430000      10.88250000       7.53582000
 Cl       3.66452000      15.25480000      10.68080000
 Cl      13.23390000      14.23530000       7.58061000
 240
-Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production source_frame_index=275 relative_time_ps=27.5 pbc="T T T"
+Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production display_name="Li₃YCl₆ — M3GNet GPU — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=275 relative_time_ps=27.5 pbc="T T T"
 Li       1.91447000       3.23530000      -9.63618000
 Li       7.29295000      -0.31089400       3.61702000
 Li       1.69241000       3.54618000      10.40750000
@@ -13551,7 +13551,7 @@ Cl      11.31020000      10.74820000       7.31632000
 Cl       3.95871000      15.11440000      10.80000000
 Cl      13.04060000      14.27000000       7.39332000
 240
-Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production source_frame_index=280 relative_time_ps=28.0 pbc="T T T"
+Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production display_name="Li₃YCl₆ — M3GNet GPU — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=280 relative_time_ps=28.0 pbc="T T T"
 Li       2.24560000       3.34876000      -8.84126000
 Li       7.80882000      -0.08745820       3.13548000
 Li       1.69986000       2.99472000      12.22920000
@@ -13793,7 +13793,7 @@ Cl      11.00630000      10.79320000       7.46984000
 Cl       3.65801000      15.46080000      10.62910000
 Cl      13.59320000      13.72520000       7.71211000
 240
-Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production source_frame_index=285 relative_time_ps=28.5 pbc="T T T"
+Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production display_name="Li₃YCl₆ — M3GNet GPU — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=285 relative_time_ps=28.5 pbc="T T T"
 Li       2.08834000       2.95229000      -9.00862000
 Li       7.71869000      -0.30671000       2.95324000
 Li       1.80481000       3.41828000      12.34710000
@@ -14035,7 +14035,7 @@ Cl      11.14190000      10.78500000       7.83140000
 Cl       3.37311000      15.23410000      10.33520000
 Cl      12.84570000      13.90740000       7.15155000
 240
-Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production source_frame_index=290 relative_time_ps=29.0 pbc="T T T"
+Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production display_name="Li₃YCl₆ — M3GNet GPU — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=290 relative_time_ps=29.0 pbc="T T T"
 Li       1.56140000       3.20105000      -8.68163000
 Li       7.34317000       0.07137610       5.61984000
 Li       2.01200000       3.34402000      11.78800000
@@ -14277,7 +14277,7 @@ Cl      11.09710000      11.10700000       7.19885000
 Cl       3.65383000      15.39760000      10.68090000
 Cl      13.38770000      14.22060000       7.34322000
 240
-Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production source_frame_index=295 relative_time_ps=29.5 pbc="T T T"
+Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production display_name="Li₃YCl₆ — M3GNet GPU — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=295 relative_time_ps=29.5 pbc="T T T"
 Li       3.08138000       2.37820000     -12.19320000
 Li       6.89294000       0.61858600       5.56951000
 Li       1.48341000       3.05645000       9.15320000
@@ -14519,7 +14519,7 @@ Cl      11.06450000      10.86300000       7.56251000
 Cl       3.42359000      15.37010000      10.44690000
 Cl      13.28660000      13.96070000       7.88383000
 240
-Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production source_frame_index=300 relative_time_ps=30.0 pbc="T T T"
+Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production display_name="Li₃YCl₆ — M3GNet GPU — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=300 relative_time_ps=30.0 pbc="T T T"
 Li       1.78379000       3.49769000     -12.08720000
 Li       7.71817000       0.32190600       5.94062000
 Li       2.15329000       3.21997000       8.84532000
@@ -14761,7 +14761,7 @@ Cl      10.94040000      11.05750000       7.27721000
 Cl       3.40696000      15.06970000      10.47020000
 Cl      12.91080000      14.18560000       7.69470000
 240
-Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production source_frame_index=305 relative_time_ps=30.5 pbc="T T T"
+Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production display_name="Li₃YCl₆ — M3GNet GPU — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=305 relative_time_ps=30.5 pbc="T T T"
 Li       2.04165000       2.98597000      -9.97999000
 Li       7.33918000       0.45326400       6.17055000
 Li       2.07111000       3.24535000       9.46312000
@@ -15003,7 +15003,7 @@ Cl      10.85440000      10.36600000       8.16042000
 Cl       3.47305000      15.13530000      10.63310000
 Cl      13.23500000      13.97580000       7.66057000
 240
-Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production source_frame_index=310 relative_time_ps=31.0 pbc="T T T"
+Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production display_name="Li₃YCl₆ — M3GNet GPU — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=310 relative_time_ps=31.0 pbc="T T T"
 Li       2.02913000       3.14614000      -9.06455000
 Li       7.50840000      -0.36573900       6.34422000
 Li       1.48730000       3.35097000       9.34362000
@@ -15245,7 +15245,7 @@ Cl      11.10900000      10.68130000       6.64304000
 Cl       3.71533000      15.03200000      10.52290000
 Cl      13.48040000      14.02390000       7.29700000
 240
-Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production source_frame_index=315 relative_time_ps=31.5 pbc="T T T"
+Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production display_name="Li₃YCl₆ — M3GNet GPU — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=315 relative_time_ps=31.5 pbc="T T T"
 Li       1.82992000       2.73834000      -9.68838000
 Li       7.37142000       0.16888300       5.84234000
 Li       1.64156000       3.13872000       9.52933000
@@ -15487,7 +15487,7 @@ Cl      11.02690000      10.64200000       7.77390000
 Cl       3.94802000      15.32050000      10.67130000
 Cl      13.21170000      13.84400000       7.63791000
 240
-Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production source_frame_index=320 relative_time_ps=32.0 pbc="T T T"
+Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production display_name="Li₃YCl₆ — M3GNet GPU — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=320 relative_time_ps=32.0 pbc="T T T"
 Li       1.50325000       2.80324000      -9.56259000
 Li       7.25222000      -0.28719700       6.37749000
 Li       1.71482000       3.43316000       8.60425000
@@ -15729,7 +15729,7 @@ Cl      11.20600000      11.08410000       7.45460000
 Cl       3.86429000      15.23590000      10.66590000
 Cl      13.12690000      14.15030000       7.54343000
 240
-Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production source_frame_index=325 relative_time_ps=32.5 pbc="T T T"
+Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production display_name="Li₃YCl₆ — M3GNet GPU — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=325 relative_time_ps=32.5 pbc="T T T"
 Li       2.05356000       3.10362000      -9.19965000
 Li       7.48683000      -0.28513600       7.99528000
 Li       1.72268000       3.13011000      11.24030000
@@ -15971,7 +15971,7 @@ Cl      11.19610000      10.62640000       8.02326000
 Cl       3.65601000      15.48460000      10.89930000
 Cl      12.94380000      13.83500000       7.30707000
 240
-Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production source_frame_index=330 relative_time_ps=33.0 pbc="T T T"
+Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production display_name="Li₃YCl₆ — M3GNet GPU — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=330 relative_time_ps=33.0 pbc="T T T"
 Li       1.77762000       3.24576000      -8.78881000
 Li       6.91326000      -0.10031800       8.95577000
 Li       1.61186000       3.76173000      12.72550000
@@ -16213,7 +16213,7 @@ Cl      11.52010000      11.00310000       7.32409000
 Cl       3.82239000      15.07850000      10.70840000
 Cl      13.24390000      14.00360000       7.35140000
 240
-Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production source_frame_index=335 relative_time_ps=33.5 pbc="T T T"
+Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production display_name="Li₃YCl₆ — M3GNet GPU — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=335 relative_time_ps=33.5 pbc="T T T"
 Li       1.85263000       2.93884000      -8.94652000
 Li       7.73945000       0.41123100       8.38249000
 Li       1.51911000       3.34734000      12.22890000
@@ -16455,7 +16455,7 @@ Cl      11.01220000      10.84480000       7.84445000
 Cl       3.66870000      15.09830000      10.47300000
 Cl      13.14690000      14.22920000       7.88226000
 240
-Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production source_frame_index=340 relative_time_ps=34.0 pbc="T T T"
+Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production display_name="Li₃YCl₆ — M3GNet GPU — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=340 relative_time_ps=34.0 pbc="T T T"
 Li       1.74091000       3.39248000      -9.48664000
 Li       7.64204000       0.19815300       9.73336000
 Li       1.92672000       3.42290000      11.83570000
@@ -16697,7 +16697,7 @@ Cl      11.14940000      10.66940000       7.64609000
 Cl       3.50560000      15.58470000      10.61260000
 Cl      13.17740000      14.09230000       7.78911000
 240
-Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production source_frame_index=345 relative_time_ps=34.5 pbc="T T T"
+Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production display_name="Li₃YCl₆ — M3GNet GPU — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=345 relative_time_ps=34.5 pbc="T T T"
 Li       1.98736000       3.41769000      -9.45659000
 Li       7.68551000      -0.15169900       8.92090000
 Li       1.87778000       3.26768000      11.80800000
@@ -16939,7 +16939,7 @@ Cl      11.03040000      10.88550000       7.36574000
 Cl       3.39743000      15.67820000      10.55830000
 Cl      13.50500000      13.82210000       7.93542000
 240
-Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production source_frame_index=350 relative_time_ps=35.0 pbc="T T T"
+Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production display_name="Li₃YCl₆ — M3GNet GPU — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=350 relative_time_ps=35.0 pbc="T T T"
 Li       1.98744000       3.28986000      -9.60278000
 Li       7.75927000       0.19304300       8.40701000
 Li       2.29909000       3.39903000      12.10180000
@@ -17181,7 +17181,7 @@ Cl      11.01410000      10.74400000       7.39963000
 Cl       3.74678000      14.72370000      11.06290000
 Cl      12.93510000      14.24870000       7.40137000
 240
-Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production source_frame_index=355 relative_time_ps=35.5 pbc="T T T"
+Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production display_name="Li₃YCl₆ — M3GNet GPU — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=355 relative_time_ps=35.5 pbc="T T T"
 Li       1.89595000       3.24078000      -9.98917000
 Li       7.86213000       0.22575400       8.93467000
 Li       2.00926000       2.77144000      11.33240000
@@ -17423,7 +17423,7 @@ Cl      11.04660000      10.87420000       7.80688000
 Cl       3.82349000      15.71370000      10.93000000
 Cl      12.87110000      13.82220000       7.69850000
 240
-Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production source_frame_index=360 relative_time_ps=36.0 pbc="T T T"
+Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production display_name="Li₃YCl₆ — M3GNet GPU — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=360 relative_time_ps=36.0 pbc="T T T"
 Li       1.54785000       3.19197000      -8.89079000
 Li       7.91092000      -0.01068310       8.93585000
 Li       1.76588000       3.73637000      12.50650000
@@ -17665,7 +17665,7 @@ Cl      11.02650000      10.78170000       7.27400000
 Cl       3.78936000      15.26760000      10.59870000
 Cl      13.05480000      13.87550000       7.68090000
 240
-Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production source_frame_index=365 relative_time_ps=36.5 pbc="T T T"
+Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production display_name="Li₃YCl₆ — M3GNet GPU — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=365 relative_time_ps=36.5 pbc="T T T"
 Li       1.85066000       3.41866000      -6.63914000
 Li       6.92368000       0.13616300       7.97175000
 Li       1.58488000       3.41824000      12.10280000
@@ -17907,7 +17907,7 @@ Cl      11.24840000      10.66220000       7.87555000
 Cl       3.58390000      15.23560000      10.48500000
 Cl      13.47600000      13.92300000       7.86282000
 240
-Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production source_frame_index=370 relative_time_ps=37.0 pbc="T T T"
+Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production display_name="Li₃YCl₆ — M3GNet GPU — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=370 relative_time_ps=37.0 pbc="T T T"
 Li       1.65011000       3.27759000      -5.86900000
 Li       7.84204000      -0.07892580       6.25612000
 Li       1.37695000       3.22190000      14.76980000
@@ -18149,7 +18149,7 @@ Cl      10.99690000      10.92310000       7.44497000
 Cl       3.53163000      15.41570000      10.57690000
 Cl      13.77230000      13.91950000       7.53006000
 240
-Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production source_frame_index=375 relative_time_ps=37.5 pbc="T T T"
+Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production display_name="Li₃YCl₆ — M3GNet GPU — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=375 relative_time_ps=37.5 pbc="T T T"
 Li       3.45685000       5.07608000      -6.54315000
 Li       7.49469000       0.10274400       5.75697000
 Li       1.32075000       3.42251000      14.89830000
@@ -18391,7 +18391,7 @@ Cl      10.97360000      10.77290000       7.60765000
 Cl       3.86308000      15.26600000      10.67470000
 Cl      13.06270000      13.77490000       7.28043000
 240
-Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production source_frame_index=380 relative_time_ps=38.0 pbc="T T T"
+Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production display_name="Li₃YCl₆ — M3GNet GPU — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=380 relative_time_ps=38.0 pbc="T T T"
 Li       3.00136000       6.75963000      -6.30023000
 Li       7.26388000       0.25877900       8.74283000
 Li       1.90767000       3.64491000      15.43310000
@@ -18633,7 +18633,7 @@ Cl      11.21590000      11.04950000       7.52926000
 Cl       3.91749000      15.36370000      10.70140000
 Cl      12.87410000      14.35940000       7.58376000
 240
-Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production source_frame_index=385 relative_time_ps=38.5 pbc="T T T"
+Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production display_name="Li₃YCl₆ — M3GNet GPU — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=385 relative_time_ps=38.5 pbc="T T T"
 Li       3.61227000       6.33958000      -6.40841000
 Li       7.28106000       0.21722200       9.25644000
 Li       1.23300000       2.98002000      15.02190000
@@ -18875,7 +18875,7 @@ Cl      11.12770000      10.49200000       7.55210000
 Cl       3.24776000      15.25530000      10.65080000
 Cl      13.39260000      13.89550000       7.35307000
 240
-Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production source_frame_index=390 relative_time_ps=39.0 pbc="T T T"
+Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production display_name="Li₃YCl₆ — M3GNet GPU — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=390 relative_time_ps=39.0 pbc="T T T"
 Li       3.36356000       6.58570000      -5.28583000
 Li       7.27426000      -0.04822210       9.27428000
 Li       1.63927000       3.51493000      17.85990000
@@ -19117,7 +19117,7 @@ Cl      10.92700000      10.60710000       7.91379000
 Cl       3.89853000      15.13830000      10.94060000
 Cl      12.75290000      14.13650000       7.61004000
 240
-Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production source_frame_index=395 relative_time_ps=39.5 pbc="T T T"
+Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production display_name="Li₃YCl₆ — M3GNet GPU — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=395 relative_time_ps=39.5 pbc="T T T"
 Li       3.60072000       6.39177000      -6.06415000
 Li       7.72578000      -0.13354300       9.09076000
 Li       1.30422000       3.45472000      17.57470000
@@ -19359,7 +19359,7 @@ Cl      11.13590000      10.67970000       7.64973000
 Cl       3.64515000      15.33320000      11.00370000
 Cl      13.21360000      14.37930000       7.76110000
 240
-Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production source_frame_index=400 relative_time_ps=40.0 pbc="T T T"
+Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production display_name="Li₃YCl₆ — M3GNet GPU — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=400 relative_time_ps=40.0 pbc="T T T"
 Li       3.20929000       6.35534000      -6.74277000
 Li       7.97737000       0.21886400       9.18939000
 Li       1.45334000       3.14726000      15.14620000
@@ -19601,7 +19601,7 @@ Cl      11.10310000      10.72430000       7.81864000
 Cl       3.59881000      15.61010000      10.69020000
 Cl      13.46780000      13.62330000       7.30742000
 240
-Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production source_frame_index=405 relative_time_ps=40.5 pbc="T T T"
+Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production display_name="Li₃YCl₆ — M3GNet GPU — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=405 relative_time_ps=40.5 pbc="T T T"
 Li       3.65925000       6.37223000      -7.75441000
 Li       7.58610000       0.03785370       9.45177000
 Li       1.53638000       2.75289000      14.84160000
@@ -19843,7 +19843,7 @@ Cl      11.02030000      10.94780000       7.55941000
 Cl       3.87416000      15.05520000      10.77460000
 Cl      12.90900000      14.17110000       7.35975000
 240
-Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production source_frame_index=410 relative_time_ps=41.0 pbc="T T T"
+Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production display_name="Li₃YCl₆ — M3GNet GPU — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=410 relative_time_ps=41.0 pbc="T T T"
 Li       3.60934000       6.28641000      -6.75791000
 Li       7.42609000       0.04349420      11.44920000
 Li       1.80170000       3.46192000      15.04470000
@@ -20085,7 +20085,7 @@ Cl      11.24710000      11.15010000       7.65404000
 Cl       3.62982000      15.38040000      10.73190000
 Cl      12.95310000      14.12250000       7.78811000
 240
-Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production source_frame_index=415 relative_time_ps=41.5 pbc="T T T"
+Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production display_name="Li₃YCl₆ — M3GNet GPU — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=415 relative_time_ps=41.5 pbc="T T T"
 Li       3.61751000       6.56269000      -8.50342000
 Li       7.18342000       0.46805700      12.16500000
 Li       1.80404000       2.92540000      15.49850000
@@ -20327,7 +20327,7 @@ Cl      11.50570000      10.97530000       7.14987000
 Cl       3.66422000      15.06190000      10.48350000
 Cl      13.65140000      13.98610000       7.73099000
 240
-Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production source_frame_index=420 relative_time_ps=42.0 pbc="T T T"
+Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production display_name="Li₃YCl₆ — M3GNet GPU — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=420 relative_time_ps=42.0 pbc="T T T"
 Li       3.85413000       6.59286000      -6.43034000
 Li       6.44274000      -0.00216272      12.00830000
 Li       0.79880300       2.73604000      14.88400000
@@ -20569,7 +20569,7 @@ Cl      11.39050000      10.67960000       7.77173000
 Cl       3.36525000      15.57020000      11.24090000
 Cl      12.92030000      14.46190000       7.35270000
 240
-Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production source_frame_index=425 relative_time_ps=42.5 pbc="T T T"
+Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production display_name="Li₃YCl₆ — M3GNet GPU — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=425 relative_time_ps=42.5 pbc="T T T"
 Li       1.54783000       9.51533000      -6.30237000
 Li       7.19750000       0.34570500      11.84730000
 Li       1.78892000       3.06650000      15.02050000
@@ -20811,7 +20811,7 @@ Cl      11.23170000      10.95620000       7.61216000
 Cl       3.78306000      15.42960000      10.80230000
 Cl      13.29140000      14.28860000       7.72417000
 240
-Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production source_frame_index=430 relative_time_ps=43.0 pbc="T T T"
+Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production display_name="Li₃YCl₆ — M3GNet GPU — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=430 relative_time_ps=43.0 pbc="T T T"
 Li       1.81301000       9.26804000      -5.88107000
 Li       7.45211000      -0.11123900      12.13450000
 Li       1.59833000       3.13817000      14.86500000
@@ -21053,7 +21053,7 @@ Cl      10.88960000      10.86290000       7.50056000
 Cl       3.76621000      15.74460000      10.69810000
 Cl      12.97830000      14.04140000       7.74523000
 240
-Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production source_frame_index=435 relative_time_ps=43.5 pbc="T T T"
+Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production display_name="Li₃YCl₆ — M3GNet GPU — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=435 relative_time_ps=43.5 pbc="T T T"
 Li       2.05878000       9.84446000      -3.50019000
 Li       7.04658000       0.01810010      14.05530000
 Li       1.32182000       3.29267000      14.88870000
@@ -21295,7 +21295,7 @@ Cl      11.25300000      11.15620000       7.12309000
 Cl       3.77672000      15.19380000      10.55620000
 Cl      13.11000000      14.22540000       7.37494000
 240
-Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production source_frame_index=440 relative_time_ps=44.0 pbc="T T T"
+Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production display_name="Li₃YCl₆ — M3GNet GPU — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=440 relative_time_ps=44.0 pbc="T T T"
 Li       2.42685000       9.42931000      -3.01946000
 Li       7.36309000      -0.02293160      15.03690000
 Li       1.95540000       3.61486000      12.54630000
@@ -21537,7 +21537,7 @@ Cl      11.11470000      10.90200000       7.48681000
 Cl       3.50823000      14.96120000      10.43360000
 Cl      13.12470000      14.35590000       7.73717000
 240
-Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production source_frame_index=445 relative_time_ps=44.5 pbc="T T T"
+Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production display_name="Li₃YCl₆ — M3GNet GPU — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=445 relative_time_ps=44.5 pbc="T T T"
 Li       2.34632000       9.79512000      -3.07274000
 Li       7.47468000      -0.02211860      14.93250000
 Li       2.13493000       3.04128000      15.38810000
@@ -21779,7 +21779,7 @@ Cl      11.51260000      10.79360000       7.48112000
 Cl       3.60624000      15.39210000      10.26170000
 Cl      13.03100000      14.11600000       7.40398000
 240
-Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production source_frame_index=450 relative_time_ps=45.0 pbc="T T T"
+Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production display_name="Li₃YCl₆ — M3GNet GPU — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=450 relative_time_ps=45.0 pbc="T T T"
 Li       1.56676000       9.97701000      -3.05968000
 Li       7.09411000       0.01518390      12.44520000
 Li       1.78365000       3.09622000      14.97740000
@@ -22021,7 +22021,7 @@ Cl      11.29420000      10.56650000       7.57785000
 Cl       3.84209000      15.28360000      10.86780000
 Cl      13.38900000      14.47720000       7.53100000
 240
-Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production source_frame_index=455 relative_time_ps=45.5 pbc="T T T"
+Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production display_name="Li₃YCl₆ — M3GNet GPU — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=455 relative_time_ps=45.5 pbc="T T T"
 Li       1.77563000       9.56438000      -6.41876000
 Li       7.52352000      -0.18922900      14.49430000
 Li       1.47661000       3.07208000      14.68630000
@@ -22263,7 +22263,7 @@ Cl      11.37930000      10.87250000       7.53543000
 Cl       3.39468000      15.40680000      10.82870000
 Cl      12.81590000      14.47070000       7.37033000
 240
-Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production source_frame_index=460 relative_time_ps=46.0 pbc="T T T"
+Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production display_name="Li₃YCl₆ — M3GNet GPU — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=460 relative_time_ps=46.0 pbc="T T T"
 Li       1.55606000       8.99585000      -6.26509000
 Li       7.30876000       0.06951080      14.71660000
 Li       1.79044000       3.68014000      14.98730000
@@ -22505,7 +22505,7 @@ Cl      11.43020000      10.65310000       7.45376000
 Cl       3.71270000      14.86460000      10.66430000
 Cl      13.25080000      13.54950000       7.57805000
 240
-Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production source_frame_index=465 relative_time_ps=46.5 pbc="T T T"
+Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production display_name="Li₃YCl₆ — M3GNet GPU — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=465 relative_time_ps=46.5 pbc="T T T"
 Li       1.88753000       9.36708000      -5.75511000
 Li       7.84323000       0.06047280      15.14320000
 Li       1.69241000       3.04699000      16.10100000
@@ -22747,7 +22747,7 @@ Cl      11.44560000      11.03270000       7.46929000
 Cl       3.82669000      15.23380000      10.81370000
 Cl      13.40770000      14.20560000       7.42719000
 240
-Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production source_frame_index=470 relative_time_ps=47.0 pbc="T T T"
+Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production display_name="Li₃YCl₆ — M3GNet GPU — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=470 relative_time_ps=47.0 pbc="T T T"
 Li       1.69412000       9.51941000      -5.85172000
 Li       7.86077000      -0.53375500      14.97480000
 Li       2.02911000       2.88377000      14.88050000
@@ -22989,7 +22989,7 @@ Cl      11.33580000      11.03840000       7.65050000
 Cl       3.36485000      15.39300000      10.39670000
 Cl      13.14910000      14.30650000       7.71167000
 240
-Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production source_frame_index=475 relative_time_ps=47.5 pbc="T T T"
+Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production display_name="Li₃YCl₆ — M3GNet GPU — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=475 relative_time_ps=47.5 pbc="T T T"
 Li       1.71595000       9.83937000      -3.23824000
 Li       7.61623000       0.51501200      14.73690000
 Li       1.84776000       3.66726000      17.76330000
@@ -23231,7 +23231,7 @@ Cl      11.30500000      10.78300000       7.06356000
 Cl       3.54617000      15.25490000      10.67570000
 Cl      12.84140000      14.15960000       7.41952000
 240
-Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production source_frame_index=480 relative_time_ps=48.0 pbc="T T T"
+Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production display_name="Li₃YCl₆ — M3GNet GPU — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=480 relative_time_ps=48.0 pbc="T T T"
 Li       3.57059000      10.78570000      -2.72087000
 Li       7.25098000      -0.24164000      12.32460000
 Li       2.07968000       3.56684000      17.65650000
@@ -23473,7 +23473,7 @@ Cl      11.53820000      10.35500000       7.56881000
 Cl       3.44418000      15.22680000      10.46310000
 Cl      13.48240000      14.05840000       7.27571000
 240
-Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production source_frame_index=485 relative_time_ps=48.5 pbc="T T T"
+Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production display_name="Li₃YCl₆ — M3GNet GPU — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=485 relative_time_ps=48.5 pbc="T T T"
 Li       1.66417000       9.46981000      -6.40675000
 Li       7.55772000       0.14093500      14.89050000
 Li       2.10249000       3.35210000      17.52240000
@@ -23715,7 +23715,7 @@ Cl      10.82930000      10.96830000       7.75905000
 Cl       3.48812000      15.20580000      10.54830000
 Cl      13.15640000      13.73430000       7.46827000
 240
-Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production source_frame_index=490 relative_time_ps=49.0 pbc="T T T"
+Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production display_name="Li₃YCl₆ — M3GNet GPU — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=490 relative_time_ps=49.0 pbc="T T T"
 Li       1.80663000       9.52839000      -6.10549000
 Li       7.18054000       0.07369600      12.58160000
 Li       1.95099000       3.00299000      18.55890000
@@ -23957,7 +23957,7 @@ Cl      11.02350000      11.10690000       7.19060000
 Cl       3.70623000      15.49430000      10.74790000
 Cl      13.35390000      13.84790000       7.20593000
 240
-Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production source_frame_index=495 relative_time_ps=49.5 pbc="T T T"
+Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production display_name="Li₃YCl₆ — M3GNet GPU — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=495 relative_time_ps=49.5 pbc="T T T"
 Li       1.48762000       9.92699000      -5.65950000
 Li       7.77431000      -0.43831900      15.53580000
 Li       0.85373000       2.90132000      20.52060000
@@ -24199,7 +24199,7 @@ Cl      11.09630000      10.77030000       7.41298000
 Cl       4.07075000      15.51310000      10.95130000
 Cl      12.85000000      14.15360000       7.18813000
 240
-Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production source_frame_index=500 relative_time_ps=50.0 pbc="T T T"
+Lattice="22.632805062294384 0.0 0.0 -11.316402531147187 19.600584142847985 0.0 0.0 0.0 12.21254197038355" Properties=species:S:1:pos:R:3 material=Li3YCl6 model="M3GNet GPU" temperature_K=600 phase=production display_name="Li₃YCl₆ — M3GNet GPU — 600 K — production" report_figures="01_Li3YCl6_three_model_MSD; 03_Li3YCl6_Arrhenius" source_frame_index=500 relative_time_ps=50.0 pbc="T T T"
 Li       1.42728000      10.29510000      -5.72832000
 Li       7.27445000       0.06783110      14.93500000
 Li       1.86656000       2.81998000      21.18350000

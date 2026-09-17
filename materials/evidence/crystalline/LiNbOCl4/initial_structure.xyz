@@ -1,5 +1,5 @@
 336
-Lattice="7.992 0.0 0.0 0.0 25.13 0.0 0.0 0.0 38.295" Properties=species:S:1:pos:R:3 material=LiNbOCl4 role="ordered 2x2x3 simulation input" pbc="T T T"
+Lattice="7.992 0.0 0.0 0.0 25.13 0.0 0.0 0.0 38.295" Properties=species:S:1:pos:R:3 material=LiNbOCl4 role="ordered 2x2x3 simulation input" display_name="LiNbOCl₄ — 336-atom ordered 2×2×3 initial structure" report_figures="02_LiNbOCl4_three_model_MSD; 04_LiNbOCl4_Arrhenius" pbc="T T T"
 Li       0.00000000       1.29419500       8.16960000
 Li       0.00000000      11.27080500       1.78710000
 Li       1.99800000       7.57669500       8.16960000

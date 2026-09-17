@@ -1,5 +1,5 @@
 512
-Lattice="25.638000488281 0.0 0.0 0.0 16.440000534058 0.0 0.0 0.0 24.493999481201" Properties=species:S:1:pos:R:3 material=Li3PS4 role="glass construction input" pbc="T T T"
+Lattice="25.638000488281 0.0 0.0 0.0 16.440000534058 0.0 0.0 0.0 24.493999481201" Properties=species:S:1:pos:R:3 material=Li3PS4 role="glass construction input" display_name="Li₃PS₄ — 512-atom glass construction structure" report_figures="05_Li3PS4_lithium_MSD; 07_Li3PS4_local_structure" pbc="T T T"
 Li       4.57176971       0.10317975       2.68342805
 Li       4.56235313       0.10058581       8.80195236
 Li       8.27308655       8.09832764       3.44276428

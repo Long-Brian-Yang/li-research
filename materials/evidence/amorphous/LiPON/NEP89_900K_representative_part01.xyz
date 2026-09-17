@@ -1,5 +1,5 @@
 124
-Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" source_frame_index=0 relative_time_ps=0.0 pbc="T T T"
+Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" display_name="LiPON — NEP89 — 900 K — NVT production" report_figures="23_LiPON_lithium_MSD; 24_LiPON_transport_comparison; 25_LiPON_temperature_RDF" source_frame_index=0 relative_time_ps=0.0 pbc="T T T"
 Li       6.54663166       4.94183463       6.49708751
 Li       1.08481691       1.64992257       2.49396559
 Li       3.78977846       4.78343983       8.78065953
@@ -125,7 +125,7 @@ O        3.27500618       6.20602897       7.53471017
 O        4.26665936       9.06047795       6.50366562
 O        8.56963768       6.00663567       6.86733341
 124
-Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" source_frame_index=30 relative_time_ps=3.0 pbc="T T T"
+Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" display_name="LiPON — NEP89 — 900 K — NVT production" report_figures="23_LiPON_lithium_MSD; 24_LiPON_transport_comparison; 25_LiPON_temperature_RDF" source_frame_index=30 relative_time_ps=3.0 pbc="T T T"
 Li       6.16019293       4.08312032       6.28821312
 Li       2.55818106       5.93850951       3.11614149
 Li       2.81404916       1.74448448       7.18312495
@@ -251,7 +251,7 @@ O        4.00266227       6.25309801       7.49921269
 O        4.82772166       8.94838550       6.25680244
 O        8.51555979       5.93574609       8.36511656
 124
-Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" source_frame_index=60 relative_time_ps=6.0 pbc="T T T"
+Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" display_name="LiPON — NEP89 — 900 K — NVT production" report_figures="23_LiPON_lithium_MSD; 24_LiPON_transport_comparison; 25_LiPON_temperature_RDF" source_frame_index=60 relative_time_ps=6.0 pbc="T T T"
 Li       6.73237228       2.60239365       6.74319211
 Li       0.27030345       6.93030621       3.20133060
 Li       5.56026158       0.59988998       5.09985485
@@ -377,7 +377,7 @@ O        4.45614365       6.77215670       7.31536060
 O        4.23992142       9.13887648       6.40235617
 O        9.17808634       6.45287326       8.28330525
 124
-Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" source_frame_index=90 relative_time_ps=9.0 pbc="T T T"
+Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" display_name="LiPON — NEP89 — 900 K — NVT production" report_figures="23_LiPON_lithium_MSD; 24_LiPON_transport_comparison; 25_LiPON_temperature_RDF" source_frame_index=90 relative_time_ps=9.0 pbc="T T T"
 Li       7.96416394       5.24293522       5.54252333
 Li       9.51817086       6.87404750       6.35687098
 Li       6.63823844       1.91391109       6.57142939
@@ -503,7 +503,7 @@ O        4.07297216       6.29496728       7.37607998
 O        3.72241792       9.59962885       6.93769607
 O        8.96529746       6.88386856       8.17797080
 124
-Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" source_frame_index=120 relative_time_ps=12.0 pbc="T T T"
+Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" display_name="LiPON — NEP89 — 900 K — NVT production" report_figures="23_LiPON_lithium_MSD; 24_LiPON_transport_comparison; 25_LiPON_temperature_RDF" source_frame_index=120 relative_time_ps=12.0 pbc="T T T"
 Li       7.81936214       5.86495296       5.88643575
 Li       1.30360576       7.43342429       5.69785755
 Li       6.91492027       2.19792091       6.26951199
@@ -629,7 +629,7 @@ O        4.25621233       6.16630650       7.54655308
 O        4.82501831       9.17877323       6.64303312
 O        9.26532174       6.45918498       7.20849920
 124
-Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" source_frame_index=150 relative_time_ps=15.0 pbc="T T T"
+Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" display_name="LiPON — NEP89 — 900 K — NVT production" report_figures="23_LiPON_lithium_MSD; 24_LiPON_transport_comparison; 25_LiPON_temperature_RDF" source_frame_index=150 relative_time_ps=15.0 pbc="T T T"
 Li       5.87120715       6.75237275       8.55405971
 Li       1.56120544       7.79569692       4.98038936
 Li       6.98777836       2.32124547       5.97419589
@@ -755,7 +755,7 @@ O        4.69029337       6.80751788       6.76438714
 O        4.25143877      10.02871002       5.76562898
 O        9.39714003       6.89194000       8.16282241
 124
-Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" source_frame_index=180 relative_time_ps=18.0 pbc="T T T"
+Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" display_name="LiPON — NEP89 — 900 K — NVT production" report_figures="23_LiPON_lithium_MSD; 24_LiPON_transport_comparison; 25_LiPON_temperature_RDF" source_frame_index=180 relative_time_ps=18.0 pbc="T T T"
 Li       6.42933602       6.55886704       6.44282085
 Li       0.55860926       7.20207172       5.73710768
 Li       6.86630647       2.09491361       6.39038165
@@ -881,7 +881,7 @@ O        4.46257315       6.70114699       7.09019058
 O        4.44976720       9.47648688       5.26443118
 O        9.08964253       6.71977661       7.62843794
 124
-Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" source_frame_index=210 relative_time_ps=21.0 pbc="T T T"
+Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" display_name="LiPON — NEP89 — 900 K — NVT production" report_figures="23_LiPON_lithium_MSD; 24_LiPON_transport_comparison; 25_LiPON_temperature_RDF" source_frame_index=210 relative_time_ps=21.0 pbc="T T T"
 Li       5.93926919       6.64375827       7.86751398
 Li       8.43603664       3.83983004       0.78146761
 Li       6.99183895       1.86768852       6.67083701
@@ -1007,7 +1007,7 @@ O        3.87676145       6.43839393       7.08082174
 O        4.28611665       9.33017002       7.13460264
 O        9.31490824       6.75395131       7.96619127
 124
-Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" source_frame_index=240 relative_time_ps=24.0 pbc="T T T"
+Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" display_name="LiPON — NEP89 — 900 K — NVT production" report_figures="23_LiPON_lithium_MSD; 24_LiPON_transport_comparison; 25_LiPON_temperature_RDF" source_frame_index=240 relative_time_ps=24.0 pbc="T T T"
 Li       5.89218120       6.22528078       8.19921321
 Li       7.86632657       2.46456715       1.15935104
 Li       7.04553157       1.75066770       6.40648489
@@ -1133,7 +1133,7 @@ O        3.98237279       6.10191911       7.42528840
 O        4.83773536       9.71193694       5.44892220
 O        9.50996794       6.64860242       7.34073178
 124
-Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" source_frame_index=270 relative_time_ps=27.0 pbc="T T T"
+Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" display_name="LiPON — NEP89 — 900 K — NVT production" report_figures="23_LiPON_lithium_MSD; 24_LiPON_transport_comparison; 25_LiPON_temperature_RDF" source_frame_index=270 relative_time_ps=27.0 pbc="T T T"
 Li       6.62940160       5.89985520       7.01084186
 Li       7.76506878       2.01164622      11.13042954
 Li       6.99260310       2.46416092       6.38151075
@@ -1259,7 +1259,7 @@ O        5.11553823       6.57599001       6.17783997
 O        5.09713595       9.27323411       6.24808144
 O        9.61648388       6.15669422       7.28399361
 124
-Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" source_frame_index=300 relative_time_ps=30.0 pbc="T T T"
+Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" display_name="LiPON — NEP89 — 900 K — NVT production" report_figures="23_LiPON_lithium_MSD; 24_LiPON_transport_comparison; 25_LiPON_temperature_RDF" source_frame_index=300 relative_time_ps=30.0 pbc="T T T"
 Li       5.60606399       5.86234441       8.04908238
 Li       7.19654520       2.46614680      12.09665612
 Li       7.00341449       2.34141167       6.19915188
@@ -1385,7 +1385,7 @@ O        4.95353806       6.81562423       6.46366201
 O        5.36668844       9.68327536       5.31668439
 O        8.55752622       6.32687258       7.37235238
 124
-Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" source_frame_index=330 relative_time_ps=33.0 pbc="T T T"
+Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" display_name="LiPON — NEP89 — 900 K — NVT production" report_figures="23_LiPON_lithium_MSD; 24_LiPON_transport_comparison; 25_LiPON_temperature_RDF" source_frame_index=330 relative_time_ps=33.0 pbc="T T T"
 Li       3.33825691       5.29086644       8.59401258
 Li       7.37840350       3.40640982      11.73962146
 Li       6.75733586       1.98982580       6.64851464
@@ -1511,7 +1511,7 @@ O        4.82636603       6.18898752       5.38689002
 O        4.28173135       9.35675630       7.05535626
 O        7.86552544       5.95706479       7.15862988
 124
-Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" source_frame_index=360 relative_time_ps=36.0 pbc="T T T"
+Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" display_name="LiPON — NEP89 — 900 K — NVT production" report_figures="23_LiPON_lithium_MSD; 24_LiPON_transport_comparison; 25_LiPON_temperature_RDF" source_frame_index=360 relative_time_ps=36.0 pbc="T T T"
 Li       3.47663464       4.87291264       8.06368727
 Li       8.69404141       0.03220787       9.96576591
 Li       6.36064659       2.29253305       6.16040195
@@ -1637,7 +1637,7 @@ O        4.90894249       6.25073949       6.13215013
 O        4.46503948       9.32975427       6.73529137
 O        8.63230789       6.14354863       7.08204496
 124
-Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" source_frame_index=390 relative_time_ps=39.0 pbc="T T T"
+Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" display_name="LiPON — NEP89 — 900 K — NVT production" report_figures="23_LiPON_lithium_MSD; 24_LiPON_transport_comparison; 25_LiPON_temperature_RDF" source_frame_index=390 relative_time_ps=39.0 pbc="T T T"
 Li       3.42654096       4.55379365       8.26616237
 Li       7.29360552       8.65859327      11.08881476
 Li       6.66561859       2.23712529       6.85614234
@@ -1763,7 +1763,7 @@ O        4.44971929       6.27923054       5.67573428
 O        3.92562220       9.39940853       6.11696139
 O        8.31036810       6.22248044       7.39000422
 124
-Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" source_frame_index=420 relative_time_ps=42.0 pbc="T T T"
+Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" display_name="LiPON — NEP89 — 900 K — NVT production" report_figures="23_LiPON_lithium_MSD; 24_LiPON_transport_comparison; 25_LiPON_temperature_RDF" source_frame_index=420 relative_time_ps=42.0 pbc="T T T"
 Li       1.43439740       3.32777930       6.08145059
 Li       7.02662375       8.47853527      10.87803245
 Li       6.43023508       2.30007337       6.25770513
@@ -1889,7 +1889,7 @@ O        4.35901564       6.59875949       5.06496809
 O        3.75790364       9.18923188       6.57435827
 O        8.70147243       6.49374360       7.19745710
 124
-Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" source_frame_index=450 relative_time_ps=45.0 pbc="T T T"
+Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" display_name="LiPON — NEP89 — 900 K — NVT production" report_figures="23_LiPON_lithium_MSD; 24_LiPON_transport_comparison; 25_LiPON_temperature_RDF" source_frame_index=450 relative_time_ps=45.0 pbc="T T T"
 Li       2.03514751       3.76711797       4.31881008
 Li       6.96487253       8.30173598      10.58588978
 Li       6.81421101       1.79292468       6.24136806
@@ -2015,7 +2015,7 @@ O        4.75251881       6.33067632       5.60391320
 O        4.20266371       9.19013006       7.09097093
 O        9.05296012       6.88914329       7.19076292
 124
-Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" source_frame_index=480 relative_time_ps=48.0 pbc="T T T"
+Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" display_name="LiPON — NEP89 — 900 K — NVT production" report_figures="23_LiPON_lithium_MSD; 24_LiPON_transport_comparison; 25_LiPON_temperature_RDF" source_frame_index=480 relative_time_ps=48.0 pbc="T T T"
 Li       1.39194482       5.01192785       3.35157583
 Li       8.23839337       8.12868133      11.11447889
 Li       6.58453000       2.26503629       6.34519924
@@ -2141,7 +2141,7 @@ O        4.47252408       6.66441593       5.29039775
 O        4.25009649       9.15563271       6.44168965
 O        9.22048310       6.37838582       7.87877654
 124
-Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" source_frame_index=510 relative_time_ps=51.0 pbc="T T T"
+Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" display_name="LiPON — NEP89 — 900 K — NVT production" report_figures="23_LiPON_lithium_MSD; 24_LiPON_transport_comparison; 25_LiPON_temperature_RDF" source_frame_index=510 relative_time_ps=51.0 pbc="T T T"
 Li       0.62392097       5.44987855       2.16171217
 Li       9.68929895       7.90754185      10.18290904
 Li       7.43262587       2.77735286       6.29880023
@@ -2267,7 +2267,7 @@ O        4.07426647       7.26764565       5.37927445
 O        3.90298723       9.78874204       7.02078959
 O        9.02801279       6.42318777       7.53140263
 124
-Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" source_frame_index=540 relative_time_ps=54.0 pbc="T T T"
+Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" display_name="LiPON — NEP89 — 900 K — NVT production" report_figures="23_LiPON_lithium_MSD; 24_LiPON_transport_comparison; 25_LiPON_temperature_RDF" source_frame_index=540 relative_time_ps=54.0 pbc="T T T"
 Li       0.05443366       3.60481866       2.10765571
 Li       0.25598025       8.03331759      10.41302784
 Li       6.81729717       2.28656977       6.41645612
@@ -2393,7 +2393,7 @@ O        4.86268471       6.31018902       5.56350359
 O        4.39366376       9.13984889       6.25927608
 O        9.48284111       6.68769503       7.16342289
 124
-Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" source_frame_index=570 relative_time_ps=57.0 pbc="T T T"
+Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" display_name="LiPON — NEP89 — 900 K — NVT production" report_figures="23_LiPON_lithium_MSD; 24_LiPON_transport_comparison; 25_LiPON_temperature_RDF" source_frame_index=570 relative_time_ps=57.0 pbc="T T T"
 Li       0.98213050       7.15847070       2.48444899
 Li       9.06225661       5.20209859       9.37789627
 Li       6.63869200       2.18941268       6.39422798
@@ -2519,7 +2519,7 @@ O        5.06783078       6.63785447       5.47168130
 O        4.05196449       9.28415093       6.61220131
 O        8.89560164       6.71181665       7.50139877
 124
-Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" source_frame_index=600 relative_time_ps=60.0 pbc="T T T"
+Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" display_name="LiPON — NEP89 — 900 K — NVT production" report_figures="23_LiPON_lithium_MSD; 24_LiPON_transport_comparison; 25_LiPON_temperature_RDF" source_frame_index=600 relative_time_ps=60.0 pbc="T T T"
 Li       2.75811892       6.67574518       3.02979230
 Li       9.40685168       5.86259773       9.86393956
 Li       6.88539534       2.51625047       6.48736990
@@ -2645,7 +2645,7 @@ O        5.07112952       6.48690781       5.50866832
 O        4.15485797       9.48125196       6.60844143
 O        8.88524805       6.99525977       7.15293606
 124
-Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" source_frame_index=630 relative_time_ps=63.0 pbc="T T T"
+Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" display_name="LiPON — NEP89 — 900 K — NVT production" report_figures="23_LiPON_lithium_MSD; 24_LiPON_transport_comparison; 25_LiPON_temperature_RDF" source_frame_index=630 relative_time_ps=63.0 pbc="T T T"
 Li       1.65635587       4.56026316       4.29936418
 Li       9.29421914       5.19426301      10.24409241
 Li       7.03704802       2.72635659       6.33231875
@@ -2771,7 +2771,7 @@ O        5.52522154       6.75424298       5.91219433
 O        4.12483109       9.82944583       6.11729910
 O        8.25386545       6.87658800       7.56645377
 124
-Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" source_frame_index=660 relative_time_ps=66.0 pbc="T T T"
+Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" display_name="LiPON — NEP89 — 900 K — NVT production" report_figures="23_LiPON_lithium_MSD; 24_LiPON_transport_comparison; 25_LiPON_temperature_RDF" source_frame_index=660 relative_time_ps=66.0 pbc="T T T"
 Li       0.23665705       5.33866252       7.24742964
 Li       9.04811093       5.44681343      10.24222423
 Li       6.63575763       2.51747422       6.38492511
@@ -2897,7 +2897,7 @@ O        4.85658503       7.46871054       5.95979093
 O        4.19605390      10.17510726       5.77105344
 O        8.80396257       7.22977843       7.13806005
 124
-Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" source_frame_index=690 relative_time_ps=69.0 pbc="T T T"
+Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" display_name="LiPON — NEP89 — 900 K — NVT production" report_figures="23_LiPON_lithium_MSD; 24_LiPON_transport_comparison; 25_LiPON_temperature_RDF" source_frame_index=690 relative_time_ps=69.0 pbc="T T T"
 Li       2.31207592       3.75286167       4.53869383
 Li       0.93509241       6.58753539       7.96113012
 Li       6.50753716       1.97852953       6.24999997
@@ -3023,7 +3023,7 @@ O        4.64687931       6.48202686       6.00627989
 O        3.48439724       9.49962504       6.31995211
 O        8.94987872       6.95635982       7.12961758
 124
-Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" source_frame_index=720 relative_time_ps=72.0 pbc="T T T"
+Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" display_name="LiPON — NEP89 — 900 K — NVT production" report_figures="23_LiPON_lithium_MSD; 24_LiPON_transport_comparison; 25_LiPON_temperature_RDF" source_frame_index=720 relative_time_ps=72.0 pbc="T T T"
 Li       1.29294048       5.40185216       7.24320913
 Li       1.63293129       7.06134363       9.75767443
 Li       6.29179844       2.55962312       6.08927189
@@ -3149,7 +3149,7 @@ O        4.64546537       6.66639410       5.13963992
 O        3.54656611       9.74230928       6.49278795
 O        9.06205285       7.01623435       7.42302498
 124
-Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" source_frame_index=750 relative_time_ps=75.0 pbc="T T T"
+Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" display_name="LiPON — NEP89 — 900 K — NVT production" report_figures="23_LiPON_lithium_MSD; 24_LiPON_transport_comparison; 25_LiPON_temperature_RDF" source_frame_index=750 relative_time_ps=75.0 pbc="T T T"
 Li       1.08292121       6.08239448       7.64604846
 Li       9.65208275       8.32133132      10.93770221
 Li       6.75820058       2.13574723       5.95444448
@@ -3275,7 +3275,7 @@ O        4.44048513       6.62255598       4.44217797
 O        4.22062408       9.31682753       6.14076932
 O        9.13478487       6.64031637       7.31307989
 124
-Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" source_frame_index=780 relative_time_ps=78.0 pbc="T T T"
+Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" display_name="LiPON — NEP89 — 900 K — NVT production" report_figures="23_LiPON_lithium_MSD; 24_LiPON_transport_comparison; 25_LiPON_temperature_RDF" source_frame_index=780 relative_time_ps=78.0 pbc="T T T"
 Li       2.14932191       3.69544044       5.08066490
 Li       1.42595404       6.34590196       8.20050578
 Li       6.84927524       2.21566339       6.28024876
@@ -3401,7 +3401,7 @@ O        5.17205111       6.60970547       5.70109461
 O        3.89348944       9.43407283       6.47098377
 O        8.28885454       7.05759934       6.63076235
 124
-Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" source_frame_index=810 relative_time_ps=81.0 pbc="T T T"
+Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" display_name="LiPON — NEP89 — 900 K — NVT production" report_figures="23_LiPON_lithium_MSD; 24_LiPON_transport_comparison; 25_LiPON_temperature_RDF" source_frame_index=810 relative_time_ps=81.0 pbc="T T T"
 Li       1.92731009       3.76484197       4.56956358
 Li       1.24115420       6.62629179       8.39963989
 Li       6.53740806       2.04179655       6.60101023
@@ -3527,7 +3527,7 @@ O        4.86033844       6.11127845       5.75178748
 O        4.14597941       8.99222382       7.14118449
 O        9.40931652       6.65340331       7.21784114
 124
-Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" source_frame_index=840 relative_time_ps=84.0 pbc="T T T"
+Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" display_name="LiPON — NEP89 — 900 K — NVT production" report_figures="23_LiPON_lithium_MSD; 24_LiPON_transport_comparison; 25_LiPON_temperature_RDF" source_frame_index=840 relative_time_ps=84.0 pbc="T T T"
 Li       6.38634476       5.33800488       5.50954342
 Li       2.20527698       6.75923143       9.13272031
 Li       6.94021966       3.12306692       6.00541205
@@ -3653,7 +3653,7 @@ O        4.89200385       6.40977288       5.30048216
 O        4.06930774       9.30589033       6.82808698
 O        8.67714870       6.53506127       7.50462528
 124
-Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" source_frame_index=870 relative_time_ps=87.0 pbc="T T T"
+Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" display_name="LiPON — NEP89 — 900 K — NVT production" report_figures="23_LiPON_lithium_MSD; 24_LiPON_transport_comparison; 25_LiPON_temperature_RDF" source_frame_index=870 relative_time_ps=87.0 pbc="T T T"
 Li       5.47569950       8.36476176       5.89473100
 Li       5.56094803       4.17222132       5.37575925
 Li       8.53539546       4.47050794       6.39488695
@@ -3779,7 +3779,7 @@ O        4.75305150       6.36608934       5.17265670
 O        4.06337028       9.18078904       6.78581189
 O        8.57892540       6.56533753       6.95647513
 124
-Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" source_frame_index=900 relative_time_ps=90.0 pbc="T T T"
+Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" display_name="LiPON — NEP89 — 900 K — NVT production" report_figures="23_LiPON_lithium_MSD; 24_LiPON_transport_comparison; 25_LiPON_temperature_RDF" source_frame_index=900 relative_time_ps=90.0 pbc="T T T"
 Li       5.66741402       8.78733700       6.21008732
 Li       6.45058704       5.46563864       6.14241887
 Li       8.30358761       3.93066814       6.18635696
@@ -3905,7 +3905,7 @@ O        4.71916074       6.76720576       5.07814530
 O        3.79183456       8.88382713       6.79630362
 O        8.05497920       6.42095098       6.90211217
 124
-Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" source_frame_index=930 relative_time_ps=93.0 pbc="T T T"
+Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" display_name="LiPON — NEP89 — 900 K — NVT production" report_figures="23_LiPON_lithium_MSD; 24_LiPON_transport_comparison; 25_LiPON_temperature_RDF" source_frame_index=930 relative_time_ps=93.0 pbc="T T T"
 Li       5.37378749       8.05027303       5.82701452
 Li       6.33083671       6.22604503       8.43588495
 Li       9.38954653       1.73990830       7.29512956
@@ -4031,7 +4031,7 @@ O        4.53727215       6.46337599       5.90303703
 O        4.02283972       9.36398381       6.45946716
 O        8.83096626       6.71208433       7.69784554
 124
-Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" source_frame_index=960 relative_time_ps=96.0 pbc="T T T"
+Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" display_name="LiPON — NEP89 — 900 K — NVT production" report_figures="23_LiPON_lithium_MSD; 24_LiPON_transport_comparison; 25_LiPON_temperature_RDF" source_frame_index=960 relative_time_ps=96.0 pbc="T T T"
 Li       5.88846323       4.37807925       5.17056032
 Li       5.42333406       6.40826724       7.24672346
 Li       9.16709104       1.87544382       7.36056938
@@ -4157,7 +4157,7 @@ O        2.23877261       6.47316434       5.15711148
 O        4.35981277       8.97889506       6.92266413
 O        9.12448193       6.63800232       7.07338453
 124
-Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" source_frame_index=990 relative_time_ps=99.0 pbc="T T T"
+Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" display_name="LiPON — NEP89 — 900 K — NVT production" report_figures="23_LiPON_lithium_MSD; 24_LiPON_transport_comparison; 25_LiPON_temperature_RDF" source_frame_index=990 relative_time_ps=99.0 pbc="T T T"
 Li       6.63281091       6.24653943       5.96288740
 Li       6.30454533       6.35586182       9.25286727
 Li       9.04345781       1.89697058       7.39860362
@@ -4283,7 +4283,7 @@ O        2.95685457       6.05440567       4.05625391
 O        3.58137932       0.33475692       8.42638387
 O        9.01747794       6.57725848       6.96476275
 124
-Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" source_frame_index=1020 relative_time_ps=102.0 pbc="T T T"
+Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" display_name="LiPON — NEP89 — 900 K — NVT production" report_figures="23_LiPON_lithium_MSD; 24_LiPON_transport_comparison; 25_LiPON_temperature_RDF" source_frame_index=1020 relative_time_ps=102.0 pbc="T T T"
 Li       6.97913782       5.42430012       4.75256807
 Li       6.88386135       7.86510999      10.27807097
 Li       9.20021246       1.73695306       7.20894395
@@ -4409,7 +4409,7 @@ O        2.43538566       5.55697814       4.22838897
 O        4.00168544       0.53218870       8.53596862
 O        8.86571544       6.23300134       6.82584793
 124
-Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" source_frame_index=1050 relative_time_ps=105.0 pbc="T T T"
+Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" display_name="LiPON — NEP89 — 900 K — NVT production" report_figures="23_LiPON_lithium_MSD; 24_LiPON_transport_comparison; 25_LiPON_temperature_RDF" source_frame_index=1050 relative_time_ps=105.0 pbc="T T T"
 Li       6.51118501       5.73918718       4.76226650
 Li       7.26283308       8.32376598      10.88831584
 Li       9.14675910       1.89541573       7.71253972
@@ -4535,7 +4535,7 @@ O        2.80581151       5.78653919       4.03039485
 O        4.16117864       0.60289436       8.06535447
 O        7.89038191       6.11554127       7.13890566
 124
-Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" source_frame_index=1080 relative_time_ps=108.0 pbc="T T T"
+Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" display_name="LiPON — NEP89 — 900 K — NVT production" report_figures="23_LiPON_lithium_MSD; 24_LiPON_transport_comparison; 25_LiPON_temperature_RDF" source_frame_index=1080 relative_time_ps=108.0 pbc="T T T"
 Li       7.99891642       4.32184645       5.53117522
 Li       4.57471902       3.30718612      10.87012333
 Li       9.23753910       1.72361062       7.47271739
@@ -4661,7 +4661,7 @@ O        1.63472197       6.15246531       5.57092051
 O        3.85544214       0.74282874       8.11113202
 O        8.61613647       6.13663432       7.07160049
 124
-Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" source_frame_index=1110 relative_time_ps=111.0 pbc="T T T"
+Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" display_name="LiPON — NEP89 — 900 K — NVT production" report_figures="23_LiPON_lithium_MSD; 24_LiPON_transport_comparison; 25_LiPON_temperature_RDF" source_frame_index=1110 relative_time_ps=111.0 pbc="T T T"
 Li       8.03234933       4.74115442       5.34491032
 Li       3.81605561       3.23335812      10.76335773
 Li       7.95311645       3.37907352       9.64520816
@@ -4787,7 +4787,7 @@ O        2.41285646       6.86835264       4.74514715
 O        3.99427850       0.21139612       8.30076704
 O        9.34933804       6.67809287       6.85779596
 124
-Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" source_frame_index=1140 relative_time_ps=114.0 pbc="T T T"
+Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" display_name="LiPON — NEP89 — 900 K — NVT production" report_figures="23_LiPON_lithium_MSD; 24_LiPON_transport_comparison; 25_LiPON_temperature_RDF" source_frame_index=1140 relative_time_ps=114.0 pbc="T T T"
 Li       7.67325481       5.68262752       5.67415458
 Li       5.22765022       3.71230675      10.93759613
 Li       5.97842284       9.02518128       8.30158191
@@ -4913,7 +4913,7 @@ O        2.00958259       7.12294575       4.93084741
 O        4.03143399       0.94195621       8.29350866
 O        9.09380867       6.73352717       7.33474886
 124
-Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" source_frame_index=1170 relative_time_ps=117.0 pbc="T T T"
+Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" display_name="LiPON — NEP89 — 900 K — NVT production" report_figures="23_LiPON_lithium_MSD; 24_LiPON_transport_comparison; 25_LiPON_temperature_RDF" source_frame_index=1170 relative_time_ps=117.0 pbc="T T T"
 Li       8.10459780       5.32487361       3.37429231
 Li       7.48975033       3.87249458      11.64424867
 Li       5.22375904       6.57172962       8.01159414
@@ -5039,7 +5039,7 @@ O        2.18600039       6.83099625       4.91377239
 O        3.86675479       0.69225399       8.33148345
 O        9.42170555       6.95760865       7.35398417
 124
-Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" source_frame_index=1200 relative_time_ps=120.0 pbc="T T T"
+Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" display_name="LiPON — NEP89 — 900 K — NVT production" report_figures="23_LiPON_lithium_MSD; 24_LiPON_transport_comparison; 25_LiPON_temperature_RDF" source_frame_index=1200 relative_time_ps=120.0 pbc="T T T"
 Li       7.95606092       5.52100821       3.04755371
 Li       7.54561926       3.22187462      11.89834435
 Li       5.47215948       6.20441510       7.00519941
@@ -5165,7 +5165,7 @@ O        2.23510276       7.34541137       5.16723912
 O        4.58900691      10.36725131       8.10490938
 O        9.16798424       6.25620313       8.32905034
 124
-Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" source_frame_index=1230 relative_time_ps=123.0 pbc="T T T"
+Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" display_name="LiPON — NEP89 — 900 K — NVT production" report_figures="23_LiPON_lithium_MSD; 24_LiPON_transport_comparison; 25_LiPON_temperature_RDF" source_frame_index=1230 relative_time_ps=123.0 pbc="T T T"
 Li       7.07739297       5.96487198       1.21660835
 Li       7.27384415       3.51166087      12.01040053
 Li       5.65106823       6.67763533       7.61272409
@@ -5291,7 +5291,7 @@ O        2.41446205       6.88023956       5.14251543
 O        4.09061044       0.10637425       8.17423987
 O        9.28959120       7.17974638       7.35109093
 124
-Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" source_frame_index=1260 relative_time_ps=126.0 pbc="T T T"
+Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" display_name="LiPON — NEP89 — 900 K — NVT production" report_figures="23_LiPON_lithium_MSD; 24_LiPON_transport_comparison; 25_LiPON_temperature_RDF" source_frame_index=1260 relative_time_ps=126.0 pbc="T T T"
 Li       6.45676069       7.62098632       1.18592209
 Li       8.24002148       2.58174912       0.89375134
 Li       5.38574576       7.11833974       7.97859763
@@ -5417,7 +5417,7 @@ O        2.10302100       7.22891761       5.13816236
 O        3.59575999       0.65978370       8.21583973
 O        9.25803548       6.83140178       7.06541834
 124
-Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" source_frame_index=1290 relative_time_ps=129.0 pbc="T T T"
+Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" display_name="LiPON — NEP89 — 900 K — NVT production" report_figures="23_LiPON_lithium_MSD; 24_LiPON_transport_comparison; 25_LiPON_temperature_RDF" source_frame_index=1290 relative_time_ps=129.0 pbc="T T T"
 Li       6.40248741       7.49053238       1.51180183
 Li       8.21493962       0.95689649       1.50927538
 Li       3.20418145       8.21949267       7.83878753
@@ -5543,7 +5543,7 @@ O        2.40859853       6.59186398       4.60130913
 O        4.01647954       0.98664381       8.41855182
 O        9.06635377       6.82647118       7.21877626
 124
-Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" source_frame_index=1320 relative_time_ps=132.0 pbc="T T T"
+Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" display_name="LiPON — NEP89 — 900 K — NVT production" report_figures="23_LiPON_lithium_MSD; 24_LiPON_transport_comparison; 25_LiPON_temperature_RDF" source_frame_index=1320 relative_time_ps=132.0 pbc="T T T"
 Li       5.78907908       8.05539191      11.94176152
 Li       8.11168201       2.87816770       0.47266430
 Li       2.49376822       7.59673835       7.72025653
@@ -5669,7 +5669,7 @@ O        2.31026812       6.67391809       5.13279543
 O        3.48431228       0.43203009       8.62431452
 O        8.34043912       5.96882338       6.57735687
 124
-Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" source_frame_index=1350 relative_time_ps=135.0 pbc="T T T"
+Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" display_name="LiPON — NEP89 — 900 K — NVT production" report_figures="23_LiPON_lithium_MSD; 24_LiPON_transport_comparison; 25_LiPON_temperature_RDF" source_frame_index=1350 relative_time_ps=135.0 pbc="T T T"
 Li       4.03822302       6.98610739       1.46313031
 Li       7.12790725       3.01789446      11.70659043
 Li       2.90377669       8.60944526       8.18082404
@@ -5795,7 +5795,7 @@ O        2.72605865       6.65908849       5.17194299
 O        3.66590143       0.61259610       8.38578918
 O        8.12987516       6.34434376       6.70603221
 124
-Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" source_frame_index=1380 relative_time_ps=138.0 pbc="T T T"
+Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" display_name="LiPON — NEP89 — 900 K — NVT production" report_figures="23_LiPON_lithium_MSD; 24_LiPON_transport_comparison; 25_LiPON_temperature_RDF" source_frame_index=1380 relative_time_ps=138.0 pbc="T T T"
 Li       5.08056211       7.71878069       0.95046142
 Li       8.78827992       0.58349117       2.63213863
 Li       2.94916552       7.91801106       8.01496296
@@ -5921,7 +5921,7 @@ O        2.14863842       6.44698849       5.09752419
 O        3.78245422       0.47878813       8.22927687
 O        7.59128133       5.84222613       7.04104596
 124
-Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" source_frame_index=1410 relative_time_ps=141.0 pbc="T T T"
+Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" display_name="LiPON — NEP89 — 900 K — NVT production" report_figures="23_LiPON_lithium_MSD; 24_LiPON_transport_comparison; 25_LiPON_temperature_RDF" source_frame_index=1410 relative_time_ps=141.0 pbc="T T T"
 Li       4.91908077       7.35749739       0.17766477
 Li       8.31538892       0.59897481       2.16519999
 Li       4.49722973       7.78398315       7.66618756
@@ -6047,7 +6047,7 @@ O        2.50574972       6.86952710       5.48905981
 O        4.59065170       0.87788574       8.54813767
 O        8.12261062       6.21716553       7.11406102
 124
-Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" source_frame_index=1440 relative_time_ps=144.0 pbc="T T T"
+Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" display_name="LiPON — NEP89 — 900 K — NVT production" report_figures="23_LiPON_lithium_MSD; 24_LiPON_transport_comparison; 25_LiPON_temperature_RDF" source_frame_index=1440 relative_time_ps=144.0 pbc="T T T"
 Li       6.77117430       5.54909976      11.27462257
 Li       7.57798978       0.45574247       3.32705197
 Li       2.30995059       8.05739298       7.76344603
@@ -6173,7 +6173,7 @@ O        2.17015991       6.71977905       6.50621835
 O        3.71106248      10.44192602       8.56337770
 O        8.29724919       6.11795811       7.54312321
 124
-Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" source_frame_index=1470 relative_time_ps=147.0 pbc="T T T"
+Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" display_name="LiPON — NEP89 — 900 K — NVT production" report_figures="23_LiPON_lithium_MSD; 24_LiPON_transport_comparison; 25_LiPON_temperature_RDF" source_frame_index=1470 relative_time_ps=147.0 pbc="T T T"
 Li       6.85371252       5.66483030      10.86098979
 Li       7.59294124       1.33997519       2.00345468
 Li       2.77902069       8.88495572       7.19673535
@@ -6299,7 +6299,7 @@ O        2.59526081       7.31436583       6.24165886
 O        4.11117803       0.70023215       8.27203922
 O        7.75215051       6.02503611       7.07157791
 124
-Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" source_frame_index=1500 relative_time_ps=150.0 pbc="T T T"
+Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" display_name="LiPON — NEP89 — 900 K — NVT production" report_figures="23_LiPON_lithium_MSD; 24_LiPON_transport_comparison; 25_LiPON_temperature_RDF" source_frame_index=1500 relative_time_ps=150.0 pbc="T T T"
 Li       6.19101908       5.40815141      11.29696829
 Li       7.75750924       2.93249953       0.12358084
 Li       2.26861746       8.35420140       7.42986274
@@ -6425,7 +6425,7 @@ O        2.39156924       6.87997421       6.28232559
 O        3.57834340       0.60589458       8.57758263
 O        7.55806204       6.04592012       6.49141340
 124
-Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" source_frame_index=1529 relative_time_ps=152.9 pbc="T T T"
+Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" display_name="LiPON — NEP89 — 900 K — NVT production" report_figures="23_LiPON_lithium_MSD; 24_LiPON_transport_comparison; 25_LiPON_temperature_RDF" source_frame_index=1529 relative_time_ps=152.9 pbc="T T T"
 Li       6.40386312       5.44779924      11.83284946
 Li       5.10975255       1.88917559       1.09048846
 Li       2.62125317       9.20084044       8.25118188
@@ -6551,7 +6551,7 @@ O        1.90199828       6.46614665       6.50031733
 O        3.05750739       0.45638844       8.31870041
 O        7.69025268       6.12816855       6.72085046
 124
-Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" source_frame_index=1559 relative_time_ps=155.9 pbc="T T T"
+Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" display_name="LiPON — NEP89 — 900 K — NVT production" report_figures="23_LiPON_lithium_MSD; 24_LiPON_transport_comparison; 25_LiPON_temperature_RDF" source_frame_index=1559 relative_time_ps=155.9 pbc="T T T"
 Li       6.66278348       5.97324447      11.44285142
 Li       8.34075599       2.31481622      10.67587245
 Li       3.11260297       7.98529547       7.93657812
@@ -6677,7 +6677,7 @@ O        2.10167389       6.59367973       6.71952067
 O        3.27812196       0.22860134       8.61545048
 O        8.94487826       6.83196063       7.57418695
 124
-Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" source_frame_index=1589 relative_time_ps=158.9 pbc="T T T"
+Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" display_name="LiPON — NEP89 — 900 K — NVT production" report_figures="23_LiPON_lithium_MSD; 24_LiPON_transport_comparison; 25_LiPON_temperature_RDF" source_frame_index=1589 relative_time_ps=158.9 pbc="T T T"
 Li       6.94200010       6.69442494      10.36652821
 Li       7.94364022       1.59580894      10.37588878
 Li       5.29480491       6.65261427       8.01786281
@@ -6803,7 +6803,7 @@ O        3.41161059       5.99243018       7.86891573
 O        3.68410220       0.60786765       8.52274812
 O        8.86141102       6.44360241       7.39229002
 124
-Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" source_frame_index=1619 relative_time_ps=161.9 pbc="T T T"
+Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" display_name="LiPON — NEP89 — 900 K — NVT production" report_figures="23_LiPON_lithium_MSD; 24_LiPON_transport_comparison; 25_LiPON_temperature_RDF" source_frame_index=1619 relative_time_ps=161.9 pbc="T T T"
 Li       6.52209615       6.30702000      10.82847523
 Li       6.70797996       3.86125251      11.29827878
 Li       5.90765211       6.13854759       7.09880270
@@ -6929,7 +6929,7 @@ O        1.81646337       6.43107746       5.89322251
 O        3.86187410       0.71112930       8.59536978
 O        8.76558140       6.86728295       7.88206385
 124
-Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" source_frame_index=1649 relative_time_ps=164.9 pbc="T T T"
+Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" display_name="LiPON — NEP89 — 900 K — NVT production" report_figures="23_LiPON_lithium_MSD; 24_LiPON_transport_comparison; 25_LiPON_temperature_RDF" source_frame_index=1649 relative_time_ps=164.9 pbc="T T T"
 Li       5.91298516       5.91895378      11.75981193
 Li       7.91706104       3.34177972      11.20854047
 Li       5.36507464       5.90601780       8.16005924
@@ -7055,7 +7055,7 @@ O        1.50818510       6.61438510       6.26597529
 O        3.18112869       0.35515823       8.63415223
 O        8.75953652       6.44165543       7.51873718
 124
-Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" source_frame_index=1679 relative_time_ps=167.9 pbc="T T T"
+Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" display_name="LiPON — NEP89 — 900 K — NVT production" report_figures="23_LiPON_lithium_MSD; 24_LiPON_transport_comparison; 25_LiPON_temperature_RDF" source_frame_index=1679 relative_time_ps=167.9 pbc="T T T"
 Li       3.17459122       6.91898200       1.40052686
 Li       5.91571455       4.95020104      11.36034929
 Li       5.06710119       7.02034292       8.57189844
@@ -7181,7 +7181,7 @@ O        3.24883315       6.79512493       7.68638942
 O        3.54296555      10.46356045       8.82617238
 O        8.70775226       6.88012753       7.40937705
 124
-Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" source_frame_index=1709 relative_time_ps=170.9 pbc="T T T"
+Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" display_name="LiPON — NEP89 — 900 K — NVT production" report_figures="23_LiPON_lithium_MSD; 24_LiPON_transport_comparison; 25_LiPON_temperature_RDF" source_frame_index=1709 relative_time_ps=170.9 pbc="T T T"
 Li       3.34794932       6.71100068       1.87199109
 Li       6.94859564       5.80490650      11.57752354
 Li       4.74836431       6.55705104       8.12744658
@@ -7307,7 +7307,7 @@ O        2.83797891       5.89453070       7.29404226
 O        3.62969068       0.72372649       8.47714453
 O        9.08982813       6.56219386       7.53545710
 124
-Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" source_frame_index=1739 relative_time_ps=173.9 pbc="T T T"
+Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" display_name="LiPON — NEP89 — 900 K — NVT production" report_figures="23_LiPON_lithium_MSD; 24_LiPON_transport_comparison; 25_LiPON_temperature_RDF" source_frame_index=1739 relative_time_ps=173.9 pbc="T T T"
 Li       1.94063041       6.55097436       0.71109190
 Li       6.95003648       5.11603582      10.52760430
 Li       5.55548720       6.82355596       8.28925062
@@ -7433,7 +7433,7 @@ O        3.48151283       6.43906651       8.05104998
 O        3.40255695       0.50806545       8.67370002
 O        9.02143926       6.64484458       7.32592492
 124
-Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" source_frame_index=1769 relative_time_ps=176.9 pbc="T T T"
+Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" display_name="LiPON — NEP89 — 900 K — NVT production" report_figures="23_LiPON_lithium_MSD; 24_LiPON_transport_comparison; 25_LiPON_temperature_RDF" source_frame_index=1769 relative_time_ps=176.9 pbc="T T T"
 Li       2.86335111       6.98402882       1.07556979
 Li       6.07454330       5.31967905      11.13523553
 Li       6.24323198       8.09796916       6.22673306
@@ -7559,7 +7559,7 @@ O        2.92150722       6.56756077       7.42035345
 O        4.02920462       0.27867142       8.65333214
 O        9.06975386       6.39106902       7.45531556
 124
-Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" source_frame_index=1799 relative_time_ps=179.9 pbc="T T T"
+Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" display_name="LiPON — NEP89 — 900 K — NVT production" report_figures="23_LiPON_lithium_MSD; 24_LiPON_transport_comparison; 25_LiPON_temperature_RDF" source_frame_index=1799 relative_time_ps=179.9 pbc="T T T"
 Li       4.31810672       5.34273485       3.75067454
 Li       5.91766638       5.76486661      11.37193524
 Li       6.94021221       7.27790591       6.47129367
@@ -7685,7 +7685,7 @@ O        3.12225431       6.10020761       7.64869879
 O        4.31828413       0.56394271       8.47159318
 O        9.17507199       6.40374517       7.57117575
 124
-Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" source_frame_index=1829 relative_time_ps=182.9 pbc="T T T"
+Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" display_name="LiPON — NEP89 — 900 K — NVT production" report_figures="23_LiPON_lithium_MSD; 24_LiPON_transport_comparison; 25_LiPON_temperature_RDF" source_frame_index=1829 relative_time_ps=182.9 pbc="T T T"
 Li       4.47637897       7.88464020       5.53797902
 Li       6.33624403       7.43996685      11.44984275
 Li       4.95627642       7.19657000       8.17302246
@@ -7811,7 +7811,7 @@ O        3.03269366       6.32808335       7.61177569
 O        4.49703066       0.28630841       8.73238245
 O        8.77478385       6.43345636       7.55423219
 124
-Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" source_frame_index=1859 relative_time_ps=185.9 pbc="T T T"
+Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" display_name="LiPON — NEP89 — 900 K — NVT production" report_figures="23_LiPON_lithium_MSD; 24_LiPON_transport_comparison; 25_LiPON_temperature_RDF" source_frame_index=1859 relative_time_ps=185.9 pbc="T T T"
 Li       2.03056774       8.51037097       5.92271878
 Li       6.38993920       7.28504316      10.69436094
 Li       5.01733854       6.47040637       8.08285580
@@ -7937,7 +7937,7 @@ O        1.71786121       6.66230092       5.44484695
 O        4.26412019       0.33985971       8.69002158
 O        8.65926556       6.43469971       7.26923446
 124
-Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" source_frame_index=1889 relative_time_ps=188.9 pbc="T T T"
+Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" display_name="LiPON — NEP89 — 900 K — NVT production" report_figures="23_LiPON_lithium_MSD; 24_LiPON_transport_comparison; 25_LiPON_temperature_RDF" source_frame_index=1889 relative_time_ps=188.9 pbc="T T T"
 Li       2.15579070       8.54033351       5.65045426
 Li       6.71634637       9.80024710       7.93213181
 Li       2.61379300       8.21634771       8.36921170
@@ -8063,7 +8063,7 @@ O        2.08556726       6.72625153       5.49738221
 O        4.49313824       0.38798339       8.34340228
 O        9.14131612       6.08161739       7.25250288
 124
-Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" source_frame_index=1919 relative_time_ps=191.9 pbc="T T T"
+Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" display_name="LiPON — NEP89 — 900 K — NVT production" report_figures="23_LiPON_lithium_MSD; 24_LiPON_transport_comparison; 25_LiPON_temperature_RDF" source_frame_index=1919 relative_time_ps=191.9 pbc="T T T"
 Li       1.94994301       8.04956737       5.98174417
 Li       7.04210316       0.88777609       8.35120389
 Li       2.56174835       9.19015397       8.85096630
@@ -8189,7 +8189,7 @@ O        1.62783563       6.35079831       6.66911929
 O        3.96231145      10.37309636       8.10177435
 O        8.68520719       5.73878683       8.09818709
 124
-Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" source_frame_index=1949 relative_time_ps=194.9 pbc="T T T"
+Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" display_name="LiPON — NEP89 — 900 K — NVT production" report_figures="23_LiPON_lithium_MSD; 24_LiPON_transport_comparison; 25_LiPON_temperature_RDF" source_frame_index=1949 relative_time_ps=194.9 pbc="T T T"
 Li       2.09828113       8.27878643       6.01205908
 Li       7.11983615       5.56908894       3.71134341
 Li       2.90317219       8.41023380       8.56499603
@@ -8315,7 +8315,7 @@ O        2.21945687       6.52636609       4.92462464
 O        3.68552035       0.54392878       8.73725578
 O        8.83889698       6.54937978       7.88681649
 124
-Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" source_frame_index=1979 relative_time_ps=197.9 pbc="T T T"
+Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" display_name="LiPON — NEP89 — 900 K — NVT production" report_figures="23_LiPON_lithium_MSD; 24_LiPON_transport_comparison; 25_LiPON_temperature_RDF" source_frame_index=1979 relative_time_ps=197.9 pbc="T T T"
 Li       2.39837676       8.53211626       5.89898410
 Li       8.26221466       5.29751085       3.72781806
 Li       2.95173413       7.96794141       8.30700573
@@ -8441,7 +8441,7 @@ O        2.37692753       6.80241185       5.74158189
 O        3.71658605       0.88126974       8.26114738
 O        8.27681945       6.40251677       7.36928804
 124
-Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" source_frame_index=2009 relative_time_ps=200.9 pbc="T T T"
+Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" display_name="LiPON — NEP89 — 900 K — NVT production" report_figures="23_LiPON_lithium_MSD; 24_LiPON_transport_comparison; 25_LiPON_temperature_RDF" source_frame_index=2009 relative_time_ps=200.9 pbc="T T T"
 Li       2.64470943       8.87339453       5.89434492
 Li       7.74020626       6.53427771       2.79461871
 Li       2.91805754       7.92522724       8.22295158
@@ -8567,7 +8567,7 @@ O        2.35392397       6.81355561       5.25721596
 O        3.75325398       0.42797329       8.89349734
 O        8.89747148       6.72314349       7.94294899
 124
-Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" source_frame_index=2039 relative_time_ps=203.9 pbc="T T T"
+Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" display_name="LiPON — NEP89 — 900 K — NVT production" report_figures="23_LiPON_lithium_MSD; 24_LiPON_transport_comparison; 25_LiPON_temperature_RDF" source_frame_index=2039 relative_time_ps=203.9 pbc="T T T"
 Li       2.57844759       8.24580897       5.27524708
 Li       8.39794927       6.51813287       4.34910759
 Li       2.90219261       7.84128661       8.23627963
@@ -8693,7 +8693,7 @@ O        1.70822405       6.43491847       5.41354701
 O        3.25759940      10.13465021       8.68172391
 O        9.00078986       6.42965343       7.46812754
 124
-Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" source_frame_index=2069 relative_time_ps=206.9 pbc="T T T"
+Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" display_name="LiPON — NEP89 — 900 K — NVT production" report_figures="23_LiPON_lithium_MSD; 24_LiPON_transport_comparison; 25_LiPON_temperature_RDF" source_frame_index=2069 relative_time_ps=206.9 pbc="T T T"
 Li       2.68939241       8.43961308       5.75381316
 Li       4.45661693       4.57302917       4.49512726
 Li       3.09917944       8.99827879       9.03080382
@@ -8819,7 +8819,7 @@ O        1.84563722       6.45334503       6.81478289
 O        3.56992005       0.20009437       8.62435807
 O        8.93720626       5.96209210       8.21582471
 124
-Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" source_frame_index=2099 relative_time_ps=209.9 pbc="T T T"
+Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" display_name="LiPON — NEP89 — 900 K — NVT production" report_figures="23_LiPON_lithium_MSD; 24_LiPON_transport_comparison; 25_LiPON_temperature_RDF" source_frame_index=2099 relative_time_ps=209.9 pbc="T T T"
 Li       2.41566711       8.43799742       5.91667526
 Li       4.70292441       3.07564037       5.76643980
 Li       3.03862735       7.82569088       8.38111900
@@ -8945,7 +8945,7 @@ O        2.50277404       6.39110764       5.24705998
 O        4.38628608       0.10700538       8.72164349
 O        8.42560128       6.60191610       7.72991798
 124
-Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" source_frame_index=2129 relative_time_ps=212.9 pbc="T T T"
+Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" display_name="LiPON — NEP89 — 900 K — NVT production" report_figures="23_LiPON_lithium_MSD; 24_LiPON_transport_comparison; 25_LiPON_temperature_RDF" source_frame_index=2129 relative_time_ps=212.9 pbc="T T T"
 Li       2.93033722       8.46252146       6.01203910
 Li       6.17712176       5.81083605       5.43880623
 Li       3.29121561       7.74350781       8.85087733
@@ -9071,7 +9071,7 @@ O        1.93654411       6.54783114       5.50895285
 O        3.93021151       0.64626537       8.86415173
 O        8.93373339       6.85708011       7.10450140
 124
-Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" source_frame_index=2159 relative_time_ps=215.9 pbc="T T T"
+Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" display_name="LiPON — NEP89 — 900 K — NVT production" report_figures="23_LiPON_lithium_MSD; 24_LiPON_transport_comparison; 25_LiPON_temperature_RDF" source_frame_index=2159 relative_time_ps=215.9 pbc="T T T"
 Li       5.26989814       6.36479611       4.12739390
 Li       0.29975229       7.38897529       5.87724273
 Li       2.80034924       7.40359156       7.99835375
@@ -9197,7 +9197,7 @@ O        1.75289173       6.46682347       5.13551859
 O        3.94568066      10.31731355       8.71554065
 O        9.06459016       6.66696107       7.53032138
 124
-Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" source_frame_index=2189 relative_time_ps=218.9 pbc="T T T"
+Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" display_name="LiPON — NEP89 — 900 K — NVT production" report_figures="23_LiPON_lithium_MSD; 24_LiPON_transport_comparison; 25_LiPON_temperature_RDF" source_frame_index=2189 relative_time_ps=218.9 pbc="T T T"
 Li       4.94476163       7.09332470       4.52963434
 Li       9.62687829       7.44580238       6.14359650
 Li       5.36585828       8.64453621       6.48687136
@@ -9323,7 +9323,7 @@ O        2.84496290       6.46661145       4.69940346
 O        4.11155184       0.66626911       8.52247970
 O        8.29716775       6.74958345       7.44163452
 124
-Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" source_frame_index=2219 relative_time_ps=221.9 pbc="T T T"
+Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" display_name="LiPON — NEP89 — 900 K — NVT production" report_figures="23_LiPON_lithium_MSD; 24_LiPON_transport_comparison; 25_LiPON_temperature_RDF" source_frame_index=2219 relative_time_ps=221.9 pbc="T T T"
 Li       5.16867473       8.53778377       5.30879313
 Li       9.55870303       7.03499252       5.93144718
 Li       6.70077544       5.62335505       6.25605990
@@ -9449,7 +9449,7 @@ O        2.06443976       7.02766847       7.09078846
 O        4.06758396       0.68770391       8.61982996
 O        8.00849257       6.32515072       7.28489624
 124
-Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" source_frame_index=2249 relative_time_ps=224.9 pbc="T T T"
+Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" display_name="LiPON — NEP89 — 900 K — NVT production" report_figures="23_LiPON_lithium_MSD; 24_LiPON_transport_comparison; 25_LiPON_temperature_RDF" source_frame_index=2249 relative_time_ps=224.9 pbc="T T T"
 Li       5.56379284       8.41588810       5.55746886
 Li       9.71336501       6.92635161       5.84975281
 Li       6.23014533       5.58619539       5.17406007
@@ -9575,7 +9575,7 @@ O        1.95005342       6.40346785       6.40056885
 O        3.52019789       0.47201823       8.31575446
 O        7.23436329       5.92009405       6.94005370
 124
-Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" source_frame_index=2279 relative_time_ps=227.9 pbc="T T T"
+Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" display_name="LiPON — NEP89 — 900 K — NVT production" report_figures="23_LiPON_lithium_MSD; 24_LiPON_transport_comparison; 25_LiPON_temperature_RDF" source_frame_index=2279 relative_time_ps=227.9 pbc="T T T"
 Li       5.19263398       7.83685739       7.04077152
 Li       0.28645082       6.19149532       6.91102613
 Li       8.20998094       5.20687596       3.69920868
@@ -9701,7 +9701,7 @@ O        2.15982075       6.96946683       6.82597894
 O        3.09864168       0.56677522       8.38280585
 O        7.78247675       6.24598775       7.38765331
 124
-Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" source_frame_index=2309 relative_time_ps=230.9 pbc="T T T"
+Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" display_name="LiPON — NEP89 — 900 K — NVT production" report_figures="23_LiPON_lithium_MSD; 24_LiPON_transport_comparison; 25_LiPON_temperature_RDF" source_frame_index=2309 relative_time_ps=230.9 pbc="T T T"
 Li       5.56064624       7.18247879       9.24455251
 Li       8.25729113       6.40227359       5.56422171
 Li       5.28055952       5.90143160       3.69919371
@@ -9827,7 +9827,7 @@ O        1.93269888       5.65122202       6.37997559
 O        3.43538535       0.75090257       8.34232989
 O        8.78226036       6.01302463       7.55195093
 124
-Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" source_frame_index=2339 relative_time_ps=233.9 pbc="T T T"
+Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" display_name="LiPON — NEP89 — 900 K — NVT production" report_figures="23_LiPON_lithium_MSD; 24_LiPON_transport_comparison; 25_LiPON_temperature_RDF" source_frame_index=2339 relative_time_ps=233.9 pbc="T T T"
 Li       5.97620140       7.75704914       6.89201706
 Li       9.25033492       7.25537592       5.76451280
 Li       3.22055427       6.43869117       2.83498642
@@ -9953,7 +9953,7 @@ O        2.06715639       6.76712418       6.73209390
 O        3.40084221       0.44678812       8.04027071
 O        7.60618471       6.57314597       7.18941112
 124
-Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" source_frame_index=2369 relative_time_ps=236.9 pbc="T T T"
+Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" display_name="LiPON — NEP89 — 900 K — NVT production" report_figures="23_LiPON_lithium_MSD; 24_LiPON_transport_comparison; 25_LiPON_temperature_RDF" source_frame_index=2369 relative_time_ps=236.9 pbc="T T T"
 Li       5.26183205       6.21967188       8.83221678
 Li       1.06369588       6.39740324       2.94198148
 Li       3.71068781       6.25509560       2.86270894
@@ -10079,7 +10079,7 @@ O        2.05168701       6.58097024       7.06656694
 O        2.85961874       0.18696355       8.91350121
 O        7.91705247       5.74075307       7.21374233
 124
-Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" source_frame_index=2399 relative_time_ps=239.9 pbc="T T T"
+Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" display_name="LiPON — NEP89 — 900 K — NVT production" report_figures="23_LiPON_lithium_MSD; 24_LiPON_transport_comparison; 25_LiPON_temperature_RDF" source_frame_index=2399 relative_time_ps=239.9 pbc="T T T"
 Li       5.20896437       7.77914449      11.68571364
 Li       0.08590386       6.52462788       2.91528261
 Li       2.44898965       1.70988819       4.75989597
@@ -10205,7 +10205,7 @@ O        1.74094153       6.57495725       6.65198846
 O        3.55303721       0.47488143       8.72283207
 O        7.16505322       6.12840769       6.79473991
 124
-Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" source_frame_index=2429 relative_time_ps=242.9 pbc="T T T"
+Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" display_name="LiPON — NEP89 — 900 K — NVT production" report_figures="23_LiPON_lithium_MSD; 24_LiPON_transport_comparison; 25_LiPON_temperature_RDF" source_frame_index=2429 relative_time_ps=242.9 pbc="T T T"
 Li       5.31642532       7.91955522       9.06325252
 Li       9.58823163       6.35571905       3.08550780
 Li       2.84905520       3.23781851       6.63843058
@@ -10331,7 +10331,7 @@ O        1.95717708       6.80772528       6.41393088
 O        3.15378310       0.61799959       8.19241924
 O        6.99885387       5.89514663       6.67233727
 124
-Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" source_frame_index=2459 relative_time_ps=245.9 pbc="T T T"
+Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" display_name="LiPON — NEP89 — 900 K — NVT production" report_figures="23_LiPON_lithium_MSD; 24_LiPON_transport_comparison; 25_LiPON_temperature_RDF" source_frame_index=2459 relative_time_ps=245.9 pbc="T T T"
 Li       7.19445377       9.27036494       9.14323703
 Li       8.88122290       5.37036664       3.15322316
 Li       1.22194197       4.33362185       6.48568005
@@ -10457,7 +10457,7 @@ O        2.06072232       6.89489768       6.11328707
 O        3.48784215       0.51228782       8.50602797
 O        7.03412163       6.06754217       6.96055688
 124
-Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" source_frame_index=2489 relative_time_ps=248.9 pbc="T T T"
+Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" display_name="LiPON — NEP89 — 900 K — NVT production" report_figures="23_LiPON_lithium_MSD; 24_LiPON_transport_comparison; 25_LiPON_temperature_RDF" source_frame_index=2489 relative_time_ps=248.9 pbc="T T T"
 Li       3.59923935       1.82093127       9.93740901
 Li       9.32115646       4.81863654       2.75725513
 Li       1.67343403       3.40990928       4.23094648
@@ -10583,7 +10583,7 @@ O        1.93438282       6.56011163       6.87960500
 O        3.39645440       0.29989858       8.88299406
 O        7.25757075       6.16325130       6.66167409
 124
-Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" source_frame_index=2519 relative_time_ps=251.9 pbc="T T T"
+Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" display_name="LiPON — NEP89 — 900 K — NVT production" report_figures="23_LiPON_lithium_MSD; 24_LiPON_transport_comparison; 25_LiPON_temperature_RDF" source_frame_index=2519 relative_time_ps=251.9 pbc="T T T"
 Li       5.08037861       9.99581363       9.60829941
 Li       9.36974544       2.91656410       2.17710434
 Li       1.25103425       3.71266256       4.31812829
@@ -10709,7 +10709,7 @@ O        2.02973953       6.91025300       5.91425898
 O        3.27713168       0.06260607       8.41502191
 O        6.08995505       7.83784807       8.09266867
 124
-Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" source_frame_index=2549 relative_time_ps=254.9 pbc="T T T"
+Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" display_name="LiPON — NEP89 — 900 K — NVT production" report_figures="23_LiPON_lithium_MSD; 24_LiPON_transport_comparison; 25_LiPON_temperature_RDF" source_frame_index=2549 relative_time_ps=254.9 pbc="T T T"
 Li       5.58264853       0.75473823       9.60020215
 Li       8.00771398       2.65782230      11.26620872
 Li       8.85023684       3.33477869       2.47908641
@@ -10835,7 +10835,7 @@ O        1.99683651       5.80263994       4.70423167
 O        3.83878028       9.89976542       8.88980574
 O        6.44967741       7.59682729       8.28219745
 124
-Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" source_frame_index=2579 relative_time_ps=257.9 pbc="T T T"
+Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" display_name="LiPON — NEP89 — 900 K — NVT production" report_figures="23_LiPON_lithium_MSD; 24_LiPON_transport_comparison; 25_LiPON_temperature_RDF" source_frame_index=2579 relative_time_ps=257.9 pbc="T T T"
 Li       5.44866000       0.62475445       9.66048136
 Li       7.47271568       2.79095078      12.08106489
 Li       8.82290015       3.64514947       3.06411379
@@ -10961,7 +10961,7 @@ O        2.22089680       6.04678121       4.38509823
 O        3.20742628       0.10492659       8.93718078
 O        6.42149113       7.30543739       8.22840812
 124
-Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" source_frame_index=2609 relative_time_ps=260.9 pbc="T T T"
+Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" display_name="LiPON — NEP89 — 900 K — NVT production" report_figures="23_LiPON_lithium_MSD; 24_LiPON_transport_comparison; 25_LiPON_temperature_RDF" source_frame_index=2609 relative_time_ps=260.9 pbc="T T T"
 Li       6.42586144       0.24406832       9.14707184
 Li       7.29569235       2.36990071      12.13987468
 Li       8.99663274       4.11606066       3.02090868
@@ -11087,7 +11087,7 @@ O        2.05052140       6.67016884       4.45125423
 O        3.56187696      10.38052189       9.17599624
 O        7.06530308       6.43480367       7.66940829
 124
-Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" source_frame_index=2639 relative_time_ps=263.9 pbc="T T T"
+Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" display_name="LiPON — NEP89 — 900 K — NVT production" report_figures="23_LiPON_lithium_MSD; 24_LiPON_transport_comparison; 25_LiPON_temperature_RDF" source_frame_index=2639 relative_time_ps=263.9 pbc="T T T"
 Li       7.08670004       0.14753533       8.75992013
 Li       6.26662704       7.62764922      11.13121489
 Li       5.14364976       8.18650695       2.78818098
@@ -11213,7 +11213,7 @@ O        2.13833990       6.63945054       6.59562015
 O        3.59676136       0.26781406       8.61131226
 O        6.86902872       8.60937074       8.01803366
 124
-Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" source_frame_index=2669 relative_time_ps=266.9 pbc="T T T"
+Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" display_name="LiPON — NEP89 — 900 K — NVT production" report_figures="23_LiPON_lithium_MSD; 24_LiPON_transport_comparison; 25_LiPON_temperature_RDF" source_frame_index=2669 relative_time_ps=266.9 pbc="T T T"
 Li       4.64232841      10.08574399      10.09326022
 Li       7.33291886       8.25540221       0.93050753
 Li       5.12499608       8.15947674       3.05185476
@@ -11339,7 +11339,7 @@ O        1.88444017       6.59904603       7.13665726
 O        3.29523146       0.58425718       8.76868214
 O        6.28908252       7.85543930       7.41350952
 124
-Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" source_frame_index=2699 relative_time_ps=269.9 pbc="T T T"
+Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" display_name="LiPON — NEP89 — 900 K — NVT production" report_figures="23_LiPON_lithium_MSD; 24_LiPON_transport_comparison; 25_LiPON_temperature_RDF" source_frame_index=2699 relative_time_ps=269.9 pbc="T T T"
 Li       6.16955401       7.76431430      11.76847958
 Li       7.45091910       8.83559501       1.48108356
 Li       5.47204277       9.99468396       2.77132799
@@ -11465,7 +11465,7 @@ O        2.23083755       6.31008284       7.17340927
 O        3.60322582       0.19064921       8.81918435
 O        6.64026019       8.56189785       8.47017127
 124
-Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" source_frame_index=2729 relative_time_ps=272.9 pbc="T T T"
+Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" display_name="LiPON — NEP89 — 900 K — NVT production" report_figures="23_LiPON_lithium_MSD; 24_LiPON_transport_comparison; 25_LiPON_temperature_RDF" source_frame_index=2729 relative_time_ps=272.9 pbc="T T T"
 Li       6.10748738       7.65930357      10.91502234
 Li       5.62914662       8.03029377       2.27637748
 Li       5.10326497       1.12852373       2.03790548
@@ -11591,7 +11591,7 @@ O        1.92531033       6.28837803       7.56445217
 O        3.23955972       0.04756118       8.73183469
 O        6.48679034       7.69954245       7.97057200
 124
-Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" source_frame_index=2759 relative_time_ps=275.9 pbc="T T T"
+Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" display_name="LiPON — NEP89 — 900 K — NVT production" report_figures="23_LiPON_lithium_MSD; 24_LiPON_transport_comparison; 25_LiPON_temperature_RDF" source_frame_index=2759 relative_time_ps=275.9 pbc="T T T"
 Li       5.66531497       5.06652520       7.60518922
 Li       8.08258148       5.37188204       4.36147754
 Li       4.70630135       1.00259412       2.26739228
@@ -11717,7 +11717,7 @@ O        1.71058318       6.60204813       6.73381691
 O        3.57607163       0.47669801       8.59030607
 O        6.85112394       7.65234678       9.86801297
 124
-Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" source_frame_index=2789 relative_time_ps=278.9 pbc="T T T"
+Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" display_name="LiPON — NEP89 — 900 K — NVT production" report_figures="23_LiPON_lithium_MSD; 24_LiPON_transport_comparison; 25_LiPON_temperature_RDF" source_frame_index=2789 relative_time_ps=278.9 pbc="T T T"
 Li       5.67076561       5.41692332       8.33132391
 Li       8.73551199       5.54794184       3.90812799
 Li       4.08762416       1.33140583       2.27674868
@@ -11843,7 +11843,7 @@ O        2.04906718       6.49260033       6.41910545
 O        3.28964815       0.87953362       8.41271009
 O        7.01064414       6.35733382       7.66885842
 124
-Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" source_frame_index=2819 relative_time_ps=281.9 pbc="T T T"
+Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" display_name="LiPON — NEP89 — 900 K — NVT production" report_figures="23_LiPON_lithium_MSD; 24_LiPON_transport_comparison; 25_LiPON_temperature_RDF" source_frame_index=2819 relative_time_ps=281.9 pbc="T T T"
 Li       5.78660711       5.42708715       8.01921965
 Li       8.33987507       5.21489473       3.20008974
 Li       5.39001890      10.34660548       2.83680324
@@ -11969,7 +11969,7 @@ O        1.92239325       6.45876149       6.51995535
 O        3.38867707       0.75632298       8.53085541
 O        6.89540180       6.78128562       6.96175068
 124
-Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" source_frame_index=2849 relative_time_ps=284.9 pbc="T T T"
+Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" display_name="LiPON — NEP89 — 900 K — NVT production" report_figures="23_LiPON_lithium_MSD; 24_LiPON_transport_comparison; 25_LiPON_temperature_RDF" source_frame_index=2849 relative_time_ps=284.9 pbc="T T T"
 Li       6.50840553       4.77589519       7.30009056
 Li       7.82760422       5.23040152       3.71211294
 Li       5.38107417      10.42473054       3.21426755
@@ -12095,7 +12095,7 @@ O        2.35868241       6.60136568       4.71471552
 O        3.38678786       0.12111566       9.01192936
 O        6.38077998       7.01630155       8.17291329
 124
-Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" source_frame_index=2879 relative_time_ps=287.9 pbc="T T T"
+Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" display_name="LiPON — NEP89 — 900 K — NVT production" report_figures="23_LiPON_lithium_MSD; 24_LiPON_transport_comparison; 25_LiPON_temperature_RDF" source_frame_index=2879 relative_time_ps=287.9 pbc="T T T"
 Li       5.67670113       6.85189037       9.64437925
 Li       5.83405322       5.27727322       6.22131825
 Li       5.50130694      10.18006277       2.53901629
@@ -12221,7 +12221,7 @@ O        1.67336199       6.30183348       4.62614028
 O        3.70545529       0.53454768       8.73807221
 O        6.54331418       7.39779267       8.07033776
 124
-Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" source_frame_index=2909 relative_time_ps=290.9 pbc="T T T"
+Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" display_name="LiPON — NEP89 — 900 K — NVT production" report_figures="23_LiPON_lithium_MSD; 24_LiPON_transport_comparison; 25_LiPON_temperature_RDF" source_frame_index=2909 relative_time_ps=290.9 pbc="T T T"
 Li       5.96438998       6.69296285      10.33537948
 Li       7.39271175       5.42475908       5.47985398
 Li       5.19488007       9.12592774       2.45908038
@@ -12347,7 +12347,7 @@ O        4.07941863       6.47155371       5.06400856
 O        3.63523071       0.53851686       8.96433837
 O        7.39744982       6.32658028       6.94159732
 124
-Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" source_frame_index=2939 relative_time_ps=293.9 pbc="T T T"
+Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" display_name="LiPON — NEP89 — 900 K — NVT production" report_figures="23_LiPON_lithium_MSD; 24_LiPON_transport_comparison; 25_LiPON_temperature_RDF" source_frame_index=2939 relative_time_ps=293.9 pbc="T T T"
 Li       6.19376255       7.83620536      11.34199691
 Li       8.39642107       3.47557520       7.80786359
 Li       5.43696380       0.08398316       2.51164747
@@ -12473,7 +12473,7 @@ O        4.34262056       6.70643174       5.73207621
 O        3.91077415       0.63604674       8.89001702
 O        6.81736364       6.74474913       7.04107945
 124
-Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" source_frame_index=2969 relative_time_ps=296.9 pbc="T T T"
+Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" display_name="LiPON — NEP89 — 900 K — NVT production" report_figures="23_LiPON_lithium_MSD; 24_LiPON_transport_comparison; 25_LiPON_temperature_RDF" source_frame_index=2969 relative_time_ps=296.9 pbc="T T T"
 Li       5.37830601       8.92878298       9.02226504
 Li       8.66297372       4.48603403       7.69888098
 Li       5.20462639      10.32086055       2.47449879
@@ -12599,7 +12599,7 @@ O        3.62118833       6.99365489       5.12266995
 O        3.28570462       0.67471364       8.76911280
 O        6.63540774       6.73135518       7.46091352
 124
-Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" source_frame_index=2999 relative_time_ps=299.9 pbc="T T T"
+Lattice="9.75805 0.0 0.0 0.0 10.5003 0.0 0.0 0.0 12.2449" Properties=species:S:1:pos:R:3 material=LiPON model=NEP89 temperature_K=900 phase="NVT production" display_name="LiPON — NEP89 — 900 K — NVT production" report_figures="23_LiPON_lithium_MSD; 24_LiPON_transport_comparison; 25_LiPON_temperature_RDF" source_frame_index=2999 relative_time_ps=299.9 pbc="T T T"
 Li       4.55008760       9.76680432      10.18525323
 Li       8.53360182       3.82912322       8.27611492
 Li       4.51615709       8.57593470       2.57810184
