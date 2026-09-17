@@ -1,10 +1,11 @@
 # Liイオン輸送に対する事前学習原子間ポテンシャルの評価 — 結晶ベンチマークから非晶質電解質へ
 
-更新：2026年9月16日。[English](materials_overview_en.md)
+更新：2026年9月17日。[English](materials_overview_en.md)
 
 ## 目次
 
 - [総括：研究背景、文献基盤、研究設計](#overview)
+- [原子構造と代表軌跡](#evidence)
 - [前半：企業計算の再現と結晶材料ベンチマーク](#crystalline)
 - [1. MACEとNEP89の計算性能ベンチマーク](#legacy)
 - [2. LZOC：主軸となるAIMD比較](#lzoc)
@@ -27,6 +28,21 @@
 第一原理分子動力学（AIMD）は経験的な力場を用いずに局所構造と拡散を結び付けられるが、扱えるセルサイズと時間スケールが限られる。材料専用の機械学習ポテンシャルは、適切な電子状態計算データで学習することにより、より大きなセルと長時間軌跡へ拡張できる。汎用事前学習ニューラルネットワークポテンシャルは、材料ごとの再学習を行わずに適用できるため、さらに低コストである。しかし重要なのは軌跡を生成できるかどうかではなく、得られたガラス構造と輸送が材料専用AIMDおよび実験と整合するかである。
 
 これら三つの証拠階層は異なる問いに答える。実験は合成材料の伝導度、活性化エネルギー、平均・局所構造を与えるが、通常は一意の原子軌跡を与えない。AIMDは電子状態計算に基づく軌跡とトレーサー拡散を与えるが、多くの場合は比較的小さな周期セルと数十psに制限される。材料専用機械学習ポテンシャルはDFTとの直接的な学習関係を保ちながら、より大きな系と長時間へ拡張する。汎用事前学習ポテンシャルは材料専用較正を転移性と速度に置き換える。本研究はこの最後の段階に位置し、計算上の経済性が材料固有の証拠に照らしても有効かを検討する。
+
+<a id="evidence"></a>
+### 原子構造と代表軌跡
+
+主要図の根拠となる原子データを一つの[構造・軌跡パッケージ](../../materials/evidence/README.md)に集約した。実際に用いた結晶／非晶質初期構造と、報告対象軌跡を等時間間隔で抽出したextended XYZを収録している。各XYZは周期セル、材料、モデル、温度、元フレーム番号、相対時間を保持する。MSD、拡散係数、RDF、配位、熱力学量の定量解析は完全な元軌跡を用いており、そのパス、フレーム数、時間間隔、SHA-256は[機械可読manifest](../../materials/evidence/manifest.json)に記録した。
+
+|報告段階|初期／解析構造|代表軌跡|
+|---|---|---|
+|Li₃YCl₆結晶benchmark|[240原子有序構造](../../materials/evidence/crystalline/Li3YCl6/initial_structure.xyz)|600 Kの[MACE](../../materials/evidence/crystalline/Li3YCl6/MACE_600K_representative_part01.xyz)、[SevenNet](../../materials/evidence/crystalline/Li3YCl6/SevenNet_600K_representative_part01.xyz)、[M3GNet](../../materials/evidence/crystalline/Li3YCl6/M3GNet_600K_representative_part01.xyz)|
+|LiNbOCl₄結晶benchmark|[336原子有序構造](../../materials/evidence/crystalline/LiNbOCl4/initial_structure.xyz)|800 Kの[MACE](../../materials/evidence/crystalline/LiNbOCl4/MACE_800K_representative_part01.xyz)、[SevenNet](../../materials/evidence/crystalline/LiNbOCl4/SevenNet_800K_representative_part01.xyz)、[M3GNet](../../materials/evidence/crystalline/LiNbOCl4/M3GNet_800K_representative_part01.xyz)|
+|600 K MACE–NEP benchmark|[共通300 K入力](../../materials/evidence/amorphous/MACE_NEP_benchmark/common_300K_structure.xyz)|NPT体積応答：[MACE](../../materials/evidence/amorphous/MACE_NEP_benchmark/MACE_600K_NPT_volume_part01.xyz)、[NEP89](../../materials/evidence/amorphous/MACE_NEP_benchmark/NEP89_600K_NPT_volume_part01.xyz)；NVT production：[MACE](../../materials/evidence/amorphous/MACE_NEP_benchmark/MACE_600K_NVT_representative_part01.xyz)、[NEP89](../../materials/evidence/amorphous/MACE_NEP_benchmark/NEP89_600K_NVT_representative_part01.xyz)|
+|LZOC|[構築初期構造](../../materials/evidence/amorphous/LZOC/construction_initial.xyz)と[輸送開始構造](../../materials/evidence/amorphous/LZOC/analysis_start.xyz)|[340 K](../../materials/evidence/amorphous/LZOC/NEP89_340K_representative_part01.xyz)、[360 K](../../materials/evidence/amorphous/LZOC/NEP89_360K_representative_part01.xyz)、[380 K](../../materials/evidence/amorphous/LZOC/NEP89_380K_representative_part01.xyz)|
+|LSZC|[緩和済み272原子構造](../../materials/evidence/amorphous/LSZC/construction_relaxed.xyz)と[共通セル輸送開始構造](../../materials/evidence/amorphous/LSZC/analysis_start.xyz)|[320 K](../../materials/evidence/amorphous/LSZC/NEP89_320K_representative_part01.xyz)、[330 K](../../materials/evidence/amorphous/LSZC/NEP89_330K_representative_part01.xyz)、[340 K](../../materials/evidence/amorphous/LSZC/NEP89_340K_representative_part01.xyz)、[350 K](../../materials/evidence/amorphous/LSZC/NEP89_350K_representative_part01.xyz)|
+|Li₃PS₄|[構築入力](../../materials/evidence/amorphous/Li3PS4/construction_initial.xyz)と[R1輸送開始構造](../../materials/evidence/amorphous/Li3PS4/analysis_start.xyz)|[300 K](../../materials/evidence/amorphous/Li3PS4/NEP89_300K_representative_part01.xyz)、[500 K](../../materials/evidence/amorphous/Li3PS4/NEP89_500K_representative_part01.xyz)、[700 K](../../materials/evidence/amorphous/Li3PS4/NEP89_700K_representative_part01.xyz)、[900 K](../../materials/evidence/amorphous/Li3PS4/NEP89_900K_representative_part01.xyz)|
+|LiPON|[構築入力](../../materials/evidence/amorphous/LiPON/construction_initial.xyz)と[輸送開始構造](../../materials/evidence/amorphous/LiPON/analysis_start.xyz)|[600 K](../../materials/evidence/amorphous/LiPON/NEP89_600K_representative_part01.xyz)、[900 K](../../materials/evidence/amorphous/LiPON/NEP89_900K_representative_part01.xyz)、[1200 K](../../materials/evidence/amorphous/LiPON/NEP89_1200K_representative_part01.xyz)、[1500 K](../../materials/evidence/amorphous/LiPON/NEP89_1500K_representative_part01.xyz)|
 
 <a id="crystalline"></a>
 ### 前半：企業計算の再現と結晶材料ベンチマーク
@@ -196,6 +212,8 @@ LiPONは、輸送がリン酸塩―N網目のトポロジーと結び付くた�
 
 性能比較には、次節のHussain由来モデルではなく、事前に作製した192原子のLZOCベンチマークガラスを用いた。MACEとNEPは同じ公称組成・温度で比較するが、その後の構造と密度は各ポテンシャルに応じて変化する。600 Kでは50 ps NPTの後に200 ps NVT productionを行った。
 
+体積応答は[共通300 K構造](../../materials/evidence/amorphous/MACE_NEP_benchmark/common_300K_structure.xyz)と、600 K NPTの[MACE](../../materials/evidence/amorphous/MACE_NEP_benchmark/MACE_600K_NPT_volume_part01.xyz)および[NEP89](../../materials/evidence/amorphous/MACE_NEP_benchmark/NEP89_600K_NPT_volume_part01.xyz)のXYZから直接確認できる。固定セル運動は別のNVT production XYZとして保持し、変動セルの証拠と混同しない。
+
 これは**NNPを用いた計算ワークフローの比較**であり、同一配置に対する力の誤差評価ではない。実行時間で計算コストを、密度・元素別MSD・RDFで材料応答を調べる。エンジンと到達密度も異なるため、Dの差をポテンシャルの移動障壁だけに帰属できない。本比較のための再学習は行っていない。NEPを選ぶ理由は測定された計算効率であり、予測精度は以降の文献比較で別に評価する。
 
 ![MACEとNEP89の計算コストと密度応答](figures/09_MACE_NEP_runtime_density.png)
@@ -296,6 +314,8 @@ flowchart LR
 
 HussainのSI Table 2の部分占有サイトを整数占有の2×2×2モデルに展開し、**Li42Zr24Cl114O12、計192原子**とした。組成を制約し、近接しすぎる配置を幾何学的に除外した。この処理はエネルギー最小化ではなく、著者の原子座標そのものの再現でもない。初期セルはa=b=21.874 Å、c=12.044 Å、γ=120°である。セルの傾き自体は構造破壊を意味しない。
 
+[構築初期モデル](../../materials/evidence/amorphous/LZOC/construction_initial.xyz)、実際の[輸送開始構造](../../materials/evidence/amorphous/LZOC/analysis_start.xyz)、報告した三温度の代表軌跡を同じ証拠パッケージに保存した。
+
 実行履歴は100 K・2 ps、500 K・30 ps、1000 K・50 ps、1500 K・30 ps、2000 K・20 ps、その後1500/1000/500/100 Kで各2 ps、300 Kで20+50 psの緩和である。これは実施したNEP作製条件であり、AIMDの溶融・急冷過程を厳密に再現したという意味ではない。高温処理の終了だけで完全溶融とは判断せず、RDFと骨格運動を構造評価に用いる。
 
 輸送計算は**340/360/380 K、周期境界・固定セル、NVT Nosé–Hoover chain、時間刻み2 fs、production 300 ps**で、温度結合時間は100 fsである。最初の300 ps系列は80 ps計算の出力に延長したものではなく、その入力構造から再実行した。340/360 Kの追加速度初期化系列には50 ps NVT平衡化を設けたが、独立に作製したガラスではない。温度と時間刻みを合わせても、ポテンシャル・原子数・作製過程・計算時間には文献との差が残る。
@@ -393,6 +413,8 @@ flowchart LR
 ### 四温度の等容積輸送計算
 
 最終比較には、同じ記録済み272原子構造・固定セルから得た320／330／340／350 Kの完了済み2系列を用いる。各温度で50 ps NVT平衡化＋300 ps NVT productionを行い、NEP89、時間刻み0.5 fs、MTTK温度結合100 fsを共通とした。2系列の違いは初期速度のみである。この統一条件は旧端点推定を置き換え、報告する活性化エネルギーの四温度基盤となる。
+
+[緩和済み272原子構造](../../materials/evidence/amorphous/LSZC/construction_relaxed.xyz)、実際の[共通セル解析開始構造](../../materials/evidence/amorphous/LSZC/analysis_start.xyz)、報告した四温度の代表軌跡を確認用XYZとして収録した。
 
 共通セルは既存320 Kのproduction前セル（8138.55 Å³、約1.880 g/cm³）とし、実験密度に合わせた拡縮は行わない。旧端点の開始密度が異なる影響を切り分ける**等容積対照**であり、各温度の平衡密度や文献と同じ熱力学経路を保証しない。圧力・エネルギー緩和・骨格構造もMSDと併せて確認する。
 
@@ -530,6 +552,8 @@ flowchart LR
 
 著者の学習データから取得した64原子Li24P8S32構型を2×2×2に拡張し、**Li192P64S256、計512原子**とした。現在のガラス構造は輸送結果を見る前に選定した。1500 Kで100 ps NPT保持し、480 psで300 Kまで冷却（2.5 K/ps）、20 ps保持した。その後、300／500／700／900 Kごとに10 ps温度調整、1 barで50 ps NPT、200 ps NVT productionを行い、時間刻みは0.5 fsとした。熱履歴は文献を参考にするが、NEP89、前駆体および結合条件はChenのDeePMD計算と異なる。
 
+[構築入力構造](../../materials/evidence/amorphous/Li3PS4/construction_initial.xyz)、実際の[R1輸送開始構造](../../materials/evidence/amorphous/Li3PS4/analysis_start.xyz)、300–900 Kの代表軌跡を結果と対応させて保存した。
+
 **各図の役割：** 完全なLi MSD曲線で拡散領域の有無を判断し、同温度Dで公開ガラスモデルとの差を測る。P／S MSDで静止骨格近似を確認し、RDFとS–P–S角度で局所構造を評価する。MSD図にフィット区間は重ねない。
 
 ![Li3PS4の温度依存Li平均二乗変位](figures/05_Li3PS4_lithium_MSD.png)
@@ -611,6 +635,8 @@ LiPONには三段階の基準がある。実験的に制約された網目トポ
 ### 前駆体の構築とMDの範囲
 
 16原子のLi₃PO₄セルを2×2×2に拡張し、Oを5個Nに置換、さらにOを3個、Liを1個除去して**124原子**とした。Li⁺/P⁵⁺/O²⁻/N³⁻の形式電荷で中性である。3組は同一前駆体トポロジーを用い、溶融前に速度を変えた。従って、独立な置換配置ではなく、熱履歴感度を比較する。
+
+[LiPON構築入力](../../materials/evidence/amorphous/LiPON/construction_initial.xyz)、実際の[輸送解析開始構造](../../materials/evidence/amorphous/LiPON/analysis_start.xyz)、報告した四温度の代表軌跡を同じ証拠パッケージに収録した。
 
 |段階|本GPUMD/NEP89設定|文献との関係|
 |---|---|---|

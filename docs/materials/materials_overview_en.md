@@ -1,10 +1,11 @@
 # Pretrained Interatomic Potentials for Lithium-Ion Transport: Crystalline Benchmarks and Amorphous Electrolytes
 
-Updated 16 September 2026. [日本語](materials_overview_ja.md)
+Updated 17 September 2026. [日本語](materials_overview_ja.md)
 
 ## Contents
 
 - [Overview: motivation, literature basis and study design](#overview)
+- [Atomic structures and representative trajectories](#evidence)
 - [Part I: company-workflow reproduction and crystalline benchmarks](#crystalline)
 - [1. Computational performance benchmark: MACE and NEP89](#legacy)
 - [2. LZOC: the primary AIMD comparison](#lzoc)
@@ -27,6 +28,21 @@ This distinction is especially important for mixed-anion glasses. Introducing O,
 Ab initio molecular dynamics (AIMD) can connect local structure with diffusion without an empirical force field, but its accessible cell sizes and trajectories are limited. Material-specific machine-learned potentials extend the time and length scales after training on suitable electronic-structure data. General pretrained neural-network potentials offer a more economical alternative because they can be applied without new material-specific training. The unresolved question is not whether such a model produces a trajectory, but whether the resulting glass structure and transport remain consistent with material-specific AIMD and experiment.
 
 These three levels of evidence answer different questions. Experiment establishes the actual conductivity, activation energy and average/local structure of a synthesized material, but normally does not provide a unique atomistic trajectory. AIMD supplies an electronic-structure-based trajectory and tracer diffusion, but often over tens of picoseconds in a relatively small periodic cell. A material-specific machine-learned potential can reach larger systems and longer times while retaining a direct training link to DFT. A general pretrained potential trades that material-specific calibration for transferability and speed. The present study is positioned at this last step: it tests whether computational economy survives contact with material-specific evidence.
+
+<a id="evidence"></a>
+### Atomic structures and representative trajectories
+
+The atomic evidence underlying the main figures is collected in a single [structure and trajectory package](../../materials/evidence/README.md). It contains the actual ordered or amorphous starting structures and uniformly sampled extended-XYZ views of the trajectories used in the report. These compact trajectories retain the periodic cell, material, model, temperature, source-frame index and relative time. Quantitative analysis continues to use the complete local source trajectories; their paths, frame counts, time intervals and SHA-256 hashes are recorded in the [machine-readable manifest](../../materials/evidence/manifest.json).
+
+|Report stage|Initial or analysis structure|Representative trajectory evidence|
+|---|---|---|
+|Li₃YCl₆ crystalline benchmark|[240-atom ordered model](../../materials/evidence/crystalline/Li3YCl6/initial_structure.xyz)|[MACE](../../materials/evidence/crystalline/Li3YCl6/MACE_600K_representative_part01.xyz), [SevenNet](../../materials/evidence/crystalline/Li3YCl6/SevenNet_600K_representative_part01.xyz) and [M3GNet](../../materials/evidence/crystalline/Li3YCl6/M3GNet_600K_representative_part01.xyz) at 600 K|
+|LiNbOCl₄ crystalline benchmark|[336-atom ordered model](../../materials/evidence/crystalline/LiNbOCl4/initial_structure.xyz)|[MACE](../../materials/evidence/crystalline/LiNbOCl4/MACE_800K_representative_part01.xyz), [SevenNet](../../materials/evidence/crystalline/LiNbOCl4/SevenNet_800K_representative_part01.xyz) and [M3GNet](../../materials/evidence/crystalline/LiNbOCl4/M3GNet_800K_representative_part01.xyz) at 800 K|
+|600 K MACE–NEP benchmark|[common 300 K input](../../materials/evidence/amorphous/MACE_NEP_benchmark/common_300K_structure.xyz)|NPT volume response: [MACE](../../materials/evidence/amorphous/MACE_NEP_benchmark/MACE_600K_NPT_volume_part01.xyz), [NEP89](../../materials/evidence/amorphous/MACE_NEP_benchmark/NEP89_600K_NPT_volume_part01.xyz); NVT production: [MACE](../../materials/evidence/amorphous/MACE_NEP_benchmark/MACE_600K_NVT_representative_part01.xyz), [NEP89](../../materials/evidence/amorphous/MACE_NEP_benchmark/NEP89_600K_NVT_representative_part01.xyz)|
+|LZOC|[constructed model](../../materials/evidence/amorphous/LZOC/construction_initial.xyz) and [transport start](../../materials/evidence/amorphous/LZOC/analysis_start.xyz)|[340 K](../../materials/evidence/amorphous/LZOC/NEP89_340K_representative_part01.xyz), [360 K](../../materials/evidence/amorphous/LZOC/NEP89_360K_representative_part01.xyz), [380 K](../../materials/evidence/amorphous/LZOC/NEP89_380K_representative_part01.xyz)|
+|LSZC|[relaxed cluster-packed model](../../materials/evidence/amorphous/LSZC/construction_relaxed.xyz) and [common-cell transport start](../../materials/evidence/amorphous/LSZC/analysis_start.xyz)|[320 K](../../materials/evidence/amorphous/LSZC/NEP89_320K_representative_part01.xyz), [330 K](../../materials/evidence/amorphous/LSZC/NEP89_330K_representative_part01.xyz), [340 K](../../materials/evidence/amorphous/LSZC/NEP89_340K_representative_part01.xyz), [350 K](../../materials/evidence/amorphous/LSZC/NEP89_350K_representative_part01.xyz)|
+|Li₃PS₄|[construction input](../../materials/evidence/amorphous/Li3PS4/construction_initial.xyz) and [R1 transport start](../../materials/evidence/amorphous/Li3PS4/analysis_start.xyz)|[300 K](../../materials/evidence/amorphous/Li3PS4/NEP89_300K_representative_part01.xyz), [500 K](../../materials/evidence/amorphous/Li3PS4/NEP89_500K_representative_part01.xyz), [700 K](../../materials/evidence/amorphous/Li3PS4/NEP89_700K_representative_part01.xyz), [900 K](../../materials/evidence/amorphous/Li3PS4/NEP89_900K_representative_part01.xyz)|
+|LiPON|[construction input](../../materials/evidence/amorphous/LiPON/construction_initial.xyz) and [transport start](../../materials/evidence/amorphous/LiPON/analysis_start.xyz)|[600 K](../../materials/evidence/amorphous/LiPON/NEP89_600K_representative_part01.xyz), [900 K](../../materials/evidence/amorphous/LiPON/NEP89_900K_representative_part01.xyz), [1200 K](../../materials/evidence/amorphous/LiPON/NEP89_1200K_representative_part01.xyz), [1500 K](../../materials/evidence/amorphous/LiPON/NEP89_1500K_representative_part01.xyz)|
 
 <a id="crystalline"></a>
 ### Part I: reproducing the company workflow and benchmarking crystalline materials
@@ -196,6 +212,8 @@ For the present study, the practical benefit of the faster workflow is the abili
 
 The performance comparison uses the previously prepared 192-atom LZOC benchmark glass, which is distinct from the Hussain reconstruction used in the next section. MACE and NEP are evaluated at the same nominal composition and temperature, while each potential produces its own subsequent structural and density evolution. The 600 K comparison includes 50 ps NPT followed by 200 ps NVT production.
 
+The volume response is directly inspectable from the [common 300 K structure](../../materials/evidence/amorphous/MACE_NEP_benchmark/common_300K_structure.xyz) and the corresponding 600 K NPT exports for [MACE](../../materials/evidence/amorphous/MACE_NEP_benchmark/MACE_600K_NPT_volume_part01.xyz) and [NEP89](../../materials/evidence/amorphous/MACE_NEP_benchmark/NEP89_600K_NPT_volume_part01.xyz). Separate NVT production exports preserve the fixed-cell motion without mixing it with the changing-cell evidence.
+
 This is a **workflow-level NNP comparison**, not a same-configuration force-error benchmark. Runtime measures practical cost; density, species-resolved MSD and RDF measure the resulting material response. Because the simulation engines and resulting densities differ, a difference in D cannot be assigned solely to the potential's migration barrier. Neither potential was retrained here against the reference data. NEP is carried forward for its measured computational advantage, while its predictive performance is assessed separately below.
 
 ![MACE and NEP89 computational cost and density response](figures/09_MACE_NEP_runtime_density.png)
@@ -296,6 +314,8 @@ This paired literature basis prevents a false one-to-one comparison: Hu provides
 
 The starting model resolves the fractional occupancies in Hussain's SI Table 2 into an integer-occupancy 2×2×2 realization: **42 Li, 24 Zr, 114 Cl and 12 O (192 atoms)**. Site populations are constrained to the target composition and close contacts are excluded geometrically. This procedure is not an energy minimization and does not reproduce the author's atomic coordinates. The initial cell has a=b=21.874 Å, c=12.044 Å and γ=120°; its tilted shape is a cell geometry, not evidence of structural damage.
 
+The [constructed initial model](../../materials/evidence/amorphous/LZOC/construction_initial.xyz), exact [transport-series start](../../materials/evidence/amorphous/LZOC/analysis_start.xyz) and the three reported temperature trajectories are retained together in the evidence package.
+
 The recorded thermal preparation progresses through 100 K (2 ps), 500 K (30 ps), 1000 K (50 ps), 1500 K (30 ps) and 2000 K (20 ps), followed by 2 ps stages at 1500, 1000, 500 and 100 K and 300 K relaxation for 20+50 ps. These are the executed NEP preparation stages, not a claim of exact AIMD melt–quench reproduction. Heating alone is not proof of complete melting; the resulting RDF and framework motion provide the structural evidence used here.
 
 Transport uses **340/360/380 K, a fixed periodic cell, NVT Nosé–Hoover-chain control, 2 fs integration and 300 ps production**. The thermostat parameter corresponds to 100 fs. The original 300 ps runs restart from the original 80 ps calculation inputs rather than append to their outputs. Additional velocity-seed runs at 340/360 K include 50 ps NVT equilibration before production; they are not independently prepared glasses. Matching temperature and timestep enables a useful AIMD comparison, but the potential, model size, preparation and sampling duration still differ.
@@ -393,6 +413,8 @@ The sulfate-containing material extends the main line without changing it into a
 ### Four-temperature isochoric transport protocol
 
 The final comparison uses two completed 320/330/340/350 K series generated from the same documented 272-atom structure and fixed cell. Every temperature contains 50 ps NVT equilibration followed by 300 ps NVT production. NEP89, 0.5 fs integration and MTTK temperature coupling of 100 fs remain unchanged; the two series differ only in their initialized velocities. This unified design replaces the earlier endpoint-only estimates and provides the four-temperature basis for the reported activation energy.
+
+The [relaxed 272-atom construction](../../materials/evidence/amorphous/LSZC/construction_relaxed.xyz), exact [common-cell analysis start](../../materials/evidence/amorphous/LSZC/analysis_start.xyz) and all four reported temperature trajectories are provided as inspectable XYZ evidence.
 
 The common cell is the existing 320 K preproduction cell (8138.55 Å³, about 1.880 g/cm³), without rescaling toward the experimental density. This removes the changing starting density of the previous endpoints as a confounder. It is an **isochoric control**, not proof of equilibrium density at every temperature or an exact reproduction of the paper's thermodynamic path. Its pressure, energy relaxation and framework structure must be inspected alongside MSD.
 
@@ -530,6 +552,8 @@ The two references answer complementary questions: Chen supplies the atomistic t
 
 The first 64-atom Li24P8S32 frame in the downloaded author training data was repeated 2×2×2 to give **512 atoms (Li192P64S256)**. The glass was melted at 1500 K under NPT for 100 ps, cooled to 300 K over 480 ps (2.5 K/ps), and held for 20 ps. Each target temperature (300/500/700/900 K) then used a 10 ps temperature adjustment, 50 ps NPT at 1 bar and 200 ps NVT production with a 0.5 fs timestep. The thermal history is literature-informed, while NEP89, the precursor and coupling parameters differ from Chen's DeePMD calculation.
 
+The [construction structure](../../materials/evidence/amorphous/Li3PS4/construction_initial.xyz), exact [R1 transport start](../../materials/evidence/amorphous/Li3PS4/analysis_start.xyz) and representative 300–900 K trajectories are preserved with the reported results.
+
 **How the figures answer the question:** the complete Li MSD curves establish whether the sampled motion is diffusive; the same-temperature D comparison measures transfer relative to the published glass model; P/S MSD tests the stationary-framework assumption; and RDF plus S–P–S angles test local structure. No fit interval is drawn over the MSD panels.
 
 ![Li3PS4 temperature-dependent lithium mean-squared displacement](figures/05_Li3PS4_lithium_MSD.png)
@@ -611,6 +635,8 @@ LiPON therefore has a three-level benchmark: experimentally constrained network 
 ### Precursor construction and scope of MD
 
 A 16-atom Li₃PO₄ source cell was repeated 2×2×2. Five O atoms were replaced by N, and three further O atoms and one Li atom were removed, yielding **124 atoms** and formal charge neutrality under Li⁺/P⁵⁺/O²⁻/N³⁻ counting. The same precursor topology was used for three preparations; their velocities were assigned before melting, so the comparison tests thermal-history sensitivity rather than independent substitution patterns.
+
+The [LiPON construction input](../../materials/evidence/amorphous/LiPON/construction_initial.xyz), exact [transport analysis start](../../materials/evidence/amorphous/LiPON/analysis_start.xyz) and four reported temperature trajectories are included in the same evidence package.
 
 |Stage|Our GPUMD/NEP89 setting|Relation to literature|
 |---|---|---|
