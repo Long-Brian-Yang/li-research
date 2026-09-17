@@ -2,6 +2,13 @@
 
 Updated 17 September 2026. [日本語](materials_overview_ja.md)
 
+## Executive summary
+
+- Moving the original M3GNet–LAMMPS workflow from CPU to one H100 GPU increased throughput from 3.285 to 56.621 steps/s (**17.2×**), making long ML-driven MD practical.
+- NEP89/GPUMD reduced the measured 600 K production time from 189.93 min with MACE/LAMMPS to 6.11 min (**31.1×**). This supports its use for rapid screening; accuracy is evaluated separately against material-specific evidence.
+- Among the amorphous systems, LSZC shows the strongest quantitative agreement: NEP89 gives $E_a=0.351$ eV versus the experimental 0.330 eV while retaining sulfate units. LZOC reproduces the AIMD temperature response but underestimates the diffusion scale; Li₃PS₄ and LiPON reproduce thermally activated motion but overestimate absolute diffusion.
+- Recommended company use: apply general NEP89 to structure generation, long-trajectory screening and relative trend analysis; require material-specific training or calibration before using absolute conductivity as a predictive decision metric.
+
 ## Contents
 
 - [Overview: motivation, literature basis and study design](#overview)
@@ -16,7 +23,7 @@ Updated 17 September 2026. [日本語](materials_overview_ja.md)
 - [Supporting methods: preparation and conditions](#status)
 - [Supporting methods: definitions and units](#methods)
 
-### Report purpose
+### Report scope
 
 This document is a company-facing technical assessment of computational throughput, literature reproduction and the transferability of pretrained interatomic potentials across crystalline and amorphous lithium-ion conductors. It records completed calculations, evidence-based conclusions and project-level recommendations for material screening and model selection.
 
@@ -228,10 +235,10 @@ This is a **workflow-level NNP comparison**, not a same-configuration force-erro
 |---|---:|---:|
 |200 ps engine-reported production time|189.93 min|6.11 min|
 |Production density|1.468304 g/cm³|1.875429 g/cm³|
-|Volume increase from300 K input|30.3%|2.0%|
-|D_app,20–80 ps|1.7197×10⁻⁵ cm²/s|1.0757×10⁻⁵ cm²/s|
+|Volume increase from 300 K input|30.3%|2.0%|
+|$D_{\mathrm{app}}$, 20–80 ps|1.7197×10⁻⁵ cm²/s|1.0757×10⁻⁵ cm²/s|
 
-Engine time ratio31.10; sum of four whole-job runtimes18 h25 min versus34 min. These are not parallel elapsed times or a controlled potential-kernel benchmark: engine, node, preprocessing, seed, density and structure differ.
+The 600 K production-time ratio is **31.1×**. Across the four temperatures, the summed whole-job runtimes are **18 h 25 min for MACE** and **34 min for NEP89**. These are not parallel elapsed times or a controlled potential-kernel benchmark: engine, node, preprocessing, velocity initialization, density and structure differ.
 
 ### Complete runtime table
 
@@ -264,7 +271,7 @@ The 900 K four-pair view follows [GPUMDkit's RDF plotting method](https://github
 
 ### High-temperature density evolution under NPT conditions
 
-The existing NEP 700/800/900 K extensions have now been analysed separately from production. Each contains 1000 finite thermo records at 0.05 ps. No additional run was submitted.
+The existing NEP 700/800/900 K extensions are analysed separately from production. Each contains 1,000 finite thermodynamic records at 0.05 ps intervals.
 
 |T (K)|Start → final density (g/cm³)|First → last 10 ps mean density|Endpoint volume change|Mean P (GPa)|PE last−first 10 ps (meV/atom)|
 |---:|---|---|---:|---:|---:|
@@ -766,10 +773,10 @@ The LSZC common-cell four-temperature productions, Li₃PS₄ transport, all thr
 
 |Route|Executed preparation / transport|Reference and difference|
 |---|---|---|
-|LZOC|100 K2 ps;500 K30 ps;1000 K50 ps;1500 K30 ps;2000 K20 ps; cooling via1500/1000/500/100 K,2 ps each;300 K20+50 ps. Transport details below.|[Hussain2024](https://doi.org/10.1038/s41524-024-01346-y):192-atom reconstructed NEP is not its48-atom AIMD transport model or exact preparation protocol|
-|LSZC|Five finite cluster types, two copies each +32Li; fixed-cell relaxation to0.0493 eV/Å;300 K20 ps NVT;100 ps ramp to400 K;20 ps hold;20 ps400 K1 bar NPT;200 ps NVT|[Tang2026](https://doi.org/10.1038/s41467-026-69737-x):independent272-atom packing, not the author's1088-atom geometry or tuned MACE|
-|Li₃PS₄|1500 K100 ps NPT;1500→300 K480 ps (2.5 K/ps);300 K20 ps hold;10 ps temperature ramp +50 ps NPT1 bar +200 ps NVT at each target;0.5 fs|[Chen2025](https://doi.org/10.1038/s41467-025-56322-x):thermal schedule reference; NEP replaces DeePMD; start, coupling and production schedule differ|
-|LiPON|2000 K10 ps;2000→250 K7 ps;250 K20 ps;250 K1 bar20 ps release. B transport:600/900/1200/1500 K;10 ps NPT ramp+50 ps NPT+300 ps NVT;0.5 fs|[Seth2025](https://doi.org/10.1021/acsmaterialsau.4c00117):bulk temperatures aligned; NEP, independent precursor, coupling and durations differ from NequIP study|
+|LZOC|100 K, 2 ps; 500 K, 30 ps; 1,000 K, 50 ps; 1,500 K, 30 ps; 2,000 K, 20 ps; cooling through 1,500/1,000/500/100 K for 2 ps each; 300 K relaxation for 20 + 50 ps. Transport details are given above.|[Hussain 2024](https://doi.org/10.1038/s41524-024-01346-y): the 192-atom reconstructed NEP model differs from the 48-atom AIMD transport model and exact preparation protocol.|
+|LSZC|Five finite cluster types, two copies each, plus 32 Li; fixed-cell relaxation to 0.0493 eV/Å; 300 K NVT for 20 ps; 100 ps ramp to 400 K; 20 ps hold; 400 K, 1 bar NPT for 20 ps; NVT for 200 ps.|[Tang 2026](https://doi.org/10.1038/s41467-026-69737-x): independent 272-atom packing rather than the authors' 1,088-atom geometry and tuned MACE.|
+|Li₃PS₄|1,500 K NPT for 100 ps; cooling from 1,500 to 300 K over 480 ps (2.5 K/ps); 300 K hold for 20 ps; at each target, 10 ps temperature ramp + 50 ps NPT at 1 bar + 200 ps NVT; 0.5 fs timestep.|[Chen 2025](https://doi.org/10.1038/s41467-025-56322-x): thermal schedule used as a reference; NEP replaces DeePMD, and the starting structure, coupling and production schedule differ.|
+|LiPON|2,000 K for 10 ps; cooling from 2,000 to 250 K over 7 ps; 250 K hold for 20 ps; 250 K, 1 bar pressure release for 20 ps. Preparation-B transport: 600/900/1,200/1,500 K; 10 ps NPT ramp + 50 ps NPT + 300 ps NVT; 0.5 fs timestep.|[Seth 2025](https://doi.org/10.1021/acsmaterialsau.4c00117): bulk temperatures aligned; NEP, the independently generated precursor, coupling and durations differ from the NequIP study.|
 |MACE–NEP benchmark LZOC|192-atom benchmark glass; 600/700/800/900 K; 600 K uses 50 ps NPT + 200 ps NVT|Method and efficiency benchmark preceding the material-specific literature comparisons|
 
 NPT target is 1 bar (0.0001 GPa). The final LSZC comparison uses the common 20.1148 Å cell at 320/330/340/350 K, with 50 ps NVT equilibration followed by 300 ps NVT production, a 0.5 fs timestep and 100 fs temperature coupling. Earlier endpoint-specific NPT preparations are retained only as construction history and are not mixed into the final four-temperature fit.

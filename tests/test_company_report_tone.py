@@ -14,6 +14,14 @@ class CompanyReportToneTests(unittest.TestCase):
         self.assertIn("company-facing technical assessment", REPORTS["English"].read_text())
         self.assertIn("企業向け技術報告", REPORTS["Japanese"].read_text())
 
+    def test_reports_open_with_decision_ready_summary(self):
+        english = REPORTS["English"].read_text()
+        japanese = REPORTS["Japanese"].read_text()
+        self.assertLess(english.index("## Executive summary"), english.index("## Contents"))
+        self.assertLess(japanese.index("## エグゼクティブサマリー"), japanese.index("## 目次"))
+        self.assertIn("17.2×", english)
+        self.assertIn("31.1倍", japanese)
+
     def test_personal_planning_language_is_absent(self):
         forbidden = {
             "English": (
