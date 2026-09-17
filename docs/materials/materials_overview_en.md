@@ -6,7 +6,7 @@ Updated 17 September 2026. [日本語](materials_overview_ja.md)
 
 - Moving the original M3GNet–LAMMPS workflow from CPU to one H100 GPU increased throughput from 3.285 to 56.621 steps/s (**17.2×**), making long ML-driven MD practical.
 - NEP89/GPUMD reduced the measured 600 K production time from 189.93 min with MACE/LAMMPS to 6.11 min (**31.1×**). This supports its use for rapid screening; accuracy is evaluated separately against material-specific evidence.
-- Among the amorphous systems, LSZC shows the strongest quantitative agreement: NEP89 gives $E_a=0.351$ eV versus the experimental 0.330 eV while retaining sulfate units. LZOC reproduces the AIMD temperature response but underestimates the diffusion scale; Li₃PS₄ and LiPON reproduce thermally activated motion but overestimate absolute diffusion.
+- Among the amorphous systems, LSZC shows the strongest quantitative agreement: NEP89 gives Eₐ = 0.351 eV versus the experimental 0.330 eV while retaining sulfate units. LZOC reproduces the AIMD temperature response but underestimates the diffusion scale; Li₃PS₄ and LiPON reproduce thermally activated motion but overestimate absolute diffusion.
 - Recommended company use: apply general NEP89 to structure generation, long-trajectory screening and relative trend analysis; require material-specific training or calibration before using absolute conductivity as a predictive decision metric.
 
 ## Contents
