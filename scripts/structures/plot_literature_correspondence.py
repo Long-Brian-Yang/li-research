@@ -160,6 +160,13 @@ def lszc_pdf_and_coordination():
                 coord_summary.append((T, pair, int(cn), count_cn, count_cn / len(vals)))
     write_csv(OUT / "LSZC_Zr_coordination_distribution.csv",
               ["T_K", "pair", "coordination_number", "count", "probability"], coord_summary)
+    mean_coordination = []
+    for T in primary:
+        for pair in ("Zr-O", "Zr-Cl"):
+            vals = np.asarray([x[2] for x in coord if x[0] == T and x[1] == pair])
+            mean_coordination.append((T, pair, float(np.mean(vals))))
+    write_csv(OUT / "LSZC_Zr_mean_coordination.csv",
+              ["T_K", "pair", "mean_coordination_number"], mean_coordination)
     write_csv(OUT / "LSZC_NEP89_xray_weighted_proxy.csv", ["r_A", "normalized_G_proxy"], proxy)
 
     fig, axes = plt.subplots(1, 3, layout="constrained")
@@ -168,16 +175,30 @@ def lszc_pdf_and_coordination():
     axes[0].plot(proxy[:, 0], proxy[:, 1], color="#31688e", label="NEP89 proxy")
     axes[0].set(title="Synchrotron PDF correspondence", xlabel="r (Å)", ylabel="Normalized G(r)", xlim=(0.5, 8))
     axes[0].legend(loc="upper right", fontsize=11)
-    colors = {320: "#5e3c99", 330: "#31688e", 340: "#35b779", 350: "#d73027"}
-    for ax, pair, ref in zip(axes[1:], ("Zr-O", "Zr-Cl"), (2.6, 3.0)):
-        for T in primary:
-            vals = np.asarray([x[2] for x in coord if x[0] == T and x[1] == pair])
-            bins = np.arange(vals.min() - 0.5, vals.max() + 1.5)
-            hist, e = np.histogram(vals, bins=bins, density=True)
-            ax.plot((e[:-1] + e[1:]) / 2, hist, "o-", color=colors[T], label=f"{T} K")
-        ax.axvline(ref, color="0.25", linestyle="--", label="EXAFS mean")
-        ax.set(title=f"{pair} coordination", xlabel="Coordination number", ylabel="Probability")
-        ax.legend(loc="upper right", fontsize=10)
+    temperatures = np.asarray(sorted(primary))
+    for ax, pair, ref, ylim in zip(
+        axes[1:],
+        ("Zr-O", "Zr-Cl"),
+        (2.6, 3.0),
+        ((1.4, 2.8), (2.8, 4.5)),
+    ):
+        means = np.asarray([
+            next(x[2] for x in mean_coordination if x[0] == T and x[1] == pair)
+            for T in temperatures
+        ])
+        ax.plot(temperatures, means, "o-", color="#31688e", label="NEP89")
+        ax.axhline(ref, color="0.25", linestyle="--", label="EXAFS")
+        for T, value in zip(temperatures, means):
+            ax.annotate(f"{value:.2f}", (T, value), xytext=(0, 8),
+                        textcoords="offset points", ha="center", va="bottom")
+        ax.set(
+            title=f"Mean {pair} coordination",
+            xlabel="Temperature (K)",
+            ylabel="Mean coordination number",
+            xticks=temperatures,
+            ylim=ylim,
+        )
+        ax.legend(loc="center right", fontsize=10)
     save(fig, "27_LSZC_PDF_and_Zr_coordination")
 
 
@@ -208,10 +229,21 @@ def refresh_manifest():
         "28_Li3PS4_dynamic_heterogeneity",
     }
     retired_stems = {"26_cross_material_literature_correspondence"}
-    data["assets"] = [a for a in data["assets"] if Path(a["file"]).stem not in active_stems | retired_stems]
+    data["assets"] = [a for a in data["assets"] if Path(a["file"]).stem not in retired_stems]
+    refreshed = set()
+    for asset in data["assets"]:
+        stem = Path(asset["file"]).stem
+        if stem not in active_stems:
+            continue
+        p = FIG / asset["file"]
+        asset["sha256"] = hashlib.sha256(p.read_bytes()).hexdigest()
+        asset["source"] = "scripts/structures/plot_literature_correspondence.py"
+        refreshed.add(asset["file"])
     for stem in sorted(active_stems):
         for ext in ("png", "pdf", "svg"):
             p = FIG / f"{stem}.{ext}"
+            if p.name in refreshed:
+                continue
             data["assets"].append({
                 "file": p.name,
                 "sha256": hashlib.sha256(p.read_bytes()).hexdigest(),
