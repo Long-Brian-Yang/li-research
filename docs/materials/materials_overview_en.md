@@ -96,7 +96,7 @@ LiNbOCl₄ is a mixed O²⁻/Cl⁻ oxyhalide in which anion chemistry reshapes t
 
 |Reference|Evidence and material conditions|Principal result|Role in this study|
 |---|---|---|---|
-|T. Asano *et al.*, “Solid Halide Electrolytes with High Lithium-Ion Conductivity for Application in 4 V Class Bulk-Type All-Solid-State Batteries,” *Advanced Materials* **30**, 1803075 (2018). [DOI: 10.1002/adma.201803075](https://doi.org/10.1002/adma.201803075)|Experimental Li₃YCl₆/Li₃YBr₆ powders and bulk all-solid-state cells; electrochemical and transport characterization.|Established Li₃YCl₆ as a high-voltage-compatible chloride electrolyte with room-temperature conductivity above 1 mS cm⁻¹ and demonstrated operation with a 4 V-class cathode.|Defines the experimental motivation and macroscopic transport benchmark. It does not provide a self-diffusion curve directly comparable with MD $D(T)$.|
+|T. Asano *et al.*, “Solid Halide Electrolytes with High Lithium-Ion Conductivity for Application in 4 V Class Bulk-Type All-Solid-State Batteries,” *Advanced Materials* **30**, 1803075 (2018). [DOI: 10.1002/adma.201803075](https://doi.org/10.1002/adma.201803075)|Experimental Li₃YCl₆/Li₃YBr₆ powders and bulk all-solid-state cells; electrochemical and transport characterization.|Established Li₃YCl₆ as a high-voltage-compatible chloride electrolyte with room-temperature conductivity above 1 mS cm⁻¹ and demonstrated operation with a 4 V-class cathode.|Defines the experimental motivation and macroscopic transport benchmark. It does not provide a self-diffusion curve directly comparable with MD $`D(T)`$.|
 
 ```mermaid
 flowchart LR
@@ -106,13 +106,13 @@ flowchart LR
     D --> E["5. Conclusion<br/>Thermal trend reproduced<br/>Absolute transport is<br/>strongly model dependent"]
 ```
 
-The workflow makes the comparison boundary explicit: the experimental paper motivates the material; the present ordered 240-atom model and three general potentials test model sensitivity; MSD, $D(T)$, $E_a$ and conditional conductivity are simulation observables rather than direct reproductions of the experimental impedance measurement.
+The workflow makes the comparison boundary explicit: the experimental paper motivates the material; the present ordered 240-atom model and three general potentials test model sensitivity; MSD, $`D(T)`$, $`E_a`$ and conditional conductivity are simulation observables rather than direct reproductions of the experimental impedance measurement.
 
 #### LiNbOCl₄: literature basis and workflow
 
 |Reference|Evidence and material conditions|Principal result|Role in this study|
 |---|---|---|---|
-|Y. Tanaka *et al.*, “New Oxyhalide Solid Electrolytes with High Lithium Ionic Conductivity >10 mS cm⁻¹ for All-Solid-State Batteries,” *Angewandte Chemie International Edition* **62**, e202217581 (2023). [DOI: 10.1002/anie.202217581](https://doi.org/10.1002/anie.202217581)|Experimental oxyhalide synthesis, impedance transport and all-solid-state-battery evaluation.|Reported approximately 10.4 mS cm⁻¹ at room temperature and $E_a=0.240$ eV for LiNbOCl₄, placing it above the conductivity scale of the chloride benchmark.|Supplies the experimental conductivity anchor and Arrhenius slope. The reconstructed line is a conductivity reference, not an experimental tracer-diffusion dataset.|
+|Y. Tanaka *et al.*, “New Oxyhalide Solid Electrolytes with High Lithium Ionic Conductivity >10 mS cm⁻¹ for All-Solid-State Batteries,” *Angewandte Chemie International Edition* **62**, e202217581 (2023). [DOI: 10.1002/anie.202217581](https://doi.org/10.1002/anie.202217581)|Experimental oxyhalide synthesis, impedance transport and all-solid-state-battery evaluation.|Reported approximately 10.4 mS cm⁻¹ at room temperature and $`E_a=0.240`$ eV for LiNbOCl₄, placing it above the conductivity scale of the chloride benchmark.|Supplies the experimental conductivity anchor and Arrhenius slope. The reconstructed line is a conductivity reference, not an experimental tracer-diffusion dataset.|
 
 ```mermaid
 flowchart LR
@@ -126,11 +126,11 @@ The same MD design is retained so that the change from chloride to mixed-anion o
 
 #### Common three-model MD design
 
-After structural relaxation, Li₃YCl₆ was evaluated at 400/600/800/1000 K and LiNbOCl₄ at 600/800/1000/1200 K. The midterm primary series used NVT, a 1 fs timestep, 50 ps equilibration and 500 ps production. MACE-MPA-0, SevenNet-nano and M3GNet GPU were compared using matched temperature series and analysis definitions. Li MSD supplied $D_{\mathrm{Li}}$; Arrhenius fitting supplied $E_a$ and the 300 K extrapolation. This is a general-model comparison, not a test of material-specific fine-tuned potentials.
+After structural relaxation, Li₃YCl₆ was evaluated at 400/600/800/1000 K and LiNbOCl₄ at 600/800/1000/1200 K. The midterm primary series used NVT, a 1 fs timestep, 50 ps equilibration and 500 ps production. MACE-MPA-0, SevenNet-nano and M3GNet GPU were compared using matched temperature series and analysis definitions. Li MSD supplied $`D_{\mathrm{Li}}`$; Arrhenius fitting supplied $`E_a`$ and the 300 K extrapolation. This is a general-model comparison, not a test of material-specific fine-tuned potentials.
 
 ![Three-model, four-temperature Li₃YCl₆ MSD](figures/01_Li3YCl6_three_model_MSD.png)
 
-|Li₃YCl₆|$E_a$ (eV)|Arrhenius $R^2$|$D(300\,\mathrm K)$ (cm²/s)|
+|Li₃YCl₆|$`E_a`$ (eV)|Arrhenius $`R^2`$|$`D(300\,\mathrm K)`$ (cm²/s)|
 |---|---:|---:|---:|
 |MACE-MPA-0|0.302|0.9914|1.55×10⁻⁸|
 |SevenNet-nano|0.246|0.9999|5.62×10⁻⁸|
@@ -142,21 +142,21 @@ All three Li₃YCl₆ models show increasing MSD with temperature, but their act
 
 ![Three-model, four-temperature LiNbOCl₄ MSD](figures/02_LiNbOCl4_three_model_MSD.png)
 
-|LiNbOCl₄|$E_a$ (eV)|Arrhenius $R^2$|$D(300\,\mathrm K)$ (cm²/s)|Conditional $\sigma_{\mathrm{NE}}(300\,\mathrm K)$ (mS/cm)|
+|LiNbOCl₄|$`E_a`$ (eV)|Arrhenius $`R^2`$|$`D(300\,\mathrm K)`$ (cm²/s)|Conditional $`\sigma_{\mathrm{NE}}(300\,\mathrm K)`$ (mS/cm)|
 |---|---:|---:|---:|---:|
 |MACE-MPA-0|0.313|0.9953|5.19×10⁻⁹|0.201|
 |SevenNet-nano|0.357|0.9953|2.18×10⁻⁹|0.0842|
 |M3GNet GPU|0.397|0.8768|5.66×10⁻¹¹|0.00219|
 |Experimental reference|0.240|—|—|10.4|
 
-LiNbOCl₄ likewise shows substantial model dependence, and the M3GNet Arrhenius linearity is lower than for the other two models. The Arrhenius panel now follows the Li₃YCl₆ construction: MD $D$ is converted to conditional Nernst–Einstein conductivity using the Li number density of the model cell, and $\ln(\sigma_{\mathrm{NE}}T)$ is displayed. The black dotted reference is anchored at the 10.4 mS cm⁻¹ room-temperature conductivity reported by Tanaka et al. and extended with the reported $E_a=0.240$ eV. It is a complete experimental conductivity reference, not an experimental Li self-diffusion curve; comparison with $D$ therefore retains the limitation of a correlation-free conversion.
+LiNbOCl₄ likewise shows substantial model dependence, and the M3GNet Arrhenius linearity is lower than for the other two models. The Arrhenius panel now follows the Li₃YCl₆ construction: MD $`D`$ is converted to conditional Nernst–Einstein conductivity using the Li number density of the model cell, and $`\ln(\sigma_{\mathrm{NE}}T)`$ is displayed. The black dotted reference is anchored at the 10.4 mS cm⁻¹ room-temperature conductivity reported by Tanaka et al. and extended with the reported $`E_a=0.240`$ eV. It is a complete experimental conductivity reference, not an experimental Li self-diffusion curve; comparison with $`D`$ therefore retains the limitation of a correlation-free conversion.
 
 <p align="center">
   <img src="figures/03_Li3YCl6_Arrhenius.png" alt="Li3YCl6 Arrhenius analysis" width="49%">
   <img src="figures/04_LiNbOCl4_Arrhenius.png" alt="LiNbOCl4 Arrhenius analysis" width="49%">
 </p>
 
-The first phase therefore establishes that GPU acceleration makes long MD practical, but speed alone cannot determine predictive reliability. Motivated by the model dependence observed for the two crystals, Part II moves to amorphous materials whose response is more sensitive to preparation history and evaluates not only $D$, but also density, RDF, coordination and host motion against experiment, AIMD and material-specific ML potentials.
+The first phase therefore establishes that GPU acceleration makes long MD practical, but speed alone cannot determine predictive reliability. Motivated by the model dependence observed for the two crystals, Part II moves to amorphous materials whose response is more sensitive to preparation history and evaluates not only $`D`$, but also density, RDF, coordination and host motion against experiment, AIMD and material-specific ML potentials.
 
 ### Part II: literature landscape and amorphous material systems
 
@@ -173,9 +173,9 @@ These references do not form one uniform benchmark. Some report tracer diffusion
 
 ### How the literature forms one story
 
-The story begins with LZOC because it establishes both technological relevance and an atomistic comparison. Hu et al. reported Li₁.₇₅ZrCl₄.₇₅O₀.₅ with an ionic conductivity of **2.42 mS cm⁻¹ at 25 °C**, 94.2% relative density under 300 MPa and a low estimated raw-material cost. This work shows why the composition matters experimentally, but its partially amorphous specimen is not identical to a single periodic glass model. [Hu et al., 2023; DOI: 10.1038/s41467-023-39522-1](https://doi.org/10.1038/s41467-023-39522-1) Hussain et al. then provided a computational route for the same nominal composition, comparing structural factors and Li tracer diffusion for an amorphous model at **340, 360 and 380 K**. That AIMD series supplies the closest temperature-matched test of whether NEP89 reproduces low-temperature Li motion, while the structural analysis prevents a numerical agreement in $D$ from being interpreted without checking the host. [Hussain et al., 2024; DOI: 10.1038/s41524-024-01346-y](https://doi.org/10.1038/s41524-024-01346-y)
+The story begins with LZOC because it establishes both technological relevance and an atomistic comparison. Hu et al. reported Li₁.₇₅ZrCl₄.₇₅O₀.₅ with an ionic conductivity of **2.42 mS cm⁻¹ at 25 °C**, 94.2% relative density under 300 MPa and a low estimated raw-material cost. This work shows why the composition matters experimentally, but its partially amorphous specimen is not identical to a single periodic glass model. [Hu et al., 2023; DOI: 10.1038/s41467-023-39522-1](https://doi.org/10.1038/s41467-023-39522-1) Hussain et al. then provided a computational route for the same nominal composition, comparing structural factors and Li tracer diffusion for an amorphous model at **340, 360 and 380 K**. That AIMD series supplies the closest temperature-matched test of whether NEP89 reproduces low-temperature Li motion, while the structural analysis prevents a numerical agreement in $`D`$ from being interpreted without checking the host. [Hussain et al., 2024; DOI: 10.1038/s41524-024-01346-y](https://doi.org/10.1038/s41524-024-01346-y)
 
-LSZC asks whether the same pretrained workflow extends from an oxychloride composition to a polyanion-regulated amorphous halide. Tang et al. reported **1.5 mS cm⁻¹ at 30 °C** and **$E_a=0.33$ eV** for 0.5Li₂SO₄–ZrCl₄ despite its low Li content. Their XAS/EXAFS analysis assigns an average Zr environment of approximately 2.6 O at 2.23 Å and 3.0 Cl at 2.45 Å, while PDF and multiscale modelling connect the glass to fragmented ZrCl₄-derived domains modified by sulfate oxygen. The same paper also provides a tuned-MACE MD reference. LSZC therefore supplies the most integrated experiment–structure–simulation benchmark in this report: transport, local coordination and a material-adapted potential can all be compared, although their definitions must remain distinct. [Tang et al., 2026; DOI: 10.1038/s41467-026-69737-x](https://doi.org/10.1038/s41467-026-69737-x)
+LSZC asks whether the same pretrained workflow extends from an oxychloride composition to a polyanion-regulated amorphous halide. Tang et al. reported **1.5 mS cm⁻¹ at 30 °C** and **$`E_a=0.33`$ eV** for 0.5Li₂SO₄–ZrCl₄ despite its low Li content. Their XAS/EXAFS analysis assigns an average Zr environment of approximately 2.6 O at 2.23 Å and 3.0 Cl at 2.45 Å, while PDF and multiscale modelling connect the glass to fragmented ZrCl₄-derived domains modified by sulfate oxygen. The same paper also provides a tuned-MACE MD reference. LSZC therefore supplies the most integrated experiment–structure–simulation benchmark in this report: transport, local coordination and a material-adapted potential can all be compared, although their definitions must remain distinct. [Tang et al., 2026; DOI: 10.1038/s41467-026-69737-x](https://doi.org/10.1038/s41467-026-69737-x)
 
 Li₃PS₄ deliberately leaves the Zr–Cl chemical family. Chen et al. trained a deep potential on AIMD data and compared crystalline, glassy and glass-ceramic Li₃PS₄ from 300 to 900 K. They concluded that disorder enhances Li dynamics and used MSD, self/distinct van Hove functions, non-Gaussian statistics and a learned “softness” descriptor to connect hopping ions with disordered local environments. The present scope is narrower: the glass serves as a transferability control for NEP89, with Li–S RDF, P–S framework motion and diffusion compared against the published DeePMD glass. A match in one RDF peak would not reproduce the paper's disorder mechanism, whereas simultaneous agreement in structure and transport would provide stronger evidence. [Chen et al., 2025; DOI: 10.1038/s41467-025-56322-x](https://doi.org/10.1038/s41467-025-56322-x)
 
@@ -196,7 +196,7 @@ The evidence is organized in the same order for every material: literature bench
 
 For direct auditability, every material workflow diagram states the composition and cell size used here, potential and MD engine, temperature points, ensemble, timestep, documented thermostat information, equilibration duration and production duration. Literature conditions are labelled separately and are not silently transferred to the present calculation.
 
-The comparison follows a hierarchy. First, numerical completeness requires finite trajectories, controlled temperature and a documented cell. Second, preparation readiness requires plausible density and retention of the material-defining motifs. Third, transport analysis requires an approximately diffusive MSD interval whose slope is stable to reasonable window changes. Fourth, literature agreement requires matching temperature, unit and observable. Only after these checks is an apparent activation energy discussed. This order prevents an attractive Arrhenius line from concealing framework reconstruction or a large absolute error in $D$.
+The comparison follows a hierarchy. First, numerical completeness requires finite trajectories, controlled temperature and a documented cell. Second, preparation readiness requires plausible density and retention of the material-defining motifs. Third, transport analysis requires an approximately diffusive MSD interval whose slope is stable to reasonable window changes. Fourth, literature agreement requires matching temperature, unit and observable. Only after these checks is an apparent activation energy discussed. This order prevents an attractive Arrhenius line from concealing framework reconstruction or a large absolute error in $`D`$.
 
 ### Scope of the conclusions
 
@@ -236,7 +236,7 @@ This is a **workflow-level NNP comparison**, not a same-configuration force-erro
 |200 ps engine-reported production time|189.93 min|6.11 min|
 |Production density|1.468304 g/cm³|1.875429 g/cm³|
 |Volume increase from 300 K input|30.3%|2.0%|
-|$D_{\mathrm{app}}$, 20–80 ps|1.7197×10⁻⁵ cm²/s|1.0757×10⁻⁵ cm²/s|
+|$`D_{\mathrm{app}}`$, 20–80 ps|1.7197×10⁻⁵ cm²/s|1.0757×10⁻⁵ cm²/s|
 
 The 600 K production-time ratio is **31.1×**. Across the four temperatures, the summed whole-job runtimes are **18 h 25 min for MACE** and **34 min for NEP89**. These are not parallel elapsed times or a controlled potential-kernel benchmark: engine, node, preprocessing, velocity initialization, density and structure differ.
 
@@ -301,7 +301,7 @@ The present question is narrower than reproducing the entire paper: at its low-t
 |Reference|Evidence and material conditions|Principal result|Role in this study|
 |---|---|---|---|
 |L. Hu *et al.*, “A cost-effective, ionically conductive and compressible oxychloride solid-state electrolyte for stable all-solid-state lithium-based batteries,” *Nature Communications* **14**, 3807 (2023). [DOI: 10.1038/s41467-023-39522-1](https://doi.org/10.1038/s41467-023-39522-1)|Experimental Li₁.₇₅ZrCl₄.₇₅O₀.₅ synthesis, impedance, densification and battery tests.|Reported 2.42 mS cm⁻¹ at 25 °C, 94.2% relative density under 300 MPa and a low estimated raw-material cost.|Establishes experimental relevance and a macroscopic conductivity target; the partially amorphous specimen is not identical to one periodic glass model.|
-|F. Hussain *et al.*, “Exploring superionic conduction in lithium oxyhalide solid electrolytes considering composition and structural factors,” *npj Computational Materials* (2024). [DOI: 10.1038/s41524-024-01346-y](https://doi.org/10.1038/s41524-024-01346-y)|DFT/AIMD comparison of crystalline and amorphous oxychlorides; amorphous tracer diffusion at 340, 360 and 380 K.|Connected enhanced Li transport with structural disorder and distinguished Li migration from localized anion motion.|Provides the matched-temperature $D^*$ comparator and structural interpretation for the NEP89 trajectories.|
+|F. Hussain *et al.*, “Exploring superionic conduction in lithium oxyhalide solid electrolytes considering composition and structural factors,” *npj Computational Materials* (2024). [DOI: 10.1038/s41524-024-01346-y](https://doi.org/10.1038/s41524-024-01346-y)|DFT/AIMD comparison of crystalline and amorphous oxychlorides; amorphous tracer diffusion at 340, 360 and 380 K.|Connected enhanced Li transport with structural disorder and distinguished Li migration from localized anion motion.|Provides the matched-temperature $`D^*`$ comparator and structural interpretation for the NEP89 trajectories.|
 
 ```mermaid
 flowchart LR
@@ -311,7 +311,7 @@ flowchart LR
     D --> E["5. Conclusion<br/>NEP89 D below AIMD<br/>Local geometry persists<br/>Mechanism not yet unique"]
 ```
 
-This paired literature basis prevents a false one-to-one comparison: Hu provides experimental performance, whereas Hussain provides the directly comparable finite-temperature tracer-diffusion data. The workflow therefore compares $D$ to AIMD first and uses experiment as the material-level context.
+This paired literature basis prevents a false one-to-one comparison: Hu provides experimental performance, whereas Hussain provides the directly comparable finite-temperature tracer-diffusion data. The workflow therefore compares $`D`$ to AIMD first and uses experiment as the material-level context.
 
 |Comparison condition|Literature AIMD|This study|
 |---|---|---|
@@ -400,7 +400,7 @@ The RDF peaks and mean coordination remain similar while the fraction of large L
 
 |Reference|Evidence and material conditions|Principal result|Role in this study|
 |---|---|---|---|
-|W. Tang *et al.*, “Polyanion-stabilized amorphous halide electrolytes with low lithium content for all-solid-state lithium batteries,” *Nature Communications* **17**, 3326 (2026). [DOI: 10.1038/s41467-026-69737-x](https://doi.org/10.1038/s41467-026-69737-x)|Experimental impedance, XRD/TEM/SAED, synchrotron/neutron total scattering, XAS/EXAFS, AIMD and a material-adapted MLFF/MACE workflow.|For 0.5Li₂SO₄–ZrCl₄, reported 1.5 mS cm⁻¹ at 30 °C, $E_a=0.33$ eV and an experimental density near 2.05 g cm⁻³; linked transport to sulfate-modified Zr–Cl/O environments.|Provides the most integrated benchmark in this review: experimental transport, local coordination/PDF and tuned-MACE MD can be compared separately with NEP89.|
+|W. Tang *et al.*, “Polyanion-stabilized amorphous halide electrolytes with low lithium content for all-solid-state lithium batteries,” *Nature Communications* **17**, 3326 (2026). [DOI: 10.1038/s41467-026-69737-x](https://doi.org/10.1038/s41467-026-69737-x)|Experimental impedance, XRD/TEM/SAED, synchrotron/neutron total scattering, XAS/EXAFS, AIMD and a material-adapted MLFF/MACE workflow.|For 0.5Li₂SO₄–ZrCl₄, reported 1.5 mS cm⁻¹ at 30 °C, $`E_a=0.33`$ eV and an experimental density near 2.05 g cm⁻³; linked transport to sulfate-modified Zr–Cl/O environments.|Provides the most integrated benchmark in this review: experimental transport, local coordination/PDF and tuned-MACE MD can be compared separately with NEP89.|
 
 ```mermaid
 flowchart LR
@@ -410,7 +410,7 @@ flowchart LR
     D --> E["5. Conclusion<br/>Sulfate motif retained<br/>Fit can approach literature<br/>Long-range diffusion limited"]
 ```
 
-Because one paper supplies several evidence layers, the workflow keeps them distinct. Experimental conductivity and $E_a$, EXAFS/PDF structure and tuned-MACE trajectories are not interchangeable; agreement is assessed observable by observable.
+Because one paper supplies several evidence layers, the workflow keeps them distinct. Experimental conductivity and $`E_a`$, EXAFS/PDF structure and tuned-MACE trajectories are not interchangeable; agreement is assessed observable by observable.
 
 |Benchmark|Published result|Comparison in this review|
 |---|---|---|
@@ -460,7 +460,7 @@ After the recorded 300–400 K conditioning stages summarized in the preparation
 
 ![LSZC lithium transport and literature comparison](figures/18_LSZC_transport_comparison.png)
 
-The upper row and lower-left panel show the complete 0–300 ps Li MSD at each temperature. The lower-centre panel compares conditional Nernst–Einstein conductivity with the published tuned-MACE calculation. The lower-right panel includes all three Arrhenius trends: NEP89, the paper's tuned-MACE source points and experiment. Regression of the four tuned-MACE points gives $E_a=0.370$ eV ($R^2=0.9863$); this is a fit performed here on the published source data, not a separately reported experimental value. The experimental squares are the 303–353 K source points from Supplementary Fig. 3, and their grey dashed regression gives $E_a=0.330$ eV. Fit intervals are not drawn over the MSD curves.
+The upper row and lower-left panel show the complete 0–300 ps Li MSD at each temperature. The lower-centre panel compares conditional Nernst–Einstein conductivity with the published tuned-MACE calculation. The lower-right panel includes all three Arrhenius trends: NEP89, the paper's tuned-MACE source points and experiment. Regression of the four tuned-MACE points gives $`E_a=0.370`$ eV ($`R^2=0.9863`$); this is a fit performed here on the published source data, not a separately reported experimental value. The experimental squares are the 303–353 K source points from Supplementary Fig. 3, and their grey dashed regression gives $`E_a=0.330`$ eV. Fit intervals are not drawn over the MSD curves.
 
 |T (K)|D_app (cm²/s)|Conditional σ_NE (mS/cm)|Paper tuned-MACE σ (mS/cm)|R²|α|
 |---:|---:|---:|---:|---:|---:|
@@ -546,7 +546,7 @@ This material tests transfer beyond oxychlorides: the reference local motifs inv
 
 |Reference|Evidence and material conditions|Principal result|Role in this study|
 |---|---|---|---|
-|Z. Chen *et al.*, “Disorder-induced enhancement of lithium-ion transport in solid-state electrolytes,” *Nature Communications* **16**, 1057 (2025). [DOI: 10.1038/s41467-025-56322-x](https://doi.org/10.1038/s41467-025-56322-x)|AIMD-trained deep potential applied to crystalline, glass and glass-ceramic Li₃PS₄ over 300–900 K, with structural and dynamical descriptors.|Showed enhanced Li dynamics with disorder and related mobile environments to van Hove, non-Gaussian and learned-softness analyses.|Supplies the same-temperature DeePMD glass $D(T)$ and a mechanistic reference; this study reproduces only the glass structure/transport subset.|
+|Z. Chen *et al.*, “Disorder-induced enhancement of lithium-ion transport in solid-state electrolytes,” *Nature Communications* **16**, 1057 (2025). [DOI: 10.1038/s41467-025-56322-x](https://doi.org/10.1038/s41467-025-56322-x)|AIMD-trained deep potential applied to crystalline, glass and glass-ceramic Li₃PS₄ over 300–900 K, with structural and dynamical descriptors.|Showed enhanced Li dynamics with disorder and related mobile environments to van Hove, non-Gaussian and learned-softness analyses.|Supplies the same-temperature DeePMD glass $`D(T)`$ and a mechanistic reference; this study reproduces only the glass structure/transport subset.|
 |P. Mirmira *et al.*, “Importance of multimodal characterization and influence of residual Li₂S impurity in amorphous Li₃PS₄ inorganic electrolytes,” *Journal of Materials Chemistry A* **9**, 19637–19648 (2021). [DOI: 10.1039/D1TA02754A](https://doi.org/10.1039/D1TA02754A)|Experimental ball-milled amorphous Li₃PS₄ with structural characterization and impedance measurements.|Reported a room-temperature conductivity of about 3.5×10⁻⁴ S cm⁻¹ and showed that residual Li₂S and characterization method affect interpretation of the glass.|Provides an experimental scale and a warning that a single RDF or nominal composition does not fully define the experimental glass.|
 
 ```mermaid
@@ -557,7 +557,7 @@ flowchart LR
     D --> E["5. Conclusion<br/>Local motifs partly retained<br/>Transport magnitude differs<br/>Dedicated work remains"]
 ```
 
-The two references answer complementary questions: Chen supplies the atomistic transport comparator, whereas Mirmira supplies experimental context for a real amorphous sample. The NEP89 result is therefore evaluated against both local structure and $D(T)$ without converting computational agreement into an experimental reproduction claim.
+The two references answer complementary questions: Chen supplies the atomistic transport comparator, whereas Mirmira supplies experimental context for a real amorphous sample. The NEP89 result is therefore evaluated against both local structure and $`D(T)`$ without converting computational agreement into an experimental reproduction claim.
 
 ### Starting structure and thermal protocol
 
@@ -569,29 +569,29 @@ The [construction structure](../../materials/evidence/amorphous/Li3PS4/construct
 
 ![Li3PS4 temperature-dependent lithium mean-squared displacement](figures/05_Li3PS4_lithium_MSD.png)
 
-All four panels show the full 0–200 ps production. Their vertical scales are independent because the displacement spans more than two orders of magnitude. The common 20–80 ps diagnostic gives the following values; $R^2$ alone does not establish diffusion, so the log–log exponent $\alpha$ is reported with it.
+All four panels show the full 0–200 ps production. Their vertical scales are independent because the displacement spans more than two orders of magnitude. The common 20–80 ps diagnostic gives the following values; $`R^2`$ alone does not establish diffusion, so the log–log exponent $`\alpha`$ is reported with it.
 
-|T (K)|Apparent $D$ (cm²/s)|$R^2$|$\alpha$|Conditional $\sigma_{\mathrm{NE}}$ (mS/cm)|
+|T (K)|Apparent $`D`$ (cm²/s)|$`R^2`$|$`\alpha`$|Conditional $`\sigma_{\mathrm{NE}}`$ (mS/cm)|
 |---:|---:|---:|---:|---:|
 |300|5.401×10⁻⁸|0.99815|0.269|7.41|
 |500|4.209×10⁻⁷|0.99703|0.535|34.1|
 |700|7.925×10⁻⁶|0.99996|0.916|439|
 |900|3.065×10⁻⁵|0.99998|0.926|1,280|
 
-The four $D_{\mathrm{app}}$ values are shown as finite-time apparent estimates obtained from the common 20–80 ps interval. The lower-temperature values are more sensitive to finite sampling and glass preparation, but all four temperatures are connected as one NEP89 temperature series.
+The four $`D_{\mathrm{app}}`$ values are shown as finite-time apparent estimates obtained from the common 20–80 ps interval. The lower-temperature values are more sensitive to finite sampling and glass preparation, but all four temperatures are connected as one NEP89 temperature series.
 
 ![Li3PS4 lithium diffusion and framework dynamics](figures/06_Li3PS4_diffusion_framework_MSD.png)
 
-Panel a compares NEP89 with Chen's **DeePMD glass MD**, not experimental or AIMD self-diffusion. The four NEP89 $D_{\mathrm{app}}$ values are connected as a single temperature series. Panel b shows that host motion increases strongly: at an 80 ps lag, P/S MSD rises from 0.088/0.145 Å² at 300 K to 5.13/12.20 Å² at 900 K.
+Panel a compares NEP89 with Chen's **DeePMD glass MD**, not experimental or AIMD self-diffusion. The four NEP89 $`D_{\mathrm{app}}`$ values are connected as a single temperature series. Panel b shows that host motion increases strongly: at an 80 ps lag, P/S MSD rises from 0.088/0.145 Å² at 300 K to 5.13/12.20 Å² at 900 K.
 
-|T (K)|Chen glass $D$ (cm²/s)|NEP89 / Chen|Interpretation|
+|T (K)|Chen glass $`D`$ (cm²/s)|NEP89 / Chen|Interpretation|
 |---:|---:|---:|---|
-|300|1.186×10⁻⁹|45.5|Finite-time $D_{\mathrm{app}}$ from 20–80 ps|
-|500|9.350×10⁻⁸|4.50|Finite-time $D_{\mathrm{app}}$ from 20–80 ps|
+|300|1.186×10⁻⁹|45.5|Finite-time $`D_{\mathrm{app}}`$ from 20–80 ps|
+|500|9.350×10⁻⁸|4.50|Finite-time $`D_{\mathrm{app}}`$ from 20–80 ps|
 |700|1.524×10⁻⁶|5.20|Same-temperature finite-time comparison|
 |900|9.106×10⁻⁶|3.37|Finite-time comparison with appreciable framework motion|
 
-A 500/700/900 K Arrhenius analysis gives $E_a=0.4189$ eV and $R^2=0.99784$, close to Chen's 0.47 eV reference and improved from 0.3795 eV for the earlier preparation. [Mirmira 2021](https://doi.org/10.1039/D1TA02754A) reports about 0.35 mS/cm at 293.15 K for ball-milled amorphous LPS, providing the experimental room-temperature scale alongside the computational comparison.
+A 500/700/900 K Arrhenius analysis gives $`E_a=0.4189`$ eV and $`R^2=0.99784`$, close to Chen's 0.47 eV reference and improved from 0.3795 eV for the earlier preparation. [Mirmira 2021](https://doi.org/10.1039/D1TA02754A) reports about 0.35 mS/cm at 293.15 K for ball-milled amorphous LPS, providing the experimental room-temperature scale alongside the computational comparison.
 
 ### Local structure and preparation dependence
 
@@ -605,11 +605,11 @@ The independently prepared glass changes the 300 and 500 K response more strongl
 
 ![Li3PS4 dynamic heterogeneity and self van Hove distribution](figures/28_Li3PS4_dynamic_heterogeneity.png)
 
-The non-Gaussian parameter, $\alpha_2=3\langle r^4\rangle/(5\langle r^2\rangle^2)-1$, measures the departure of Li displacements from a single Gaussian population. At 700 and 900 K it peaks at **1.22 near 2.9 ps** and **0.60 near 1.3 ps**, respectively, then decays as the displacement population mixes. At 900 K the radial self van Hove distribution broadens continuously from 1 to 50 ps and develops substantial long-distance weight; **48.1%** of Li/time-origin observations move farther than 4 Å over 10 ps. At 300 and 500 K the long-lag rise in $\alpha_2$ reflects rare-event dominated finite sampling, consistent with the stronger preparation sensitivity of low-temperature transport. This extends the comparison from average MSD to the heterogeneous hopping picture emphasized by Chen et al. [DOI: 10.1038/s41467-025-56322-x](https://doi.org/10.1038/s41467-025-56322-x).
+The non-Gaussian parameter, $`\alpha_2=3\langle r^4\rangle/(5\langle r^2\rangle^2)-1`$, measures the departure of Li displacements from a single Gaussian population. At 700 and 900 K it peaks at **1.22 near 2.9 ps** and **0.60 near 1.3 ps**, respectively, then decays as the displacement population mixes. At 900 K the radial self van Hove distribution broadens continuously from 1 to 50 ps and develops substantial long-distance weight; **48.1%** of Li/time-origin observations move farther than 4 Å over 10 ps. At 300 and 500 K the long-lag rise in $`\alpha_2`$ reflects rare-event dominated finite sampling, consistent with the stronger preparation sensitivity of low-temperature transport. This extends the comparison from average MSD to the heterogeneous hopping picture emphasized by Chen et al. [DOI: 10.1038/s41467-025-56322-x](https://doi.org/10.1038/s41467-025-56322-x).
 
-RDF and angle distributions describe frequently sampled local configurations, whereas diffusion also depends on transitions among them. Close Li–S and S–P–S geometry can therefore coexist with a factor-of-3–5 error in high-temperature $D$. At 900 K, increased P/S motion further means that the host participates in the observed dynamics.
+RDF and angle distributions describe frequently sampled local configurations, whereas diffusion also depends on transitions among them. Close Li–S and S–P–S geometry can therefore coexist with a factor-of-3–5 error in high-temperature $`D`$. At 900 K, increased P/S motion further means that the host participates in the observed dynamics.
 
-**Li₃PS₄ conclusion:** the 512-atom glass preserves local PS4 geometry and the expected increase of Li motion with temperature, while its absolute diffusivity remains above Chen's glass result. The 300 K value is reported directly under the same finite-time $D_{\mathrm{app}}$ definition rather than as a room-temperature extrapolation.
+**Li₃PS₄ conclusion:** the 512-atom glass preserves local PS4 geometry and the expected increase of Li motion with temperature, while its absolute diffusivity remains above Chen's glass result. The 300 K value is reported directly under the same finite-time $`D_{\mathrm{app}}`$ definition rather than as a room-temperature extrapolation.
 
 <a id="lipon"></a>
 ## 5. LiPON: extension to an oxynitride glass
@@ -631,7 +631,7 @@ The project composition, Li47P16O56N5 = Li2.9375PO3.5N0.3125, closely matches Se
 |V. Lacivita *et al.*, “Resolving the Amorphous Structure of Lithium Phosphorus Oxynitride (LiPON),” *Journal of the American Chemical Society* **140**, 11029–11038 (2018). [DOI: 10.1021/jacs.8b05192](https://doi.org/10.1021/jacs.8b05192)|AIMD structures interpreted together with neutron total scattering/PDF and infrared spectroscopy.|Established experimentally constrained apical and bridging N environments in the amorphous phosphate network.|Defines the local-chemistry test that must be passed before Li transport is interpreted.|
 |V. Lacivita, N. Artrith and G. Ceder, “Structural and Compositional Factors That Control the Li-Ion Conductivity in LiPON Electrolytes,” *Chemistry of Materials* **30**, 7077–7090 (2018). [DOI: 10.1021/acs.chemmater.8b02812](https://doi.org/10.1021/acs.chemmater.8b02812)|AIMD study of amorphization, excess Li and apical/bridging N contributions to LiPON conductivity, interpreted against thin-film experiments.|Separated several structural and compositional contributions to Li mobility rather than attributing conductivity to N content alone.|Provides the mechanistic and experimental-conductivity context for interpreting the NEP89 Arrhenius result.|
 |A. Seth *et al.*, “Investigating Ionic Diffusivity in Amorphous LiPON using Machine-Learned Interatomic Potentials,” *ACS Materials Au* (2025). [DOI: 10.1021/acsmaterialsau.4c00117](https://doi.org/10.1021/acsmaterialsau.4c00117)|LiPON-specific NequIP trained on 13,454 DFT configurations; bulk melt–quench and Li/LiPON-interface transport calculations.|Generated material-specific amorphous structures and bulk diffusion at 600, 900, 1200 and 1500 K, with a public training dataset/model workflow.|Provides the matched composition and temperature-dependent computational comparator; NEP89 deliberately removes the material-specific training link.|
-|J. B. Bates *et al.*, “A Stable Thin-Film Lithium Electrolyte: Lithium Phosphorus Oxynitride,” *Journal of The Electrochemical Society* (1996). [DOI: 10.1149/1.1837443](https://doi.org/10.1149/1.1837443)|Experimental LiPON thin films measured by impedance over temperature.|Reported approximately 2.3±0.7×10⁻⁶ S cm⁻¹ at 25 °C and $E_a=0.55±0.02$ eV.|Supplies the experimental conductivity and activation-energy scale used separately from the self-diffusion comparison.|
+|J. B. Bates *et al.*, “A Stable Thin-Film Lithium Electrolyte: Lithium Phosphorus Oxynitride,” *Journal of The Electrochemical Society* (1996). [DOI: 10.1149/1.1837443](https://doi.org/10.1149/1.1837443)|Experimental LiPON thin films measured by impedance over temperature.|Reported approximately 2.3±0.7×10⁻⁶ S cm⁻¹ at 25 °C and $`E_a=0.55±0.02`$ eV.|Supplies the experimental conductivity and activation-energy scale used separately from the self-diffusion comparison.|
 
 ```mermaid
 flowchart LR
@@ -703,7 +703,7 @@ The N–N-free LiPON glass was used for transport analysis. At each literature b
 
 ![LiPON temperature-dependent lithium mean-squared displacement](figures/23_LiPON_lithium_MSD.png)
 
-All four complete 300 ps MSD curves increase with lag time. The common 20–100 ps definition gives $D=8.55\times10^{-7}$ cm²/s at 600 K. All curves are time-origin averages and no fit lines are overlaid. The reported analyses have $R^2=0.9962$–0.9999 and log–log exponents $\alpha=0.83$–0.98 under the same numerical criteria.
+All four complete 300 ps MSD curves increase with lag time. The common 20–100 ps definition gives $`D=8.55\times10^{-7}`$ cm²/s at 600 K. All curves are time-origin averages and no fit lines are overlaid. The reported analyses have $`R^2=0.9962`$–0.9999 and log–log exponents $`\alpha=0.83`$–0.98 under the same numerical criteria.
 
 |T (K)|D (cm²/s)|MSD-fit R²|α|Conditional σ_NE (mS/cm)|Li MSD at 100 ps (Å²)|Largest P/O/N MSD at 100 ps (Å²)|
 |---:|---:|---:|---:|---:|---:|---:|
@@ -712,7 +712,7 @@ All four complete 300 ps MSD curves increase with lag time. The common 20–100 
 |1200|5.49×10⁻⁵|0.9999|0.984|3.12×10³|330.97|9.77|
 |1500|1.24×10⁻⁴|0.9998|0.958|5.05×10³|766.70|21.92|
 
-The four-temperature NEP89 series gives an Arrhenius activation energy of **0.428 eV** ($R^2=0.9975$), still below the experimental thin-film value of approximately 0.55 eV. At 600 K, Seth reports $1.25\times10^{-10}$ cm²/s for melt-quenched LiPON, whereas NEP89 gives $8.55\times10^{-7}$ cm²/s—about $6.84\times10^3$ times higher. At 1500 K the corresponding values are approximately $7.5\times10^{-9}$ and $1.24\times10^{-4}$ cm²/s, a factor of $1.65\times10^4$. Extrapolation gives $D(300\,\mathrm{K})=2.32\times10^{-10}$ cm²/s, about 21.5 times Seth's reported $1.08\times10^{-11}$ cm²/s. The corresponding conditional Nernst–Einstein value is 0.0563 mS/cm, about 17.1 times the 0.0033 mS/cm experimental value. The systematic overestimation therefore remains. [Seth et al., 2025; DOI: 10.1021/acsmaterialsau.4c00117](https://doi.org/10.1021/acsmaterialsau.4c00117) [Bates et al., 1996; DOI: 10.1149/1.1837443](https://doi.org/10.1149/1.1837443)
+The four-temperature NEP89 series gives an Arrhenius activation energy of **0.428 eV** ($`R^2=0.9975`$), still below the experimental thin-film value of approximately 0.55 eV. At 600 K, Seth reports $`1.25\times10^{-10}`$ cm²/s for melt-quenched LiPON, whereas NEP89 gives $`8.55\times10^{-7}`$ cm²/s—about $`6.84\times10^3`$ times higher. At 1500 K the corresponding values are approximately $`7.5\times10^{-9}`$ and $`1.24\times10^{-4}`$ cm²/s, a factor of $`1.65\times10^4`$. Extrapolation gives $`D(300\,\mathrm{K})=2.32\times10^{-10}`$ cm²/s, about 21.5 times Seth's reported $`1.08\times10^{-11}`$ cm²/s. The corresponding conditional Nernst–Einstein value is 0.0563 mS/cm, about 17.1 times the 0.0033 mS/cm experimental value. The systematic overestimation therefore remains. [Seth et al., 2025; DOI: 10.1021/acsmaterialsau.4c00117](https://doi.org/10.1021/acsmaterialsau.4c00117) [Bates et al., 1996; DOI: 10.1149/1.1837443](https://doi.org/10.1149/1.1837443)
 
 ![LiPON diffusion and room-temperature conductivity comparison](figures/24_LiPON_transport_comparison.png)
 
@@ -724,31 +724,31 @@ The P–O and P–N first shells remain identifiable at all four temperatures. T
 
 ### Physical interpretation and conclusion
 
-Taken together, the preparation comparison and transport series show that Preparation B retains the literature-motivated apical/bridging nitrogen environments and phosphate tetrahedra, while its $D(T)$ increases monotonically. The local Li environment broadens progressively with temperature, linking the structural response to the Arrhenius trend. The absolute diffusion rate from general NEP89 remains higher than the material-specific NequIP and experimental conversion.
+Taken together, the preparation comparison and transport series show that Preparation B retains the literature-motivated apical/bridging nitrogen environments and phosphate tetrahedra, while its $`D(T)`$ increases monotonically. The local Li environment broadens progressively with temperature, linking the structural response to the Arrhenius trend. The absolute diffusion rate from general NEP89 remains higher than the material-specific NequIP and experimental conversion.
 
-**LiPON conclusion:** the 600–1500 K NEP89 series shows monotonically thermally activated lithium motion and gives **$E_a=0.428$ eV**. The shared-temperature diffusivities and 300 K extrapolation exceed the literature values. NEP89 therefore reproduces the qualitative temperature dependence but still overestimates quantitative transport for this LiPON model.
+**LiPON conclusion:** the 600–1500 K NEP89 series shows monotonically thermally activated lithium motion and gives **$`E_a=0.428`$ eV**. The shared-temperature diffusivities and 300 K extrapolation exceed the literature values. NEP89 therefore reproduces the qualitative temperature dependence but still overestimates quantitative transport for this LiPON model.
 
 <a id="remaining"></a>
 ## 6. Synthesis: literature reproduction across materials
 
 The complete study forms a continuous progression from computational feasibility to material validation. The initial CPU–GPU benchmark made long ML-driven trajectories practical; the MACE–NEP comparison then identified NEP89 as the efficient engine for the amorphous survey. LZOC and LSZC test chemically related oxychlorides against AIMD and experiment, while Li₃PS₄ and LiPON extend the same workflow to sulfide and oxynitride glasses. Together they show which literature trends transfer across chemistries and where absolute transport remains model dependent.
 
-|Material|Matched transport ratio, NEP89/literature|NEP89 $E_a$ (eV)|Literature $E_a$ (eV)|Integrated interpretation|
+|Material|Matched transport ratio, NEP89/literature|NEP89 $`E_a`$ (eV)|Literature $`E_a`$ (eV)|Integrated interpretation|
 |---|---:|---:|---:|---|
 |LZOC|0.22–0.35|—|—|AIMD temperature-pattern correspondence with a lower diffusion scale|
 |LSZC|0.97–1.07|0.351|0.330|Closest transport correspondence; sulfate retained, Zr environment more Cl-rich|
 |Li₃PS₄|3.37–45.5|0.419|0.470|Similar thermal sensitivity; heterogeneous Li motion and higher absolute diffusion|
-|LiPON|$6.84\times10^3$–$1.65\times10^4$|0.428|0.550|Temperature activation retained, but the general potential strongly overestimates transport|
+|LiPON|$`6.84\times10^3`$–$`1.65\times10^4`$|0.428|0.550|Temperature activation retained, but the general potential strongly overestimates transport|
 
 The ratio range uses only matched observables and shared temperatures; it is not averaged across different transport definitions. The quantities remain identified separately because tracer diffusion and conditional conductivity should not be presented as one directly comparable visual scale. Reading this table together with the local-structure sections separates three outcomes: agreement in characteristic structure, agreement in temperature sensitivity, and agreement in absolute transport.
 
 |Material / stage|Literature correspondence|Main conclusion|
 |---|---|---|
 |MACE–NEP benchmark|Same LZOC benchmark structure and comparable MD stages|NEP89 provides the throughput needed for the multi-material study; accuracy is assessed by the later literature comparisons.|
-|LZOC|340/360/380 K comparison with Hussain *et al.* AIMD|The non-monotonic temperature pattern is reproduced, while absolute $D^*$ is lower than AIMD.|
-|LSZC|320–350 K tuned-MACE and experimental conductivity comparison|Sulfate units remain intact and $E_a=0.351$ eV is close to the experimental 0.33 eV.|
-|Li₃PS₄|300–900 K comparison with Chen *et al.* DeePMD and experimental context|Local PS₄ geometry and thermally enhanced Li motion are reproduced; $E_a=0.4189$ eV is close to the 0.47 eV reference, although absolute $D$ is higher.|
-|LiPON|600–1500 K comparison with Seth *et al.* NequIP and thin-film experiment|The local phosphate–nitrogen network and monotonic thermal activation are reproduced; $E_a=0.428$ eV and the larger $D$ quantify the general model's material-dependent offset.|
+|LZOC|340/360/380 K comparison with Hussain *et al.* AIMD|The non-monotonic temperature pattern is reproduced, while absolute $`D^*`$ is lower than AIMD.|
+|LSZC|320–350 K tuned-MACE and experimental conductivity comparison|Sulfate units remain intact and $`E_a=0.351`$ eV is close to the experimental 0.33 eV.|
+|Li₃PS₄|300–900 K comparison with Chen *et al.* DeePMD and experimental context|Local PS₄ geometry and thermally enhanced Li motion are reproduced; $`E_a=0.4189`$ eV is close to the 0.47 eV reference, although absolute $`D`$ is higher.|
+|LiPON|600–1500 K comparison with Seth *et al.* NequIP and thin-film experiment|The local phosphate–nitrogen network and monotonic thermal activation are reproduced; $`E_a=0.428`$ eV and the larger $`D`$ quantify the general model's material-dependent offset.|
 
 The main result is therefore not a single universal error value. NEP89 consistently captures temperature-activated lithium motion and preserves the principal local structural motifs across four amorphous chemistries. LSZC provides the closest direct agreement with experiment, LZOC reproduces the AIMD trend shape, and Li₃PS₄/LiPON reveal systematic offsets in absolute diffusivity. This combination of successful trend reproduction and chemistry-dependent magnitude is the central story of the report.
 
@@ -762,9 +762,9 @@ Four chemical systems and five preparation routes are included. LZOC and the MAC
 |Route|Model size|Completed calculation|Interpretation|
 |---|---|---|---|
 |LZOC|192: Li42Zr24Cl114O12|340/360/380 K, 300 ps, NHC 2 fs analysed; nested 80/150/300 ps compared|Direct AIMD comparison and local-structure analysis completed|
-|LSZC|272: Li32Zr32Cl128S16O64|Common-cell 320/330/340/350 K, two 300 ps series each, analysed together with the structural results|Sulfate retained; transport and experimental $E_a$ comparison completed|
+|LSZC|272: Li32Zr32Cl128S16O64|Common-cell 320/330/340/350 K, two 300 ps series each, analysed together with the structural results|Sulfate retained; transport and experimental $`E_a`$ comparison completed|
 |Li₃PS₄|512: Li192P64S256|Current independent glass: 300/500/700/900 K, 200 ps each, remotely analysed|Finite-time D exceeds the DeePMD reference at all four temperatures, and 900 K host motion is appreciable|
-|LiPON|124: Li47P16O56N5|Three preparations; three 300 ps transport repeats at 600/900/1200/1500 K; transport, pressure release, RDF and coordination analysed|Monotonic $D(T)$, $E_a=0.428$ eV; absolute values still exceed literature|
+|LiPON|124: Li47P16O56N5|Three preparations; three 300 ps transport repeats at 600/900/1200/1500 K; transport, pressure release, RDF and coordination analysed|Monotonic $`D(T)`$, $`E_a=0.428`$ eV; absolute values still exceed literature|
 |MACE–NEP benchmark LZOC|192, same nominal LZOC|600 K detailed comparison, 700–900 K MSD/RDF and four-temperature timing analysed|Efficiency and structural-sensitivity benchmark|
 
 The LSZC common-cell four-temperature productions, Li₃PS₄ transport, all three LiPON preparations and LiPON Preparation-B bulk transport are analysed above. No additional DFT calculation is required for the scope of this report.
@@ -788,28 +788,28 @@ NPT target is 1 bar (0.0001 GPa). The final LSZC comparison uses the common 20.1
 
 |Symbol / term|Definition|Unit used in this review|
 |---|---|---|
-|$t$, $t_0$, $\tau$|simulation time, time origin and lag time ($\tau=t-t_0$)|fs or ps; $1\,\mathrm{ps}=10^3\,\mathrm{fs}$|
-|$T$|absolute temperature|K|
-|$N_s$|number of atoms of species $s$|dimensionless count|
-|$N_o(\tau)$|number of valid time origins contributing at lag $\tau$|dimensionless count|
-|$\mathbf r_i(t)$|unwrapped, drift-corrected Cartesian position of atom $i$|Å; $1\,\text{Å}=10^{-10}\,\mathrm{m}$|
-|MSD$_s(\tau)$|mean squared displacement of species $s$|Å²|
-|$a$|slope of a linear MSD fit, $\mathrm{MSD}=a\tau+b$|Å²/ps|
-|$D_s$, $D_{\mathrm{app}}$|three-dimensional tracer/self-diffusion estimate from the MSD slope|cm²/s|
-|$D_0$|Arrhenius prefactor|cm²/s|
-|$E_a$|apparent Arrhenius activation energy|eV|
-|$R^2$|coefficient of determination of the stated regression|dimensionless|
-|$\alpha$|local transport exponent, slope of $\ln(\mathrm{MSD})$ versus $\ln\tau$|dimensionless; $\alpha\approx1$ is consistent with diffusion over the fitted interval|
-|$V$|instantaneous or stated cell volume|Å³; $1\,\text{Å}^3=10^{-30}\,\mathrm{m^3}$|
-|$n_{\mathrm{Li}}$|Li number density, $N_{\mathrm{Li}}/V$|m⁻³ in the conductivity equation|
-|$\rho$|mass density|g/cm³|
-|$P$|cell-averaged pressure|GPa; $1\,\mathrm{bar}=10^{-4}\,\mathrm{GPa}$|
-|PE, $E_{\mathrm{pot}}$|potential energy|eV/atom unless stated otherwise|
-|$\Delta E_{\mathrm{pot}}$|difference between explicitly stated time-block mean potential energies|meV/atom|
-|$\sigma_{\mathrm{NE}}$|conditional Nernst–Einstein ionic conductivity calculated from tracer $D$|mS/cm|
-|$g_{AB}(r)$|partial radial distribution function between species $A$ and $B$|dimensionless|
-|CN$_{A-B}$|mean number of $B$ neighbours around $A$ inside the stated cutoff|dimensionless|
-|$P(r,\tau)$|normalized radial-displacement probability density $4\pi r^2G_s(r,\tau)$|Å⁻¹; its integral over $r$ is 1|
+|$`t`$, $`t_0`$, $`\tau`$|simulation time, time origin and lag time ($`\tau=t-t_0`$)|fs or ps; $`1\,\mathrm{ps}=10^3\,\mathrm{fs}`$|
+|$`T`$|absolute temperature|K|
+|$`N_s`$|number of atoms of species $`s`$|dimensionless count|
+|$`N_o(\tau)`$|number of valid time origins contributing at lag $`\tau`$|dimensionless count|
+|$`\mathbf r_i(t)`$|unwrapped, drift-corrected Cartesian position of atom $`i`$|Å; $`1\,\text{Å}=10^{-10}\,\mathrm{m}`$|
+|MSD$`_s(\tau)`$|mean squared displacement of species $`s`$|Å²|
+|$`a`$|slope of a linear MSD fit, $`\mathrm{MSD}=a\tau+b`$|Å²/ps|
+|$`D_s`$, $`D_{\mathrm{app}}`$|three-dimensional tracer/self-diffusion estimate from the MSD slope|cm²/s|
+|$`D_0`$|Arrhenius prefactor|cm²/s|
+|$`E_a`$|apparent Arrhenius activation energy|eV|
+|$`R^2`$|coefficient of determination of the stated regression|dimensionless|
+|$`\alpha`$|local transport exponent, slope of $`\ln(\mathrm{MSD})`$ versus $`\ln\tau`$|dimensionless; $`\alpha\approx1`$ is consistent with diffusion over the fitted interval|
+|$`V`$|instantaneous or stated cell volume|Å³; $`1\,\text{Å}^3=10^{-30}\,\mathrm{m^3}`$|
+|$`n_{\mathrm{Li}}`$|Li number density, $`N_{\mathrm{Li}}/V`$|m⁻³ in the conductivity equation|
+|$`\rho`$|mass density|g/cm³|
+|$`P`$|cell-averaged pressure|GPa; $`1\,\mathrm{bar}=10^{-4}\,\mathrm{GPa}`$|
+|PE, $`E_{\mathrm{pot}}`$|potential energy|eV/atom unless stated otherwise|
+|$`\Delta E_{\mathrm{pot}}`$|difference between explicitly stated time-block mean potential energies|meV/atom|
+|$`\sigma_{\mathrm{NE}}`$|conditional Nernst–Einstein ionic conductivity calculated from tracer $`D`$|mS/cm|
+|$`g_{AB}(r)`$|partial radial distribution function between species $`A`$ and $`B`$|dimensionless|
+|CN$`_{A-B}`$|mean number of $`B`$ neighbours around $`A`$ inside the stated cutoff|dimensionless|
+|$`P(r,\tau)`$|normalized radial-displacement probability density $`4\pi r^2G_s(r,\tau)`$|Å⁻¹; its integral over $`r`$ is 1|
 |runtime|wall time after dispatch, excluding queue waiting unless explicitly stated|s, min or h|
 
 “Production length” is the propagated physical time, whereas “frames” is the number of stored configurations. Neither is an independent-sample count. NVT means fixed particle number, cell volume and target temperature; NPT means fixed particle number and target pressure/temperature with a variable cell. Reported target values and trajectory means are kept distinct.
@@ -830,36 +830,36 @@ D_{\mathrm{app}}[\mathrm{cm^2/s}]=\frac{a[\text{Å}^2/\mathrm{ps}]}{6}\times10^{
 \sigma_{\mathrm{NE}}=\frac{(N_{\mathrm{Li}}/V)e^2D}{k_BT}.
 $$
 
-The factor 6 is $2d$ for three-dimensional diffusion ($d=3$); it must be changed for a deliberately projected one- or two-dimensional MSD. The unit conversion is $1\,\text{Å}^2/\mathrm{ps}=10^{-4}\,\mathrm{cm^2/s}$. A fitted slope is reported as $D_{\mathrm{app}}$ when a stable long-time diffusive regime is not established. The full displayed trajectory is not necessarily the fitted lag interval, and the sparsely averaged tail is not fitted solely because it is available.
+The factor 6 is $`2d`$ for three-dimensional diffusion ($`d=3`$); it must be changed for a deliberately projected one- or two-dimensional MSD. The unit conversion is $`1\,\text{Å}^2/\mathrm{ps}=10^{-4}\,\mathrm{cm^2/s}`$. A fitted slope is reported as $`D_{\mathrm{app}}`$ when a stable long-time diffusive regime is not established. The full displayed trajectory is not necessarily the fitted lag interval, and the sparsely averaged tail is not fitted solely because it is available.
 
 ### Conductivity and Arrhenius quantities
 
-$V$ is cell volume, $e=1.602176634\times10^{-19}$ C is the Li⁺ elementary charge, $k_B=1.380649\times10^{-23}$ J/K and $T$ is absolute temperature. Use $D$ in m²/s and $V$ in m³ for SI conductivity: $D[\mathrm{cm^2/s}]\times10^{-4}$ and $V[\text{Å}^3]\times10^{-30}$. The output conversions are
+$`V`$ is cell volume, $`e=1.602176634\times10^{-19}`$ C is the Li⁺ elementary charge, $`k_B=1.380649\times10^{-23}`$ J/K and $`T`$ is absolute temperature. Use $`D`$ in m²/s and $`V`$ in m³ for SI conductivity: $`D[\mathrm{cm^2/s}]\times10^{-4}`$ and $`V[\text{Å}^3]\times10^{-30}`$. The output conversions are
 
 $$
 \sigma[\mathrm{mS/cm}]=10\,\sigma[\mathrm{S/m}]
 =10^3\,\sigma[\mathrm{S/cm}].
 $$
 
-The Nernst–Einstein conversion assumes unit Li charge and neglects distinct-ion correlations, collective conductivity and the Haven ratio; it inherits every limitation of the fitted tracer $D$. Experimental conductivity is therefore not experimental self-diffusion, and $\sigma_{\mathrm{NE}}$ is labelled conditional throughout.
+The Nernst–Einstein conversion assumes unit Li charge and neglects distinct-ion correlations, collective conductivity and the Haven ratio; it inherits every limitation of the fitted tracer $`D`$. Experimental conductivity is therefore not experimental self-diffusion, and $`\sigma_{\mathrm{NE}}`$ is labelled conditional throughout.
 
 Arrhenius fits use lnD=lnD₀−E_a/(k_BT), with k_B=8.617333262145×10⁻⁵ eV/K. The reported E_a diagnostics below are not validated barriers. R² alone does not demonstrate diffusion or convergence; α is the log–log MSD slope and can be affected by a nonzero intercept.
 
-For the LSZC conductivity comparison, $x=1000/T$ in K⁻¹ and $y=\ln[\sigma T/(\mathrm{S\,cm^{-1}\,K})]$; if $y=mx+b$ is justified, $E_a=-1000k_Bm$. This is a fit to $\sigma T$, not $\sigma$ alone. Different temperature-dependent number densities can make its slope differ from a fit to $D$. A poor or nonphysical regression is retained only as a diagnostic, without a predicted room-temperature value.
+For the LSZC conductivity comparison, $`x=1000/T`$ in K⁻¹ and $`y=\ln[\sigma T/(\mathrm{S\,cm^{-1}\,K})]`$; if $`y=mx+b`$ is justified, $`E_a=-1000k_Bm`$. This is a fit to $`\sigma T`$, not $`\sigma`$ alone. Different temperature-dependent number densities can make its slope differ from a fit to $`D`$. A poor or nonphysical regression is retained only as a diagnostic, without a predicted room-temperature value.
 
 ### Structure, thermodynamics and uncertainty
 
-Partial RDFs use periodic minimum-image distances, exclude self-pairs and divide pair counts by spherical-shell volume and bulk number density, so an ideal homogeneous distribution approaches $g_{AB}(r)=1$. Coordination is either counted directly below a declared cutoff $r_c$ or equivalently estimated from
+Partial RDFs use periodic minimum-image distances, exclude self-pairs and divide pair counts by spherical-shell volume and bulk number density, so an ideal homogeneous distribution approaches $`g_{AB}(r)=1`$. Coordination is either counted directly below a declared cutoff $`r_c`$ or equivalently estimated from
 
 $$
 \mathrm{CN}_{A-B}(r_c)=4\pi\rho_B\int_0^{r_c}r^2g_{AB}(r)\,dr,
 $$
 
-where $\rho_B=N_B/V$ is the number density of species $B$. Every cutoff is an operational geometric definition, not a bond-order criterion. A partial RDF is not a neutron-/X-ray-weighted total PDF or structure factor.
+where $`\rho_B=N_B/V`$ is the number density of species $`B`$. Every cutoff is an operational geometric definition, not a bond-order criterion. A partial RDF is not a neutron-/X-ray-weighted total PDF or structure factor.
 
-Density is total cell mass divided by $V$. Pressure is a cell-averaged virial observable; a near-zero mean does not by itself validate local chemistry. Energy drift is reported only after normalization per atom and with the two compared time blocks stated. Framework MSD refers to the explicitly named non-Li species and is used to test the approximation of a stationary host.
+Density is total cell mass divided by $`V`$. Pressure is a cell-averaged virial observable; a near-zero mean does not by itself validate local chemistry. Energy drift is reported only after normalization per atom and with the two compared time blocks stated. Framework MSD refers to the explicitly named non-Li species and is used to test the approximation of a stationary host.
 
-No smoothing, trajectory-amplitude rescaling or target-$E_a$ selection is used. Stored frames, time origins, atoms and temporal blocks from one trajectory are correlated observations, not independent replicas. A sample SD across them is not an independent-glass confidence interval. Independent velocity seeds probe dynamical repeatability of one glass; they do not represent independently prepared amorphous structures.
+No smoothing, trajectory-amplitude rescaling or target-$`E_a`$ selection is used. Stored frames, time origins, atoms and temporal blocks from one trajectory are correlated observations, not independent replicas. A sample SD across them is not an independent-glass confidence interval. Independent velocity seeds probe dynamical repeatability of one glass; they do not represent independently prepared amorphous structures.
 
 ## Reference list and DOI
 
@@ -877,7 +877,7 @@ These references identify the evidence used in this review. Citing a preparation
 |Seth et al., 2025|LiPON: composition/preparation context and material-specific NequIP study; the NEP test in this project is distinct|[10.1021/acsmaterialsau.4c00117](https://doi.org/10.1021/acsmaterialsau.4c00117)|
 |Lacivita et al., 2018 (JACS)|LiPON: AIMD structure validated against neutron PDF and infrared spectroscopy; apical and bridging N benchmark|[10.1021/jacs.8b05192](https://doi.org/10.1021/jacs.8b05192)|
 |Lacivita, Artrith and Ceder, 2018 (Chem. Mater.)|LiPON: AIMD analysis of structural/compositional factors controlling conductivity|[10.1021/acs.chemmater.8b02812](https://doi.org/10.1021/acs.chemmater.8b02812)|
-|Bates et al., 1996|LiPON: experimental thin-film conductivity and $E_a=0.55\pm0.02$ eV|[10.1149/1.1837443](https://doi.org/10.1149/1.1837443)|
+|Bates et al., 1996|LiPON: experimental thin-film conductivity and $`E_a=0.55\pm0.02`$ eV|[10.1149/1.1837443](https://doi.org/10.1149/1.1837443)|
 
 The MACE–NEP runtime and legacy density comparison are project simulation results, not values taken from these papers. Their provenance is retained below.
 
