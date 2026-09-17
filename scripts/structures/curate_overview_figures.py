@@ -154,9 +154,10 @@ def plot_runtime_bars(ax, timing):
     for bar,value in zip(bars,np.r_[mace,nep]):
         ax.text(value*1.045,bar.get_y()+bar.get_height()/2,f'{value:.1f}',
                 va='center',ha='left',fontsize=10.5)
+    runtime_limit=max(450,float(max(mace.max(),nep.max())*1.8))
     ax.set(title='Whole-job runtime by temperature',xlabel='Whole-job runtime (min)',
            ylabel='Temperature (K)',xscale='log',yticks=y,yticklabels=temperatures,
-           xlim=(5,450))
+           xlim=(5,runtime_limit))
     ax.set_ylim(4.15,-.55)
     ax.legend(loc='lower center',ncol=2)
 

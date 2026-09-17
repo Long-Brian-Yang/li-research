@@ -28,6 +28,11 @@ class RuntimeBarFigureTests(unittest.TestCase):
         self.assertEqual(ax.get_xlabel(), "Whole-job runtime (min)")
         self.assertEqual(ax.get_ylabel(), "Temperature (K)")
         self.assertEqual(len(ax.texts), 8)
+        fig.canvas.draw()
+        renderer = fig.canvas.get_renderer()
+        right_edge = ax.get_window_extent(renderer).x1
+        for label in ax.texts:
+            self.assertLessEqual(label.get_window_extent(renderer).x1, right_edge - 2)
         plt.close(fig)
 
 

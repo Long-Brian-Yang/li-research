@@ -19,17 +19,17 @@
     },
     {
       "file": "09_MACE_NEP_runtime_density.png",
-      "sha256": "ece70d6164cb494aa8ac85cd53a8a8edda58b546248448a8e89f1901b6a951d7",
+      "sha256": "5e3bef00ab9b005868918795249b0b9c8df85f4c1534be4a81dd26a09f14c397",
       "source": "scripts/structures/curate_overview_figures.py"
     },
     {
       "file": "09_MACE_NEP_runtime_density.pdf",
-      "sha256": "daf3a909f8382968a11baafc74c2d707a7c8df9f24ee8048df395e98365cd0b0",
+      "sha256": "bf746720b7dbbda05fcaae0538622dd61b026db9cabed16da3f703de6c95a249",
       "source": "scripts/structures/curate_overview_figures.py"
     },
     {
       "file": "09_MACE_NEP_runtime_density.svg",
-      "sha256": "ab26091b0b08927243bae0e95f2d791727af1bc7c34f6fa37edfdb2c061971fb",
+      "sha256": "4257ebc5e6ff49eeba2d83afff5737bd4fa80a715343ad1d839a8463bc5bccc5",
       "source": "scripts/structures/curate_overview_figures.py"
     },
     {
