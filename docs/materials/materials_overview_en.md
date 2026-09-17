@@ -792,7 +792,7 @@ NPT target is 1 bar (0.0001 GPa). The final LSZC comparison uses the common 20.1
 |$T$|absolute temperature|K|
 |$N_s$|number of atoms of species $s$|dimensionless count|
 |$N_o(\tau)$|number of valid time origins contributing at lag $\tau$|dimensionless count|
-|$\mathbf r_i(t)$|unwrapped, drift-corrected Cartesian position of atom $i$|Å; $1\,\mathrm{\AA}=10^{-10}\,\mathrm{m}$|
+|$\mathbf r_i(t)$|unwrapped, drift-corrected Cartesian position of atom $i$|Å; $1\,\text{Å}=10^{-10}\,\mathrm{m}$|
 |MSD$_s(\tau)$|mean squared displacement of species $s$|Å²|
 |$a$|slope of a linear MSD fit, $\mathrm{MSD}=a\tau+b$|Å²/ps|
 |$D_s$, $D_{\mathrm{app}}$|three-dimensional tracer/self-diffusion estimate from the MSD slope|cm²/s|
@@ -800,7 +800,7 @@ NPT target is 1 bar (0.0001 GPa). The final LSZC comparison uses the common 20.1
 |$E_a$|apparent Arrhenius activation energy|eV|
 |$R^2$|coefficient of determination of the stated regression|dimensionless|
 |$\alpha$|local transport exponent, slope of $\ln(\mathrm{MSD})$ versus $\ln\tau$|dimensionless; $\alpha\approx1$ is consistent with diffusion over the fitted interval|
-|$V$|instantaneous or stated cell volume|Å³; $1\,\mathrm{\AA^3}=10^{-30}\,\mathrm{m^3}$|
+|$V$|instantaneous or stated cell volume|Å³; $1\,\text{Å}^3=10^{-30}\,\mathrm{m^3}$|
 |$n_{\mathrm{Li}}$|Li number density, $N_{\mathrm{Li}}/V$|m⁻³ in the conductivity equation|
 |$\rho$|mass density|g/cm³|
 |$P$|cell-averaged pressure|GPa; $1\,\mathrm{bar}=10^{-4}\,\mathrm{GPa}$|
@@ -826,15 +826,15 @@ $$
 N_Li is Li atom count, N_o the valid-origin count and r the unwrapped position after **whole-system mass-weighted COM correction**, not Li-only COM subtraction. For the free-intercept fit MSD=aτ+b,
 
 $$
-D_{\mathrm{app}}[\mathrm{cm^2/s}]=\frac{a[\mathrm{\AA^2/ps}]}{6}\times10^{-4},\qquad
+D_{\mathrm{app}}[\mathrm{cm^2/s}]=\frac{a[\text{Å}^2/\mathrm{ps}]}{6}\times10^{-4},\qquad
 \sigma_{\mathrm{NE}}=\frac{(N_{\mathrm{Li}}/V)e^2D}{k_BT}.
 $$
 
-The factor 6 is $2d$ for three-dimensional diffusion ($d=3$); it must be changed for a deliberately projected one- or two-dimensional MSD. The unit conversion is $1\,\mathrm{\AA^2/ps}=10^{-4}\,\mathrm{cm^2/s}$. A fitted slope is reported as $D_{\mathrm{app}}$ when a stable long-time diffusive regime is not established. The full displayed trajectory is not necessarily the fitted lag interval, and the sparsely averaged tail is not fitted solely because it is available.
+The factor 6 is $2d$ for three-dimensional diffusion ($d=3$); it must be changed for a deliberately projected one- or two-dimensional MSD. The unit conversion is $1\,\text{Å}^2/\mathrm{ps}=10^{-4}\,\mathrm{cm^2/s}$. A fitted slope is reported as $D_{\mathrm{app}}$ when a stable long-time diffusive regime is not established. The full displayed trajectory is not necessarily the fitted lag interval, and the sparsely averaged tail is not fitted solely because it is available.
 
 ### Conductivity and Arrhenius quantities
 
-$V$ is cell volume, $e=1.602176634\times10^{-19}$ C is the Li⁺ elementary charge, $k_B=1.380649\times10^{-23}$ J/K and $T$ is absolute temperature. Use $D$ in m²/s and $V$ in m³ for SI conductivity: $D[\mathrm{cm^2/s}]\times10^{-4}$ and $V[\mathrm{\AA^3}]\times10^{-30}$. The output conversions are
+$V$ is cell volume, $e=1.602176634\times10^{-19}$ C is the Li⁺ elementary charge, $k_B=1.380649\times10^{-23}$ J/K and $T$ is absolute temperature. Use $D$ in m²/s and $V$ in m³ for SI conductivity: $D[\mathrm{cm^2/s}]\times10^{-4}$ and $V[\text{Å}^3]\times10^{-30}$. The output conversions are
 
 $$
 \sigma[\mathrm{mS/cm}]=10\,\sigma[\mathrm{S/m}]
