@@ -1,0 +1,7 @@
+material,model_Ea_eV,reference_Ea_eV,reference_type,status
+Li3YCl6,0.302,0.4,experiment,formal comparison; MACE value shown here
+LiNbOCl4,0.313,0.24,experiment,formal comparison; MACE value shown here
+LZOC,,,Hussain 2024 AIMD D(T),no formal Ea assigned
+LSZC,0.3508458941,0.33,experiment,formal comparison
+Li3PS4,0.4188975679,0.47,Chen 2025 DeePMD,500-900 K comparison
+LiPON,0.428001113,0.55,thin-film experiment,D-based Ea; conductivity-based Ea is 0.415 eV

@@ -347,6 +347,10 @@ Panels a–c show full 0–300 ps Li MSD, one trajectory per temperature. Panel 
 
 **Result:** NEP89 gives lower apparent diffusion than AIMD at all three temperatures, with deviations of approximately −65%, −78% and −71%. Nevertheless, both series decrease from 340 to 360 K and increase again at 380 K. NEP89 therefore underestimates the absolute diffusivity while reproducing the direction of the AIMD temperature response over this range.
 
+![LZOC lithium tracer diffusion in Arrhenius coordinates](figures/29_LZOC_Arrhenius_comparison.png)
+
+Placing the same three points in Arrhenius coordinates does not produce a monotonic linear series for either NEP89 or AIMD. LZOC therefore supports a same-temperature comparison of $`D`$, but not a formal reported $`E_a`$. This is an explicit interpretation of the available temperature response rather than a missing result.
+
 ### Analysis method and scope
 
 MSD is averaged over time origins after whole-system centre-of-mass correction, and D is obtained from its slope using the three-dimensional Einstein relation. A representative linear and stable interval is used at each temperature, while the full 300 ps MSD is shown together with the AIMD values. Detailed fitting alternatives are retained in the source records; the main text focuses on the temperature response and literature comparison. RDF, coordination and species-resolved motion below provide the corresponding structural interpretation.
@@ -471,6 +475,10 @@ The upper row and lower-left panel show the complete 0–300 ps Li MSD at each t
 
 Using a common analysis across the four temperatures gives **E_a=0.351 eV with Arrhenius R²=0.9679**, close to the experimental value of 0.33 eV. Although the absolute conductivities differ slightly, both the activation energy and the increase in transport with temperature reproduce the principal literature trend.
 
+![LSZC Arrhenius analysis of lithium-ion conductivity](figures/30_LSZC_Arrhenius_comparison.png)
+
+Using the same presentation as the crystalline benchmarks places NEP89, the paper's tuned MACE result and experiment on one $`\ln(\sigma T)`$ axis. Their activation energies are 0.351, 0.370 and 0.330 eV, respectively; NEP89 differs from experiment by 0.021 eV.
+
 |Experimental source temperature (K, rounded)|σ (mS/cm)|
 |---:|---:|
 |303|1.490|
@@ -592,6 +600,10 @@ Panel a compares NEP89 with Chen's **DeePMD glass MD**, not experimental or AIMD
 |900|9.106×10⁻⁶|3.37|Finite-time comparison with appreciable framework motion|
 
 A 500/700/900 K Arrhenius analysis gives $`E_a=0.4189`$ eV and $`R^2=0.99784`$, close to Chen's 0.47 eV reference and improved from 0.3795 eV for the earlier preparation. [Mirmira 2021](https://doi.org/10.1039/D1TA02754A) reports about 0.35 mS/cm at 293.15 K for ball-milled amorphous LPS, providing the experimental room-temperature scale alongside the computational comparison.
+
+![Li3PS4 Arrhenius analysis of lithium diffusion](figures/31_Li3PS4_Arrhenius_comparison.png)
+
+All four NEP89 diffusivities are displayed, while the activation barrier is evaluated from the linear 500–900 K subset. The reported 0.470 eV slope is overlaid for Chen's DeePMD series. Both series represent self-diffusion; the room-temperature experimental conductivity is therefore not mixed into this $`\ln D`$ axis.
 
 ### Local structure and preparation dependence
 
@@ -718,6 +730,10 @@ The four-temperature NEP89 series gives an Arrhenius activation energy of **0.42
 
 The left panel connects the four NEP89 temperatures and overlays the melt-quench values that Seth et al. report numerically at 600 and 1500 K in the same units. The NEP89 series remains roughly four orders of magnitude above the material-specific NequIP result. The right panel separately compares the conditional 300 K Nernst–Einstein conductivity of 0.0563 mS/cm with the experimental 0.0033 mS/cm, avoiding a direct mixture of self-diffusion and measured conductivity.
 
+![LiPON Arrhenius analysis of lithium-ion conductivity](figures/32_LiPON_Arrhenius_comparison.png)
+
+In the crystalline-style $`\ln(\sigma T)`$ representation, the conditional Nernst–Einstein conductivities, including their temperature-dependent cell volumes, give a conductivity activation energy of 0.415 eV. Its 0.013 eV difference from the diffusion-only fit (0.428 eV) arises from the change in number density with temperature. The experimental line is anchored by the Bates 300 K conductivity and $`E_a=0.550`$ eV, so both slope and absolute scale are visible.
+
 ![LiPON temperature-dependent partial radial distribution functions](figures/25_LiPON_temperature_RDF.png)
 
 The P–O and P–N first shells remain identifiable at all four temperatures. The Li–O and Li–N peaks broaden with temperature, consistent with the increase in lithium motion obtained from the MSD. The RDF therefore provides structural evidence for the temperature response of the local Li environment independently of the Arrhenius fit.
@@ -738,7 +754,7 @@ The complete study forms a continuous progression from computational feasibility
 |LZOC|0.22–0.35|—|—|AIMD temperature-pattern correspondence with a lower diffusion scale|
 |LSZC|0.97–1.07|0.351|0.330|Closest transport correspondence; sulfate retained, Zr environment more Cl-rich|
 |Li₃PS₄|3.37–45.5|0.419|0.470|Similar thermal sensitivity; heterogeneous Li motion and higher absolute diffusion|
-|LiPON|$`6.84\times10^3`$–$`1.65\times10^4`$|0.428|0.550|Temperature activation retained, but the general potential strongly overestimates transport|
+|LiPON|$`6.84\times10^3`$–$`1.65\times10^4`$|0.428 (D) / 0.415 (σ)|0.550|Temperature activation retained, but the general potential strongly overestimates transport|
 
 The ratio range uses only matched observables and shared temperatures; it is not averaged across different transport definitions. The quantities remain identified separately because tracer diffusion and conditional conductivity should not be presented as one directly comparable visual scale. Reading this table together with the local-structure sections separates three outcomes: agreement in characteristic structure, agreement in temperature sensitivity, and agreement in absolute transport.
 

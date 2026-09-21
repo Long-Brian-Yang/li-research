@@ -412,7 +412,7 @@ LZOCではAIMDの温度応答を捉えつつ拡散を低く予測し、LSZCで�
 
 |LZOC|LSZC|
 |---|---|
-|![LZOCの輸送とAIMD比較](../materials/figures/01_LZOC_transport.png)|![LSZCの輸送と文献比較](../materials/figures/18_LSZC_transport_comparison.png)|
+|![LZOCのArrhenius座標における拡散比較](../materials/figures/29_LZOC_Arrhenius_comparison.png)|![LSZCのArrhenius解析](../materials/figures/30_LSZC_Arrhenius_comparison.png)|
 
 ## スライド表示表
 
@@ -428,7 +428,7 @@ LSZCでは硫酸根を保持した一方、Zr–O配位は実験より少なく�
 
 ## 口頭講稿
 
-「LZOCではAIMDに対して拡散が約0.22から0.35倍でしたが、温度応答を捉えました。LSZCでは活性化エネルギー0.351 eVとなり、実験0.330 eVとの差は0.021 eVです。一方、Zr局所配位には差が残り、輸送が近いだけで構造全体が正しいとは判断できません。」
+「LZOCではAIMDに対して拡散が約0.22から0.35倍でした。三点は非単調なので無理に活性化エネルギーを付けず、同温度の拡散比較として扱います。LSZCでは活性化エネルギー0.351 eVとなり、実験0.330 eVとの差は0.021 eVです。」
 
 ## 次ページへの接続
 
@@ -448,7 +448,7 @@ Li₃PS₄とLiPONでは熱活性化傾向と主要局所構造を捉えたが�
 
 |Li₃PS₄|LiPON|
 |---|---|
-|![Li3PS4の拡散・骨格比較](../materials/figures/06_Li3PS4_diffusion_framework_MSD.png)|![LiPONの輸送比較](../materials/figures/24_LiPON_transport_comparison.png)|
+|![Li3PS4のArrhenius解析](../materials/figures/31_Li3PS4_Arrhenius_comparison.png)|![LiPONのArrhenius解析](../materials/figures/32_LiPON_Arrhenius_comparison.png)|
 
 ## スライド表示表
 

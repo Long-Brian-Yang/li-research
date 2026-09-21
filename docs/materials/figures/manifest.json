@@ -1,6 +1,6 @@
 {
   "operation": "Current report figure inventory. Historical sources remain archived; current files may be regenerated from the listed scripts.",
-  "figure_groups": 26,
+  "figure_groups": 30,
   "assets": [
     {
       "file": "18_LSZC_transport_comparison.png",
@@ -361,6 +361,66 @@
       "file": "04_LiNbOCl4_Arrhenius.svg",
       "sha256": "2725396a1f34af209871ebf4d6a945c00e62db77a62e521df838eee0a0d6427d",
       "source": "src/li_research/analysis/arrhenius/plot_linboocl4_arrhenius.py"
+    },
+    {
+      "file": "29_LZOC_Arrhenius_comparison.png",
+      "sha256": "68747247d05f9306747e9403e5d0222190eb579fee7138cdd88933802b731ef1",
+      "source": "scripts/structures/plot_amorphous_arrhenius_comparisons.py"
+    },
+    {
+      "file": "29_LZOC_Arrhenius_comparison.pdf",
+      "sha256": "3343df7ef084ddfb3213950f7db5331a5d75a28684118972fe9695d73417f4f5",
+      "source": "scripts/structures/plot_amorphous_arrhenius_comparisons.py"
+    },
+    {
+      "file": "29_LZOC_Arrhenius_comparison.svg",
+      "sha256": "7ff354cac90c815de86323757d8dbd21356905ab8ed2c8f663453ef07125c617",
+      "source": "scripts/structures/plot_amorphous_arrhenius_comparisons.py"
+    },
+    {
+      "file": "30_LSZC_Arrhenius_comparison.png",
+      "sha256": "a6adeba62e6d020bccbf502db1cf8a3bab5385400074cfb2eb0c7db7e1c33c3e",
+      "source": "scripts/structures/plot_amorphous_arrhenius_comparisons.py"
+    },
+    {
+      "file": "30_LSZC_Arrhenius_comparison.pdf",
+      "sha256": "36ce6e91e176aceaba39bdeba1bac0aa249bb786b63f6f75717b489eb568961a",
+      "source": "scripts/structures/plot_amorphous_arrhenius_comparisons.py"
+    },
+    {
+      "file": "30_LSZC_Arrhenius_comparison.svg",
+      "sha256": "0da929e7afec9204be29bbd2c13760810b67ce175f4a758bb0f6aa98f70b6c82",
+      "source": "scripts/structures/plot_amorphous_arrhenius_comparisons.py"
+    },
+    {
+      "file": "31_Li3PS4_Arrhenius_comparison.png",
+      "sha256": "e6723620ec1fc856d319a67c1b8bb40de61423442c54c9779d37672a519c5453",
+      "source": "scripts/structures/plot_amorphous_arrhenius_comparisons.py"
+    },
+    {
+      "file": "31_Li3PS4_Arrhenius_comparison.pdf",
+      "sha256": "ede0fb96a3c1f707529cd49d58cac351a8790f14c398783bc6505bd8ac25c18f",
+      "source": "scripts/structures/plot_amorphous_arrhenius_comparisons.py"
+    },
+    {
+      "file": "31_Li3PS4_Arrhenius_comparison.svg",
+      "sha256": "2b16cc54e3a121496eb20f6a423105309d734c945ce4f235a143671ca57bdd31",
+      "source": "scripts/structures/plot_amorphous_arrhenius_comparisons.py"
+    },
+    {
+      "file": "32_LiPON_Arrhenius_comparison.png",
+      "sha256": "9208d3befa020456c8459e6593ffd2bc9fc312a920a08fbfe37c034aab2f5a77",
+      "source": "scripts/structures/plot_amorphous_arrhenius_comparisons.py"
+    },
+    {
+      "file": "32_LiPON_Arrhenius_comparison.pdf",
+      "sha256": "8e941a3278aa53936d7848499fcce08cf9afa0f0757c2220bfaadcd40ad0a996",
+      "source": "scripts/structures/plot_amorphous_arrhenius_comparisons.py"
+    },
+    {
+      "file": "32_LiPON_Arrhenius_comparison.svg",
+      "sha256": "8bf7d31b3e57d2096b1b2102034f8f64c12d80d921f418293cc0f7014d1d6e56",
+      "source": "scripts/structures/plot_amorphous_arrhenius_comparisons.py"
     }
   ]
 }
