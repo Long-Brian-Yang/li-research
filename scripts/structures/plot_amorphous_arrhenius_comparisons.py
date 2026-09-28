@@ -150,14 +150,18 @@ def plot_li3ps4() -> tuple[list[str], Path]:
     order = np.argsort(x)
     ax.scatter(x[order], np.log(nep[order]), color=BLUE, s=72, zorder=3,
                label="NEP89 data")
-    xx_nep = np.linspace(x[high].min(), x[high].max(), 200)
-    ax.plot(xx_nep, m_nep * xx_nep + b_nep, color=BLUE, lw=2.8, ls="--",
+    x_fit = np.linspace(x[high].min(), x[high].max(), 200)
+    ax.plot(x_fit, m_nep * x_fit + b_nep, color=BLUE, lw=2.8, ls="-",
             label=fr"NEP89 fit, 500–900 K ($E_a={ea_nep:.3f}$ eV)")
+    x_extrap = np.linspace(x[high].max(), x.max(), 120)
+    ax.plot(x_extrap, m_nep * x_extrap + b_nep, color=BLUE, lw=2.5, ls=":",
+            alpha=0.8, label="NEP89 extrapolation to 300 K (not fit)")
     ax.scatter(x[order], np.log(chen[order]), marker="s", color=RED, s=64, zorder=3,
                label="Chen DeePMD data")
-    anchor_x = x[temperature.argmax()]
-    anchor_y = np.log(chen[temperature.argmax()])
-    xx_ref = np.linspace(x.min(), x[high].max(), 200)
+    anchor_i = int(np.argmin(temperature))
+    anchor_x = x[anchor_i]
+    anchor_y = np.log(chen[anchor_i])
+    xx_ref = np.linspace(x[high].min(), x.max(), 250)
     reference_slope = -ea_chen / KB_EV / 1000.0
     ax.plot(xx_ref, anchor_y + reference_slope * (xx_ref - anchor_x),
             color=RED, lw=2.8, ls=":",
