@@ -394,17 +394,17 @@
     },
     {
       "file": "31_Li3PS4_Arrhenius_comparison.png",
-      "sha256": "22e124853ea3c57c5b678e80519c807f2e4d6eddeb0215aba3cb6761d3836db5",
+      "sha256": "e2f0a8d83a518fdc31089955b4a0a2a7ee4ecc87bbf3aa4270eba24af50629f1",
       "source": "scripts/structures/plot_amorphous_arrhenius_comparisons.py"
     },
     {
       "file": "31_Li3PS4_Arrhenius_comparison.pdf",
-      "sha256": "5d7dead3f74f402ca6ca10821ea1d04cf8f04df6452ef71580dc495701f4512e",
+      "sha256": "fcfc0f83346f1194ebc04ae4ac348d487c6a4e3a63091023ad4d628a85ea5647",
       "source": "scripts/structures/plot_amorphous_arrhenius_comparisons.py"
     },
     {
       "file": "31_Li3PS4_Arrhenius_comparison.svg",
-      "sha256": "4103f3d9697803b597c17069b78dd5dde09a351c23092d6efdb997c25f72f73d",
+      "sha256": "04b8253e88f04770e88d5de13f7abdace6868e3e90bbbfbd4f2403a0307e0739",
       "source": "scripts/structures/plot_amorphous_arrhenius_comparisons.py"
     },
     {

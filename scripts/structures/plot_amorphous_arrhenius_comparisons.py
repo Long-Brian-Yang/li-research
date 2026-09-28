@@ -148,18 +148,20 @@ def plot_li3ps4() -> tuple[list[str], Path]:
 
     fig, ax = plt.subplots(figsize=(8.8, 5.8667), dpi=180)
     order = np.argsort(x)
-    ax.plot(x[order], np.log(nep[order]), "o-", color=BLUE, lw=2.2, ms=8,
-            label=fr"NEP89 ($E_a={ea_nep:.3f}$ eV; 500–900 K)")
+    ax.scatter(x[order], np.log(nep[order]), color=BLUE, s=72, zorder=3,
+               label="NEP89 data")
     xx_nep = np.linspace(x[high].min(), x[high].max(), 200)
-    ax.plot(xx_nep, m_nep * xx_nep + b_nep, color=BLUE, lw=3.4)
-    ax.plot(x[order], np.log(chen[order]), "s--", color=RED, lw=2.2, ms=8,
-            label=fr"Chen DeePMD (reported $E_a={ea_chen:.3f}$ eV)")
+    ax.plot(xx_nep, m_nep * xx_nep + b_nep, color=BLUE, lw=2.8, ls="--",
+            label=fr"NEP89 fit, 500–900 K ($E_a={ea_nep:.3f}$ eV)")
+    ax.scatter(x[order], np.log(chen[order]), marker="s", color=RED, s=64, zorder=3,
+               label="Chen DeePMD data")
     anchor_x = x[temperature.argmax()]
     anchor_y = np.log(chen[temperature.argmax()])
     xx_ref = np.linspace(x.min(), x[high].max(), 200)
     reference_slope = -ea_chen / KB_EV / 1000.0
     ax.plot(xx_ref, anchor_y + reference_slope * (xx_ref - anchor_x),
-            color=RED, lw=3.4, ls=":")
+            color=RED, lw=2.8, ls=":",
+            label=fr"Chen reported slope ($E_a={ea_chen:.3f}$ eV; 300 K anchor)")
     style(ax, r"Li$_3$PS$_4$ — Arrhenius analysis of Li-ion diffusion",
           r"$\ln[D\;(\mathrm{cm^2\,s^{-1}})]$")
     ax.legend(fontsize=12.5, loc="lower left", frameon=False)
