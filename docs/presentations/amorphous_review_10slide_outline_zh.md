@@ -1,158 +1,155 @@
 # Li离子输运NNP评估：10页PPT内容大纲
 
 > **贯穿全篇的主线**  
-> 先确认NNP和计算引擎能否高效运行，再用晶体基准识别模型差异，最后把工作流扩展到四种化学环境不同的非晶电解质。结论要同时评价计算效率、结构可信度和输运准确性。
+> 先确认NNP和计算引擎能否高效运行，再用晶体基准识别模型差异，最后把工作流扩展到四种化学环境不同的非晶电解质。结论同时评价计算效率、结构可信度和输运准确性。
 
-本文件供制作PPT时参考。每页列出核心结论、应讲内容、建议图表和素材路径。非晶结构与轨迹文件已在仓库中整理；第8页建议给四种材料各放一个同风格结构/轨迹小图。
+**版式决定：** 四种非晶结构不集中塞进同一页。第6–9页各安排一种材料，每页采用“左侧结构/代表轨迹，右侧一张主结果图”的统一版式。
 
-参考资料：[materials review](../materials/materials_overview_ja.md) ｜ [结构与代表轨迹清单](../../materials/evidence/README.md) ｜ [结构/轨迹manifest](../../materials/evidence/manifest.json)
+参考：[materials review](../materials/materials_overview_ja.md) ｜ [结构与代表轨迹清单](../../materials/evidence/README.md) ｜ [结构/轨迹manifest](../../materials/evidence/manifest.json)
 
 ---
 
-## 1｜研究目标与整体路线：预训练势能否可靠地预测Li输运？
+## 1｜研究目标与整体路线：为什么从晶体走向非晶？
 
-**一句话结论：** 本研究把计算效率、晶体输运和非晶结构—输运验证串成一条证据链。
+**一句话结论：** 评估预训练势对Li输运的适用性，从计算效率出发，经晶体验证，再扩展到结构和制备历史更复杂的非晶材料。
 
-- 研究目标：评估预训练神经网络势（NNP）在Li离子输运模拟中的适用范围。
-- 路线：NNP/MD引擎效率benchmark → Li₃YCl₆与LiNbOCl₄晶体验证 → LZOC、LSZC、Li₃PS₄、LiPON非晶扩展。
-- 三个评价问题：跑得是否足够快？结构是否合理？输运结果与实验、AIMD或材料专用势是否一致？
+- NNP使大体系、长时间MD成为可能，但跑得快并不表示结构和输运预测准确。
+- 晶体提供规则、可比较的基准；非晶还需要处理局部配位分布、网络连接和热处理历史。
+- 全篇路线：NNP性能benchmark → Li₃YCl₆/LiNbOCl₄晶体验证 → LZOC/LSZC/Li₃PS₄/LiPON非晶扩展。
+- 三个评价问题：效率如何？玻璃结构是否合理？输运与实验、AIMD或材料专用势是否一致？
 
-**建议画面：** 一条由“计算性能”到“晶体”再到“四种非晶化学”的横向研究路线；背景可用结构快照拼图。
+**建议画面：** 晶体到非晶的研究路线图。此页只放概念示意，不放四个材料的详细结构图。
 
-**讲述重点：** NNP产生轨迹只是起点，不能代替物理验证。
+## 2｜NNP性能benchmark：效率如何支持长时间MD？
 
-## 2｜NNP性能benchmark：计算效率如何支持长时间MD？
+**一句话结论：** GPU化和NEP89/GPUMD大幅提高生产计算效率，为长时间模拟提供条件；速度比较与精度验证分开报告。
 
-**一句话结论：** GPU化和NEP89/GPUMD显著提高了生产计算效率，为大体系、长轨迹提供计算条件；速度本身不代表精度。
+- M3GNet–LAMMPS：CPU到1块H100 GPU，吞吐量3.285→56.621 steps/s，约17.2倍。
+- 600 K production：MACE/LAMMPS 189.93 min；NEP89/GPUMD 6.11 min，约31.1倍时间差。
+- 图中注明硬件、模型、MD engine和测量条件，不把不同计算工作流表述成完全同条件的精度对比。
 
-- M3GNet–LAMMPS：从CPU迁移到1块H100 GPU，吞吐量由3.285提升至56.621 steps/s，约17.2倍。
-- 600 K production对比：MACE/LAMMPS为189.93 min，NEP89/GPUMD为6.11 min，约31.1倍时间差。
-- 清楚标注模型、MD engine、硬件和测试条件；避免把不同硬件/工作流说成完全同条件精度对比。
+**主图：** [MACE–NEP runtime与density比较](../materials/figures/09_MACE_NEP_runtime_density.png)。CPU/GPU吞吐量可用两个醒目的数字或小条形图呈现。
 
-**建议主图：** [MACE–NEP runtime与density比较](../materials/figures/09_MACE_NEP_runtime_density.png)。CPU/GPU吞吐量可做成旁边的大数字或小条形图。
+**布局：** 速度数据为主，底部加一句“效率优势使长时间模拟可行；准确度由后续材料benchmark评估”。
 
-**布局：** 左侧展示17.2倍、右侧展示31.1倍；底部放一句“效率比较与精度验证分开进行”。
+## 3｜晶体benchmark设计：两种晶体、三种通用模型
 
-## 3｜晶体benchmark设计：两个晶体、三种通用模型
-
-**一句话结论：** 先在结构规则、文献数据较清楚的晶体中比较模型，为非晶测试建立基线。
+**一句话结论：** 先在结构规则、参考数据明确的晶体中确认模型差异，为非晶测试建立基线。
 
 - Li₃YCl₆：240原子有序结构；MACE-MPA-0、SevenNet-nano、M3GNet GPU。
-- LiNbOCl₄：336原子有序结构；采用相同三模型比较思路。
-- 使用多温度NVT轨迹，从Li MSD得到扩散系数，再由Arrhenius关系拟合Ea并外推室温值。
-- 参考实验值：Li₃YCl₆的Ea约0.400 eV；LiNbOCl₄的Ea约0.240 eV。说明实验传导度换算和自扩散并非同一物理量。
+- LiNbOCl₄：336原子有序结构；采用相同三模型比较框架。
+- 多温度NVT轨迹用于计算Li MSD、扩散系数和Arrhenius活化能。
+- 实验活化能基准：Li₃YCl₆约0.400 eV；LiNbOCl₄约0.240 eV。
 
-**结构图素材：** [Li₃YCl₆初始晶体结构](../../materials/evidence/crystalline/Li3YCl6/initial_structure.xyz)；[LiNbOCl₄初始晶体结构](../../materials/evidence/crystalline/LiNbOCl4/initial_structure.xyz)。
+**结构素材：** [Li₃YCl₆初始结构](../../materials/evidence/crystalline/Li3YCl6/initial_structure.xyz)；[LiNbOCl₄初始结构](../../materials/evidence/crystalline/LiNbOCl4/initial_structure.xyz)。
 
-**建议画面：** 上半部并排显示两个晶体结构，下半部用简洁图标表示“三模型 × 多温度 × MSD/Arrhenius”。
+**建议画面：** 两个结构快照并排，下面用简短流程标出模型、温度系列和输运分析。实验传导度换算与Li自扩散是不同物理量，后续结果页要明确区分。
 
 ## 4｜晶体结果：模型选择会改变输运预测
 
-**一句话结论：** 三种通用势的预测并不等价，晶体结果已显示出模型依赖性。
+**一句话结论：** 同一晶体和分析方法下，模型间Ea及室温外推仍有差异，说明模型选择必须验证。
 
 | 材料 | MACE-MPA-0 Ea | SevenNet-nano Ea | M3GNet GPU Ea | 实验基准Ea |
 |---|---:|---:|---:|---:|
 | Li₃YCl₆ | 0.302 eV | 0.246 eV | 0.212 eV | 0.400 eV |
 | LiNbOCl₄ | 0.313 eV | 0.357 eV | 0.397 eV | 0.240 eV |
 
-- Li₃YCl₆：三种模型都显示温度升高时Li扩散增加，但Ea和室温外推值有差异。
-- LiNbOCl₄：模型间差异仍明显；M3GNet的Arrhenius线性较弱，R²=0.8768。
-- 这一页的结论是“模型必须验证”，不需要在10页内逐一解释所有误差来源。
+- Li₃YCl₆：模型都显示温度升高时扩散增加，但Ea和室温外推值依赖模型。
+- LiNbOCl₄：模型差异明显；M3GNet Arrhenius线性相对较弱，R²=0.8768。
+- 结晶基准告诉我们：进入非晶后，不能只展示一个模型的扩散曲线。
 
-**建议主图：** [Li₃YCl₆模型间MSD](../materials/figures/01_Li3YCl6_three_model_MSD.png)、[LiNbOCl₄模型间MSD](../materials/figures/02_LiNbOCl4_three_model_MSD.png)；空间足够时在角落放[两种晶体的Arrhenius图](../materials/figures/03_Li3YCl6_Arrhenius.png)与[LiNbOCl₄ Arrhenius图](../materials/figures/04_LiNbOCl4_Arrhenius.png)。
+**主图：** [Li₃YCl₆模型间MSD](../materials/figures/01_Li3YCl6_three_model_MSD.png) 与 [LiNbOCl₄模型间MSD](../materials/figures/02_LiNbOCl4_three_model_MSD.png)。角落可加 [Li₃YCl₆ Arrhenius](../materials/figures/03_Li3YCl6_Arrhenius.png) 和 [LiNbOCl₄ Arrhenius](../materials/figures/04_LiNbOCl4_Arrhenius.png)。
 
-**视觉提醒：** 不要同时塞入全部MSD、Ea、D(300 K)和实验线；选一组主图，其他数值放口头说明或备份页。
+## 5｜非晶动机、材料选择与共同计算流程
 
-## 5｜为什么研究非晶：输运还取决于局部网络和制备历史
+**一句话结论：** 四种材料按化学挑战逐步扩展；每种都有对应的结构与输运参照。
 
-**一句话结论：** 非晶电解质没有单一的周期晶格路径，Li输运需要与无序网络结构一起评估。
+| 材料 | 化学特征 | 主要检验问题 | 主要参照 |
+|---|---|---|---|
+| LZOC | 含氧锆氯化物玻璃 | 氧氯化物中能否重现实验/AIMD温度响应？ | AIMD |
+| LSZC | 硫酸根修饰锆氯化物 | SO₄单元和输运定量是否保持？ | 实验、专用MACE |
+| Li₃PS₄ | P–S硫代磷酸盐玻璃 | 从氯化物网络向硫化物网络能否迁移？ | DeePMD、文献 |
+| LiPON | P–O–N酸氮化物玻璃 | 混合阴离子和N局部拓扑能否描述？ | 实验、专用NequIP |
 
-- 非晶结构具有分布式键长、配位和自由体积，平均组成无法完整描述局部Li环境。
-- 相似的Li局部运动是否能形成连续长程传输，取决于宿主网络的拓扑和连接性。
-- 熔融、淬火、退火等热历史会改变结构，因此需要结合密度、RDF、配位、骨架运动和MSD分析。
-- 研究意义：测试预训练势离开规则晶格后，是否仍能保持合理的玻璃结构和热激活趋势。
+**同页下方放共同流程：** 玻璃构建/弛豫 → 密度、RDF、配位检查 → 多温度MD → MSD、扩散、Arrhenius → 对应材料的文献基准。
 
-**建议画面：** 左侧晶体的规则迁移路径，右侧非晶中多种局部配位与不均匀Li路径；旁边用“结构 + 动力学 + 输运”三个标签。
+**图案建议：** 左侧用化学跨度箭头 Cl/O → SO₄/Cl → P/S → P/O/N；右侧用5步细流程。不要在本页再放原子结构图，以免抢走第6–9页内容。
 
-## 6｜为何选择四种材料：构成化学多样的benchmark
+## 6｜LZOC：AIMD温度响应的非晶基准
 
-**一句话结论：** 四个体系逐步改变阴离子网络和局部化学，能测试不同类型的势函数转移性。
+**一句话结论：** NEP89呈现可与AIMD对照的温度响应，但绝对扩散偏低；非单调数据不强行给出单一Ea。
 
-| 材料 | 化学位置 | 选择理由／主要考验 |
+- 材料角色：从含氧氯化物晶体/基准问题延伸到非晶局部环境。
+- 文献比扩散系数约0.22–0.35；温度响应可比较，绝对尺度仍有偏差。
+- 展示局部配位和Li迁移，解释为何不对整组数据作单一Arrhenius拟合。
+
+**左侧结构/轨迹：** [LZOC分析起始结构](../../materials/evidence/amorphous/LZOC/analysis_start.xyz)；[340 K代表轨迹](../../materials/evidence/amorphous/LZOC/NEP89_340K_representative_part01.xyz)。由XYZ渲染同一玻璃盒，并将Li轨迹以短路径叠加。
+
+**右侧主图：** [LZOC输运比较](../materials/figures/01_LZOC_transport.png)。可选小图：[放射方向位移](../materials/figures/17_LZOC_radial_displacement.png)。
+
+## 7｜LSZC：硫酸根修饰氯化物中的定量比较
+
+**一句话结论：** LSZC是四种非晶体系中与实验定量吻合最好的一例，同时考验SO₄结构保持。
+
+- 结构问题：硫酸根单元嵌入Zr氯化物网络后是否仍合理？Zr周围局部环境如何变化？
+- 输运结果：NEP89 Ea=0.351 eV，实验Ea=0.330 eV。
+- 展示结构、Zr配位和传导曲线，避免只凭活化能接近就宣称所有输运量都一致。
+
+**左侧结构/轨迹：** [LSZC分析起始结构](../../materials/evidence/amorphous/LSZC/analysis_start.xyz)；[330 K代表轨迹](../../materials/evidence/amorphous/LSZC/NEP89_330K_representative_part01.xyz)。结构渲染中固定SO₄四面体颜色，Li用醒目颜色或短时间路径表示。
+
+**右侧主图：** [LSZC输运比较](../materials/figures/18_LSZC_transport_comparison.png)。可选小图：[PDF与Zr配位](../materials/figures/27_LSZC_PDF_and_Zr_coordination.png)。
+
+## 8｜Li₃PS₄：向硫化物网络的转移性
+
+**一句话结论：** NEP89给出接近文献的Ea，但扩散绝对值更大，并显示出明显的动态异质性。
+
+- 材料角色：将阴离子网络从含氯体系切换到P–S硫化物玻璃。
+- 输运结果：NEP89 Ea=0.419 eV；Chen DeePMD报告Ea=0.470 eV；扩散比值约3.37–45.5。
+- 300 K点不纳入NEP89拟合；拟合区间为500–900 K。
+- 强调Ea接近不等于绝对扩散正确。
+
+**左侧结构/轨迹：** [Li₃PS₄分析起始结构](../../materials/evidence/amorphous/Li3PS4/analysis_start.xyz)；[700 K代表轨迹](../../materials/evidence/amorphous/Li3PS4/NEP89_700K_representative_part01.xyz)。用P/S突出PS₄四面体，Li运动以短路径或热图显示。
+
+**右侧主图：** [Li₃PS₄ Arrhenius比较](../materials/figures/31_Li3PS4_Arrhenius_comparison.png)。拟合线与数据点分开表达。可选辅助证据：[局部结构](../materials/figures/07_Li3PS4_local_structure.png) 或 [动态异质性](../materials/figures/28_Li3PS4_dynamic_heterogeneity.png)。
+
+## 9｜LiPON：混合阴离子网络的适用性边界
+
+**一句话结论：** NEP89保留热激活趋势，但Li输运绝对值大幅偏高；这是四系中更严格的局部化学测试。
+
+- 结构问题：N可处于apical/bridging环境；检查P–O–N局部网络及其热稳定性。
+- 输运结果：NEP89 Ea=0.428 eV（D）/0.415 eV（σ）；Bates实验Ea=0.55 eV。扩散文献比约6.84×10³–1.65×10⁴。
+- Figure 24的Hamon 3.3 μS/cm和Figure 32的Bates 2.3±0.7 μS/cm是不同文献基准。
+- Figure 32虚线为Bates 300 K单点与报告Ea构成的外推，不是高温实测系列。
+
+**左侧结构/轨迹：** [LiPON Preparation-B构建结构](../../materials/evidence/amorphous/LiPON/construction_initial.xyz)；[900 K代表轨迹](../../materials/evidence/amorphous/LiPON/NEP89_900K_representative_part01.xyz)。O/N使用不同颜色，并在角落用小示意图区分N局部环境。
+
+**右侧主图：** [LiPON Arrhenius比较](../materials/figures/32_LiPON_Arrhenius_comparison.png)。如需结构佐证，选 [LiPON玻璃结构](../materials/figures/21_LiPON_glass_structure.png) 或 [温度RDF](../materials/figures/25_LiPON_temperature_RDF.png) 之一，避免两图都缩小。
+
+## 10｜跨材料总结与下一步
+
+**一句话结论：** 通用NNP适合高效结构构建和趋势筛选，但绝对输运预测需要材料级验证或校准。
+
+| 体系 | 温度/结构表现 | 绝对输运表现 |
 |---|---|---|
-| LZOC | 含氧锆氯化物玻璃 | 延续原始氧氯化物问题；与AIMD温度响应比较 |
-| LSZC | 硫酸根修饰的锆氯化物玻璃 | 在氯化物背景中加入SO₄单元；检验结构保持与实验定量对应 |
-| Li₃PS₄ | 硫代磷酸盐玻璃 | 从氯化物网络切换到P–S硫化物网络；检验跨阴离子转移 |
-| LiPON | 磷酸盐氧氮化物玻璃 | 加入N并引入apical/bridging等局部环境；检验混合阴离子和网络拓扑 |
+| 晶体 | 同一基准下不同模型给出不同Ea | 模型选择影响室温外推 |
+| LZOC | 可比较AIMD温度响应 | 扩散偏低；不赋单一Ea |
+| LSZC | 保持硫酸根相关结构 | 与实验定量对应最好 |
+| Li₃PS₄ | 热活化并有动态异质性 | Ea接近但扩散偏高 |
+| LiPON | O/N网络仍需严格验证 | 扩散绝对值显著偏高 |
 
-**建议图示：** 四列材料卡片或化学跨度轴：O–Cl锆盐 → SO₄/Cl混合网络 → P–S网络 → P–O–N网络。每格放组成式、网络简图和对应参照类型。
+- 应用建议：用通用势做高效构建、长时间机制探索和相对趋势筛选。
+- 下一步：对重点材料做材料专用势验证、短程AIMD校验或实验校准；报告时分开结构、温度趋势、Ea和绝对输运偏差。
+- 最后强调：NNP的价值来自“速度 × 可验证性”，而不是速度单项。
 
-**讲述重点：** 这是按化学挑战和文献基准设计的一组benchmark，不是四个互不相关的材料案例。
-
-## 7｜非晶计算流程：从玻璃结构到可比较的输运量
-
-**一句话结论：** 用同一条分析逻辑检查各材料，同时保留材料间合理不同的参考证据。
-
-1. 构建并弛豫非晶结构，记录组成、密度和热处理历史。
-2. 先检查结构：密度、RDF/PDF、配位、关键多阴离子/混合阴离子单元、宿主骨架稳定性。
-3. 对多个温度做NEP89/GPUMD输运模拟；从完整轨迹计算Li MSD、扩散系数及Arrhenius行为。
-4. 与各材料对应的AIMD、实验、DeePMD或材料专用MLIP进行比较。
-5. 分开报告温度趋势、活化能和绝对扩散/传导度偏差；不把不同物理量直接混算。
-
-**建议图示：** “结构制备 → 结构验证 → 多温度MD → MSD/Arrhenius → 文献对照”的流程图，底部标出不同材料采用的参考证据。
-
-## 8｜非晶结构结果：四个体系各自展示结构或轨迹
-
-**一句话结论：** 结构可视化要让观众看见每个材料的真实原子网络，并与该体系的输运/结构证据对应。
-
-**建议用四宫格；每格都放一张由该材料XYZ渲染的原子结构图，并在图下配一条短Li路径或代表轨迹缩略图。**
-
-| 材料 | 结构/轨迹素材 | 配套结构证据 |
-|---|---|---|
-| LZOC | [analysis_start.xyz](../../materials/evidence/amorphous/LZOC/analysis_start.xyz)；[340 K代表轨迹](../../materials/evidence/amorphous/LZOC/NEP89_340K_representative_part01.xyz) | [RDF](../materials/figures/15_LZOC_RDF.png)、[配位](../materials/figures/16_LZOC_coordination.png) |
-| LSZC | [analysis_start.xyz](../../materials/evidence/amorphous/LSZC/analysis_start.xyz)；[330 K代表轨迹](../../materials/evidence/amorphous/LSZC/NEP89_330K_representative_part01.xyz) | [局部RDF](../materials/figures/19_LSZC_partial_RDF.png)、[PDF/Zr配位](../materials/figures/27_LSZC_PDF_and_Zr_coordination.png) |
-| Li₃PS₄ | [analysis_start.xyz](../../materials/evidence/amorphous/Li3PS4/analysis_start.xyz)；[700 K代表轨迹](../../materials/evidence/amorphous/Li3PS4/NEP89_700K_representative_part01.xyz) | [局部结构](../materials/figures/07_Li3PS4_local_structure.png)、[动态异质性](../materials/figures/28_Li3PS4_dynamic_heterogeneity.png) |
-| LiPON | [Preparation-B structure](../../materials/evidence/amorphous/LiPON/construction_initial.xyz)；[900 K代表轨迹](../../materials/evidence/amorphous/LiPON/NEP89_900K_representative_part01.xyz) | [玻璃结构](../materials/figures/21_LiPON_glass_structure.png)、[温度依赖RDF](../materials/figures/25_LiPON_temperature_RDF.png) |
-
-**渲染建议：** 四格保持同一视角、背景、比例尺和Li颜色；突出各自关键网络（SO₄、PS₄、磷酸盐/N环境等）。若用动态轨迹，播放短片段即可，不要把整段动画缩小到看不清。
-
-**重要说明：** 清单中的XYZ是从完整轨迹等间隔抽帧的可视化/溯源材料；定量分析使用manifest记录的完整TSUBAME轨迹，不从抽帧XYZ重新计算MSD或扩散系数。
-
-## 9｜非晶输运结果：温度趋势与绝对偏差要分开讲
-
-**一句话结论：** 四系整体显示热激活行为，但绝对输运准确度有明显材料依赖性。
-
-| 材料 | NEP89 Ea | 文献Ea | 主要比较结论 |
-|---|---:|---:|---|
-| LZOC | 不正式赋值 | AIMD温度响应 | 温度趋势可比，扩散尺度约为参照的0.22–0.35 |
-| LSZC | 0.351 eV | 0.330 eV | 与实验定量对应最好，硫酸根结构得以保持 |
-| Li₃PS₄ | 0.419 eV | 0.470 eV | Ea接近，但绝对扩散高约3.37–45.5倍，且有动态异质性 |
-| LiPON | 0.428 eV（D）/0.415 eV（σ） | 0.550 eV | 保持热激活趋势，但扩散比值高约6.84×10³–1.65×10⁴ |
-
-**建议图表：**
-- 主体用一张上述比较表或分面dot plot呈现Ea和输运比值。
-- 小图只选2–4张关键Arrhenius图，避免四图缩小后标签不可读：优先LSZC、Li₃PS₄、LiPON；LZOC用其温度响应图并标注“不作单一Ea拟合”。
-- 可链接全部四图：[LZOC](../materials/figures/29_LZOC_Arrhenius_comparison.png) ｜ [LSZC](../materials/figures/30_LSZC_Arrhenius_comparison.png) ｜ [Li₃PS₄](../materials/figures/31_Li3PS4_Arrhenius_comparison.png) ｜ [LiPON](../materials/figures/32_LiPON_Arrhenius_comparison.png)。
-
-**讲述重点：** Ea接近不等于扩散绝对值正确；实验传导度、条件性Nernst–Einstein传导度和Li tracer diffusion要标清物理量。
-
-## 10｜结论与下一步：把效率优势转成可控的材料筛选
-
-**一句话结论：** 通用NNP适合高效结构构建和趋势筛选；绝对输运预测仍需要材料级验证或校准。
-
-- 性能：GPU/NEP工作流显著缩短长时间MD所需时间。
-- 晶体：模型差异已经影响Ea与室温外推，说明模型身份和验证条件不能省略。
-- 非晶：四种化学环境下，结构/温度趋势具有可分析性，但绝对输运偏差因材料而异。
-- 应用建议：先用通用势筛选结构与相对趋势，再对重点材料进行材料专用势验证、AIMD短轨迹校验或实验校准。
-
-**建议结尾画面：** “效率 × 结构可信度 × 输运准确度”三列总结，不合并成缺乏依据的总分；右下角放下一步验证路线。
+**建议结尾画面：** 效率、结构可信度、输运准确性三列总结；不把不同指标压成缺乏依据的单一总分。
 
 ---
 
-## 全套视觉统一规则
+## 全套版式建议
 
-- 所有非晶结构图统一相机角度、边框、元素色和Li高亮色；结构快照必须标材料、温度和模型。
-- 每页一个主要结论；通常一张主图加最多两张辅助图。正文不要重复图题里的信息。
-- 四宫格如果原子结构太密，显示局部放大而非整盒原子球；标一个周期盒示意或尺度信息。
-- 轨迹视频只用于说明代表性运动路径，并注明温度、时间窗口及抽样方式；定量判断以完整轨迹分析和图表为准。
-- 如果汇报时间较短，保留第8页四材料结构四宫格，第9页用精简对比表；详细RDF、协调数、误差分析放入backup slides。
+- 第6–9页统一采用两栏：左侧约45%放该材料的结构快照/代表轨迹，右侧约55%放一张主结果图及两条结论。
+- 每个材料页最多再加一张小型辅助图；RDF、配位和误差细节放backup slides。
+- 四种结构图保持视角、原子半径、背景、比例尺、元素配色一致。展示完整玻璃盒时不清楚，就用局部放大并说明视图范围。
+- 仓库中的XYZ是为展示与溯源等间隔抽帧的文件。定量分析使用manifest记录的TSUBAME完整轨迹；不要从抽帧文件重新计算MSD或扩散系数。
+- 轨迹动画只播放清晰的短片段，并标温度、模型、时间窗口和抽帧方式；Li路径不要遮挡关键网络原子。
+- 若演讲时间有限，优先讲清每页标题中的一句话结论，详细模拟条件和次要图表放备份页。
