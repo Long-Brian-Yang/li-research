@@ -87,7 +87,7 @@ def plot_lzoc() -> tuple[list[str], Path]:
     ax.plot(x[order], np.log(aimd[order]), "s--", color=BLACK, lw=3.4, ms=8,
             label=r"AIMD ($E_a$ not reported)")
     style(ax, r"LZOC — Li tracer diffusion: Arrhenius coordinates",
-          r"$\ln[D\;(mathrm{cm^2\,s^{-1}})]$")
+          r"$\ln[D\;(\mathrm{cm^2\,s^{-1}})]$")
     ax.legend(fontsize=13, loc="lower left", frameon=False)
     fig.tight_layout()
     source = write_source(
@@ -127,7 +127,7 @@ def plot_lszc() -> tuple[list[str], Path]:
     m_exp, b_exp, _ = linear_fit(exp_data[:, 0], exp_data[:, 2])
     ax.plot(xx, m_exp * xx + b_exp, color=BLACK, lw=3.4, ls=":")
     style(ax, r"LSZC — Arrhenius analysis of Li-ion conductivity",
-          r"$\ln[\sigma T\;(mathrm{S\,cm^{-1}\,K})]$")
+          r"$\ln[\sigma T\;(\mathrm{S\,cm^{-1}\,K})]$")
     fig.tight_layout()
 
     rows = [("NEP89", t, xx_, yy) for t, xx_, yy in zip(temperature, x, y)]
@@ -161,7 +161,7 @@ def plot_li3ps4() -> tuple[list[str], Path]:
     ax.plot(xx_ref, anchor_y + reference_slope * (xx_ref - anchor_x),
             color=RED, lw=3.4, ls=":")
     style(ax, r"Li$_3$PS$_4$ — Arrhenius analysis of Li-ion diffusion",
-          r"$\ln[D\;(mathrm{cm^2\,s^{-1}})]$")
+          r"$\ln[D\;(\mathrm{cm^2\,s^{-1}})]$")
     ax.legend(fontsize=12.5, loc="lower left", frameon=False)
     fig.tight_layout()
     source = write_source(
@@ -195,10 +195,10 @@ def plot_lipon() -> tuple[list[str], Path]:
     ax.scatter(x, y, color=BLUE, s=82, zorder=3,
                label=fr"NEP89 ($E_a={ea_nep:.3f}$ eV)")
     ax.plot(xx_exp, y_exp, color=BLACK, lw=3.4, ls=":",
-            label=fr"Thin-film experiment ($E_a={ea_exp:.3f}$ eV)")
+            label=fr"Bates 1996 (300 K anchor; $E_a={ea_exp:.3f}$ eV)")
     ax.plot(x300, y300, marker="s", ms=9, mfc="white", mec=BLACK, mew=2.0)
     style(ax, r"LiPON — Arrhenius analysis of Li-ion conductivity",
-          r"$\ln[\sigma T\;(mathrm{S\,cm^{-1}\,K})]$")
+          r"$\ln[\sigma T\;(\mathrm{S\,cm^{-1}\,K})]$")
     fig.tight_layout()
     source = write_source(
         "LiPON_Arrhenius_plot_data.csv",
