@@ -19,11 +19,11 @@ def load_module():
     return module
 
 
-def test_local_structure_uses_same_four_temperature_representatives_as_transport():
+def test_local_structure_uses_all_repeats_at_each_temperature():
     module = load_module()
 
     assert module.TEMPERATURES == (320, 330, 340, 350)
-    assert module.PRIMARY_SERIES == {320: 2, 330: 2, 340: 2, 350: 1}
+    assert module.REPEATS == (1, 2)
 
 
 def test_rdf_figure_contains_four_temperature_series_in_every_panel():

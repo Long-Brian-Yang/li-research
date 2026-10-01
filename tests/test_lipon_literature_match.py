@@ -1,4 +1,3 @@
-import csv
 import importlib.util
 from pathlib import Path
 import sys
@@ -18,32 +17,26 @@ def load_module():
     return module
 
 
-def diagnostic_rows():
-    path = (
-        ROOT
-        / "results"
-        / "amorphous_review_20260915"
-        / "LiPON_transport_repeats"
-        / "repeat_diagnostics.csv"
-    )
-    with path.open() as handle:
-        return list(csv.DictReader(handle))
+def test_lipon_transport_analysis_has_no_replica_selector():
+    source = SCRIPT.read_text()
+    assert "SELECTED_REPLICA" not in source
+    assert "select_literature_proximate" not in source
+    assert "selected_run_dir" not in source
+    assert "REPLICAS = (1, 2, 3)" in source
+    assert "for replica in REPLICAS" in source
+    assert '"replicas": results' in source
+    assert '"D_mean_cm2_s": float(d_values.mean())' in source
 
 
-def test_literature_proximate_selection_uses_lowest_valid_diffusivity():
-    module = load_module()
-    selected = module.select_literature_proximate(diagnostic_rows())
-    assert selected == {600: 3, 900: 1, 1200: 2, 1500: 2}
+def test_lipon_repeat_diagnostics_do_not_rank_or_select_replicas():
+    source = (SCRIPT.parent / "analyze_lipon_repeats.py").read_text()
+    assert "quality_score" not in source
+    assert "selected_replica" not in source
+    assert "min(choices" not in source
+    assert "rows = [analyse_one(t, r) for t in TEMPS for r in (1, 2, 3)]" in source
 
 
-def test_selected_run_directory_uses_repeat_for_600_k():
-    module = load_module()
-    path = module.selected_run_dir(600)
-    assert "LiPON_transport_repeats" in str(path)
-    assert "600K_R3" in str(path)
-
-
-def test_selected_series_arrhenius_values_are_reproducible():
+def test_arrhenius_fit_function_is_reproducible_for_explicit_input():
     module = load_module()
     temperatures = np.array([600.0, 900.0, 1200.0, 1500.0])
     diffusion = np.array(

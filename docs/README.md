@@ -1,32 +1,28 @@
-# Documentation index / 文档导航
+# 文書目録
 
-按用途阅读；带日期的报告记录当时的状态，不代表实时队列或最终科学结论。
+## 現行の主資料
 
-## 工程总览
+| 資料 | 用途 |
+|---|---|
+| [日本語 Material Review](materials/materials_overview_ja.md) | 材料別背景、文献値、計算条件、結果、図、定義、解釈を統合した主報告 |
+| [English Material Review](materials/materials_overview_en.md) | 日本語主報告の英語版 |
+| [リポジトリ技術ガイド](engineering/repository_technical_guide_ja.md) | ディレクトリ、環境、TSUBAME、deploy、core code、分析 code、data provenance、tests |
+| [MACE／TSUBAME／会社移行ガイド](engineering/mace_tsubame_company_migration_ja.md) | MACE runtime、TSUBAME 上の build/preflight、会社 HPC へ移行する際の確認項目 |
+| [DFT・fine-tuning workflow](engineering/dft_and_finetuning_ja.md) | DFT label の作成・分割・品質検査、MACE fine-tune と物理検証の提案 |
 
-[仓库技术总览（中文）](engineering/repository_technical_guide_zh.md) 将环境、TSUBAME 部署/构建、核心代码、分析脚本、结果路径、测试和数据边界集中整理。根目录 [README](../README.md) 是项目首页；科学结论仍以日语/英语 Material Review 为准。
+## 開発・文献・発表
 
-| 类别 | 入口 | 内容 |
-|---|---|---|
-| Material Review（仅维护这两份完整正文） | [日本語](materials/materials_overview_ja.md) / [English](materials/materials_overview_en.md) | 按材料内嵌设置、13组核心图、数值表、公式、解释与文献对照；无需跳转至分散报告，源数据链接集中在文末 |
-| 历史设置快照 | [2026-09-15 阶段设置](materials/current_run_settings_20260915.md) / [旧中文总览](materials/materials_overview_zh.md) | 历史记录，不作为当前状态入口；以两份主报告为准 |
-| 日常汇报 | [Daily reports](daily_reports/README.md) | 按日期整理，英语／日语分别保存 |
-| LZOC 建模与运行 | [LZOC](materials/LZOC/README.md) | 候选背景、制备、平衡、协议与探索性分析 |
-| 三篇论文阅读 | [LZOC literature](literature/lzoc_top3/README.md) | 英语／日语阅读报告及来源笔记 |
-| 开发与计算规范 | [Development](development/README.md) | 环境、协议、benchmark、研究计划 |
-| 中期发表 | [中期结果目录](../results/midterm_Li3YCl6_MACE_M3GNet/) | Markdown 与配套图片、表格共同保存；目录名称沿用历史名称 |
-| 最终发表 | [最终结果目录](../results/publication_all_materials/) | 两个材料的图、说明与源数据 |
-| 结构文件 | [LZOC structures](../materials/candidates/LZOC/README.md) | CIF、LAMMPS data、结构来源及运行清单 |
-| TSUBAME 使用 | [HPC](../hpc/tsubame_26icp/README.md) | 作业与集群运行说明 |
+- [開発・benchmark](development/README.md)：計算 protocol、性能測定、研究計画。
+- [LZOC 文献読解](literature/lzoc_top3/README.md)：原著論文、DOI、日英読解メモ。
+- [LZOC 構造・計算準備](materials/LZOC/README.md)：候補構造、調製過程、関連 input。
+- [中間発表資料](../results/midterm_Li3YCl6_MACE_M3GNet/)：結晶 benchmark の図と記録。
+- [総合発表成果](../results/publication_all_materials/)：発表用図・数値・supplement。
+- [日報一覧](daily_reports/README.md)：時点付きの作業記録。現状の決定版資料ではない。
 
-## 历史记录与使用规则
+## 更新方針
 
-- 当前非晶研究内容只更新上述日语／英语主报告；不再新建分散的进度 Markdown。旧短报告保留为可追溯的历史快照。
-
-- 后续更新必须直接替换、修订或补入 Material Review 的对应材料章节，并同步英语与日语版本。正文完整内嵌图、数值表、必要公式及符号、计算条件、文献基准、比较解释、局限与下一步；不得以“详见另一报告”代替内容。按“文献问题与结果 → 对应计算 → 定量比较 → 结构解释 → 结论”组织。源数据、脚本和 DOI 可作为可选溯源入口，但理解正文不依赖跳转。未完成项目注明状态，不能用计划代替结果。
-
-- [早期 Arrhenius 组合筛选](development/results/best_arrhenius_combinations_legacy.md) 与 [SevenNet 81 组枚举](development/results/sevennet_700_800_900_1000_all_81.md) 是历史探索，不应自动作为当前最终结果。
-- 图表和结构的 README 保持与对应文件同目录，不为分类而拆散依赖关系。
-- 仅在用户明确要求独立日报时，才另外保存至 `daily_reports/YYYY-MM-DD/`；其中新增研究结果仍须同步进入 Material Review。
-- 建模和分析记录写明材料、日期、job ID、数据来源和限制；不通过整理文档改变数值、模型标签或轨迹选择。
-- 完整轨迹仍存于 TSUBAME／本地，不随本次文档整理上传。
+- 科学的な説明と最終図は日英 Material Review の該当節を直接更新する。
+- HPC・依存関係・deploy・再利用 code の説明は日本語技術ガイドと隣接 README を更新する。
+- DFT/fine-tuning は会社内の license、data governance、計算環境が決定するまで、提案手順として記述する。
+- 履歴資料はその時点の記録として保持する。古い値を current analysis として再利用せず、新旧の状態を明確にする。
+- 複数の独立 trajectory がある場合、どれか一つを文献値に合わせて選ぶ解析を設けず、全件を同一規約で扱う。

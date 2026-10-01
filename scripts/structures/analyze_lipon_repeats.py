@@ -57,12 +57,6 @@ def analyse_one(t, rep):
         "PE_drift_meV_atom": pe_drift, "late_min_NN_A": late["minimum_NN_A"],
         "fits": fits,
     }
-    # Predeclared diagnostic ranking: diffusion quality first, then stationary host.
-    result["quality_score"] = (
-        8 * abs(primary["alpha"] - 1) + 4 * window_cv + 10 * (1 - primary["R2"])
-        + 0.02 * abs(pe_drift) + 0.5 * result["framework_to_Li_MSD100"]
-        + (5 if late["minimum_NN_A"] < 1.6 else 0)
-    )
     np.savetxt(OUT / f"{t}K_R{rep}_MSD.csv", np.column_stack([lag] + [msd[s] for s in ("Li", "P", "O", "N")]),
                delimiter=",", header="lag_ps,Li_A2,P_A2,O_A2,N_A2", comments="")
     return result
@@ -71,21 +65,16 @@ def analyse_one(t, rep):
 def run():
     OUT.mkdir(parents=True, exist_ok=True)
     rows = [analyse_one(t, r) for t in TEMPS for r in (1, 2, 3)]
-    selected = {}
-    for t in TEMPS:
-        choices = [x for x in rows if x["T_K"] == t]
-        selected[str(t)] = min(choices, key=lambda x: x["quality_score"])["replica"]
     with (OUT / "repeat_diagnostics.csv").open("w", newline="") as f:
         cols = ["T_K", "replica", "D_cm2_s", "R2", "alpha", "window_CV", "Li_MSD100_A2",
                 "framework_max_MSD100_A2", "framework_to_Li_MSD100", "PE_drift_meV_atom",
-                "late_min_NN_A", "quality_score"]
+                "late_min_NN_A"]
         w = csv.DictWriter(f, cols, lineterminator="\n"); w.writeheader()
         w.writerows({k: x[k] for k in cols} for x in rows)
-    payload = {"selection_rule": "minimum predeclared quality score; no literature D enters score",
-               "selected_replica": selected, "results": rows}
+    payload = {"replica_policy": "All completed velocity-seed repeats are reported; no repeat is ranked or omitted.",
+               "results": rows}
     (OUT / "repeat_diagnostics.json").write_text(json.dumps(payload, indent=2) + "\n")
-    print(json.dumps({"selected_replica": selected,
-                      "summary": [{k: x[k] for k in ("T_K", "replica", "D_cm2_s", "R2", "alpha", "window_CV", "framework_max_MSD100_A2", "PE_drift_meV_atom", "late_min_NN_A", "quality_score")} for x in rows]}, indent=2))
+    print(json.dumps({"results": [{k: x[k] for k in ("T_K", "replica", "D_cm2_s", "R2", "alpha", "window_CV", "framework_max_MSD100_A2", "PE_drift_meV_atom", "late_min_NN_A")} for x in rows]}, indent=2))
 
 
 if __name__ == "__main__":

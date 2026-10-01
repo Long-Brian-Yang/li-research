@@ -57,9 +57,9 @@ class MaterialEvidencePackageTests(unittest.TestCase):
         from build_material_evidence_package import render_readme
 
         text = render_readme({"structures": [], "trajectories": []})
-        self.assertIn("complete source trajectories", text.lower())
+        self.assertIn("完全な元軌跡", text)
         self.assertIn("manifest.json", text)
-        self.assertIn("uniformly sampled", text.lower())
+        self.assertIn("等間隔", text)
 
     def test_readme_uses_manifest_directory_for_trajectory_links(self):
         from build_material_evidence_package import render_readme
@@ -92,7 +92,7 @@ class MaterialEvidencePackageTests(unittest.TestCase):
             self.assertTrue(spec["display_name"])
             self.assertIsInstance(spec["report_figures"], list)
             self.assertTrue(spec["report_figures"])
-        lips = next(spec for spec in trajectory_specs() if spec["id"] == "Li3PS4_700K")
+        lips = next(spec for spec in trajectory_specs() if spec["id"] == "Li3PS4_700K_R1")
         self.assertIn("Li₃PS₄", lips["display_name"])
 
     def test_lammps_type_numbers_can_be_restored_to_elements(self):

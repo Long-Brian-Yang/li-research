@@ -11,6 +11,7 @@ import numpy as np
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
+from analyze_lzoc_production import fit_msd
 
 ROOT=Path(__file__).resolve().parents[2]
 BASE=ROOT/'results/amorphous_review_20260915'
@@ -47,21 +48,42 @@ def finish(fig,name):
         path=OUT/f'{name}.{ext}';fig.savefig(path,dpi=220)
         if ext=='svg':path.write_text('\n'.join(s.rstrip() for s in path.read_text().splitlines())+'\n')
     EXPORTS.append(name);plt.close(fig)
+    manifest_path=OUT/'manifest.json'
+    if manifest_path.exists():
+        manifest=json.loads(manifest_path.read_text())
+        indexed={item['file']:item for item in manifest['assets']}
+        for ext in ('png','pdf','svg'):
+            path=OUT/f'{name}.{ext}'
+            record=indexed.get(path.name)
+            if record is None:
+                record={'file':path.name};manifest['assets'].append(record)
+            record['sha256']=hashlib.sha256(path.read_bytes()).hexdigest()
+            record['source']='scripts/structures/curate_overview_figures.py'
+        manifest['figure_groups']=len({Path(item['file']).stem for item in manifest['assets']})
+        manifest_path.write_text(json.dumps(manifest,indent=2)+'\n')
 
 def lzoc():
     fig,aa=grid(2);axes=aa.ravel()
     fig.suptitle('LZOC — NEP · NHC · 2 fs · 300 ps production', fontsize=17)
-    selected=js(BASE/'seed_repeats/representatives.json')['selected']
-    ymax=0
-    for ax,r,c in zip(axes,selected,[BLUE,GREEN,RED]):
-        T=r['T_K'];a=load(BASE/r['source'])
-        ax.plot(a[:,0],a[:,1],color=c,label="NEP89")
-        ymax=max(ymax,float(a[:,1].max()))
+    temperatures=(340,360,380);colors=[BLUE,GREEN,RED];diffusion={}
+    for ax,T,c in zip(axes[:3],temperatures,colors):
+        paths=[BASE/f'followup300/LZOC_{T}K_300ps_MSD.csv']
+        if T in (340,360):
+            paths.extend(BASE/f'seed_repeats/LZOC_{T}K_R{rep}_MSD.csv' for rep in (1,2))
+        for index,path in enumerate(paths):
+            a=load(path)
+            ax.plot(a[:,0],a[:,1],color=c,alpha=.38,lw=1.35)
+            diffusion.setdefault(T,[]).append((fit_msd(a[:,0],a[:,1],20,80)['D_cm2_s'],index))
+        ax.plot([],[],color=c,label='NEP89 (all available trajectories)')
         ax.set(title=f'{T} K',xlabel='Lag time (ps)',ylabel='Li MSD (Å²)',xlim=(0,300));ax.legend()
-    for ax in axes[:3]:ax.set_ylim(0,ymax*1.06)
     a=load(P/'LZOC_Table4_comparison.csv');ax=axes[3]
     ax.errorbar(a[:,0],a[:,1],yerr=a[:,2],fmt='ko-',capsize=4,label='AIMD tracer D*')
-    ax.plot([r['T_K'] for r in selected],[r['D_cm2_s'] for r in selected],'s',color=BLUE,label='NEP89')
+    markers=('o','s','^')
+    for T,values in diffusion.items():
+        for value,index in values:
+            ax.plot(T,value,marker=markers[index%len(markers)],linestyle='none',
+                    color=colors[temperatures.index(T)],alpha=.8,
+                    label='NEP89 trajectory' if T==temperatures[0] and index==0 else None)
     ax.set(title='AIMD comparison',xlabel='Temperature (K)',ylabel='D (cm²/s)',yscale='log',xticks=a[:,0]);ax.legend()
     finish(fig,'01_LZOC_transport')
 

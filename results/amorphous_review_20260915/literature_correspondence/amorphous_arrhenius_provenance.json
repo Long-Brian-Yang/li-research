@@ -15,29 +15,29 @@
     "docs/materials/figures/32_LiPON_Arrhenius_comparison.svg"
   ],
   "sources": [
-    "results/amorphous_review_20260915/literature_correspondence/LZOC_Arrhenius_plot_data.csv",
+    "results/amorphous_review_20260915/literature_correspondence/LZOC_transport_plot_data.csv",
     "results/amorphous_review_20260915/literature_correspondence/LSZC_Arrhenius_plot_data.csv",
     "results/amorphous_review_20260915/literature_correspondence/Li3PS4_Arrhenius_plot_data.csv",
     "results/amorphous_review_20260915/literature_correspondence/LiPON_Arrhenius_plot_data.csv",
     "results/amorphous_review_20260915/literature_correspondence/activation_energy_inventory.csv"
   ],
   "sha256": {
-    "docs/materials/figures/29_LZOC_Arrhenius_comparison.png": "aa5407462fae01efbc6f533748950f816cfffd4f4f04e1aa6d3d8c453fafcd09",
-    "docs/materials/figures/29_LZOC_Arrhenius_comparison.pdf": "8d50a25faa9feb018072b46b8705c52d2ed2dd93365e7a1b3638347bca73baa3",
-    "docs/materials/figures/29_LZOC_Arrhenius_comparison.svg": "c1fd8a381c6382a7dc0dc7624fc919af18dccbad1828877a224e07f2c93f70b0",
-    "docs/materials/figures/30_LSZC_Arrhenius_comparison.png": "6b5af57a71d73672c9d50f5240890673821099241587b707677812ae1ddbb945",
-    "docs/materials/figures/30_LSZC_Arrhenius_comparison.pdf": "f895ba357f5b8cc49033a9711004fd1fd36b81e71ebab1b9036036081e9c677f",
-    "docs/materials/figures/30_LSZC_Arrhenius_comparison.svg": "615b8a9437544c10d66e0cba29f2c04d80adb7c8e956e9c87eb4de6a18358bc4",
-    "docs/materials/figures/31_Li3PS4_Arrhenius_comparison.png": "e2f0a8d83a518fdc31089955b4a0a2a7ee4ecc87bbf3aa4270eba24af50629f1",
-    "docs/materials/figures/31_Li3PS4_Arrhenius_comparison.pdf": "fcfc0f83346f1194ebc04ae4ac348d487c6a4e3a63091023ad4d628a85ea5647",
-    "docs/materials/figures/31_Li3PS4_Arrhenius_comparison.svg": "04b8253e88f04770e88d5de13f7abdace6868e3e90bbbfbd4f2403a0307e0739",
-    "docs/materials/figures/32_LiPON_Arrhenius_comparison.png": "63ac8cf61f96395d95b4d805bc4ccf3cf39a2f52055ed33e33303b9f718ae6ed",
-    "docs/materials/figures/32_LiPON_Arrhenius_comparison.pdf": "d05c4547edccca526c0a70e2f4d91dfba2d9bcf5c96c7ab9dc65879fafbe0dd1",
-    "docs/materials/figures/32_LiPON_Arrhenius_comparison.svg": "41119743fe8873d476a24bebde5d9002a60c1b5f7c7f9ff92b748cf1457616eb",
-    "results/amorphous_review_20260915/literature_correspondence/LZOC_Arrhenius_plot_data.csv": "712b7916059491519d783f2967513766df914bdb269c809eda6e31865d8a8232",
-    "results/amorphous_review_20260915/literature_correspondence/LSZC_Arrhenius_plot_data.csv": "8639bed4ae5d5c13b2bc5b6f8f9ddfa18ac922723d21f3c503f793ce06dbb4ba",
+    "docs/materials/figures/29_LZOC_Arrhenius_comparison.png": "5d93888c6769c3e5aa2d7898ef9730a8ee013c8e7b9a704c4fb452f06184b4dc",
+    "docs/materials/figures/29_LZOC_Arrhenius_comparison.pdf": "0b0798433f7cee2b2cb672a9281dc13ad251be9b4fa2c29029659661d9c96003",
+    "docs/materials/figures/29_LZOC_Arrhenius_comparison.svg": "fd049d6947e380d707ee3f1cbf221a7d6d93d80378eddba67a43bb0f56efe995",
+    "docs/materials/figures/30_LSZC_Arrhenius_comparison.png": "7fbd6c4576667d78b5853b76ca0711ddb6fa5bcdec01c065e68aa371575d9d0c",
+    "docs/materials/figures/30_LSZC_Arrhenius_comparison.pdf": "8ac80f4e41ad0ef1b8a8dc82f9e8df0ce01bc6440e6d9e06b7016660c8e61764",
+    "docs/materials/figures/30_LSZC_Arrhenius_comparison.svg": "98e105669b3594fb113f24654178cc2bdb1f5fa8c462dcad53c9f65d781330ac",
+    "docs/materials/figures/31_Li3PS4_Arrhenius_comparison.png": "3fef6bc546dffab0432f3b677bba38774f33c24776ffb8e2c232e3605917be39",
+    "docs/materials/figures/31_Li3PS4_Arrhenius_comparison.pdf": "5b896a017a0262c825ffc3f06d1f0ef5975bc6871e46913995eb62d6338e9912",
+    "docs/materials/figures/31_Li3PS4_Arrhenius_comparison.svg": "608eec327feae34ee3b5d96c7746d38f71ddafd1fbbffff060ef511c0a34dda5",
+    "docs/materials/figures/32_LiPON_Arrhenius_comparison.png": "441ac96098e5bf8cfe1e5667a76aeb32750331878f4c86d80336b05b2e8359f7",
+    "docs/materials/figures/32_LiPON_Arrhenius_comparison.pdf": "cd42b41d6a23325dba0e52fe2d1922cabda3f54a7bad38abe46724235ba659d6",
+    "docs/materials/figures/32_LiPON_Arrhenius_comparison.svg": "4eea7f62d2959aabfda6f110f77c2e63de22f4aa14701644391dc793e992bb1b",
+    "results/amorphous_review_20260915/literature_correspondence/LZOC_transport_plot_data.csv": "7880368718e96699634e6a3c884568bd8011b75a5dc1fd7072283bdcec1100e1",
+    "results/amorphous_review_20260915/literature_correspondence/LSZC_Arrhenius_plot_data.csv": "feaf9cde0200f0005bc984f3998c721ce4e0758fc181f7c143cc49eee7619aa5",
     "results/amorphous_review_20260915/literature_correspondence/Li3PS4_Arrhenius_plot_data.csv": "a990db3fe725a725621de4fd945580922586bd438034b66387065d0576881289",
-    "results/amorphous_review_20260915/literature_correspondence/LiPON_Arrhenius_plot_data.csv": "4fb72b43563dd75c6715168ce2cc769ff82c7f76a9b7cf2b0d619676869d8cd1",
-    "results/amorphous_review_20260915/literature_correspondence/activation_energy_inventory.csv": "89f9f958c484f28891933b980d0d691d1a43fdc6616a539f62bf9c29ff0bc111"
+    "results/amorphous_review_20260915/literature_correspondence/LiPON_Arrhenius_plot_data.csv": "ea3cb441788f32f8048094c13972f430607027ddc51a01f677c4cd8411b4a1c1",
+    "results/amorphous_review_20260915/literature_correspondence/activation_energy_inventory.csv": "a61644d53f8e760f3d7486f0abba40ce157610064390b64fc7625e6f848f81ed"
   }
 }

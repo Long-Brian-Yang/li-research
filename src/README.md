@@ -1,20 +1,22 @@
-# Reusable Python modules
+# 再利用 Python モジュール
 
-`src/li_research/` contains small reusable modules for ordered structure creation, format conversion, and selected LAMMPS/GPUMD analysis. The complete file-by-file map, environment assumptions, and testing guidance are in the [repository technical guide](../docs/engineering/repository_technical_guide_zh.md#5-核心代码src).
+`src/li_research/` は、結晶構造生成、形式変換、LAMMPS／GPUMD の解析・作図に使う再利用 module を含む。
 
 ```text
 li_research/
-├── structures/       ordered crystal builders and supercell utilities
-├── conversion/       CIF/LAMMPS/extended-XYZ conversion and occupancy checks
+├── structures/   結晶構造生成と supercell utility
+├── conversion/   CIF／LAMMPS／extended-XYZ 変換、占有確認
 └── analysis/
-    ├── lammps/       Li MSD/diffusion, jumps, and model-comparison plots
-    ├── gpumd/        GPUMDkit input preparation and GPUMD post-processing
-    ├── rdf/          trajectory RDF recomputation
-    └── arrhenius/    crystalline benchmark Arrhenius figures
+    ├── lammps/   Li MSD／拡散、hop 統計、model 図
+    ├── gpumd/    GPUMDkit 入力準備と GPUMD 後処理
+    ├── rdf/      trajectory から RDF 再計算
+    └── arrhenius/結晶 benchmark の Arrhenius 図
 ```
 
-## Runtime note
+全コード索引と環境条件は[日本語技術ガイド](../docs/engineering/repository_technical_guide_ja.md#5-コアコードと分析コード)を参照する。
 
-The repository has no `pyproject.toml`, `setup.py`, or pinned dependency file. Scientific modules use libraries including ASE, NumPy, SciPy, and Matplotlib; individual source files define their actual requirements. They can be invoked from the repository root with `PYTHONPATH=src` when their input paths and dependencies are available. Many material-specific analyses instead live under `scripts/structures/` and are not installed as a package.
+## 実行上の注意
 
-Do not put LAMMPS/GPUMD job scripts, model weights, raw trajectories, or generated results in this tree; those belong to `hpc/`, external model/runtime storage, or `results/` as appropriate.
+この repo には `pyproject.toml`、`setup.py`、完全固定された依存 file がない。ASE、NumPy、SciPy、Matplotlib 等の要件は module ごとに異なる。repository root から `PYTHONPATH=src` を設定して使う場合も、入力パスと依存を確認する。材料固有の分析は `scripts/structures/` にある。
+
+LAMMPS／GPUMD の job script、model weight、raw trajectory、計算結果はこの再利用 module tree に置かず、それぞれ `hpc/`、承認済み model/runtime storage、`results/` を使う。

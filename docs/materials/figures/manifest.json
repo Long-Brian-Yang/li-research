@@ -1,20 +1,20 @@
 {
   "operation": "Current report figure inventory. Historical sources remain archived; current files may be regenerated from the listed scripts.",
-  "figure_groups": 30,
+  "figure_groups": 31,
   "assets": [
     {
       "file": "18_LSZC_transport_comparison.png",
-      "sha256": "aeb6c373ec940366aa9f69cbee880098c1cbd2711416c6cde406f3a1bd2f44f5",
+      "sha256": "51fbf75e01d36843c31e254ca000302fda51d85f2aa90d268acf7d32985b2e06",
       "source": "scripts/structures/analyze_lszc_matched_repeats.py"
     },
     {
       "file": "18_LSZC_transport_comparison.pdf",
-      "sha256": "624f2107a037fe59839d078aa3ab1259e70b1639561e6950bcc1edccdb023468",
+      "sha256": "0fc4309c0a34c05d65a3fa0b88d30f4237a24e506df7f71657d3b36049c404c0",
       "source": "scripts/structures/analyze_lszc_matched_repeats.py"
     },
     {
       "file": "18_LSZC_transport_comparison.svg",
-      "sha256": "8a34744d8637bdd9cacf07b79c9b784fc7da48905814eb9b792c540a0995b8da",
+      "sha256": "e182d34c1bae09442551d6432e6b7bc6ff756644ce3de546b1e649b77e60daab",
       "source": "scripts/structures/analyze_lszc_matched_repeats.py"
     },
     {
@@ -64,18 +64,18 @@
     },
     {
       "file": "01_LZOC_transport.png",
-      "sha256": "76423eeed31245f8c7b585db8335bfa2867d1ebf50e23704bc76f0d5d9acd8c3",
-      "source": "scripts/structures/preview_lzoc_closest.py"
+      "sha256": "25c0f52b1b859d21ad43d59933f7dda12c8a0dd03a3c8c5015fc41d5fa099a4e",
+      "source": "scripts/structures/curate_overview_figures.py"
     },
     {
       "file": "01_LZOC_transport.pdf",
-      "sha256": "20be166bd814e6c6f0a064543e2611ead70a8510b4957d40d66eac05a72156f3",
-      "source": "scripts/structures/preview_lzoc_closest.py"
+      "sha256": "b14a30b5d68f2386eb4046860e91bca71ea2a1a0fb78828ba2b53343acd613c6",
+      "source": "scripts/structures/curate_overview_figures.py"
     },
     {
       "file": "01_LZOC_transport.svg",
-      "sha256": "14a8dee31c6c343b2900756a101fcc8b2f54d3da534b30e18861045033ae69a8",
-      "source": "scripts/structures/preview_lzoc_closest.py"
+      "sha256": "37a94774027258881c3ce85e832ea3570979f751b5b39cf3cae97de177343e3c",
+      "source": "scripts/structures/curate_overview_figures.py"
     },
     {
       "file": "14_LZOC_species_MSD.png",
@@ -139,32 +139,32 @@
     },
     {
       "file": "19_LSZC_partial_RDF.png",
-      "sha256": "6814e3605b389dc3bc9e055f646033956d1ad545dddc0f10abc467b4fde4c37a",
+      "sha256": "bb297b8e49353d3a38e065393e57f0a61e3e76febfddbf646191225b3a93d98a",
       "source": "scripts/structures/analyze_lszc_endpoints.py"
     },
     {
       "file": "19_LSZC_partial_RDF.pdf",
-      "sha256": "8b67b8f0961200b8cfd535aac5813dd00a0c576682de0d9940bb182195344405",
+      "sha256": "343be43bf6c5382f2db4cef914bef5588117944fb95b0edfb4221d5bc65c47a1",
       "source": "scripts/structures/analyze_lszc_endpoints.py"
     },
     {
       "file": "19_LSZC_partial_RDF.svg",
-      "sha256": "6843ac884769c8be75b6a6e5d26fb17a54c7943724a077d3560e392d723250d3",
+      "sha256": "d39de6bcec04286a211f9d847c87a5805a739a2eda2546b3b08486329d3a17d4",
       "source": "scripts/structures/analyze_lszc_endpoints.py"
     },
     {
       "file": "20_LSZC_coordination_mobility.png",
-      "sha256": "1efee8947a8fea6f3026062789d0fe1f821cbb3f5862dc4e8fd9306c8ebea9e3",
+      "sha256": "0340b845cd34e946512fa1c2e229890ffd893ac52cfe6d3c8d9d731aa6a0951d",
       "source": "scripts/structures/analyze_lszc_endpoints.py"
     },
     {
       "file": "20_LSZC_coordination_mobility.pdf",
-      "sha256": "922be0fdb56018d4c7130d911fa071a926565d4096d31a968d06b3347dfc5828",
+      "sha256": "84bb4a8b2d4342ccd916b4f5f671295e6bf5578c814319b2f82e0c3a00b888f7",
       "source": "scripts/structures/analyze_lszc_endpoints.py"
     },
     {
       "file": "20_LSZC_coordination_mobility.svg",
-      "sha256": "70af1e29baa2b61d2c6b582ca5c55b99f9ad05cacc05a8760b9075747adc5d78",
+      "sha256": "a8bf15e37af1024e1fd75ce200ed87f6809a3461080ce289dd37c23bf7271eaa",
       "source": "scripts/structures/analyze_lszc_endpoints.py"
     },
     {
@@ -259,62 +259,62 @@
     },
     {
       "file": "23_LiPON_lithium_MSD.png",
-      "sha256": "20f95b4db3f7d7105024d6b546fcf3651fb9734f4892ff49775b3db0b8cc159c",
+      "sha256": "2ea49e0ae0a8f0c01dbbe6de100b156b8b33fbb096de4267abd2b64f51feccdd",
       "source": "scripts/structures/analyze_lipon_transport.py"
     },
     {
       "file": "23_LiPON_lithium_MSD.pdf",
-      "sha256": "db82191d20bef97703dfbfd429328b195afd3f54319b69a24146a1fafbc99c03",
+      "sha256": "be27c9d46d1f44c84f3cbc1fc3c98b2980f0904e54855cc27a6dfd86fa3006ec",
       "source": "scripts/structures/analyze_lipon_transport.py"
     },
     {
       "file": "23_LiPON_lithium_MSD.svg",
-      "sha256": "d12b48b89a880331140b03f2aa2cb7d04b5bb229572b4c86636a615cdcc13715",
+      "sha256": "6ef1037cf715cce12ae15fec7553c7922696f14280b34670ce63029b4eaac93c",
       "source": "scripts/structures/analyze_lipon_transport.py"
     },
     {
       "file": "24_LiPON_transport_comparison.png",
-      "sha256": "4ccd1cbe79ad4691c670d0430f7b97744610b4d56ca4a095c656afb56263ffc3",
+      "sha256": "5bc86703151df248cec18b65d90f40747ff4da15bfe72bb458f416e604b59c58",
       "source": "scripts/structures/analyze_lipon_transport.py"
     },
     {
       "file": "24_LiPON_transport_comparison.pdf",
-      "sha256": "ad65e7368f6cd8c3091961029072403b9017eecebd869070daccc0beafe45753",
+      "sha256": "3c400b46770abe38c5064422ba52ad378dc71f0bc2e0a56e5bfdfc8001c52e2b",
       "source": "scripts/structures/analyze_lipon_transport.py"
     },
     {
       "file": "24_LiPON_transport_comparison.svg",
-      "sha256": "dd1d564f4777715080af80f691989a3b840d03071524b1d65cd3680b99e9c64c",
+      "sha256": "d099267b0a3b97c04e3ffd21d6e5af08bf68b4b440e6e513524c84834562bdf8",
       "source": "scripts/structures/analyze_lipon_transport.py"
     },
     {
       "file": "25_LiPON_temperature_RDF.png",
-      "sha256": "160327340f83154931d3127aac009ad571b96e444cd70b0468240b716d81812e",
+      "sha256": "e45f1562367e57da24b2ab1f92638c6a0c82c4d79c91266ae4963ef03b4536d4",
       "source": "scripts/structures/analyze_lipon_transport.py"
     },
     {
       "file": "25_LiPON_temperature_RDF.pdf",
-      "sha256": "c63f3d708b5017c403279f7c22593e92037b3877d7ee78ba4d7f838cd565d92a",
+      "sha256": "8c58a4e40044afe58f1a40b8690c0d8513c6746c57727477645a3d18e1606f21",
       "source": "scripts/structures/analyze_lipon_transport.py"
     },
     {
       "file": "25_LiPON_temperature_RDF.svg",
-      "sha256": "3328382395337e419c6e6176a8c7f0a3602fb00bcbea32725a08c1aad3be9a91",
+      "sha256": "7f154fcff095df1c57052139f2144a4b9c95a721440cdca19bdd7acd0facec00",
       "source": "scripts/structures/analyze_lipon_transport.py"
     },
     {
       "file": "27_LSZC_PDF_and_Zr_coordination.png",
-      "sha256": "9b6e8c05642a38878fdda3adb6cc637415e46deff13cb243d42b01fcf2d4b4db",
+      "sha256": "1e075e665fa10b2a5592f690416d86bbfc1eaf33cf1073fa3d526898865ce6d4",
       "source": "scripts/structures/plot_literature_correspondence.py"
     },
     {
       "file": "27_LSZC_PDF_and_Zr_coordination.pdf",
-      "sha256": "312601ffa9b9db1a5f9c753b6f26acf9a727ec95d0d140b4ea0ea424d97eaec3",
+      "sha256": "0fd273af34355befb2e45e3460252aae6690f6f04da52c6c7511b3e170020c9e",
       "source": "scripts/structures/plot_literature_correspondence.py"
     },
     {
       "file": "27_LSZC_PDF_and_Zr_coordination.svg",
-      "sha256": "9a94316675acab12a3c6514bcb75a7627534822bd34bcb57a9b9fcd70d272b56",
+      "sha256": "bf9370bdcd5972e65c7b9510308b0b1ea9ac4878df2d2fc6e3ae0a11ecc1393d",
       "source": "scripts/structures/plot_literature_correspondence.py"
     },
     {
@@ -324,12 +324,12 @@
     },
     {
       "file": "28_Li3PS4_dynamic_heterogeneity.pdf",
-      "sha256": "0cc840cab87a076da6dd63942440a40531f0cafdc599d515d94ebc28dfacdd4e",
+      "sha256": "41ba68ecd489757135698c494f55dda1540a0181669ac48fc474767394821059",
       "source": "scripts/structures/plot_literature_correspondence.py"
     },
     {
       "file": "28_Li3PS4_dynamic_heterogeneity.svg",
-      "sha256": "5c819488679e600cc01a841f03f98177c0bdd492921045363a2d974c896bd5f9",
+      "sha256": "0cec067cc9fd8e389150801fda07535c674d9a155a20304ff7206383150dd0e5",
       "source": "scripts/structures/plot_literature_correspondence.py"
     },
     {
@@ -364,63 +364,78 @@
     },
     {
       "file": "29_LZOC_Arrhenius_comparison.png",
-      "sha256": "aa5407462fae01efbc6f533748950f816cfffd4f4f04e1aa6d3d8c453fafcd09",
+      "sha256": "5d93888c6769c3e5aa2d7898ef9730a8ee013c8e7b9a704c4fb452f06184b4dc",
       "source": "scripts/structures/plot_amorphous_arrhenius_comparisons.py"
     },
     {
       "file": "29_LZOC_Arrhenius_comparison.pdf",
-      "sha256": "f619dbc5bdb45288ebec064f7f97b5e967ed3a0736a1a97c2647091417353e20",
+      "sha256": "0b0798433f7cee2b2cb672a9281dc13ad251be9b4fa2c29029659661d9c96003",
       "source": "scripts/structures/plot_amorphous_arrhenius_comparisons.py"
     },
     {
       "file": "29_LZOC_Arrhenius_comparison.svg",
-      "sha256": "07165cdf8dc9c8c8b950ed1c12872846be723826c593c95dea6358037ab52c90",
+      "sha256": "fd049d6947e380d707ee3f1cbf221a7d6d93d80378eddba67a43bb0f56efe995",
       "source": "scripts/structures/plot_amorphous_arrhenius_comparisons.py"
     },
     {
       "file": "30_LSZC_Arrhenius_comparison.png",
-      "sha256": "6b5af57a71d73672c9d50f5240890673821099241587b707677812ae1ddbb945",
+      "sha256": "7fbd6c4576667d78b5853b76ca0711ddb6fa5bcdec01c065e68aa371575d9d0c",
       "source": "scripts/structures/plot_amorphous_arrhenius_comparisons.py"
     },
     {
       "file": "30_LSZC_Arrhenius_comparison.pdf",
-      "sha256": "e902a7bad6c7a1981ce68f0e5a6c03afd1dfd7691622a74ed40d036449a3814c",
+      "sha256": "8ac80f4e41ad0ef1b8a8dc82f9e8df0ce01bc6440e6d9e06b7016660c8e61764",
       "source": "scripts/structures/plot_amorphous_arrhenius_comparisons.py"
     },
     {
       "file": "30_LSZC_Arrhenius_comparison.svg",
-      "sha256": "058b3c137c7fde4f826f874edcbe935e6f576d564b9ce739f2384f5be2ddf953",
+      "sha256": "98e105669b3594fb113f24654178cc2bdb1f5fa8c462dcad53c9f65d781330ac",
       "source": "scripts/structures/plot_amorphous_arrhenius_comparisons.py"
     },
     {
       "file": "31_Li3PS4_Arrhenius_comparison.png",
-      "sha256": "76c0bd6e80d95ec4bcec0ba99c6b228edbe368f92c92bce2f774b41f054d515e",
+      "sha256": "3fef6bc546dffab0432f3b677bba38774f33c24776ffb8e2c232e3605917be39",
       "source": "scripts/structures/plot_amorphous_arrhenius_comparisons.py"
     },
     {
       "file": "31_Li3PS4_Arrhenius_comparison.pdf",
-      "sha256": "7cb8790e1d5e5a6d929b4762da790f4be6dd67c9c65b82318d9d68357bdd5723",
+      "sha256": "5b896a017a0262c825ffc3f06d1f0ef5975bc6871e46913995eb62d6338e9912",
       "source": "scripts/structures/plot_amorphous_arrhenius_comparisons.py"
     },
     {
       "file": "31_Li3PS4_Arrhenius_comparison.svg",
-      "sha256": "32058adeaff9e0b6db6a71b3af25976e8c586deef6dfd10ebcb421eb62fd5ae8",
+      "sha256": "608eec327feae34ee3b5d96c7746d38f71ddafd1fbbffff060ef511c0a34dda5",
       "source": "scripts/structures/plot_amorphous_arrhenius_comparisons.py"
     },
     {
       "file": "32_LiPON_Arrhenius_comparison.png",
-      "sha256": "63ac8cf61f96395d95b4d805bc4ccf3cf39a2f52055ed33e33303b9f718ae6ed",
+      "sha256": "441ac96098e5bf8cfe1e5667a76aeb32750331878f4c86d80336b05b2e8359f7",
       "source": "scripts/structures/plot_amorphous_arrhenius_comparisons.py"
     },
     {
       "file": "32_LiPON_Arrhenius_comparison.pdf",
-      "sha256": "10a1f19433c620fbe6934da66981b188ad54a42759db0a1777903db826acf55d",
+      "sha256": "cd42b41d6a23325dba0e52fe2d1922cabda3f54a7bad38abe46724235ba659d6",
       "source": "scripts/structures/plot_amorphous_arrhenius_comparisons.py"
     },
     {
       "file": "32_LiPON_Arrhenius_comparison.svg",
-      "sha256": "93126194dc377c58996a090aa6fa019825cf81be5014481d56ad7cfcf6a9c5d7",
+      "sha256": "4eea7f62d2959aabfda6f110f77c2e63de22f4aa14701644391dc793e992bb1b",
       "source": "scripts/structures/plot_amorphous_arrhenius_comparisons.py"
+    },
+    {
+      "file": "24_LiPON_diffusion_comparison.png",
+      "sha256": "2a9ed2888000ec76fd8c0bf32bc57e7aa4f4e7b4cca46070284ce48195b98e75",
+      "source": "scripts/structures/analyze_lipon_transport.py"
+    },
+    {
+      "file": "24_LiPON_diffusion_comparison.pdf",
+      "sha256": "c7879b776fea351a626ef865b61288c81f945edd340d465197a3f37835ac2387",
+      "source": "scripts/structures/analyze_lipon_transport.py"
+    },
+    {
+      "file": "24_LiPON_diffusion_comparison.svg",
+      "sha256": "bff201964a6a390f0c41f071c200833bc1970b9c4c586f7b19741870b523fbd4",
+      "source": "scripts/structures/analyze_lipon_transport.py"
     }
   ]
 }

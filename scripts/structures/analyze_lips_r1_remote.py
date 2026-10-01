@@ -330,15 +330,15 @@ def run(root: Path, output: Path) -> None:
                     f"{fit['R2']:.9f},{fit['alpha']:.9f},{fit['intercept_A2']:.12e}\n"
                 )
 
-    selected = []
+    common_window_fits = []
     for temperature in TEMPERATURES:
-        selected.append(results[str(temperature)]["fits"][2])
+        common_window_fits.append(results[str(temperature)]["fits"][2])
     high_temperature = np.asarray(TEMPERATURES[1:], dtype=float)
-    high_d = np.asarray([selected[index]["D_cm2_s"] for index in range(1, 4)])
+    high_d = np.asarray([common_window_fits[index]["D_cm2_s"] for index in range(1, 4)])
     arrhenius = linregress(1.0 / high_temperature, np.log(high_d))
     summary = {
         "definition": "time-origin averaged, whole-system COM-corrected species MSD",
-        "selected_common_window_ps": [20, 80],
+        "common_fit_window_ps": [20, 80],
         "results": results,
         "high_temperature_diagnostic": {
             "range_K": [500, 700, 900],

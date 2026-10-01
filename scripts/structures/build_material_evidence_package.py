@@ -10,7 +10,7 @@ from __future__ import annotations
 
 import hashlib
 import json
-import shutil
+import re
 from pathlib import Path
 
 import numpy as np
@@ -207,17 +207,17 @@ def export_trajectory(spec: dict) -> dict:
 
 
 STRUCTURES = [
-    ("crystalline/Li3YCl6", "initial_structure", "structures/ordered/Li3YCl6/2x2x2/model_03/Li3YCl6_ordered_03_2x2x2.cif", {"material": "Li3YCl6", "role": "ordered 2x2x2 simulation input", "display_name": "Li₃YCl₆ — 240-atom ordered 2×2×2 initial structure", "report_figures": ["01_Li3YCl6_three_model_MSD", "03_Li3YCl6_Arrhenius"]}),
-    ("crystalline/LiNbOCl4", "initial_structure", "structures/ordered/LiNbOCl4/2x2x3/LiNbOCl4_ordered_2x2x3.cif", {"material": "LiNbOCl4", "role": "ordered 2x2x3 simulation input", "display_name": "LiNbOCl₄ — 336-atom ordered 2×2×3 initial structure", "report_figures": ["02_LiNbOCl4_three_model_MSD", "04_LiNbOCl4_Arrhenius"]}),
-    ("amorphous/MACE_NEP_benchmark", "common_300K_structure", "materials/candidates/LZOC/structure_equilibrated_300K.cif", {"material": "Li1.75ZrCl4.75O0.5", "role": "common 300 K benchmark structure", "display_name": "MACE–NEP LZOC benchmark — common 300 K initial structure", "report_figures": ["09_MACE_NEP_runtime_density"]}),
-    ("amorphous/LZOC", "construction_initial", "materials/candidates/LZOC_Hussain2024/seed_192/initial_structure.cif", {"material": "Li1.75ZrCl4.75O0.5", "role": "literature-aligned construction input", "display_name": "LZOC — 192-atom literature-aligned construction structure", "report_figures": ["01_LZOC_transport", "15_LZOC_RDF", "16_LZOC_coordination"]}),
-    ("amorphous/LZOC", "analysis_start", "results/amorphous_review_20260915/source/LZOC300/nhc300_340K_8676684/model.xyz", {"material": "Li1.75ZrCl4.75O0.5", "role": "300 ps transport-series start", "display_name": "LZOC — NEP89 transport-series starting structure", "report_figures": ["01_LZOC_transport", "14_LZOC_species_MSD", "15_LZOC_RDF", "16_LZOC_coordination", "17_LZOC_radial_displacement"]}),
-    ("amorphous/LSZC", "construction_relaxed", "materials/candidates/LSZC/packed_272/relaxed.cif", {"material": "0.5Li2SO4-ZrCl4", "role": "relaxed 272-atom cluster-packed structure", "display_name": "LSZC — relaxed 272-atom cluster-packed structure", "report_figures": ["18_LSZC_transport_comparison", "19_LSZC_partial_RDF", "27_LSZC_PDF_and_Zr_coordination"]}),
-    ("amorphous/LSZC", "analysis_start", "results/amorphous_review_20260915/source/LSZC_matched4t/R2_320K/production/model.xyz", {"material": "0.5Li2SO4-ZrCl4", "role": "common-cell transport-series start", "display_name": "LSZC — common-cell NEP89 transport starting structure", "report_figures": ["18_LSZC_transport_comparison", "19_LSZC_partial_RDF", "20_LSZC_coordination_mobility", "27_LSZC_PDF_and_Zr_coordination"]}),
-    ("amorphous/Li3PS4", "construction_initial", "materials/candidates/Li3PS4_glass/input/initial.cif", {"material": "Li3PS4", "role": "glass construction input", "display_name": "Li₃PS₄ — 512-atom glass construction structure", "report_figures": ["05_Li3PS4_lithium_MSD", "07_Li3PS4_local_structure"]}),
-    ("amorphous/Li3PS4", "analysis_start", "results/amorphous_review_20260915/source/Li3PS4_R1_transport/300K/production/model.xyz", {"material": "Li3PS4", "role": "R1 transport-series start", "display_name": "Li₃PS₄ — R1 NEP89 transport starting structure", "report_figures": ["05_Li3PS4_lithium_MSD", "06_Li3PS4_diffusion_framework_MSD", "07_Li3PS4_local_structure", "28_Li3PS4_dynamic_heterogeneity"]}),
-    ("amorphous/LiPON", "construction_initial", "materials/candidates/LiPON/input/initial.cif", {"material": "LiPON", "role": "Preparation-B construction input", "display_name": "LiPON — 124-atom Preparation-B construction structure", "report_figures": ["21_LiPON_glass_structure", "22_LiPON_preparation_RDF", "08_LiPON_nitrogen_distance"]}),
-    ("amorphous/LiPON", "analysis_start", "results/amorphous_review_20260915/source/LiPON_transport/bulk_transport_600K_8679521/production/model.xyz", {"material": "LiPON", "role": "transport-series start", "display_name": "LiPON — NEP89 transport-series starting structure", "report_figures": ["23_LiPON_lithium_MSD", "24_LiPON_transport_comparison", "25_LiPON_temperature_RDF"]}),
+    ("crystalline/Li3YCl6", "initial_structure", "structures/ordered/Li3YCl6/2x2x2/model_03/Li3YCl6_ordered_03_2x2x2.cif", {"material": "Li3YCl6", "role": "ordered 2x2x2 simulation input", "display_name": "Li₃YCl₆｜240原子｜2×2×2有序初期構造", "report_figures": ["01_Li3YCl6_three_model_MSD", "03_Li3YCl6_Arrhenius"]}),
+    ("crystalline/LiNbOCl4", "initial_structure", "structures/ordered/LiNbOCl4/2x2x3/LiNbOCl4_ordered_2x2x3.cif", {"material": "LiNbOCl4", "role": "ordered 2x2x3 simulation input", "display_name": "LiNbOCl₄｜336原子｜2×2×3有序初期構造", "report_figures": ["02_LiNbOCl4_three_model_MSD", "04_LiNbOCl4_Arrhenius"]}),
+    ("amorphous/MACE_NEP_benchmark", "common_300K_structure", "materials/candidates/LZOC/structure_equilibrated_300K.cif", {"material": "Li1.75ZrCl4.75O0.5", "role": "common 300 K benchmark structure", "display_name": "LZOC MACE–NEP比較｜共通300 K初期構造", "report_figures": ["09_MACE_NEP_runtime_density"]}),
+    ("amorphous/LZOC", "construction_initial", "materials/candidates/LZOC_Hussain2024/seed_192/initial_structure.cif", {"material": "Li1.75ZrCl4.75O0.5", "role": "literature-aligned construction input", "display_name": "LZOC｜192原子｜文献条件に合わせた構築初期構造", "report_figures": ["01_LZOC_transport", "15_LZOC_RDF", "16_LZOC_coordination"]}),
+    ("amorphous/LZOC", "analysis_start", "results/amorphous_review_20260915/source/LZOC300/nhc300_340K_8676684/model.xyz", {"material": "Li1.75ZrCl4.75O0.5", "role": "300 ps transport-series start", "display_name": "LZOC｜NEP89輸送系列の開始構造", "report_figures": ["01_LZOC_transport", "14_LZOC_species_MSD", "15_LZOC_RDF", "16_LZOC_coordination", "17_LZOC_radial_displacement"]}),
+    ("amorphous/LSZC", "construction_relaxed", "materials/candidates/LSZC/packed_272/relaxed.cif", {"material": "0.5Li2SO4-ZrCl4", "role": "relaxed 272-atom cluster-packed structure", "display_name": "LSZC｜272原子｜団簇充填後の緩和構造", "report_figures": ["18_LSZC_transport_comparison", "19_LSZC_partial_RDF", "27_LSZC_PDF_and_Zr_coordination"]}),
+    ("amorphous/LSZC", "analysis_start", "results/amorphous_review_20260915/source/LSZC_matched4t/R2_320K/production/model.xyz", {"material": "0.5Li2SO4-ZrCl4", "role": "common-cell transport-series start", "display_name": "LSZC｜NEP89共通セル輸送系列の開始構造", "report_figures": ["18_LSZC_transport_comparison", "19_LSZC_partial_RDF", "20_LSZC_coordination_mobility", "27_LSZC_PDF_and_Zr_coordination"]}),
+    ("amorphous/Li3PS4", "construction_initial", "materials/candidates/Li3PS4_glass/input/initial.cif", {"material": "Li3PS4", "role": "glass construction input", "display_name": "Li₃PS₄｜512原子｜ガラス構造の構築入力", "report_figures": ["05_Li3PS4_lithium_MSD", "07_Li3PS4_local_structure"]}),
+    ("amorphous/Li3PS4", "analysis_start", "results/amorphous_review_20260915/source/Li3PS4_R1_transport/300K/production/model.xyz", {"material": "Li3PS4", "role": "R1 transport-series start", "display_name": "Li₃PS₄｜NEP89輸送系列の開始構造", "report_figures": ["05_Li3PS4_lithium_MSD", "06_Li3PS4_diffusion_framework_MSD", "07_Li3PS4_local_structure", "28_Li3PS4_dynamic_heterogeneity"]}),
+    ("amorphous/LiPON", "construction_initial", "materials/candidates/LiPON/input/initial.cif", {"material": "LiPON", "role": "Preparation-B construction input", "display_name": "LiPON｜124原子｜Preparation B構築入力", "report_figures": ["21_LiPON_glass_structure", "22_LiPON_preparation_RDF", "08_LiPON_nitrogen_distance"]}),
+    ("amorphous/LiPON", "analysis_start", "results/amorphous_review_20260915/source/LiPON_transport/bulk_transport_600K_8679521/production/model.xyz", {"material": "LiPON", "role": "transport-series start", "display_name": "LiPON｜NEP89輸送系列の開始構造", "report_figures": ["23_LiPON_lithium_MSD", "24_LiPON_transport_comparison", "25_LiPON_temperature_RDF"]}),
 ]
 
 
@@ -249,10 +249,15 @@ def trajectory_specs() -> list[dict]:
         "Li3PS4": "Li₃PS₄",
         "LiPON": "LiPON",
     }
+    display_purpose = {
+        "production": "production計算",
+        "NVT production": "NVT production計算",
+        "NPT equilibration and volume response": "NPT平衡化・体積応答",
+    }
 
     def add(identifier, directory, source, stem, material, model, temperature,
             duration, purpose, fmt="extxyz", target=101, type_symbols=None):
-        display_name = f"{display_material[material]} — {model} — {temperature} K — {purpose}"
+        display_name = f"{display_material[material]}｜{model}｜{temperature} K｜{display_purpose.get(purpose, purpose)}"
         report_figures = report_figures_for(identifier)
         specs.append({
             "id": identifier,
@@ -273,46 +278,78 @@ def trajectory_specs() -> list[dict]:
                          "report_figures": "; ".join(report_figures)},
         })
 
-    # Crystalline benchmark trajectories displayed in the report.
+    # Include every available trajectory for each benchmark condition.
     lyc = {1: "Li", 2: "Y", 3: "Cl"}
     lnco = {1: "Li", 2: "Nb", 3: "O", 4: "Cl"}
-    add("Li3YCl6_MACE_600K", "crystalline/Li3YCl6", "runs/md/mace_mpa0_medium/Li3YCl6_03_2x2x2/600K/replica_3/8477947.9_20260825_003119/trajectory.lammpstrj", "MACE_600K_representative", "Li3YCl6", "MACE-MPA-0", 600, 0.1, "production", "lammps-dump-text", type_symbols=lyc)
-    add("Li3YCl6_SevenNet_600K", "crystalline/Li3YCl6", "runs/md/sevennet_nano_55/Li3YCl6_03_2x2x2/600K/replica_2/8477949.8_20260824_185237/trajectory.lammpstrj", "SevenNet_600K_representative", "Li3YCl6", "SevenNet-nano", 600, 0.1, "production", "lammps-dump-text", type_symbols=lyc)
-    add("Li3YCl6_M3GNet_600K", "crystalline/Li3YCl6", "runs/md/m3gnet_matgl_gpu/Li3YCl6_03_2x2x2/600K/replica_2/8486065.2_20260825_050347/trajectory.lammpstrj", "M3GNet_600K_representative", "Li3YCl6", "M3GNet GPU", 600, 0.1, "production", "lammps-dump-text", type_symbols=lyc)
-    add("LiNbOCl4_MACE_800K", "crystalline/LiNbOCl4", "runs/md/mace_mpa0_medium/LiNbOCl4_2x2x3/800K/replica_2/8487891.5_20260825_134353/trajectory.lammpstrj", "MACE_800K_representative", "LiNbOCl4", "MACE-MPA-0", 800, 0.1, "production", "lammps-dump-text", type_symbols=lnco)
-    add("LiNbOCl4_SevenNet_800K", "crystalline/LiNbOCl4", "runs/md/sevennet_nano_55/LiNbOCl4_2x2x3/800K/replica_3/8487892.6_20260825_113103/trajectory.lammpstrj", "SevenNet_800K_representative", "LiNbOCl4", "SevenNet-nano", 800, 0.1, "production", "lammps-dump-text", type_symbols=lnco)
-    add("LiNbOCl4_M3GNet_800K", "crystalline/LiNbOCl4", "runs/md/m3gnet_matgl_gpu/LiNbOCl4_2x2x3/800K/replica_2/8498445.2_20260826_074333/trajectory.lammpstrj", "M3GNet_800K_representative", "LiNbOCl4", "M3GNet GPU", 800, 0.1, "production", "lammps-dump-text", type_symbols=lnco)
+    crystal_models = (
+        ("mace_mpa0_medium", "MACE-MPA-0", "MACE"),
+        ("sevennet_nano_55", "SevenNet-nano", "SevenNet"),
+        ("m3gnet_matgl_gpu", "M3GNet GPU", "M3GNet"),
+    )
+    for formula, temp, material, folder, type_symbols in (
+        ("Li3YCl6_03_2x2x2", 600, "Li3YCl6", "crystalline/Li3YCl6", lyc),
+        ("LiNbOCl4_2x2x3", 800, "LiNbOCl4", "crystalline/LiNbOCl4", lnco),
+    ):
+        for model_dir, model_name, short_name in crystal_models:
+            root = ROOT / "runs/md" / model_dir / formula / f"{temp}K"
+            for source_path in sorted(root.glob("replica_*/*/trajectory.lammpstrj")):
+                replica = source_path.parents[1].name
+                relative = source_path.relative_to(ROOT).as_posix()
+                identifier = f"{material}_{short_name}_{temp}K_{replica}"
+                add(identifier, folder, relative,
+                    f"{short_name}_{temp}K_{replica}_trajectory_excerpt", material,
+                    model_name, temp, 0.1, "production", "lammps-dump-text",
+                    type_symbols=type_symbols)
 
     # The common 600 K MACE/NEP benchmark: NPT volume response and NVT motion.
     add("benchmark_MACE_600K_NPT", "amorphous/MACE_NEP_benchmark", "results/LZOC/analysis_20260912/source/mace/600K_R1/equilibration/trajectory.lammpstrj", "MACE_600K_NPT_volume", "Li1.75ZrCl4.75O0.5", "MACE-MPA-0", 600, 0.1, "NPT equilibration and volume response", "lammps-dump-text")
     add("benchmark_NEP89_600K_NPT", "amorphous/MACE_NEP_benchmark", "results/LZOC/analysis_20260912/source/nep89/equilibration/dump.xyz", "NEP89_600K_NPT_volume", "Li1.75ZrCl4.75O0.5", "NEP89", 600, 0.1, "NPT equilibration and volume response")
-    add("benchmark_MACE_600K_NVT", "amorphous/MACE_NEP_benchmark", "results/LZOC/analysis_20260912/source/mace/600K_R1/production/trajectory.lammpstrj", "MACE_600K_NVT_representative", "Li1.75ZrCl4.75O0.5", "MACE-MPA-0", 600, 0.1, "NVT production", "lammps-dump-text")
-    add("benchmark_NEP89_600K_NVT", "amorphous/MACE_NEP_benchmark", "results/LZOC/analysis_20260912/source/nep89/production/dump.xyz", "NEP89_600K_NVT_representative", "Li1.75ZrCl4.75O0.5", "NEP89", 600, 0.1, "NVT production")
+    add("benchmark_MACE_600K_NVT_R1", "amorphous/MACE_NEP_benchmark", "results/LZOC/analysis_20260912/source/mace/600K_R1/production/trajectory.lammpstrj", "MACE_600K_NVT_R1_trajectory_excerpt", "Li1.75ZrCl4.75O0.5", "MACE-MPA-0", 600, 0.1, "NVT production", "lammps-dump-text")
+    add("benchmark_NEP89_600K_NVT_R1", "amorphous/MACE_NEP_benchmark", "results/LZOC/analysis_20260912/source/nep89/production/dump.xyz", "NEP89_600K_NVT_R1_trajectory_excerpt", "Li1.75ZrCl4.75O0.5", "NEP89", 600, 0.1, "NVT production")
 
-    lzoc = {
-        340: "results/amorphous_review_20260915/source/LZOC_repeats/seed300_340K_R1_8677221/production/dump.xyz",
-        360: "results/amorphous_review_20260915/source/LZOC300/nhc300_360K_8676684/dump.xyz",
-        380: "results/amorphous_review_20260915/source/LZOC300/nhc300_380K_8676684/dump.xyz",
-    }
-    for temperature, source in lzoc.items():
-        add(f"LZOC_{temperature}K", "amorphous/LZOC", source, f"NEP89_{temperature}K_representative", "Li1.75ZrCl4.75O0.5", "NEP89", temperature, 0.1, "NVT production")
+    review = ROOT / "results/amorphous_review_20260915/source"
+    lzoc_sources = sorted((review / "LZOC_repeats").glob("*/production/dump.xyz"))
+    lzoc_sources += [review / f"LZOC300/nhc300_{temperature}K_8676684/dump.xyz"
+                     for temperature in (340, 360, 380)]
+    for source_path in lzoc_sources:
+        if not source_path.exists():
+            continue
+        match = re.search(r"(\d+)K(?:_R(\d+))?", str(source_path))
+        if not match:
+            raise ValueError(f"cannot identify LZOC temperature/repeat from {source_path}")
+        temperature = int(match.group(1))
+        replica = f"R{match.group(2)}" if match.group(2) else "baseline"
+        relative = source_path.relative_to(ROOT).as_posix()
+        add(f"LZOC_{temperature}K_{replica}", "amorphous/LZOC", relative,
+            f"NEP89_{temperature}K_{replica}_trajectory_excerpt", "Li1.75ZrCl4.75O0.5",
+            "NEP89", temperature, 0.1, "NVT production")
 
-    lszc_repeats = {320: 2, 330: 2, 340: 2, 350: 1}
-    for temperature, repeat in lszc_repeats.items():
-        source = f"results/amorphous_review_20260915/source/LSZC_matched4t/R{repeat}_{temperature}K/production/dump.xyz"
-        add(f"LSZC_{temperature}K", "amorphous/LSZC", source, f"NEP89_{temperature}K_representative", "0.5Li2SO4-ZrCl4", "NEP89", temperature, 0.1, "NVT production")
+    for source_path in sorted((review / "LSZC_matched4t").glob("R*_*K/production/dump.xyz")):
+        repeat_dir = source_path.parents[1].name
+        replica, temp_label = repeat_dir.split("_")
+        temperature = int(temp_label.removesuffix("K"))
+        add(f"LSZC_{temperature}K_{replica}", "amorphous/LSZC",
+            source_path.relative_to(ROOT).as_posix(),
+            f"NEP89_{temperature}K_{replica}_trajectory_excerpt", "0.5Li2SO4-ZrCl4",
+            "NEP89", temperature, 0.1, "NVT production")
 
     for temperature in (300, 500, 700, 900):
         source = f"results/amorphous_review_20260915/source/Li3PS4_R1_transport/{temperature}K/production/dump.xyz"
-        add(f"Li3PS4_{temperature}K", "amorphous/Li3PS4", source, f"NEP89_{temperature}K_representative", "Li3PS4", "NEP89", temperature, 0.1, "NVT production")
+        add(f"Li3PS4_{temperature}K_R1", "amorphous/Li3PS4", source, f"NEP89_{temperature}K_R1_trajectory_excerpt", "Li3PS4", "NEP89", temperature, 0.1, "NVT production")
 
-    lipon_repeats = {600: 3, 900: 1, 1200: 2, 1500: 2}
-    for temperature, repeat in lipon_repeats.items():
-        if repeat == 1:
-            source = f"results/amorphous_review_20260915/source/LiPON_transport/bulk_transport_{temperature}K_8679521/production/dump.xyz"
-        else:
-            source = f"results/amorphous_review_20260915/source/LiPON_transport_repeats/bulk_transport_{temperature}K_R{repeat}_8680013/production/dump.xyz"
-        add(f"LiPON_{temperature}K", "amorphous/LiPON", source, f"NEP89_{temperature}K_representative", "LiPON", "NEP89", temperature, 0.1, "NVT production")
+    lipon_roots = (review / "LiPON_transport", review / "LiPON_transport_repeats")
+    for source_path in sorted(path for folder in lipon_roots
+                              for path in folder.glob("*/production/dump.xyz")):
+        folder_name = source_path.parents[1].name
+        match = re.search(r"(\d+)K(?:_R(\d+))?", folder_name)
+        if not match:
+            continue
+        temperature = int(match.group(1))
+        replica = f"R{match.group(2) or 1}"
+        add(f"LiPON_{temperature}K_{replica}", "amorphous/LiPON",
+            source_path.relative_to(ROOT).as_posix(),
+            f"NEP89_{temperature}K_{replica}_trajectory_excerpt", "LiPON", "NEP89",
+            temperature, 0.1, "NVT production")
     return specs
 
 
@@ -324,51 +361,45 @@ def figure_links(names: list[str]) -> str:
 
 def render_readme(manifest: dict) -> str:
     lines = [
-        "# Structures and representative trajectories",
+        "# 原子構造と軌跡抜粋",
         "",
-        "This directory links the material-review conclusions to inspectable atomic structures and trajectories. The XYZ trajectories are uniformly sampled exports for visualization and provenance; all numerical analyses used the complete source trajectories listed in `manifest.json`.",
+        "本ディレクトリは材料レビューと、確認可能な初期構造・完了済み全軌跡の抜粋を対応付けます。XYZは可視化と出典確認のため、各元軌跡から時間軸に沿って等間隔に抽出したものです。MSD、拡散係数、RDF、配位数、熱力学量の定量解析では、`manifest.json` に記載した完全な元軌跡を使用します。",
         "",
-        "本目录将综述中的主要结论与可检查的初始结构、代表轨迹对应起来。XYZ 为等时间间隔抽帧后的展示与溯源文件；MSD、扩散系数、RDF、配位及热力学分析仍使用 `manifest.json` 中记录的完整原始轨迹。",
+        "## 収録内容",
         "",
-        "## Contents",
+        "各項目には材料・モデル・温度・計算段階を記載しています。extended XYZのヘッダーにも `display_name` と対応図を埋め込んでいるため、単独でダウンロードした後も識別できます。",
         "",
-        "Each row has a human-readable name and the report figure(s) it supports. The same `display_name` and `report_figures` fields are embedded in every extended-XYZ header, so a downloaded file remains identifiable outside this folder.",
-        "",
-        "每一行都给出可直接识别的完整名称及其对应报告图。每个 extended XYZ 的文件头也写入相同的 `display_name` 与 `report_figures`，因此下载后脱离本目录仍可辨认。",
-        "",
-        "|Name / 名称|Evidence|Temperature (K)|Related report figures / 对应图|File|",
+        "|名称|種別|温度 (K)|対応図|ファイル|",
         "|---|---|---:|---|---|",
     ]
     for item in manifest.get("structures", []):
         path = f"{item['directory']}/{item['file']}"
         lines.append(
-            f"|{item['display_name']}|Initial/analysis structure|—|{figure_links(item['report_figures'])}|[Open XYZ / 打开 XYZ]({path})|"
+            f"|{item['display_name']}|初期・解析構造|—|{figure_links(item['report_figures'])}|[XYZを開く]({path})|"
         )
     for item in manifest.get("trajectories", []):
         metadata = item["metadata"]
         links = ", ".join(
-            f"[Open XYZ / 打开 XYZ]({item['directory']}/{chunk['file']})" for chunk in item["chunks"]
+            f"[XYZを開く]({item['directory']}/{chunk['file']})" for chunk in item["chunks"]
         )
         lines.append(
-            f"|{item['display_name']}|Representative trajectory|{metadata['temperature_K']}|{figure_links(item['report_figures'])}|{links}|"
+            f"|{item['display_name']}|軌跡抜粋|{metadata['temperature_K']}|{figure_links(item['report_figures'])}|{links}|"
         )
     lines += [
         "",
-        "## Interpretation",
+        "## データの見方",
         "",
-        "- `source_frame_indices` and `time_ps` in `manifest.json` give the exact mapping from every exported frame to its complete source trajectory.",
-        "- Every XYZ retains the periodic cell and includes material, model, temperature, phase, source-frame index and relative time in its extended-XYZ metadata.",
-        "- SHA-256 values cover both the complete local source and each exported XYZ file.",
-        "- These exports are evidence and visualization files, not replacements for the full trajectories used in quantitative analysis.",
+        "- `manifest.json` の `source_frame_indices` と `time_ps` から、抜粋フレームと元軌跡の対応を確認できます。",
+        "- 各XYZには周期セル、材料、モデル、温度、計算段階、元フレーム番号および相対時刻を保存しています。",
+        "- SHA-256は元軌跡と出力XYZの双方について記録しています。",
+        "- これらは根拠確認・可視化用の抜粋であり、定量解析に使った全軌跡の代替ではありません。",
         "",
     ]
     return "\n".join(lines)
 
 
 def build() -> dict:
-    if OUTPUT.exists():
-        shutil.rmtree(OUTPUT)
-    OUTPUT.mkdir(parents=True)
+    OUTPUT.mkdir(parents=True, exist_ok=True)
     structures = []
     for directory, name, source_text, metadata in STRUCTURES:
         source = ROOT / source_text
@@ -378,8 +409,8 @@ def build() -> dict:
     trajectories = [export_trajectory(spec) for spec in trajectory_specs()]
     manifest = {
         "schema_version": 1,
-        "description": "GitHub-safe structures and uniformly sampled trajectory evidence for the materials review.",
-        "analysis_note": "Complete source trajectories, not these sampled exports, were used for MSD, diffusion, RDF, coordination and thermodynamic calculations.",
+        "description": "材料レビューの構造根拠と、利用可能な全完了軌跡から等間隔抽出した可視化用データ。",
+        "analysis_note": "MSD、拡散係数、RDF、配位数、熱力学量の定量解析には、抜粋ではなくmanifest記載の完全な元軌跡を使用。",
         "structures": structures,
         "trajectories": trajectories,
     }

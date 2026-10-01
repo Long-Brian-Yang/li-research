@@ -49,49 +49,6 @@ def write_csv(path, header, rows):
         w.writerows(rows)
 
 
-def cross_material_source_tables():
-    lzoc = json.loads((BASE / "seed_repeats/lzoc_report_selection.json").read_text())
-    # This file stores the three displayed temperatures as a list in current reports.
-    if isinstance(lzoc, dict):
-        candidates = lzoc.get("selected", lzoc.get("selection", lzoc.get("records", [])))
-    else:
-        candidates = lzoc
-    lzoc_rows = []
-    for row in candidates:
-        t = int(row.get("T_K", row.get("temperature_K", row.get("temperature", 0))))
-        model = row.get("D_cm2_s", row.get("D", row.get("selected_D_cm2_s")))
-        ref = row.get("AIMD_D_cm2_s", row.get("reference_D_cm2_s", row.get("target_D_cm2_s")))
-        if t in (340, 360, 380) and model and ref:
-            lzoc_rows.append(("LZOC", "D", t, float(model), float(ref)))
-    if len(lzoc_rows) != 3:
-        lzoc_rows = [
-            ("LZOC", "D", 340, 7.298506902235783e-7, 2.09e-6),
-            ("LZOC", "D", 360, 3.807975483226802e-7, 1.77e-6),
-            ("LZOC", "D", 380, 1.0282976349171087e-6, 3.50e-6),
-        ]
-
-    lszc = json.loads((BASE / "LSZC_matched4t_analysis/target_informed_summary.json").read_text())
-    lszc_rows = [("LSZC", "conductivity", int(r["T_K"]), r["sigma_NE_mS_cm"], r["paper_MACE_sigma_mS_cm"])
-                 for r in lszc["selected"]]
-    lps = json.loads((BASE / "Li3PS4_R1_transport/plot_summary.json").read_text())
-    lps_rows = [("Li3PS4", "D", int(t), model, ref) for t, model, ref, _ in lps["reference_comparison"]]
-    lipon = json.loads((BASE / "LiPON_transport/analysis.json").read_text())
-    lipon_rows = [
-        ("LiPON", "D", 600, lipon["600"]["primary_fit"]["D_cm2_s"], 1.25e-10),
-        ("LiPON", "D", 1500, lipon["1500"]["primary_fit"]["D_cm2_s"], 7.50e-9),
-    ]
-    rows = lzoc_rows + lszc_rows + lps_rows + lipon_rows
-    write_csv(OUT / "cross_material_transport_ratios.csv",
-              ["material", "observable", "T_K", "NEP89", "literature", "NEP89_to_literature"],
-              [(*r, r[3] / r[4]) for r in rows])
-    ea_rows = [
-        ("LSZC", 0.3508458941, 0.330, "experiment"),
-        ("Li3PS4", 0.4189, 0.470, "Chen DeePMD"),
-        ("LiPON", 0.428, 0.550, "experiment"),
-    ]
-    write_csv(OUT / "cross_material_activation_energies.csv",
-              ["material", "NEP89_Ea_eV", "literature_Ea_eV", "reference_type"], ea_rows)
-
 def workbook_xy(ws, xcol, ycol, start=4):
     rows = []
     for row in ws.iter_rows(min_row=start, values_only=True):
@@ -122,37 +79,41 @@ def lszc_pdf_and_coordination():
     denom = sum(c[k] * z[k] for k in species) ** 2
     weights = {(a, b): ((1 if a == b else 2) * c[a] * c[b] * z[a] * z[b] / denom) for a, b, _ in pairs}
     edges = np.arange(0, 8.0001, 0.04)
-    primary = {320: 2, 330: 2, 340: 2, 350: 1}
+    temperatures = (320, 330, 340, 350)
+    repeats = (1, 2)
     coord = []
     proxy = []
-    for T, rep in primary.items():
-        dump = BASE / f"source/LSZC_matched4t/R{rep}_{T}K/production/dump.xyz"
-        rdf_frames = []
-        for idx, atom in enumerate(iread(dump)):
-            if idx < 999 or idx % 10:
-                continue
-            symbols = np.asarray(atom.get_chemical_symbols())
-            assert Counter(symbols) == Counter(count)
-            d = atom.get_all_distances(mic=True)
-            zro = (d[np.ix_(symbols == "Zr", symbols == "O")] < 2.6).sum(1)
-            zrcl = (d[np.ix_(symbols == "Zr", symbols == "Cl")] < 3.2).sum(1)
-            coord.extend((T, "Zr-O", int(x)) for x in zro)
-            coord.extend((T, "Zr-Cl", int(x)) for x in zrcl)
+    rdf_by_repeat = []
+    for T in temperatures:
+        for rep in repeats:
+            dump = BASE / f"source/LSZC_matched4t/R{rep}_{T}K/production/dump.xyz"
+            rdf_frames = []
+            for idx, atom in enumerate(iread(dump)):
+                if idx < 999 or idx % 10:
+                    continue
+                symbols = np.asarray(atom.get_chemical_symbols())
+                assert Counter(symbols) == Counter(count)
+                d = atom.get_all_distances(mic=True)
+                zro = (d[np.ix_(symbols == "Zr", symbols == "O")] < 2.6).sum(1)
+                zrcl = (d[np.ix_(symbols == "Zr", symbols == "Cl")] < 3.2).sum(1)
+                coord.extend((T, "Zr-O", int(x)) for x in zro)
+                coord.extend((T, "Zr-Cl", int(x)) for x in zrcl)
+                if T == 320:
+                    g, _, _ = frame_metrics(atom, pairs, edges)
+                    rdf_frames.append(g)
             if T == 320:
-                g, _, _ = frame_metrics(atom, pairs, edges)
-                rdf_frames.append(g)
-        if T == 320:
-            g = np.mean(rdf_frames, axis=0)
-            total = np.zeros(g.shape[1])
-            for row, (a, b, _) in zip(g, pairs):
-                total += weights[(a, b)] * row
-            r = (edges[:-1] + edges[1:]) / 2
-            rho = n / atom.get_volume()
-            gx = 4 * np.pi * rho * r * (total - 1)
-            gx /= np.max(np.abs(gx[(r >= 1) & (r <= 8)]))
-            proxy = np.c_[r, gx]
+                rdf_by_repeat.append(np.mean(rdf_frames, axis=0))
+    g = np.mean(rdf_by_repeat, axis=0)
+    total = np.zeros(g.shape[1])
+    for row, (a, b, _) in zip(g, pairs):
+        total += weights[(a, b)] * row
+    r = (edges[:-1] + edges[1:]) / 2
+    rho = n / atom.get_volume()
+    gx = 4 * np.pi * rho * r * (total - 1)
+    gx /= np.max(np.abs(gx[(r >= 1) & (r <= 8)]))
+    proxy = np.c_[r, gx]
     coord_summary = []
-    for T in primary:
+    for T in temperatures:
         for pair in ("Zr-O", "Zr-Cl"):
             vals = np.asarray([x[2] for x in coord if x[0] == T and x[1] == pair])
             for cn in np.unique(vals):
@@ -161,7 +122,7 @@ def lszc_pdf_and_coordination():
     write_csv(OUT / "LSZC_Zr_coordination_distribution.csv",
               ["T_K", "pair", "coordination_number", "count", "probability"], coord_summary)
     mean_coordination = []
-    for T in primary:
+    for T in temperatures:
         for pair in ("Zr-O", "Zr-Cl"):
             vals = np.asarray([x[2] for x in coord if x[0] == T and x[1] == pair])
             mean_coordination.append((T, pair, float(np.mean(vals))))
@@ -175,7 +136,7 @@ def lszc_pdf_and_coordination():
     axes[0].plot(proxy[:, 0], proxy[:, 1], color="#31688e", label="NEP89 proxy")
     axes[0].set(title="Synchrotron PDF correspondence", xlabel="r (Å)", ylabel="Normalized G(r)", xlim=(0.5, 8))
     axes[0].legend(loc="upper right", fontsize=11)
-    temperatures = np.asarray(sorted(primary))
+    temperatures = np.asarray(temperatures, dtype=float)
     for ax, pair, ref, ylim in zip(
         axes[1:],
         ("Zr-O", "Zr-Cl"),
@@ -254,7 +215,6 @@ def refresh_manifest():
 
 
 if __name__ == "__main__":
-    cross_material_source_tables()
     lszc_pdf_and_coordination()
     lips_dynamic_figure()
     refresh_manifest()

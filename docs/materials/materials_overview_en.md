@@ -6,7 +6,7 @@ Updated 17 September 2026. [日本語](materials_overview_ja.md)
 
 - Moving the original M3GNet–LAMMPS workflow from CPU to one H100 GPU increased throughput from 3.285 to 56.621 steps/s (**17.2×**), making long ML-driven MD practical.
 - NEP89/GPUMD reduced the measured 600 K production time from 189.93 min with MACE/LAMMPS to 6.11 min (**31.1×**). This supports its use for rapid screening; accuracy is evaluated separately against material-specific evidence.
-- Among the amorphous systems, LSZC shows the strongest quantitative agreement: NEP89 gives Eₐ = 0.351 eV versus the experimental 0.330 eV while retaining sulfate units. LZOC reproduces the AIMD temperature response but underestimates the diffusion scale; Li₃PS₄ and LiPON reproduce thermally activated motion but overestimate absolute diffusion.
+- The latest all-repeat analysis finds substantial velocity-repeat dispersion in LSZC; the descriptive regression of per-temperature means gives $`E_a=0.104`$ eV ($`R^2=0.067`$), not a stable Arrhenius trend. The earlier single-series claim of close experimental agreement is therefore removed from the main conclusion.
 - Recommended company use: apply general NEP89 to structure generation, long-trajectory screening and relative trend analysis; require material-specific training or calibration before using absolute conductivity as a predictive decision metric.
 
 ## Contents
@@ -464,20 +464,20 @@ After the recorded 300–400 K conditioning stages summarized in the preparation
 
 ![LSZC lithium transport and literature comparison](figures/18_LSZC_transport_comparison.png)
 
-The upper row and lower-left panel show the complete 0–300 ps Li MSD at each temperature. The lower-centre panel compares conditional Nernst–Einstein conductivity with the published tuned-MACE calculation. The lower-right panel includes all three Arrhenius trends: NEP89, the paper's tuned-MACE source points and experiment. Regression of the four tuned-MACE points gives $`E_a=0.370`$ eV ($`R^2=0.9863`$); this is a fit performed here on the published source data, not a separately reported experimental value. The experimental squares are the 303–353 K source points from Supplementary Fig. 3, and their grey dashed regression gives $`E_a=0.330`$ eV. Fit intervals are not drawn over the MSD curves.
+The upper row and lower-left panel show the complete 0–300 ps Li MSD from both velocity repeats at each temperature. The lower-centre panel compares the two-repeat mean and sample SD of conditional Nernst–Einstein conductivity with the published tuned-MACE calculation and experimental benchmark. Regression of the four tuned-MACE points gives $`E_a=0.370`$ eV ($`R^2=0.9863`$); this is a fit performed here on published source data. The experimental squares are the 303–353 K source points from Supplementary Fig. 3, and their grey dashed regression gives $`E_a=0.330`$ eV. Fit intervals are not drawn over MSD curves.
 
-|T (K)|D_app (cm²/s)|Conditional σ_NE (mS/cm)|Paper tuned-MACE σ (mS/cm)|R²|α|
-|---:|---:|---:|---:|---:|---:|
-|320|1.396×10⁻⁷|3.189|2.987|0.9919|0.143|
-|330|1.785×10⁻⁷|3.954|4.086|0.9773|0.142|
-|340|3.129×10⁻⁷|6.729|6.624|0.9975|0.240|
-|350|3.889×10⁻⁷|8.124|8.246|0.9745|0.262|
+|T (K)|All-repeat mean D_app ± sample SD (cm²/s)|All-repeat mean σ_NE ± sample SD (mS/cm)|Paper tuned-MACE σ (mS/cm)|
+|---:|---:|---:|---:|
+|320|(1.333 ± 1.608)×10⁻⁷|3.045 ± 3.673|2.987|
+|330|(5.838 ± 1.313)×10⁻⁸|1.293 ± 0.291|4.086|
+|340|(2.131 ± 0.045)×10⁻⁷|4.581 ± 0.096|6.624|
+|350|(1.247 ± 1.505)×10⁻⁷|2.605 ± 3.143|8.246|
 
-Using a common analysis across the four temperatures gives **E_a=0.351 eV with Arrhenius R²=0.9679**, close to the experimental value of 0.33 eV. Although the absolute conductivities differ slightly, both the activation energy and the increase in transport with temperature reproduce the principal literature trend.
+The regression of the per-temperature means from both repeats gives a descriptive **E_a=0.104 eV, R²=0.067**; the mean series is not monotonic. Repeat-to-repeat SD at 320 and 350 K is comparable to or larger than the mean, so the current data do not establish reproduction of the experimental 0.33 eV. This is the result from all repeats under one common method, not a value to improve by trajectory selection.
 
 ![LSZC Arrhenius analysis of lithium-ion conductivity](figures/30_LSZC_Arrhenius_comparison.png)
 
-Using the same presentation as the crystalline benchmarks places NEP89, the paper's tuned MACE result and experiment on one $`\ln(\sigma T)`$ axis. Their activation energies are 0.351, 0.370 and 0.330 eV, respectively; NEP89 differs from experiment by 0.021 eV.
+Using the same $`\ln(\sigma T)`$ axis as the crystalline benchmarks, the figure shows all-repeat mean NEP89 data, the paper's tuned-MACE source points and experiment. The NEP89 regression is not treated as an established material constant because the repeats are dispersed and its temperature trend is weak.
 
 |Experimental source temperature (K, rounded)|σ (mS/cm)|
 |---:|---:|
@@ -712,18 +712,18 @@ The 1.6 Å line is a screening cutoff, not a universal bond criterion. The conta
 
 ### Bulk lithium transport in the LiPON glass
 
-The N–N-free LiPON glass was used for transport analysis. At each literature bulk temperature, the 250 K structure was heated under NPT for 10 ps, equilibrated for 50 ps at 1 bar, and propagated for 300 ps under fixed-cell NVT. The timestep was 0.5 fs and configurations were written every 0.1 ps. Three velocity repeats were available at each temperature, and the reported trajectory at each temperature satisfies the same linearity and stability criteria. The temperature points match Seth, while the potential and production length follow the present NEP89 workflow.
+At each literature bulk temperature, the 250 K structure was heated under NPT for 10 ps, equilibrated for 50 ps at 1 bar, and propagated for 300 ps under fixed-cell NVT. The timestep was 0.5 fs and configurations were written every 0.1 ps. All three velocity repeats at each temperature are included in transport and structure analyses. The temperature points match Seth, while the potential and production length follow the present NEP89 workflow.
 
 ![LiPON temperature-dependent lithium mean-squared displacement](figures/23_LiPON_lithium_MSD.png)
 
-All four complete 300 ps MSD curves increase with lag time. The common 20–100 ps definition gives $`D=8.55\times10^{-7}`$ cm²/s at 600 K. All curves are time-origin averages and no fit lines are overlaid. The reported analyses have $`R^2=0.9962`$–0.9999 and log–log exponents $`\alpha=0.83`$–0.98 under the same numerical criteria.
+All three 300 ps MSD trajectories per temperature are overlaid. Diffusion coefficients are computed for each repeat with the same 20–100 ps fit definition, then reported as mean and sample SD. Fit lines are not overlaid on the MSD plot.
 
-|T (K)|D (cm²/s)|MSD-fit R²|α|Conditional σ_NE (mS/cm)|Li MSD at 100 ps (Å²)|Largest P/O/N MSD at 100 ps (Å²)|
-|---:|---:|---:|---:|---:|---:|---:|
-|600|8.55×10⁻⁷|0.9962|0.828|104|5.49|0.36|
-|900|1.70×10⁻⁵|0.9973|0.917|1.31×10³|104.80|4.12|
-|1200|5.49×10⁻⁵|0.9999|0.984|3.12×10³|330.97|9.77|
-|1500|1.24×10⁻⁴|0.9998|0.958|5.05×10³|766.70|21.92|
+|T (K)|All-repeat mean D ± sample SD (cm²/s)|All-repeat mean σ_NE ± sample SD (mS/cm)|
+|---:|---:|---:|
+|600|(1.208 ± 0.325)×10⁻⁶|145.4 ± 39.1|
+|900|(2.199 ± 0.297)×10⁻⁵|1664 ± 317|
+|1200|(6.021 ± 0.939)×10⁻⁵|3316 ± 352|
+|1500|(1.383 ± 0.237)×10⁻⁴|5711 ± 590|
 
 The four-temperature NEP89 series gives an Arrhenius activation energy of **0.428 eV** ($`R^2=0.9975`$), still below the experimental thin-film value of approximately 0.55 eV. At 600 K, Seth reports $`1.25\times10^{-10}`$ cm²/s for melt-quenched LiPON, whereas NEP89 gives $`8.55\times10^{-7}`$ cm²/s—about $`6.84\times10^3`$ times higher. At 1500 K the corresponding values are approximately $`7.5\times10^{-9}`$ and $`1.24\times10^{-4}`$ cm²/s, a factor of $`1.65\times10^4`$. Extrapolation gives $`D(300\,\mathrm{K})=2.32\times10^{-10}`$ cm²/s, about 21.5 times Seth's reported $`1.08\times10^{-11}`$ cm²/s. The corresponding conditional Nernst–Einstein value is 0.0563 mS/cm, about 17.1 times the 0.0033 mS/cm experimental value. The systematic overestimation therefore remains. [Seth et al., 2025; DOI: 10.1021/acsmaterialsau.4c00117](https://doi.org/10.1021/acsmaterialsau.4c00117) [Hamon et al., 2006; DOI: 10.1016/j.ssi.2005.10.021](https://doi.org/10.1016/j.ssi.2005.10.021) [Bates et al., 1996; DOI: 10.1149/1.1837443](https://doi.org/10.1149/1.1837443)
 

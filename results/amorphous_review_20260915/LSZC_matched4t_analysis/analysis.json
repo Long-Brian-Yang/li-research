@@ -1,0 +1,168 @@
+{
+  "method": {
+    "replica_policy": "All completed repeats are included; no replica is selected or omitted.",
+    "repeats_per_temperature": [
+      1,
+      2
+    ],
+    "common_msd_fit_window_ps": [
+      20,
+      80
+    ],
+    "arrhenius_input": "Per-temperature arithmetic mean of conditional Nernst-Einstein conductivity."
+  },
+  "records": [
+    {
+      "T_K": 320,
+      "repeat": 1,
+      "lo_ps": 20,
+      "hi_ps": 80,
+      "D_cm2_s": 2.4697606831541377e-07,
+      "R2": 0.9985008252107781,
+      "alpha": 0.46456030879343685,
+      "sigma_NE_mS_cm": 5.642157706698701,
+      "paper_MACE_sigma_mS_cm": 2.987492130728437
+    },
+    {
+      "T_K": 330,
+      "repeat": 1,
+      "lo_ps": 20,
+      "hi_ps": 80,
+      "D_cm2_s": 4.9097584982979135e-08,
+      "R2": 0.925295664346525,
+      "alpha": 0.17084053104154315,
+      "sigma_NE_mS_cm": 1.0876433715252045,
+      "paper_MACE_sigma_mS_cm": 4.085984159122919
+    },
+    {
+      "T_K": 340,
+      "repeat": 1,
+      "lo_ps": 20,
+      "hi_ps": 80,
+      "D_cm2_s": 2.0989857970010606e-07,
+      "R2": 0.9923637942838759,
+      "alpha": 0.3410454855901372,
+      "sigma_NE_mS_cm": 4.5130579451365795,
+      "paper_MACE_sigma_mS_cm": 6.624332814607116
+    },
+    {
+      "T_K": 350,
+      "repeat": 1,
+      "lo_ps": 20,
+      "hi_ps": 80,
+      "D_cm2_s": 2.3112390072365297e-07,
+      "R2": 0.9989475126205756,
+      "alpha": 0.3970847606534163,
+      "sigma_NE_mS_cm": 4.827442849604903,
+      "paper_MACE_sigma_mS_cm": 8.246361916338557
+    },
+    {
+      "T_K": 320,
+      "repeat": 2,
+      "lo_ps": 20,
+      "hi_ps": 80,
+      "D_cm2_s": 1.9607075640449237e-08,
+      "R2": 0.7683029660754097,
+      "alpha": 0.07345533248413594,
+      "sigma_NE_mS_cm": 0.4479228035540027,
+      "paper_MACE_sigma_mS_cm": 2.987492130728437
+    },
+    {
+      "T_K": 330,
+      "repeat": 2,
+      "lo_ps": 20,
+      "hi_ps": 80,
+      "D_cm2_s": 6.766987120909734e-08,
+      "R2": 0.9816256778747137,
+      "alpha": 0.17085089112698765,
+      "sigma_NE_mS_cm": 1.499069392069986,
+      "paper_MACE_sigma_mS_cm": 4.085984159122919
+    },
+    {
+      "T_K": 340,
+      "repeat": 2,
+      "lo_ps": 20,
+      "hi_ps": 80,
+      "D_cm2_s": 2.1623351057924896e-07,
+      "R2": 0.998099914694727,
+      "alpha": 0.4200613852321066,
+      "sigma_NE_mS_cm": 4.649266156630222,
+      "paper_MACE_sigma_mS_cm": 6.624332814607116
+    },
+    {
+      "T_K": 350,
+      "repeat": 2,
+      "lo_ps": 20,
+      "hi_ps": 80,
+      "D_cm2_s": 1.8307525505891938e-08,
+      "R2": 0.8189153900392654,
+      "alpha": 0.05442147299058524,
+      "sigma_NE_mS_cm": 0.38238595325131974,
+      "paper_MACE_sigma_mS_cm": 8.246361916338557
+    }
+  ],
+  "temperature_summary": [
+    {
+      "T_K": 320,
+      "D_mean_cm2_s": 1.332915719779315e-07,
+      "D_sample_sd_cm2_s": 1.6077415655202187e-07,
+      "sigma_NE_mean_mS_cm": 3.0450402551263522,
+      "sigma_NE_sample_sd_mS_cm": 3.6728787230894664,
+      "paper_MACE_sigma_mS_cm": 2.987492130728437
+    },
+    {
+      "T_K": 330,
+      "D_mean_cm2_s": 5.838372809603824e-08,
+      "D_sample_sd_cm2_s": 1.3132589532625696e-08,
+      "sigma_NE_mean_mS_cm": 1.2933563817975953,
+      "sigma_NE_sample_sd_mS_cm": 0.2909221290838108,
+      "paper_MACE_sigma_mS_cm": 4.085984159122919
+    },
+    {
+      "T_K": 340,
+      "D_mean_cm2_s": 2.1306604513967752e-07,
+      "D_sample_sd_cm2_s": 4.4794725829900035e-09,
+      "sigma_NE_mean_mS_cm": 4.581162050883401,
+      "sigma_NE_sample_sd_mS_cm": 0.09631375000044573,
+      "paper_MACE_sigma_mS_cm": 6.624332814607116
+    },
+    {
+      "T_K": 350,
+      "D_mean_cm2_s": 1.2471571311477244e-07,
+      "D_sample_sd_cm2_s": 1.5048390206401955e-07,
+      "sigma_NE_mean_mS_cm": 2.6049144014281116,
+      "sigma_NE_sample_sd_mS_cm": 3.1431298741716476,
+      "paper_MACE_sigma_mS_cm": 8.246361916338557
+    }
+  ],
+  "Ea_mean_series_eV": 0.10375787061196731,
+  "Arrhenius_R2": 0.06712638063581035,
+  "paper_tuned_MACE_fit_Ea_eV": 0.369639762793766,
+  "paper_experimental_fit_Ea_eV": 0.3302269539605944,
+  "source_sha256": {
+    "results/amorphous_review_20260915/source/LSZC_matched4t/R1_320K/production/model.xyz": "48dadf9f9ce1c09b6984dfc559800a321b6ce42a63302cea8bd6de67edcf6e8b",
+    "results/amorphous_review_20260915/source/LSZC_matched4t/R1_320K/production/dump.xyz": "2b403427be65ef6c5006fd0d910a205e81eac6133514832b453d14ff3fa9ad82",
+    "results/amorphous_review_20260915/source/LSZC_matched4t/R1_320K/production/thermo.out": "e9a31abab935cae77cac2a9721579e14a7ef5d1d880b1a53e38434a05956be6f",
+    "results/amorphous_review_20260915/source/LSZC_matched4t/R1_330K/production/model.xyz": "23c659a6510ab759703032860b01c65f4c15ca40552cf41cea6f551ce547430d",
+    "results/amorphous_review_20260915/source/LSZC_matched4t/R1_330K/production/dump.xyz": "02ea8853b5e02fca3bf3159c02097c1372a92d5768ae895aa991e9282a7b33e1",
+    "results/amorphous_review_20260915/source/LSZC_matched4t/R1_330K/production/thermo.out": "4fbf2ba6cd80d53414b67dea2cd1c230ab4a81cda37fb8a294ce416866990fdd",
+    "results/amorphous_review_20260915/source/LSZC_matched4t/R1_340K/production/model.xyz": "c6e3ce4afe51e891895e856194f5795b9bd073ab70ef120cc4f17f836afc4bea",
+    "results/amorphous_review_20260915/source/LSZC_matched4t/R1_340K/production/dump.xyz": "59596f58a1be615ed1367c0a9c3313b457580441e84263f5a196c818d607e59d",
+    "results/amorphous_review_20260915/source/LSZC_matched4t/R1_340K/production/thermo.out": "30965c718be1ed63722dd8348b85bc2dab5eee23b94ae26ccddb52fd5bb3a238",
+    "results/amorphous_review_20260915/source/LSZC_matched4t/R1_350K/production/model.xyz": "a6b42e0f205152d96b5ce222580b06065a1c82fc758ec1f8f50539fb5ea71150",
+    "results/amorphous_review_20260915/source/LSZC_matched4t/R1_350K/production/dump.xyz": "203e3d40be897c7c52f5c677f3adbabcfb1e890f753fe26fc180e09a509d0c31",
+    "results/amorphous_review_20260915/source/LSZC_matched4t/R1_350K/production/thermo.out": "7acc81e8514ff7e7800a641a06ef0eb5b2d9dbc4adf36857cca9914ab91fb036",
+    "results/amorphous_review_20260915/source/LSZC_matched4t/R2_320K/production/model.xyz": "50c96c2a4cdf132a4f0fbb68cf788392efd9e02c5245c7f9d4d0a9dab2f4a8b0",
+    "results/amorphous_review_20260915/source/LSZC_matched4t/R2_320K/production/dump.xyz": "ad79b37224761de9f6508e0aa3380532767a9b62d168e21091efd760a3598f6e",
+    "results/amorphous_review_20260915/source/LSZC_matched4t/R2_320K/production/thermo.out": "c9a483bfd95296205fa6c22f3e908d90a0f8a5645838700239039755c4d11027",
+    "results/amorphous_review_20260915/source/LSZC_matched4t/R2_330K/production/model.xyz": "176b4517993ebffbe7e43a76e790f4536a2e30df942fae23f1e77a549261e390",
+    "results/amorphous_review_20260915/source/LSZC_matched4t/R2_330K/production/dump.xyz": "80d23b19b640ed06d2654bebf6a2d083861fcc75659c94b057e0d9227b37433b",
+    "results/amorphous_review_20260915/source/LSZC_matched4t/R2_330K/production/thermo.out": "fedaf323484485525b93606be334401924005ec8b083472ed2a73a6f9bacd9e4",
+    "results/amorphous_review_20260915/source/LSZC_matched4t/R2_340K/production/model.xyz": "9cfbbe760b42b3cdda5882b097e15b8c2164e58315e664f58a73b77a7b830a4e",
+    "results/amorphous_review_20260915/source/LSZC_matched4t/R2_340K/production/dump.xyz": "7ab092cb1a7aea0fba82d1ff00b63719a67615c3a115753d43c47e74915666a0",
+    "results/amorphous_review_20260915/source/LSZC_matched4t/R2_340K/production/thermo.out": "540d6b3c763da12dfac8114ff3425328e881541f7025e2f27d53e1f34dca94f1",
+    "results/amorphous_review_20260915/source/LSZC_matched4t/R2_350K/production/model.xyz": "842a39c66ad2929e41c3236cf350878f6116dd4ab7361b2eaf968bd20338ad14",
+    "results/amorphous_review_20260915/source/LSZC_matched4t/R2_350K/production/dump.xyz": "15d416266fab7a8c10860e8d4ab0cce0597e67691dbde7197c4cba6348ce84f8",
+    "results/amorphous_review_20260915/source/LSZC_matched4t/R2_350K/production/thermo.out": "22f3f67f2d4539aec31085aca38e1ada02ddb83e3902ae5d67fabb801ec19e84"
+  }
+}
