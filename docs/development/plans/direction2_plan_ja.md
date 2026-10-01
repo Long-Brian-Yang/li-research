@@ -365,6 +365,4 @@ sigma_collective_mS_cm | block_std | structure_status | confidence | source
 - [`hpc/tsubame_26icp/inputs/mace_mliap/`](../../../hpc/tsubame_26icp/inputs/mace_mliap/)
   — 維持対象の MACE ML-IAP input template
 - [`hpc/tsubame_26icp/`](../../../hpc/tsubame_26icp/) — TSUBAME job script
-- [`docs/literature/papers_zh.md`](../../literature/papers_zh.md) と
-  [`docs/literature/papers_ja.md`](../../literature/papers_ja.md) — 二言語の文献ノートと
-  DOI 付き実験 context
+- [`docs/literature/papers_ja.md`](../../literature/papers_ja.md) — DOI 付き実験 context と文献ノート

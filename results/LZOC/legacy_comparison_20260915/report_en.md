@@ -8,7 +8,7 @@
 
 ![Runtime](01_runtime.png)
 
-Left: actual scheduler job runtimes excluding queues for 600/700/800/900 K. Right: engine-reported 600 K production runtime for 200 ps, 400,000 steps, 0.5 fs. MACE/LAMMPS took 11,395.5 s; NEP89/GPUMD 366.428 s, a ratio of 31.10. Both requested gpu_1, but nodes, engines and preprocessing differ; this is not an isolated potential-kernel benchmark. The four-job sums are 18 h 25 min versus 34 min, not parallel elapsed time or points cost. [Timing provenance and job IDs](../../../docs/materials/LZOC/candidate3_mace_nep_comparison.md).
+Left: actual scheduler job runtimes excluding queues for 600/700/800/900 K. Right: engine-reported 600 K production runtime for 200 ps, 400,000 steps, 0.5 fs. MACE/LAMMPS took 11,395.5 s; NEP89/GPUMD 366.428 s, a ratio of 31.10. Both requested gpu_1, but nodes, engines and preprocessing differ; this is not an isolated potential-kernel benchmark. The four-job sums are 18 h 25 min versus 34 min, not parallel elapsed time or points cost. Timing definitions and source data are recorded in [`summary.json`](summary.json) and the Japanese [Material Review](../../../docs/materials/materials_overview_ja.md).
 
 ## 2. Density and thermodynamics at 600 K
 
@@ -63,4 +63,4 @@ NEP was faster and showed less expansion and weaker framework motion in this 600
 
 All four-temperature timing records are included. Structural/transport panels cover **600 K only**: NEP's later 700–900 K and extra NPT runs are not analysed in this package and have not been substituted with another route. The next stage, if desired, is the same source-verified analysis of those existing runs, not new MD.
 
-[Script](../../../scripts/structures/plot_legacy_lzoc_comparison.py), [summary and CSV input hashes](summary.json), [source audit](../analysis_20260912/README.md). Re-run with the existing Python/numpy/matplotlib environment from the repository root. Four figures exported as PNG/PDF/SVG with editable vector text. Data and scripts are committed; raw trajectories are retained separately and not uploaded in this commit.
+[Script](../../../scripts/structures/plot_legacy_lzoc_comparison.py), [summary and CSV input hashes](summary.json), [English Material Review, LZOC section](../../../docs/materials/materials_overview_en.md#2-lzoc-the-primary-aimd-comparison). Re-run with the existing Python/numpy/matplotlib environment from the repository root. Four figures exported as PNG/PDF/SVG with editable vector text. Data and scripts are committed; raw trajectories are retained separately and not uploaded in this commit.

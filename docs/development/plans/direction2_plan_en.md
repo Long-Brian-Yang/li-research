@@ -389,6 +389,5 @@ Every reported value must be tagged as `experimental`, `calculated`, or
 - [`hpc/tsubame_26icp/inputs/mace_mliap/`](../../../hpc/tsubame_26icp/inputs/mace_mliap/)
   — maintained MACE ML-IAP input templates;
 - [`hpc/tsubame_26icp/`](../../../hpc/tsubame_26icp/) — TSUBAME job scripts;
-- [`docs/literature/papers_zh.md`](../../literature/papers_zh.md) and
-  [`docs/literature/papers_ja.md`](../../literature/papers_ja.md) — bilingual
+- [`docs/literature/papers_ja.md`](../../literature/papers_ja.md) — Japanese
   literature notes and DOI-linked experimental context.

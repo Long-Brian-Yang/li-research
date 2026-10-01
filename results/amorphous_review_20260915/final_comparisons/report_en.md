@@ -105,7 +105,7 @@ The existing route follows selected 2000 K/10 ps melt and 250 K quench parameter
 
 ![LiPON contact](LiPON_NN_release.png)
 
-The minimum N–N separation stays between 1.270 and 1.347 Å in all 200 release frames. Pressure improves to 0.00614 GPa and density to 2.50908 g/cm³, but this does not remove the contact. The 1.6 Å line is an operational screening cutoff, not a universal chemical acceptance criterion. [Existing origin tracing](../LiPON/contact_origin.md) places its formation at 2.2–2.3 ps of the 2000 K hold.
+The minimum N–N separation stays between 1.270 and 1.347 Å in all 200 release frames. Pressure improves to 0.00614 GPa and density to 2.50908 g/cm³, but this does not remove the contact. The 1.6 Å line is an operational screening cutoff, not a universal chemical acceptance criterion. Trajectory tracking places its formation at 2.2–2.3 ps of the 2000 K hold.
 
 ![LiPON coordination](LiPON_coordination_distribution.png)
 

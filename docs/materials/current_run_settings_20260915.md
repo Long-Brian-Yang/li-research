@@ -1,13 +1,13 @@
-# Current simulation settings / 現在の計算設定 / 当前实际设置
+# Current simulation settings / 現在の計算設定
 
 Snapshot: 2026-09-15. This records executed/submitted settings, not a claim of strict literature reproduction or validated equilibrium.
 以下记录实际工程设置，不把任务正常结束等同于非晶形成或准确性验证。以下は実設定の記録であり、原論文の厳密再現や平衡化の認定ではない。
 
-## Latest status / 最新状态 / 最新状況
+## Latest status / 最新状況
 
-- **8674222: new LZOC, 300 K, 50 ps hold completed.** Remote `completed.txt` and `Finished running GPUMD.` confirmed during this update. The new hold trajectory has not yet been reanalysed for convergence. 新增50 ps正常结束，尚待追加段收敛分析。追加50 psは正常終了したが、収束解析は未実施。
-- LSZC: five finite geometric clusters extracted from author Data1; two copies each plus32Li give272atoms. Packing, relaxation and amorphous validation remain unfinished; no new packing MD job. 已完成团簇提取，未完成装箱。クラスター抽出済み、配置・緩和は未完了。
-- LiPON: N–N pair at row indices76/108 first crosses1.6Å between2.2–2.3ps of2000K hold and persists. Three diagnostic full-cell snapshots saved; DFT not run. 化学验证待完成。化学的妥当性の検証待ち。
+- **8674222: new LZOC, 300 K, 50 ps hold completed.** Remote `completed.txt` and `Finished running GPUMD.` confirmed during this update. The new hold trajectory has not yet been reanalysed for convergence. 追加50 psは正常終了したが、収束解析は未実施。
+- LSZC: five finite geometric clusters extracted from author Data1; two copies each plus 32 Li give 272 atoms. Packing, relaxation and amorphous validation remain unfinished; no new packing MD job. クラスター抽出済み。配置・緩和は未完了。
+- LiPON: N–N pair at row indices 76/108 first crosses 1.6 Å between 2.2–2.3 ps of the 2000 K hold and persists. Three diagnostic full-cell snapshots saved; DFT not run. 化学的妥当性の検証待ち。
 - Li3PS4: existing611ps preparation/validation retained; no new formal transport production or low-temperature DFT in this update.
 - Legacy LZOC candidate3: comparison only; no additional long run.
 
@@ -32,9 +32,9 @@ Snapshot: 2026-09-15. This records executed/submitted settings, not a claim of s
 
 ## Source and navigation
 
-- [中文总览](materials_overview_zh.md) / [日本語](materials_overview_ja.md) / [English](materials_overview_en.md): references and deviations.
-- [Diagnostics](../../results/amorphous_review_20260915/README.md): block statistics, RDF, coordination, snapshot provenance.
-- [Legacy MACE/NEP runtime comparison](LZOC/candidate3_mace_nep_comparison.md).
+- [日本語 Material Review](materials_overview_ja.md) / [English Material Review](materials_overview_en.md): references and deviations.
+- [日本語 all-material analysis](../../results/amorphous_review_20260915/analysis_complete/report_ja.md): block statistics, RDF, coordination, and snapshot interpretation.
+- [Legacy MACE/NEP runtime comparison](../../results/LZOC/legacy_comparison_20260915/report_ja.md).
 - [Latest submitted script](../../hpc/tsubame_26icp/production/lzoc192_hold300.sh).
 
 Raw trajectories, pretrained weights and publisher PDFs are excluded from this documentation commit. The scripts require the documented runtime and source data on TSUBAME/local storage; a source-code checkout alone is not a complete raw-data archive. Historical “not pushed” notes refer to their writing time, not the eventual synchronization status of this commit.

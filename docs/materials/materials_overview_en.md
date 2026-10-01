@@ -540,7 +540,6 @@ The structure analysis shows that sulfate units remain intact at all temperature
 <a id="lps"></a>
 ## 4. Li₃PS₄: a sulfide transferability comparison
 
-Supporting Li₃PS₄ settings, completed analyses and source provenance are retained in the [Li₃PS₄ technical record](Li3PS4/README.md).
 
 Li₃PS₄ is a methodological comparison beyond the oxychloride main line. The assessment asks whether local-structure agreement transfers to transport agreement in a sulfide glass. The following results distinguish these two levels of reproduction rather than treating a matching RDF peak as validation of conductivity.
 
@@ -1275,7 +1274,6 @@ The structure analysis shows that sulfate units remain intact at all temperature
 <a id="lps"></a>
 ## 4. Li₃PS₄: a sulfide transferability comparison
 
-Supporting Li₃PS₄ settings, completed analyses and source provenance are retained in the [Li₃PS₄ technical record](Li3PS4/README.md).
 
 Li₃PS₄ is a methodological comparison beyond the oxychloride main line. The assessment asks whether local-structure agreement transfers to transport agreement in a sulfide glass. The following results distinguish these two levels of reproduction rather than treating a matching RDF peak as validation of conductivity.
 
@@ -2172,7 +2170,6 @@ The structure analysis shows that sulfate units remain intact at all temperature
 <a id="lps"></a>
 ## 4. Li₃PS₄: a sulfide transferability comparison
 
-Supporting Li₃PS₄ settings, completed analyses and source provenance are retained in the [Li₃PS₄ technical record](Li3PS4/README.md).
 
 Li₃PS₄ is a methodological comparison beyond the oxychloride main line. The assessment asks whether local-structure agreement transfers to transport agreement in a sulfide glass. The following results distinguish these two levels of reproduction rather than treating a matching RDF peak as validation of conductivity.
 
@@ -2907,7 +2904,6 @@ The structure analysis shows that sulfate units remain intact at all temperature
 <a id="lps"></a>
 ## 4. Li₃PS₄: a sulfide transferability comparison
 
-Supporting Li₃PS₄ settings, completed analyses and source provenance are retained in the [Li₃PS₄ technical record](Li3PS4/README.md).
 
 Li₃PS₄ is a methodological comparison beyond the oxychloride main line. The assessment asks whether local-structure agreement transfers to transport agreement in a sulfide glass. The following results distinguish these two levels of reproduction rather than treating a matching RDF peak as validation of conductivity.
 

@@ -1,6 +1,6 @@
 # 進捗報告：非晶質 LZOC の MACE-MPA-0 MD 計算（600 K）
 
-> Historical record / 历史记录：保留记录当时的设置与判断，不作为实时任务状态。参见 [材料文档索引](README.md)。
+> Historical record: the settings and judgments below are a dated snapshot, not a live status report. See the Japanese [Material Review](../materials_overview_ja.md).
 
 報告日：2026年9月14日
 
@@ -114,8 +114,7 @@ Li だけでなく Zr、O、Cl も移動している。さらに Zr 自身の重
 
 ## データの参照先
 
-- [解析概要](../../../results/LZOC/analysis_20260912/README.md)
-- [体積・骨格の追加検証](../../../results/LZOC/analysis_20260912/expansion_framework_audit.md)
+- [現行 LZOC 文献比較](../materials_overview_ja.md)
 - ローカル解析データ（今回の文書整理ではアップロードしない）：プロジェクト直下の `results/LZOC/analysis_20260912/` にある `results.json`、`MACE_600K_msd.csv`、`MACE_600K_rdf.csv`。
 - 遠隔原データ：`/gs/fs/tgj-26ICP/uf03782/yang/li-research/runs/amorphous/LZOC/mace_mpa0/production_4T_8635176/600K_R1/`
 

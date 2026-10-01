@@ -8,7 +8,7 @@
 
 ![実行時間](01_runtime.png)
 
-左は600／700／800／900 Kの待ち時間を除くジョブ時間、右は600 Kで200 ps、400,000ステップ、0.5 fsの本計算時間。MACE/LAMMPSは11,395.5秒、NEP89/GPUMDは366.428秒で約31.10倍の差があった。四ジョブ合計は18時間25分と34分で、並列実行時の経過時間やpoints消費ではない。同じgpu_1区分だがノード、エンジン、前処理が異なり、ポテンシャル単独の厳密なベンチマークではない。[ジョブ番号・計時根拠](../../../docs/materials/LZOC/candidate3_mace_nep_comparison.md)。
+左は600／700／800／900 Kの待ち時間を除くジョブ時間、右は600 Kで200 ps、400,000ステップ、0.5 fsの本計算時間。MACE/LAMMPSは11,395.5秒、NEP89/GPUMDは366.428秒で約31.10倍の差があった。四ジョブ合計は18時間25分と34分で、並列実行時の経過時間やpoints消費ではない。同じgpu_1区分だがノード、エンジン、前処理が異なり、ポテンシャル単独の厳密なベンチマークではない。計時定義と数値 provenance は [`summary.json`](summary.json) と日本語 [Material Review](../../../docs/materials/materials_overview_ja.md) に記録する。
 
 ## 2. 600 Kの密度・熱力学量
 
@@ -63,4 +63,4 @@
 
 四温度の計時を含むが、構造・輸送の図は600 Kのみ。後に実施したNEPの700–900 Kと追加NPTは本パッケージの解析対象外で、別経路のデータで代用していない。必要なら既存軌跡を同じ方法で解析するのが次段階であり、新規MDは不要。
 
-[再作図コード](../../../scripts/structures/plot_legacy_lzoc_comparison.py)、[数値・入力ハッシュ](summary.json)、[元の検証記録](../analysis_20260912/README.md)。4図をPNG／PDF／SVGで保存し、数値データとコードをコミット対象とする。生軌跡は別途保管し今回のコミットには含めない。
+[再作図コード](../../../scripts/structures/plot_legacy_lzoc_comparison.py)、[数値・入力ハッシュ](summary.json)、[日本語 Material Review の LZOC 節](../../../docs/materials/materials_overview_ja.md#2-lzoc-主軸となるaimd比較)。4図をPNG／PDF／SVGで保存し、数値データとコードをコミット対象とする。生軌跡は別途保管し今回のコミットには含めない。

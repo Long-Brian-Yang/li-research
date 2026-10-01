@@ -14,7 +14,7 @@
 
 - [開発・benchmark](development/README.md)：計算 protocol、性能測定、研究計画。
 - [LZOC 文献読解](literature/lzoc_top3/README.md)：原著論文、DOI、日英読解メモ。
-- [LZOC 構造・計算準備](materials/LZOC/README.md)：候補構造、調製過程、関連 input。
+- [LZOC の文献背景・計算結果](materials/materials_overview_ja.md)：候補構造と輸送比較。
 - [中間発表資料](../results/midterm_Li3YCl6_MACE_M3GNet/)：結晶 benchmark の図と記録。
 - [総合発表成果](../results/publication_all_materials/)：発表用図・数値・supplement。
 - [日報一覧](daily_reports/README.md)：時点付きの作業記録。現状の決定版資料ではない。

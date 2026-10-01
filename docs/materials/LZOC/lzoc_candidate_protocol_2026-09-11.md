@@ -1,6 +1,6 @@
 # Single LZOC candidate preparation
 
-> Historical record / 历史记录：保留记录当时的设置与判断，不作为实时任务状态。参见 [材料文档索引](README.md)。
+> Historical record: this dated snapshot records the settings and judgments at that time; it is not a live task status. See the [Japanese Material Review](../materials_overview_ja.md).
 
 User requested simplified candidate preparation, not further detailed void investigation. No raw data are removed or altered. One replica only; no automatic transport production.
 

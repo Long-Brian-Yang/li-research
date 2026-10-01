@@ -1,6 +1,6 @@
 # Literature-derived LZOC preparation trials
 
-> Historical record / 历史记录：保留记录当时的设置与判断，不作为实时任务状态。参见 [材料文档索引](README.md)。
+> Historical record: this dated snapshot records the settings and judgments at that time; it is not a live task status. See the [Japanese Material Review](../materials_overview_ja.md).
 
 ## Current status — 2026-09-11
 
