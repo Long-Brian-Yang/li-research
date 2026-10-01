@@ -1,17 +1,20 @@
-# Source code
+# Reusable Python modules
 
-`src/` contains reusable Python code only. It does not contain TSUBAME job
-scripts, CIF/data files, raw trajectories, or generated results.
+`src/li_research/` contains small reusable modules for ordered structure creation, format conversion, and selected LAMMPS/GPUMD analysis. The complete file-by-file map, environment assumptions, and testing guidance are in the [repository technical guide](../docs/engineering/repository_technical_guide_zh.md#5-核心代码src).
 
 ```text
-src/li_research/
-├── structures/          # ordered-model and supercell builders
-├── conversion/          # CIF/LAMMPS/extended-XYZ conversion utilities
+li_research/
+├── structures/       ordered crystal builders and supercell utilities
+├── conversion/       CIF/LAMMPS/extended-XYZ conversion and occupancy checks
 └── analysis/
-    ├── lammps/          # Li MSD and tracer-diffusion analysis
-    └── gpumd/           # GPUMDkit preparation and GPUMD analysis
+    ├── lammps/       Li MSD/diffusion, jumps, and model-comparison plots
+    ├── gpumd/        GPUMDkit input preparation and GPUMD post-processing
+    ├── rdf/          trajectory RDF recomputation
+    └── arrhenius/    crystalline benchmark Arrhenius figures
 ```
 
-Execution wrappers and model-specific input templates belong in `hpc/`;
-calculation-ready structures belong in `structures/`; derived outputs and raw
-trajectories belong in `results/` on TSUBAME.
+## Runtime note
+
+The repository has no `pyproject.toml`, `setup.py`, or pinned dependency file. Scientific modules use libraries including ASE, NumPy, SciPy, and Matplotlib; individual source files define their actual requirements. They can be invoked from the repository root with `PYTHONPATH=src` when their input paths and dependencies are available. Many material-specific analyses instead live under `scripts/structures/` and are not installed as a package.
+
+Do not put LAMMPS/GPUMD job scripts, model weights, raw trajectories, or generated results in this tree; those belong to `hpc/`, external model/runtime storage, or `results/` as appropriate.

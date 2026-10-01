@@ -1,4 +1,5 @@
 """New integer-occupancy realization of SI Table 2; not author coordinates."""
+import argparse
 from pathlib import Path
 from collections import Counter
 import json
@@ -12,7 +13,7 @@ from scipy.sparse import lil_matrix
 
 BASE=Path(__file__).resolve().parents[2]/'materials/candidates/LZOC_Hussain2024/seed_192'
 
-def main():
+def main(output_dir=BASE):
     # Integer quotas for eight average cells; rounded occupancies resolved to exact stoichiometry.
     specs=[('Li',(0.311,0,0),16),('Li',(0.337,0,0.5),26),
            ('Cl',(0.1061,-0.1061,0.7514),40),('Cl',(0.2283,-0.2283,0.2811),26),
@@ -52,16 +53,23 @@ def main():
     a=pool[np.where(chosen>0.5)[0]]
     dist=a.get_all_distances(mic=True); np.fill_diagonal(dist,np.inf)
     assert Counter(a.get_chemical_symbols())==dict(Li=42,Zr=24,Cl=114,O=12)
-    BASE.mkdir(parents=True,exist_ok=True)
-    write(BASE/'model.xyz',a,format='extxyz')
-    write(BASE/'initial_structure.cif',a)
+    output_dir = Path(output_dir)
+    output_dir.mkdir(parents=True,exist_ok=True)
+    write(output_dir/'model.xyz',a,format='extxyz')
+    write(output_dir/'initial_structure.cif',a)
     info=dict(atoms=len(a),counts=dict(Counter(a.get_chemical_symbols())),
               minimum_distance_A=float(dist.min()),cell_A=a.cell.tolist(),
               density_gcm3=float(a.get_masses().sum()*1.6605390666/a.get_volume()),
               seed=20260914,repeat=[2,2,2],source='SI Table 2, DOI 10.1038/s41524-024-01346-y',
               method='Integer occupancy constraints and geometric exclusion; random objective, NOT energy optimization',
               author_configuration=False,validated_amorphous=False)
-    (BASE/'validation.json').write_text(json.dumps(info,indent=2)+'\n')
+    (output_dir/'validation.json').write_text(json.dumps(info,indent=2)+'\n')
     print(json.dumps(info,indent=2))
 
-if __name__=='__main__': main()
+if __name__=='__main__':
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument(
+        '--output-dir', type=Path, default=BASE,
+        help=f'output directory (default: {BASE})',
+    )
+    main(parser.parse_args().output_dir)

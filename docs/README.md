@@ -2,6 +2,10 @@
 
 按用途阅读；带日期的报告记录当时的状态，不代表实时队列或最终科学结论。
 
+## 工程总览
+
+[仓库技术总览（中文）](engineering/repository_technical_guide_zh.md) 将环境、TSUBAME 部署/构建、核心代码、分析脚本、结果路径、测试和数据边界集中整理。根目录 [README](../README.md) 是项目首页；科学结论仍以日语/英语 Material Review 为准。
+
 | 类别 | 入口 | 内容 |
 |---|---|---|
 | Material Review（仅维护这两份完整正文） | [日本語](materials/materials_overview_ja.md) / [English](materials/materials_overview_en.md) | 按材料内嵌设置、13组核心图、数值表、公式、解释与文献对照；无需跳转至分散报告，源数据链接集中在文末 |

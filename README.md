@@ -1,131 +1,58 @@
-# Li Research: Direction 2 Halide Electrolytes
+# Li Research — MLIP molecular dynamics for lithium-ion electrolytes
 
-Current amorphous-material record (settings, all figures, results and limits): **[日本語](docs/materials/materials_overview_ja.md) · [English](docs/materials/materials_overview_en.md)**. These are the two maintained reports; earlier short reports are historical snapshots. The crystalline-project introduction below is retained as background, not the current amorphous status.
+This repository contains code, inputs, evidence, and reports for evaluating machine-learning interatomic potentials (MLIPs) in crystalline and amorphous lithium-ion solid electrolytes. The research workflow connects literature-derived structures and reported measurements to model benchmarking, MD, transport/structure analysis, and company-facing evidence.
 
-Repository navigation: [documentation](docs/README.md) · [materials](materials/README.md) · [results](results/README.md) · [analysis scripts](scripts/README.md) · [TSUBAME workflows](hpc/tsubame_26icp/README.md).
+## Start here
 
-## Canonical repository layout
+- **Scientific results and literature story:** [Japanese Material Review](docs/materials/materials_overview_ja.md) · [English Material Review](docs/materials/materials_overview_en.md)
+- **Engineering, environment, deployment, core code, analysis code, tests, and data map:** [Repository technical guide (Chinese)](docs/engineering/repository_technical_guide_zh.md)
+- **Documentation index:** [docs/README.md](docs/README.md)
+- **Structures/material candidates:** [structures](structures/README.md) · [materials](materials/README.md)
+- **Reusable Python code:** [src](src/README.md) · **Research scripts:** [scripts](scripts/README.md)
+- **TSUBAME builds, benchmarks, and job inputs:** [HPC guide](hpc/tsubame_26icp/README.md)
+- **Derived data and report packages:** [results](results/README.md)
 
-| Path | Maintained role |
+## Repository map
+
+| Path | Responsibility |
 |---|---|
-| `docs/materials/materials_overview_{ja,en}.md` | Company-facing technical report |
-| `docs/materials/figures/` | Single canonical location for report figures |
-| `materials/candidates/` | Material construction and relaxed structures |
-| `materials/evidence/` | Named structures and representative trajectories mapped to report figures |
-| `results/` | Derived numerical tables and historical publication packages |
-| `scripts/` and `src/` | Analysis, conversion and figure-generation code |
-| `hpc/` and `simulation/` | Reproducible TSUBAME and simulation inputs |
-| `structures/` | Crystalline reference and ordered structures |
+| `src/li_research/` | Reusable structure builders, file converters, MSD/diffusion, RDF, and plotting helpers |
+| `scripts/structures/` | Material-specific preparation, analysis, figure/evidence generation, and SGE wrappers |
+| `hpc/` | TSUBAME environment paths, engine builds, short benchmarks, input templates, production scripts, and preflights |
+| `simulation/` | Engine/model-specific LAMMPS inputs and notes |
+| `structures/` | Reference CIFs and calculation-ready crystalline structures |
+| `materials/candidates/` | Candidate construction and provenance for amorphous systems |
+| `materials/evidence/` | Named initial structures and representative trajectories supporting report figures |
+| `results/` | Derived analysis tables, figures, source manifests, and dated result snapshots |
+| `docs/materials/` | Maintained scientific review and canonical report figures |
+| `tests/` | Numerical, data-contract, figure, report, and path checks |
 
-Full raw trajectories, restart files and scheduler output are local/TSUBAME
-archives and are excluded from Git. The repository retains derived tables,
-reproducible inputs, canonical figures and compact representative trajectories.
-
-This repository contains the working materials for **Direction 2**: reproducing
-and comparing fast-ion-conducting halide and oxyhalide solid electrolytes with
-MACE-MPA-0 and LAMMPS.
-
-The current computational scope is deliberately narrow:
-
-- **Li₃YCl₆** — the high-voltage halide benchmark reported by Asano *et al.*
-- **LiNbOCl₄** — the mixed-anion oxyhalide benchmark reported by Tanaka *et al.*
-
-The immediate objective is to establish a reproducible structure → relaxation →
-MD workflow for these two reference systems. New chemistry is out of scope until
-the Direction 2 reproduction and uncertainty gates are passed.
-
-## Current status
-
-The execution status and work-package boundaries are tracked in the
-[benchmark comparison](docs/development/benchmarks/benchmark_comparison.md).
-
-1. Screenshot-derived CIF information has been converted into explicit ordered
-   candidates. The original CIFs contain partial occupancies and are not sent
-   directly to MD.
-2. Three ordered Li₃YCl₆ occupancy models and one ordered LiNbOCl₄ model have
-   been converted to LAMMPS data files.
-3. The calculation workflow supports MACE, SevenNet, M3GNet/MatGL and GPUMD.
-4. The current benchmark set uses a shared relaxed Li₃YCl₆ structure; physical
-   diffusion studies remain a separate, model-specific relaxation and MD phase.
-
-Relaxed structures and MD workspaces from TSUBAME are stored under
-`runs/relax/<timestamp>/` and `runs/md/<timestamp>/`.
-These results are screening data, not yet validated transport values: the next
-step is short MD, followed by force and structure checks against DFT or
-experiment.
-
-## Reproducible workflow
+## End-to-end research workflow
 
 ```text
-ordered CIF candidates
+literature / experimental reference
         ↓
-LAMMPS data validation
+ordered crystal or prepared amorphous candidate
         ↓
-MACE-MPA-0 ionic relaxation (fixed cell)
+composition, geometry, and provenance validation
         ↓
-MACE-MPA-0 isotropic volume relaxation
+engine + potential preflight and structure relaxation
         ↓
-short NVT MD on TSUBAME GPU
+temperature/ensemble-specific MD on the appropriate runtime
         ↓
-Li MSD / diffusion screening and structural sanity checks
+MSD, diffusion, Arrhenius, RDF/coordination, and stability analyses
+        ↓
+same-definition comparison with paper/experiment
+        ↓
+derived tables + canonical figures + source/evidence manifests
+        ↓
+Material Review
 ```
 
-The main entry points are:
+## Reproducibility and data boundaries
 
-- [`structures/`](structures/) — explicit ordered CIF and LAMMPS data files;
-- [`materials/`](materials/) — amorphous candidates, reference data and report evidence;
-- [`results/`](results/) — organized derived results and publication snapshots;
-- [`scripts/`](scripts/) — maintained analysis and figure-generation utilities;
-- [`src/li_research/`](src/li_research/) — maintained structure, conversion and
-  analysis utilities;
-- [`hpc/tsubame_26icp/`](hpc/tsubame_26icp/) — active build and benchmark
-  launchers;
-- [`hpc/tsubame_26icp/validation/validate_project.sh`](hpc/tsubame_26icp/validation/validate_project.sh)
-  — pre-submission environment/path validation;
-- [`docs/development/protocols/project_layout.md`](docs/development/protocols/project_layout.md)
-  — authoritative TSUBAME layout and naming convention.
+The repository does not contain a single pinned local Python environment. TSUBAME environments, compiled engines, ML model weights, and complete production trajectories are external to Git; their expected paths and build recipes are documented under `hpc/` and in the [technical guide](docs/engineering/repository_technical_guide_zh.md). Large/raw artifacts are intentionally excluded by `.gitignore`. The repository tracks analysis code, calculation inputs where appropriate, derived tables/figures, checksums/manifests, and compact representative evidence.
 
-## Structure policy
+Before running any cluster script, inspect its model/input/output paths and scheduler settings. `hpc/tsubame_26icp/validation/validate_project.sh` is a TSUBAME-side preflight, not a local test and not a scientific validation. Do not interpret a job completion marker as proof that a potential or transport result is physically validated.
 
-The crystallographic CIFs reconstructed from screenshots represent average
-structures with disorder and partial occupancies. Expanding every listed site
-creates an incorrect composition, especially for Li₃YCl₆. Therefore:
-
-- raw/screenshot CIFs are retained for reference only;
-- every MD input must use an explicitly ordered model;
-- element counts and minimum interatomic distances must be validated before
-  relaxation;
-- different Li/Y orderings are treated as separate candidates, not as one
-  definitive crystal structure.
-
-## Literature notes
-
-The literature section is intentionally bilingual. The Chinese and Japanese
-paper notes, keywords, DOI links, and comparison tables are preserved here:
-
-- [Chinese paper notes](docs/literature/papers_zh.md)
-- [日本語論文ノート](docs/literature/papers_ja.md)
-
-These notes provide the experimental benchmarks and motivation for Direction 2;
-they are not the computational workflow itself.
-
-## Direction 2 research plan
-
-The project plan is maintained in two synchronized Markdown files:
-[`docs/development/plans/direction2_plan_en.md`](docs/development/plans/direction2_plan_en.md)
-and
-[`docs/development/plans/direction2_plan_ja.md`](docs/development/plans/direction2_plan_ja.md).
-
-## Reproducibility notes
-
-Record the MACE checkpoint, LAMMPS executable, GPU model, input data filename,
-supercell, temperature, timestep, and trajectory length for every MD run.
-MACE foundation-model results are exploratory until checked against DFT forces,
-experimental structure/transport data, and an independent potential.
-
-The canonical TSUBAME directory and script naming rules are in
-[project_layout.md](docs/development/protocols/project_layout.md). Superseded
-short-lived artifacts are removed after their unique information has been
-merged into the current documentation. Complete raw calculation outputs remain
-in the local/TSUBAME archive; Git contains the derived tables, inputs, manifests
-and representative evidence required to inspect the reported results.
+For the authoritative current material status, use the maintained Material Review rather than dated daily reports or historical experiment snapshots.

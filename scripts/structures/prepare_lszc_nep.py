@@ -1,5 +1,6 @@
 """Convert the author's optimized amorphous Data 2 without changing its cell."""
 from collections import Counter
+import argparse
 from pathlib import Path
 import hashlib
 import json
@@ -10,9 +11,10 @@ from ase.io import read, write
 ROOT = Path(__file__).resolve().parents[2]
 
 
-def main():
-    base = ROOT / 'materials/candidates/LSZC'
-    source = base / 'source/Supplementary Data 2.txt'
+def main(output_dir=None):
+    source_base = ROOT / 'materials/candidates/LSZC'
+    base = Path(output_dir) if output_dir is not None else source_base
+    source = source_base / 'source/Supplementary Data 2.txt'
     a = read(source, format='cif')
     expected = {'Li': 128, 'Zr': 128, 'Cl': 512, 'S': 64, 'O': 256}
     assert dict(Counter(a.get_chemical_symbols())) == expected
@@ -36,4 +38,9 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument(
+        '--output-dir', type=Path, default=None,
+        help='output root (default: materials/candidates/LSZC)',
+    )
+    main(parser.parse_args().output_dir)

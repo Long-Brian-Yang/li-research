@@ -1,5 +1,6 @@
 """Expand author's AIMD seed along its shortest axis; not a validated glass."""
 from collections import Counter
+import argparse
 from pathlib import Path
 import hashlib
 import json
@@ -10,7 +11,7 @@ from ase.io import read, write
 ROOT = Path(__file__).resolve().parents[2]
 
 
-def main():
+def main(output_dir=None):
     base = ROOT / 'materials/candidates/LSZC'
     source = base / 'source/Supplementary Data 1.txt'
     parent = read(source, format='cif')
@@ -23,7 +24,7 @@ def main():
     distances = a.get_all_distances(mic=True)
     np.fill_diagonal(distances, np.inf)
     assert distances.min() > 1.0
-    out = base / 'seed_272'
+    out = Path(output_dir) if output_dir is not None else base / 'seed_272'
     out.mkdir(exist_ok=True)
     write(out / 'model.xyz', a, format='extxyz')
     write(out / 'initial_structure.cif', a, format='cif')
@@ -39,4 +40,9 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument(
+        '--output-dir', type=Path, default=None,
+        help='output directory (default: materials/candidates/LSZC/seed_272)',
+    )
+    main(parser.parse_args().output_dir)
