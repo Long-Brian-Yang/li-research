@@ -131,6 +131,27 @@ CSV／JSON、図、hash／manifest
 - RDF／配位数／角度は局所環境の指標である。weighted PDF や EXAFS の物理量と同一視しない。
 - 代表フレームの抽出は可視化用の bounded sampling に限り、輸送統計の母集団選別とは分ける。
 
+### 6.1 MLP-MD の数値安定性と物理的妥当性の確認
+
+「計算が最後まで終了した」「温度が設定値付近にある」だけでは、MLP trajectory が安定・妥当だとは判断できない。少なくとも、(1) potential の実装・入力整合、(2) 数値積分の安定性、(3) 構造・熱力学の定常性、(4) 文献に対応する物理量、を別々に確認する。数値的に安定な trajectory でも、その MLP が DFT／実験を正しく再現する保証はない。
+
+| 検査 | 見る量・方法 | 正常と判断する目安／読み違え防止 |
+|---|---|---|
+| potential と backend の整合 | 同じ snapshot を MACE reference backend と LAMMPS ML-IAP に与え、energy と atomic force を比較。element mapping、atom order、units、PBC、cell も照合 | 事前に定めた許容差で一致すること。変換成功や `import` 成功だけでは不十分 |
+| 初期構造・力 | minimization 前後の最小原子間距離、最大力、energy、cell、組成 | 異常な重なり・NaN・極端な force がないこと。最小距離の基準は元素対・組成・温度に応じて定め、全材料共通の閾値を機械的に適用しない |
+| NVE energy conservation | 平衡化 snapshot から thermostat/barostat を外し、固定 cell・固定粒子数で NVE を短時間実行。`pe`、`ke`、`etotal = pe + ke` を追跡し、etotal の時系列傾向、block 平均、時間刻み依存性を確認 | PE と KE は相互変換して振動するのが通常で、PE 単独の上下はエネルギー保存失敗を意味しない。`etotal` に持続的な一方向 drift、急増、飛びがないかを見る。許容 drift は系・時間刻み・精度・用途ごとに決め、短い NVE test と時間刻みを変えた比較で確認する。普遍的な単一閾値はない |
+| NVT production の熱力学量 | `temp`、`pe`、`ke`、`etotal`、必要に応じ `econserve`、pressure、density／cell を出力 | thermostat 下で `etotal` は thermostat との熱交換により揺らぐため、NVE のような一定値を要求しない。初期過渡後の平均・分散・block 平均が定常で、温度や体積に一方向の長期 drift がないか確認する。`econserve` は LAMMPS の対象 fix が記録する coupling energy を含む量で、利用 fix の定義も確認する |
+| NPT equilibration | `temp`、pressure、`vol`、`density`、`lx/ly/lz`、`pe` を時系列と区間別統計で確認 | 圧力瞬時値は有限系で大きく揺らぐので target 圧力との瞬間一致を要求しない。体積・密度・cell の block 平均が plateau に近づき、持続的膨張／収縮が残っていないかを見て、平衡後の平均 cell を production 条件に使う。barostat 下の `etotal` を保存量と誤認しない |
+| RDF と配位数 | 複数の部分 RDF (g_{\alpha\beta}(r))、第一ピーク位置・幅、第一極小までの積分配位数、温度・block・repeat ごとの変化を確認 | RDF は局所構造の統計であり、単独で拡散や熱力学安定性を証明しない。距離 bin、cutoff、密度規格化、元素 pair、集計 frame 範囲を全比較で揃える。結晶なら既知の配位・格子、ガラスなら実験／文献の対応する partial RDF や PDF と比較する |
+| 時間方向の構造・局所異常 | 最小距離分布、配位分布、cell/density、bond/coordination の時間推移、代表 snapshot の可視化 | 物理的に不合理な短接触、組成・ネットワークの破綻、局所環境の急激な偏りがないかを調べる。代表 frame は診断・可視化用であり、trajectory 全体の統計を置き換えない |
+| 輸送解析へ進む前 | Li MSD、線形領域、time-origin/block 安定性、温度系列、全 repeat | MSD が十分な時間範囲で拡散挙動を示すか確認する。fit protocol を事前固定し、全温度・全 repeat に一律適用する。安定性検査を通っても、統計が不十分なら (D) や (E_a) を確定値として扱わない |
+
+LAMMPS では、production と診断の目的に合わせ、少なくとも `step/time, temp, pe, ke, etotal, press, vol, density, lx, ly, lz` の必要項目を出力する。NVE 診断では、対象 LAMMPS version／fix で利用できる場合に `econserve` も記録する。現在の repo の入力例でも `temp pe ke etotal press vol lx ly lz` を使用している。NVT/NPT の `etotal` 揺らぎを即座に不安定と見なしたり、PE が単調でないことを異常と見なしたりしない。逆に、滑らかな energy 曲線だけでモデルの物理精度を主張しない。
+
+**推奨ゲート順：** backend parity と構造検査 → 短い NVE 時間刻み診断 → NVT/NPT の温度・cell・energy stationarity → RDF／配位と局所異常 → 全 trajectory の輸送解析 → 同じ定義の文献・実験比較。問題があれば該当ゲートへ戻り、温度・時間刻み・ensemble・cell を一度に変えず、変更要因が追跡できるようにする。
+
+LAMMPS の [`compute rdf`](https://docs.lammps.org/compute_rdf.html) は RDF と累積配位数を定義し、[`thermo_style`](https://docs.lammps.org/thermo_style.html) は `pe`、`ke`、`etotal`、`econserve` などの出力定義を説明する。Nose–Hoover 系の [`fix nvt/npt`](https://docs.lammps.org/fix_nh.html) は thermostat/barostat の挙動・設定を確認する一次資料として参照する。具体的な設定は実行中の LAMMPS version のマニュアルと入力 script に合わせる。
+
 ## 7. データ、再現性、報告
 
 | 場所 | 内容 |

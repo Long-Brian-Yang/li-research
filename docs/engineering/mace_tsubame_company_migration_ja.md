@@ -64,6 +64,7 @@ nvidia-smi --query-gpu=name,driver_version --format=csv,noheader
 6. 同一の周期構造について ASE/MACE と LAMMPS のエネルギー・力を比較し、atom order、units、元素 mapping、stress sign/unit、PBC を照合する。許容誤差は dtype/backend ごとに事前に決め、検証結果に記録する。
 7. 小さい構造の短い MD で finite energy/force、温度、cell、neighbor list、GPU usage を確認する。
 8. その後に限り短 benchmark、続いて対象計算の投入を判断する。
+9. MD の安定性は、単に完走したかではなく、短い NVE の `etotal` drift／時間刻み依存性、NVT/NPT の熱力学量と cell の定常性、RDF・配位・短距離接触を順に確認する。各量の読み方と判定の注意点は[リポジトリ技術ガイド §6.1](repository_technical_guide_ja.md#61-mlp-md-の数値安定性と物理的妥当性の確認)にまとめた。
 
 checkpoint の conversion が成功しただけでは backend parity は証明されない。LAMMPS ML-IAP の実装、MACE checkpoint、ML-IAP serialization が互換かは、対象 version の公式資料と実測 parity test で検証する。
 
