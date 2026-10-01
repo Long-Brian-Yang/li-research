@@ -128,6 +128,8 @@ flowchart LR
 
 構造緩和後、Li₃YCl₆では400／600／800／1000 K、LiNbOCl₄では600／800／1000／1200 Kを用いた。中間発表の主系列はNVT、1 fs、50 ps平衡化＋500 ps productionであり、MACE-MPA-0、SevenNet-nano、M3GNet GPUを同じ温度系列と解析定義で比較した。MSDから $`D_{\mathrm{Li}}`$ を求め、Arrhenius式で $`E_a`$ と300 K外挿値を得た。これらは汎用モデル比較であり、各材料にfine-tuneしたポテンシャルの精度試験ではない。
 
+LiNbOCl₄のMSDと輸送解析には、各モデル・温度で保存されている全ての完了軌跡を用いた。各軌跡のDは共通の20–500 ps区間から求め、同じ初速度seedで再実行された計算はseed内で平均してから、異なるseedを同じ重みで温度別集約した。
+
 ![Li₃YCl₆三モデル四温度MSD](figures/01_Li3YCl6_three_model_MSD.png)
 
 |Li₃YCl₆|$`E_a`$ (eV)|Arrhenius $`R^2`$|$`D(300\,\mathrm K)`$ (cm²/s)|
@@ -144,12 +146,12 @@ Li₃YCl₆では三モデルとも温度上昇に伴うMSD増加を示したが
 
 |LiNbOCl₄|$`E_a`$ (eV)|Arrhenius $`R^2`$|$`D(300\,\mathrm K)`$ (cm²/s)|条件付き $`\sigma_{\mathrm{NE}}(300\,\mathrm K)`$ (mS/cm)|
 |---|---:|---:|---:|---:|
-|MACE-MPA-0|0.313|0.9953|5.19×10⁻⁹|0.201|
-|SevenNet-nano|0.357|0.9953|2.18×10⁻⁹|0.0842|
-|M3GNet GPU|0.397|0.8768|5.66×10⁻¹¹|0.00219|
+|MACE-MPA-0|0.310|0.9952|5.56×10⁻⁹|0.215|
+|SevenNet-nano|0.354|0.9960|2.45×10⁻⁹|0.0947|
+|M3GNet GPU|0.318|0.8876|4.24×10⁻¹⁰|0.0164|
 |実験基準|0.240|—|—|10.4|
 
-LiNbOCl₄でもモデル間差が残り、特にM3GNetのArrhenius直線性は他の二モデルより低かった。Arrhenius図はLi₃YCl₆図と同じ構成とし、MDの $`D`$ をモデルセルのLi数密度による条件付きNernst–Einstein伝導度へ換算して $`\ln(\sigma_{\mathrm{NE}}T)`$ を表示する。黒点線はTanakaらの室温伝導度10.4 mS cm⁻¹を300 Kに置き、報告 $`E_a=0.240`$ eVで再構成した完全な実験参照線である。これは実験伝導度のArrhenius基準であり、実験Li自己拡散係数ではないため、$`D`$ との比較には相関を無視した換算という制約が残る。
+LiNbOCl₄でもモデル間差が残り、M3GNetのArrhenius直線性は他の二モデルより低かった。全軌跡を一貫した手順で集約した後も、MACEは実験 $`E_a`$ に最も近い結果を示した。Arrhenius図はLi₃YCl₆図と同じ構成とし、MDの $`D`$ をモデルセルのLi数密度による条件付きNernst–Einstein伝導度へ換算して $`\ln(\sigma_{\mathrm{NE}}T)`$ を表示する。黒点線はTanakaらの室温伝導度10.4 mS cm⁻¹を300 Kに置き、報告 $`E_a=0.240`$ eVで再構成した完全な実験参照線である。これは実験伝導度のArrhenius基準であり、実験Li自己拡散係数ではない。
 
 <p align="center">
   <img src="figures/03_Li3YCl6_Arrhenius.png" alt="Li3YCl6のArrhenius解析" width="49%">

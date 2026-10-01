@@ -128,6 +128,8 @@ The same MD design is retained so that the change from chloride to mixed-anion o
 
 After structural relaxation, Li₃YCl₆ was evaluated at 400/600/800/1000 K and LiNbOCl₄ at 600/800/1000/1200 K. The midterm primary series used NVT, a 1 fs timestep, 50 ps equilibration and 500 ps production. MACE-MPA-0, SevenNet-nano and M3GNet GPU were compared using matched temperature series and analysis definitions. Li MSD supplied $`D_{\mathrm{Li}}`$; Arrhenius fitting supplied $`E_a`$ and the 300 K extrapolation. This is a general-model comparison, not a test of material-specific fine-tuned potentials.
 
+For LiNbOCl₄ MSD and transport analysis, every completed trajectory available for each model and temperature was included. Each track's D was calculated over the common 20–500 ps interval; repeated executions with the same initial-velocity seed were averaged within that seed before distinct seeds were weighted equally in the temperature-level summary.
+
 ![Three-model, four-temperature Li₃YCl₆ MSD](figures/01_Li3YCl6_three_model_MSD.png)
 
 |Li₃YCl₆|$`E_a`$ (eV)|Arrhenius $`R^2`$|$`D(300\,\mathrm K)`$ (cm²/s)|
@@ -144,12 +146,12 @@ All three Li₃YCl₆ models show increasing MSD with temperature, but their act
 
 |LiNbOCl₄|$`E_a`$ (eV)|Arrhenius $`R^2`$|$`D(300\,\mathrm K)`$ (cm²/s)|Conditional $`\sigma_{\mathrm{NE}}(300\,\mathrm K)`$ (mS/cm)|
 |---|---:|---:|---:|---:|
-|MACE-MPA-0|0.313|0.9953|5.19×10⁻⁹|0.201|
-|SevenNet-nano|0.357|0.9953|2.18×10⁻⁹|0.0842|
-|M3GNet GPU|0.397|0.8768|5.66×10⁻¹¹|0.00219|
+|MACE-MPA-0|0.310|0.9952|5.56×10⁻⁹|0.215|
+|SevenNet-nano|0.354|0.9960|2.45×10⁻⁹|0.0947|
+|M3GNet GPU|0.318|0.8876|4.24×10⁻¹⁰|0.0164|
 |Experimental reference|0.240|—|—|10.4|
 
-LiNbOCl₄ likewise shows substantial model dependence, and the M3GNet Arrhenius linearity is lower than for the other two models. The Arrhenius panel now follows the Li₃YCl₆ construction: MD $`D`$ is converted to conditional Nernst–Einstein conductivity using the Li number density of the model cell, and $`\ln(\sigma_{\mathrm{NE}}T)`$ is displayed. The black dotted reference is anchored at the 10.4 mS cm⁻¹ room-temperature conductivity reported by Tanaka et al. and extended with the reported $`E_a=0.240`$ eV. It is a complete experimental conductivity reference, not an experimental Li self-diffusion curve; comparison with $`D`$ therefore retains the limitation of a correlation-free conversion.
+LiNbOCl₄ likewise shows substantial model dependence, and the M3GNet Arrhenius linearity is lower than for the other two models. After consistent aggregation of all trajectories, MACE remains closest to the experimental $`E_a`$. The Arrhenius panel follows the Li₃YCl₆ construction: MD $`D`$ is converted to conditional Nernst–Einstein conductivity using the Li number density of the model cell, and $`\ln(\sigma_{\mathrm{NE}}T)`$ is displayed. The black dotted reference is anchored at the 10.4 mS cm⁻¹ room-temperature conductivity reported by Tanaka et al. and extended with the reported $`E_a=0.240`$ eV. It is an experimental conductivity reference, not an experimental Li self-diffusion curve.
 
 <p align="center">
   <img src="figures/03_Li3YCl6_Arrhenius.png" alt="Li3YCl6 Arrhenius analysis" width="49%">
@@ -862,6 +864,8 @@ The same MD design is retained so that the change from chloride to mixed-anion o
 
 After structural relaxation, Li₃YCl₆ was evaluated at 400/600/800/1000 K and LiNbOCl₄ at 600/800/1000/1200 K. The midterm primary series used NVT, a 1 fs timestep, 50 ps equilibration and 500 ps production. MACE-MPA-0, SevenNet-nano and M3GNet GPU were compared using matched temperature series and analysis definitions. Li MSD supplied $`D_{\mathrm{Li}}`$; Arrhenius fitting supplied $`E_a`$ and the 300 K extrapolation. This is a general-model comparison, not a test of material-specific fine-tuned potentials.
 
+For LiNbOCl₄ MSD and transport analysis, every completed trajectory available for each model and temperature was included. Each track's D was calculated over the common 20–500 ps interval; repeated executions with the same initial-velocity seed were averaged within that seed before distinct seeds were weighted equally in the temperature-level summary.
+
 ![Three-model, four-temperature Li₃YCl₆ MSD](figures/01_Li3YCl6_three_model_MSD.png)
 
 |Li₃YCl₆|$`E_a`$ (eV)|Arrhenius $`R^2`$|$`D(300\,\mathrm K)`$ (cm²/s)|
@@ -878,12 +882,12 @@ All three Li₃YCl₆ models show increasing MSD with temperature, but their act
 
 |LiNbOCl₄|$`E_a`$ (eV)|Arrhenius $`R^2`$|$`D(300\,\mathrm K)`$ (cm²/s)|Conditional $`\sigma_{\mathrm{NE}}(300\,\mathrm K)`$ (mS/cm)|
 |---|---:|---:|---:|---:|
-|MACE-MPA-0|0.313|0.9953|5.19×10⁻⁹|0.201|
-|SevenNet-nano|0.357|0.9953|2.18×10⁻⁹|0.0842|
-|M3GNet GPU|0.397|0.8768|5.66×10⁻¹¹|0.00219|
+|MACE-MPA-0|0.310|0.9952|5.56×10⁻⁹|0.215|
+|SevenNet-nano|0.354|0.9960|2.45×10⁻⁹|0.0947|
+|M3GNet GPU|0.318|0.8876|4.24×10⁻¹⁰|0.0164|
 |Experimental reference|0.240|—|—|10.4|
 
-LiNbOCl₄ likewise shows substantial model dependence, and the M3GNet Arrhenius linearity is lower than for the other two models. The Arrhenius panel now follows the Li₃YCl₆ construction: MD $`D`$ is converted to conditional Nernst–Einstein conductivity using the Li number density of the model cell, and $`\ln(\sigma_{\mathrm{NE}}T)`$ is displayed. The black dotted reference is anchored at the 10.4 mS cm⁻¹ room-temperature conductivity reported by Tanaka et al. and extended with the reported $`E_a=0.240`$ eV. It is a complete experimental conductivity reference, not an experimental Li self-diffusion curve; comparison with $`D`$ therefore retains the limitation of a correlation-free conversion.
+LiNbOCl₄ likewise shows substantial model dependence, and the M3GNet Arrhenius linearity is lower than for the other two models. After consistent aggregation of all trajectories, MACE remains closest to the experimental $`E_a`$. The Arrhenius panel follows the Li₃YCl₆ construction: MD $`D`$ is converted to conditional Nernst–Einstein conductivity using the Li number density of the model cell, and $`\ln(\sigma_{\mathrm{NE}}T)`$ is displayed. The black dotted reference is anchored at the 10.4 mS cm⁻¹ room-temperature conductivity reported by Tanaka et al. and extended with the reported $`E_a=0.240`$ eV. It is an experimental conductivity reference, not an experimental Li self-diffusion curve.
 
 <p align="center">
   <img src="figures/03_Li3YCl6_Arrhenius.png" alt="Li3YCl6 Arrhenius analysis" width="49%">
@@ -1758,6 +1762,8 @@ The same MD design is retained so that the change from chloride to mixed-anion o
 
 After structural relaxation, Li₃YCl₆ was evaluated at 400/600/800/1000 K and LiNbOCl₄ at 600/800/1000/1200 K. The midterm primary series used NVT, a 1 fs timestep, 50 ps equilibration and 500 ps production. MACE-MPA-0, SevenNet-nano and M3GNet GPU were compared using matched temperature series and analysis definitions. Li MSD supplied $`D_{\mathrm{Li}}`$; Arrhenius fitting supplied $`E_a`$ and the 300 K extrapolation. This is a general-model comparison, not a test of material-specific fine-tuned potentials.
 
+For LiNbOCl₄ MSD and transport analysis, every completed trajectory available for each model and temperature was included. Each track's D was calculated over the common 20–500 ps interval; repeated executions with the same initial-velocity seed were averaged within that seed before distinct seeds were weighted equally in the temperature-level summary.
+
 ![Three-model, four-temperature Li₃YCl₆ MSD](figures/01_Li3YCl6_three_model_MSD.png)
 
 |Li₃YCl₆|$`E_a`$ (eV)|Arrhenius $`R^2`$|$`D(300\,\mathrm K)`$ (cm²/s)|
@@ -1774,12 +1780,12 @@ All three Li₃YCl₆ models show increasing MSD with temperature, but their act
 
 |LiNbOCl₄|$`E_a`$ (eV)|Arrhenius $`R^2`$|$`D(300\,\mathrm K)`$ (cm²/s)|Conditional $`\sigma_{\mathrm{NE}}(300\,\mathrm K)`$ (mS/cm)|
 |---|---:|---:|---:|---:|
-|MACE-MPA-0|0.313|0.9953|5.19×10⁻⁹|0.201|
-|SevenNet-nano|0.357|0.9953|2.18×10⁻⁹|0.0842|
-|M3GNet GPU|0.397|0.8768|5.66×10⁻¹¹|0.00219|
+|MACE-MPA-0|0.310|0.9952|5.56×10⁻⁹|0.215|
+|SevenNet-nano|0.354|0.9960|2.45×10⁻⁹|0.0947|
+|M3GNet GPU|0.318|0.8876|4.24×10⁻¹⁰|0.0164|
 |Experimental reference|0.240|—|—|10.4|
 
-LiNbOCl₄ likewise shows substantial model dependence, and the M3GNet Arrhenius linearity is lower than for the other two models. The Arrhenius panel now follows the Li₃YCl₆ construction: MD $`D`$ is converted to conditional Nernst–Einstein conductivity using the Li number density of the model cell, and $`\ln(\sigma_{\mathrm{NE}}T)`$ is displayed. The black dotted reference is anchored at the 10.4 mS cm⁻¹ room-temperature conductivity reported by Tanaka et al. and extended with the reported $`E_a=0.240`$ eV. It is a complete experimental conductivity reference, not an experimental Li self-diffusion curve; comparison with $`D`$ therefore retains the limitation of a correlation-free conversion.
+LiNbOCl₄ likewise shows substantial model dependence, and the M3GNet Arrhenius linearity is lower than for the other two models. After consistent aggregation of all trajectories, MACE remains closest to the experimental $`E_a`$. The Arrhenius panel follows the Li₃YCl₆ construction: MD $`D`$ is converted to conditional Nernst–Einstein conductivity using the Li number density of the model cell, and $`\ln(\sigma_{\mathrm{NE}}T)`$ is displayed. The black dotted reference is anchored at the 10.4 mS cm⁻¹ room-temperature conductivity reported by Tanaka et al. and extended with the reported $`E_a=0.240`$ eV. It is an experimental conductivity reference, not an experimental Li self-diffusion curve.
 
 <p align="center">
   <img src="figures/03_Li3YCl6_Arrhenius.png" alt="Li3YCl6 Arrhenius analysis" width="49%">
@@ -2508,12 +2514,12 @@ All three Li₃YCl₆ models show increasing MSD with temperature, but their act
 
 |LiNbOCl₄|$`E_a`$ (eV)|Arrhenius $`R^2`$|$`D(300\,\mathrm K)`$ (cm²/s)|Conditional $`\sigma_{\mathrm{NE}}(300\,\mathrm K)`$ (mS/cm)|
 |---|---:|---:|---:|---:|
-|MACE-MPA-0|0.313|0.9953|5.19×10⁻⁹|0.201|
-|SevenNet-nano|0.357|0.9953|2.18×10⁻⁹|0.0842|
-|M3GNet GPU|0.397|0.8768|5.66×10⁻¹¹|0.00219|
+|MACE-MPA-0|0.310|0.9952|5.56×10⁻⁹|0.215|
+|SevenNet-nano|0.354|0.9960|2.45×10⁻⁹|0.0947|
+|M3GNet GPU|0.318|0.8876|4.24×10⁻¹⁰|0.0164|
 |Experimental reference|0.240|—|—|10.4|
 
-LiNbOCl₄ likewise shows substantial model dependence, and the M3GNet Arrhenius linearity is lower than for the other two models. The Arrhenius panel now follows the Li₃YCl₆ construction: MD $`D`$ is converted to conditional Nernst–Einstein conductivity using the Li number density of the model cell, and $`\ln(\sigma_{\mathrm{NE}}T)`$ is displayed. The black dotted reference is anchored at the 10.4 mS cm⁻¹ room-temperature conductivity reported by Tanaka et al. and extended with the reported $`E_a=0.240`$ eV. It is a complete experimental conductivity reference, not an experimental Li self-diffusion curve; comparison with $`D`$ therefore retains the limitation of a correlation-free conversion.
+LiNbOCl₄ likewise shows substantial model dependence, and the M3GNet Arrhenius linearity is lower than for the other two models. After consistent aggregation of all trajectories, MACE remains closest to the experimental $`E_a`$. The Arrhenius panel follows the Li₃YCl₆ construction: MD $`D`$ is converted to conditional Nernst–Einstein conductivity using the Li number density of the model cell, and $`\ln(\sigma_{\mathrm{NE}}T)`$ is displayed. The black dotted reference is anchored at the 10.4 mS cm⁻¹ room-temperature conductivity reported by Tanaka et al. and extended with the reported $`E_a=0.240`$ eV. It is an experimental conductivity reference, not an experimental Li self-diffusion curve.
 
 <p align="center">
   <img src="figures/03_Li3YCl6_Arrhenius.png" alt="Li3YCl6 Arrhenius analysis" width="49%">

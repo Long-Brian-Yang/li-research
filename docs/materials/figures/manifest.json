@@ -339,7 +339,7 @@
     },
     {
       "file": "02_LiNbOCl4_three_model_MSD.png",
-      "sha256": "f59c7abc3393648a7eb131e07e530a57042ffe17a65e456b4b9d4d49d7293834",
+      "sha256": "859aca7a1054da8cc4ae4cc19e055923994d7711776e1201edc0b13c6732a80f",
       "source": "src/li_research/analysis/lammps/plot_linboocl4_msd_three_models.py"
     },
     {
@@ -349,17 +349,17 @@
     },
     {
       "file": "04_LiNbOCl4_Arrhenius.png",
-      "sha256": "dcab183174e50d45f7daf52e5b56943bdd9ef8942c71ea1cc48646973d9e9e8c",
+      "sha256": "33a5cee22e86e0ead43b6018195173c45179e2d9c3494810d7dcd6468de8241f",
       "source": "src/li_research/analysis/arrhenius/plot_linboocl4_arrhenius.py"
     },
     {
       "file": "04_LiNbOCl4_Arrhenius.pdf",
-      "sha256": "af5f1c71a9400334796aec416558624377af4d95d2587a36b04cb3263abc69bf",
+      "sha256": "22974f6e23cb202705a873f493e17c3e560876b4dfd765d8e9386a0478d5557d",
       "source": "src/li_research/analysis/arrhenius/plot_linboocl4_arrhenius.py"
     },
     {
       "file": "04_LiNbOCl4_Arrhenius.svg",
-      "sha256": "2725396a1f34af209871ebf4d6a945c00e62db77a62e521df838eee0a0d6427d",
+      "sha256": "cc5c5e83fab31ec476a344dee72b98777126ff45ee721a5e6a744fca04fead62",
       "source": "src/li_research/analysis/arrhenius/plot_linboocl4_arrhenius.py"
     },
     {

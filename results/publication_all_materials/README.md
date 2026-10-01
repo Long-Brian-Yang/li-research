@@ -18,6 +18,6 @@ The LiNbOCl₄ Arrhenius panel follows the Li₃YCl₆ plotting logic. Model dif
 - `coordination/`: Li–Cl coordination distributions.
 - `thermodynamics/`: model-separated temperature, energy, and pressure stability panels.
 
-LiNbOCl₄ M3GNet uses the selected real-trajectory combination 600-R2 / 800-R2 / 1000-R1 / 1200-R2. This gives (E_a=0.397) eV and (R^2=0.877); the corresponding source table is `supplementary/source_data/LiNbOCl4_D_Ea_summary.csv`.
+LiNbOCl₄ transport estimates use all completed MSD trajectories for each model and temperature, with a common 20–500 ps fit. Re-executions using the same initial-velocity seed are averaged within that seed; distinct seeds are then weighted equally. The corresponding full per-trajectory and summary data are `supplementary/source_data/LiNbOCl4_trajectory_diffusion.csv` and `supplementary/source_data/LiNbOCl4_D_Ea_summary.csv`.
 
-All newly generated figures use the common white-background style with consistent typography and line widths. Model colors are MACE-MPA-0 (blue), SevenNet-nano (green), and M3GNet (red). Missing trajectories are skipped rather than replaced with fabricated data.
+All newly generated figures use the common white-background style with consistent typography and line widths. Model colors are MACE-MPA-0 (blue), SevenNet-nano (green), and M3GNet (red). The LiNbOCl₄ analysis stops with an error if any model–temperature group has no trajectory, rather than silently omitting the group.
