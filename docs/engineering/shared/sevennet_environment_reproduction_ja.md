@@ -2,7 +2,7 @@
 
 ## 目的と適用範囲
 
-本書は、TSUBAME の SevenNet 0.13.0 Python 環境を配布・再構築する手順である。採取した package version は [`requirements-sevennet-py39-cu124.lock.txt`](../../hpc/tsubame_26icp/requirements-sevennet-py39-cu124.lock.txt) に記録した。GPU LAMMPS は Python venv とは別成果物であり、build 条件は[GPU LAMMPS 構築ガイド](matgl_sevennet_environment_reproduction_ja.md)を参照する。
+本書は、TSUBAME の SevenNet 0.13.0 Python 環境を配布・再構築する手順である。採取した package version は同じ [`requirements-sevennet-py39-cu124.lock.txt`](requirements-sevennet-py39-cu124.lock.txt) に記録した。GPU LAMMPS は Python venv とは別成果物であり、build 条件は[GPU LAMMPS 構築ガイド](../matgl_sevennet_environment_reproduction_ja.md)を参照する。
 
 ## TSUBAME 基準環境
 
@@ -59,7 +59,7 @@ python3.9 -m venv sevennet_env
 SEVENNET_ENV="$PWD/sevennet_env"
 "$SEVENNET_ENV/bin/python" -m pip install --upgrade pip
 "$SEVENNET_ENV/bin/python" -m pip install --index-url https://download.pytorch.org/whl/cu124 'torch==2.6.0'
-"$SEVENNET_ENV/bin/python" -m pip install -r hpc/tsubame_26icp/requirements-sevennet-py39-cu124.lock.txt
+"$SEVENNET_ENV/bin/python" -m pip install -r docs/engineering/shared/requirements-sevennet-py39-cu124.lock.txt
 "$SEVENNET_ENV/bin/python" -m pip check
 ```
 
@@ -75,5 +75,5 @@ SEVENNET_ENV="$PWD/sevennet_env"
 ## 関連資料
 
 - [MatGL／M3GNet Python 環境の再現手順](matgl_m3gnet_environment_reproduction_ja.md)
-- [MatGL／M3GNet・SevenNet GPU LAMMPS 構築ガイド](matgl_sevennet_environment_reproduction_ja.md)
+- [MatGL／M3GNet・SevenNet GPU LAMMPS 構築ガイド](../matgl_sevennet_environment_reproduction_ja.md)
 - [MACE Python 環境の再現手順](mace_environment_reproduction_ja.md)

@@ -10,8 +10,8 @@
 
 1. [リポジトリのトップ README](../../README.md)：プロジェクトの概要と入口。
 2. [MACE／TSUBAME／会社環境への移行](mace_tsubame_company_migration_ja.md)：MACE-MD 実行環境。
-3. [MatGL／M3GNet Python 環境の再現](matgl_m3gnet_environment_reproduction_ja.md)：MatGL 用 lock、環境 archive、source bundle。
-4. [SevenNet Python 環境の再現](sevennet_environment_reproduction_ja.md)：SevenNet 用 lock と環境 archive。
+3. [MatGL／M3GNet Python 環境の再現](shared/matgl_m3gnet_environment_reproduction_ja.md)：MatGL 用 lock、環境 archive、source bundle。
+4. [SevenNet Python 環境の再現](shared/sevennet_environment_reproduction_ja.md)：SevenNet 用 lock と環境 archive。
 5. [MatGL／M3GNet・SevenNet GPU LAMMPS 構築](matgl_sevennet_environment_reproduction_ja.md)：モデル別 GPU LAMMPS build 条件と移行境界。
 6. [DFT データ作成と MACE fine-tuning](dft_and_finetuning_ja.md)：将来の材料専用モデル構築案。
 7. [Material Review](../materials/materials_overview_ja.md)：材料ごとの計算条件、結果、文献対比。
@@ -46,7 +46,7 @@
 | TSUBAME `tgj-26ICP` | GPU MD、エンジン構築、production、軌跡後処理 | アカウント、quota、queue、module、モデル、実行状態は集群へ接続して都度確認 |
 | 共有 NEP／GPUMD | 既存の NEP89 検証ルート | MACE＋LAMMPS のインストールとは別管理。環境を混合しない |
 
-TSUBAME の MACE、MatGL／M3GNet、SevenNet は、それぞれ専用の環境説明 Markdown と package lock `.txt` を対にして管理する。GPU LAMMPS は Python 環境とは別に構築するため、[GPU LAMMPS 構築ガイド](matgl_sevennet_environment_reproduction_ja.md)を参照する。Python package 環境の存在は対応する LAMMPS binary の build／動作確認を意味しない。
+TSUBAME の MACE、MatGL／M3GNet、SevenNet の環境説明 Markdown と package lock `.txt` は、すべて [`shared/`](shared/) に集約した。各モデルのペアを確認し、GPU LAMMPS は Python 環境とは別の[構築ガイド](matgl_sevennet_environment_reproduction_ja.md)を参照する。Python package 環境の存在は対応する LAMMPS binary の build／動作確認を意味しない。
 
 #### MLIP 実行環境の横断一覧
 
@@ -54,11 +54,11 @@ TSUBAME の MACE、MatGL／M3GNet、SevenNet は、それぞれ専用の環境�
 
 | 環境 | 用途・モデル | Python／主要 runtime | MD 接続・GPU backend | 環境の受け渡し |
 |---|---|---|---|---|
-| `MACE_ENV` (`mace_env`) | MACE foundation potential の推論、結晶 benchmark、ML-IAP MD | Python 3.10.19、MACE 0.3.15、PyTorch 2.10.0、CUDA runtime 12.8 | 別 build の LAMMPS ML-IAP／Kokkos CUDA。compiler・MPI・CUDA toolkit を Python 環境に混ぜない | [環境説明 Markdown](mace_environment_reproduction_ja.md) ＋ [package lock `.txt`](../../hpc/tsubame_26icp/requirements-mace-py310-cu128.lock.txt) |
-| `MATGL_ENV` (`matgl_env`) | MatGL 4.0.3 を介した M3GNet 系モデルの推論・材料計算 | Python 3.12.12、PyTorch 2.10.0、CUDA runtime 12.8、MatGL source は commit 固定 | recipe 上は native／Kokkos `ML-MATGL`。指定 install binary は未確認 | [環境説明 Markdown](matgl_m3gnet_environment_reproduction_ja.md) ＋ [package lock `.txt`](../../hpc/tsubame_26icp/requirements-matgl-py312-cu128.lock.txt) |
-| `SEVENNET_ENV` (`sevennet_env`) | SevenNet 0.13.0 モデルの推論・MD | Python 3.9.25、PyTorch 2.6.0+cu124、CUDA runtime 12.4 | recipe 上は patched LAMMPS `e3gnn/parallel`。build recipe の CUDA toolkit は 12.8.0、指定 install binary は未確認 | [環境説明 Markdown](sevennet_environment_reproduction_ja.md) ＋ [package lock `.txt`](../../hpc/tsubame_26icp/requirements-sevennet-py39-cu124.lock.txt) |
+| `MACE_ENV` (`mace_env`) | MACE foundation potential の推論、結晶 benchmark、ML-IAP MD | Python 3.10.19、MACE 0.3.15、PyTorch 2.10.0、CUDA runtime 12.8 | 別 build の LAMMPS ML-IAP／Kokkos CUDA。compiler・MPI・CUDA toolkit を Python 環境に混ぜない | [環境説明 Markdown](shared/mace_environment_reproduction_ja.md) ＋ [package lock `.txt`](shared/requirements-mace-py310-cu128.lock.txt) |
+| `MATGL_ENV` (`matgl_env`) | MatGL 4.0.3 を介した M3GNet 系モデルの推論・材料計算 | Python 3.12.12、PyTorch 2.10.0、CUDA runtime 12.8、MatGL source は commit 固定 | recipe 上は native／Kokkos `ML-MATGL`。指定 install binary は未確認 | [環境説明 Markdown](shared/matgl_m3gnet_environment_reproduction_ja.md) ＋ [package lock `.txt`](shared/requirements-matgl-py312-cu128.lock.txt) |
+| `SEVENNET_ENV` (`sevennet_env`) | SevenNet 0.13.0 モデルの推論・MD | Python 3.9.25、PyTorch 2.6.0+cu124、CUDA runtime 12.4 | recipe 上は patched LAMMPS `e3gnn/parallel`。build recipe の CUDA toolkit は 12.8.0、指定 install binary は未確認 | [環境説明 Markdown](shared/sevennet_environment_reproduction_ja.md) ＋ [package lock `.txt`](shared/requirements-sevennet-py39-cu124.lock.txt) |
 
-MatGL/M3GNet と SevenNet の package snapshot、archive、SHA-256、展開／再構築手順は各環境の専用説明に記載し、GPU LAMMPS build 条件は[共通 build ガイド](matgl_sevennet_environment_reproduction_ja.md)にまとめる。MACE の詳細は [MACE 環境ガイド](mace_environment_reproduction_ja.md)を参照する。environment archive は model weights、NVIDIA driver、GPU 対応 LAMMPS binary を含まない。
+各環境の package snapshot、archive、SHA-256、展開／再構築手順は [`shared/`](shared/) 内の各専用説明に記載し、GPU LAMMPS build 条件は[共通 build ガイド](matgl_sevennet_environment_reproduction_ja.md)にまとめる。environment archive は model weights、NVIDIA driver、GPU 対応 LAMMPS binary を含まない。
 
 #### なぜ環境を分けるか
 

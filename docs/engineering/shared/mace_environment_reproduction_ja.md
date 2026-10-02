@@ -4,7 +4,7 @@
 
 この手順は、TSUBAME の `mace_env` で記録した Python パッケージ構成を、別の Linux GPU 計算機で再構築するためのものです。環境一式のコピーではなく、バージョン固定リストから各計算機上でインストールします。
 
-記録した基準環境は **RHEL 9 系／x86_64、CPython 3.10.19、PyTorch 2.10.0（CUDA 12.8 build）、MACE 0.3.15** です。完全な Python package snapshot は [`requirements-mace-py310-cu128.lock.txt`](../../hpc/tsubame_26icp/requirements-mace-py310-cu128.lock.txt) にあります。これは Linux x86_64 向けの version lock であり、任意の OS・GPU に対するバイナリ互換性を保証するものではありません。
+記録した基準環境は **RHEL 9 系／x86_64、CPython 3.10.19、PyTorch 2.10.0（CUDA 12.8 build）、MACE 0.3.15** です。完全な Python package snapshot は同じ [`requirements-mace-py310-cu128.lock.txt`](requirements-mace-py310-cu128.lock.txt) にあります。これは Linux x86_64 向けの version lock であり、任意の OS・GPU に対するバイナリ互換性を保証するものではありません。
 
 対象外：TSUBAME の NVIDIA kernel driver、CUDA toolkit/module、MPI/GCC/CMake module、独自ビルドした GPU LAMMPS 実行ファイル、MACE checkpoint／重み、入力構造、trajectory、ジョブスクリプト。特に LAMMPS ML-IAP/Kokkos/CUDA は Python 環境とは別に移行先でビルドします。
 
@@ -52,7 +52,7 @@ python -m pip install --index-url https://download.pytorch.org/whl/cu128 \
   'torch==2.10.0'
 
 # TSUBAME で採取した Python package versions。
-python -m pip install -r hpc/tsubame_26icp/requirements-mace-py310-cu128.lock.txt
+python -m pip install -r docs/engineering/shared/requirements-mace-py310-cu128.lock.txt
 
 python -m pip check
 ```
@@ -105,7 +105,7 @@ PY
 
 ## 移行先で追加構築するもの
 
-LAMMPS を利用する workflow では、Python package 導入とは別に、移行先に合わせて GCC、CMake、MPI、CUDA toolkit、LAMMPS revision、ML-IAP、Kokkos backend を選び再構築します。TSUBAME の Hopper90/SM90 build flags や absolute paths を別 GPU／別 scheduler に流用しません。既存の build recipe と移行注意点は[TSUBAME 構築・会社環境移行ガイド](mace_tsubame_company_migration_ja.md)を参照します。
+LAMMPS を利用する workflow では、Python package 導入とは別に、移行先に合わせて GCC、CMake、MPI、CUDA toolkit、LAMMPS revision、ML-IAP、Kokkos backend を選び再構築します。TSUBAME の Hopper90/SM90 build flags や absolute paths を別 GPU／別 scheduler に流用しません。既存の build recipe と移行注意点は[TSUBAME 構築・会社環境移行ガイド](../mace_tsubame_company_migration_ja.md)を参照します。
 
 導入した MACE checkpoint は、コード version と別に model 名、入手元、version、SHA-256、利用ライセンスを記録します。チェックポイント自体がこの lock や環境アーカイブに含まれることはありません。
 

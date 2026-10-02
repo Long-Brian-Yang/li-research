@@ -2,7 +2,7 @@
 
 ## 目的と適用範囲
 
-本書は、TSUBAME で確認した MatGL 4.0.3／M3GNet 系の Python 環境を共有・再構築するための専用手順である。全 package version は [`requirements-matgl-py312-cu128.lock.txt`](../../hpc/tsubame_26icp/requirements-matgl-py312-cu128.lock.txt) にまとめた。GPU LAMMPS は Python 環境と別に構築するため、build 条件は[GPU LAMMPS 構築ガイド](matgl_sevennet_environment_reproduction_ja.md)を参照する。
+本書は、TSUBAME で確認した MatGL 4.0.3／M3GNet 系の Python 環境を共有・再構築するための専用手順である。全 package version は同じ [`requirements-matgl-py312-cu128.lock.txt`](requirements-matgl-py312-cu128.lock.txt) にまとめた。GPU LAMMPS は Python 環境と別に構築するため、build 条件は[GPU LAMMPS 構築ガイド](../matgl_sevennet_environment_reproduction_ja.md)を参照する。
 
 この環境は MatGL を通じた M3GNet 系 potential の推論・材料計算を目的とする。MatGL package、PyTorch/CUDA runtime、NVIDIA driver、CUDA toolkit、LAMMPS binary、モデル重みはそれぞれ別要素である。
 
@@ -78,7 +78,7 @@ conda create -y -p ./matgl_env python=3.12.12
 conda activate ./matgl_env
 python -m pip install --upgrade pip
 python -m pip install --index-url https://download.pytorch.org/whl/cu128 'torch==2.10.0'
-python -m pip install -r hpc/tsubame_26icp/requirements-matgl-py312-cu128.lock.txt
+python -m pip install -r docs/engineering/shared/requirements-matgl-py312-cu128.lock.txt
 python -m pip install --no-deps \
   'matgl @ git+https://github.com/materialyzeai/matgl.git@25b3a291b0cba570fbda75f4922fb51f004208ae'
 python -m pip check
@@ -96,6 +96,6 @@ CUDA wheel の提供状況と driver/runtime compatibility は移行先で確認
 
 ## 関連資料
 
-- [MatGL／M3GNet・SevenNet GPU LAMMPS 構築ガイド](matgl_sevennet_environment_reproduction_ja.md)
+- [MatGL／M3GNet・SevenNet GPU LAMMPS 構築ガイド](../matgl_sevennet_environment_reproduction_ja.md)
 - [SevenNet Python 環境の再現手順](sevennet_environment_reproduction_ja.md)
 - [MACE Python 環境の再現手順](mace_environment_reproduction_ja.md)

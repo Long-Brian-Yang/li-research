@@ -1,7 +1,7 @@
 # Snapshot exported from the TSUBAME mace_env on 2026-10-02.
 # Target: Linux x86_64, CPython 3.10, NVIDIA CUDA 12.8 PyTorch build.
 # Install torch first from the CUDA 12.8 wheel index as documented in
-# docs/engineering/mace_environment_reproduction_ja.md, then install this file.
+# docs/engineering/shared/mace_environment_reproduction_ja.md, then install this file.
 # This is a version lock, not a cross-platform binary bundle or hash lock.
 
 ase==3.28.0

@@ -2,7 +2,7 @@
 
 ## 目的と再現範囲
 
-本書は MatGL／M3GNet と SevenNet に対応する GPU LAMMPS の構築条件を記録する。環境 version、lock、archive、Python 環境の再配置手順は[MatGL／M3GNet 環境説明](matgl_m3gnet_environment_reproduction_ja.md)と[SevenNet 環境説明](sevennet_environment_reproduction_ja.md)を参照する。Python 環境、GPU LAMMPS 実行ファイル、CUDA driver/toolkit、モデル重みは別々の成果物であり、Python archive だけで LAMMPS や GPU 実行環境まで再現できるわけではない。
+本書は MatGL／M3GNet と SevenNet に対応する GPU LAMMPS の構築条件を記録する。各環境の version、lock、archive、Python 環境の再配置手順は [`shared/`](shared/) 内の[MatGL／M3GNet 環境説明](shared/matgl_m3gnet_environment_reproduction_ja.md)と[SevenNet 環境説明](shared/sevennet_environment_reproduction_ja.md)を参照する。Python 環境、GPU LAMMPS 実行ファイル、CUDA driver/toolkit、モデル重みは別々の成果物であり、Python archive だけで LAMMPS や GPU 実行環境まで再現できるわけではない。
 
 環境の基準日は **2026-10-02**。TSUBAME の共有環境を読み取り確認し、パッケージ一覧を lock file として保存した。lock file は TSUBAME 上の採取時点の version snapshot であり、wheel の SHA-256 を含む完全な artifact lock ではない。
 
@@ -20,7 +20,7 @@
 - 主要 package: `matgl==4.0.3`, `torch==2.10.0+cu128`, `e3nn==0.4.4`, `ase==3.27.0`, `numpy==2.4.2`。
 - `matgl` は PyPI wheel ではなく editable install で、採取時の upstream は `https://github.com/materialyzeai/matgl.git`、commit `25b3a291b0cba570fbda75f4922fb51f004208ae`。package list は配布元を表現しないため、厳密に再現する場合は最後にこの commit を使う。
 - PyTorch は CUDA 12.8 runtime build。login node では CUDA device が見えず `torch.cuda.is_available()` が false となるため、GPU 判定は GPU job 内で行う。
-- 完全な採取 package snapshot: [`requirements-matgl-py312-cu128.lock.txt`](../../hpc/tsubame_26icp/requirements-matgl-py312-cu128.lock.txt)。
+- 完全な採取 package snapshot: [`requirements-matgl-py312-cu128.lock.txt`](shared/requirements-matgl-py312-cu128.lock.txt)。
 - TSUBAME group share の Conda archive: `/gs/fs/tgj-26ICP/uf03782/yang/envs/share/matgl_env_tsubame_rhel9_x86_64_py312_cuda128_20261002.tar.gz`（約4.4 GB）。SHA-256: `ed8b10586140747d7bc98c0d14e4deebab7cc546798491879dc68c31a7432692`。
 - MatGL editable source の commit 固定 sidecar: `/gs/fs/tgj-26ICP/uf03782/yang/envs/share/matgl_source_4.0.3_25b3a29_20261002.tar.gz`（約2.7 MB）。SHA-256: `5dc19809d0f80da80dc9e8433da3b312b027221f9c09ca7a5c0f557d00711aa2`。
 - 環境 archive は依存 package を保持し、editable MatGL source は sidecar に分離した。再配置テストでは新 path で `conda-unpack` 後に sidecar source を `pip install --no-deps --no-build-isolation` し、Python 3.12.12、Torch 2.10.0+cu128、MatGL 4.0.3 の import を確認した。
@@ -31,7 +31,7 @@
 - venv、base interpreter `/usr/bin/python3.9`、Python 3.9.25、Linux x86_64、glibc 2.34、採取時の disk usage 約5.2 GB。
 - 主要 package: `sevenn==0.13.0`, `torch==2.6.0+cu124`, `e3nn==0.6.0`, `numpy==2.0.2`。
 - PyTorch は CUDA 12.4 runtime build。login node の CUDA availability は GPU job での動作試験を意味しない。
-- 完全な採取 package snapshot: [`requirements-sevennet-py39-cu124.lock.txt`](../../hpc/tsubame_26icp/requirements-sevennet-py39-cu124.lock.txt)。
+- 完全な採取 package snapshot: [`requirements-sevennet-py39-cu124.lock.txt`](shared/requirements-sevennet-py39-cu124.lock.txt)。
 - TSUBAME group share archive: `/gs/fs/tgj-26ICP/uf03782/yang/envs/share/sevennet_env_tsubame_rhel9_x86_64_py39_cuda124_20261002.tar.gz`（約3.1 GB）。SHA-256 は隣接する `.sha256` file に記録。
 - SHA-256: `4608190f19fe44543a58046d088fe12ecec9333caf4729841da7fdaea825fd94`。
 - 2026-10-02 に新しい TSUBAME path へ一時展開し、Python 3.9.25、Torch 2.6.0+cu124、SevenNet import と `python -m sevenn.main.sevenn --help` を確認。GPU 計算そのものは login node では検証していない。
@@ -132,7 +132,7 @@ conda create -y -p ./matgl_env python=3.12.12
 conda activate ./matgl_env
 python -m pip install --upgrade pip
 python -m pip install --index-url https://download.pytorch.org/whl/cu128 'torch==2.10.0'
-python -m pip install -r hpc/tsubame_26icp/requirements-matgl-py312-cu128.lock.txt
+python -m pip install -r docs/engineering/shared/requirements-matgl-py312-cu128.lock.txt
 # TSUBAME と同じ MatGL source commit を使い、他の依存版は lock に合わせる。
 python -m pip install --no-deps 'matgl @ git+https://github.com/materialyzeai/matgl.git@25b3a291b0cba570fbda75f4922fb51f004208ae'
 python -m pip check
@@ -149,13 +149,13 @@ python3.9 -m venv sevennet_env
 SEVENNET_ENV="$PWD/sevennet_env"
 "$SEVENNET_ENV/bin/python" -m pip install --upgrade pip
 "$SEVENNET_ENV/bin/python" -m pip install --index-url https://download.pytorch.org/whl/cu124 'torch==2.6.0'
-"$SEVENNET_ENV/bin/python" -m pip install -r hpc/tsubame_26icp/requirements-sevennet-py39-cu124.lock.txt
+"$SEVENNET_ENV/bin/python" -m pip install -r docs/engineering/shared/requirements-sevennet-py39-cu124.lock.txt
 "$SEVENNET_ENV/bin/python" -m pip check
 ```
 
 ### 別ホストでの SevenNet 補足
 
-同系統 TSUBAME host には archive 展開・checksum 検査を優先し、import、`sevenn` CLI、GPU tensor を確認する。異なる OS や Python 3.9 base が使えない環境では、archive を移植せず [`requirements-sevennet-py39-cu124.lock.txt`](../../hpc/tsubame_26icp/requirements-sevennet-py39-cu124.lock.txt) を参照して対象環境で再構築する。CUDA 12.4 PyTorch wheel が利用できない場合、PyTorch/CUDA と SevenNet package compatibility を再評価して、新しい lock と動作記録を作る。
+同系統 TSUBAME host には archive 展開・checksum 検査を優先し、import、`sevenn` CLI、GPU tensor を確認する。異なる OS や Python 3.9 base が使えない環境では、archive を移植せず [`requirements-sevennet-py39-cu124.lock.txt`](shared/requirements-sevennet-py39-cu124.lock.txt) を参照して対象環境で再構築する。CUDA 12.4 PyTorch wheel が利用できない場合、PyTorch/CUDA と SevenNet package compatibility を再評価して、新しい lock と動作記録を作る。
 
 ## 段階的な検証
 
@@ -179,7 +179,7 @@ SEVENNET_ENV="$PWD/sevennet_env"
 
 ## 関連資料
 
-- [MACE Python 環境の再現手順](mace_environment_reproduction_ja.md)
+- [MACE Python 環境の再現手順](shared/mace_environment_reproduction_ja.md)
 - [TSUBAME 構築・会社環境移行ガイド](mace_tsubame_company_migration_ja.md)
 - [TSUBAME canonical path configuration](../../hpc/tsubame_26icp/config/yang_paths.sh)
 - [MatGL/M3GNet GPU LAMMPS build recipe](../../hpc/tsubame_26icp/build/build_matgl_m3gnet_gpu.sh)
