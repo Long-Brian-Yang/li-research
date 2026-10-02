@@ -10,8 +10,9 @@
 
 1. [リポジトリのトップ README](../../README.md)：プロジェクトの概要と入口。
 2. [MACE／TSUBAME／会社環境への移行](mace_tsubame_company_migration_ja.md)：MACE-MD 実行環境。
-3. [DFT データ作成と MACE fine-tuning](dft_and_finetuning_ja.md)：将来の材料専用モデル構築案。
-4. [Material Review](../materials/materials_overview_ja.md)：材料ごとの計算条件、結果、文献対比。
+3. [MatGL／M3GNet・SevenNet 環境再現と GPU LAMMPS 構築](matgl_sevennet_environment_reproduction_ja.md)：Python package snapshot、SevenNet archive、GPU LAMMPS build 条件。
+4. [DFT データ作成と MACE fine-tuning](dft_and_finetuning_ja.md)：将来の材料専用モデル構築案。
+5. [Material Review](../materials/materials_overview_ja.md)：材料ごとの計算条件、結果、文献対比。
 
 ## 2. ディレクトリと責務
 
@@ -42,6 +43,8 @@
 | 開発用 macOS／Linux | Markdown、軽量 Python 解析、pytest | リポジトリに完全固定した Python lock file はない。ローカル版数は TSUBAME の版数ではない |
 | TSUBAME `tgj-26ICP` | GPU MD、エンジン構築、production、軌跡後処理 | アカウント、quota、queue、module、モデル、実行状態は集群へ接続して都度確認 |
 | 共有 NEP／GPUMD | 既存の NEP89 検証ルート | MACE＋LAMMPS のインストールとは別管理。環境を混合しない |
+
+TSUBAME の MACE、MatGL／M3GNet、SevenNet Python 環境と、それぞれ別に構築する GPU LAMMPS の条件は、[エンジン環境再現ガイド](matgl_sevennet_environment_reproduction_ja.md)および [MACE 環境ガイド](mace_environment_reproduction_ja.md)にまとめた。Python package 環境の存在は対応する LAMMPS binary の build／動作確認を意味しない。
 
 リポジトリに `pyproject.toml`、`requirements.txt`、Conda lock、Dockerfile はなく、「pip install 一つで全計算が再現できる」とは言えない。一般的な解析 import は ASE、NumPy、SciPy、Matplotlib を中心とし、データ診断の一部に MDAnalysis／OpenPyXL、テストに pytest を使う。MACE／PyTorch、LAMMPS、CUDA、MPI は別のエンジン環境として扱う。
 
