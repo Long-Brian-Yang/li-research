@@ -46,6 +46,41 @@
 
 TSUBAME の MACE、MatGL／M3GNet、SevenNet Python 環境と、それぞれ別に構築する GPU LAMMPS の条件は、[エンジン環境再現ガイド](matgl_sevennet_environment_reproduction_ja.md)および [MACE 環境ガイド](mace_environment_reproduction_ja.md)にまとめた。Python package 環境の存在は対応する LAMMPS binary の build／動作確認を意味しない。
 
+#### MLIP 実行環境の横断一覧
+
+3つの MLIP は同じ計算環境の中で切り替えるのではなく、依存関係と LAMMPS backend の組ごとに環境を分離する。比較・移行時は Python package だけでなく、推論方式、GPU runtime、LAMMPS interface、build toolchain を一組として確認する。
+
+| 環境 | 用途・モデル | Python／主要 runtime | MD 接続・GPU backend | 環境の受け渡し |
+|---|---|---|---|---|
+| `MACE_ENV` (`mace_env`) | MACE foundation potential の推論、結晶 benchmark、ML-IAP MD | Python 3.10.19、MACE 0.3.15、PyTorch 2.10.0、CUDA runtime 12.8 | 別 build の LAMMPS ML-IAP／Kokkos CUDA。compiler・MPI・CUDA toolkit を Python 環境に混ぜない | [MACE 環境再現手順](mace_environment_reproduction_ja.md) と `requirements-mace-py310-cu128.lock.txt` |
+| `MATGL_ENV` (`matgl_env`) | MatGL 4.0.3 を介した M3GNet 系モデルの推論・材料計算 | Python 3.12.12、PyTorch 2.10.0、CUDA runtime 12.8、MatGL source は commit 固定 | recipe 上は native／Kokkos `ML-MATGL`。指定 install binary は未確認 | Conda archive＋MatGL source sidecar。展開後 `conda-unpack` と pinned source install が必要 |
+| `SEVENNET_ENV` (`sevennet_env`) | SevenNet 0.13.0 モデルの推論・MD | Python 3.9.25、PyTorch 2.6.0+cu124、CUDA runtime 12.4 | recipe 上は patched LAMMPS `e3gnn/parallel`。build recipe の CUDA toolkit は 12.8.0、指定 install binary は未確認 | TSUBAME 同系 OS/Python 向け venv archive と `requirements-sevennet-py39-cu124.lock.txt` |
+
+MatGL/M3GNet と SevenNet の package snapshot、archive、SHA-256、展開／再構築手順、および GPU LAMMPS build 条件は[専用ガイド](matgl_sevennet_environment_reproduction_ja.md)に集約し、MACE の詳細は [MACE 環境ガイド](mace_environment_reproduction_ja.md)を参照する。archive は model weights、NVIDIA driver、GPU 対応 LAMMPS binary を含まない。
+
+#### なぜ環境を分けるか
+
+- Python の minor version と依存 package の版が異なるため、1つの venv/Conda env に混ぜると resolver による上書きや import/API の衝突が起こり得る。
+- PyTorch の CUDA runtime（MACE/MatGL は 12.8、SevenNet は 12.4）と、LAMMPS を compile する CUDA toolkit/module は別物。driver はさらに別のホスト側要件であり、3つの版を同じ値として扱わない。
+- LAMMPS 接続方式も異なる。MACE は ML-IAP、MatGL は ML-MATGL pair style、SevenNet は `e3gnn/parallel` backend を使うため、pair style、CMake package、MPI/GPU linkage をそれぞれ構築・検証する。
+- Python の `import` 成功、LAMMPS の pair style 登録、energy/force parity、GPU smoke test、長時間 MD の妥当性は別々の確認段階である。
+
+#### 実行前に表示・保存する環境情報
+
+```bash
+source hpc/tsubame_26icp/config/yang_paths.sh
+for env_name in MACE_ENV MATGL_ENV SEVENNET_ENV; do
+  env_path="${!env_name}"
+  echo "[$env_name] $env_path"
+  if [[ -x "$env_path/bin/python" ]]; then
+    "$env_path/bin/python" -c 'import sys,platform; print(sys.version.split()[0], platform.platform())'
+    "$env_path/bin/python" -m pip list --format=freeze
+  fi
+done
+```
+
+GPU job ではさらに `nvidia-smi` と `torch.version.cuda`／`torch.cuda.is_available()` を記録する。別 account や会社環境へ移すときは、`yang_paths.sh` の絶対 path を転記せず、各 environment root、model path、LAMMPS binary、module 名を移行先に合わせて設定し直す。
+
 リポジトリに `pyproject.toml`、`requirements.txt`、Conda lock、Dockerfile はなく、「pip install 一つで全計算が再現できる」とは言えない。一般的な解析 import は ASE、NumPy、SciPy、Matplotlib を中心とし、データ診断の一部に MDAnalysis／OpenPyXL、テストに pytest を使う。MACE／PyTorch、LAMMPS、CUDA、MPI は別のエンジン環境として扱う。
 
 ### 3.2 TSUBAME パス設定
