@@ -8,7 +8,7 @@
 
 | 対象 | Python 環境 | GPU LAMMPS | 状態 |
 |---|---|---|---|
-| MatGL／M3GNet | Conda、Python 3.12.12、MatGL 4.0.3、PyTorch 2.10.0+cu128 | Kokkos CUDA、ML-MATGL pair style の build recipe あり | Python 環境を確認。設定済み LAMMPS 実行ファイルと source checkout は TSUBAME の指定場所に存在しない |
+| MatGL／M3GNet | Conda、Python 3.12.12、MatGL 4.0.3、PyTorch 2.10.0+cu128 | Kokkos CUDA、ML-MATGL pair style の build recipe あり | Python 環境と再配置 archive を確認。設定済み LAMMPS 実行ファイルと source checkout は TSUBAME の指定場所に存在しない |
 | SevenNet | venv、Python 3.9.25、SevenNet 0.13.0、PyTorch 2.6.0+cu124 | patched LAMMPS `e3gnn/parallel` build recipe あり | Python 環境を確認し、再配置可能 archive を作成。指定 LAMMPS 実行ファイルと source checkout は TSUBAME の指定場所に存在しない |
 
 ## 環境一覧と成果物
@@ -21,6 +21,9 @@
 - `matgl` は PyPI wheel ではなく editable install で、採取時の upstream は `https://github.com/materialyzeai/matgl.git`、commit `25b3a291b0cba570fbda75f4922fb51f004208ae`。package list は配布元を表現しないため、厳密に再現する場合は最後にこの commit を使う。
 - PyTorch は CUDA 12.8 runtime build。login node では CUDA device が見えず `torch.cuda.is_available()` が false となるため、GPU 判定は GPU job 内で行う。
 - 完全な採取 package snapshot: [`requirements-matgl-py312-cu128.lock.txt`](../../hpc/tsubame_26icp/requirements-matgl-py312-cu128.lock.txt)。
+- TSUBAME group share の Conda archive: `/gs/fs/tgj-26ICP/uf03782/yang/envs/share/matgl_env_tsubame_rhel9_x86_64_py312_cuda128_20261002.tar.gz`（約4.4 GB）。SHA-256: `ed8b10586140747d7bc98c0d14e4deebab7cc546798491879dc68c31a7432692`。
+- MatGL editable source の commit 固定 sidecar: `/gs/fs/tgj-26ICP/uf03782/yang/envs/share/matgl_source_4.0.3_25b3a29_20261002.tar.gz`（約2.7 MB）。SHA-256: `5dc19809d0f80da80dc9e8433da3b312b027221f9c09ca7a5c0f557d00711aa2`。
+- 環境 archive は依存 package を保持し、editable MatGL source は sidecar に分離した。再配置テストでは新 path で `conda-unpack` 後に sidecar source を `pip install --no-deps --no-build-isolation` し、Python 3.12.12、Torch 2.10.0+cu128、MatGL 4.0.3 の import を確認した。
 
 ### SevenNet
 
@@ -34,9 +37,31 @@
 - 2026-10-02 に新しい TSUBAME path へ一時展開し、Python 3.9.25、Torch 2.6.0+cu124、SevenNet import と `python -m sevenn.main.sevenn --help` を確認。GPU 計算そのものは login node では検証していない。
 - Archive は venv を同系統の RHEL 9／x86_64／glibc 2.34、同じ `/usr/bin/python3.9` base interpreter を持つ TSUBAME-like host 上で再配置するためのもの。別 OS、別 CPU architecture、異なる base Python がある会社計算機向けの portable binary package ではない。異なるホストでは lock file から環境を再構築する。
 
-## SevenNet archive の共有・展開
+## 環境 archive の共有・展開
 
-この archive は GitHub に登録しない（サイズとバイナリ配布上の制約がある）。TSUBAME の同一 group share を利用できる相手には、パスと checksum file を案内する。TSUBAME 外の相手には、社内承認済みの大容量ファイル転送先を使い、転送後に SHA-256 を照合する。モデル重みは含まれない。
+環境 archive は GitHub に登録しない（サイズとバイナリ配布上の制約がある）。TSUBAME の同一 group share を利用できる相手には、archive と隣接する `.sha256` file を案内する。TSUBAME 外の相手には、社内承認済みの大容量ファイル転送先を使い、archive と checksum sidecar の両方を転送する。sidecar は basename のみを記録しているため、転送先で同じ directory に置き、`sha256sum -c "$ARCHIVE.sha256"` で確認する。model weight は含まれない。
+
+### MatGL／M3GNet archive の展開
+
+環境 archive と commit 固定 source sidecar の両方を取得し、同じ directory に置いて checksum を確認する。MatGL は元環境では editable install だったため、source sidecar の再インストールを省略しない。
+
+```bash
+ENV_ARCH=matgl_env_tsubame_rhel9_x86_64_py312_cuda128_20261002.tar.gz
+SRC_ARCH=matgl_source_4.0.3_25b3a29_20261002.tar.gz
+sha256sum -c "$ENV_ARCH.sha256"
+sha256sum -c "$SRC_ARCH.sha256"
+MATGL_ENV="$HOME/envs/matgl_env"
+mkdir -p "$MATGL_ENV"
+tar -xzf "$ENV_ARCH" -C "$MATGL_ENV"
+"$MATGL_ENV/bin/conda-unpack"
+mkdir -p "$MATGL_ENV/source_bundle"
+tar -xzf "$SRC_ARCH" -C "$MATGL_ENV/source_bundle"
+"$MATGL_ENV/bin/python" -m pip install --no-deps --no-build-isolation \
+  "$MATGL_ENV/source_bundle/matgl_source"
+"$MATGL_ENV/bin/python" -c 'import torch, matgl; print(torch.__version__, torch.version.cuda, matgl.__version__)'
+```
+
+### SevenNet
 
 ```bash
 ARCHIVE=/path/to/sevennet_env_tsubame_rhel9_x86_64_py39_cuda124_20261002.tar.gz
