@@ -1,8 +1,8 @@
-# MatGL／M3GNet・SevenNet 環境再現と GPU LAMMPS 構築
+# MatGL／M3GNet・SevenNet GPU LAMMPS 構築ガイド
 
 ## 目的と再現範囲
 
-本書は、TSUBAME で確認した MatGL／M3GNet と SevenNet の Python 環境、ならびに各モデルに対応する GPU LAMMPS の構築条件を分けて記録する。Python 環境、GPU LAMMPS 実行ファイル、CUDA driver/toolkit、モデル重みは別々の成果物である。Python 環境のアーカイブだけで LAMMPS や GPU 実行環境まで再現できるわけではない。
+本書は MatGL／M3GNet と SevenNet に対応する GPU LAMMPS の構築条件を記録する。環境 version、lock、archive、Python 環境の再配置手順は[MatGL／M3GNet 環境説明](matgl_m3gnet_environment_reproduction_ja.md)と[SevenNet 環境説明](sevennet_environment_reproduction_ja.md)を参照する。Python 環境、GPU LAMMPS 実行ファイル、CUDA driver/toolkit、モデル重みは別々の成果物であり、Python archive だけで LAMMPS や GPU 実行環境まで再現できるわけではない。
 
 環境の基準日は **2026-10-02**。TSUBAME の共有環境を読み取り確認し、パッケージ一覧を lock file として保存した。lock file は TSUBAME 上の採取時点の version snapshot であり、wheel の SHA-256 を含む完全な artifact lock ではない。
 
