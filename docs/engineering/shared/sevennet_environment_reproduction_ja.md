@@ -2,7 +2,7 @@
 
 ## 目的と適用範囲
 
-本書は、TSUBAME の SevenNet 0.13.0 Python 環境を配布・再構築する手順である。採取した package version は同じ [`requirements-sevennet-py39-cu124.lock.txt`](requirements-sevennet-py39-cu124.lock.txt) に記録した。GPU LAMMPS は Python venv とは別成果物であり、build 条件は[GPU LAMMPS 構築ガイド](../matgl_sevennet_environment_reproduction_ja.md)を参照する。
+本書は、TSUBAME の SevenNet 0.13.0 Python 環境を配布・再構築する手順である。Conda 環境定義は [`environment-sevennet.yml`](environment-sevennet.yml)、採取した package version は [`requirements-sevennet-py39-cu124.lock.txt`](requirements-sevennet-py39-cu124.lock.txt) に記録した。GPU LAMMPS は Python venv とは別成果物であり、build 条件は[GPU LAMMPS 構築ガイド](../matgl_sevennet_environment_reproduction_ja.md)を参照する。
 
 ## TSUBAME 基準環境
 
@@ -52,15 +52,13 @@ PY
 
 ### 別 host での再構築
 
-別 OS、別 CPU architecture、異なる base Python では TSUBAME archive を流用せず、Python 3.9.25 venv を作り、対応する CUDA runtime の PyTorch を先に導入してから lock を適用する。
+別 OS、別 CPU architecture、異なる base Python では TSUBAME venv archive を流用せず、Conda YAML から Python 3.9.25 環境を再構築する。YAML は同じ directory の package snapshot と公式 CUDA 12.4 wheel source を参照する。
 
 ```bash
-python3.9 -m venv sevennet_env
-SEVENNET_ENV="$PWD/sevennet_env"
-"$SEVENNET_ENV/bin/python" -m pip install --upgrade pip
-"$SEVENNET_ENV/bin/python" -m pip install --index-url https://download.pytorch.org/whl/cu124 'torch==2.6.0'
-"$SEVENNET_ENV/bin/python" -m pip install -r docs/engineering/shared/requirements-sevennet-py39-cu124.lock.txt
-"$SEVENNET_ENV/bin/python" -m pip check
+conda env create -f docs/engineering/shared/environment-sevennet.yml
+conda activate sevennet_env
+python -m pip check
+python -c 'import torch; print(torch.__version__, torch.version.cuda); assert torch.version.cuda == "12.4"'
 ```
 
 環境構築後、対象 GPU job 上で CUDA tensor smoke test を実行し、`torch.cuda.is_available()`、GPU 名、driver、`torch.version.cuda` を保存する。package import は GPU runtime test や計算精度検証の代わりにならない。

@@ -1,0 +1,10 @@
+name: matgl_env
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - python=3.12.12
+  - pip
+  - pip:
+      - --extra-index-url https://download.pytorch.org/whl/cu128
+      - -r requirements-matgl-py312-cu128.lock.txt

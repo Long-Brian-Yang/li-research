@@ -35,29 +35,19 @@
 
 macOS、Windows、ARM64 では、この Linux wheel lock をそのまま使わないでください。別の Linux distribution でも glibc、GPU driver、利用可能な wheel が異なる場合は、対象機向けに PyTorch と CUDA の組合せを選び直し、その環境で version lock と動作試験を更新します。ホストの NVIDIA driver は Python wheel に含まれません。
 
-## Linux x86_64 での再構築
+## Conda YAML からの再構築
 
-以下は Python 3.10 と CUDA 12.8 対応 NVIDIA driver が利用可能な Linux x86_64 を想定します。社内 mirror を使う場合は index URL を管理者指定のものに置換します。
+新しい Linux x86_64 環境では、[`environment-mace.yml`](environment-mace.yml) で Python 3.10.19 と pip を準備し、同じ directory の lock file から package を導入する。YAML は Conda の環境定義、`.txt` は採取済み Python package version snapshot である。社内 mirror を使う場合は PyTorch wheel source と pip index 設定を管理者指定のものに置き換える。
 
 ```bash
-python3.10 --version
 nvidia-smi
-
-python3.10 -m venv mace_env
-source mace_env/bin/activate
-python -m pip install --upgrade pip
-
-# PyTorch CUDA 12.8 build を先に固定する。
-python -m pip install --index-url https://download.pytorch.org/whl/cu128 \
-  'torch==2.10.0'
-
-# TSUBAME で採取した Python package versions。
-python -m pip install -r docs/engineering/shared/requirements-mace-py310-cu128.lock.txt
-
+conda env create -f docs/engineering/shared/environment-mace.yml
+conda activate mace_env
 python -m pip check
+python -c 'import torch; print(torch.__version__, torch.version.cuda); assert torch.version.cuda == "12.8"'
 ```
 
-PyTorch を先に CUDA 12.8 index から導入するのは、通常の PyPI 版で上書きされ CPU-only build になるのを防ぐためです。lock 内の `torch==2.10.0` は public version を照合します。導入後に `torch.version.cuda` が `12.8` であることを必ず検査します。
+YAML の pip section は PyPI に加えて公式 CUDA 12.8 wheel index を検索対象にする。導入後は PyTorch の build と CUDA runtime を必ず検査する。Conda environment YAML は NVIDIA driver、CUDA toolkit、LAMMPS build を管理しない。
 
 ## 動作確認
 

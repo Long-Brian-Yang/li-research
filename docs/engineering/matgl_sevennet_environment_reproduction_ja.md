@@ -124,15 +124,11 @@ tar -xzf "$ARCHIVE" -C "$SEVENNET_ENV"
 
 ### MatGL／M3GNet
 
-TSUBAME snapshot を基準にする場合は Python 3.12.12 の新規環境を作成し、PyTorch CUDA build を先に選んでから snapshot を照合する。
+TSUBAME snapshot を基準に別 host で再構築する場合は、対応する YAML から Python と pip package snapshot を導入する。
 
 ```bash
-source "$(conda info --base)/etc/profile.d/conda.sh"
-conda create -y -p ./matgl_env python=3.12.12
-conda activate ./matgl_env
-python -m pip install --upgrade pip
-python -m pip install --index-url https://download.pytorch.org/whl/cu128 'torch==2.10.0'
-python -m pip install -r docs/engineering/shared/requirements-matgl-py312-cu128.lock.txt
+conda env create -f docs/engineering/shared/environment-matgl-m3gnet.yml
+conda activate matgl_env
 # TSUBAME と同じ MatGL source commit を使い、他の依存版は lock に合わせる。
 python -m pip install --no-deps 'matgl @ git+https://github.com/materialyzeai/matgl.git@25b3a291b0cba570fbda75f4922fb51f004208ae'
 python -m pip check
@@ -142,15 +138,13 @@ CUDA 12.8 PyTorch wheel が当該 Python／platform で提供されているか�
 
 ### SevenNet lock からの再構築
 
-異なる環境向けに再構築する場合、Python 3.9.25 の利用可否を確認して独立した venv を作り、PyTorch CUDA 12.4 を先に固定する。TSUBAME と異なる base Python／CUDA／OS なら、単に lock を適用して終わりにせず、解決された package list を新しい環境用 lock として記録し直す。
+異なる環境向けに再構築する場合は、Python 3.9.25 の Conda YAML を使う。TSUBAME と異なる Python／CUDA／OS なら、単に lock を適用して終わりにせず、解決された package list を新しい環境用 lock として記録し直す。
 
 ```bash
-python3.9 -m venv sevennet_env
-SEVENNET_ENV="$PWD/sevennet_env"
-"$SEVENNET_ENV/bin/python" -m pip install --upgrade pip
-"$SEVENNET_ENV/bin/python" -m pip install --index-url https://download.pytorch.org/whl/cu124 'torch==2.6.0'
-"$SEVENNET_ENV/bin/python" -m pip install -r docs/engineering/shared/requirements-sevennet-py39-cu124.lock.txt
-"$SEVENNET_ENV/bin/python" -m pip check
+conda env create -f docs/engineering/shared/environment-sevennet.yml
+conda activate sevennet_env
+python -m pip check
+python -c 'import torch; print(torch.__version__, torch.version.cuda); assert torch.version.cuda == "12.4"'
 ```
 
 ### 別ホストでの SevenNet 補足

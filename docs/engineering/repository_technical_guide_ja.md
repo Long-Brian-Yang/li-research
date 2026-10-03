@@ -46,7 +46,7 @@
 | TSUBAME `tgj-26ICP` | GPU MD、エンジン構築、production、軌跡後処理 | アカウント、quota、queue、module、モデル、実行状態は集群へ接続して都度確認 |
 | 共有 NEP／GPUMD | 既存の NEP89 検証ルート | MACE＋LAMMPS のインストールとは別管理。環境を混合しない |
 
-TSUBAME の MACE、MatGL／M3GNet、SevenNet の環境説明 Markdown と package lock `.txt` は、すべて [`shared/`](shared/) に集約した。各モデルのペアを確認し、GPU LAMMPS は Python 環境とは別の[構築ガイド](matgl_sevennet_environment_reproduction_ja.md)を参照する。Python package 環境の存在は対応する LAMMPS binary の build／動作確認を意味しない。
+TSUBAME の MACE、MatGL／M3GNet、SevenNet は、各環境の YAML、説明 Markdown、package lock `.txt` を [`shared/`](shared/) に集約した。GPU LAMMPS は Python 環境とは別の[構築ガイド](matgl_sevennet_environment_reproduction_ja.md)を参照する。Python package 環境の存在は対応する LAMMPS binary の build／動作確認を意味しない。
 
 #### MLIP 実行環境の横断一覧
 
@@ -54,9 +54,9 @@ TSUBAME の MACE、MatGL／M3GNet、SevenNet の環境説明 Markdown と packag
 
 | 環境 | 用途・モデル | Python／主要 runtime | MD 接続・GPU backend | 環境の受け渡し |
 |---|---|---|---|---|
-| `MACE_ENV` (`mace_env`) | MACE foundation potential の推論、結晶 benchmark、ML-IAP MD | Python 3.10.19、MACE 0.3.15、PyTorch 2.10.0、CUDA runtime 12.8 | 別 build の LAMMPS ML-IAP／Kokkos CUDA。compiler・MPI・CUDA toolkit を Python 環境に混ぜない | [環境説明 Markdown](shared/mace_environment_reproduction_ja.md) ＋ [package lock `.txt`](shared/requirements-mace-py310-cu128.lock.txt) |
-| `MATGL_ENV` (`matgl_env`) | MatGL 4.0.3 を介した M3GNet 系モデルの推論・材料計算 | Python 3.12.12、PyTorch 2.10.0、CUDA runtime 12.8、MatGL source は commit 固定 | recipe 上は native／Kokkos `ML-MATGL`。指定 install binary は未確認 | [環境説明 Markdown](shared/matgl_m3gnet_environment_reproduction_ja.md) ＋ [package lock `.txt`](shared/requirements-matgl-py312-cu128.lock.txt) |
-| `SEVENNET_ENV` (`sevennet_env`) | SevenNet 0.13.0 モデルの推論・MD | Python 3.9.25、PyTorch 2.6.0+cu124、CUDA runtime 12.4 | recipe 上は patched LAMMPS `e3gnn/parallel`。build recipe の CUDA toolkit は 12.8.0、指定 install binary は未確認 | [環境説明 Markdown](shared/sevennet_environment_reproduction_ja.md) ＋ [package lock `.txt`](shared/requirements-sevennet-py39-cu124.lock.txt) |
+| `MACE_ENV` (`mace_env`) | MACE foundation potential の推論、結晶 benchmark、ML-IAP MD | Python 3.10.19、MACE 0.3.15、PyTorch 2.10.0、CUDA runtime 12.8 | 別 build の LAMMPS ML-IAP／Kokkos CUDA。compiler・MPI・CUDA toolkit を Python 環境に混ぜない | [環境 YAML](shared/environment-mace.yml) ＋ [説明 Markdown](shared/mace_environment_reproduction_ja.md) ＋ [package lock `.txt`](shared/requirements-mace-py310-cu128.lock.txt) |
+| `MATGL_ENV` (`matgl_env`) | MatGL 4.0.3 を介した M3GNet 系モデルの推論・材料計算 | Python 3.12.12、PyTorch 2.10.0、CUDA runtime 12.8、MatGL source は commit 固定 | recipe 上は native／Kokkos `ML-MATGL`。指定 install binary は未確認 | [環境 YAML](shared/environment-matgl-m3gnet.yml) ＋ [説明 Markdown](shared/matgl_m3gnet_environment_reproduction_ja.md) ＋ [package lock `.txt`](shared/requirements-matgl-py312-cu128.lock.txt) |
+| `SEVENNET_ENV` (`sevennet_env`) | SevenNet 0.13.0 モデルの推論・MD | Python 3.9.25、PyTorch 2.6.0+cu124、CUDA runtime 12.4 | recipe 上は patched LAMMPS `e3gnn/parallel`。build recipe の CUDA toolkit は 12.8.0、指定 install binary は未確認 | [環境 YAML](shared/environment-sevennet.yml) ＋ [説明 Markdown](shared/sevennet_environment_reproduction_ja.md) ＋ [package lock `.txt`](shared/requirements-sevennet-py39-cu124.lock.txt) |
 
 各環境の package snapshot、archive、SHA-256、展開／再構築手順は [`shared/`](shared/) 内の各専用説明に記載し、GPU LAMMPS build 条件は[共通 build ガイド](matgl_sevennet_environment_reproduction_ja.md)にまとめる。environment archive は model weights、NVIDIA driver、GPU 対応 LAMMPS binary を含まない。
 
